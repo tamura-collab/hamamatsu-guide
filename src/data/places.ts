@@ -6,16 +6,26 @@
 import storesJson from './stores.json';
 import spotsJson from './spots.json';
 import type { IconName } from '@/components/ui/icons';
-import type { SectionKey } from './categories';
+import type { CompareAxis, SectionKey } from './categories';
 
 export type LocalNoteType = 'station' | 'road' | 'car' | 'parking' | 'landmark' | 'tip';
 
-/** 地域文脈メモ（例: 「みなと駅徒歩5分」「臨港バイパス沿い」） */
+/** 地域文脈メモ（例: 「浜松駅徒歩5分」「浜松バイパス沿い」） */
 export interface LocalNote {
   type: LocalNoteType;
   text: string;
   /** auto: アクセス情報から自動抽出 / manual: 編集部が補足 */
   source: 'auto' | 'manual';
+}
+
+export type SpecValue = number | boolean | string | null;
+
+export interface Affiliate {
+  url: string;
+  /** CTAボタン文言の上書き（未設定時はカテゴリの cta.label） */
+  label: string | null;
+  /** 提携先（ASP名など。社内管理用） */
+  program: string | null;
 }
 
 export interface Place {
@@ -31,13 +41,18 @@ export interface Place {
   officialUrl: string | null;
   description: string | null;
   localNote: LocalNote[];
+  /** 比較軸の値（キーは categories.ts の axes[].key）。不明な値は null */
+  specs: Record<string, SpecValue>;
+  /** アフィリエイト（広告）リンク。提携がある場合のみ設定される */
+  affiliate: Affiliate | null;
   source: 'mock' | 'scrape' | 'manual';
   /** 情報の確認日（YYYY-MM-DD） */
   updatedAt: string;
 }
 
-export const stores = storesJson as Place[];
-export const spots = spotsJson as Place[];
+// JSON の推論型は行ごとに specs の形が異なるため unknown 経由で変換する（内容は data:build で検証済み）
+export const stores = storesJson as unknown as Place[];
+export const spots = spotsJson as unknown as Place[];
 
 const bySection: Record<SectionKey, Place[]> = { living: stores, travel: spots };
 
@@ -62,3 +77,15 @@ export const localNoteMeta: Record<LocalNoteType, { label: string; icon: IconNam
 const NOTE_ORDER: LocalNoteType[] = ['station', 'road', 'car', 'parking', 'landmark', 'tip'];
 export const sortLocalNotes = (notes: LocalNote[]) =>
   [...notes].sort((a, b) => NOTE_ORDER.indexOf(a.type) - NOTE_ORDER.indexOf(b.type));
+
+/** 比較軸の値を表示用の文字列にする */
+export function formatSpec(axis: CompareAxis, value: SpecValue | undefined): string {
+  if (value === null || value === undefined) return '—';
+  if (axis.type === 'boolean') return value ? 'あり' : 'なし';
+  if (axis.type === 'price' && typeof value === 'number') {
+    if (value === 0) return '無料';
+    return `${value.toLocaleString('ja-JP')}${axis.unit ?? '円'}`;
+  }
+  if (axis.type === 'number' && typeof value === 'number') return `${value}${axis.unit ?? ''}`;
+  return String(value);
+}

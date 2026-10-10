@@ -1,6 +1,7 @@
 ---
 import ProseLayout from '@/layouts/ProseLayout.astro';
 import { siteConfig } from '@/config/site';
+import { url } from '@/lib/url';
 ---
 
 <ProseLayout title="プライバシーポリシー" updatedAt="2026.10.10">
@@ -15,9 +16,11 @@ import { siteConfig } from '@/config/site';
   </ul>
   <h2>アクセス解析ツール</h2>
   <p>当サイトはアクセス解析ツールを利用する場合があります。データは匿名で収集され、個人を特定するものではありません。Cookieはブラウザの設定で無効化できます。</p>
+  <h2>外部リンクのクリック計測</h2>
+  <p>サービス改善および提携先への送客実績の把握のため、当サイトから外部サイト（公式サイト・予約ページ・地図・電話発信）へのリンクがクリックされた際に、クリックされたページ・掲載先・日時を計測しています。氏名などの個人を特定する情報は含みません。</p>
   <h2>第三者提供</h2>
   <p>法令に基づく場合を除き、本人の同意なく個人情報を第三者に提供することはありません。</p>
   <h2>お問い合わせ</h2>
-  <p>本ポリシーに関するお問い合わせは {siteConfig.operator.contactEmail} までご連絡ください。</p>
+  <p>本ポリシーに関するお問い合わせは<a href={url('/contact')}>お問い合わせフォーム</a>よりご連絡ください。</p>
   <p class="text-xs text-muted">※本ページはMVP用のひな形です。公開前に実際の運用内容に合わせて見直してください。</p>
 </ProseLayout>

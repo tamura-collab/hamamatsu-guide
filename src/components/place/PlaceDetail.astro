@@ -3,8 +3,12 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import Breadcrumb from '@/components/ui/Breadcrumb.astro';
 import Icon from '@/components/ui/Icon.astro';
 import PlaceCard from './PlaceCard.astro';
+import OutboundLink from '@/components/outbound/OutboundLink.astro';
+import CtaBlock from '@/components/outbound/CtaBlock.astro';
+import AdNotice from '@/components/outbound/AdNotice.astro';
+import SampleDataNotice from '@/components/ui/SampleDataNotice.astro';
 import { getCategoryHref, sections, type Category } from '@/data/categories';
-import { getPlaces, localNoteMeta, sortLocalNotes, type Place } from '@/data/places';
+import { formatSpec, getPlaces, localNoteMeta, sortLocalNotes, type Place } from '@/data/places';
 import { siteConfig } from '@/config/site';
 import { url } from '@/lib/url';
 
@@ -23,7 +27,9 @@ const others = getPlaces(category.section, category.slug)
 
 const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${place.name} ${place.address}`)}`;
 const telHref = place.tel ? `tel:${place.tel.replace(/-/g, '')}` : null;
-const reportHref = `mailto:${siteConfig.operator.contactEmail}?subject=${encodeURIComponent(`掲載情報の修正依頼：${place.name}（${place.id}）`)}`;
+// 修正依頼はお問い合わせフォームへ（対象を事前入力する）
+const reportHref = `${url('/contact')}?about=${encodeURIComponent(`${place.name}（${place.id}）`)}`;
+const track = { placeId: place.id, category: category.slug, section: category.section };
 
 const description =
   place.description ?? `${siteConfig.city.name}の${place.name}（${place.genre}）の住所・営業時間・アクセス情報。`;
@@ -55,7 +61,7 @@ const rows = [
 ] as const;
 ---
 
-<BaseLayout title={`${place.name}（${place.genre}）`} description={description}>
+<BaseLayout title={`${place.name}（${siteConfig.city.name}・${place.genre}）`} description={description}>
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} slot="head" />
 
   <div class="container-page max-w-4xl py-6 sm:py-10">
@@ -85,41 +91,44 @@ const rows = [
       {place.description && <p class="mt-3 leading-relaxed text-muted">{place.description}</p>}
     </header>
 
-    <!-- アクション（スマホで押しやすい大きさ） -->
-    <div class="mt-6 grid grid-cols-2 gap-2 sm:flex sm:flex-wrap">
-      {
-        place.officialUrl && (
-          <a
-            href={place.officialUrl}
-            target="_blank"
-            rel="nofollow noopener"
-            class="inline-flex items-center justify-center gap-1.5 rounded-xl bg-brand-700 px-5 py-3 text-sm font-bold text-white hover:bg-brand-800"
-          >
-            公式サイト
-            <Icon name="external" class="size-4" />
-          </a>
-        )
-      }
+    <div class="mt-5 space-y-2">
+      <AdNotice hasAffiliate={place.affiliate !== null} />
+      <SampleDataNotice />
+    </div>
+
+    <!-- 送客CTA（アフィリエイトがあれば強調表示） -->
+    {
+      (place.affiliate || place.officialUrl) && (
+        <CtaBlock place={place} category={category} placement="detail-top" size="lg" class="mt-6 sm:max-w-md" />
+      )
+    }
+
+    <!-- サブアクション（スマホで押しやすい大きさ） -->
+    <div class="mt-4 grid grid-cols-2 gap-2 sm:flex sm:flex-wrap">
       {
         telHref && (
-          <a
+          <OutboundLink
             href={telHref}
+            type="tel"
+            {...track}
+            placement="detail-actions"
             class="inline-flex items-center justify-center gap-1.5 rounded-xl border border-line px-5 py-3 text-sm font-bold hover:border-brand-200 hover:text-brand-700"
           >
             <Icon name="phone" class="size-4" />
             電話する
-          </a>
+          </OutboundLink>
         )
       }
-      <a
+      <OutboundLink
         href={mapUrl}
-        target="_blank"
-        rel="noopener"
+        type="map"
+        {...track}
+        placement="detail-actions"
         class="inline-flex items-center justify-center gap-1.5 rounded-xl border border-line px-5 py-3 text-sm font-bold hover:border-brand-200 hover:text-brand-700"
       >
         <Icon name="mapPin" class="size-4" />
         地図で見る
-      </a>
+      </OutboundLink>
     </div>
 
     <div class="mt-8 grid gap-6 lg:grid-cols-[1fr_300px]">
@@ -135,9 +144,9 @@ const rows = [
                 </dt>
                 <dd class="break-words">
                   {row.label === '電話番号' && row.value && telHref ? (
-                    <a href={telHref} class="text-brand-700 hover:underline">
+                    <OutboundLink href={telHref} type="tel" {...track} placement="detail-info" class="text-brand-700 hover:underline">
                       {row.value}
-                    </a>
+                    </OutboundLink>
                   ) : (
                     (row.value ?? <span class="text-muted">—</span>)
                   )}
@@ -153,9 +162,9 @@ const rows = [
             <dd class="break-all">
               {
                 place.officialUrl ? (
-                  <a href={place.officialUrl} target="_blank" rel="nofollow noopener" class="text-brand-700 hover:underline">
+                  <OutboundLink href={place.officialUrl} type="official" {...track} placement="detail-info" class="text-brand-700 hover:underline">
                     {place.officialUrl}
-                  </a>
+                  </OutboundLink>
                 ) : (
                   <span class="text-muted">—</span>
                 )
@@ -163,6 +172,19 @@ const rows = [
             </dd>
           </div>
         </dl>
+
+        <h2 id="spec-title" class="mt-8 text-lg font-bold">比較ポイント</h2>
+        <dl class="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-3">
+          {
+            category.axes.map((axis) => (
+              <div class="rounded-xl border border-line px-3 py-2.5">
+                <dt class="text-[11px] text-muted">{axis.label}</dt>
+                <dd class="mt-0.5 font-bold">{formatSpec(axis, place.specs[axis.key])}</dd>
+              </div>
+            ))
+          }
+        </dl>
+        <p class="mt-2 text-[11px] text-muted">※料金は編集部調査時点の目安です。「—」は未確認の項目です。</p>
       </section>
 
       <!-- 地域文脈（localNote）：地元目線の補足情報 -->
@@ -202,6 +224,15 @@ const rows = [
     </p>
 
     {
+      place.affiliate && (
+        <div class="mt-8 rounded-2xl border border-cta-600/20 bg-cta-50/60 p-5 text-center">
+          <p class="text-sm font-bold">{place.name}が気になったら</p>
+          <CtaBlock place={place} category={category} placement="detail-bottom" size="lg" class="mx-auto mt-3 max-w-md" />
+        </div>
+      )
+    }
+
+    {
       others.length > 0 && (
         <section class="mt-12" aria-labelledby="others-title">
           <div class="mb-4 flex items-end justify-between">
@@ -215,7 +246,7 @@ const rows = [
           <ul class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {others.map((p) => (
               <li>
-                <PlaceCard place={p} section={category.section} />
+                <PlaceCard place={p} section={category.section} placement="detail-related" />
               </li>
             ))}
           </ul>

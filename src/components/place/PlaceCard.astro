@@ -1,52 +1,95 @@
 ---
+/**
+ * 店舗・スポットのカード。
+ * カード全体を詳細ページへのリンクにしつつ（タイトルのリンクを全面に広げる）、
+ * CTA ボタンは独立した外部リンクとして重ねて配置する（<a> の入れ子を避けるため）。
+ */
 import Icon from '@/components/ui/Icon.astro';
+import PrBadge from '@/components/ui/PrBadge.astro';
 import LocalNoteChips from './LocalNoteChips.astro';
-import { getPlaceHref, type Place } from '@/data/places';
-import type { SectionKey } from '@/data/categories';
+import CtaBlock from '@/components/outbound/CtaBlock.astro';
+import { categories, type SectionKey } from '@/data/categories';
+import { formatSpec, getPlaceHref, type Place } from '@/data/places';
 import { url } from '@/lib/url';
 
 interface Props {
   place: Place;
   section: SectionKey;
+  /** 計測用の設置場所 */
+  placement?: string;
+  /** CTAを表示するか（一覧では表示、関連表示などでは省略可） */
+  showCta?: boolean;
 }
 
-const { place, section } = Astro.props;
+const { place, section, placement = 'card', showCta = true } = Astro.props;
+const category = categories.find((c) => c.slug === place.category);
 const isLiving = section === 'living';
+const primaryAxes = category?.axes.filter((a) => a.primary) ?? [];
 ---
 
-<a
-  href={url(getPlaceHref(section, place))}
+<article
   class:list={[
-    'group flex h-full flex-col rounded-2xl border border-line bg-white p-4 transition hover:-translate-y-0.5 hover:shadow-lg sm:p-5',
+    'group relative flex h-full flex-col rounded-2xl border bg-white p-4 transition hover:shadow-lg sm:p-5',
+    place.affiliate ? 'border-cta-600/20' : 'border-line',
     isLiving ? 'hover:border-living-500/40' : 'hover:border-travel-500/40',
   ]}
 >
-  <span
-    class:list={[
-      'self-start rounded-full px-2 py-0.5 text-[11px] font-bold',
-      isLiving ? 'bg-living-50 text-living-700' : 'bg-travel-50 text-travel-700',
-    ]}
-  >
-    {place.genre}
-  </span>
-  <h3 class="mt-2 text-[15px] leading-snug font-bold group-hover:text-brand-700 sm:text-base">{place.name}</h3>
+  <div class="flex items-center gap-2">
+    <span
+      class:list={[
+        'rounded-full px-2 py-0.5 text-[11px] font-bold',
+        isLiving ? 'bg-living-50 text-living-700' : 'bg-travel-50 text-travel-700',
+      ]}
+    >
+      {place.genre}
+    </span>
+    {place.affiliate && <PrBadge class="ml-auto" />}
+  </div>
+  <h3 class="mt-2 text-[15px] leading-snug font-bold sm:text-base">
+    <a
+      href={url(getPlaceHref(section, place))}
+      class="after:absolute after:inset-0 after:rounded-2xl group-hover:text-brand-700 focus-visible:outline-none focus-visible:after:outline-2 focus-visible:after:outline-brand-500"
+    >
+      {place.name}
+    </a>
+  </h3>
   <p class="mt-1 flex items-start gap-1 text-xs text-muted">
     <Icon name="mapPin" class="mt-0.5 size-3.5 shrink-0" />
     {place.address.replace(/^.+?[都道府県]/, '')}
   </p>
+
   {
-    place.hours && (
-      <p class="mt-0.5 flex items-start gap-1 text-xs text-muted">
-        <Icon name="clock" class="mt-0.5 size-3.5 shrink-0" />
-        {place.hours}
-      </p>
+    primaryAxes.length > 0 && (
+      <dl class="mt-3 grid grid-cols-2 gap-2">
+        {primaryAxes.map((axis) => (
+          <div class="rounded-lg bg-surface px-2.5 py-1.5">
+            <dt class="text-[10px] text-muted">{axis.label}</dt>
+            <dd class="text-sm font-bold">{formatSpec(axis, place.specs[axis.key])}</dd>
+          </div>
+        ))}
+      </dl>
     )
   }
+
   <div class="mt-3">
     <LocalNoteChips notes={place.localNote} limit={3} />
   </div>
-  <span class:list={['mt-auto inline-flex items-center gap-0.5 self-end pt-3 text-xs font-semibold', isLiving ? 'text-living-700' : 'text-travel-700']}>
-    詳細を見る
-    <Icon name="chevronRight" class="size-4 transition-transform group-hover:translate-x-0.5" />
-  </span>
-</a>
+
+  <div class="mt-auto pt-4">
+    {
+      showCta && category && (place.affiliate || place.officialUrl) && (
+        <CtaBlock place={place} category={category} placement={placement} class="relative z-10" />
+      )
+    }
+    <span
+      class:list={[
+        'mt-2 flex items-center justify-end gap-0.5 text-xs font-semibold',
+        isLiving ? 'text-living-700' : 'text-travel-700',
+      ]}
+      aria-hidden="true"
+    >
+      詳細を見る
+      <Icon name="chevronRight" class="size-4 transition-transform group-hover:translate-x-0.5" />
+    </span>
+  </div>
+</article>

@@ -1,19 +1,19 @@
 [
   {
-    "id": "gym-b75bc8eb",
-    "name": "24h FIT みなと中央店",
+    "id": "gym-09ce24cc",
+    "name": "24h FIT 浜松駅南店",
     "category": "gym",
     "genre": "24時間ジム",
-    "address": "〇〇県みなと市中央2丁目21-7",
+    "address": "静岡県浜松市中央区砂山町2丁目21-7",
     "tel": "000-000-0001",
     "hours": "24時間営業（スタッフ在籍 10:00～19:00）",
-    "access": "みなと中央通り沿い／みなと駅から徒歩5分",
-    "officialUrl": "https://example.com/minato/gym/1",
-    "description": "24時間ジム。24h FIT みなと中央店は仕事帰りにも通いやすい立地で、初めての方向けの体験プランもあります。",
+    "access": "国道257号沿い／浜松駅から徒歩5分",
+    "officialUrl": "https://example.com/hamamatsu/gym/1",
+    "description": "24時間ジム。24h FIT 浜松駅南店は仕事帰りにも通いやすい立地で、初めての方向けの体験プランもあります。",
     "localNote": [
       {
         "type": "landmark",
-        "text": "郵便局の向かい",
+        "text": "市役所の近く",
         "source": "manual"
       },
       {
@@ -23,650 +23,940 @@
       },
       {
         "type": "station",
-        "text": "みなと駅徒歩5分",
+        "text": "浜松駅徒歩5分",
         "source": "auto"
       },
       {
         "type": "road",
-        "text": "みなと中央通り沿い",
+        "text": "国道257号沿い",
         "source": "auto"
       }
     ],
+    "specs": {
+      "monthlyFee": 7700,
+      "trial": true,
+      "open24h": true,
+      "womenOnly": false,
+      "stationWalkMin": 5,
+      "parking": null
+    },
+    "affiliate": {
+      "url": "https://example.com/aff/gym/1",
+      "label": null,
+      "program": "サンプルASP"
+    },
     "source": "mock",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "gym-568f310d",
-    "name": "フィットネスクラブ アクティオ港南",
+    "id": "gym-c61a5e8d",
+    "name": "フィットネスクラブ アクティオ高塚",
     "category": "gym",
     "genre": "総合フィットネス",
-    "address": "〇〇県みなと市港南4丁目4-6",
+    "address": "静岡県浜松市中央区高塚町2丁目23-2",
     "tel": "000-000-0002",
-    "hours": "7:00～23:00 / 第3月曜休",
-    "access": "臨港バイパス沿い／港南駅から徒歩12分",
-    "officialUrl": "https://example.com/minato/gym/2",
-    "description": "総合フィットネス。フィットネスクラブ アクティオ港南は仕事帰りにも通いやすい立地で、初めての方向けの体験プランもあります。",
+    "hours": "24時間営業（スタッフ在籍 10:00～19:00）",
+    "access": "浜松バイパス沿い／高塚駅 徒歩2分",
+    "officialUrl": "https://example.com/hamamatsu/gym/2",
+    "description": "総合フィットネス。フィットネスクラブ アクティオ高塚は仕事帰りにも通いやすい立地で、初めての方向けの体験プランもあります。",
     "localNote": [
       {
         "type": "station",
-        "text": "港南駅徒歩12分",
+        "text": "高塚駅徒歩2分",
         "source": "auto"
       },
       {
         "type": "road",
-        "text": "臨港バイパス沿い",
+        "text": "浜松バイパス沿い",
         "source": "auto"
       }
     ],
+    "specs": {
+      "monthlyFee": 6400,
+      "trial": false,
+      "open24h": false,
+      "womenOnly": true,
+      "stationWalkMin": 2,
+      "parking": null
+    },
+    "affiliate": {
+      "url": "https://example.com/aff/gym/2",
+      "label": null,
+      "program": "サンプルASP"
+    },
     "source": "mock",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "gym-ebd08c84",
-    "name": "みなと市総合体育館 トレーニングルーム",
+    "id": "gym-4389f031",
+    "name": "浜松市民スポーツセンター トレーニング室",
     "category": "gym",
     "genre": "公営ジム",
-    "address": "〇〇県みなと市北町3丁目27-5",
+    "address": "静岡県浜松市中央区砂山町2丁目3-2",
     "tel": "000-000-0003",
-    "hours": "24時間営業（スタッフ在籍 10:00～19:00）",
-    "access": "国道99号沿い／北みなと駅から徒歩11分",
-    "officialUrl": "https://example.com/minato/gym/3",
-    "description": "公営ジム。みなと市総合体育館 トレーニングルームは仕事帰りにも通いやすい立地で、初めての方向けの体験プランもあります。",
+    "hours": "7:00～23:00 / 第3月曜休",
+    "access": "浜松駅 徒歩13分・駐車場なし",
+    "officialUrl": "https://example.com/hamamatsu/gym/3",
+    "description": "公営ジム。浜松市民スポーツセンター トレーニング室は仕事帰りにも通いやすい立地で、初めての方向けの体験プランもあります。",
     "localNote": [
       {
         "type": "station",
-        "text": "北みなと駅徒歩11分",
-        "source": "auto"
-      },
-      {
-        "type": "road",
-        "text": "国道99号沿い",
+        "text": "浜松駅徒歩13分",
         "source": "auto"
       }
     ],
+    "specs": {
+      "monthlyFee": 2000,
+      "trial": true,
+      "open24h": false,
+      "womenOnly": true,
+      "stationWalkMin": 13,
+      "parking": false
+    },
+    "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "gym-6a34c599",
-    "name": "パーソナルジム BODY LAB 北町",
+    "id": "gym-54b34852",
+    "name": "パーソナルジム BODY LAB 鍛冶町",
     "category": "gym",
     "genre": "パーソナルジム",
-    "address": "〇〇県みなと市北町2丁目21-2",
+    "address": "静岡県浜松市中央区鍛冶町1丁目11-7",
     "tel": "000-000-0004",
     "hours": "24時間営業（スタッフ在籍 10:00～19:00）",
-    "access": "北みなと駅 徒歩9分・無料駐車場18台",
-    "officialUrl": "https://example.com/minato/gym/4",
-    "description": "パーソナルジム。パーソナルジム BODY LAB 北町は仕事帰りにも通いやすい立地で、初めての方向けの体験プランもあります。",
+    "access": "鍛冶町通り沿い／第一通り駅 徒歩3分",
+    "officialUrl": "https://example.com/hamamatsu/gym/4",
+    "description": "パーソナルジム。パーソナルジム BODY LAB 鍛冶町は仕事帰りにも通いやすい立地で、初めての方向けの体験プランもあります。",
     "localNote": [
       {
         "type": "station",
-        "text": "北みなと駅徒歩9分",
+        "text": "第一通り駅徒歩3分",
+        "source": "auto"
+      },
+      {
+        "type": "road",
+        "text": "鍛冶町通り沿い",
+        "source": "auto"
+      }
+    ],
+    "specs": {
+      "monthlyFee": 29800,
+      "trial": true,
+      "open24h": false,
+      "womenOnly": false,
+      "stationWalkMin": 3,
+      "parking": null
+    },
+    "affiliate": null,
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "gym-4884a5f4",
+    "name": "女性専用ジム ラフィネ浜北",
+    "category": "gym",
+    "genre": "女性専用ジム",
+    "address": "静岡県浜松市浜名区小松4丁目9-2",
+    "tel": "000-000-0005",
+    "hours": "10:00～23:00（日祝は20:00まで）",
+    "access": "小松駅から徒歩14分・無料駐車場109台",
+    "officialUrl": "https://example.com/hamamatsu/gym/5",
+    "description": "女性専用ジム。女性専用ジム ラフィネ浜北は仕事帰りにも通いやすい立地で、初めての方向けの体験プランもあります。",
+    "localNote": [
+      {
+        "type": "station",
+        "text": "小松駅徒歩14分",
         "source": "auto"
       },
       {
         "type": "parking",
-        "text": "無料駐車場18台",
+        "text": "無料駐車場109台",
         "source": "auto"
       }
     ],
+    "specs": {
+      "monthlyFee": 5800,
+      "trial": true,
+      "open24h": false,
+      "womenOnly": true,
+      "stationWalkMin": 14,
+      "parking": true
+    },
+    "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "gym-6e3ee903",
-    "name": "女性専用ジム ラフィネ緑ヶ丘",
+    "id": "gym-3db78f5d",
+    "name": "ゴールドフィット 入野店",
     "category": "gym",
-    "genre": "女性専用ジム",
-    "address": "〇〇県みなと市緑ヶ丘5丁目5-19",
-    "tel": "000-000-0005",
-    "hours": "7:00～23:00 / 第3月曜休",
-    "access": "みなと環状線沿い／緑ヶ丘駅から徒歩6分",
-    "officialUrl": "https://example.com/minato/gym/5",
-    "description": "女性専用ジム。女性専用ジム ラフィネ緑ヶ丘は仕事帰りにも通いやすい立地で、初めての方向けの体験プランもあります。",
+    "genre": "24時間ジム",
+    "address": "静岡県浜松市中央区入野町1丁目17-14",
+    "tel": "000-000-0006",
+    "hours": "10:00～23:00（日祝は20:00まで）",
+    "access": "浜松環状線沿い／高塚駅 徒歩15分",
+    "officialUrl": "https://example.com/hamamatsu/gym/6",
+    "description": "24時間ジム。ゴールドフィット 入野店は仕事帰りにも通いやすい立地で、初めての方向けの体験プランもあります。",
     "localNote": [
       {
         "type": "station",
-        "text": "緑ヶ丘駅徒歩6分",
+        "text": "高塚駅徒歩15分",
         "source": "auto"
       },
       {
         "type": "road",
-        "text": "みなと環状線沿い",
+        "text": "浜松環状線沿い",
         "source": "auto"
       }
     ],
+    "specs": {
+      "monthlyFee": 7700,
+      "trial": true,
+      "open24h": true,
+      "womenOnly": false,
+      "stationWalkMin": 15,
+      "parking": null
+    },
+    "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "car-buyback-85f19da0",
-    "name": "カーバイ みなとバイパス店",
+    "id": "car-buyback-59810e2a",
+    "name": "カーバイ 浜松バイパス高塚店",
     "category": "car-buyback",
     "genre": "買取専門店",
-    "address": "〇〇県みなと市北町2丁目27-19",
-    "tel": "000-000-0006",
-    "hours": "9:30～18:30 / 年中無休",
-    "access": "国道99号沿い（みなと北ICから車で3分）",
-    "officialUrl": "https://example.com/minato/car-buyback/1",
-    "description": "カーバイ みなとバイパス店（買取専門店）。出張査定にも対応しており、来店予約で待ち時間なく査定できます。",
+    "address": "静岡県浜松市中央区高塚町1丁目27-3",
+    "tel": "000-000-0007",
+    "hours": "10:00～19:00 / 水曜定休",
+    "access": "浜松バイパス沿い・駐車場なし",
+    "officialUrl": null,
+    "description": "カーバイ 浜松バイパス高塚店（買取専門店）。出張査定にも対応しており、来店予約で待ち時間なく査定できます。",
     "localNote": [
       {
         "type": "landmark",
-        "text": "郵便局の向かい",
+        "text": "郵便局の近く",
         "source": "manual"
       },
       {
         "type": "tip",
-        "text": "冬場は路面凍結に注意",
+        "text": "朝夕は浜松バイパスの渋滞に注意",
         "source": "manual"
       },
       {
         "type": "road",
-        "text": "国道99号沿い",
-        "source": "auto"
-      },
-      {
-        "type": "car",
-        "text": "みなと北ICから車3分",
+        "text": "浜松バイパス沿い",
         "source": "auto"
       }
     ],
+    "specs": {
+      "homeVisit": true,
+      "onlineEstimate": false,
+      "paymentDays": 6,
+      "parking": false
+    },
+    "affiliate": {
+      "url": "https://example.com/aff/car-buyback/1",
+      "label": null,
+      "program": "サンプルASP"
+    },
     "source": "mock",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "car-buyback-4a2afa2d",
-    "name": "クルマ買取ナビ 港南店",
+    "id": "car-buyback-e780cce9",
+    "name": "クルマ買取ナビ 浜北店",
     "category": "car-buyback",
     "genre": "買取専門店",
-    "address": "〇〇県みなと市港南5丁目19-12",
-    "tel": "000-000-0007",
-    "hours": "9:30～18:30 / 年中無休",
-    "access": "臨港バイパス沿い（みなと南ICから車で4分）",
-    "officialUrl": "https://example.com/minato/car-buyback/2",
-    "description": "クルマ買取ナビ 港南店（買取専門店）。出張査定にも対応しており、来店予約で待ち時間なく査定できます。",
+    "address": "静岡県浜松市浜名区小松5丁目7-1",
+    "tel": "000-000-0008",
+    "hours": "10:00～19:00 / 水曜定休",
+    "access": "国道152号沿い・無料駐車場25台",
+    "officialUrl": null,
+    "description": "クルマ買取ナビ 浜北店（買取専門店）。出張査定にも対応しており、来店予約で待ち時間なく査定できます。",
     "localNote": [
       {
         "type": "road",
-        "text": "臨港バイパス沿い",
+        "text": "国道152号沿い",
         "source": "auto"
       },
       {
-        "type": "car",
-        "text": "みなと南ICから車4分",
+        "type": "parking",
+        "text": "無料駐車場25台",
         "source": "auto"
       }
     ],
+    "specs": {
+      "homeVisit": true,
+      "onlineEstimate": false,
+      "paymentDays": 5,
+      "parking": true
+    },
+    "affiliate": {
+      "url": "https://example.com/aff/car-buyback/2",
+      "label": null,
+      "program": "サンプルASP"
+    },
     "source": "mock",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "car-buyback-0660b740",
-    "name": "みなとオートセンター",
+    "id": "car-buyback-fef54400",
+    "name": "遠州オートセンター 上島",
     "category": "car-buyback",
     "genre": "中古車販売・買取",
-    "address": "〇〇県みなと市東浜1丁目8-14",
-    "tel": "000-000-0008",
-    "hours": "10:00～20:00",
-    "access": "東浜街道沿い・駐車場なし",
-    "officialUrl": null,
-    "description": "みなとオートセンター（中古車販売・買取）。出張査定にも対応しており、来店予約で待ち時間なく査定できます。",
+    "address": "静岡県浜松市中央区上島2丁目3-17",
+    "tel": "000-000-0009",
+    "hours": "9:30～18:30 / 年中無休",
+    "access": "国道152号沿い（浜松ICから車で7分）",
+    "officialUrl": "https://example.com/hamamatsu/car-buyback/3",
+    "description": "遠州オートセンター 上島（中古車販売・買取）。出張査定にも対応しており、来店予約で待ち時間なく査定できます。",
     "localNote": [
       {
         "type": "road",
-        "text": "東浜街道沿い",
+        "text": "国道152号沿い",
+        "source": "auto"
+      },
+      {
+        "type": "car",
+        "text": "浜松ICから車7分",
         "source": "auto"
       }
     ],
+    "specs": {
+      "homeVisit": true,
+      "onlineEstimate": true,
+      "paymentDays": 4,
+      "parking": null
+    },
+    "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "car-buyback-290dbd10",
-    "name": "マイカーリンク 北町店",
+    "id": "car-buyback-fd932247",
+    "name": "マイカーリンク 入野店",
     "category": "car-buyback",
     "genre": "買取・販売",
-    "address": "〇〇県みなと市北町2丁目1-1",
-    "tel": "000-000-0009",
-    "hours": "10:00～19:00 / 水曜定休",
-    "access": "国道99号沿い（みなと北ICから車で6分）",
-    "officialUrl": "https://example.com/minato/car-buyback/4",
-    "description": "マイカーリンク 北町店（買取・販売）。出張査定にも対応しており、来店予約で待ち時間なく査定できます。",
+    "address": "静岡県浜松市中央区入野町3丁目15-18",
+    "tel": "000-000-0010",
+    "hours": "9:30～18:30 / 年中無休",
+    "access": "浜松環状線沿い（浜松西ICから車で9分）",
+    "officialUrl": "https://example.com/hamamatsu/car-buyback/4",
+    "description": "マイカーリンク 入野店（買取・販売）。出張査定にも対応しており、来店予約で待ち時間なく査定できます。",
     "localNote": [
       {
         "type": "road",
-        "text": "国道99号沿い",
+        "text": "浜松環状線沿い",
         "source": "auto"
       },
       {
         "type": "car",
-        "text": "みなと北ICから車6分",
+        "text": "浜松西ICから車9分",
         "source": "auto"
       }
     ],
+    "specs": {
+      "homeVisit": true,
+      "onlineEstimate": false,
+      "paymentDays": 1,
+      "parking": null
+    },
+    "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "car-buyback-ec68d125",
-    "name": "輸入車買取 MOTOR GATE",
+    "id": "car-buyback-3d87771e",
+    "name": "輸入車買取 MOTOR GATE 浜松",
     "category": "car-buyback",
     "genre": "輸入車専門",
-    "address": "〇〇県みなと市東浜4丁目10-2",
-    "tel": "000-000-0010",
+    "address": "静岡県浜松市中央区砂山町5丁目3-10",
+    "tel": "000-000-0011",
     "hours": "10:00～19:00 / 水曜定休",
-    "access": "東浜街道沿い（みなと南ICから車で9分）",
-    "officialUrl": "https://example.com/minato/car-buyback/5",
-    "description": "輸入車買取 MOTOR GATE（輸入車専門）。出張査定にも対応しており、来店予約で待ち時間なく査定できます。",
+    "access": "国道257号沿い・無料駐車場77台",
+    "officialUrl": null,
+    "description": "輸入車買取 MOTOR GATE 浜松（輸入車専門）。出張査定にも対応しており、来店予約で待ち時間なく査定できます。",
     "localNote": [
       {
         "type": "road",
-        "text": "東浜街道沿い",
+        "text": "国道257号沿い",
         "source": "auto"
       },
       {
-        "type": "car",
-        "text": "みなと南ICから車9分",
+        "type": "parking",
+        "text": "無料駐車場77台",
         "source": "auto"
       }
     ],
+    "specs": {
+      "homeVisit": true,
+      "onlineEstimate": true,
+      "paymentDays": 1,
+      "parking": true
+    },
+    "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "kids-school-cf445abf",
-    "name": "キッズ英会話 Little Harbor",
+    "id": "kids-school-633920e0",
+    "name": "キッズ英会話 Little Lake 駅南",
     "category": "kids-school",
     "genre": "英会話",
-    "address": "〇〇県みなと市北町3丁目15-10",
-    "tel": "000-000-0011",
-    "hours": "15:00～21:00 / 日曜休",
-    "access": "北みなと駅 徒歩6分",
-    "officialUrl": "https://example.com/minato/kids-school/1",
-    "description": "英会話の教室。キッズ英会話 Little Harborでは無料体験レッスンを随時受け付けています。",
-    "localNote": [
-      {
-        "type": "landmark",
-        "text": "市立図書館の向かい",
-        "source": "manual"
-      },
-      {
-        "type": "tip",
-        "text": "平日夜は混みやすいので土日午前が狙い目",
-        "source": "manual"
-      },
-      {
-        "type": "station",
-        "text": "北みなと駅徒歩6分",
-        "source": "auto"
-      }
-    ],
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "kids-school-064fe91b",
-    "name": "プログラミング教室 テックキッズ港南",
-    "category": "kids-school",
-    "genre": "プログラミング",
-    "address": "〇〇県みなと市港南5丁目4-3",
+    "address": "静岡県浜松市中央区砂山町2丁目25-6",
     "tel": "000-000-0012",
     "hours": "15:00～21:00 / 日曜休",
-    "access": "港南駅 徒歩11分",
-    "officialUrl": "https://example.com/minato/kids-school/2",
-    "description": "プログラミングの教室。プログラミング教室 テックキッズ港南では無料体験レッスンを随時受け付けています。",
+    "access": "浜松駅から徒歩13分",
+    "officialUrl": "https://example.com/hamamatsu/kids-school/1",
+    "description": "英会話の教室。キッズ英会話 Little Lake 駅南では無料体験レッスンを随時受け付けています。",
     "localNote": [
       {
+        "type": "landmark",
+        "text": "中央図書館の近く",
+        "source": "manual"
+      },
+      {
+        "type": "tip",
+        "text": "遠鉄電車なら駅から歩いてすぐ",
+        "source": "manual"
+      },
+      {
         "type": "station",
-        "text": "港南駅徒歩11分",
+        "text": "浜松駅徒歩13分",
         "source": "auto"
       }
     ],
+    "specs": {
+      "monthlyFee": 12200,
+      "trial": false,
+      "ageFrom": 5,
+      "pickup": false,
+      "stationWalkMin": 13,
+      "parking": null
+    },
+    "affiliate": {
+      "url": "https://example.com/aff/kids-school/1",
+      "label": null,
+      "program": "サンプルASP"
+    },
     "source": "mock",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "kids-school-efca62e0",
-    "name": "みなとスイミングスクール",
+    "id": "kids-school-0548d7c6",
+    "name": "プログラミング教室 テックキッズ高塚",
+    "category": "kids-school",
+    "genre": "プログラミング",
+    "address": "静岡県浜松市中央区高塚町3丁目21-19",
+    "tel": "000-000-0013",
+    "hours": "15:00～21:00 / 日曜休",
+    "access": "高塚駅から徒歩11分／駐車場なし",
+    "officialUrl": "https://example.com/hamamatsu/kids-school/2",
+    "description": "プログラミングの教室。プログラミング教室 テックキッズ高塚では無料体験レッスンを随時受け付けています。",
+    "localNote": [
+      {
+        "type": "station",
+        "text": "高塚駅徒歩11分",
+        "source": "auto"
+      }
+    ],
+    "specs": {
+      "monthlyFee": 10300,
+      "trial": true,
+      "ageFrom": 6,
+      "pickup": false,
+      "stationWalkMin": 11,
+      "parking": false
+    },
+    "affiliate": {
+      "url": "https://example.com/aff/kids-school/2",
+      "label": null,
+      "program": "サンプルASP"
+    },
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "kids-school-935965dc",
+    "name": "浜松スイミングスクール 上島",
     "category": "kids-school",
     "genre": "スイミング",
-    "address": "〇〇県みなと市東浜2丁目30-6",
-    "tel": "000-000-0013",
-    "hours": "10:00～19:00 / 月曜休",
-    "access": "東浜駅から徒歩6分",
-    "officialUrl": "https://example.com/minato/kids-school/3",
-    "description": "スイミングの教室。みなとスイミングスクールでは無料体験レッスンを随時受け付けています。",
+    "address": "静岡県浜松市中央区上島3丁目2-7",
+    "tel": "000-000-0014",
+    "hours": "15:00～21:00 / 日曜休",
+    "access": "上島駅 徒歩2分／駐車場109台",
+    "officialUrl": "https://example.com/hamamatsu/kids-school/3",
+    "description": "スイミングの教室。浜松スイミングスクール 上島では無料体験レッスンを随時受け付けています。",
     "localNote": [
       {
         "type": "station",
-        "text": "東浜駅徒歩6分",
+        "text": "上島駅徒歩2分",
+        "source": "auto"
+      },
+      {
+        "type": "parking",
+        "text": "駐車場109台",
         "source": "auto"
       }
     ],
+    "specs": {
+      "monthlyFee": 11500,
+      "trial": true,
+      "ageFrom": 3,
+      "pickup": false,
+      "stationWalkMin": 2,
+      "parking": true
+    },
+    "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "kids-school-27bb1913",
-    "name": "そろばん・算数教室 みらい塾",
+    "id": "kids-school-847332e2",
+    "name": "そろばん・算数教室 みらい塾 浜北",
     "category": "kids-school",
     "genre": "そろばん",
-    "address": "〇〇県みなと市緑ヶ丘2丁目9-12",
-    "tel": "000-000-0014",
-    "hours": "10:00～19:00 / 月曜休",
-    "access": "緑ヶ丘駅から徒歩8分",
-    "officialUrl": null,
-    "description": "そろばんの教室。そろばん・算数教室 みらい塾では無料体験レッスンを随時受け付けています。",
+    "address": "静岡県浜松市浜名区小松4丁目29-15",
+    "tel": "000-000-0015",
+    "hours": "15:00～21:00 / 日曜休",
+    "access": "小松駅 徒歩12分",
+    "officialUrl": "https://example.com/hamamatsu/kids-school/4",
+    "description": "そろばんの教室。そろばん・算数教室 みらい塾 浜北では無料体験レッスンを随時受け付けています。",
     "localNote": [
       {
         "type": "station",
-        "text": "緑ヶ丘駅徒歩8分",
+        "text": "小松駅徒歩12分",
         "source": "auto"
       }
     ],
+    "specs": {
+      "monthlyFee": 10700,
+      "trial": true,
+      "ageFrom": 5,
+      "pickup": false,
+      "stationWalkMin": 12,
+      "parking": null
+    },
+    "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "kids-school-b7595015",
-    "name": "キッズダンススタジオ STEP",
+    "id": "kids-school-eb73a867",
+    "name": "キッズダンススタジオ STEP 鍛冶町",
     "category": "kids-school",
     "genre": "ダンス",
-    "address": "〇〇県みなと市中央3丁目28-10",
-    "tel": "000-000-0015",
+    "address": "静岡県浜松市中央区鍛冶町3丁目13-12",
+    "tel": "000-000-0016",
     "hours": "平日 14:00～20:00 / 土 9:00～17:00",
-    "access": "みなと駅から徒歩11分",
-    "officialUrl": "https://example.com/minato/kids-school/5",
-    "description": "ダンスの教室。キッズダンススタジオ STEPでは無料体験レッスンを随時受け付けています。",
+    "access": "第一通り駅 徒歩15分",
+    "officialUrl": null,
+    "description": "ダンスの教室。キッズダンススタジオ STEP 鍛冶町では無料体験レッスンを随時受け付けています。",
     "localNote": [
       {
         "type": "station",
-        "text": "みなと駅徒歩11分",
+        "text": "第一通り駅徒歩15分",
         "source": "auto"
       }
     ],
+    "specs": {
+      "monthlyFee": 8400,
+      "trial": true,
+      "ageFrom": 4,
+      "pickup": false,
+      "stationWalkMin": 15,
+      "parking": null
+    },
+    "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "fiber-4bd03a87",
-    "name": "光回線相談カウンター みなと駅前店",
+    "id": "fiber-af5a0d50",
+    "name": "光回線相談カウンター 浜松駅南店",
     "category": "fiber",
     "genre": "回線相談窓口",
-    "address": "〇〇県みなと市東浜3丁目12-10",
-    "tel": "000-000-0016",
-    "hours": "10:00～19:00 / 不定休",
-    "access": "東浜駅 徒歩14分／駐車場なし",
-    "officialUrl": "https://example.com/minato/fiber/1",
-    "description": "光回線相談カウンター みなと駅前店（回線相談窓口）。提供エリアの確認や乗り換え相談を対面で受けられます。",
-    "localNote": [
-      {
-        "type": "landmark",
-        "text": "郵便局の向かい",
-        "source": "manual"
-      },
-      {
-        "type": "tip",
-        "text": "冬場は路面凍結に注意",
-        "source": "manual"
-      },
-      {
-        "type": "station",
-        "text": "東浜駅徒歩14分",
-        "source": "auto"
-      }
-    ],
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "fiber-48b1dba2",
-    "name": "ケーブルテレビみなと 本社窓口",
-    "category": "fiber",
-    "genre": "ケーブルテレビ・光回線",
-    "address": "〇〇県みなと市緑ヶ丘4丁目13-14",
+    "address": "静岡県浜松市中央区砂山町4丁目25-17",
     "tel": "000-000-0017",
     "hours": "10:00～19:00 / 不定休",
-    "access": "緑ヶ丘駅 徒歩7分",
-    "officialUrl": "https://example.com/minato/fiber/2",
-    "description": "ケーブルテレビみなと 本社窓口（ケーブルテレビ・光回線）。提供エリアの確認や乗り換え相談を対面で受けられます。",
+    "access": "浜松駅から徒歩13分",
+    "officialUrl": "https://example.com/hamamatsu/fiber/1",
+    "description": "光回線相談カウンター 浜松駅南店（回線相談窓口）。提供エリアの確認や乗り換え相談を対面で受けられます。",
     "localNote": [
       {
+        "type": "landmark",
+        "text": "イオンの近く",
+        "source": "manual"
+      },
+      {
+        "type": "tip",
+        "text": "遠鉄電車なら駅から歩いてすぐ",
+        "source": "manual"
+      },
+      {
         "type": "station",
-        "text": "緑ヶ丘駅徒歩7分",
+        "text": "浜松駅徒歩13分",
         "source": "auto"
       }
     ],
+    "specs": {
+      "monthlyFee": 4970,
+      "maxSpeedGbps": 10,
+      "consultation": true,
+      "stationWalkMin": 13,
+      "parking": null
+    },
+    "affiliate": {
+      "url": "https://example.com/aff/fiber/1",
+      "label": null,
+      "program": "サンプルASP"
+    },
     "source": "mock",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "fiber-036b1719",
-    "name": "家電のミナト 港南店 通信コーナー",
+    "id": "fiber-fcd91a85",
+    "name": "遠州ケーブルネット 本社窓口",
     "category": "fiber",
-    "genre": "家電量販店",
-    "address": "〇〇県みなと市港南5丁目18-9",
-    "tel": null,
-    "hours": "10:00～20:00",
-    "access": "港南駅から徒歩12分",
-    "officialUrl": "https://example.com/minato/fiber/3",
-    "description": "家電のミナト 港南店 通信コーナー（家電量販店）。提供エリアの確認や乗り換え相談を対面で受けられます。",
-    "localNote": [
-      {
-        "type": "station",
-        "text": "港南駅徒歩12分",
-        "source": "auto"
-      }
-    ],
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "fiber-80fde2d8",
-    "name": "スマホ&光 相談ショップ 北町店",
-    "category": "fiber",
-    "genre": "キャリアショップ",
-    "address": "〇〇県みなと市北町2丁目11-14",
+    "genre": "ケーブルテレビ・光回線",
+    "address": "静岡県浜松市中央区上島5丁目14-17",
     "tel": "000-000-0018",
     "hours": "10:00～19:00 / 不定休",
-    "access": "北みなと駅 徒歩14分",
-    "officialUrl": null,
-    "description": "スマホ&光 相談ショップ 北町店（キャリアショップ）。提供エリアの確認や乗り換え相談を対面で受けられます。",
+    "access": "上島駅から徒歩7分",
+    "officialUrl": "https://example.com/hamamatsu/fiber/2",
+    "description": "遠州ケーブルネット 本社窓口（ケーブルテレビ・光回線）。提供エリアの確認や乗り換え相談を対面で受けられます。",
     "localNote": [
       {
         "type": "station",
-        "text": "北みなと駅徒歩14分",
+        "text": "上島駅徒歩7分",
         "source": "auto"
       }
     ],
+    "specs": {
+      "monthlyFee": 5860,
+      "maxSpeedGbps": 1,
+      "consultation": true,
+      "stationWalkMin": 7,
+      "parking": null
+    },
+    "affiliate": {
+      "url": "https://example.com/aff/fiber/2",
+      "label": null,
+      "program": "サンプルASP"
+    },
     "source": "mock",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "energy-cef7879d",
-    "name": "みなと電力 お客さまセンター",
-    "category": "energy",
-    "genre": "地域電力",
-    "address": "〇〇県みなと市中央4丁目25-5",
+    "id": "fiber-9c6009e4",
+    "name": "家電のハママツ 高塚店 通信コーナー",
+    "category": "fiber",
+    "genre": "家電量販店",
+    "address": "静岡県浜松市中央区高塚町3丁目7-18",
+    "tel": null,
+    "hours": "10:00～19:00 / 不定休",
+    "access": "高塚駅 徒歩8分",
+    "officialUrl": "https://example.com/hamamatsu/fiber/3",
+    "description": "家電のハママツ 高塚店 通信コーナー（家電量販店）。提供エリアの確認や乗り換え相談を対面で受けられます。",
+    "localNote": [
+      {
+        "type": "station",
+        "text": "高塚駅徒歩8分",
+        "source": "auto"
+      }
+    ],
+    "specs": {
+      "monthlyFee": 5040,
+      "maxSpeedGbps": 1,
+      "consultation": true,
+      "stationWalkMin": 8,
+      "parking": null
+    },
+    "affiliate": null,
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "fiber-bb8d9bdc",
+    "name": "スマホ&光 相談ショップ 浜北店",
+    "category": "fiber",
+    "genre": "キャリアショップ",
+    "address": "静岡県浜松市浜名区小松1丁目6-11",
     "tel": "000-000-0019",
-    "hours": "9:00～17:00 / 土日祝休",
-    "access": "みなと駅から徒歩6分／駐車場なし",
+    "hours": "10:00～19:00 / 不定休",
+    "access": "小松駅から徒歩14分",
     "officialUrl": null,
-    "description": "地域電力の窓口。みなと電力 お客さまセンターでは料金プランのシミュレーションができます。",
+    "description": "スマホ&光 相談ショップ 浜北店（キャリアショップ）。提供エリアの確認や乗り換え相談を対面で受けられます。",
     "localNote": [
       {
-        "type": "landmark",
-        "text": "市立図書館の向かい",
-        "source": "manual"
-      },
-      {
-        "type": "tip",
-        "text": "冬場は路面凍結に注意",
-        "source": "manual"
-      },
-      {
         "type": "station",
-        "text": "みなと駅徒歩6分",
+        "text": "小松駅徒歩14分",
         "source": "auto"
       }
     ],
+    "specs": {
+      "monthlyFee": 5020,
+      "maxSpeedGbps": 10,
+      "consultation": true,
+      "stationWalkMin": 14,
+      "parking": null
+    },
+    "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "energy-7b137542",
-    "name": "みなとガス ショールーム",
+    "id": "energy-d80e6a1c",
+    "name": "遠州でんき お客さまセンター 鍛冶町",
     "category": "energy",
-    "genre": "都市ガス",
-    "address": "〇〇県みなと市緑ヶ丘4丁目12-17",
+    "genre": "新電力",
+    "address": "静岡県浜松市中央区鍛冶町4丁目23-14",
     "tel": "000-000-0020",
     "hours": "10:00～18:00",
-    "access": "緑ヶ丘駅 徒歩7分",
-    "officialUrl": "https://example.com/minato/energy/2",
-    "description": "都市ガスの窓口。みなとガス ショールームでは料金プランのシミュレーションができます。",
-    "localNote": [
-      {
-        "type": "station",
-        "text": "緑ヶ丘駅徒歩7分",
-        "source": "auto"
-      }
-    ],
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "energy-b2c22537",
-    "name": "でんきの相談所 緑ヶ丘",
-    "category": "energy",
-    "genre": "新電力 相談窓口",
-    "address": "〇〇県みなと市緑ヶ丘5丁目12-20",
-    "tel": "000-000-0021",
-    "hours": "9:00～17:00 / 土日祝休",
-    "access": "緑ヶ丘駅から徒歩12分",
-    "officialUrl": "https://example.com/minato/energy/3",
-    "description": "新電力 相談窓口の窓口。でんきの相談所 緑ヶ丘では料金プランのシミュレーションができます。",
-    "localNote": [
-      {
-        "type": "station",
-        "text": "緑ヶ丘駅徒歩12分",
-        "source": "auto"
-      }
-    ],
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "moving-929b1298",
-    "name": "みなと引越センター",
-    "category": "moving",
-    "genre": "引越し",
-    "address": "〇〇県みなと市中央3丁目6-2",
-    "tel": "000-000-0022",
-    "hours": "8:00～20:00 / 年中無休",
-    "access": "みなと中央通り沿い（みなと中央ICから車で14分）",
-    "officialUrl": null,
-    "description": "みなと引越センター（引越し）。市内の近距離引越しや単身パックの見積もりに対応しています。",
+    "access": "第一通り駅から徒歩6分／無料駐車場88台",
+    "officialUrl": "https://example.com/hamamatsu/energy/1",
+    "description": "新電力の窓口。遠州でんき お客さまセンター 鍛冶町では料金プランのシミュレーションができます。",
     "localNote": [
       {
         "type": "landmark",
-        "text": "市立図書館の向かい",
+        "text": "中央図書館の近く",
         "source": "manual"
       },
       {
         "type": "tip",
-        "text": "平日夜は混みやすいので土日午前が狙い目",
+        "text": "朝夕は浜松バイパスの渋滞に注意",
+        "source": "manual"
+      },
+      {
+        "type": "station",
+        "text": "第一通り駅徒歩6分",
+        "source": "auto"
+      },
+      {
+        "type": "parking",
+        "text": "無料駐車場88台",
+        "source": "auto"
+      }
+    ],
+    "specs": {
+      "simulation": true,
+      "setDiscount": false,
+      "stationWalkMin": 6,
+      "parking": true
+    },
+    "affiliate": {
+      "url": "https://example.com/aff/energy/1",
+      "label": null,
+      "program": "サンプルASP"
+    },
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "energy-35ebdcfc",
+    "name": "浜松ガス サービスショップ 上島",
+    "category": "energy",
+    "genre": "ガス",
+    "address": "静岡県浜松市中央区上島4丁目29-20",
+    "tel": "000-000-0021",
+    "hours": "9:00～17:00 / 土日祝休",
+    "access": "上島駅から徒歩13分",
+    "officialUrl": "https://example.com/hamamatsu/energy/2",
+    "description": "ガスの窓口。浜松ガス サービスショップ 上島では料金プランのシミュレーションができます。",
+    "localNote": [
+      {
+        "type": "station",
+        "text": "上島駅徒歩13分",
+        "source": "auto"
+      }
+    ],
+    "specs": {
+      "simulation": false,
+      "setDiscount": true,
+      "stationWalkMin": 13,
+      "parking": null
+    },
+    "affiliate": {
+      "url": "https://example.com/aff/energy/2",
+      "label": null,
+      "program": "サンプルASP"
+    },
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "energy-a7da5061",
+    "name": "でんきの相談所 浜北",
+    "category": "energy",
+    "genre": "新電力 相談窓口",
+    "address": "静岡県浜松市浜名区小松3丁目13-16",
+    "tel": "000-000-0022",
+    "hours": "10:00～18:00",
+    "access": "小松駅 徒歩2分／駐車場なし",
+    "officialUrl": "https://example.com/hamamatsu/energy/3",
+    "description": "新電力 相談窓口の窓口。でんきの相談所 浜北では料金プランのシミュレーションができます。",
+    "localNote": [
+      {
+        "type": "station",
+        "text": "小松駅徒歩2分",
+        "source": "auto"
+      }
+    ],
+    "specs": {
+      "simulation": false,
+      "setDiscount": true,
+      "stationWalkMin": 2,
+      "parking": false
+    },
+    "affiliate": null,
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "moving-ff61294c",
+    "name": "遠州引越センター 高塚",
+    "category": "moving",
+    "genre": "引越し",
+    "address": "静岡県浜松市中央区高塚町1丁目18-1",
+    "tel": "000-000-0023",
+    "hours": "8:00～20:00 / 年中無休",
+    "access": "浜松バイパス沿い（浜松西ICから車で12分）",
+    "officialUrl": "https://example.com/hamamatsu/moving/1",
+    "description": "遠州引越センター 高塚（引越し）。市内の近距離引越しや単身パックの見積もりに対応しています。",
+    "localNote": [
+      {
+        "type": "landmark",
+        "text": "中央図書館の近く",
+        "source": "manual"
+      },
+      {
+        "type": "tip",
+        "text": "遠鉄電車なら駅から歩いてすぐ",
         "source": "manual"
       },
       {
         "type": "road",
-        "text": "みなと中央通り沿い",
+        "text": "浜松バイパス沿い",
         "source": "auto"
       },
       {
         "type": "car",
-        "text": "みなと中央ICから車14分",
+        "text": "浜松西ICから車12分",
         "source": "auto"
       }
     ],
+    "specs": {
+      "onlineEstimate": true,
+      "singlePlanFee": 39000,
+      "disposal": false
+    },
+    "affiliate": {
+      "url": "https://example.com/aff/moving/1",
+      "label": null,
+      "program": "サンプルASP"
+    },
     "source": "mock",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "moving-b62e343d",
-    "name": "ハーバー引越サービス",
+    "id": "moving-dcc59a48",
+    "name": "レイクサイド引越サービス 入野",
     "category": "moving",
     "genre": "引越し",
-    "address": "〇〇県みなと市東浜4丁目21-3",
-    "tel": "000-000-0023",
-    "hours": "8:00～20:00 / 年中無休",
-    "access": "東浜街道沿い（みなと南ICから車で15分）",
-    "officialUrl": "https://example.com/minato/moving/2",
-    "description": "ハーバー引越サービス（引越し）。市内の近距離引越しや単身パックの見積もりに対応しています。",
-    "localNote": [
-      {
-        "type": "road",
-        "text": "東浜街道沿い",
-        "source": "auto"
-      },
-      {
-        "type": "car",
-        "text": "みなと南ICから車15分",
-        "source": "auto"
-      }
-    ],
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "moving-b5743063",
-    "name": "エコ回収みなと",
-    "category": "moving",
-    "genre": "不用品回収",
-    "address": "〇〇県みなと市東浜2丁目13-15",
+    "address": "静岡県浜松市中央区入野町1丁目14-9",
     "tel": null,
     "hours": "9:00～18:00 / 日曜休",
-    "access": "東浜街道沿い（みなと南ICから車で8分）",
-    "officialUrl": "https://example.com/minato/moving/3",
-    "description": "エコ回収みなと（不用品回収）。市内の近距離引越しや単身パックの見積もりに対応しています。",
+    "access": "浜松環状線沿い（浜松西ICから車で12分）",
+    "officialUrl": "https://example.com/hamamatsu/moving/2",
+    "description": "レイクサイド引越サービス 入野（引越し）。市内の近距離引越しや単身パックの見積もりに対応しています。",
     "localNote": [
       {
         "type": "road",
-        "text": "東浜街道沿い",
+        "text": "浜松環状線沿い",
         "source": "auto"
       },
       {
         "type": "car",
-        "text": "みなと南ICから車8分",
+        "text": "浜松西ICから車12分",
         "source": "auto"
       }
     ],
+    "specs": {
+      "onlineEstimate": false,
+      "singlePlanFee": 38000,
+      "disposal": true
+    },
+    "affiliate": {
+      "url": "https://example.com/aff/moving/2",
+      "label": null,
+      "program": "サンプルASP"
+    },
     "source": "mock",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "moving-0228b87d",
-    "name": "みなと市 粗大ごみ受付センター",
+    "id": "moving-b0c4b765",
+    "name": "エコ回収 浜北",
     "category": "moving",
-    "genre": "公的窓口",
-    "address": "〇〇県みなと市港南2丁目16-18",
+    "genre": "不用品回収",
+    "address": "静岡県浜松市浜名区小松4丁目15-8",
     "tel": "000-000-0024",
-    "hours": "9:00～18:00 / 日曜休",
-    "access": "臨港バイパス沿い（みなと南ICから車で11分）",
-    "officialUrl": "https://example.com/minato/moving/4",
-    "description": "みなと市 粗大ごみ受付センター（公的窓口）。市内の近距離引越しや単身パックの見積もりに対応しています。",
+    "hours": "8:00～20:00 / 年中無休",
+    "access": "国道152号沿い・無料駐車場19台",
+    "officialUrl": "https://example.com/hamamatsu/moving/3",
+    "description": "エコ回収 浜北（不用品回収）。市内の近距離引越しや単身パックの見積もりに対応しています。",
     "localNote": [
       {
         "type": "road",
-        "text": "臨港バイパス沿い",
+        "text": "国道152号沿い",
+        "source": "auto"
+      },
+      {
+        "type": "parking",
+        "text": "無料駐車場19台",
+        "source": "auto"
+      }
+    ],
+    "specs": {
+      "onlineEstimate": true,
+      "singlePlanFee": 42000,
+      "disposal": true
+    },
+    "affiliate": null,
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "moving-1e6b2051",
+    "name": "浜松クリーンサービス 上島",
+    "category": "moving",
+    "genre": "不用品回収",
+    "address": "静岡県浜松市中央区上島4丁目23-16",
+    "tel": null,
+    "hours": "8:00～20:00 / 年中無休",
+    "access": "国道152号沿い（浜松ICから車で4分）",
+    "officialUrl": "https://example.com/hamamatsu/moving/4",
+    "description": "浜松クリーンサービス 上島（不用品回収）。市内の近距離引越しや単身パックの見積もりに対応しています。",
+    "localNote": [
+      {
+        "type": "road",
+        "text": "国道152号沿い",
         "source": "auto"
       },
       {
         "type": "car",
-        "text": "みなと南ICから車11分",
+        "text": "浜松ICから車4分",
         "source": "auto"
       }
     ],
+    "specs": {
+      "onlineEstimate": false,
+      "singlePlanFee": 30000,
+      "disposal": true
+    },
+    "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
   }

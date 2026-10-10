@@ -1,15 +1,39 @@
 ---
 import ProseLayout from '@/layouts/ProseLayout.astro';
 import { siteConfig } from '@/config/site';
+import { url } from '@/lib/url';
+
+const { city, contact, portal } = siteConfig;
 ---
 
 <ProseLayout title="運営者情報" description={`${siteConfig.siteName}の運営者情報`}>
-  <p>{siteConfig.siteName}は、{siteConfig.city.prefecture}{siteConfig.city.name}の暮らしとおでかけに役立つ情報を発信する地域メディアです。</p>
+  <p>
+    {siteConfig.siteName}は、{city.prefecture}{city.name}の暮らしとおでかけに役立つ情報を発信する地域メディアです。
+    {portal.name}の{city.shortName}版として運営しています。
+  </p>
   <h2>運営者</h2>
   <ul>
     <li>運営：{siteConfig.operator.name}</li>
-    <li>お問い合わせ：{siteConfig.operator.contactEmail}</li>
+    <li>対象エリア：{city.prefecture}{city.name}</li>
   </ul>
+  <h2>お問い合わせ</h2>
+  <p>
+    掲載内容の修正依頼・掲載のご相談・その他のお問い合わせは、<a href={url('/contact')}>お問い合わせフォーム</a>よりご連絡ください。
+  </p>
+  {
+    contact.sns.length > 0 && (
+      <ul>
+        {contact.sns.map((s) => (
+          <li>
+            {s.name}：
+            <a href={s.url} target="_blank" rel="noopener noreferrer">
+              {s.handle}
+            </a>
+          </li>
+        ))}
+      </ul>
+    )
+  }
   <h2>編集方針</h2>
-  <p>掲載する施設・サービスは、料金や条件を同じ基準でそろえて比較することを基本とし、広告の有無によって評価を変えることはありません。</p>
+  <p>掲載する施設・サービスは、料金や条件を同じ基準でそろえて比較することを基本とし、広告の有無によって評価や掲載順を変えることはありません。</p>
 </ProseLayout>

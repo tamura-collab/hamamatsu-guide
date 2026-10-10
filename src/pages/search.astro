@@ -38,7 +38,7 @@ const keywords = (...parts: (string | undefined)[]) => parts.filter(Boolean).joi
       <ul class="grid grid-cols-2 gap-3 lg:grid-cols-4">
         {
           categories.map((c) => (
-            <li data-search={keywords(c.title, c.summary, sections[c.section].label, ...c.points)} hidden>
+            <li data-search={keywords(c.title, c.summary, sections[c.section].label, ...c.axes.map((a) => a.label))} hidden>
               <CategoryCard category={c} />
             </li>
           ))

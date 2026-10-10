@@ -1,10 +1,14 @@
 {
-  "gym-b75bc8eb": {
-    "_name": "24h FIT みなと中央店",
+  "gym-09ce24cc": {
+    "_name": "24h FIT 浜松駅南店",
+    "affiliate": {
+      "url": "https://example.com/aff/gym/1",
+      "program": "サンプルASP"
+    },
     "localNote": [
       {
         "type": "landmark",
-        "text": "郵便局の向かい"
+        "text": "市役所の近く"
       },
       {
         "type": "tip",
@@ -12,25 +16,167 @@
       }
     ]
   },
-  "car-buyback-85f19da0": {
-    "_name": "カーバイ みなとバイパス店",
+  "gym-c61a5e8d": {
+    "_name": "フィットネスクラブ アクティオ高塚",
+    "affiliate": {
+      "url": "https://example.com/aff/gym/2",
+      "program": "サンプルASP"
+    }
+  },
+  "car-buyback-59810e2a": {
+    "_name": "カーバイ 浜松バイパス高塚店",
+    "affiliate": {
+      "url": "https://example.com/aff/car-buyback/1",
+      "program": "サンプルASP"
+    },
     "localNote": [
       {
         "type": "landmark",
-        "text": "郵便局の向かい"
+        "text": "郵便局の近く"
       },
       {
         "type": "tip",
-        "text": "冬場は路面凍結に注意"
+        "text": "朝夕は浜松バイパスの渋滞に注意"
       }
     ]
   },
-  "kids-school-cf445abf": {
-    "_name": "キッズ英会話 Little Harbor",
+  "car-buyback-e780cce9": {
+    "_name": "クルマ買取ナビ 浜北店",
+    "affiliate": {
+      "url": "https://example.com/aff/car-buyback/2",
+      "program": "サンプルASP"
+    }
+  },
+  "kids-school-633920e0": {
+    "_name": "キッズ英会話 Little Lake 駅南",
+    "affiliate": {
+      "url": "https://example.com/aff/kids-school/1",
+      "program": "サンプルASP"
+    },
     "localNote": [
       {
         "type": "landmark",
-        "text": "市立図書館の向かい"
+        "text": "中央図書館の近く"
+      },
+      {
+        "type": "tip",
+        "text": "遠鉄電車なら駅から歩いてすぐ"
+      }
+    ]
+  },
+  "kids-school-0548d7c6": {
+    "_name": "プログラミング教室 テックキッズ高塚",
+    "affiliate": {
+      "url": "https://example.com/aff/kids-school/2",
+      "program": "サンプルASP"
+    }
+  },
+  "fiber-af5a0d50": {
+    "_name": "光回線相談カウンター 浜松駅南店",
+    "affiliate": {
+      "url": "https://example.com/aff/fiber/1",
+      "program": "サンプルASP"
+    },
+    "localNote": [
+      {
+        "type": "landmark",
+        "text": "イオンの近く"
+      },
+      {
+        "type": "tip",
+        "text": "遠鉄電車なら駅から歩いてすぐ"
+      }
+    ]
+  },
+  "fiber-fcd91a85": {
+    "_name": "遠州ケーブルネット 本社窓口",
+    "affiliate": {
+      "url": "https://example.com/aff/fiber/2",
+      "program": "サンプルASP"
+    }
+  },
+  "energy-d80e6a1c": {
+    "_name": "遠州でんき お客さまセンター 鍛冶町",
+    "affiliate": {
+      "url": "https://example.com/aff/energy/1",
+      "program": "サンプルASP"
+    },
+    "localNote": [
+      {
+        "type": "landmark",
+        "text": "中央図書館の近く"
+      },
+      {
+        "type": "tip",
+        "text": "朝夕は浜松バイパスの渋滞に注意"
+      }
+    ]
+  },
+  "energy-35ebdcfc": {
+    "_name": "浜松ガス サービスショップ 上島",
+    "affiliate": {
+      "url": "https://example.com/aff/energy/2",
+      "program": "サンプルASP"
+    }
+  },
+  "moving-ff61294c": {
+    "_name": "遠州引越センター 高塚",
+    "affiliate": {
+      "url": "https://example.com/aff/moving/1",
+      "program": "サンプルASP"
+    },
+    "localNote": [
+      {
+        "type": "landmark",
+        "text": "中央図書館の近く"
+      },
+      {
+        "type": "tip",
+        "text": "遠鉄電車なら駅から歩いてすぐ"
+      }
+    ]
+  },
+  "moving-dcc59a48": {
+    "_name": "レイクサイド引越サービス 入野",
+    "affiliate": {
+      "url": "https://example.com/aff/moving/2",
+      "program": "サンプルASP"
+    }
+  },
+  "rental-car-a356cffb": {
+    "_name": "浜松レンタカー 駅南店",
+    "affiliate": {
+      "url": "https://example.com/aff/rental-car/1",
+      "program": "サンプルASP"
+    },
+    "localNote": [
+      {
+        "type": "landmark",
+        "text": "郵便局の近く"
+      },
+      {
+        "type": "tip",
+        "text": "朝夕は浜松バイパスの渋滞に注意"
+      }
+    ]
+  },
+  "rental-car-5d080431": {
+    "_name": "エンシューレンタカー 鍛冶町営業所",
+    "affiliate": {
+      "url": "https://example.com/aff/rental-car/2",
+      "program": "サンプルASP"
+    }
+  },
+  "hotel-93650f3b": {
+    "_name": "ホテル浜松シティ 駅南",
+    "affiliate": {
+      "url": "https://example.com/aff/hotel/1",
+      "program": "サンプルASP"
+    },
+    "localNote": [
+      {
+        "type": "landmark",
+        "text": "市役所の近く"
       },
       {
         "type": "tip",
@@ -38,38 +184,23 @@
       }
     ]
   },
-  "fiber-4bd03a87": {
-    "_name": "光回線相談カウンター みなと駅前店",
-    "localNote": [
-      {
-        "type": "landmark",
-        "text": "郵便局の向かい"
-      },
-      {
-        "type": "tip",
-        "text": "冬場は路面凍結に注意"
-      }
-    ]
+  "hotel-2553e28c": {
+    "_name": "ビジネスホテル ポートイン 鍛冶町",
+    "affiliate": {
+      "url": "https://example.com/aff/hotel/2",
+      "program": "サンプルASP"
+    }
   },
-  "energy-cef7879d": {
-    "_name": "みなと電力 お客さまセンター",
+  "rainy-day-f9d18524": {
+    "_name": "はままつサイエンスラボ 駅南",
+    "affiliate": {
+      "url": "https://example.com/aff/rainy-day/1",
+      "program": "サンプルASP"
+    },
     "localNote": [
       {
         "type": "landmark",
-        "text": "市立図書館の向かい"
-      },
-      {
-        "type": "tip",
-        "text": "冬場は路面凍結に注意"
-      }
-    ]
-  },
-  "moving-929b1298": {
-    "_name": "みなと引越センター",
-    "localNote": [
-      {
-        "type": "landmark",
-        "text": "市立図書館の向かい"
+        "text": "中央図書館の近く"
       },
       {
         "type": "tip",
@@ -77,38 +208,23 @@
       }
     ]
   },
-  "rental-car-f9d7ad7f": {
-    "_name": "みなとレンタカー 駅前店",
-    "localNote": [
-      {
-        "type": "landmark",
-        "text": "郵便局の向かい"
-      },
-      {
-        "type": "tip",
-        "text": "冬場は路面凍結に注意"
-      }
-    ]
+  "rainy-day-e2c1e56d": {
+    "_name": "浜名湖アクアミュージアム 舞阪",
+    "affiliate": {
+      "url": "https://example.com/aff/rainy-day/2",
+      "program": "サンプルASP"
+    }
   },
-  "hotel-d9b6a113": {
-    "_name": "ホテルみなとシティ",
+  "night-bus-c9b00a8a": {
+    "_name": "浜松駅 高速バスのりば（駅南）",
+    "affiliate": {
+      "url": "https://example.com/aff/night-bus/1",
+      "program": "サンプルASP"
+    },
     "localNote": [
       {
         "type": "landmark",
-        "text": "中央公園の向かい"
-      },
-      {
-        "type": "tip",
-        "text": "冬場は路面凍結に注意"
-      }
-    ]
-  },
-  "rainy-day-81a07daf": {
-    "_name": "みなと市立科学館",
-    "localNote": [
-      {
-        "type": "landmark",
-        "text": "市民病院の向かい"
+        "text": "中央図書館の近く"
       },
       {
         "type": "tip",
@@ -116,43 +232,59 @@
       }
     ]
   },
-  "night-bus-9f032f74": {
-    "_name": "みなと駅前バスターミナル",
+  "night-bus-a4a4c15d": {
+    "_name": "浜松バイパス高塚 高速バス停",
+    "affiliate": {
+      "url": "https://example.com/aff/night-bus/2",
+      "program": "サンプルASP"
+    }
+  },
+  "gourmet-2330e700": {
+    "_name": "うなぎ処 湖東 駅南",
+    "affiliate": {
+      "url": "https://example.com/aff/gourmet/1",
+      "program": "サンプルASP"
+    },
     "localNote": [
       {
         "type": "landmark",
-        "text": "郵便局の向かい"
+        "text": "イオンの近く"
       },
       {
         "type": "tip",
-        "text": "冬場は路面凍結に注意"
+        "text": "朝夕は浜松バイパスの渋滞に注意"
       }
     ]
   },
-  "gourmet-65facd5b": {
-    "_name": "港町食堂 うみかぜ",
+  "gourmet-365716ae": {
+    "_name": "浜松餃子 まるはち 鍛冶町",
+    "affiliate": {
+      "url": "https://example.com/aff/gourmet/2",
+      "program": "サンプルASP"
+    }
+  },
+  "parking-7c6cce3a": {
+    "_name": "浜松駅南パーキング",
+    "affiliate": {
+      "url": "https://example.com/aff/parking/1",
+      "program": "サンプルASP"
+    },
     "localNote": [
       {
         "type": "landmark",
-        "text": "市民病院の向かい"
+        "text": "イオンの近く"
       },
       {
         "type": "tip",
-        "text": "平日夜は混みやすいので土日午前が狙い目"
+        "text": "遠鉄電車なら駅から歩いてすぐ"
       }
     ]
   },
-  "parking-22b3f7a4": {
-    "_name": "みなと中央パーキング",
-    "localNote": [
-      {
-        "type": "landmark",
-        "text": "中央公園の向かい"
-      },
-      {
-        "type": "tip",
-        "text": "駅の東口から出ると近い"
-      }
-    ]
+  "parking-9bfddc6f": {
+    "_name": "コインパーク鍛冶町第2",
+    "affiliate": {
+      "url": "https://example.com/aff/parking/2",
+      "program": "サンプルASP"
+    }
   }
 }

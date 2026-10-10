@@ -11,9 +11,61 @@ export interface Category {
   icon: IconName;
   /** カード上のラベル（任意） */
   badge?: string;
-  /** 比較ポイント（詳細ページのモック表示に使用） */
-  points: string[];
+  /** 比較軸（比較テーブル・ソート・フィルター・データ検証に使用） */
+  axes: CompareAxis[];
+  /** アフィリエイト導線のCTA（ボタン文言とマイクロコピー） */
+  cta: CategoryCta;
 }
+
+/**
+ * 比較軸の定義。値は各データの specs[key] に入る。
+ *   price   … 金額（円）。小さいほど上位
+ *   number  … 数値。sort で並び順を指定
+ *   boolean … あり / なし
+ *   text    … 自由記述（ソート・フィルター対象外）
+ */
+export interface CompareAxis {
+  key: string;
+  label: string;
+  type: 'price' | 'number' | 'boolean' | 'text';
+  /** 表示単位（例: '円/月', '分', '台'） */
+  unit?: string;
+  /** ソート方向。指定した軸だけ並び替えの選択肢に出る */
+  sort?: 'asc' | 'desc';
+  /** ソート選択肢の表示名（例: '月額が安い順'） */
+  sortLabel?: string;
+  /** boolean: 「ありのみ」で絞り込み / max: 指定値以下で絞り込み */
+  filter?: 'yes' | 'max';
+  /** filter: 'max' の選択肢 */
+  filterOptions?: number[];
+  /** フィルターの表示名（例: '無料体験あり'） */
+  filterLabel?: string;
+  /** カードにも表示する主要な軸 */
+  primary?: boolean;
+}
+
+export interface CategoryCta {
+  /** ボタン文言（例: '無料体験を予約する'） */
+  label: string;
+  /** ボタン上に添える一言 */
+  microcopy: string;
+}
+
+/** 複数カテゴリで共通の比較軸。駅徒歩・駐車場はアクセス情報から build-data で自動算出される */
+const AXIS = {
+  stationWalk: {
+    key: 'stationWalkMin',
+    label: '駅徒歩',
+    type: 'number',
+    unit: '分',
+    sort: 'asc',
+    sortLabel: '駅から近い順',
+    filter: 'max',
+    filterOptions: [5, 10, 15],
+    filterLabel: '駅徒歩',
+  },
+  parking: { key: 'parking', label: '駐車場', type: 'boolean', filter: 'yes', filterLabel: '駐車場あり' },
+} as const satisfies Record<string, CompareAxis>;
 
 export interface Section {
   key: SectionKey;
@@ -52,7 +104,15 @@ export const categories: Category[] = [
     summary: '24時間ジム、公営ジム、パーソナルまで月額・設備で比較',
     icon: 'dumbbell',
     badge: '人気',
-    points: ['月額料金', '営業時間', '駐車場の有無', '女性専用エリア'],
+    axes: [
+      { key: 'monthlyFee', label: '月額目安', type: 'price', unit: '円/月', sort: 'asc', sortLabel: '月額が安い順', primary: true },
+      { key: 'trial', label: '体験', type: 'boolean', filter: 'yes', filterLabel: '体験あり', primary: true },
+      { key: 'open24h', label: '24時間', type: 'boolean', filter: 'yes', filterLabel: '24時間営業' },
+      { key: 'womenOnly', label: '女性専用エリア', type: 'boolean', filter: 'yes', filterLabel: '女性専用エリアあり' },
+      AXIS.stationWalk,
+      AXIS.parking,
+    ],
+    cta: { label: '無料体験を予約する', microcopy: '入会前に設備と混雑具合をチェック' },
   },
   {
     slug: 'car-buyback',
@@ -60,7 +120,13 @@ export const categories: Category[] = [
     title: '車買取・売却',
     summary: '市内の買取店と一括査定サービスの査定額・手間を比較',
     icon: 'car',
-    points: ['査定方法', '出張査定', '入金スピード', '対応エリア'],
+    axes: [
+      { key: 'homeVisit', label: '出張査定', type: 'boolean', filter: 'yes', filterLabel: '出張査定あり', primary: true },
+      { key: 'onlineEstimate', label: 'Web査定', type: 'boolean', filter: 'yes', filterLabel: 'Web査定あり', primary: true },
+      { key: 'paymentDays', label: '入金目安', type: 'number', unit: '日', sort: 'asc', sortLabel: '入金が早い順' },
+      AXIS.parking,
+    ],
+    cta: { label: '無料査定を試す', microcopy: '査定額を見てから売るか決められます' },
   },
   {
     slug: 'kids-school',
@@ -69,7 +135,15 @@ export const categories: Category[] = [
     summary: '英会話・プログラミング・スイミングなどを駅・料金で探す',
     icon: 'graduation',
     badge: '新着',
-    points: ['対象年齢', '月謝', '送迎の有無', '体験レッスン'],
+    axes: [
+      { key: 'monthlyFee', label: '月謝目安', type: 'price', unit: '円/月', sort: 'asc', sortLabel: '月謝が安い順', primary: true },
+      { key: 'trial', label: '体験', type: 'boolean', filter: 'yes', filterLabel: '体験レッスンあり', primary: true },
+      { key: 'ageFrom', label: '対象年齢', type: 'number', unit: '歳〜', sort: 'asc', sortLabel: '小さい子から通える順' },
+      { key: 'pickup', label: '送迎', type: 'boolean', filter: 'yes', filterLabel: '送迎あり' },
+      AXIS.stationWalk,
+      AXIS.parking,
+    ],
+    cta: { label: '体験レッスンを申し込む', microcopy: 'お子さまに合うか、まずは体験で' },
   },
   {
     slug: 'fiber',
@@ -77,7 +151,14 @@ export const categories: Category[] = [
     title: '光回線・インターネット',
     summary: 'エリア対応状況と実効速度、スマホセット割で比較',
     icon: 'wifi',
-    points: ['月額料金', '提供エリア', '実効速度', 'キャンペーン'],
+    axes: [
+      { key: 'monthlyFee', label: '月額目安', type: 'price', unit: '円/月', sort: 'asc', sortLabel: '月額が安い順', primary: true },
+      { key: 'maxSpeedGbps', label: '最大速度', type: 'number', unit: 'Gbps', sort: 'desc', sortLabel: '速度が速い順', primary: true },
+      { key: 'consultation', label: '対面相談', type: 'boolean', filter: 'yes', filterLabel: '対面相談可' },
+      AXIS.stationWalk,
+      AXIS.parking,
+    ],
+    cta: { label: '提供エリアを確認する', microcopy: '住所を入れるだけで対応状況がわかります' },
   },
   {
     slug: 'energy',
@@ -85,7 +166,13 @@ export const categories: Category[] = [
     title: '電気・ガス',
     summary: '地域電力と新電力のプランを、世帯人数別にシミュレーション',
     icon: 'bolt',
-    points: ['基本料金', '従量単価', 'セット割', '解約金'],
+    axes: [
+      { key: 'simulation', label: '料金試算', type: 'boolean', filter: 'yes', filterLabel: '料金試算あり', primary: true },
+      { key: 'setDiscount', label: 'セット割', type: 'boolean', filter: 'yes', filterLabel: 'セット割あり', primary: true },
+      AXIS.stationWalk,
+      AXIS.parking,
+    ],
+    cta: { label: '料金をシミュレーションする', microcopy: '今の明細と比べてみましょう' },
   },
   {
     slug: 'moving',
@@ -93,7 +180,12 @@ export const categories: Category[] = [
     title: '引越し・不用品回収',
     summary: '市内・県外への引越し相場と、粗大ごみの出し方まとめ',
     icon: 'truck',
-    points: ['料金相場', '繁忙期料金', '見積もり方法', '回収品目'],
+    axes: [
+      { key: 'onlineEstimate', label: 'Web見積もり', type: 'boolean', filter: 'yes', filterLabel: 'Web見積もり可', primary: true },
+      { key: 'singlePlanFee', label: '単身目安', type: 'price', unit: '円〜', sort: 'asc', sortLabel: '単身プランが安い順', primary: true },
+      { key: 'disposal', label: '不用品回収', type: 'boolean', filter: 'yes', filterLabel: '不用品回収あり' },
+    ],
+    cta: { label: '無料で見積もる', microcopy: '繁忙期は早めの見積もりがおすすめ' },
   },
   // ---- 訪れる ----
   {
@@ -103,7 +195,13 @@ export const categories: Category[] = [
     summary: '駅前・空港の営業所と料金、乗り捨て可否を比較',
     icon: 'key',
     badge: '人気',
-    points: ['24時間料金', '営業所の場所', '乗り捨て', '禁煙車'],
+    axes: [
+      { key: 'price24h', label: '24時間料金目安', type: 'price', unit: '円〜', sort: 'asc', sortLabel: '料金が安い順', primary: true },
+      { key: 'dropOff', label: '乗り捨て', type: 'boolean', filter: 'yes', filterLabel: '乗り捨て可', primary: true },
+      { key: 'nonSmoking', label: '禁煙車', type: 'boolean', filter: 'yes', filterLabel: '禁煙車あり' },
+      AXIS.stationWalk,
+    ],
+    cta: { label: '空車と料金を確認する', microcopy: '{station}周辺で受け取りできるプランも' },
   },
   {
     slug: 'hotel',
@@ -111,7 +209,14 @@ export const categories: Category[] = [
     title: 'ホテル・宿泊',
     summary: 'ビジネスホテルから温泉旅館まで、エリア別に探す',
     icon: 'bed',
-    points: ['1泊料金', '駅からの距離', '朝食', '大浴場'],
+    axes: [
+      { key: 'priceFrom', label: '1泊料金目安', type: 'price', unit: '円〜', sort: 'asc', sortLabel: '料金が安い順', primary: true },
+      { key: 'breakfast', label: '朝食', type: 'boolean', filter: 'yes', filterLabel: '朝食あり', primary: true },
+      { key: 'largeBath', label: '大浴場', type: 'boolean', filter: 'yes', filterLabel: '大浴場あり' },
+      AXIS.stationWalk,
+      AXIS.parking,
+    ],
+    cta: { label: '{station}周辺の空室を見る', microcopy: '連休・イベント時は早めの予約が安心' },
   },
   {
     slug: 'rainy-day',
@@ -120,7 +225,14 @@ export const categories: Category[] = [
     summary: '屋内で楽しめる博物館・商業施設・子ども向け施設',
     icon: 'umbrella',
     badge: '特集',
-    points: ['入場料', '対象年齢', '駐車場', '滞在目安'],
+    axes: [
+      { key: 'admission', label: '入場料（大人）', type: 'price', unit: '円', sort: 'asc', sortLabel: '入場料が安い順', primary: true },
+      { key: 'kidsFriendly', label: '子ども向け', type: 'boolean', filter: 'yes', filterLabel: '子ども向け', primary: true },
+      { key: 'stayMinutes', label: '滞在目安', type: 'number', unit: '分', sort: 'desc', sortLabel: '長く過ごせる順' },
+      AXIS.stationWalk,
+      AXIS.parking,
+    ],
+    cta: { label: '営業時間・チケットを確認する', microcopy: '休館日はお出かけ前にチェック' },
   },
   {
     slug: 'night-bus',
@@ -128,7 +240,13 @@ export const categories: Category[] = [
     title: '夜行バス・高速バス',
     summary: '東京・大阪方面の便と座席タイプ、乗り場を比較',
     icon: 'bus',
-    points: ['運賃', '所要時間', '座席タイプ', '乗車場所'],
+    axes: [
+      { key: 'fareFrom', label: '運賃目安', type: 'price', unit: '円〜', sort: 'asc', sortLabel: '運賃が安い順', primary: true },
+      { key: 'seatType', label: '座席', type: 'text', primary: true },
+      { key: 'womenSeats', label: '女性専用席', type: 'boolean', filter: 'yes', filterLabel: '女性専用席あり' },
+      AXIS.stationWalk,
+    ],
+    cta: { label: '空席を確認する', microcopy: '週末便は売り切れが早めです' },
   },
   {
     slug: 'gourmet',
@@ -136,7 +254,13 @@ export const categories: Category[] = [
     title: 'ご当地グルメ',
     summary: '地元で愛される名物と、駅近で入りやすいお店',
     icon: 'utensils',
-    points: ['価格帯', '予約可否', '営業時間', '駅からの距離'],
+    axes: [
+      { key: 'budget', label: '予算目安', type: 'price', unit: '円〜', sort: 'asc', sortLabel: '予算が安い順', primary: true },
+      { key: 'reservation', label: '予約', type: 'boolean', filter: 'yes', filterLabel: '予約可', primary: true },
+      AXIS.stationWalk,
+      AXIS.parking,
+    ],
+    cta: { label: '予約・空席を確認する', microcopy: '人気店は週末の予約がおすすめ' },
   },
   {
     slug: 'parking',
@@ -144,7 +268,13 @@ export const categories: Category[] = [
     title: '駐車場・パーク&ライド',
     summary: '中心市街地の駐車場料金と、公共交通への乗り継ぎ',
     icon: 'parking',
-    points: ['最大料金', '収容台数', '営業時間', '駅からの距離'],
+    axes: [
+      { key: 'maxDaily', label: '最大料金', type: 'price', unit: '円/日', sort: 'asc', sortLabel: '最大料金が安い順', primary: true },
+      { key: 'capacity', label: '収容台数', type: 'number', unit: '台', sort: 'desc', sortLabel: '台数が多い順', primary: true },
+      { key: 'open24h', label: '24時間', type: 'boolean', filter: 'yes', filterLabel: '24時間営業' },
+      AXIS.stationWalk,
+    ],
+    cta: { label: '料金・空き状況を見る', microcopy: 'イベント開催日は早めに満車になります' },
   },
 ];
 

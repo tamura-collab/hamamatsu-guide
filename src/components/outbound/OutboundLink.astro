@@ -1,0 +1,53 @@
+---
+/**
+ * 外部への送客リンク。rel 属性と計測用の data 属性を自動で付与する。
+ *
+ *   affiliate … アフィリエイト（広告）リンク
+ *   official  … 公式サイト・予約ページ
+ *   map       … 地図
+ *   tel       … 電話
+ *
+ * 公式サイト・予約ページ・広告リンクには rel="sponsored nofollow noopener noreferrer" を付ける。
+ * クリックは src/lib/tracking.ts が data-track 属性を拾って計測する（OutboundTracker.astro）。
+ */
+import type { HTMLAttributes } from 'astro/types';
+import type { SectionKey } from '@/data/categories';
+
+export type OutboundType = 'affiliate' | 'official' | 'map' | 'tel';
+
+interface Props extends Omit<HTMLAttributes<'a'>, 'href' | 'rel' | 'target'> {
+  href: string;
+  type: OutboundType;
+  /** 計測用: 店舗・スポットID */
+  placeId?: string;
+  category?: string;
+  section?: SectionKey;
+  /** 計測用: ページ内の設置場所（例: 'card', 'detail-cta', 'table'） */
+  placement?: string;
+}
+
+const { href, type, placeId, category, section, placement, ...attrs } = Astro.props;
+
+const REL: Record<OutboundType, string | undefined> = {
+  affiliate: 'sponsored nofollow noopener noreferrer',
+  official: 'sponsored nofollow noopener noreferrer',
+  map: 'noopener noreferrer',
+  tel: undefined,
+};
+const external = type !== 'tel';
+---
+
+<a
+  href={href}
+  rel={REL[type]}
+  target={external ? '_blank' : undefined}
+  data-track={type}
+  data-place-id={placeId}
+  data-category={category}
+  data-section={section}
+  data-placement={placement}
+  {...attrs}
+>
+  <slot />
+  {external && <span class="sr-only">（新しいタブで開きます）</span>}
+</a>

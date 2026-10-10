@@ -4,6 +4,7 @@
  * brand  : 信頼感のある深いネイビーブルー（ロゴ・主要ボタン）
  * living : 落ち着いたグリーン（暮らす）
  * travel : 明るいオレンジ（訪れる）
+ * cta    : 送客ボタン専用の濃いオレンジ
  */
 @theme {
   --font-sans:
@@ -30,6 +31,11 @@
   --color-travel-500: #f08a32;
   --color-travel-600: #d9701b;
   --color-travel-700: #b05715;
+
+  /* CTA（送客ボタン）: 白文字でコントラスト比 4.5:1 以上を確保 */
+  --color-cta-50: #fff4ed;
+  --color-cta-600: #c2410c;
+  --color-cta-700: #9a3412;
 
   --color-ink: #1f2933;
   --color-muted: #5f6b76;

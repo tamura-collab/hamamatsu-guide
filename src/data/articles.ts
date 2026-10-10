@@ -18,8 +18,8 @@ export interface Article {
 export const articles: Article[] = [
   {
     slug: 'fiber-comparison-2026',
-    title: '【2026年版】みなと市で使える光回線5社を徹底比較｜エリア・速度・料金',
-    excerpt: '市内の提供エリアを区ごとに調査。マンション・戸建て別におすすめの回線をまとめました。',
+    title: '【2026年版】浜松市で使える光回線5社を徹底比較｜エリア・速度・料金',
+    excerpt: '中央区・浜名区・天竜区の提供エリアを調査。マンション・戸建て別におすすめの回線をまとめました。',
     section: 'living',
     category: 'fiber',
     publishedAt: '2026-10-08',
@@ -29,8 +29,8 @@ export const articles: Article[] = [
   },
   {
     slug: 'rainy-day-kids-spots',
-    title: '雨の日でも子どもが飽きない！市内の屋内スポット10選',
-    excerpt: '無料で遊べる児童館から、駅直結の科学館まで。駐車場情報つき。',
+    title: '雨の日でも子どもが飽きない！浜松の屋内スポット10選',
+    excerpt: '無料で遊べる児童館から、浜松駅近くの科学館まで。車で行きやすい駐車場情報つき。',
     section: 'travel',
     category: 'rainy-day',
     publishedAt: '2026-10-06',
@@ -39,8 +39,8 @@ export const articles: Article[] = [
   },
   {
     slug: '24h-gym-guide',
-    title: '24時間ジムはどこがいい？駅別・月額別に市内12店舗を比較',
-    excerpt: '仕事帰りに通いやすい中心部の店舗と、駐車場が広い郊外店舗を分けて紹介。',
+    title: '24時間ジムはどこがいい？浜松駅周辺と郊外の12店舗を月額で比較',
+    excerpt: '仕事帰りに通いやすい浜松駅周辺の店舗と、浜松バイパス沿いの駐車場が広い店舗を分けて紹介。',
     section: 'living',
     category: 'gym',
     publishedAt: '2026-10-03',
@@ -49,8 +49,8 @@ export const articles: Article[] = [
   },
   {
     slug: 'night-bus-tokyo',
-    title: 'みなと市⇔東京の夜行バス完全ガイド｜3列シートの快適な便はどれ？',
-    excerpt: '乗り場の行き方、女性専用席の有無、新幹線との費用比較まで。',
+    title: '浜松⇔東京の夜行バス完全ガイド｜3列シートの快適な便はどれ？',
+    excerpt: '浜松駅の乗り場の行き方、女性専用席の有無、新幹線との費用比較まで。',
     section: 'travel',
     category: 'night-bus',
     publishedAt: '2026-09-29',
@@ -58,7 +58,7 @@ export const articles: Article[] = [
   },
   {
     slug: 'car-buyback-tips',
-    title: '車を高く売るには？市内の買取店と一括査定、実際に比べてみた',
+    title: '車を高く売るには？浜松の買取店と一括査定、実際に比べてみた',
     excerpt: '同じ車で査定額に最大18万円の差。手間と金額のバランスを解説します。',
     section: 'living',
     category: 'car-buyback',
@@ -68,7 +68,7 @@ export const articles: Article[] = [
   },
   {
     slug: 'station-hotels',
-    title: '駅から徒歩5分以内のビジネスホテル8選｜出張・観光の拠点に',
+    title: '浜松駅から徒歩5分以内のビジネスホテル8選｜出張・観光の拠点に',
     excerpt: '大浴場あり・朝食が評判・連泊割など、目的別に選べるよう整理しました。',
     section: 'travel',
     category: 'hotel',

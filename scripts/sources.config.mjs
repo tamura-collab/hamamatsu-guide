@@ -18,7 +18,8 @@
  * @property {string} url         一覧ページURL。'fixture:ファイル名' でローカルのHTMLを読む
  * @property {'static'|'browser'} [render] 'browser' は JS 描画が必要なサイト向け（Playwright を使用）
  * @property {string} list        1件分の要素を指す CSS セレクタ
- * @property {Record<string, string|FieldSpec>} fields  収集フィールド → セレクタ
+ * @property {Record<string, string|FieldSpec>} fields  収集フィールド → セレクタ。
+ *           'specs.<key>' は比較軸（categories.ts の axes）の値として収集する
  * @property {Record<string, string>} [defaults]       ページから取れない項目の既定値
  * @property {string} [next]      次ページリンクのセレクタ（ページ送り）
  * @property {number} [maxPages]  取得する最大ページ数（既定 1）
@@ -42,6 +43,8 @@ export default [
       hours: '.shop-hours',
       access: '.shop-access',
       officialUrl: { selector: 'a.shop-link', attr: 'href' },
+      'specs.monthlyFee': '.shop-fee',
+      'specs.trial': '.shop-trial',
     },
     defaults: { genre: 'フィットネス' },
     next: 'a.next-page',

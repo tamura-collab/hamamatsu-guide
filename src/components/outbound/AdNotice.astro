@@ -1,0 +1,33 @@
+---
+// 景表法（ステマ規制）対応の広告表記。カテゴリ・詳細ページの冒頭とカード内で使う。
+import PrBadge from '@/components/ui/PrBadge.astro';
+import { url } from '@/lib/url';
+
+interface Props {
+  /** ページ（またはカード）にアフィリエイトリンクが含まれるか */
+  hasAffiliate: boolean;
+  variant?: 'banner' | 'inline';
+}
+
+const { hasAffiliate, variant = 'banner' } = Astro.props;
+const text = hasAffiliate ? 'アフィリエイト広告が含まれています（PR）' : 'アフィリエイト広告を含む場合があります（PR）';
+---
+
+{
+  variant === 'banner' ? (
+    <p class="flex items-start gap-2 rounded-lg border border-amber-200 bg-amber-50 px-3 py-2 text-xs leading-relaxed text-amber-900">
+      <PrBadge class="mt-0.5 shrink-0" />
+      <span>
+        このページには{text}。掲載順位や評価は広告の有無に関係なく、編集部の基準で決めています。
+        <a href={url('/affiliate')} class="underline">
+          広告について
+        </a>
+      </span>
+    </p>
+  ) : (
+    <p class="flex items-center gap-1.5 text-[11px] text-amber-900">
+      <PrBadge />
+      {text}
+    </p>
+  )
+}

@@ -26,14 +26,42 @@ export const LOCAL_NOTE_TYPES = {
 
 export const SOURCES = ['mock', 'scrape', 'manual'];
 
+/**
+ * 比較軸の値を型に合わせて変換する（スクレイピング結果の「7,678円」「あり」などを数値・真偽値へ）。
+ * 変換できない場合は undefined を返す。
+ */
+export function coerceSpec(axis, value) {
+  if (value === null || value === undefined || value === '') return null;
+  switch (axis.type) {
+    case 'price':
+    case 'number': {
+      if (typeof value === 'number') return Number.isFinite(value) ? value : undefined;
+      if (/^(無料|0円)$/.test(String(value).trim())) return 0;
+      const m = String(value).replace(/[,，]/g, '').match(/\d+(?:\.\d+)?/);
+      return m ? Number(m[0]) : undefined;
+    }
+    case 'boolean': {
+      if (typeof value === 'boolean') return value;
+      const v = String(value).trim();
+      if (/^(あり|有|○|〇|可|対応|yes|true)$/i.test(v)) return true;
+      if (/^(なし|無|×|不可|非対応|no|false)$/i.test(v)) return false;
+      return undefined;
+    }
+    default:
+      return String(value).trim() || null;
+  }
+}
+
+const EXPECTED_TYPE = { price: 'number', number: 'number', boolean: 'boolean', text: 'string' };
+
 const isNonEmptyString = (v) => typeof v === 'string' && v.trim().length > 0;
 
 /**
  * 最終データ 1 件を検証し、問題点のリストを返す（空配列なら OK）。
- * @param {Record<string, unknown>} place
- * @param {Set<string>} categorySlugs そのデータセットで許可されるカテゴリ
+ * @param {Record<string, any>} place
+ * @param {Map<string, { axes: { key: string, type: string }[] }>} categoryMap そのデータセットで許可されるカテゴリ
  */
-export function validatePlace(place, categorySlugs) {
+export function validatePlace(place, categoryMap) {
   const errors = [];
   if (!/^[a-z0-9-]+$/.test(place.id ?? '')) errors.push(`id が不正です: ${place.id}`);
   for (const [key, def] of Object.entries(RAW_FIELDS)) {
@@ -41,8 +69,26 @@ export function validatePlace(place, categorySlugs) {
     if (def.required && !isNonEmptyString(v)) errors.push(`${def.label}（${key}）は必須です`);
     if (!def.required && v !== null && typeof v !== 'string') errors.push(`${key} は文字列か null です`);
   }
-  if (place.category && !categorySlugs.has(place.category)) {
+  const category = categoryMap.get(place.category);
+  if (place.category && !category) {
     errors.push(`未定義のカテゴリです: ${place.category}`);
+  }
+  if (typeof place.specs !== 'object' || place.specs === null) {
+    errors.push('specs はオブジェクトです');
+  } else if (category) {
+    const axes = new Map(category.axes.map((a) => [a.key, a]));
+    for (const [key, value] of Object.entries(place.specs)) {
+      const axis = axes.get(key);
+      if (!axis) errors.push(`specs.${key} はカテゴリ「${place.category}」の比較軸にありません`);
+      else if (value !== null && typeof value !== EXPECTED_TYPE[axis.type]) {
+        errors.push(`specs.${key} は ${EXPECTED_TYPE[axis.type]} です（値: ${JSON.stringify(value)}）`);
+      } else if (typeof value === 'number' && value < 0) errors.push(`specs.${key} が負の値です`);
+    }
+  }
+  if (place.affiliate !== null) {
+    if (typeof place.affiliate !== 'object' || !/^https?:\/\//.test(place.affiliate?.url ?? '')) {
+      errors.push(`affiliate.url が不正です: ${place.affiliate?.url}`);
+    }
   }
   if (place.tel && !/^0\d{1,4}-\d{1,4}-\d{3,4}$/.test(place.tel)) {
     errors.push(`電話番号の形式が不正です: ${place.tel}`);

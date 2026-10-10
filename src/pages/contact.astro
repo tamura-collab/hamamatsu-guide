@@ -1,0 +1,79 @@
+---
+import ProseLayout from '@/layouts/ProseLayout.astro';
+import { siteConfig } from '@/config/site';
+import { url } from '@/lib/url';
+
+const { contact } = siteConfig;
+const topics = ['掲載情報の修正依頼', '掲載・広告のご相談', '記事へのご意見', 'その他'];
+---
+
+<ProseLayout title="お問い合わせ" description={`${siteConfig.siteName}へのお問い合わせ`}>
+  <p>以下のフォームよりお問い合わせください。内容を確認のうえ、必要に応じて編集部よりご返信します。</p>
+  {
+    contact.sns.length > 0 && (
+      <p>
+        公式SNSでも情報を発信しています：
+        {contact.sns.map((s, i) => (
+          <>
+            {i > 0 && ' / '}
+            <a href={s.url} target="_blank" rel="noopener noreferrer">
+              {s.name}（{s.handle}）
+            </a>
+          </>
+        ))}
+      </p>
+    )
+  }
+
+  <form
+    id="contact-form"
+    method="post"
+    action={contact.formEndpoint ?? undefined}
+    data-enabled={contact.formEndpoint ? 'true' : 'false'}
+    class="mt-6 space-y-5 rounded-2xl border border-line p-5 sm:p-6"
+  >
+    <label class="block">
+      <span class="text-sm font-bold">お問い合わせ種別</span>
+      <select id="contact-topic" name="topic" class="mt-1.5 block w-full rounded-lg border border-line bg-white px-3 py-2.5 text-base">
+        {topics.map((t) => <option>{t}</option>)}
+      </select>
+    </label>
+    <label class="block">
+      <span class="text-sm font-bold">お名前 <span class="text-xs font-normal text-muted">（任意）</span></span>
+      <input name="name" autocomplete="name" class="mt-1.5 block w-full rounded-lg border border-line px-3 py-2.5 text-base" />
+    </label>
+    <label class="block">
+      <span class="text-sm font-bold">返信先メールアドレス <span class="text-xs font-normal text-travel-700">必須</span></span>
+      <input type="email" name="email" required autocomplete="email" class="mt-1.5 block w-full rounded-lg border border-line px-3 py-2.5 text-base" />
+    </label>
+    <label class="block">
+      <span class="text-sm font-bold">お問い合わせ内容 <span class="text-xs font-normal text-travel-700">必須</span></span>
+      <textarea id="contact-message" name="message" required rows="6" class="mt-1.5 block w-full rounded-lg border border-line px-3 py-2.5 text-base"></textarea>
+    </label>
+    <p class="text-xs text-muted">送信いただいた情報は<a href={url('/privacy')}>プライバシーポリシー</a>に基づき、お問い合わせへの対応にのみ利用します。</p>
+    <button type="submit" class="w-full rounded-xl bg-brand-700 px-6 py-3 text-sm font-bold text-white hover:bg-brand-800 sm:w-auto">送信する</button>
+    <p id="contact-status" class="text-sm text-muted" aria-live="polite"></p>
+  </form>
+</ProseLayout>
+
+<script>
+  const form = document.querySelector<HTMLFormElement>('#contact-form');
+  const status = document.querySelector<HTMLElement>('#contact-status');
+  const params = new URLSearchParams(location.search);
+
+  // 詳細ページの「情報の誤りを報告する」から来た場合は種別と対象を事前入力する
+  const about = params.get('about');
+  if (about) {
+    const topic = document.querySelector<HTMLSelectElement>('#contact-topic');
+    const message = document.querySelector<HTMLTextAreaElement>('#contact-message');
+    if (topic) topic.value = '掲載情報の修正依頼';
+    if (message && !message.value) message.value = `対象：${about}\n修正内容：\n`;
+  }
+
+  // 送信先（siteConfig.contact.formEndpoint）が未設定の間は送信しない
+  form?.addEventListener('submit', (e) => {
+    if (form.dataset.enabled === 'true') return;
+    e.preventDefault();
+    if (status) status.textContent = 'お問い合わせフォームは現在準備中です。公開までしばらくお待ちください。';
+  });
+</script>

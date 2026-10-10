@@ -13,6 +13,7 @@ export const mainNav: NavItem[] = [
 /** フッターのポリシー系リンク */
 export const policyNav: NavItem[] = [
   { label: '運営者情報', href: '/about' },
+  { label: 'お問い合わせ', href: '/contact' },
   { label: 'プライバシーポリシー', href: '/privacy' },
   { label: '免責事項', href: '/disclaimer' },
   { label: 'アフィリエイト・広告について', href: '/affiliate' },

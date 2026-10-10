@@ -1,0 +1,330 @@
+---
+/**
+ * カテゴリの比較一覧（カード / 表の切り替え・ソート・フィルター）。
+ * 比較軸は categories.ts の axes、値は各データの specs から自動生成する。
+ * 全件をサーバー側（ビルド時）で描画し、並び替え・絞り込みはクライアントで要素の並べ替えと表示切替のみ行う。
+ * そのため JavaScript が無効でも全件が表示される。
+ */
+import Icon from '@/components/ui/Icon.astro';
+import PrBadge from '@/components/ui/PrBadge.astro';
+import PlaceCard from '@/components/place/PlaceCard.astro';
+import OutboundLink from '@/components/outbound/OutboundLink.astro';
+import type { Category } from '@/data/categories';
+import { formatSpec, getPlaceHref, sortLocalNotes, type Place } from '@/data/places';
+import { resolveCta } from '@/lib/cta';
+import { url } from '@/lib/url';
+
+interface Props {
+  category: Category;
+  places: Place[];
+}
+
+const { category, places } = Astro.props;
+const axes = category.axes;
+const sortAxes = axes.filter((a) => a.sort);
+const boolFilters = axes.filter((a) => a.filter === 'yes');
+const maxFilters = axes.filter((a) => a.filter === 'max');
+
+/** 料金系の軸で最も安い値（「最安」ラベル用） */
+const cheapest = new Map(
+  axes
+    .filter((a) => a.type === 'price')
+    .map((a) => {
+      const values = places.map((p) => p.specs[a.key]).filter((v): v is number => typeof v === 'number');
+      return [a.key, values.length > 1 ? Math.min(...values) : undefined];
+    }),
+);
+
+/** クライアントでのソート・フィルター用に比較値を埋め込む */
+const rowData = (p: Place, index: number) => JSON.stringify({ i: index, specs: p.specs });
+---
+
+<div data-compare class="mt-6">
+  <!-- 操作パネル -->
+  <form data-compare-controls class="rounded-2xl border border-line bg-surface p-3 sm:p-4" aria-label="並び替えと絞り込み">
+    <div class="flex flex-wrap items-center gap-x-4 gap-y-3">
+      <label class="flex items-center gap-2 text-sm">
+        <span class="shrink-0 font-bold">並び替え</span>
+        <select name="sort" class="rounded-lg border border-line bg-white px-2.5 py-1.5 text-sm">
+          <option value="">おすすめ順</option>
+          {
+            sortAxes.map((a) => (
+              <option value={a.key} data-dir={a.sort}>
+                {a.sortLabel ?? `${a.label}順`}
+              </option>
+            ))
+          }
+        </select>
+      </label>
+
+      {
+        maxFilters.map((a) => (
+          <label class="flex items-center gap-2 text-sm">
+            <span class="shrink-0 font-bold">{a.filterLabel ?? a.label}</span>
+            <select name={`max:${a.key}`} class="rounded-lg border border-line bg-white px-2.5 py-1.5 text-sm">
+              <option value="">指定なし</option>
+              {a.filterOptions?.map((v) => (
+                <option value={v}>
+                  {v}
+                  {a.unit}以内
+                </option>
+              ))}
+            </select>
+          </label>
+        ))
+      }
+
+      <div class="ml-auto flex rounded-lg border border-line bg-white p-0.5 text-xs font-bold" role="group" aria-label="表示形式">
+        <button type="button" data-view="cards" aria-pressed="true" class="rounded-md px-3 py-1.5 aria-pressed:bg-brand-700 aria-pressed:text-white">
+          カード
+        </button>
+        <button type="button" data-view="table" aria-pressed="false" class="rounded-md px-3 py-1.5 aria-pressed:bg-brand-700 aria-pressed:text-white">
+          比較表
+        </button>
+      </div>
+    </div>
+
+    {
+      boolFilters.length > 0 && (
+        <fieldset class="mt-3 border-t border-line pt-3">
+          <legend class="sr-only">条件で絞り込む</legend>
+          <div class="flex flex-wrap gap-2">
+            {boolFilters.map((a) => (
+              <label class="cursor-pointer">
+                <input type="checkbox" name={`yes:${a.key}`} class="peer sr-only" />
+                <span class="inline-flex items-center gap-1 rounded-full border border-line bg-white px-3 py-1 text-xs font-medium peer-checked:border-brand-700 peer-checked:bg-brand-700 peer-checked:text-white peer-focus-visible:outline-2 peer-focus-visible:outline-brand-500">
+                  {a.filterLabel ?? a.label}
+                </span>
+              </label>
+            ))}
+          </div>
+        </fieldset>
+      )
+    }
+
+    <div class="mt-3 flex items-center justify-between text-xs">
+      <p aria-live="polite" class="text-muted">
+        <strong data-compare-count class="text-base text-ink">{places.length}</strong> 件を表示中
+      </p>
+      <button type="button" data-compare-reset class="font-semibold text-brand-700 underline">条件をリセット</button>
+    </div>
+  </form>
+
+  <!-- カード表示 -->
+  <ul data-compare-list="cards" class="mt-4 grid gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
+    {
+      places.map((place, i) => (
+        <li data-row={place.id} data-values={rowData(place, i)}>
+          <PlaceCard place={place} section={category.section} placement="compare-card" />
+        </li>
+      ))
+    }
+  </ul>
+
+  <!-- 比較表表示 -->
+  <div data-compare-table hidden class="mt-4 overflow-x-auto rounded-xl border border-line">
+    <table class="w-full min-w-[720px] border-collapse text-sm">
+      <caption class="sr-only">{category.title}の比較表</caption>
+      <thead class="bg-surface text-xs whitespace-nowrap text-muted">
+        <tr>
+          <th scope="col" class="sticky left-0 z-10 bg-surface px-4 py-3 text-left font-semibold">名称</th>
+          {
+            axes.map((a) => (
+              <th scope="col" class:list={['px-3 py-3 font-semibold', a.type === 'text' ? 'text-left' : 'text-center']}>
+                {a.label}
+              </th>
+            ))
+          }
+          <th scope="col" class="px-3 py-3 text-left font-semibold">地元メモ</th>
+          <th scope="col" class="px-3 py-3"><span class="sr-only">リンク</span></th>
+        </tr>
+      </thead>
+      <tbody data-compare-list="table">
+        {
+          places.map((place, i) => (
+            <tr data-row={place.id} data-values={rowData(place, i)} class="border-t border-line">
+              <th scope="row" class="sticky left-0 z-10 min-w-40 max-w-52 bg-white px-4 py-3 text-left font-bold shadow-[1px_0_0_var(--color-line)]">
+                <a href={url(getPlaceHref(category.section, place))} class="text-brand-700 hover:underline">
+                  {place.name}
+                </a>
+                {place.affiliate && <PrBadge class="ml-1 align-middle" />}
+              </th>
+              {axes.map((a) => {
+                const value = place.specs[a.key];
+                const isBest = typeof value === 'number' && cheapest.get(a.key) === value;
+                return (
+                  <td class:list={['px-3 py-3 whitespace-nowrap', a.type === 'text' ? 'text-left' : 'text-center', value === null && 'text-muted']}>
+                    {a.type === 'boolean' && value !== null ? (
+                      <span class={value ? 'font-bold text-living-700' : 'text-muted'}>{value ? '○' : '×'}</span>
+                    ) : (
+                      formatSpec(a, value)
+                    )}
+                    {isBest && <span class="ml-1 rounded bg-cta-50 px-1 text-[10px] font-bold text-cta-700">最安</span>}
+                  </td>
+                );
+              })}
+              <td class="px-3 py-3 text-xs whitespace-nowrap">{sortLocalNotes(place.localNote)[0]?.text ?? '—'}</td>
+              <td class="px-3 py-3 text-right whitespace-nowrap">
+                {place.affiliate ? (
+                  <OutboundLink
+                    href={place.affiliate.url}
+                    type="affiliate"
+                    placeId={place.id}
+                    category={category.slug}
+                    section={category.section}
+                    placement="compare-table"
+                    class="inline-flex items-center gap-1 rounded-lg bg-cta-600 px-3 py-1.5 text-xs font-bold text-white hover:bg-cta-700"
+                  >
+                    {resolveCta(category, place).label}
+                  </OutboundLink>
+                ) : (
+                  place.officialUrl && (
+                    <OutboundLink
+                      href={place.officialUrl}
+                      type="official"
+                      placeId={place.id}
+                      category={category.slug}
+                      section={category.section}
+                      placement="compare-table"
+                      class="inline-flex items-center gap-1 text-xs font-semibold text-brand-700 hover:underline"
+                    >
+                      公式サイト
+                      <Icon name="external" class="size-3.5" />
+                    </OutboundLink>
+                  )
+                )}
+              </td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <p data-compare-empty hidden class="mt-4 rounded-xl border border-dashed border-line p-8 text-center text-sm text-muted">
+    条件に合う掲載先がありません。条件を減らしてお試しください。
+  </p>
+  <p class="mt-3 text-[11px] text-muted">※料金は編集部調査時点の目安です。「—」は未確認の項目です。○=あり、×=なし。</p>
+</div>
+
+<script>
+  type Specs = Record<string, number | boolean | string | null>;
+  type Row = { i: number; specs: Specs };
+  type State = { sort: string; yes: string[]; max: [string, number][] };
+
+  function setup(root: HTMLElement) {
+    const form = root.querySelector<HTMLFormElement>('[data-compare-controls]')!;
+    const lists = [...root.querySelectorAll<HTMLElement>('[data-compare-list]')];
+    const cardList = root.querySelector<HTMLElement>('[data-compare-list="cards"]')!;
+    const table = root.querySelector<HTMLElement>('[data-compare-table]')!;
+    const count = root.querySelector<HTMLElement>('[data-compare-count]')!;
+    const empty = root.querySelector<HTMLElement>('[data-compare-empty]')!;
+    const viewButtons = [...root.querySelectorAll<HTMLButtonElement>('[data-view]')];
+    const sortSelect = form.elements.namedItem('sort') as HTMLSelectElement;
+
+    const rows = new Map<string, Row>();
+    cardList.querySelectorAll<HTMLElement>('[data-row]').forEach((el) => {
+      rows.set(el.dataset.row!, JSON.parse(el.dataset.values!));
+    });
+    // 並び替え方向は option の data-dir（categories.ts の axes[].sort）から取得する
+    const sortDir = new Map<string, string>();
+    for (const opt of sortSelect.options) if (opt.value) sortDir.set(opt.value, opt.dataset.dir ?? 'asc');
+
+    function readState(): State {
+      const data = new FormData(form);
+      const state: State = { sort: String(data.get('sort') ?? ''), yes: [], max: [] };
+      for (const [name, value] of data) {
+        const [kind, key] = name.split(':');
+        if (kind === 'yes') state.yes.push(key);
+        if (kind === 'max' && value !== '') state.max.push([key, Number(value)]);
+      }
+      return state;
+    }
+
+    function matches(specs: Specs, { yes, max }: State) {
+      return (
+        yes.every((k) => specs[k] === true) &&
+        max.every(([k, limit]) => typeof specs[k] === 'number' && (specs[k] as number) <= limit)
+      );
+    }
+
+    function compare(a: Row, b: Row, sort: string) {
+      if (sort) {
+        const x = a.specs[sort];
+        const y = b.specs[sort];
+        // 値が未確認（null）のものは常に末尾
+        if (typeof x !== 'number' && typeof y === 'number') return 1;
+        if (typeof x === 'number' && typeof y !== 'number') return -1;
+        if (typeof x === 'number' && typeof y === 'number' && x !== y) {
+          return sortDir.get(sort) === 'desc' ? y - x : x - y;
+        }
+      }
+      return a.i - b.i;
+    }
+
+    function apply() {
+      const state = readState();
+      const ids = [...rows.keys()]
+        .filter((id) => matches(rows.get(id)!.specs, state))
+        .sort((a, b) => compare(rows.get(a)!, rows.get(b)!, state.sort));
+      const visible = new Set(ids);
+
+      for (const list of lists) {
+        const els = new Map([...list.querySelectorAll<HTMLElement>('[data-row]')].map((el) => [el.dataset.row!, el]));
+        for (const id of ids) list.appendChild(els.get(id)!);
+        for (const [id, el] of els) {
+          el.hidden = !visible.has(id);
+          if (el.hidden) list.appendChild(el);
+        }
+      }
+      count.textContent = String(ids.length);
+      empty.hidden = ids.length > 0;
+      syncUrl(state);
+    }
+
+    function setView(view: string) {
+      for (const b of viewButtons) b.setAttribute('aria-pressed', String(b.dataset.view === view));
+      cardList.hidden = view !== 'cards';
+      table.hidden = view !== 'table';
+    }
+
+    // 絞り込み状態を URL に反映し、共有・再訪時に再現できるようにする
+    function syncUrl(state: State) {
+      const params = new URLSearchParams(location.search);
+      for (const k of ['sort', 'yes', 'max']) params.delete(k);
+      if (state.sort) params.set('sort', state.sort);
+      if (state.yes.length) params.set('yes', state.yes.join(','));
+      if (state.max.length) params.set('max', state.max.map(([k, v]) => `${k}-${v}`).join(','));
+      const qs = params.toString();
+      history.replaceState(null, '', `${location.pathname}${qs ? `?${qs}` : ''}${location.hash}`);
+    }
+
+    function restoreFromUrl() {
+      const params = new URLSearchParams(location.search);
+      const sort = params.get('sort');
+      if (sort && sortDir.has(sort)) sortSelect.value = sort;
+      for (const key of params.get('yes')?.split(',') ?? []) {
+        const input = form.elements.namedItem(`yes:${key}`);
+        if (input instanceof HTMLInputElement) input.checked = true;
+      }
+      for (const pair of params.get('max')?.split(',') ?? []) {
+        const [key, value] = pair.split('-');
+        const select = form.elements.namedItem(`max:${key}`);
+        if (select instanceof HTMLSelectElement) select.value = value;
+      }
+    }
+
+    form.addEventListener('submit', (e) => e.preventDefault());
+    form.addEventListener('change', apply);
+    root.querySelector('[data-compare-reset]')?.addEventListener('click', () => {
+      form.reset();
+      apply();
+    });
+    for (const b of viewButtons) b.addEventListener('click', () => setView(b.dataset.view!));
+
+    restoreFromUrl();
+    apply();
+  }
+
+  document.querySelectorAll<HTMLElement>('[data-compare]').forEach(setup);
+</script>

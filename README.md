@@ -1,7 +1,8 @@
 # 地域メディアサイト（MVP）
 
 人口30〜100万人規模の地方中核都市向けの地域メディアです。「暮らす（生活インフラ比較）」と「訪れる（観光・移動）」の2本柱で構成しています。
-モック用の対象都市は架空の「みなと市」です。
+現在の対象都市は **静岡県浜松市**（`citySlug: hamamatsu`）です。親ポータル「みんなの地域ガイド」配下の都市版として展開する想定です。
+掲載中の店舗・施設データは開発用のサンプル（架空の店舗名・料金）です。
 
 - **技術スタック**: Astro 7（静的サイト出力）/ Tailwind CSS v4 / TypeScript
 - **要件**: Node.js 22.12 以上
@@ -36,6 +37,7 @@ npm run dev        # http://localhost:4321
 | `/living/[category]/[id]` | 店舗詳細（`src/data/stores.json` から自動生成） |
 | `/travel/[category]/[id]` | 観光スポット詳細（`src/data/spots.json` から自動生成） |
 | `/articles` `/articles/[slug]` | 記事一覧・記事詳細（モック） |
+| `/contact` | お問い合わせフォーム（送信先は `siteConfig.contact.formEndpoint`） |
 | `/search?q=` | サイト内検索（クライアントサイド） |
 | `/about` `/privacy` `/disclaimer` `/affiliate` | 運営者情報・プライバシーポリシー・免責事項・アフィリエイト開示 |
 
@@ -48,10 +50,12 @@ media-site/
 │   ├── raw/{stores,spots}/ # 収集した生データ（mock.json / スクレイピング結果）
 │   └── enrichment.json     # 人手の補正・地域文脈メモ（localNote）
 ├── scripts/                # データ収集・加工スクリプト（後述）
+├── api/log.js              # 送客ログ収集API（Vercel Functions・モック）
 ├── public/                 # favicon などの静的ファイル
 └── src/
     ├── config/
-    │   ├── site.ts         # サイト名・対象都市・キャッチコピー・PR表記
+    │   ├── cities.ts       # 都市ごとの設定（citySlug・都市名・代表駅・キャッチコピー）
+    │   ├── site.ts         # サイト名・お問い合わせ先・PR表記（対象都市は CITY で選択）
     │   └── navigation.ts   # ヘッダー／フッターのリンク
     ├── data/
     │   ├── categories.ts   # 「暮らす」「訪れる」のカテゴリ定義
@@ -59,7 +63,10 @@ media-site/
     │   ├── places.ts       # 店舗・スポットの型定義と取得ヘルパー
     │   ├── stores.json     # 店舗データ（生成物・手で編集しない）
     │   └── spots.json      # 観光スポットデータ（生成物・手で編集しない）
-    ├── lib/url.ts          # BASE_PATH を考慮した内部リンク生成 url()
+    ├── lib/
+    │   ├── url.ts          # BASE_PATH を考慮した内部リンク生成 url()
+    │   ├── cta.ts          # CTA文言の解決
+    │   └── tracking.ts     # 送客クリック計測
     ├── layouts/            # BaseLayout（共通head・ヘッダー・フッター）/ ProseLayout
     ├── components/
     │   ├── layout/         # Header, Footer, MobileMenu, SearchDialog, DialogController, Logo
@@ -67,6 +74,8 @@ media-site/
     │   ├── section/        # SectionPage（/living, /travel 共通）, CategoryDetail
     │   ├── cards/          # CategoryCard, ArticleCard
     │   ├── place/          # PlaceCard, PlaceDetail, LocalNoteChips
+    │   ├── compare/        # CompareExplorer（比較カード・表、ソート・フィルター）
+    │   ├── outbound/       # OutboundLink, CtaBlock, AdNotice, OutboundTracker
     │   └── ui/             # Icon, SectionHeading, Breadcrumb, PrBadge
     ├── pages/              # ルーティング
     └── styles/global.css   # Tailwind 読み込み + デザイントークン（色・フォント）
@@ -96,25 +105,28 @@ data/enrichment.json ───────────┘   正規化・ID付与
 
 ### 地域文脈（localNote）
 
-- **自動抽出**: アクセス情報から「みなと駅徒歩5分」「臨港バイパス沿い」「みなと北ICから車5分」「無料駐車場30台」を抽出（`scripts/lib/local-context.mjs`）
+- **自動抽出**: アクセス情報から「浜松駅徒歩5分」「浜松バイパス沿い」「浜松西ICから車5分」「無料駐車場30台」を抽出（`scripts/lib/local-context.mjs`）
 - **人手の補足**: `data/enrichment.json` に ID をキーとして記述。同じ type の自動メモより優先されます。
 
 ```json
 {
-  "gym-b75bc8eb": {
-    "_name": "24h FIT みなと中央店",
+  "gym-09ce24cc": {
+    "_name": "24h FIT 浜松駅南店",
     "localNote": [
-      { "type": "landmark", "text": "郵便局の向かい" },
+      { "type": "landmark", "text": "市役所の近く" },
       { "type": "tip", "text": "平日夜は混みやすいので土日午前が狙い目" }
     ],
     "override": { "hours": "6:00～24:00" },
+    "specs": { "monthlyFee": 7480, "trial": true },
+    "affiliate": { "url": "https://px.a8.net/...", "label": "無料体験を予約する", "program": "A8.net" },
     "hidden": false
   }
 }
 ```
 
 `type` は `station`（最寄り駅）/ `road`（幹線道路）/ `car`（車）/ `parking`（駐車場）/ `landmark`（目印）/ `tip`（地元メモ）。
-`override` で収集データの誤りを補正、`hidden: true` で非掲載にできます。再収集しても enrichment.json は上書きされません。
+`override` で収集データの誤りを補正、`specs` で比較値を補正、`affiliate` で広告リンクを設定、`hidden: true` で非掲載にできます。
+アフィリエイトリンクは提携契約に基づく情報のため、収集データではなく enrichment.json でのみ設定します。再収集しても enrichment.json は上書きされません。
 
 ### スクレイピング
 
@@ -128,9 +140,56 @@ npm run data:scrape -- --source=sample-fixture --dry-run   # 同梱のサンプ�
 - 追加前に対象サイトの利用規約を確認し、可能なら公式API・自治体のオープンデータを優先すること
 - 実データ運用時は `data/raw/*/mock.json` を削除してから `npm run data:build`
 
+## 比較機能・アフィリエイト導線・送客計測（Phase 3）
+
+### 比較軸（specs）
+
+各カテゴリの比較軸は `src/data/categories.ts` の `axes` で定義し、店舗データの `specs` に値を持ちます。
+カテゴリページ（`/living/[category]` 等）の比較カード・比較表、ソート・フィルターは、この定義から自動生成されます。
+
+```ts
+{ key: 'monthlyFee', label: '月額目安', type: 'price', unit: '円/月', sort: 'asc', sortLabel: '月額が安い順', primary: true },
+{ key: 'trial', label: '体験', type: 'boolean', filter: 'yes', filterLabel: '体験あり' },
+```
+
+- `type`: `price` / `number` / `boolean` / `text`。`data:build` が「7,678円」「あり」などを型に合わせて変換・検証します
+- `sort` を指定した軸は並び替えの選択肢に、`filter` を指定した軸は絞り込み条件に出ます。`primary` はカードにも表示
+- `stationWalkMin`（駅徒歩）と `parking`（駐車場）はアクセス情報から自動算出されます
+- 絞り込み状態は URL クエリ（`?sort=monthlyFee&yes=trial&max=stationWalkMin-10`）に反映され、共有できます
+- 「おすすめ順」はデータの並び順です。広告の有無では並べ替えません（`/affiliate` の方針と一致させるため）
+
+### アフィリエイトリンク・広告表記
+
+- `OutboundLink` コンポーネントが外部リンクに rel 属性と計測用属性を付与します
+  - 公式サイト・予約ページ・広告リンク: `rel="sponsored nofollow noopener noreferrer"`
+  - 地図: `rel="noopener noreferrer"` / 電話: なし
+- `CtaBlock`: アフィリエイトリンクがある店舗はマイクロコピー付きのCTAボタン（文言は `categories.ts` の `cta`、`{station}` は代表駅に置換）、ない店舗は「公式サイトを見る」
+- 広告表記: カテゴリ・詳細ページの冒頭に「アフィリエイト広告が含まれています（PR）」、広告リンクのあるカードとCTAの直下にも PR 表記
+- `siteConfig.sampleData` が `true` の間は「サンプルデータ」の注意書きを表示します。実データに切り替えたら `false` に
+
+### 送客（アウトバウンドクリック）計測
+
+`data-track` 属性を持つリンク（`OutboundLink`）のクリックを `src/lib/tracking.ts` が計測し、次のイベントを送信します。
+
+```json
+{ "event": "outbound_click", "type": "affiliate", "placeId": "gym-09ce24cc", "category": "gym", "section": "living",
+  "placement": "compare-card", "citySlug": "hamamatsu", "href": "https://...", "page": "/living/gym", "timestamp": "2026-10-10T05:32:33.586Z" }
+```
+
+| 送信先 | 有効になる条件 |
+| --- | --- |
+| `window.__outboundLog`（直近50件） | 常に（デバッグ・E2Eテスト用） |
+| ブラウザのコンソール | `npm run dev` 実行時 |
+| GA4（イベント名 `outbound_click`） | `PUBLIC_GA4_ID` を設定 |
+| 自社ログAPI（`navigator.sendBeacon`） | `PUBLIC_LOG_ENDPOINT` を設定（例: `/api/log`） |
+
+`api/log.js` は Vercel Functions 用のモックで、受け取ったイベントを検証してログ出力します。本番運用時は保存先（Vercel KV / Supabase / BigQuery 等）への書き込みに置き換えてください。
+
 ## 別の都市への展開・カスタマイズ
 
-- 都市名・サイト名・キャッチコピー: `src/config/site.ts`
+- 都市の追加: `src/config/cities.ts` にエントリを追加し、環境変数 `CITY=<citySlug>` でビルド（サイト名・タイトル・パンくず・ヒーロー・meta に反映）
+- 親ポータルのURLが決まったら `src/config/site.ts` の `portal.url` を設定（パンくずの先頭に表示）
+- お問い合わせ: `siteConfig.contact.formEndpoint`（フォーム送信先）と `sns`（公式SNS）。メールアドレスはサイトに掲載しない方針
 - カテゴリの追加／変更: `src/data/categories.ts`（追加すると一覧・詳細・メニュー・フッターに自動反映）
 - 配色: `src/styles/global.css` の `@theme`（`brand` / `living` / `travel`）
 
@@ -142,6 +201,9 @@ npm run data:scrape -- --source=sample-fixture --dry-run   # 同梱のサンプ�
 | 環境変数 | 用途 | 未設定時 |
 | --- | --- | --- |
 | `SITE_URL` | 正規URL（例: `https://example.jp`） | Vercel では `VERCEL_PROJECT_PRODUCTION_URL`、それ以外は `http://localhost:4321` |
+| `CITY` | 対象都市（`src/config/cities.ts` の citySlug） | `hamamatsu` |
+| `PUBLIC_GA4_ID` | GA4 測定ID | 未設定（GA4を読み込まない） |
+| `PUBLIC_LOG_ENDPOINT` | 送客ログの送信先 | 未設定（送信しない） |
 | `BASE_PATH` | サブディレクトリ配信時のみ（例: `/media`） | `/` |
 
 独自ドメインへ移行する際は `SITE_URL` を変更して再ビルドするだけで済みます。
@@ -157,9 +219,10 @@ npm run data:scrape -- --source=sample-fixture --dry-run   # 同梱のサンプ�
 ## 法令対応（景表法・ステマ規制）
 
 - 全ページのヘッダー上部に広告を含む旨を表記（文言は `siteConfig.prDisclosure`）
-- PRを含む記事・掲載枠には `PrBadge` を表示（`articles.ts` の `isPr`）
+- PRを含む記事・掲載枠には `PrBadge` を表示（`articles.ts` の `isPr`、店舗データの `affiliate`）
+- カテゴリ・詳細ページ冒頭に「アフィリエイト広告が含まれています（PR）」を表示（`AdNotice`）
 - フッターと `/affiliate` にアフィリエイト開示を掲載
-- 外部の広告リンクには `rel="sponsored"` を付与する運用とする
+- 公式サイト・予約・広告リンクには `OutboundLink` が `rel="sponsored nofollow noopener noreferrer"` を自動付与
 
 ## 今後の拡張候補
 

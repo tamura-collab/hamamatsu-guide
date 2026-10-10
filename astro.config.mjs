@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig, envField } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 
@@ -20,6 +20,16 @@ export default defineConfig({
   base,
   trailingSlash: 'ignore',
   integrations: [sitemap()],
+  env: {
+    schema: {
+      // 対象都市（src/config/cities.ts の citySlug）
+      CITY: envField.string({ context: 'server', access: 'public', default: 'hamamatsu' }),
+      // GA4 の測定ID（例: G-XXXXXXX）。未設定なら GA4 タグを読み込まない
+      PUBLIC_GA4_ID: envField.string({ context: 'client', access: 'public', optional: true }),
+      // 送客ログの送信先（例: /api/log）。未設定なら送信しない
+      PUBLIC_LOG_ENDPOINT: envField.string({ context: 'client', access: 'public', optional: true }),
+    },
+  },
   vite: {
     plugins: [tailwindcss()],
   },

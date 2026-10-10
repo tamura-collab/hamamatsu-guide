@@ -18,10 +18,10 @@ import * as cheerio from 'cheerio';
 import sources from './sources.config.mjs';
 import { paths } from './lib/paths.mjs';
 import { sleep, today, writeJson } from './lib/io.mjs';
-import { siteConfig } from '../src/config/site.ts';
 
 const REQUEST_INTERVAL_MS = 1500;
-const USER_AGENT = `LocalMediaBot/0.1 (+mailto:${siteConfig.operator.contactEmail})`;
+// 連絡先としてサイトのお問い合わせページを名乗る（SITE_URL 未設定時は README の案内に従い設定すること）
+const USER_AGENT = `LocalMediaBot/0.1 (+${(process.env.SITE_URL ?? 'http://localhost:4321').replace(/\/$/, '')}/contact)`;
 
 const args = Object.fromEntries(
   process.argv.slice(2).map((a) => {
@@ -116,7 +116,10 @@ async function scrapeSource(source) {
       const record = { category: source.category, ...source.defaults };
       for (const [field, spec] of Object.entries(source.fields)) {
         const value = extract($, el, spec, url);
-        if (value !== null) record[field] = value;
+        if (value === null) continue;
+        // 'specs.monthlyFee' のようなキーは比較軸の値として specs に入れる（型変換は build-data で行う）
+        if (field.startsWith('specs.')) (record.specs ??= {})[field.slice('specs.'.length)] = value;
+        else record[field] = value;
       }
       items.push({ ...record, source: 'scrape', sourceUrl: url, fetchedAt: today() });
     });

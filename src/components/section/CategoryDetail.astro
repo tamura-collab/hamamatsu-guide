@@ -3,10 +3,12 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import Breadcrumb from '@/components/ui/Breadcrumb.astro';
 import Icon from '@/components/ui/Icon.astro';
 import ArticleCard from '@/components/cards/ArticleCard.astro';
-import PlaceCard from '@/components/place/PlaceCard.astro';
+import CompareExplorer from '@/components/compare/CompareExplorer.astro';
+import AdNotice from '@/components/outbound/AdNotice.astro';
+import SampleDataNotice from '@/components/ui/SampleDataNotice.astro';
 import { sections, type Category } from '@/data/categories';
 import { sortedArticles } from '@/data/articles';
-import { getPlaceHref, getPlaces, sortLocalNotes } from '@/data/places';
+import { getPlaces } from '@/data/places';
 import { siteConfig } from '@/config/site';
 import { url } from '@/lib/url';
 
@@ -20,12 +22,10 @@ const isLiving = category.section === 'living';
 const places = getPlaces(category.section, category.slug);
 const related = sortedArticles.filter((a) => a.category === category.slug);
 const lastUpdated = places.map((p) => p.updatedAt).sort().at(-1);
-
-/** 比較表の「アクセス」列には、最も判断材料になる地域文脈メモを1つ出す */
-const primaryNote = (notes: (typeof places)[number]['localNote']) => sortLocalNotes(notes)[0]?.text ?? '—';
+const hasAffiliate = places.some((p) => p.affiliate);
 ---
 
-<BaseLayout title={`${category.title}を比較｜${siteConfig.city.name}`} description={category.summary}>
+<BaseLayout title={`${siteConfig.city.name}の${category.title}を比較`} description={category.summary}>
   <div class="container-page py-6 sm:py-10">
     <Breadcrumb items={[{ label: s.label, href: s.href }, { label: category.title }]} />
 
@@ -49,68 +49,24 @@ const primaryNote = (notes: (typeof places)[number]['localNote']) => sortLocalNo
       </div>
     </header>
 
+    <div class="mt-6 space-y-2">
+      <AdNotice hasAffiliate={hasAffiliate} />
+      <SampleDataNotice />
+    </div>
+
     {
       places.length === 0 ? (
         <p class="mt-10 rounded-xl border border-dashed border-line p-10 text-center text-sm text-muted">
           このカテゴリの掲載情報は準備中です。
         </p>
       ) : (
-        <>
-          <section class="mt-8" aria-labelledby="place-list">
-            <h2 id="place-list" class="sr-only">
-              一覧
-            </h2>
-            <ul class="grid gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
-              {places.map((place) => (
-                <li>
-                  <PlaceCard place={place} section={category.section} />
-                </li>
-              ))}
-            </ul>
-          </section>
-
-          <section class="mt-12" aria-labelledby="compare-title">
-            <h2 id="compare-title" class="text-lg font-bold">
-              比較表
-            </h2>
-            <p class="mt-1 text-xs text-muted">比較ポイント：{category.points.join(' / ')}</p>
-
-            <div class="mt-4 overflow-x-auto rounded-xl border border-line">
-              <table class="w-full min-w-[640px] border-collapse text-sm">
-                <thead class="bg-surface text-xs whitespace-nowrap text-muted">
-                  <tr>
-                    <th scope="col" class="sticky left-0 bg-surface px-4 py-3 text-left font-semibold">
-                      名称
-                    </th>
-                    <th scope="col" class="px-4 py-3 text-left font-semibold">
-                      ジャンル
-                    </th>
-                    <th scope="col" class="px-4 py-3 text-left font-semibold">
-                      アクセス
-                    </th>
-                    <th scope="col" class="px-4 py-3 text-left font-semibold">
-                      営業時間
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {places.map((place) => (
-                    <tr class="border-t border-line">
-                      <th scope="row" class="sticky left-0 max-w-56 bg-white px-4 py-3 text-left font-bold">
-                        <a href={url(getPlaceHref(category.section, place))} class="text-brand-700 hover:underline">
-                          {place.name}
-                        </a>
-                      </th>
-                      <td class="px-4 py-3 whitespace-nowrap text-muted">{place.genre}</td>
-                      <td class="px-4 py-3 whitespace-nowrap">{primaryNote(place.localNote)}</td>
-                      <td class="px-4 py-3 text-muted">{place.hours ?? '—'}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </section>
-        </>
+        <section aria-labelledby="compare-title" class="mt-8">
+          <h2 id="compare-title" class="text-lg font-bold">
+            {siteConfig.city.shortName}の{category.title}を比較する
+          </h2>
+          <p class="mt-1 text-xs text-muted">比較ポイント：{category.axes.map((a) => a.label).join(' / ')}</p>
+          <CompareExplorer category={category} places={places} />
+        </section>
       )
     }
 
@@ -118,7 +74,7 @@ const primaryNote = (notes: (typeof places)[number]['localNote']) => sortLocalNo
       <Icon name="info" class="mt-0.5 size-4 shrink-0 text-brand-600" />
       <p>
         掲載情報は編集部の調査時点のものです。営業時間・料金等は変更される場合があるため、最新情報は各公式サイトでご確認ください。
-        本ページには広告（PR）を含む場合があります（<a href={url('/affiliate')} class="text-brand-700 underline">詳細</a>）。
+        一部のリンクはアフィリエイト広告です（<a href={url('/affiliate')} class="text-brand-700 underline">詳細</a>）。
       </p>
     </aside>
 

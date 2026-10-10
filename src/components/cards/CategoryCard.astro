@@ -54,7 +54,7 @@ const count = getPlaceCount(category.section, category.slug);
   {
     variant === 'full' && (
       <ul class="mt-4 flex flex-wrap gap-1.5">
-        {category.points.map((p) => (
+        {category.axes.map(({ label: p }) => (
           <li class="rounded-md bg-surface px-2 py-0.5 text-[11px] text-muted">{p}</li>
         ))}
       </ul>

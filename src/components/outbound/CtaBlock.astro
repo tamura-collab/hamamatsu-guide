@@ -1,0 +1,64 @@
+---
+/**
+ * 送客CTA。アフィリエイトリンクがあればマイクロコピー付きの目立つボタンと広告表記を、
+ * なければ公式サイトへの通常ボタンを表示する。
+ */
+import Icon from '@/components/ui/Icon.astro';
+import OutboundLink from './OutboundLink.astro';
+import AdNotice from './AdNotice.astro';
+import type { Category } from '@/data/categories';
+import type { Place } from '@/data/places';
+import { resolveCta } from '@/lib/cta';
+
+interface Props {
+  place: Place;
+  category: Category;
+  placement: string;
+  size?: 'sm' | 'lg';
+  class?: string;
+}
+
+const { place, category, placement, size = 'sm', class: className } = Astro.props;
+const cta = resolveCta(category, place);
+const track = { placeId: place.id, category: category.slug, section: category.section, placement };
+---
+
+{
+  place.affiliate ? (
+    <div class:list={['flex flex-col', size === 'lg' ? 'gap-2' : 'gap-1.5', className]}>
+      <p class:list={['relative self-center rounded-full bg-cta-50 px-3 py-0.5 font-bold text-cta-700', size === 'lg' ? 'text-xs' : 'text-[11px]']}>
+        {cta.microcopy}
+        <span class="absolute -bottom-1 left-1/2 size-2 -translate-x-1/2 rotate-45 bg-cta-50" aria-hidden="true" />
+      </p>
+      <OutboundLink
+        href={place.affiliate.url}
+        type="affiliate"
+        {...track}
+        class:list={[
+          'group/cta inline-flex items-center justify-center gap-1.5 rounded-xl bg-cta-600 font-bold text-white shadow-md shadow-cta-600/25 transition hover:bg-cta-700 hover:shadow-lg',
+          size === 'lg' ? 'px-6 py-4 text-base' : 'px-4 py-3 text-sm',
+        ]}
+      >
+        {cta.label}
+        <Icon name="arrowRight" class="size-4 transition-transform group-hover/cta:translate-x-0.5" />
+      </OutboundLink>
+      <AdNotice hasAffiliate variant="inline" />
+    </div>
+  ) : (
+    place.officialUrl && (
+      <OutboundLink
+        href={place.officialUrl}
+        type="official"
+        {...track}
+        class:list={[
+          'inline-flex items-center justify-center gap-1.5 rounded-xl border border-brand-200 bg-white font-bold text-brand-700 hover:bg-brand-50',
+          size === 'lg' ? 'px-6 py-3.5 text-sm' : 'px-4 py-2.5 text-sm',
+          className,
+        ]}
+      >
+        公式サイトを見る
+        <Icon name="external" class="size-4" />
+      </OutboundLink>
+    )
+  )
+}
