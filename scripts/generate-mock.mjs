@@ -211,7 +211,7 @@ const TEMPLATES = {
       ['高塚パーク&ライド駐車場', 'パーク&ライド', {}],
       ['浜北公園駐車場', '公営駐車場', {}],
     ],
-    specs: (o) => ({ maxDaily: price(500, 1800), capacity: int(20, 400), open24h: o.open24h ?? false }),
+    specs: (o) => ({ kind: '駐車場', maxWeekday: price(500, 1800), maxWeekend: price(500, 1800), capacity: int(20, 400), open24h: o.open24h ?? false, reservable: false }),
     desc: (n, g) => `${g}。${n}は中心市街地へのアクセスに便利です。`,
   },
 };

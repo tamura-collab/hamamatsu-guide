@@ -1263,159 +1263,243 @@
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "parking-54e388cc",
-    "name": "浜松駅南パーキング",
+    "id": "parking-9c2205a1",
+    "name": "浜松市営 駅北駐車場",
     "category": "parking",
-    "genre": "立体駐車場",
-    "address": "静岡県浜松市中央区砂山町3丁目3-4",
-    "tel": "000-000-0045",
-    "hours": "7:00～23:00",
-    "access": "国道257号沿い・駐車場なし",
-    "officialUrl": "https://example.com/hamamatsu/parking/1",
-    "description": "立体駐車場。浜松駅南パーキングは中心市街地へのアクセスに便利です。",
-    "localNote": [
-      {
-        "type": "landmark",
-        "text": "郵便局の近く",
-        "source": "manual"
-      },
-      {
-        "type": "tip",
-        "text": "平日夜は混みやすいので土日午前が狙い目",
-        "source": "manual"
-      },
-      {
-        "type": "road",
-        "text": "国道257号沿い",
-        "source": "auto"
-      }
-    ],
-    "specs": {
-      "maxDaily": 1100,
-      "capacity": 191,
-      "open24h": true,
-      "stationWalkMin": null
-    },
-    "features": [],
-    "priceNote": null,
-    "chain": false,
-    "serviceType": "store",
-    "affiliate": {
-      "url": "https://example.com/aff/parking/1",
-      "label": null,
-      "program": "サンプルASP"
-    },
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "parking-9e65119b",
-    "name": "コインパーク鍛冶町第2",
-    "category": "parking",
-    "genre": "コインパーキング",
-    "address": "静岡県浜松市中央区鍛冶町1丁目16-11",
-    "tel": "000-000-0046",
-    "hours": "7:00～23:00",
-    "access": "鍛冶町通り沿い・無料駐車場118台",
-    "officialUrl": "https://example.com/hamamatsu/parking/2",
-    "description": "コインパーキング。コインパーク鍛冶町第2は中心市街地へのアクセスに便利です。",
-    "localNote": [
-      {
-        "type": "road",
-        "text": "鍛冶町通り沿い",
-        "source": "auto"
-      },
-      {
-        "type": "parking",
-        "text": "無料駐車場118台",
-        "source": "auto"
-      }
-    ],
-    "specs": {
-      "maxDaily": 1700,
-      "capacity": 21,
-      "open24h": true,
-      "stationWalkMin": null
-    },
-    "features": [],
-    "priceNote": null,
-    "chain": false,
-    "serviceType": "store",
-    "affiliate": {
-      "url": "https://example.com/aff/parking/2",
-      "label": null,
-      "program": "サンプルASP"
-    },
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "parking-0ad8fd21",
-    "name": "高塚パーク&ライド駐車場",
-    "category": "parking",
-    "genre": "パーク&ライド",
-    "address": "静岡県浜松市中央区高塚町4丁目16-16",
-    "tel": "000-000-0047",
-    "hours": "24時間",
-    "access": "浜松バイパス沿い（浜松西ICから車で13分）",
-    "officialUrl": "https://example.com/hamamatsu/parking/3",
-    "description": "パーク&ライド。高塚パーク&ライド駐車場は中心市街地へのアクセスに便利です。",
-    "localNote": [
-      {
-        "type": "road",
-        "text": "浜松バイパス沿い",
-        "source": "auto"
-      },
-      {
-        "type": "car",
-        "text": "浜松西ICから車13分",
-        "source": "auto"
-      }
-    ],
-    "specs": {
-      "maxDaily": 500,
-      "capacity": 170,
-      "open24h": false,
-      "stationWalkMin": null
-    },
-    "features": [],
-    "priceNote": null,
-    "chain": false,
-    "serviceType": "store",
-    "affiliate": null,
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "parking-4715a96a",
-    "name": "浜北公園駐車場",
-    "category": "parking",
-    "genre": "公営駐車場",
-    "address": "静岡県浜松市浜名区小松2丁目26-13",
+    "genre": "大型駐車場（市営）",
+    "address": "静岡県浜松市中央区中央3-11-1",
     "tel": null,
     "hours": "24時間",
-    "access": "国道152号沿い・駐車場なし",
-    "officialUrl": "https://example.com/hamamatsu/parking/4",
-    "description": "公営駐車場。浜北公園駐車場は中心市街地へのアクセスに便利です。",
+    "access": "JR浜松駅まで動く歩道を通って徒歩7～8分",
+    "officialUrl": "https://www.entetsuassist-dms.com/hamamatsu-parking/ekikita/",
+    "description": "浜松市営の自走式駐車場（815台）。24時間入出庫でき、JR浜松駅までは動く歩道を通って徒歩7〜8分です。浜松駅周辺の市営駐車場では、ほかに駅南口すぐの駅南地下駐車場（333台・6:00〜24:00）もあります。",
     "localNote": [
       {
-        "type": "road",
-        "text": "国道152号沿い",
-        "source": "auto"
+        "type": "tip",
+        "text": "新幹線を使う日帰り・1泊の出張で、長時間停めても料金を抑えやすい駅近の大型駐車場。送迎だけなら20分以内の出庫が無料の駅南地下駐車場が便利",
+        "source": "manual"
       }
     ],
     "specs": {
-      "maxDaily": 1200,
-      "capacity": 246,
-      "open24h": false,
-      "stationWalkMin": null
+      "kind": "大型駐車場（市営）",
+      "maxWeekday": 700,
+      "maxWeekend": 700,
+      "capacity": 815,
+      "accessInfo": "JR浜松駅まで動く歩道を通って徒歩7〜8分",
+      "stationWalkMin": 8,
+      "open24h": true,
+      "reservable": null
     },
-    "features": [],
-    "priceNote": null,
+    "features": [
+      "24時間入出庫・815台",
+      "30分100円、12時間ごとの上限700円",
+      "浜松まちなかPクーポンが使える",
+      "高さ制限2m以下"
+    ],
+    "priceNote": "最初の30分100円、以降30分ごと100円、12時間ごとの上限700円（市営駐車場の案内）。上限は12時間ごとにかかるため、24時間停めると最大1,400円です。駅南地下駐車場は20分以内の出庫で無料、24時間ごとの上限3,000円。",
     "chain": false,
     "serviceType": "store",
     "affiliate": null,
-    "source": "mock",
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "parking-97737b68",
+    "name": "タイムズ 浜松駅周辺",
+    "category": "parking",
+    "genre": "コインパーキング（大手）",
+    "address": "静岡県浜松市中央区（浜松駅周辺の各駐車場）",
+    "tel": null,
+    "hours": "駐車場により異なる",
+    "access": null,
+    "officialUrl": "https://times-info.net/P22-shizuoka/C139/",
+    "description": "パーク24が運営するコインパーキング「タイムズ」の、浜松駅周辺の駐車場。公式アプリ・サイトで満車・空車をリアルタイムに確認でき、「最大料金あり」「24時間入出庫可」などの条件で絞り込めます。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "浜松駅の北口・南口どちらにもあり、短時間の用事から最大料金のある駐車場まで、アプリの空車情報を見ながら選べる",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "コインパーキング（大手）",
+      "maxWeekday": null,
+      "maxWeekend": null,
+      "capacity": null,
+      "accessInfo": "浜松駅北口・南口の周辺に点在（駐車場により異なる）",
+      "stationWalkMin": null,
+      "open24h": null,
+      "reservable": null
+    },
+    "features": [
+      "公式アプリで満車・空車をリアルタイム確認",
+      "「最大料金あり」「24時間入出庫可」で絞り込み",
+      "タイムズクラブ会員はタイムズポイントが貯まる"
+    ],
+    "priceNote": "料金・最大料金の有無は駐車場ごとに異なります。公式アプリの料金計算や現地看板でご確認ください。",
+    "chain": true,
+    "serviceType": "store",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "parking-2fd7ce3c",
+    "name": "三井のリパーク 浜松駅周辺",
+    "category": "parking",
+    "genre": "コインパーキング（大手）",
+    "address": "静岡県浜松市中央区（浜松駅周辺の各駐車場）",
+    "tel": null,
+    "hours": "駐車場により異なる",
+    "access": null,
+    "officialUrl": null,
+    "description": "三井不動産リアルティが運営するコインパーキング「三井のリパーク」の、浜松駅周辺の駐車場。公式アプリでは地図上に「空車」「混雑」「満車」のマークが表示されます。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "出張や買い物で、タイムズが満車のときの選択肢に。駐車場ごとに最大料金の条件が違うので看板の確認を",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "コインパーキング（大手）",
+      "maxWeekday": null,
+      "maxWeekend": null,
+      "capacity": null,
+      "accessInfo": "浜松駅周辺に点在（駐車場により異なる）",
+      "stationWalkMin": null,
+      "open24h": null,
+      "reservable": null
+    },
+    "features": [
+      "公式アプリで「空車」「混雑」「満車」を確認",
+      "オンライン支払いで楽天ペイが使える（楽天ポイント還元）"
+    ],
+    "priceNote": "料金・最大料金の有無は駐車場ごとに異なります。現地看板でご確認ください。",
+    "chain": true,
+    "serviceType": "store",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "parking-08775b67",
+    "name": "浜松城公園 駐車場",
+    "category": "parking",
+    "genre": "観光地の駐車場",
+    "address": "静岡県浜松市中央区元城町（浜松城公園）",
+    "tel": null,
+    "hours": "8:00～21:30",
+    "access": "JR浜松駅からバスで「市役所南」下車、徒歩約6分",
+    "officialUrl": "https://www.entetsuassist-dms.com/hamamatsu-jyo/access/",
+    "description": "浜松城公園の駐車場（普通車約220台）。最初の90分は無料で、浜松城天守閣・浜松市美術館などの有料施設を利用すると60分の無料時間が追加されます。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "浜松城や浜松市美術館を巡るのに便利。天守閣などで駐車券の認証を受けると無料時間が60分延びるので、駐車券を持って行くのを忘れずに",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "観光地の駐車場",
+      "maxWeekday": null,
+      "maxWeekend": 520,
+      "capacity": 220,
+      "accessInfo": "JR浜松駅からバスで「市役所南」下車、徒歩約6分",
+      "stationWalkMin": null,
+      "open24h": false,
+      "reservable": null
+    },
+    "features": [
+      "最初の90分無料",
+      "有料施設の利用で60分無料を追加（施設で駐車券の認証が必要）",
+      "土日祝は上限520円（当日限り）"
+    ],
+    "priceNote": "最初の90分無料、その後30分ごとに100円。土日祝は上限520円（当日限り）。平日の上限は確認できていません。",
+    "chain": false,
+    "serviceType": "store",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "parking-4e7172ee",
+    "name": "akippa・特P（駐車場予約サービス）",
+    "category": "parking",
+    "genre": "駐車場予約サービス",
+    "address": "オンライン（全国対応）",
+    "tel": null,
+    "hours": "Webで24時間予約可",
+    "access": null,
+    "officialUrl": "https://www.akippa.com/",
+    "description": "個人宅の空きスペースや月極の空き区画などを、Webやアプリで事前に予約・決済して使える駐車場予約サービス。akippa（akippa株式会社）と特P（株式会社アース・カー）があります。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "浜松駅周辺のイベント開催日など、満車が心配な日に停める場所を先に確保したい人向け",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "事前予約サービス（オンライン）",
+      "maxWeekday": null,
+      "maxWeekend": null,
+      "capacity": null,
+      "accessInfo": "—（Web予約・駐車場により異なる）",
+      "stationWalkMin": null,
+      "open24h": null,
+      "reservable": true
+    },
+    "features": [
+      "事前予約・事前決済で現地精算が不要",
+      "akippaはクレジットカード・キャリア決済・PayPayに対応",
+      "特Pは周辺のコインパーキングも同時に検索できる"
+    ],
+    "priceNote": "料金は駐車場・日時により異なります。",
+    "chain": false,
+    "serviceType": "online",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "parking-21e52b8d",
+    "name": "浜松まちなかPクーポン（共通駐車券）",
+    "category": "parking",
+    "genre": "提携駐車場・共通駐車券",
+    "address": "静岡県浜松市中央区（浜松まちなかの提携駐車場）",
+    "tel": null,
+    "hours": "駐車場により異なる",
+    "access": "浜松駅北側の中心市街地に提携駐車場が点在",
+    "officialUrl": "https://pcoupon.jp/",
+    "description": "浜松まちなかの提携駐車場（約40か所）で共通に使える駐車券。100円券・300円券があり、浜松まちなかにぎわい協議会が販売しています。遠鉄百貨店では税込5,000円以上の買い物でPクーポン300円分のサービスがあります。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "浜松駅前のまちなかで買い物や食事をするときに。店で受け取ったPクーポンは提携駐車場の精算に使える",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "提携駐車場・共通駐車券",
+      "maxWeekday": null,
+      "maxWeekend": null,
+      "capacity": null,
+      "accessInfo": "浜松駅北側の中心市街地（市営 駅北・駅南地下・ザザシティ駐車場なども対象）",
+      "stationWalkMin": null,
+      "open24h": null,
+      "reservable": false
+    },
+    "features": [
+      "まちなかの提携駐車場（約40か所）で使える",
+      "100円券・300円券（有効期限あり）",
+      "遠鉄百貨店で税込5,000円以上の買い物で300円分サービス"
+    ],
+    "priceNote": "駐車料金は駐車場ごとに異なります。遠鉄百貨店の第1・第3駐車場では、税込2,000円以上の買い物で2時間、10,000円以上で3時間無料（遠鉄百貨店の案内）。",
+    "chain": true,
+    "serviceType": "store",
+    "affiliate": null,
+    "source": "manual",
     "updatedAt": "2026-10-10"
   }
 ]

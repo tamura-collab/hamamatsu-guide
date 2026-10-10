@@ -320,16 +320,21 @@ export const categories: Category[] = [
   {
     slug: 'parking',
     section: 'travel',
-    title: '駐車場・パーク&ライド',
-    summary: '中心市街地の駐車場料金と、公共交通への乗り継ぎ',
+    title: '駐車場',
+    summary: '浜松駅周辺・浜松城公園の駐車場と予約サービスを、最大料金目安と駅からのアクセスで比較',
     icon: 'parking',
     axes: [
-      { key: 'maxDaily', label: '最大料金/日（目安）', type: 'price', sort: 'asc', sortLabel: '最大料金が安い順', primary: true },
-      { key: 'capacity', label: '収容台数', type: 'number', unit: '台', sort: 'desc', sortLabel: '台数が多い順', primary: true },
-      { key: 'open24h', label: '24時間', type: 'boolean', filter: 'yes', filterLabel: '24時間営業' },
-      AXIS.stationWalk,
+      { key: 'kind', label: 'タイプ', type: 'text', primary: true },
+      { key: 'maxWeekday', label: '最大料金目安（平日）', type: 'price', sort: 'asc', sortLabel: '平日の最大料金が安い順', primary: true },
+      { key: 'maxWeekend', label: '最大料金目安（土日祝）', type: 'price', sort: 'asc', sortLabel: '土日祝の最大料金が安い順' },
+      { key: 'capacity', label: '収容台数', type: 'number', unit: '台', sort: 'desc', sortLabel: '台数が多い順' },
+      { key: 'accessInfo', label: '浜松駅からのアクセス', type: 'text', primary: true },
+      { ...AXIS.stationWalk, label: '浜松駅から徒歩' },
+      { key: 'open24h', label: '24時間入出庫', type: 'boolean', filter: 'yes', filterLabel: '24時間入出庫可' },
+      { key: 'reservable', label: '事前予約', type: 'boolean', filter: 'yes', filterLabel: '事前予約可' },
     ],
     cta: { label: '料金・空き状況を見る', microcopy: 'イベント開催日は早めに満車になります' },
+    notice: '※掲載料金・最大料金は適用条件（平日・土日祝・入庫後時間等）や時期により異なります。最新の料金や空き状況は現地看板または公式サイトでご確認ください',
   },
 ];
 
