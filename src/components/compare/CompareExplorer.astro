@@ -160,7 +160,7 @@ const rowData = (p: Place, index: number) => JSON.stringify({ i: index, specs: p
                 const num = specNumber(value);
                 const isBest = a.type === 'price' && num !== null && cheapest.get(a.key) === num;
                 return (
-                  <td class:list={['px-3 py-3 whitespace-nowrap', a.type === 'text' ? 'text-left' : 'text-center', value === null && 'text-muted']}>
+                  <td class:list={['px-3 py-3', a.type === 'text' ? 'min-w-36 text-left text-xs' : 'text-center whitespace-nowrap', value === null && 'text-muted']}>
                     {a.type === 'boolean' && value !== null ? (
                       <span class={value ? 'font-bold text-living-700' : 'text-muted'}>{value ? '○' : '×'}</span>
                     ) : (

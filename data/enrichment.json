@@ -1,28 +1,4 @@
 {
-  "kids-school-b869c315": {
-    "_name": "キッズ英会話 Little Lake 駅南",
-    "affiliate": {
-      "url": "https://example.com/aff/kids-school/1",
-      "program": "サンプルASP"
-    },
-    "localNote": [
-      {
-        "type": "landmark",
-        "text": "イオンの近く"
-      },
-      {
-        "type": "tip",
-        "text": "朝夕は浜松バイパスの渋滞に注意"
-      }
-    ]
-  },
-  "kids-school-b0676aa7": {
-    "_name": "プログラミング教室 テックキッズ高塚",
-    "affiliate": {
-      "url": "https://example.com/aff/kids-school/2",
-      "program": "サンプルASP"
-    }
-  },
   "fiber-b287a0ad": {
     "_name": "光回線相談カウンター 浜松駅南店",
     "affiliate": {
