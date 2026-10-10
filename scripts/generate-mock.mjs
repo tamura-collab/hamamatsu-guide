@@ -136,7 +136,7 @@ const TEMPLATES = {
       ['エコ回収 浜北', '不用品回収', { disposal: true }],
       ['浜松クリーンサービス 上島', '不用品回収', { disposal: true }],
     ],
-    specs: (o) => ({ onlineEstimate: yes(0.7), singlePlanFee: `${price(22000, 45000, 1000).toLocaleString()}円～`, disposal: o.disposal ?? yes(0.5) }),
+    specs: (o) => ({ kind: '引越し業者', estimateFee: 0, single: yes(0.7), family: yes(0.7), disposal: o.disposal ?? yes(0.5) }),
     desc: (n, g) => `${n}（${g}）。市内の近距離引越しや単身パックの見積もりに対応しています。`,
   },
   'rental-car': {

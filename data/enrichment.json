@@ -1,28 +1,4 @@
 {
-  "moving-60b1de1d": {
-    "_name": "遠州引越センター 高塚",
-    "affiliate": {
-      "url": "https://example.com/aff/moving/1",
-      "program": "サンプルASP"
-    },
-    "localNote": [
-      {
-        "type": "landmark",
-        "text": "郵便局の近く"
-      },
-      {
-        "type": "tip",
-        "text": "遠鉄電車なら駅から歩いてすぐ"
-      }
-    ]
-  },
-  "moving-f5b957b1": {
-    "_name": "レイクサイド引越サービス 入野",
-    "affiliate": {
-      "url": "https://example.com/aff/moving/2",
-      "program": "サンプルASP"
-    }
-  },
   "rental-car-5bad6672": {
     "_name": "浜松レンタカー 駅南店",
     "affiliate": {

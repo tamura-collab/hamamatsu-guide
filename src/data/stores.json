@@ -1274,155 +1274,244 @@
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "moving-60b1de1d",
-    "name": "遠州引越センター 高塚",
+    "id": "moving-832d6e1b",
+    "name": "サカイ引越センター 浜松支社",
     "category": "moving",
-    "genre": "引越し",
-    "address": "静岡県浜松市中央区高塚町4丁目12-15",
-    "tel": "000-000-0023",
-    "hours": "9:00～18:00 / 日曜休",
-    "access": "浜松バイパス沿い・駐車場なし",
-    "officialUrl": "https://example.com/hamamatsu/moving/1",
-    "description": "遠州引越センター 高塚（引越し）。市内の近距離引越しや単身パックの見積もりに対応しています。",
+    "genre": "引越し業者",
+    "address": "静岡県浜松市中央区高丘北2-12-26",
+    "tel": null,
+    "hours": "8:00～19:00",
+    "access": null,
+    "officialUrl": "https://www.hikkoshi-sakai.co.jp/",
+    "description": "全国展開する引越し業者の浜松拠点。単身からファミリーまで対応し、市内には浜松東支社もあります。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "浜松市内に浜松支社・浜松東支社があり、市内の引越しから県外への長距離まで相談できる",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "大手引越し業者",
+      "estimateFee": 0,
+      "disposalFee": null,
+      "estimateMethod": "訪問・オンライン",
+      "single": true,
+      "family": true,
+      "disposal": null,
+      "freeBoxes": true
+    },
+    "features": [
+      "単身・ファミリーに対応",
+      "ダンボール無料（枚数はプランにより異なる）",
+      "単身向けのWeb予約サービスあり"
+    ],
+    "priceNote": "見積もり無料（時期・距離・荷物量により変動）。ダンボールは一般的な契約で最大50枚無料との掲載があり、一部の単身向けプランは対象外です。",
+    "chain": false,
+    "serviceType": "store",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "moving-5e2dcba3",
+    "name": "アート引越センター 浜松支店",
+    "category": "moving",
+    "genre": "引越し業者",
+    "address": "静岡県浜松市中央区下石田町1850-1",
+    "tel": null,
+    "hours": null,
+    "access": null,
+    "officialUrl": "https://www.the0123.com/siten/hamamatsu.html",
+    "description": "全国展開する引越し業者の浜松支店。見積もりは無料で、荷物量や作業範囲に合わせてプランを相談できます。",
     "localNote": [
       {
         "type": "landmark",
-        "text": "郵便局の近く",
+        "text": "遠鉄バス「下石田」バス停から徒歩約3分",
         "source": "manual"
-      },
+      }
+    ],
+    "specs": {
+      "kind": "大手引越し業者",
+      "estimateFee": 0,
+      "disposalFee": null,
+      "estimateMethod": "訪問ほか（方法は公式で確認）",
+      "single": null,
+      "family": true,
+      "disposal": null,
+      "freeBoxes": null
+    },
+    "features": [
+      "見積もり無料",
+      "荷物量・作業範囲に合わせたプラン相談"
+    ],
+    "priceNote": "見積もり無料（時期・距離・荷物量により変動）。",
+    "chain": false,
+    "serviceType": "store",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "moving-3f34dc07",
+    "name": "アーク引越センター（浜松）",
+    "category": "moving",
+    "genre": "引越し業者",
+    "address": "静岡県浜松市中央区三島町1491",
+    "tel": null,
+    "hours": null,
+    "access": null,
+    "officialUrl": "https://www.0003.co.jp/",
+    "description": "名古屋に本社を置き全国に拠点を持つ引越し業者。荷物量や目的に合わせた複数のプランがあります。",
+    "localNote": [
       {
         "type": "tip",
-        "text": "遠鉄電車なら駅から歩いてすぐ",
+        "text": "浜松市内の拠点から対応。予算や荷物量に応じてプランを選べる",
         "source": "manual"
-      },
-      {
-        "type": "road",
-        "text": "浜松バイパス沿い",
-        "source": "auto"
       }
     ],
     "specs": {
-      "onlineEstimate": false,
-      "singlePlanFee": 44000,
-      "disposal": false
+      "kind": "大手引越し業者",
+      "estimateFee": 0,
+      "disposalFee": null,
+      "estimateMethod": "訪問ほか（方法は公式で確認）",
+      "single": true,
+      "family": true,
+      "disposal": null,
+      "freeBoxes": null
     },
-    "features": [],
-    "priceNote": null,
-    "chain": false,
-    "serviceType": "store",
-    "affiliate": {
-      "url": "https://example.com/aff/moving/1",
-      "label": null,
-      "program": "サンプルASP"
-    },
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "moving-f5b957b1",
-    "name": "レイクサイド引越サービス 入野",
-    "category": "moving",
-    "genre": "引越し",
-    "address": "静岡県浜松市中央区入野町4丁目23-11",
-    "tel": "000-000-0024",
-    "hours": "8:00～20:00 / 年中無休",
-    "access": "浜松環状線沿い・無料駐車場109台",
-    "officialUrl": null,
-    "description": "レイクサイド引越サービス 入野（引越し）。市内の近距離引越しや単身パックの見積もりに対応しています。",
-    "localNote": [
-      {
-        "type": "road",
-        "text": "浜松環状線沿い",
-        "source": "auto"
-      },
-      {
-        "type": "parking",
-        "text": "無料駐車場109台",
-        "source": "auto"
-      }
+    "features": [
+      "目的別のプラン（スタンダード・ミニ引越など）",
+      "単身向けのミニ引越プラン"
     ],
-    "specs": {
-      "onlineEstimate": true,
-      "singlePlanFee": 30000,
-      "disposal": true
-    },
-    "features": [],
-    "priceNote": null,
-    "chain": false,
-    "serviceType": "store",
-    "affiliate": {
-      "url": "https://example.com/aff/moving/2",
-      "label": null,
-      "program": "サンプルASP"
-    },
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "moving-51429280",
-    "name": "エコ回収 浜北",
-    "category": "moving",
-    "genre": "不用品回収",
-    "address": "静岡県浜松市浜名区小松1丁目26-4",
-    "tel": "000-000-0025",
-    "hours": "9:00～18:00 / 日曜休",
-    "access": "国道152号沿い・駐車場なし",
-    "officialUrl": "https://example.com/hamamatsu/moving/3",
-    "description": "エコ回収 浜北（不用品回収）。市内の近距離引越しや単身パックの見積もりに対応しています。",
-    "localNote": [
-      {
-        "type": "road",
-        "text": "国道152号沿い",
-        "source": "auto"
-      }
-    ],
-    "specs": {
-      "onlineEstimate": true,
-      "singlePlanFee": 43000,
-      "disposal": true
-    },
-    "features": [],
-    "priceNote": null,
+    "priceNote": "見積もり無料（時期・距離・荷物量により変動）。",
     "chain": false,
     "serviceType": "store",
     "affiliate": null,
-    "source": "mock",
+    "source": "manual",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "moving-5932c582",
-    "name": "浜松クリーンサービス 上島",
+    "id": "moving-f4e20d18",
+    "name": "引越し侍（一括見積もり）",
     "category": "moving",
-    "genre": "不用品回収",
-    "address": "静岡県浜松市中央区上島1丁目30-1",
-    "tel": "000-000-0026",
-    "hours": "8:00～20:00 / 年中無休",
-    "access": "国道152号沿い・駐車場72台",
-    "officialUrl": "https://example.com/hamamatsu/moving/4",
-    "description": "浜松クリーンサービス 上島（不用品回収）。市内の近距離引越しや単身パックの見積もりに対応しています。",
+    "genre": "Web一括見積もり",
+    "address": "オンライン（全国対応）",
+    "tel": null,
+    "hours": "Webで24時間申込可",
+    "access": null,
+    "officialUrl": "https://hikkoshizamurai.jp/",
+    "description": "複数の引越し業者にまとめて見積もりを依頼できるサービス。料金シミュレーターで相場の目安も確認できます。",
     "localNote": [
       {
-        "type": "road",
-        "text": "国道152号沿い",
-        "source": "auto"
-      },
-      {
-        "type": "parking",
-        "text": "駐車場72台",
-        "source": "auto"
+        "type": "tip",
+        "text": "浜松市に対応する大手から地元の引越し業者まで、まとめて見積もりを依頼できる。申込み後は業者から連絡が届く",
+        "source": "manual"
       }
     ],
     "specs": {
-      "onlineEstimate": false,
-      "singlePlanFee": 37000,
-      "disposal": true
+      "kind": "Web一括見積もり",
+      "estimateFee": 0,
+      "disposalFee": null,
+      "estimateMethod": "Web申込（業者から電話・メールで連絡）",
+      "single": true,
+      "family": true,
+      "disposal": null,
+      "freeBoxes": null
     },
-    "features": [],
-    "priceNote": null,
+    "features": [
+      "複数の引越し業者に一括で見積もり依頼",
+      "料金シミュレーターで相場を確認",
+      "提携業者403社（公式ページの記載）"
+    ],
+    "priceNote": "見積もり無料（時期・距離・荷物量により変動）。",
     "chain": false,
-    "serviceType": "store",
+    "serviceType": "online",
     "affiliate": null,
-    "source": "mock",
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "moving-9a64cf38",
+    "name": "SUUMO引越し見積もり",
+    "category": "moving",
+    "genre": "Web一括見積もり",
+    "address": "オンライン（全国対応）",
+    "tel": null,
+    "hours": "Webで24時間申込可",
+    "access": null,
+    "officialUrl": "https://hikkoshi.suumo.jp/",
+    "description": "リクルートの住まい情報サイト「SUUMO」の引越し一括見積もり。電話番号の入力が任意で、メールでのやり取りを中心に進められます。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "営業電話を減らして、メールで浜松発着の引越し費用を比べたい人向け",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "Web一括見積もり",
+      "estimateFee": 0,
+      "disposalFee": null,
+      "estimateMethod": "Web申込（電話番号は任意・メール連絡可）",
+      "single": true,
+      "family": true,
+      "disposal": null,
+      "freeBoxes": null
+    },
+    "features": [
+      "電話番号の入力は任意",
+      "メール中心で見積もりを比較できる",
+      "費用の目安を確認できる"
+    ],
+    "priceNote": "見積もり無料（時期・距離・荷物量により変動）。電話番号を入力しなくても電話をかけてくる業者がいたという口コミもあります。",
+    "chain": false,
+    "serviceType": "online",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "moving-b33941be",
+    "name": "浜松市 連絡ごみ（粗大ごみ）",
+    "category": "moving",
+    "genre": "自治体サービス",
+    "address": "浜松市（連絡ごみ受付センターへ申込）",
+    "tel": null,
+    "hours": "自己搬入の受付は平日8:30～16:00",
+    "access": null,
+    "officialUrl": "https://www.city.hamamatsu.shizuoka.jp/",
+    "description": "浜松市では60cm以上の粗大ごみを「連絡ごみ」として扱います。事前に申し込み、戸別収集（有料）または清掃工場などへの自己搬入で処分できます。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "引越しで出る家具などを、業者に頼まず市のルールで処分できる。収集日当日の朝8時30分までに指定場所へ出す",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "自治体（粗大ごみ）",
+      "estimateFee": null,
+      "disposalFee": [
+        310,
+        1240
+      ],
+      "estimateMethod": "受付センターへ申込（電話・LINE・FAX・インターネット）",
+      "single": null,
+      "family": null,
+      "disposal": true,
+      "freeBoxes": null
+    },
+    "features": [
+      "戸別収集（有料・1回10点まで）",
+      "清掃工場等への自己搬入（前日・当日に申込）",
+      "手数料納付済証（シール）をコンビニ等で購入"
+    ],
+    "priceNote": "戸別収集の手数料は品目により1点310〜1,240円（第三者サイトの掲載例）。自己搬入の料金・受付条件は市の案内でご確認ください。",
+    "chain": false,
+    "serviceType": "online",
+    "affiliate": null,
+    "source": "manual",
     "updatedAt": "2026-10-10"
   }
 ]
