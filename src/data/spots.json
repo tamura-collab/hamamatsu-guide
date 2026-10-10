@@ -38,6 +38,9 @@
       "nonSmoking": true,
       "stationWalkMin": 8
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": {
       "url": "https://example.com/aff/rental-car/1",
       "label": null,
@@ -75,6 +78,9 @@
       "nonSmoking": true,
       "stationWalkMin": 7
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": {
       "url": "https://example.com/aff/rental-car/2",
       "label": null,
@@ -112,6 +118,9 @@
       "nonSmoking": true,
       "stationWalkMin": 6
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
@@ -148,6 +157,9 @@
       "nonSmoking": true,
       "stationWalkMin": 14
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
@@ -184,6 +196,9 @@
       "nonSmoking": true,
       "stationWalkMin": 10
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
@@ -226,6 +241,9 @@
       "stationWalkMin": 6,
       "parking": null
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": {
       "url": "https://example.com/aff/hotel/1",
       "label": null,
@@ -262,6 +280,9 @@
       "stationWalkMin": 7,
       "parking": null
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": {
       "url": "https://example.com/aff/hotel/2",
       "label": null,
@@ -298,6 +319,9 @@
       "stationWalkMin": 15,
       "parking": null
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
@@ -330,6 +354,9 @@
       "stationWalkMin": 15,
       "parking": null
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
@@ -362,6 +389,9 @@
       "stationWalkMin": 6,
       "parking": null
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
@@ -406,6 +436,9 @@
       "stationWalkMin": 3,
       "parking": true
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": {
       "url": "https://example.com/aff/rainy-day/1",
       "label": null,
@@ -444,6 +477,9 @@
       "stationWalkMin": 14,
       "parking": true
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": {
       "url": "https://example.com/aff/rainy-day/2",
       "label": null,
@@ -482,6 +518,9 @@
       "stationWalkMin": 11,
       "parking": null
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
@@ -516,6 +555,9 @@
       "stationWalkMin": 7,
       "parking": null
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
@@ -550,6 +592,9 @@
       "stationWalkMin": 10,
       "parking": true
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
@@ -588,6 +633,9 @@
       "womenSeats": false,
       "stationWalkMin": 14
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": {
       "url": "https://example.com/aff/night-bus/1",
       "label": null,
@@ -620,6 +668,9 @@
       "womenSeats": false,
       "stationWalkMin": 13
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": {
       "url": "https://example.com/aff/night-bus/2",
       "label": null,
@@ -652,6 +703,9 @@
       "womenSeats": true,
       "stationWalkMin": 14
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
@@ -693,6 +747,9 @@
       "stationWalkMin": 10,
       "parking": null
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": {
       "url": "https://example.com/aff/gourmet/1",
       "label": null,
@@ -728,6 +785,9 @@
       "stationWalkMin": 2,
       "parking": null
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": {
       "url": "https://example.com/aff/gourmet/2",
       "label": null,
@@ -763,6 +823,9 @@
       "stationWalkMin": 15,
       "parking": null
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
@@ -794,6 +857,9 @@
       "stationWalkMin": 14,
       "parking": null
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
@@ -825,6 +891,9 @@
       "stationWalkMin": 12,
       "parking": null
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
@@ -863,6 +932,9 @@
       "open24h": true,
       "stationWalkMin": null
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": {
       "url": "https://example.com/aff/parking/1",
       "label": null,
@@ -900,6 +972,9 @@
       "open24h": true,
       "stationWalkMin": null
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": {
       "url": "https://example.com/aff/parking/2",
       "label": null,
@@ -937,6 +1012,9 @@
       "open24h": false,
       "stationWalkMin": null
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
@@ -965,6 +1043,9 @@
       "open24h": false,
       "stationWalkMin": null
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"

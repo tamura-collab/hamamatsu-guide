@@ -1,223 +1,282 @@
 [
   {
-    "id": "gym-09ce24cc",
-    "name": "24h FIT 浜松駅南店",
+    "id": "gym-56df0c21",
+    "name": "chocoZAP（チョコザップ）浜松エリア",
+    "category": "gym",
+    "genre": "コンビニジム",
+    "address": "静岡県浜松市中央区鍛冶町ほか（市内に複数店舗）",
+    "tel": null,
+    "hours": "24時間営業（店舗により異なる場合あり）",
+    "access": "新浜松駅から徒歩5分（浜松鍛冶町店）",
+    "officialUrl": "https://chocozap.jp/",
+    "description": "月額制のコンビニジム。短時間のマシントレーニングやセルフエステ等を、着替え不要で気軽に利用できます。浜松市内では鍛冶町・中央三丁目・曳馬などに店舗があります。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "市内に複数店舗（鍛冶町・中央三丁目・曳馬など）。郊外店には駐車場併設の店舗もあり、仕事帰りや買い物ついでに通いやすい",
+        "source": "manual"
+      },
+      {
+        "type": "station",
+        "text": "新浜松駅徒歩5分",
+        "source": "auto"
+      }
+    ],
+    "specs": {
+      "monthlyFee": 3278,
+      "perVisitFee": null,
+      "trial": null,
+      "open24h": true,
+      "womenOnly": false,
+      "personal": false,
+      "poolSauna": false,
+      "stationWalkMin": 5,
+      "parking": null
+    },
+    "features": [
+      "24時間営業",
+      "初心者向け",
+      "セルフエステ・脱毛（設備は店舗により異なる）",
+      "着替え不要"
+    ],
+    "priceNote": "月額3,278円（税込）。入会金・事務手数料の有無やキャンペーンは時期により異なります。",
+    "chain": true,
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "gym-f731763d",
+    "name": "RIZAP（ライザップ）浜松店",
+    "category": "gym",
+    "genre": "パーソナルジム",
+    "address": "静岡県浜松市中央区鍛冶町140-2 4F・5F",
+    "tel": null,
+    "hours": "7:00～23:00（予約制）",
+    "access": "新浜松駅から徒歩2分／JR浜松駅から徒歩3分（北口）",
+    "officialUrl": "https://www.rizap.jp/",
+    "description": "完全個室のマンツーマン指導と食事指導を組み合わせたパーソナルジム。入会前に無料カウンセリングを受けられます。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "JR浜松駅北口・新浜松駅から徒歩圏。車の場合は周辺のコインパーキング利用が便利",
+        "source": "manual"
+      },
+      {
+        "type": "station",
+        "text": "新浜松駅徒歩2分",
+        "source": "auto"
+      },
+      {
+        "type": "station",
+        "text": "JR浜松駅徒歩3分",
+        "source": "auto"
+      }
+    ],
+    "specs": {
+      "monthlyFee": null,
+      "perVisitFee": null,
+      "trial": true,
+      "open24h": false,
+      "womenOnly": false,
+      "personal": true,
+      "poolSauna": false,
+      "stationWalkMin": 2,
+      "parking": null
+    },
+    "features": [
+      "完全個室パーソナル",
+      "食事指導",
+      "無料カウンセリング",
+      "返金保証制度（条件は公式サイトで確認）"
+    ],
+    "priceNote": "2か月単位などのコース制のため、月額の目安は掲載していません。コース料金・入会金は無料カウンセリングまたは公式サイトでご確認ください。",
+    "chain": false,
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "gym-6e909b80",
+    "name": "エニタイムフィットネス 浜松高林店・浜北中瀬店",
     "category": "gym",
     "genre": "24時間ジム",
-    "address": "静岡県浜松市中央区砂山町2丁目21-7",
-    "tel": "000-000-0001",
-    "hours": "24時間営業（スタッフ在籍 10:00～19:00）",
-    "access": "国道257号沿い／浜松駅から徒歩5分",
-    "officialUrl": "https://example.com/hamamatsu/gym/1",
-    "description": "24時間ジム。24h FIT 浜松駅南店は仕事帰りにも通いやすい立地で、初めての方向けの体験プランもあります。",
+    "address": "静岡県浜松市中央区高林4-4-16 2F・3F（浜松高林店）",
+    "tel": null,
+    "hours": "24時間営業",
+    "access": "助信駅から徒歩12分（浜松高林店）",
+    "officialUrl": "https://www.anytimefitness.co.jp/chubu/shizuoka/?city=hamamatsu",
+    "description": "マシン中心の24時間ジム。会員は国内外のエニタイムフィットネスを相互利用できます。浜松市内では浜松高林店（中央区）と浜北中瀬店（浜名区）の2店舗です。",
     "localNote": [
       {
         "type": "landmark",
-        "text": "中央図書館の近く",
+        "text": "浜北中瀬店はマックスバリュ浜北中瀬店と同じ敷地内",
         "source": "manual"
       },
       {
         "type": "tip",
-        "text": "朝夕は浜松バイパスの渋滞に注意",
+        "text": "マイカー通勤の人は、店舗ごとの駐車場の有無を公式サイトで確認してから選ぶのがおすすめ",
         "source": "manual"
       },
       {
         "type": "station",
-        "text": "浜松駅徒歩5分",
-        "source": "auto"
-      },
-      {
-        "type": "road",
-        "text": "国道257号沿い",
+        "text": "助信駅徒歩12分",
         "source": "auto"
       }
     ],
     "specs": {
-      "monthlyFee": 5200,
-      "trial": true,
+      "monthlyFee": 7480,
+      "perVisitFee": null,
+      "trial": null,
       "open24h": true,
-      "womenOnly": true,
-      "stationWalkMin": 5,
+      "womenOnly": false,
+      "personal": false,
+      "poolSauna": false,
+      "stationWalkMin": 12,
       "parking": null
     },
-    "affiliate": {
-      "url": "https://example.com/aff/gym/1",
-      "label": null,
-      "program": "サンプルASP"
-    },
-    "source": "mock",
+    "features": [
+      "24時間営業",
+      "マシン特化型",
+      "国内外の店舗を相互利用可能（条件あり）",
+      "シャワー完備"
+    ],
+    "priceNote": "月会費は店舗により異なります（7,480円前後が目安）。入会金・事務手数料は公式サイトでご確認ください。",
+    "chain": true,
+    "affiliate": null,
+    "source": "manual",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "gym-23d15be3",
-    "name": "フィットネスクラブ アクティオ高塚",
+    "id": "gym-496730c1",
+    "name": "ホリデイスポーツクラブ 浜松店",
     "category": "gym",
-    "genre": "総合フィットネス",
-    "address": "静岡県浜松市中央区高塚町4丁目2-20",
-    "tel": "000-000-0002",
-    "hours": "24時間営業（スタッフ在籍 10:00～19:00）",
-    "access": "高塚駅 徒歩9分・駐車場なし",
-    "officialUrl": "https://example.com/hamamatsu/gym/2",
-    "description": "総合フィットネス。フィットネスクラブ アクティオ高塚は仕事帰りにも通いやすい立地で、初めての方向けの体験プランもあります。",
+    "genre": "総合フィットネスクラブ",
+    "address": "静岡県浜松市中央区曳馬6-16-20",
+    "tel": null,
+    "hours": "月～木・土 10:00～23:00 / 日・祝 10:00～19:00",
+    "access": "曳馬駅から車で約5分・駐車場あり",
+    "officialUrl": "https://www.holiday-sc.jp/shops/012-hamamatsu/",
+    "description": "ジムエリアに加え、プール・サウナやスタジオプログラムを備えた総合フィットネスクラブ。初心者向けのプログラムもあります。",
     "localNote": [
       {
-        "type": "station",
-        "text": "高塚駅徒歩9分",
-        "source": "auto"
+        "type": "tip",
+        "text": "駐車場あり。休日や仕事終わりにお風呂・サウナ目的でも通える大型総合施設",
+        "source": "manual"
       }
     ],
     "specs": {
-      "monthlyFee": 4900,
-      "trial": true,
-      "open24h": false,
-      "womenOnly": true,
-      "stationWalkMin": 9,
-      "parking": false
-    },
-    "affiliate": {
-      "url": "https://example.com/aff/gym/2",
-      "label": null,
-      "program": "サンプルASP"
-    },
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "gym-ee48dc36",
-    "name": "浜松市民スポーツセンター トレーニング室",
-    "category": "gym",
-    "genre": "公営ジム",
-    "address": "静岡県浜松市中央区砂山町1丁目20-10",
-    "tel": "000-000-0003",
-    "hours": "10:00～23:00（日祝は20:00まで）",
-    "access": "浜松駅 徒歩15分・駐車場20台",
-    "officialUrl": "https://example.com/hamamatsu/gym/3",
-    "description": "公営ジム。浜松市民スポーツセンター トレーニング室は仕事帰りにも通いやすい立地で、初めての方向けの体験プランもあります。",
-    "localNote": [
-      {
-        "type": "station",
-        "text": "浜松駅徒歩15分",
-        "source": "auto"
-      },
-      {
-        "type": "parking",
-        "text": "駐車場20台",
-        "source": "auto"
-      }
-    ],
-    "specs": {
-      "monthlyFee": 2000,
-      "trial": true,
+      "monthlyFee": 9460,
+      "perVisitFee": null,
+      "trial": null,
       "open24h": false,
       "womenOnly": false,
-      "stationWalkMin": 15,
+      "personal": false,
+      "poolSauna": true,
+      "stationWalkMin": null,
       "parking": true
     },
-    "affiliate": null,
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "gym-d2030b6e",
-    "name": "パーソナルジム BODY LAB 鍛冶町",
-    "category": "gym",
-    "genre": "パーソナルジム",
-    "address": "静岡県浜松市中央区鍛冶町4丁目18-2",
-    "tel": "000-000-0004",
-    "hours": "24時間営業（スタッフ在籍 10:00～19:00）",
-    "access": "鍛冶町通り沿い／第一通り駅から徒歩13分",
-    "officialUrl": "https://example.com/hamamatsu/gym/4",
-    "description": "パーソナルジム。パーソナルジム BODY LAB 鍛冶町は仕事帰りにも通いやすい立地で、初めての方向けの体験プランもあります。",
-    "localNote": [
-      {
-        "type": "station",
-        "text": "第一通り駅徒歩13分",
-        "source": "auto"
-      },
-      {
-        "type": "road",
-        "text": "鍛冶町通り沿い",
-        "source": "auto"
-      }
+    "features": [
+      "プール・サウナ",
+      "スタジオプログラム",
+      "初心者向けプログラム"
     ],
-    "specs": {
-      "monthlyFee": 29800,
-      "trial": false,
-      "open24h": false,
-      "womenOnly": true,
-      "stationWalkMin": 13,
-      "parking": null
-    },
+    "priceNote": "マスター会員の月会費（税込）。会員種別・時期によって異なります。",
+    "chain": false,
     "affiliate": null,
-    "source": "mock",
+    "source": "manual",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "gym-c2dee06c",
-    "name": "女性専用ジム ラフィネ浜北",
+    "id": "gym-e707b36c",
+    "name": "カーブス（Curves）浜松エリア",
     "category": "gym",
-    "genre": "女性専用ジム",
-    "address": "静岡県浜松市浜名区小松1丁目8-7",
-    "tel": "000-000-0005",
-    "hours": "24時間営業（スタッフ在籍 10:00～19:00）",
-    "access": "小松駅から徒歩8分・駐車場なし",
-    "officialUrl": "https://example.com/hamamatsu/gym/5",
-    "description": "女性専用ジム。女性専用ジム ラフィネ浜北は仕事帰りにも通いやすい立地で、初めての方向けの体験プランもあります。",
+    "genre": "女性専用フィットネス",
+    "address": "静岡県浜松市内（複数店舗）",
+    "tel": null,
+    "hours": "店舗により異なる",
+    "access": null,
+    "officialUrl": "https://www.curves.co.jp/",
+    "description": "女性専用の30分サーキットトレーニング。予約不要で、空いた時間に通えます。",
     "localNote": [
       {
-        "type": "station",
-        "text": "小松駅徒歩8分",
-        "source": "auto"
+        "type": "tip",
+        "text": "ショッピングモール内や郊外のロードサイドにも出店しており、買い物のついでに通いやすい",
+        "source": "manual"
       }
     ],
     "specs": {
       "monthlyFee": [
-        6600,
-        7900
+        6270,
+        8360
       ],
-      "trial": true,
+      "perVisitFee": null,
+      "trial": null,
       "open24h": false,
       "womenOnly": true,
-      "stationWalkMin": 8,
-      "parking": false
+      "personal": false,
+      "poolSauna": false,
+      "stationWalkMin": null,
+      "parking": null
     },
+    "features": [
+      "女性専用",
+      "1回30分のサーキットトレーニング",
+      "予約不要"
+    ],
+    "priceNote": "月会費は店舗・コースにより異なります（税込の目安）。別途入会金がかかります。",
+    "chain": true,
     "affiliate": null,
-    "source": "mock",
+    "source": "manual",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "gym-67ebc4cf",
-    "name": "ゴールドフィット 入野店",
+    "id": "gym-3dea2828",
+    "name": "浜松アリーナ トレーニング室（市営）",
     "category": "gym",
-    "genre": "24時間ジム",
-    "address": "静岡県浜松市中央区入野町4丁目1-14",
-    "tel": "000-000-0006",
-    "hours": "7:00～23:00 / 第3月曜休",
-    "access": "浜松環状線沿い／高塚駅 徒歩10分",
-    "officialUrl": "https://example.com/hamamatsu/gym/6",
-    "description": "24時間ジム。ゴールドフィット 入野店は仕事帰りにも通いやすい立地で、初めての方向けの体験プランもあります。",
+    "genre": "公営トレーニング室",
+    "address": "静岡県浜松市中央区和田町808-1",
+    "tel": null,
+    "hours": "9:00～21:30",
+    "access": "駐車場650台（1回200円）",
+    "officialUrl": null,
+    "description": "浜松市の公営トレーニング室。月額契約がなく、1回ごとの料金で利用できます。初回利用時は講習の受講が必要です。",
     "localNote": [
       {
-        "type": "station",
-        "text": "高塚駅徒歩10分",
-        "source": "auto"
+        "type": "tip",
+        "text": "月額契約をせず「たまに運動したい」人向け。市内には浜北グリーンアリーナなど、ほかの公営トレーニング室もある",
+        "source": "manual"
       },
       {
-        "type": "road",
-        "text": "浜松環状線沿い",
+        "type": "parking",
+        "text": "駐車場650台",
         "source": "auto"
       }
     ],
     "specs": {
-      "monthlyFee": 4100,
-      "trial": false,
-      "open24h": true,
+      "monthlyFee": null,
+      "perVisitFee": [
+        200,
+        410
+      ],
+      "trial": null,
+      "open24h": false,
       "womenOnly": false,
-      "stationWalkMin": 10,
-      "parking": null
+      "personal": false,
+      "poolSauna": false,
+      "stationWalkMin": null,
+      "parking": true
     },
+    "features": [
+      "都度払い（月額固定なし）",
+      "公営トレーニング室",
+      "駐車場あり（有料）",
+      "初回は講習の受講が必要"
+    ],
+    "priceNote": "1回あたり：一般410円、中高生・70歳以上200円（浜松アリーナ条例の料金表より）。駐車場は別途1回200円。",
+    "chain": false,
     "affiliate": null,
-    "source": "mock",
+    "source": "manual",
     "updatedAt": "2026-10-10"
   },
   {
@@ -259,6 +318,9 @@
       "paymentDays": 1,
       "parking": true
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": {
       "url": "https://example.com/aff/car-buyback/1",
       "label": null,
@@ -296,6 +358,9 @@
       "paymentDays": 1,
       "parking": true
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": {
       "url": "https://example.com/aff/car-buyback/2",
       "label": null,
@@ -333,6 +398,9 @@
       "paymentDays": 7,
       "parking": true
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
@@ -366,6 +434,9 @@
       "paymentDays": 2,
       "parking": true
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
@@ -399,6 +470,9 @@
       "paymentDays": 6,
       "parking": true
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
@@ -439,6 +513,9 @@
       "stationWalkMin": 13,
       "parking": null
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": {
       "url": "https://example.com/aff/kids-school/1",
       "label": null,
@@ -476,6 +553,9 @@
       "stationWalkMin": 13,
       "parking": null
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": {
       "url": "https://example.com/aff/kids-school/2",
       "label": null,
@@ -513,6 +593,9 @@
       "stationWalkMin": 12,
       "parking": null
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
@@ -543,6 +626,9 @@
       "stationWalkMin": 10,
       "parking": null
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
@@ -573,6 +659,9 @@
       "stationWalkMin": 11,
       "parking": false
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
@@ -612,6 +701,9 @@
       "stationWalkMin": 14,
       "parking": null
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": {
       "url": "https://example.com/aff/fiber/1",
       "label": null,
@@ -650,6 +742,9 @@
       "stationWalkMin": 7,
       "parking": true
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": {
       "url": "https://example.com/aff/fiber/2",
       "label": null,
@@ -683,6 +778,9 @@
       "stationWalkMin": 2,
       "parking": null
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
@@ -712,6 +810,9 @@
       "stationWalkMin": 11,
       "parking": null
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
@@ -750,6 +851,9 @@
       "stationWalkMin": 12,
       "parking": false
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": {
       "url": "https://example.com/aff/energy/1",
       "label": null,
@@ -782,6 +886,9 @@
       "stationWalkMin": 7,
       "parking": null
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": {
       "url": "https://example.com/aff/energy/2",
       "label": null,
@@ -814,6 +921,9 @@
       "stationWalkMin": 3,
       "parking": null
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
@@ -851,6 +961,9 @@
       "singlePlanFee": 44000,
       "disposal": false
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": {
       "url": "https://example.com/aff/moving/1",
       "label": null,
@@ -887,6 +1000,9 @@
       "singlePlanFee": 30000,
       "disposal": true
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": {
       "url": "https://example.com/aff/moving/2",
       "label": null,
@@ -918,6 +1034,9 @@
       "singlePlanFee": 43000,
       "disposal": true
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
@@ -950,6 +1069,9 @@
       "singlePlanFee": 37000,
       "disposal": true
     },
+    "features": [],
+    "priceNote": null,
+    "chain": false,
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"

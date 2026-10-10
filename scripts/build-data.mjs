@@ -88,7 +88,9 @@ function normalizeRecord(raw) {
     else console.warn(`  ⚠ ${id}: override の不明なキー "${key}" を無視しました`);
   }
 
-  const localNote = mergeLocalNotes(inferLocalNotes(base.access), extra?.localNote);
+  // 手入力データ（raw の localNote）と enrichment の人手メモを統合。enrichment が優先
+  const manualNotes = [...(extra?.localNote ?? []), ...(raw.localNote ?? [])];
+  const localNote = mergeLocalNotes(inferLocalNotes(base.access), manualNotes);
   const specs = buildSpecs(id, categoryBySlug.get(base.category), raw.specs, extra?.specs, {
     stationWalkMin: deriveStationWalk(localNote),
     parking: deriveParking(base.access),
@@ -106,6 +108,12 @@ function normalizeRecord(raw) {
     ...base,
     localNote,
     specs,
+    /** 特徴タグ（表示用） */
+    features: (extra?.features ?? raw.features ?? []).map(cleanText).filter(Boolean),
+    /** 店舗固有の料金注記（例: 「コース制のため月額表示なし」） */
+    priceNote: cleanText(extra?.priceNote ?? raw.priceNote),
+    /** 複数店舗をまとめた掲載（住所は代表店舗またはエリア） */
+    chain: Boolean(extra?.chain ?? raw.chain ?? false),
     // アフィリエイトリンクは提携契約に基づく情報のため、収集データではなく enrichment.json でのみ設定する
     affiliate,
     source: extra?.override || extra?.specs ? 'manual' : raw.source ?? 'scrape',
@@ -133,6 +141,13 @@ for (const [dataset, section] of Object.entries(DATASETS)) {
       byId.set(place.id, place);
     }
   }
+
+  // 実データ（manual / scrape）があるカテゴリでは、モックデータを掲載しない
+  const realCategories = new Set([...byId.values()].filter((p) => p.source !== 'mock').map((p) => p.category));
+  for (const [id, p] of byId) {
+    if (p.source === 'mock' && realCategories.has(p.category)) byId.delete(id);
+  }
+  if (realCategories.size > 0) console.log(`  実データに置き換えたカテゴリ（${dataset}）: ${[...realCategories].join(', ')}`);
 
   const places = [...byId.values()].sort(
     (a, b) => (categoryOrder.get(a.category) ?? 99) - (categoryOrder.get(b.category) ?? 99),

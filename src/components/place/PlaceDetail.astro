@@ -27,7 +27,9 @@ const others = getPlaces(category.section, category.slug)
   .filter((p) => p.id !== place.id)
   .slice(0, 3);
 
-const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${place.name} ${place.address}`)}`;
+// 複数店舗をまとめた掲載は、住所ではなく名称＋都市名で地図検索する
+const mapQuery = place.chain ? `${place.name.replace(/（.*?）|エリア/g, '')} ${siteConfig.city.name}` : `${place.name} ${place.address}`;
+const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mapQuery)}`;
 const telHref = place.tel ? `tel:${place.tel.replace(/-/g, '')}` : null;
 // 修正依頼はお問い合わせフォームへ（対象を事前入力する）
 const reportHref = `${url('/contact')}?about=${encodeURIComponent(`${place.name}（${place.id}）`)}`;
@@ -49,7 +51,8 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': schemaType[category.slug] ?? 'LocalBusiness',
   name: place.name,
-  address: place.address,
+  // 複数店舗をまとめた掲載はエリア表記のため、構造化データには住所を入れない
+  ...(!place.chain && { address: place.address }),
   ...(place.tel && { telephone: place.tel }),
   ...(place.officialUrl && { url: place.officialUrl }),
   ...(place.description && { description: place.description }),
@@ -91,11 +94,21 @@ const rows = [
       </div>
       <h1 class="mt-2 text-2xl leading-snug font-bold sm:text-3xl">{place.name}</h1>
       {place.description && <p class="mt-3 leading-relaxed text-muted">{place.description}</p>}
+      {
+        place.features.length > 0 && (
+          <ul class="mt-3 flex flex-wrap gap-1.5" aria-label="特徴">
+            {place.features.map((f) => (
+              <li class="rounded-md border border-line bg-white px-2 py-0.5 text-xs">{f}</li>
+            ))}
+          </ul>
+        )
+      }
+      {place.chain && <p class="mt-2 text-xs text-muted">※複数店舗をまとめて掲載しています。住所・アクセスは代表店舗またはエリアの情報です。</p>}
     </header>
 
     <div class="mt-5 space-y-2">
       <AdNotice hasAffiliate={place.affiliate !== null} />
-      <SampleDataNotice />
+      <SampleDataNotice show={place.source === 'mock'} />
     </div>
 
     <!-- 送客CTA（アフィリエイトがあれば強調表示） -->
@@ -186,7 +199,8 @@ const rows = [
             ))
           }
         </dl>
-        {category.axes.some((a) => a.type === 'price') && <PriceNote class="mt-2" />}
+        {place.priceNote && <p class="mt-2 text-xs leading-relaxed">{place.priceNote}</p>}
+        {category.axes.some((a) => a.type === 'price') && <PriceNote class="mt-1" />}
         <p class="mt-1 text-[11px] text-muted">「—」は未確認の項目です。</p>
       </section>
 

@@ -52,7 +52,7 @@ const hasAffiliate = places.some((p) => p.affiliate);
 
     <div class="mt-6 space-y-2">
       <AdNotice hasAffiliate={hasAffiliate} />
-      <SampleDataNotice />
+      <SampleDataNotice show={places.some((p) => p.source === 'mock')} />
     </div>
 
     {

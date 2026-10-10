@@ -1,28 +1,4 @@
 {
-  "gym-09ce24cc": {
-    "_name": "24h FIT 浜松駅南店",
-    "affiliate": {
-      "url": "https://example.com/aff/gym/1",
-      "program": "サンプルASP"
-    },
-    "localNote": [
-      {
-        "type": "landmark",
-        "text": "中央図書館の近く"
-      },
-      {
-        "type": "tip",
-        "text": "朝夕は浜松バイパスの渋滞に注意"
-      }
-    ]
-  },
-  "gym-23d15be3": {
-    "_name": "フィットネスクラブ アクティオ高塚",
-    "affiliate": {
-      "url": "https://example.com/aff/gym/2",
-      "program": "サンプルASP"
-    }
-  },
   "car-buyback-8091c3d0": {
     "_name": "カーバイ 浜松バイパス高塚店",
     "affiliate": {

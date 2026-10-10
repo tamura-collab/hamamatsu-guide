@@ -204,6 +204,20 @@ const rowData = (p: Place, index: number) => JSON.stringify({ i: index, specs: p
         }
       </tbody>
     </table>
+    {
+      places.some((p) => p.priceNote) && (
+        <dl class="border-t border-line bg-surface px-4 py-3 text-[11px] leading-relaxed text-muted">
+          <dt class="font-bold text-ink">料金の補足</dt>
+          {places
+            .filter((p) => p.priceNote)
+            .map((p) => (
+              <dd>
+                {p.name}：{p.priceNote}
+              </dd>
+            ))}
+        </dl>
+      )
+    }
   </div>
 
   <p data-compare-empty hidden class="mt-4 rounded-xl border border-dashed border-line p-8 text-center text-sm text-muted">

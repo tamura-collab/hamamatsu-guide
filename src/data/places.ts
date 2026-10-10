@@ -44,6 +44,12 @@ export interface Place {
   localNote: LocalNote[];
   /** 比較軸の値（キーは categories.ts の axes[].key）。不明な値は null */
   specs: Record<string, SpecValue>;
+  /** 特徴タグ（例: 「24時間営業」「着替え不要」） */
+  features: string[];
+  /** 店舗固有の料金注記（例: 「コース制のため月額表示なし」）。共通の料金注記とあわせて表示する */
+  priceNote: string | null;
+  /** 複数店舗をまとめた掲載か（住所は代表店舗またはエリア表記） */
+  chain: boolean;
   /** アフィリエイト（広告）リンク。提携がある場合のみ設定される */
   affiliate: Affiliate | null;
   source: 'mock' | 'scrape' | 'manual';

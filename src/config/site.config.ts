@@ -71,6 +71,8 @@ export const siteConfig = {
   ] as const satisfies readonly { icon: IconName; title: string; text: string }[],
   /** 料金表記の近くに自動表示する注記 */
   priceNotice: '※掲載している料金は目安です。最新の料金やキャンペーン情報は各公式サイトでご確認ください。',
+  /** 店舗カードの料金欄に添える短い注記 */
+  priceNoticeShort: '※最新の料金やキャンペーン情報は公式サイトでご確認ください',
   /** 景表法（ステマ規制）対応の関係性表記 */
   prDisclosure: '※当サイトはアフィリエイトプログラムを利用しており、記事内に広告・PRを含みます。',
   /**

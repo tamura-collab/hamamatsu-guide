@@ -131,6 +131,15 @@ data/enrichment.json ───────────┘   正規化・ID付与
 `override` で収集データの誤りを補正、`specs` で比較値を補正、`affiliate` で広告リンクを設定、`hidden: true` で非掲載にできます。
 アフィリエイトリンクは提携契約に基づく情報のため、収集データではなく enrichment.json でのみ設定します。再収集しても enrichment.json は上書きされません。
 
+### 実データの手入力（curated）
+
+公式サイト等で確認した実データは `data/raw/{stores,spots}/curated-<カテゴリ>.json` に `"source": "manual"` で記述します（例: `curated-gym.json`）。
+
+- 実データ（manual / scrape）があるカテゴリでは、`data:build` がモックデータを自動的に除外します。そのカテゴリのページでは「サンプルデータ」注記も表示されません
+- 追加フィールド: `features`（特徴タグ）、`priceNote`（店舗固有の料金注記。カード・比較表・詳細ページに共通注記とあわせて表示）、`chain`（複数店舗をまとめた掲載）、`localNote`（地元メモ）
+- `_sources`（確認した出典URL）と `_unverified`（未確認の項目）は社内管理用で、サイトには出力されません。公開前に `_unverified` を解消してください
+- 電話番号は公式情報で確認できたものだけを入れ、推測で埋めないこと
+
 ### スクレイピング
 
 対象サイトは `scripts/sources.config.mjs` に CSS セレクタで定義します（Cheerio で解析。JS描画が必要なサイトは `render: 'browser'` で Playwright を使用、`npm i -D playwright` が必要）。

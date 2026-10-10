@@ -2,10 +2,16 @@
 // 掲載データが開発用サンプルの間に表示する注意書き（siteConfig.sampleData で切り替え）
 import Icon from './Icon.astro';
 import { siteConfig } from '@/config/site.config';
+
+interface Props {
+  /** そのページにサンプル（モック）データが含まれるか */
+  show?: boolean;
+}
+const { show = true } = Astro.props;
 ---
 
 {
-  siteConfig.sampleData && (
+  siteConfig.sampleData && show && (
     <p class="flex items-start gap-2 rounded-lg border border-dashed border-brand-200 bg-brand-50 px-3 py-2 text-xs leading-relaxed text-brand-800">
       <Icon name="info" class="mt-0.5 size-4 shrink-0" />
       現在掲載している店舗・施設情報は、サイト構築用のサンプルデータです（実在の店舗・料金ではありません）。

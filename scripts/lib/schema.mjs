@@ -103,6 +103,11 @@ export function validatePlace(place, categoryMap) {
       } else if (typeof value === 'number' && value < 0) errors.push(`specs.${key} が負の値です`);
     }
   }
+  if (!Array.isArray(place.features) || !place.features.every(isNonEmptyString)) {
+    errors.push('features は文字列の配列です');
+  }
+  if (place.priceNote !== null && !isNonEmptyString(place.priceNote)) errors.push('priceNote は文字列か null です');
+  if (typeof place.chain !== 'boolean') errors.push('chain は真偽値です');
   if (place.affiliate !== null) {
     if (typeof place.affiliate !== 'object' || !/^https?:\/\//.test(place.affiliate?.url ?? '')) {
       errors.push(`affiliate.url が不正です: ${place.affiliate?.url}`);
