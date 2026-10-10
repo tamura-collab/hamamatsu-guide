@@ -7,19 +7,58 @@ import SearchDialog from '@/components/layout/SearchDialog.astro';
 import DialogController from '@/components/layout/DialogController.astro';
 import OutboundTracker from '@/components/outbound/OutboundTracker.astro';
 import { siteConfig } from '@/config/site';
-import { url } from '@/lib/url';
+import { publicPath, url } from '@/lib/url';
+import { NOINDEX } from 'astro:env/server';
 
 interface Props {
   /** ページ固有のタイトル（未指定ならサイト名のみ） */
   title?: string;
   description?: string;
   noindex?: boolean;
+  /** SNS共有画像（public/ からのパス）。未指定なら都市の既定画像 */
+  image?: string;
+  imageAlt?: string;
+  /** og:type。トップは website、それ以外は article */
+  ogType?: 'website' | 'article';
 }
 
-const { title, description = siteConfig.description, noindex = false } = Astro.props;
-const fullTitle = title ? `${title}｜${siteConfig.siteName}` : `${siteConfig.siteName}｜${siteConfig.city.name}の暮らしとおでかけ比較メディア`;
-// canonical / OGP は astro.config の site（= SITE_URL）から組み立てる。ドメインはコードに持たない。
-const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : undefined;
+const { city, social } = siteConfig;
+const pathname = publicPath(Astro.url.pathname);
+const isHome = pathname === url('/');
+const {
+  title,
+  description = siteConfig.description,
+  image = city.ogImage,
+  imageAlt = city.ogImageAlt,
+  ogType = isHome ? 'website' : 'article',
+} = Astro.props;
+// プレビュー環境のビルド（NOINDEX）では全ページ noindex にする
+const noindex = Astro.props.noindex || NOINDEX;
+
+const fullTitle = title ? `${title}｜${siteConfig.siteName}` : `${siteConfig.siteName}｜${city.name}の暮らしとおでかけ比較メディア`;
+
+// canonical / OGP の絶対URLは astro.config の site（= SITE_URL）から組み立てる。ドメインはコードに持たない。
+const absolute = (path: string) => (Astro.site ? new URL(path, Astro.site).href : path);
+const canonical = absolute(pathname);
+const ogImage = absolute(url(image));
+
+// トップページの構造化データ（サイト名・サイト内検索）
+const websiteJsonLd = isHome
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: siteConfig.siteName,
+      url: absolute(url('/')),
+      inLanguage: 'ja',
+      description: siteConfig.description,
+      publisher: { '@type': 'Organization', name: siteConfig.operator.name },
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: `${absolute(url('/search'))}?q={search_term_string}`,
+        'query-input': 'required name=search_term_string',
+      },
+    }
+  : null;
 ---
 
 <!doctype html>
@@ -31,20 +70,34 @@ const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : un
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     {noindex && <meta name="robots" content="noindex" />}
-    {canonical && <link rel="canonical" href={canonical} />}
+    <link rel="canonical" href={canonical} />
     <link rel="icon" type="image/svg+xml" href={url('/favicon.svg')} />
     <link rel="sitemap" href={url('/sitemap-index.xml')} />
 
-    <meta property="og:type" content={Astro.url.pathname === url('/') ? 'website' : 'article'} />
+    <!-- Open Graph -->
+    <meta property="og:type" content={ogType} />
     <meta property="og:site_name" content={siteConfig.siteName} />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
     <meta property="og:locale" content={siteConfig.locale} />
-    {canonical && <meta property="og:url" content={canonical} />}
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={imageAlt} />
+
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+    <meta name="twitter:image:alt" content={imageAlt} />
+    {social.twitterHandle && <meta name="twitter:site" content={social.twitterHandle} />}
+
     <!-- 地域メディアとしての対象エリア -->
-    <meta name="geo.region" content={siteConfig.city.isoRegion} />
-    <meta name="geo.placename" content={siteConfig.city.name} />
+    <meta name="geo.region" content={city.isoRegion} />
+    <meta name="geo.placename" content={city.name} />
+    {websiteJsonLd && <script type="application/ld+json" set:html={JSON.stringify(websiteJsonLd)} />}
     <slot name="head" />
   </head>
   <body class="flex min-h-dvh flex-col">

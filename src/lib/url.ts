@@ -18,3 +18,11 @@ export function isActive(currentPath: string, href: string): boolean {
   if (target === url('/').replace(/\/$/, '')) return current === target;
   return current === target || current.startsWith(`${target}/`);
 }
+
+/**
+ * ページの公開パスを返す。ビルド出力（build.format: 'file'）では /about.html や /index の形で
+ * 渡るため、末尾スラッシュなし・拡張子なしに正規化する（sitemap・canonical と一致させる）。
+ */
+export function publicPath(pathname: string): string {
+  return pathname.replace(/\.html$/, '').replace(/\/index$/, '/').replace(/(.)\/$/, '$1');
+}

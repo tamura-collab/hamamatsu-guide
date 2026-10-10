@@ -1,0 +1,7 @@
+# ビルド時に integrations/seo-files.mjs が {{SITE_URL}} を astro.config の site（SITE_URL）に置き換える。
+# プレビュー環境（NOINDEX）のビルドでは全体を Disallow に差し替える。
+User-agent: *
+Allow: /
+Disallow: /search
+
+Sitemap: {{SITE_URL}}/sitemap-index.xml

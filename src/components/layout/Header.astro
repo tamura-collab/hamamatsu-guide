@@ -3,9 +3,9 @@ import Logo from './Logo.astro';
 import Icon from '@/components/ui/Icon.astro';
 import { mainNav } from '@/config/navigation';
 import { siteConfig } from '@/config/site';
-import { isActive, url } from '@/lib/url';
+import { isActive, publicPath, url } from '@/lib/url';
 
-const currentPath = Astro.url.pathname;
+const currentPath = publicPath(Astro.url.pathname);
 ---
 
 <!-- 景表法（ステマ規制）対応：全ページ共通で関係性を明示（スクロール時は隠れ、ヘッダーのみ追従） -->

@@ -14,7 +14,8 @@
     "data:mock": "node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/generate-mock.mjs",
     "data:scrape": "node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/scrape.mjs",
     "data:build": "node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/build-data.mjs",
-    "data": "npm run data:mock && npm run data:build"
+    "data": "npm run data:mock && npm run data:build",
+    "verify": "npm run data:build -- --check && astro check && astro build"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",

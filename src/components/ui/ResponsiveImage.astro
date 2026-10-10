@@ -1,0 +1,40 @@
+---
+/**
+ * レスポンシブ画像。記事のアイキャッチや店舗写真を追加するときはこのコンポーネントを使う。
+ *   - AVIF / WebP を生成し、幅違いの srcset を出力（ビルド時に astro:assets + sharp で最適化）
+ *   - 既定で loading="lazy" / decoding="async"。ファーストビューの画像だけ priority を指定する
+ *   - width / height を必ず出力し、読み込み時のレイアウトずれ（CLS）を防ぐ
+ *
+ *   import photo from '@/assets/articles/fiber.jpg';
+ *   <ResponsiveImage src={photo} alt="..." sizes="(min-width: 1024px) 720px, 100vw" />
+ */
+import { Picture } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
+interface Props {
+  /** src/assets 配下の画像を import したもの */
+  src: ImageMetadata;
+  alt: string;
+  /** 表示幅のヒント（srcset の選択に使用） */
+  sizes?: string;
+  widths?: number[];
+  /** ファーストビューに表示する画像（遅延読み込みしない） */
+  priority?: boolean;
+  class?: string;
+}
+
+const { src, alt, sizes = '100vw', widths = [400, 800, 1200], priority = false, class: className } = Astro.props;
+const usableWidths = widths.filter((w) => w <= src.width);
+---
+
+<Picture
+  src={src}
+  alt={alt}
+  formats={['avif', 'webp']}
+  widths={usableWidths.length > 0 ? usableWidths : [src.width]}
+  sizes={sizes}
+  loading={priority ? 'eager' : 'lazy'}
+  decoding="async"
+  fetchpriority={priority ? 'high' : 'auto'}
+  class={className}
+/>

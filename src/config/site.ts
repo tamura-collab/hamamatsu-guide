@@ -38,6 +38,10 @@ export const siteConfig = {
     formEndpoint: null as string | null,
     sns: [] as { name: string; url: string; handle: string }[],
   },
+  /** SNS（Twitter Card の twitter:site に使用。アカウント開設後に '@handle' を設定） */
+  social: {
+    twitterHandle: null as string | null,
+  },
   /** 景表法（ステマ規制）対応の関係性表記 */
   prDisclosure: '※当サイトはアフィリエイトプログラムを利用しており、記事内に広告・PRを含みます。',
   /**

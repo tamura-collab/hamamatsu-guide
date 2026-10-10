@@ -22,6 +22,9 @@ export interface CityConfig {
   catchCopy: string;
   /** ヒーロー下の説明文 */
   lead: string;
+  /** SNS共有時の既定画像（public/ からのパス、1200×630） */
+  ogImage: string;
+  ogImageAlt: string;
 }
 
 export const cities = {
@@ -36,6 +39,8 @@ export const cities = {
     mainStation: '浜松駅',
     catchCopy: '暮らすも、訪れるも。\n浜松のことなら、ここで比べて決める。',
     lead: '車移動が中心の浜松だからこそ、駐車場やバイパスからの行きやすさまで。地元編集部が条件をそろえて比較します。',
+    ogImage: '/og/hamamatsu.jpg',
+    ogImageAlt: 'みんなの浜松ガイド｜暮らすも、訪れるも。浜松のことなら、ここで比べて決める。',
   },
 } as const satisfies Record<string, CityConfig>;
 

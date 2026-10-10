@@ -21,6 +21,7 @@ npm run dev        # http://localhost:4321
 | `npm run build` | `dist/` に静的ファイルを出力 |
 | `npm run preview` | ビルド結果をローカルで確認 |
 | `npm run check` | 型チェック（astro check） |
+| `npm run verify` | データ検証 + 型チェック + ビルド（デプロイ前の最終確認） |
 | `npm run data` | モックデータ生成 → `src/data/*.json` 再生成 |
 | `npm run data:mock` | モックの生データを `data/raw/` に生成 |
 | `npm run data:scrape` | スクレイピングで生データを収集 |
@@ -51,6 +52,8 @@ media-site/
 │   └── enrichment.json     # 人手の補正・地域文脈メモ（localNote）
 ├── scripts/                # データ収集・加工スクリプト（後述）
 ├── api/log.js              # 送客ログ収集API（Vercel Functions・モック）
+├── integrations/           # robots.txt・sitemap.xml を仕上げるビルドフック
+├── vercel.json / netlify.toml / .nvmrc  # デプロイ設定
 ├── public/                 # favicon などの静的ファイル
 └── src/
     ├── config/
@@ -202,19 +205,38 @@ npm run data:scrape -- --source=sample-fixture --dry-run   # 同梱のサンプ�
 | --- | --- | --- |
 | `SITE_URL` | 正規URL（例: `https://example.jp`） | Vercel では `VERCEL_PROJECT_PRODUCTION_URL`、それ以外は `http://localhost:4321` |
 | `CITY` | 対象都市（`src/config/cities.ts` の citySlug） | `hamamatsu` |
+| `NOINDEX` | `true` で全ページ noindex・robots.txt 全体 Disallow | プレビュー環境では自動で `true` |
 | `PUBLIC_GA4_ID` | GA4 測定ID | 未設定（GA4を読み込まない） |
 | `PUBLIC_LOG_ENDPOINT` | 送客ログの送信先 | 未設定（送信しない） |
 | `BASE_PATH` | サブディレクトリ配信時のみ（例: `/media`） | `/` |
 
 独自ドメインへ移行する際は `SITE_URL` を変更して再ビルドするだけで済みます。
 
-## Vercel へのデプロイ
+## SEO・パフォーマンス（Phase 4）
 
-1. Vercel でこのリポジトリをインポート
-2. **Root Directory** を `media-site` に設定（Framework Preset は Astro が自動検出されます）
-3. 独自ドメインを使う場合は、環境変数 `SITE_URL` を設定
+- **URL**: 末尾スラッシュなし・拡張子なし（`/living/gym`）に統一。`build.format: 'file'` で `living/gym.html` として出力し、どのホスティングでも追加設定なしで配信されます
+- **sitemap**: `@astrojs/sitemap` が `sitemap-index.xml` / `sitemap-0.xml` を生成し、別名の `sitemap.xml` も出力（`/search`・404 は除外）
+- **robots.txt**: `public/robots.txt` をビルド時に仕上げます（`integrations/seo-files.mjs`）。`{{SITE_URL}}` を本番URLに置換し、プレビュー環境では全体を `Disallow: /` に差し替え
+- **OGP / Twitter Card**: `BaseLayout` で全ページに出力。共有画像は都市ごとの `public/og/<citySlug>.jpg`（1200×630、`cities.ts` の `ogImage`）。ページ単位で `image` を渡して差し替え可能
+- **構造化データ**: トップに `WebSite`（サイト内検索つき）、各ページに `BreadcrumbList`、詳細ページに `LocalBusiness` 等
+- **noindex**: プレビュー環境（Vercel Preview / Netlify Deploy Preview・Branch deploy / Cloudflare Pages の本番以外のブランチ）や `NOINDEX=true` のビルドは全ページ `noindex`
+- **画像**: 写真を追加するときは `ResponsiveImage`（`src/components/ui/`）を使う。AVIF / WebP と幅違いの srcset を生成し、既定で遅延読み込み。ファーストビューの画像だけ `priority` を指定
+- **JavaScript**: 完全な静的出力（`output: 'static'`）。クライアント JS はメニュー開閉（約1.3KB）と送客計測（約1KB）をページに直接埋め込み、比較・検索・お問い合わせページのみ追加の小さなスクリプトを持ちます。外部ライブラリ・Web フォントは読み込みません
 
-静的出力のため、アダプターは不要です。
+## デプロイ
+
+`npm run verify`（データ検証 → 型チェック → ビルド）がローカルで通ることを確認してからデプロイしてください。
+いずれのサービスも **Root（Base）Directory を `media-site`** に設定します。Node.js は `.nvmrc`（22）で指定しています。
+
+| サービス | 設定ファイル | ビルドコマンド / 出力 | 本番URL |
+| --- | --- | --- | --- |
+| Vercel | `vercel.json` | `npm run build` / `dist` | `SITE_URL` 未設定なら Vercel の本番URLを自動使用 |
+| Netlify | `netlify.toml` + `public/_headers` | `npm run build` / `dist` | `SITE_URL` 未設定なら Netlify の本番URLを自動使用 |
+| Cloudflare Pages | `public/_headers` | `npm run build` / `dist`（管理画面で指定） | **`SITE_URL` を設定**。本番ブランチが main 以外なら `PRODUCTION_BRANCH` も |
+
+- キャッシュ（`/_astro/*` は1年 immutable）とセキュリティヘッダーは `vercel.json` / `public/_headers` に同じ内容で定義しています
+- 送客ログ API（`api/log.js`）は Vercel Functions 専用です。他のサービスでは各サービスの Functions に移植してください
+- 環境変数は `.env.example` に一覧があります。独自ドメインへ移行するときは `SITE_URL` を変えて再デプロイします
 
 ## 法令対応（景表法・ステマ規制）
 
