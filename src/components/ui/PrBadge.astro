@@ -1,0 +1,17 @@
+---
+// 景表法（ステマ規制）対応：広告を含むコンテンツであることを明示するラベル
+interface Props {
+  class?: string;
+}
+const { class: className } = Astro.props;
+---
+
+<span
+  class:list={[
+    'inline-flex items-center rounded border border-amber-300 bg-amber-50 px-1.5 text-[10px] font-bold leading-[18px] text-amber-800',
+    className,
+  ]}
+  title="この記事には広告（アフィリエイトリンク）が含まれます"
+>
+  PR
+</span>

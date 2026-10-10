@@ -1,0 +1,58 @@
+---
+import '@/styles/global.css';
+import Header from '@/components/layout/Header.astro';
+import Footer from '@/components/layout/Footer.astro';
+import MobileMenu from '@/components/layout/MobileMenu.astro';
+import SearchDialog from '@/components/layout/SearchDialog.astro';
+import DialogController from '@/components/layout/DialogController.astro';
+import { siteConfig } from '@/config/site';
+import { url } from '@/lib/url';
+
+interface Props {
+  /** ページ固有のタイトル（未指定ならサイト名のみ） */
+  title?: string;
+  description?: string;
+  noindex?: boolean;
+}
+
+const { title, description = siteConfig.description, noindex = false } = Astro.props;
+const fullTitle = title ? `${title}｜${siteConfig.siteName}` : `${siteConfig.siteName}｜${siteConfig.city.name}の暮らしとおでかけ比較メディア`;
+// canonical / OGP は astro.config の site（= SITE_URL）から組み立てる。ドメインはコードに持たない。
+const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : undefined;
+---
+
+<!doctype html>
+<html lang={siteConfig.lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0f4c75" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex" />}
+    {canonical && <link rel="canonical" href={canonical} />}
+    <link rel="icon" type="image/svg+xml" href={url('/favicon.svg')} />
+    <link rel="sitemap" href={url('/sitemap-index.xml')} />
+
+    <meta property="og:type" content={Astro.url.pathname === url('/') ? 'website' : 'article'} />
+    <meta property="og:site_name" content={siteConfig.siteName} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:locale" content={siteConfig.locale} />
+    {canonical && <meta property="og:url" content={canonical} />}
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body class="flex min-h-dvh flex-col">
+    <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[70] focus:rounded focus:bg-white focus:px-3 focus:py-2">
+      本文へスキップ
+    </a>
+    <Header />
+    <main id="main" class="flex-1">
+      <slot />
+    </main>
+    <Footer />
+    <MobileMenu />
+    <SearchDialog />
+    <DialogController />
+  </body>
+</html>

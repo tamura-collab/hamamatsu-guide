@@ -1,0 +1,142 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Breadcrumb from '@/components/ui/Breadcrumb.astro';
+import Icon from '@/components/ui/Icon.astro';
+import SectionHeading from '@/components/ui/SectionHeading.astro';
+import CategoryCard from '@/components/cards/CategoryCard.astro';
+import ArticleCard from '@/components/cards/ArticleCard.astro';
+import { getCategoriesBySection, sections, type SectionKey } from '@/data/categories';
+import { sortedArticles } from '@/data/articles';
+import { siteConfig } from '@/config/site';
+import { url } from '@/lib/url';
+
+interface Props {
+  section: SectionKey;
+}
+
+const s = sections[Astro.props.section];
+const other = sections[s.key === 'living' ? 'travel' : 'living'];
+const items = getCategoriesBySection(s.key);
+const related = sortedArticles.filter((a) => a.section === s.key).slice(0, 3);
+const isLiving = s.key === 'living';
+const total = items.reduce((sum, c) => sum + c.count, 0);
+
+const headline = isLiving
+  ? `${siteConfig.city.name}の生活インフラを比較`
+  : `${siteConfig.city.name}の観光・移動ガイド`;
+---
+
+<BaseLayout title={`${s.label}｜${headline}`} description={s.lead}>
+  <section class:list={['border-b border-line', isLiving ? 'bg-living-50' : 'bg-travel-50']}>
+    <div class="container-page py-6 sm:py-10">
+      <Breadcrumb items={[{ label: s.label }]} />
+      <div class="mt-5 flex items-start gap-4">
+        <span
+          class:list={[
+            'grid size-14 shrink-0 place-items-center rounded-2xl text-white shadow-sm sm:size-16',
+            isLiving ? 'bg-living-600' : 'bg-travel-500',
+          ]}
+        >
+          <Icon name={s.icon} class="size-8" />
+        </span>
+        <div>
+          <p class:list={['text-[11px] font-bold tracking-[0.2em]', isLiving ? 'text-living-700' : 'text-travel-700']}>
+            {s.labelEn}
+          </p>
+          <h1 class="text-2xl font-bold leading-snug sm:text-3xl">
+            {s.label}<span class="ml-2 text-base font-semibold text-muted sm:text-lg">{headline}</span>
+          </h1>
+        </div>
+      </div>
+      <p class="mt-4 max-w-2xl text-sm leading-relaxed text-muted sm:text-base">{s.lead}</p>
+      <dl class="mt-5 flex gap-6 text-sm">
+        <div>
+          <dt class="text-xs text-muted">カテゴリ</dt>
+          <dd class="text-xl font-bold">{items.length}</dd>
+        </div>
+        <div>
+          <dt class="text-xs text-muted">掲載件数</dt>
+          <dd class="text-xl font-bold">{total}</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- カテゴリへのジャンプ（モバイルで横スクロール） -->
+  <nav aria-label="カテゴリ内ナビ" class="sticky top-16 z-30 border-b border-line bg-white/95 backdrop-blur">
+    <ul class="container-page flex gap-2 overflow-x-auto py-2.5 [scrollbar-width:none]">
+      {
+        items.map((c) => (
+          <li class="shrink-0">
+            <a
+              href={`#${c.slug}`}
+              class="inline-flex items-center gap-1.5 rounded-full border border-line px-3 py-1 text-xs font-medium whitespace-nowrap hover:border-brand-200 hover:text-brand-700"
+            >
+              <Icon name={c.icon} class="size-3.5" />
+              {c.title}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+
+  <section class="py-10 sm:py-14" aria-labelledby="category-list">
+    <div class="container-page">
+      <SectionHeading as="h2" id="category-list" title="カテゴリから探す" tone={s.key} />
+      <ul class="grid gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
+        {
+          items.map((c) => (
+            <li id={c.slug} class="scroll-mt-40">
+              <CategoryCard category={c} variant="full" />
+            </li>
+          ))
+        }
+      </ul>
+
+      <aside class="mt-8 flex gap-3 rounded-xl border border-line bg-surface p-4 text-xs leading-relaxed text-muted">
+        <Icon name="info" class="mt-0.5 size-4 shrink-0 text-brand-600" />
+        <p>
+          掲載情報は編集部の調査時点のものです。料金・キャンペーン等は変更される場合があるため、最新情報は各公式サイトでご確認ください。
+          一部のリンクにはアフィリエイト広告を含みます（<a href={url('/affiliate')} class="text-brand-700 underline">詳細</a>）。
+        </p>
+      </aside>
+    </div>
+  </section>
+
+  {
+    related.length > 0 && (
+      <section class="border-t border-line bg-surface py-10 sm:py-14" aria-labelledby="related-title">
+        <div class="container-page">
+          <SectionHeading id="related-title" title={`「${s.label}」の新着記事`} en="ARTICLES" tone={s.key} moreHref="/articles" />
+          <ul class="grid gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
+            {related.map((a) => (
+              <li>
+                <ArticleCard article={a} layout="horizontal" />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    )
+  }
+
+  <section class="container-page pt-10">
+    <a
+      href={url(other.href)}
+      class:list={[
+        'group flex items-center justify-between rounded-2xl p-5 text-white sm:p-6',
+        other.key === 'living' ? 'bg-living-600' : 'bg-travel-500',
+      ]}
+    >
+      <span class="flex items-center gap-3">
+        <Icon name={other.icon} class="size-8" />
+        <span>
+          <span class="block text-xs opacity-90">あわせて読みたい</span>
+          <span class="text-lg font-bold">「{other.label}」カテゴリを見る</span>
+        </span>
+      </span>
+      <Icon name="arrowRight" class="size-6 transition-transform group-hover:translate-x-1" />
+    </a>
+  </section>
+</BaseLayout>

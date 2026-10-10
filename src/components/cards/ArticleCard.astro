@@ -1,0 +1,80 @@
+---
+import Icon from '@/components/ui/Icon.astro';
+import PrBadge from '@/components/ui/PrBadge.astro';
+import { categories, sections } from '@/data/categories';
+import { formatDate, type Article } from '@/data/articles';
+import { url } from '@/lib/url';
+
+interface Props {
+  article: Article;
+  /** horizontal: モバイルでのリスト表示向け横長カード */
+  layout?: 'vertical' | 'horizontal';
+}
+
+const { article, layout = 'vertical' } = Astro.props;
+const category = categories.find((c) => c.slug === article.category);
+const section = sections[article.section];
+const isLiving = article.section === 'living';
+const horizontal = layout === 'horizontal';
+---
+
+<article class="group h-full">
+  <a
+    href={url(`/articles/${article.slug}`)}
+    class:list={[
+      'flex h-full overflow-hidden rounded-2xl border border-line bg-white transition hover:shadow-lg',
+      horizontal ? 'flex-row gap-3 p-3 sm:flex-col sm:gap-0 sm:p-0' : 'flex-col',
+    ]}
+  >
+    <!-- サムネイル（モック：カテゴリアイコン + グラデーション。実画像に差し替え予定） -->
+    <div
+      class:list={[
+        'relative grid shrink-0 place-items-center overflow-hidden',
+        isLiving ? 'bg-gradient-to-br from-living-100 to-brand-100' : 'bg-gradient-to-br from-travel-100 to-brand-100',
+        horizontal ? 'size-24 rounded-xl sm:aspect-[16/9] sm:size-auto sm:w-full sm:rounded-none' : 'aspect-[16/9] w-full',
+      ]}
+    >
+      {
+        category && (
+          <Icon
+            name={category.icon}
+            class:list={[
+              'transition-transform duration-300 group-hover:scale-110',
+              isLiving ? 'text-living-600/70' : 'text-travel-600/70',
+              horizontal ? 'size-10 sm:size-16' : 'size-16',
+            ]}
+            strokeWidth={1.4}
+          />
+        )
+      }
+      <span
+        class:list={[
+          'absolute top-2 left-2 rounded-full bg-white/90 px-2 py-0.5 text-[10px] font-bold',
+          isLiving ? 'text-living-700' : 'text-travel-700',
+          horizontal && 'hidden sm:inline',
+        ]}
+      >
+        {section.label}
+      </span>
+    </div>
+
+    <div class:list={['flex min-w-0 flex-1 flex-col', horizontal ? 'sm:p-4' : 'p-4']}>
+      <div class="flex items-center gap-2 text-[11px] text-muted">
+        {article.isPr && <PrBadge />}
+        {category && <span class="truncate">{category.title}</span>}
+      </div>
+      <h3 class="mt-1 line-clamp-3 text-sm font-bold leading-snug group-hover:text-brand-700 sm:text-[15px]">
+        {article.title}
+      </h3>
+      <p class:list={['mt-1.5 line-clamp-2 text-xs leading-relaxed text-muted', horizontal && 'hidden sm:block']}>
+        {article.excerpt}
+      </p>
+      <p class="mt-auto flex items-center gap-3 pt-2 text-[11px] text-muted">
+        <time datetime={article.publishedAt}>{formatDate(article.publishedAt)}</time>
+        <span class="inline-flex items-center gap-1">
+          <Icon name="clock" class="size-3.5" />{article.readingMinutes}分
+        </span>
+      </p>
+    </div>
+  </a>
+</article>

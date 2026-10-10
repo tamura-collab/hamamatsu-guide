@@ -1,0 +1,15 @@
+---
+import ProseLayout from '@/layouts/ProseLayout.astro';
+import { siteConfig } from '@/config/site';
+---
+
+<ProseLayout title="運営者情報" description={`${siteConfig.siteName}の運営者情報`}>
+  <p>{siteConfig.siteName}は、{siteConfig.city.prefecture}{siteConfig.city.name}の暮らしとおでかけに役立つ情報を発信する地域メディアです。</p>
+  <h2>運営者</h2>
+  <ul>
+    <li>運営：{siteConfig.operator.name}</li>
+    <li>お問い合わせ：{siteConfig.operator.contactEmail}</li>
+  </ul>
+  <h2>編集方針</h2>
+  <p>掲載する施設・サービスは、料金や条件を同じ基準でそろえて比較することを基本とし、広告の有無によって評価を変えることはありません。</p>
+</ProseLayout>

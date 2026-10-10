@@ -1,0 +1,15 @@
+---
+import type { GetStaticPaths } from 'astro';
+import CategoryDetail from '@/components/section/CategoryDetail.astro';
+import { getCategoriesBySection, type Category } from '@/data/categories';
+
+export const getStaticPaths = (() =>
+  getCategoriesBySection('living').map((category) => ({
+    params: { slug: category.slug },
+    props: { category },
+  }))) satisfies GetStaticPaths;
+
+const { category } = Astro.props as { category: Category };
+---
+
+<CategoryDetail category={category} />

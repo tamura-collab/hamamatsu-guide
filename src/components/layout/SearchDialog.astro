@@ -1,0 +1,54 @@
+---
+import Icon from '@/components/ui/Icon.astro';
+import { categories, getCategoryHref } from '@/data/categories';
+import { url } from '@/lib/url';
+
+const popular = categories.filter((c) => c.badge === '人気' || c.badge === '特集');
+---
+
+<div id="search-dialog" class="group/dialog fixed inset-0 z-[60] hidden" data-dialog role="dialog" aria-modal="true" aria-label="サイト内検索">
+  <div
+    class="absolute inset-0 bg-brand-900/50 opacity-0 transition-opacity duration-200 group-data-[state=open]/dialog:opacity-100"
+    data-dialog-close
+  >
+  </div>
+  <div
+    class="relative mx-auto mt-0 w-full max-w-xl -translate-y-4 bg-white p-4 opacity-0 shadow-2xl transition duration-200 group-data-[state=open]/dialog:translate-y-0 group-data-[state=open]/dialog:opacity-100 sm:mt-24 sm:rounded-2xl sm:p-6"
+  >
+    <form action={url('/search')} method="get" role="search" class="flex items-center gap-2">
+      <label class="flex flex-1 items-center gap-2 rounded-xl border-2 border-brand-200 px-3 focus-within:border-brand-500">
+        <Icon name="search" class="size-5 text-muted" />
+        <span class="sr-only">検索キーワード</span>
+        <input
+          type="search"
+          name="q"
+          required
+          placeholder="例：光回線、雨の日、ホテル"
+          class="h-12 w-full bg-transparent text-base outline-none placeholder:text-muted/70"
+          data-autofocus
+        />
+      </label>
+      <button type="button" data-dialog-close class="grid size-11 place-items-center rounded-md text-muted hover:bg-surface">
+        <Icon name="close" class="size-6" />
+        <span class="sr-only">検索を閉じる</span>
+      </button>
+    </form>
+
+    <p class="mt-5 text-xs font-bold tracking-wider text-muted">よく見られているカテゴリ</p>
+    <ul class="mt-2 flex flex-wrap gap-2">
+      {
+        popular.map((c) => (
+          <li>
+            <a
+              href={url(getCategoryHref(c))}
+              class="inline-flex items-center gap-1.5 rounded-full border border-line px-3 py-1.5 text-sm hover:border-brand-200 hover:bg-brand-50 hover:text-brand-700"
+            >
+              <Icon name={c.icon} class="size-4" />
+              {c.title}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</div>

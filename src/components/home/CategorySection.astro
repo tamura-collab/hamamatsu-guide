@@ -1,0 +1,48 @@
+---
+import SectionHeading from '@/components/ui/SectionHeading.astro';
+import CategoryCard from '@/components/cards/CategoryCard.astro';
+import Icon from '@/components/ui/Icon.astro';
+import { getCategoriesBySection, sections, type SectionKey } from '@/data/categories';
+import { url } from '@/lib/url';
+
+interface Props {
+  section: SectionKey;
+}
+
+const s = sections[Astro.props.section];
+const items = getCategoriesBySection(s.key);
+const isLiving = s.key === 'living';
+---
+
+<section id={s.key} class:list={['scroll-mt-20 py-12 sm:py-16', !isLiving && 'bg-surface']} aria-labelledby={`${s.key}-title`}>
+  <div class="container-page">
+    <SectionHeading
+      id={`${s.key}-title`}
+      title={isLiving ? '暮らす｜生活インフラを比較' : '訪れる｜観光・移動ガイド'}
+      en={s.labelEn}
+      lead={s.lead}
+      icon={s.icon}
+      tone={s.key}
+      moreHref={s.href}
+      moreLabel={`「${s.label}」をすべて見る`}
+    />
+    <ul class="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-3">
+      {
+        items.map((c) => (
+          <li>
+            <CategoryCard category={c} />
+          </li>
+        ))
+      }
+    </ul>
+    <a
+      href={url(s.href)}
+      class:list={[
+        'mt-6 flex items-center justify-center gap-1 rounded-xl border bg-white py-3 text-sm font-bold sm:hidden',
+        isLiving ? 'border-living-500/30 text-living-700' : 'border-travel-500/30 text-travel-700',
+      ]}
+    >
+      「{s.label}」をすべて見る <Icon name="arrowRight" class="size-4" />
+    </a>
+  </div>
+</section>

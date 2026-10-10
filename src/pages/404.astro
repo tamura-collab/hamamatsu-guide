@@ -1,0 +1,15 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { url } from '@/lib/url';
+---
+
+<BaseLayout title="ページが見つかりません" noindex>
+  <div class="container-page py-24 text-center">
+    <p class="text-5xl font-bold text-brand-200">404</p>
+    <h1 class="mt-4 text-xl font-bold">お探しのページが見つかりませんでした</h1>
+    <p class="mt-2 text-sm text-muted">URLが変更されたか、削除された可能性があります。</p>
+    <a href={url('/')} class="mt-8 inline-block rounded-xl bg-brand-700 px-6 py-3 text-sm font-bold text-white hover:bg-brand-800">
+      トップページへ戻る
+    </a>
+  </div>
+</BaseLayout>

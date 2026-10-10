@@ -1,0 +1,76 @@
+---
+import Icon from '@/components/ui/Icon.astro';
+import { getCategoryHref, type Category } from '@/data/categories';
+import { url } from '@/lib/url';
+
+interface Props {
+  category: Category;
+  /** compact: トップページの2列グリッド向け / full: 一覧ページ向け（比較ポイント表示） */
+  variant?: 'compact' | 'full';
+}
+
+const { category, variant = 'compact' } = Astro.props;
+const isLiving = category.section === 'living';
+---
+
+<a
+  href={url(getCategoryHref(category))}
+  class:list={[
+    'group relative flex h-full flex-col rounded-2xl border border-line bg-white transition duration-200 hover:-translate-y-0.5 hover:shadow-lg',
+    isLiving ? 'hover:border-living-500/40' : 'hover:border-travel-500/40',
+    variant === 'compact' ? 'p-4 sm:p-5' : 'p-5 sm:p-6',
+  ]}
+>
+  {
+    category.badge && (
+      <span
+        class:list={[
+          'absolute top-3 right-3 rounded-full px-2 py-0.5 text-[10px] font-bold',
+          isLiving ? 'bg-living-500 text-white' : 'bg-travel-500 text-white',
+        ]}
+      >
+        {category.badge}
+      </span>
+    )
+  }
+  <span
+    class:list={[
+      'grid size-11 place-items-center rounded-xl transition-colors sm:size-12',
+      isLiving
+        ? 'bg-living-50 text-living-600 group-hover:bg-living-500 group-hover:text-white'
+        : 'bg-travel-50 text-travel-600 group-hover:bg-travel-500 group-hover:text-white',
+    ]}
+  >
+    <Icon name={category.icon} class="size-6" />
+  </span>
+
+  <h3 class="mt-3 text-[15px] font-bold leading-snug sm:text-base">{category.title}</h3>
+  <p class:list={['mt-1 text-xs leading-relaxed text-muted sm:text-[13px]', variant === 'compact' && 'line-clamp-2']}>
+    {category.summary}
+  </p>
+
+  {
+    variant === 'full' && (
+      <ul class="mt-4 flex flex-wrap gap-1.5">
+        {category.points.map((p) => (
+          <li class="rounded-md bg-surface px-2 py-0.5 text-[11px] text-muted">{p}</li>
+        ))}
+      </ul>
+    )
+  }
+
+  <span class="mt-auto flex items-center justify-between pt-4 text-xs">
+    <span class="text-muted">
+      掲載 <strong class="text-sm text-ink">{category.count}</strong> 件
+    </span>
+    <span
+      class:list={[
+        'inline-flex items-center gap-0.5 font-semibold',
+        isLiving ? 'text-living-700' : 'text-travel-700',
+      ]}
+    >
+      比較する
+      <Icon name="chevronRight" class="size-4 transition-transform group-hover:translate-x-0.5" />
+    </span>
+  </span>
+</a>

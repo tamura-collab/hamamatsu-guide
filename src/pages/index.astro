@@ -1,0 +1,82 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Hero from '@/components/home/Hero.astro';
+import CategorySection from '@/components/home/CategorySection.astro';
+import SectionHeading from '@/components/ui/SectionHeading.astro';
+import ArticleCard from '@/components/cards/ArticleCard.astro';
+import Icon from '@/components/ui/Icon.astro';
+import { sortedArticles } from '@/data/articles';
+import { url } from '@/lib/url';
+
+const featured = sortedArticles.filter((a) => a.featured).slice(0, 2);
+const latest = sortedArticles.filter((a) => !a.featured).slice(0, 4);
+
+const trustPoints = [
+  { icon: 'mapPin', title: '地元編集部が調査', text: '市内在住のライターが現地で確認した情報を掲載。' },
+  { icon: 'shield', title: '比較基準を公開', text: '料金・条件は同じ基準でそろえて比較しています。' },
+  { icon: 'info', title: '広告表記を明確に', text: 'PRを含む記事にはラベルを表示しています。' },
+] as const;
+---
+
+<BaseLayout>
+  <Hero />
+
+  <CategorySection section="living" />
+  <CategorySection section="travel" />
+
+  <section class="py-12 sm:py-16" aria-labelledby="articles-title">
+    <div class="container-page">
+      <SectionHeading id="articles-title" title="新着・おすすめ記事" en="ARTICLES" icon="sparkle" moreHref="/articles" moreLabel="記事一覧へ" />
+
+      <div class="grid gap-4">
+        <!-- おすすめ（大きめ表示） -->
+        <ul class="grid gap-4 sm:grid-cols-2" aria-label="おすすめ記事">
+          {
+            featured.map((a) => (
+              <li>
+                <ArticleCard article={a} />
+              </li>
+            ))
+          }
+        </ul>
+        <!-- 新着（モバイルは横長リスト） -->
+        <ul class="grid gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4" aria-label="新着記事">
+          {
+            latest.map((a) => (
+              <li>
+                <ArticleCard article={a} layout="horizontal" />
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <a
+        href={url('/articles')}
+        class="mt-6 flex items-center justify-center gap-1 rounded-xl border border-line py-3 text-sm font-bold text-brand-700 sm:hidden"
+      >
+        記事一覧へ <Icon name="arrowRight" class="size-4" />
+      </a>
+    </div>
+  </section>
+
+  <section class="pb-4" aria-label="当サイトについて">
+    <div class="container-page">
+      <ul class="grid gap-3 rounded-2xl border border-line bg-brand-50/50 p-5 sm:grid-cols-3 sm:p-6">
+        {
+          trustPoints.map((p) => (
+            <li class="flex gap-3">
+              <span class="grid size-10 shrink-0 place-items-center rounded-full bg-white text-brand-700 ring-1 ring-brand-100">
+                <Icon name={p.icon} class="size-5" />
+              </span>
+              <span>
+                <span class="block text-sm font-bold">{p.title}</span>
+                <span class="block text-xs leading-relaxed text-muted">{p.text}</span>
+              </span>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,65 @@
+@import 'tailwindcss';
+
+/* ---- デザイントークン ----
+ * brand  : 信頼感のある深いネイビーブルー（ロゴ・主要ボタン）
+ * living : 落ち着いたグリーン（暮らす）
+ * travel : 明るいオレンジ（訪れる）
+ */
+@theme {
+  --font-sans:
+    'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', 'BIZ UDPGothic', Meiryo,
+    system-ui, sans-serif;
+
+  --color-brand-50: #eef6fb;
+  --color-brand-100: #d6e9f5;
+  --color-brand-200: #acd2ea;
+  --color-brand-500: #2b7bb0;
+  --color-brand-600: #1c6394;
+  --color-brand-700: #0f4c75;
+  --color-brand-800: #0c3c5d;
+  --color-brand-900: #0a2c45;
+
+  --color-living-50: #edf8f3;
+  --color-living-100: #d3efe2;
+  --color-living-500: #2a9d6f;
+  --color-living-600: #1f8159;
+  --color-living-700: #186647;
+
+  --color-travel-50: #fff5ec;
+  --color-travel-100: #ffe6cf;
+  --color-travel-500: #f08a32;
+  --color-travel-600: #d9701b;
+  --color-travel-700: #b05715;
+
+  --color-ink: #1f2933;
+  --color-muted: #5f6b76;
+  --color-line: #e3e8ec;
+  --color-surface: #f6f8fa;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    @apply bg-white font-sans text-ink antialiased;
+    line-height: 1.75;
+    font-feature-settings: 'palt';
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand-500;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* メニュー展開中は背面のスクロールを止める */
+html.is-locked,
+html.is-locked body {
+  overflow: hidden;
+}

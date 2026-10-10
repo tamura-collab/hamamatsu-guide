@@ -1,0 +1,67 @@
+<script>
+  // [data-dialog] 要素の開閉を一括管理する軽量コントローラ。
+  //  - [data-dialog-open="id"] で開く / [data-dialog-close] で閉じる / Esc で閉じる
+  //  - 開いている間は背面スクロールをロック、閉じたらトリガーへフォーカスを戻す
+  const ANIMATION_MS = 300;
+  let lastTrigger: HTMLElement | null = null;
+
+  const openDialogs = () => document.querySelectorAll<HTMLElement>('[data-dialog][data-state="open"]');
+
+  function setExpanded(id: string, value: boolean) {
+    document
+      .querySelectorAll(`[data-dialog-open="${id}"][aria-expanded]`)
+      .forEach((el) => el.setAttribute('aria-expanded', String(value)));
+  }
+
+  function open(dialog: HTMLElement, trigger?: HTMLElement) {
+    // 別のダイアログ（例: メニュー内の検索ボタン）から開いた場合は先に閉じる
+    openDialogs().forEach((d) => d !== dialog && close(d, false));
+    lastTrigger = trigger ?? null;
+    dialog.classList.remove('hidden');
+    document.documentElement.classList.add('is-locked');
+    setExpanded(dialog.id, true);
+    requestAnimationFrame(() => {
+      dialog.dataset.state = 'open';
+      const target =
+        dialog.querySelector<HTMLElement>('[data-autofocus]') ??
+        dialog.querySelector<HTMLElement>('a[href], button, input');
+      target?.focus({ preventScroll: true });
+    });
+  }
+
+  function close(dialog: HTMLElement, restoreFocus = true) {
+    if (dialog.dataset.state !== 'open') return;
+    dialog.dataset.state = 'closed';
+    setExpanded(dialog.id, false);
+    window.setTimeout(() => {
+      if (dialog.dataset.state === 'closed') dialog.classList.add('hidden');
+      if (openDialogs().length === 0) document.documentElement.classList.remove('is-locked');
+    }, ANIMATION_MS);
+    if (restoreFocus) lastTrigger?.focus({ preventScroll: true });
+  }
+
+  document.addEventListener('click', (e) => {
+    const target = e.target as HTMLElement;
+    const opener = target.closest<HTMLElement>('[data-dialog-open]');
+    if (opener) {
+      const dialog = document.getElementById(opener.dataset.dialogOpen ?? '');
+      if (dialog) open(dialog, opener);
+      return;
+    }
+    const closer = target.closest<HTMLElement>('[data-dialog-close]');
+    if (closer) {
+      const dialog = closer.closest<HTMLElement>('[data-dialog]');
+      if (dialog) close(dialog);
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') openDialogs().forEach((d) => close(d));
+  });
+
+  // PC幅へリサイズしたらモバイルメニューは閉じる
+  window.matchMedia('(min-width: 768px)').addEventListener('change', (mq) => {
+    const menu = document.getElementById('mobile-menu');
+    if (mq.matches && menu) close(menu, false);
+  });
+</script>

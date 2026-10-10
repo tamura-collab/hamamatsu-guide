@@ -1,0 +1,94 @@
+---
+import Logo from './Logo.astro';
+import Icon from '@/components/ui/Icon.astro';
+import { categories, getCategoryHref, sections } from '@/data/categories';
+import { policyNav } from '@/config/navigation';
+import { url } from '@/lib/url';
+
+const groups = (['living', 'travel'] as const).map((key) => ({
+  section: sections[key],
+  items: categories.filter((c) => c.section === key),
+}));
+---
+
+<!-- モバイル用スライドメニュー（右からスライドイン）。開閉は DialogController が担当 -->
+<div id="mobile-menu" class="group/dialog fixed inset-0 z-50 hidden md:hidden" data-dialog role="dialog" aria-modal="true" aria-label="メニュー">
+  <div
+    class="absolute inset-0 bg-brand-900/40 opacity-0 transition-opacity duration-300 group-data-[state=open]/dialog:opacity-100"
+    data-dialog-close
+  >
+  </div>
+
+  <div
+    class="absolute inset-y-0 right-0 flex w-[86%] max-w-sm translate-x-full flex-col bg-white shadow-2xl transition-transform duration-300 ease-out group-data-[state=open]/dialog:translate-x-0"
+  >
+    <div class="flex h-16 items-center justify-between border-b border-line px-4">
+      <Logo />
+      <button type="button" data-dialog-close class="grid size-10 place-items-center rounded-md hover:bg-surface">
+        <Icon name="close" class="size-6" />
+        <span class="sr-only">メニューを閉じる</span>
+      </button>
+    </div>
+
+    <nav aria-label="モバイルメニュー" class="flex-1 overflow-y-auto overscroll-contain px-4 py-5">
+      <button
+        type="button"
+        data-dialog-open="search-dialog"
+        class="mb-6 flex w-full items-center gap-2 rounded-lg border border-line bg-surface px-4 py-3 text-left text-sm text-muted"
+      >
+        <Icon name="search" class="size-[18px]" />
+        キーワードで探す
+      </button>
+
+      {
+        groups.map(({ section, items }) => (
+          <section class="mb-6">
+            <a
+              href={url(section.href)}
+              class:list={[
+                'mb-2 flex items-center justify-between rounded-lg px-3 py-2.5 font-bold',
+                section.key === 'living' ? 'bg-living-50 text-living-700' : 'bg-travel-50 text-travel-700',
+              ]}
+            >
+              <span class="flex items-center gap-2">
+                <Icon name={section.icon} class="size-5" />
+                {section.label}
+                <span class="text-[10px] tracking-widest opacity-70">{section.labelEn}</span>
+              </span>
+              <Icon name="chevronRight" class="size-4" />
+            </a>
+            <ul class="grid grid-cols-2 gap-1">
+              {items.map((item) => (
+                <li>
+                  <a
+                    href={url(getCategoryHref(item))}
+                    class="flex items-start gap-2 rounded-md px-3 py-2 text-[13px] leading-snug font-medium text-ink hover:bg-surface"
+                  >
+                    <Icon name={item.icon} class="mt-px size-4 shrink-0 text-muted" />
+                    <span>{item.title}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))
+      }
+
+      <a href={url('/articles')} class="flex items-center justify-between border-t border-line px-3 py-3 font-semibold">
+        記事一覧 <Icon name="chevronRight" class="size-4 text-muted" />
+      </a>
+
+      <ul class="mt-2 space-y-1 border-t border-line pt-4">
+        {
+          policyNav.map((item) => (
+            <li>
+              <a href={url(item.href)} class="block px-3 py-1.5 text-xs text-muted hover:text-brand-700">
+                {item.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
+</div>

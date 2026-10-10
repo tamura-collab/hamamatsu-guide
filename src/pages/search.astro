@@ -1,0 +1,81 @@
+---
+// 静的サイトのまま動くクライアントサイド検索（MVP）。
+// 記事・カテゴリ数が増えたら Pagefind 等の静的検索インデックスへの置き換えを想定。
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Breadcrumb from '@/components/ui/Breadcrumb.astro';
+import Icon from '@/components/ui/Icon.astro';
+import CategoryCard from '@/components/cards/CategoryCard.astro';
+import ArticleCard from '@/components/cards/ArticleCard.astro';
+import { categories, sections } from '@/data/categories';
+import { sortedArticles } from '@/data/articles';
+import { url } from '@/lib/url';
+
+const keywords = (...parts: (string | undefined)[]) => parts.filter(Boolean).join(' ').toLowerCase();
+---
+
+<BaseLayout title="サイト内検索" noindex>
+  <div class="container-page py-6 sm:py-10">
+    <Breadcrumb items={[{ label: '検索' }]} />
+    <h1 class="mt-5 text-2xl font-bold">サイト内検索</h1>
+
+    <form action={url('/search')} method="get" role="search" class="mt-5 max-w-xl">
+      <label class="flex items-center gap-2 rounded-2xl border border-line bg-white p-1.5 pl-4 focus-within:border-brand-500">
+        <Icon name="search" class="size-5 text-muted" />
+        <span class="sr-only">検索キーワード</span>
+        <input id="search-input" type="search" name="q" placeholder="キーワードを入力" class="h-11 min-w-0 flex-1 bg-transparent text-base outline-none" />
+        <button class="h-11 rounded-xl bg-brand-700 px-5 text-sm font-bold text-white">検索</button>
+      </label>
+    </form>
+
+    <p id="search-status" class="mt-6 text-sm text-muted" aria-live="polite">キーワードを入力してください。</p>
+
+    <section class="mt-6" data-result-group hidden>
+      <h2 class="mb-3 font-bold">カテゴリ</h2>
+      <ul class="grid grid-cols-2 gap-3 lg:grid-cols-4">
+        {
+          categories.map((c) => (
+            <li data-search={keywords(c.title, c.summary, sections[c.section].label, ...c.points)} hidden>
+              <CategoryCard category={c} />
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="mt-10" data-result-group hidden>
+      <h2 class="mb-3 font-bold">記事</h2>
+      <ul class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        {
+          sortedArticles.map((a) => (
+            <li data-search={keywords(a.title, a.excerpt, sections[a.section].label)} hidden>
+              <ArticleCard article={a} layout="horizontal" />
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </div>
+</BaseLayout>
+
+<script>
+  const q = (new URLSearchParams(location.search).get('q') ?? '').trim();
+  const input = document.querySelector<HTMLInputElement>('#search-input');
+  const status = document.querySelector<HTMLElement>('#search-status');
+  if (input) input.value = q;
+
+  if (q && status) {
+    const terms = q.toLowerCase().split(/\s+/);
+    let hits = 0;
+    document.querySelectorAll<HTMLElement>('[data-result-group]').forEach((group) => {
+      let groupHits = 0;
+      group.querySelectorAll<HTMLElement>('[data-search]').forEach((item) => {
+        const match = terms.every((t) => item.dataset.search!.includes(t));
+        item.hidden = !match;
+        if (match) groupHits++;
+      });
+      group.hidden = groupHits === 0;
+      hits += groupHits;
+    });
+    status.textContent = hits > 0 ? `「${q}」の検索結果：${hits}件` : `「${q}」に一致する情報は見つかりませんでした。別のキーワードでお試しください。`;
+  }
+</script>

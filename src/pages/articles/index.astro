@@ -1,0 +1,22 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Breadcrumb from '@/components/ui/Breadcrumb.astro';
+import ArticleCard from '@/components/cards/ArticleCard.astro';
+import { sortedArticles } from '@/data/articles';
+---
+
+<BaseLayout title="記事一覧" description="新着記事・おすすめ記事の一覧です。">
+  <div class="container-page py-6 sm:py-10">
+    <Breadcrumb items={[{ label: '記事一覧' }]} />
+    <h1 class="mt-5 text-2xl font-bold sm:text-3xl">記事一覧</h1>
+    <ul class="mt-8 grid gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
+      {
+        sortedArticles.map((a) => (
+          <li>
+            <ArticleCard article={a} layout="horizontal" />
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</BaseLayout>

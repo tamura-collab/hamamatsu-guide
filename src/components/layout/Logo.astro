@@ -1,0 +1,30 @@
+---
+import { siteConfig } from '@/config/site';
+import { url } from '@/lib/url';
+
+interface Props {
+  inverted?: boolean;
+}
+const { inverted = false } = Astro.props;
+---
+
+<a href={url('/')} class="group inline-flex items-center gap-2.5" aria-label={`${siteConfig.siteName} トップへ`}>
+  <span
+    class:list={[
+      'grid size-9 shrink-0 place-items-center rounded-lg',
+      inverted ? 'bg-white text-brand-700' : 'bg-brand-700 text-white',
+    ]}
+  >
+    <svg viewBox="0 0 32 32" class="size-6" aria-hidden="true">
+      <path d="M7 23V10l9 6.5L25 10v13" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+  </span>
+  <span class="flex flex-col leading-none">
+    <span class:list={['text-[17px] font-bold tracking-wide', inverted ? 'text-white' : 'text-brand-800']}>
+      {siteConfig.siteName}
+    </span>
+    <span class:list={['mt-1 text-[10px] font-semibold tracking-[0.18em]', inverted ? 'text-brand-100' : 'text-muted']}>
+      {siteConfig.siteNameEn}
+    </span>
+  </span>
+</a>

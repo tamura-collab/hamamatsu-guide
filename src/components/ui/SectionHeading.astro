@@ -1,0 +1,54 @@
+---
+import Icon from './Icon.astro';
+import type { IconName } from './icons';
+import { url } from '@/lib/url';
+
+interface Props {
+  title: string;
+  en?: string;
+  lead?: string;
+  icon?: IconName;
+  tone?: 'brand' | 'living' | 'travel';
+  moreHref?: string;
+  moreLabel?: string;
+  /** 見出しレベル（ページ内の階層に合わせる） */
+  as?: 'h1' | 'h2' | 'h3';
+  id?: string;
+}
+
+const { title, en, lead, icon, tone = 'brand', moreHref, moreLabel = 'すべて見る', as: Tag = 'h2', id } = Astro.props;
+
+const toneClass = {
+  brand: { chip: 'bg-brand-50 text-brand-700', en: 'text-brand-600' },
+  living: { chip: 'bg-living-50 text-living-700', en: 'text-living-600' },
+  travel: { chip: 'bg-travel-50 text-travel-700', en: 'text-travel-600' },
+}[tone];
+---
+
+<div class="mb-6 flex items-end justify-between gap-4 sm:mb-8">
+  <div class="flex items-start gap-3">
+    {
+      icon && (
+        <span class:list={['grid size-11 shrink-0 place-items-center rounded-xl', toneClass.chip]}>
+          <Icon name={icon} class="size-6" />
+        </span>
+      )
+    }
+    <div>
+      {en && <p class:list={['text-[11px] font-bold tracking-[0.2em]', toneClass.en]}>{en}</p>}
+      <Tag id={id} class="text-xl font-bold leading-snug sm:text-2xl">{title}</Tag>
+      {lead && <p class="mt-1.5 max-w-2xl text-sm leading-relaxed text-muted">{lead}</p>}
+    </div>
+  </div>
+  {
+    moreHref && (
+      <a
+        href={url(moreHref)}
+        class="hidden shrink-0 items-center gap-1 text-sm font-semibold text-brand-700 hover:underline sm:inline-flex"
+      >
+        {moreLabel}
+        <Icon name="arrowRight" class="size-4" />
+      </a>
+    )
+  }
+</div>

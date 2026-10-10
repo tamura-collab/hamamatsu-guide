@@ -1,0 +1,35 @@
+---
+import Icon from './Icon.astro';
+import { url } from '@/lib/url';
+
+interface Crumb {
+  label: string;
+  href?: string;
+}
+interface Props {
+  items: Crumb[];
+}
+
+const items: Crumb[] = [{ label: 'トップ', href: '/' }, ...Astro.props.items];
+---
+
+<nav aria-label="パンくずリスト" class="text-xs text-muted">
+  <ol class="flex flex-wrap items-center gap-1">
+    {
+      items.map((item, i) => (
+        <li class="flex items-center gap-1">
+          {i > 0 && <Icon name="chevronRight" class="size-3.5 opacity-60" />}
+          {item.href && i < items.length - 1 ? (
+            <a href={url(item.href)} class="hover:text-brand-700 hover:underline">
+              {item.label}
+            </a>
+          ) : (
+            <span aria-current="page" class="text-ink">
+              {item.label}
+            </span>
+          )}
+        </li>
+      ))
+    }
+  </ol>
+</nav>
