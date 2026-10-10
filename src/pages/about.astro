@@ -1,7 +1,8 @@
 ---
 import ProseLayout from '@/layouts/ProseLayout.astro';
-import { siteConfig } from '@/config/site';
+import { siteConfig } from '@/config/site.config';
 import { url } from '@/lib/url';
+import UpdateInfo from '@/components/info/UpdateInfo.astro';
 
 const { city, contact, portal } = siteConfig;
 ---
@@ -36,12 +37,18 @@ const { city, contact, portal } = siteConfig;
   }
   <h2>編集方針</h2>
   <ul>
-    <li><strong>客観的・中立な情報収集</strong>：公的データや現地調査をもとに、料金や条件を同じ基準でそろえて比較します。</li>
-    <li><strong>地元住人目線の独自情報</strong>：駐車場の有無や幹線道路からの行きやすさなど、暮らす人の視点で補足します。</li>
-    <li>
-      <strong>広告表記（PR）の徹底</strong>：景品表示法（ステマ規制）に基づき広告を明示し、広告の有無で評価や掲載順を変えません（<a
-        href={url('/affiliate')}>広告について</a
-      >）。
-    </li>
+    {
+      siteConfig.trustPoints.map((p) => (
+        <li>
+          <strong>{p.title}</strong>：{p.text}
+        </li>
+      ))
+    }
   </ul>
+  <p>
+    広告掲載についての詳細は<a href={url('/affiliate')}>アフィリエイト・広告について</a>をご覧ください。
+  </p>
+  <h2>情報の更新</h2>
+  <p>掲載データは定期的に見直し、更新しています。料金は目安として掲載しており、最新の料金やキャンペーン情報は各公式サイトでご確認ください。</p>
+  <UpdateInfo />
 </ProseLayout>

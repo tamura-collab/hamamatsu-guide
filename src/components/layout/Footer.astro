@@ -2,10 +2,13 @@
 import Logo from './Logo.astro';
 import { categories, getCategoryHref, sections } from '@/data/categories';
 import { policyNav } from '@/config/navigation';
-import { siteConfig } from '@/config/site';
+import { siteConfig } from '@/config/site.config';
 import { url } from '@/lib/url';
+import UpdateInfo from '@/components/info/UpdateInfo.astro';
+import { buildYear } from '@/lib/build-info';
 
-const year = new Date().getFullYear();
+// コピーライト年もビルド時点（日本時間）で自動更新
+const year = buildYear;
 const columns = (['living', 'travel'] as const).map((key) => ({
   section: sections[key],
   items: categories.filter((c) => c.section === key),
@@ -70,8 +73,11 @@ const columns = (['living', 'travel'] as const).map((key) => ({
       </p>
     </div>
 
-    <p class="mt-8 border-t border-white/10 pt-6 text-center text-xs text-brand-100/60">
-      &copy; {year} {siteConfig.operator.name}
-    </p>
+    <div class="mt-8 flex flex-col items-center gap-2 border-t border-white/10 pt-6">
+      <UpdateInfo tone="inverted" />
+      <p class="text-center text-xs text-brand-100/60">
+        &copy; {year} {siteConfig.operator.name}
+      </p>
+    </div>
   </div>
 </footer>

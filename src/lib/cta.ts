@@ -1,6 +1,6 @@
 import type { Category } from '@/data/categories';
 import type { Place } from '@/data/places';
-import { siteConfig } from '@/config/site';
+import { siteConfig } from '@/config/site.config';
 
 /** CTA文言の {station} などを都市設定で置き換える */
 const fill = (text: string) => text.replaceAll('{station}', siteConfig.city.mainStation);

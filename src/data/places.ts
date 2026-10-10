@@ -18,7 +18,8 @@ export interface LocalNote {
   source: 'auto' | 'manual';
 }
 
-export type SpecValue = number | boolean | string | null;
+/** 比較軸の値。price は下限のみの数値、または価格帯 [下限, 上限] */
+export type SpecValue = number | [number, number] | boolean | string | null;
 
 export interface Affiliate {
   url: string;
@@ -78,13 +79,25 @@ const NOTE_ORDER: LocalNoteType[] = ['station', 'road', 'car', 'parking', 'landm
 export const sortLocalNotes = (notes: LocalNote[]) =>
   [...notes].sort((a, b) => NOTE_ORDER.indexOf(a.type) - NOTE_ORDER.indexOf(b.type));
 
-/** 比較軸の値を表示用の文字列にする */
+/** 並び替え・最安判定用の数値（価格帯は下限を使う） */
+export function specNumber(value: SpecValue | undefined): number | null {
+  if (typeof value === 'number') return value;
+  if (Array.isArray(value)) return value[0];
+  return null;
+}
+
+const yen = (n: number) => n.toLocaleString('ja-JP');
+
+/**
+ * 比較軸の値を表示用の文字列にする。
+ * 料金は目安として「7,700円〜」（下限のみ）/「6,800〜12,000円」（価格帯）/「無料」に統一する。
+ */
 export function formatSpec(axis: CompareAxis, value: SpecValue | undefined): string {
   if (value === null || value === undefined) return '—';
   if (axis.type === 'boolean') return value ? 'あり' : 'なし';
-  if (axis.type === 'price' && typeof value === 'number') {
-    if (value === 0) return '無料';
-    return `${value.toLocaleString('ja-JP')}${axis.unit ?? '円'}`;
+  if (axis.type === 'price') {
+    if (Array.isArray(value)) return value[0] === 0 ? `無料〜${yen(value[1])}円` : `${yen(value[0])}〜${yen(value[1])}円`;
+    if (typeof value === 'number') return value === 0 ? '無料' : `${yen(value)}円〜`;
   }
   if (axis.type === 'number' && typeof value === 'number') return `${value}${axis.unit ?? ''}`;
   return String(value);

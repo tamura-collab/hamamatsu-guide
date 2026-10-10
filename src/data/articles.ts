@@ -19,7 +19,7 @@ export const articles: Article[] = [
   {
     slug: 'fiber-comparison-2026',
     title: '【2026年版】浜松市で使える光回線5社を徹底比較｜エリア・速度・料金',
-    excerpt: '中央区・浜名区・天竜区の提供エリアを調査。マンション・戸建て別におすすめの回線をまとめました。',
+    excerpt: '中央区・浜名区・天竜区の提供エリアの確認方法と、マンション・戸建て別の選び方をまとめました。',
     section: 'living',
     category: 'fiber',
     publishedAt: '2026-10-08',
@@ -58,8 +58,8 @@ export const articles: Article[] = [
   },
   {
     slug: 'car-buyback-tips',
-    title: '車を高く売るには？浜松の買取店と一括査定、実際に比べてみた',
-    excerpt: '同じ車で査定額に最大18万円の差。手間と金額のバランスを解説します。',
+    title: '車を高く売るには？浜松の買取店と一括査定の違いを比較',
+    excerpt: '査定額が変わりやすいポイントと、手間と金額のバランスを解説します。',
     section: 'living',
     category: 'car-buyback',
     publishedAt: '2026-09-25',

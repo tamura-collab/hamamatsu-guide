@@ -7,15 +7,14 @@ import ArticleCard from '@/components/cards/ArticleCard.astro';
 import Icon from '@/components/ui/Icon.astro';
 import { sortedArticles } from '@/data/articles';
 import { url } from '@/lib/url';
+import { siteConfig } from '@/config/site.config';
+import UpdateInfo from '@/components/info/UpdateInfo.astro';
 
 const featured = sortedArticles.filter((a) => a.featured).slice(0, 2);
 const latest = sortedArticles.filter((a) => !a.featured).slice(0, 4);
 
-const trustPoints = [
-  { icon: 'mapPin', title: '地元編集部が調査', text: '市内在住のライターが現地で確認した情報を掲載。' },
-  { icon: 'shield', title: '比較基準を公開', text: '料金・条件は同じ基準でそろえて比較しています。' },
-  { icon: 'info', title: '広告表記を明確に', text: 'PRを含む記事にはラベルを表示しています。' },
-] as const;
+// 信頼性・編集方針の3項目は運営者情報ページと共通（site.config.ts の trustPoints）
+const { trustPoints } = siteConfig;
 ---
 
 <BaseLayout>
@@ -60,23 +59,32 @@ const trustPoints = [
     </div>
   </section>
 
-  <section class="pb-4" aria-label="当サイトについて">
+  <section class="pb-4" aria-labelledby="trust-title">
     <div class="container-page">
-      <ul class="grid gap-3 rounded-2xl border border-line bg-brand-50/50 p-5 sm:grid-cols-3 sm:p-6">
-        {
-          trustPoints.map((p) => (
-            <li class="flex gap-3">
-              <span class="grid size-10 shrink-0 place-items-center rounded-full bg-white text-brand-700 ring-1 ring-brand-100">
-                <Icon name={p.icon} class="size-5" />
-              </span>
-              <span>
-                <span class="block text-sm font-bold">{p.title}</span>
-                <span class="block text-xs leading-relaxed text-muted">{p.text}</span>
-              </span>
-            </li>
-          ))
-        }
-      </ul>
+      <div class="rounded-2xl border border-line bg-brand-50/50 p-5 sm:p-6">
+        <div class="mb-4 flex flex-wrap items-center justify-between gap-2">
+          <h2 id="trust-title" class="text-sm font-bold">当サイトの編集方針</h2>
+          <UpdateInfo />
+        </div>
+        <ul class="grid gap-4 sm:grid-cols-3">
+          {
+            trustPoints.map((p) => (
+              <li class="flex gap-3">
+                <span class="grid size-10 shrink-0 place-items-center rounded-full bg-white text-brand-700 ring-1 ring-brand-100">
+                  <Icon name={p.icon} class="size-5" />
+                </span>
+                <span>
+                  <span class="block text-sm font-bold">{p.title}</span>
+                  <span class="block text-xs leading-relaxed text-muted">{p.text}</span>
+                </span>
+              </li>
+            ))
+          }
+        </ul>
+        <p class="mt-4 text-right text-xs">
+          <a href={url('/about')} class="font-semibold text-brand-700 hover:underline">運営者情報・編集方針を見る</a>
+        </p>
+      </div>
     </div>
   </section>
 </BaseLayout>

@@ -40,6 +40,12 @@ const AREAS = [
 const toFullWidth = (s) => s.replace(/[0-9]/g, (c) => String.fromCharCode(c.charCodeAt(0) + 0xfee0));
 const yes = (p) => rand() < p;
 const price = (min, max, step = 100) => Math.round(int(min, max) / step) * step;
+/** 価格帯の文字列（例: 「6,800〜12,000円」）。スクレイピング結果に多い表記を再現する */
+const priceRange = (min, max, step = 100) => {
+  const low = price(min, max, step);
+  const high = low + price(min * 0.3, min, step);
+  return `${low.toLocaleString()}〜${high.toLocaleString()}円`;
+};
 
 /**
  * カテゴリごとのテンプレート。
@@ -60,7 +66,7 @@ const TEMPLATES = {
       ['ゴールドフィット 入野店', '24時間ジム', { open24h: true }],
     ],
     specs: (o) => ({
-      monthlyFee: o.monthlyFee ?? `${price(3300, 9800).toLocaleString()}円`,
+      monthlyFee: o.monthlyFee ?? (yes(0.4) ? priceRange(3300, 8800) : `${price(3300, 9800).toLocaleString()}円～`),
       trial: yes(0.7) ? 'あり' : 'なし',
       open24h: o.open24h ?? false,
       womenOnly: o.womenOnly ?? yes(0.4),
@@ -91,7 +97,7 @@ const TEMPLATES = {
       ['キッズダンススタジオ STEP 鍛冶町', 'ダンス', {}],
     ],
     specs: (o) => ({
-      monthlyFee: price(5500, 14000),
+      monthlyFee: yes(0.5) ? priceRange(5500, 11000) : price(5500, 14000),
       trial: yes(0.85),
       ageFrom: o.ageFrom ?? int(2, 6),
       pickup: yes(0.3),
@@ -143,7 +149,7 @@ const TEMPLATES = {
       ['格安レンタカー ワンズ高塚', '格安レンタカー', {}],
       ['エコノレンタ 浜北店', 'レンタカー', {}],
     ],
-    specs: () => ({ price24h: price(4800, 12000), dropOff: yes(0.5), nonSmoking: yes(0.9) }),
+    specs: () => ({ price24h: yes(0.5) ? priceRange(4800, 9000) : price(4800, 12000), dropOff: yes(0.5), nonSmoking: yes(0.9) }),
     desc: (n, g) => `${g}。${n}は乗り捨てやチャイルドシートの貸し出しにも対応しています。`,
   },
   hotel: {
@@ -156,7 +162,7 @@ const TEMPLATES = {
       ['湖畔の宿 しおさい 舞阪', '温泉旅館', { largeBath: true }],
       ['ゲストハウス LAKE BASE 鍛冶町', 'ゲストハウス', { largeBath: false }],
     ],
-    specs: (o) => ({ priceFrom: price(4800, 16000), breakfast: yes(0.7) ? 'あり' : 'なし', largeBath: o.largeBath ?? yes(0.3) }),
+    specs: (o) => ({ priceFrom: priceRange(4800, 12000), breakfast: yes(0.7) ? 'あり' : 'なし', largeBath: o.largeBath ?? yes(0.3) }),
     desc: (n, g) => `${g}。${n}は観光・出張どちらの拠点にも便利です。`,
   },
   'rainy-day': {
@@ -193,7 +199,7 @@ const TEMPLATES = {
       ['ベーカリー LAKE SALT 高塚', 'パン・カフェ', { budget: 600 }],
       ['舞阪漁港 食堂 しらす亭', 'しらす丼', { budget: 1200 }],
     ],
-    specs: (o) => ({ budget: `${o.budget.toLocaleString()}円～`, reservation: yes(0.6) }),
+    specs: (o) => ({ budget: `${o.budget.toLocaleString()}〜${(o.budget * 2).toLocaleString()}円`, reservation: yes(0.6) }),
     desc: (n, g) => `地元で人気の${g}。${n}は観光客にも入りやすい雰囲気です。`,
   },
   parking: {

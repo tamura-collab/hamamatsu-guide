@@ -5,6 +5,7 @@
  * （内部リンクは `lib/url.ts` の `url()` を経由して生成する）。
  */
 import { cities, type CityConfig, type CitySlug } from './cities';
+import type { IconName } from '@/components/ui/icons';
 
 const envCity = (typeof process !== 'undefined' ? process.env.CITY : undefined) as CitySlug | undefined;
 const citySlug: CitySlug = envCity && envCity in cities ? envCity : 'hamamatsu';
@@ -42,6 +43,34 @@ export const siteConfig = {
   social: {
     twitterHandle: null as string | null,
   },
+  /**
+   * データの更新サイクル（表示用）。最終更新年月はビルド時に自動で入る（src/lib/build-info.ts）。
+   * 実際の運用（データ更新 → 再ビルド）の頻度と一致させること。
+   */
+  updateFrequency: '月1回',
+  /**
+   * 信頼性・編集方針（トップページのカードと運営者情報の「編集方針」で共通使用）。
+   * 実際の運用と一致する内容だけを書くこと。
+   */
+  trustPoints: [
+    {
+      icon: 'mapPin',
+      title: '公式・地域データの集約',
+      text: '店舗・施設の公式情報や公的データをもとに、アクセス性や利便性を独自に整理しています。',
+    },
+    {
+      icon: 'shield',
+      title: '編集部による総合評価',
+      text: '価格帯やサービス内容、Google等の口コミ評判を踏まえ、編集部が客観的に比較・評価しています。',
+    },
+    {
+      icon: 'info',
+      title: '透明性のある広告表記',
+      text: '景表法（ステマ規制）に基づき、アフィリエイト等の広告リンクを含むページには明確にPR表記を行っています。',
+    },
+  ] as const satisfies readonly { icon: IconName; title: string; text: string }[],
+  /** 料金表記の近くに自動表示する注記 */
+  priceNotice: '※掲載している料金は目安です。最新の料金やキャンペーン情報は各公式サイトでご確認ください。',
   /** 景表法（ステマ規制）対応の関係性表記 */
   prDisclosure: '※当サイトはアフィリエイトプログラムを利用しており、記事内に広告・PRを含みます。',
   /**

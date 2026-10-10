@@ -1,0 +1,24 @@
+---
+/**
+ * 「データ更新サイクル: 月1回（最終更新: 2026年10月）」を表示する。
+ * 更新サイクルは site.config.ts の updateFrequency、最終更新はビルド実行時の年月（日本時間）。
+ */
+import Icon from '@/components/ui/Icon.astro';
+import { siteConfig } from '@/config/site.config';
+import { buildYearMonthIso, buildYearMonthLabel } from '@/lib/build-info';
+
+interface Props {
+  class?: string;
+  /** inverted: 濃い背景（フッター）用 */
+  tone?: 'default' | 'inverted';
+}
+
+const { class: className, tone = 'default' } = Astro.props;
+---
+
+<p class:list={['inline-flex items-center gap-1.5 text-xs', tone === 'inverted' ? 'text-brand-100/70' : 'text-muted', className]}>
+  <Icon name="clock" class="size-3.5 shrink-0" />
+  <span>
+    データ更新サイクル: {siteConfig.updateFrequency}（最終更新: <time datetime={buildYearMonthIso}>{buildYearMonthLabel}</time>）
+  </span>
+</p>

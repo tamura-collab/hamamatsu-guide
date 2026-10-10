@@ -1,0 +1,11 @@
+---
+// 料金表記の近くに置く注記（文言は site.config.ts の priceNotice で一元管理）
+import { siteConfig } from '@/config/site.config';
+
+interface Props {
+  class?: string;
+}
+const { class: className } = Astro.props;
+---
+
+<p class:list={['text-[11px] leading-relaxed text-muted', className]} data-price-note>{siteConfig.priceNotice}</p>

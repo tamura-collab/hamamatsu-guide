@@ -7,6 +7,7 @@ import Icon from '@/components/ui/Icon.astro';
 import CategoryCard from '@/components/cards/CategoryCard.astro';
 import ArticleCard from '@/components/cards/ArticleCard.astro';
 import PlaceCard from '@/components/place/PlaceCard.astro';
+import PriceNote from '@/components/info/PriceNote.astro';
 import { categories, sections } from '@/data/categories';
 import { sortedArticles } from '@/data/articles';
 import { getPlaces } from '@/data/places';
@@ -47,7 +48,8 @@ const keywords = (...parts: (string | undefined)[]) => parts.filter(Boolean).joi
     </section>
 
     <section class="mt-10" data-result-group hidden>
-      <h2 class="mb-3 font-bold">店舗・スポット</h2>
+      <h2 class="font-bold">店舗・スポット</h2>
+      <PriceNote class="mb-3" />
       <ul class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {
           places.map(({ section, place }) => (

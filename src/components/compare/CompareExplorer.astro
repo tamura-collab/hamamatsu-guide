@@ -10,7 +10,8 @@ import PrBadge from '@/components/ui/PrBadge.astro';
 import PlaceCard from '@/components/place/PlaceCard.astro';
 import OutboundLink from '@/components/outbound/OutboundLink.astro';
 import type { Category } from '@/data/categories';
-import { formatSpec, getPlaceHref, sortLocalNotes, type Place } from '@/data/places';
+import { formatSpec, getPlaceHref, sortLocalNotes, specNumber, type Place } from '@/data/places';
+import PriceNote from '@/components/info/PriceNote.astro';
 import { resolveCta } from '@/lib/cta';
 import { url } from '@/lib/url';
 
@@ -24,13 +25,14 @@ const axes = category.axes;
 const sortAxes = axes.filter((a) => a.sort);
 const boolFilters = axes.filter((a) => a.filter === 'yes');
 const maxFilters = axes.filter((a) => a.filter === 'max');
+const hasPrice = axes.some((a) => a.type === 'price');
 
 /** 料金系の軸で最も安い値（「最安」ラベル用） */
 const cheapest = new Map(
   axes
     .filter((a) => a.type === 'price')
     .map((a) => {
-      const values = places.map((p) => p.specs[a.key]).filter((v): v is number => typeof v === 'number');
+      const values = places.map((p) => specNumber(p.specs[a.key])).filter((v): v is number => v !== null);
       return [a.key, values.length > 1 ? Math.min(...values) : undefined];
     }),
 );
@@ -110,6 +112,8 @@ const rowData = (p: Place, index: number) => JSON.stringify({ i: index, specs: p
     </div>
   </form>
 
+  {hasPrice && <PriceNote class="mt-3" />}
+
   <!-- カード表示 -->
   <ul data-compare-list="cards" class="mt-4 grid gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
     {
@@ -151,7 +155,8 @@ const rowData = (p: Place, index: number) => JSON.stringify({ i: index, specs: p
               </th>
               {axes.map((a) => {
                 const value = place.specs[a.key];
-                const isBest = typeof value === 'number' && cheapest.get(a.key) === value;
+                const num = specNumber(value);
+                const isBest = a.type === 'price' && num !== null && cheapest.get(a.key) === num;
                 return (
                   <td class:list={['px-3 py-3 whitespace-nowrap', a.type === 'text' ? 'text-left' : 'text-center', value === null && 'text-muted']}>
                     {a.type === 'boolean' && value !== null ? (
@@ -204,11 +209,14 @@ const rowData = (p: Place, index: number) => JSON.stringify({ i: index, specs: p
   <p data-compare-empty hidden class="mt-4 rounded-xl border border-dashed border-line p-8 text-center text-sm text-muted">
     条件に合う掲載先がありません。条件を減らしてお試しください。
   </p>
-  <p class="mt-3 text-[11px] text-muted">※料金は編集部調査時点の目安です。「—」は未確認の項目です。○=あり、×=なし。</p>
+  {hasPrice && <PriceNote class="mt-3" />}
+  <p class="mt-1 text-[11px] text-muted">「—」は未確認の項目です。○=あり、×=なし。</p>
 </div>
 
 <script>
-  type Specs = Record<string, number | boolean | string | null>;
+  type Specs = Record<string, number | [number, number] | boolean | string | null>;
+  /** 並び替え・絞り込み用の数値（価格帯は下限） */
+  const num = (v: Specs[string] | undefined) => (typeof v === 'number' ? v : Array.isArray(v) ? v[0] : null);
   type Row = { i: number; specs: Specs };
   type State = { sort: string; yes: string[]; max: [string, number][] };
 
@@ -244,18 +252,21 @@ const rowData = (p: Place, index: number) => JSON.stringify({ i: index, specs: p
     function matches(specs: Specs, { yes, max }: State) {
       return (
         yes.every((k) => specs[k] === true) &&
-        max.every(([k, limit]) => typeof specs[k] === 'number' && (specs[k] as number) <= limit)
+        max.every(([k, limit]) => {
+          const v = num(specs[k]);
+          return v !== null && v <= limit;
+        })
       );
     }
 
     function compare(a: Row, b: Row, sort: string) {
       if (sort) {
-        const x = a.specs[sort];
-        const y = b.specs[sort];
+        const x = num(a.specs[sort]);
+        const y = num(b.specs[sort]);
         // 値が未確認（null）のものは常に末尾
-        if (typeof x !== 'number' && typeof y === 'number') return 1;
-        if (typeof x === 'number' && typeof y !== 'number') return -1;
-        if (typeof x === 'number' && typeof y === 'number' && x !== y) {
+        if (x === null && y !== null) return 1;
+        if (x !== null && y === null) return -1;
+        if (x !== null && y !== null && x !== y) {
           return sortDir.get(sort) === 'desc' ? y - x : x - y;
         }
       }

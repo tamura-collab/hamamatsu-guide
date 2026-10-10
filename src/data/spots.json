@@ -1,42 +1,42 @@
 [
   {
-    "id": "rental-car-a356cffb",
+    "id": "rental-car-5bad6672",
     "name": "浜松レンタカー 駅南店",
     "category": "rental-car",
     "genre": "レンタカー",
-    "address": "静岡県浜松市中央区砂山町5丁目11-20",
-    "tel": "000-000-0025",
+    "address": "静岡県浜松市中央区砂山町4丁目23-12",
+    "tel": "000-000-0027",
     "hours": "7:00～22:00",
-    "access": "国道257号沿い／浜松駅から徒歩11分",
-    "officialUrl": "https://example.com/hamamatsu/rental-car/1",
+    "access": "浜松駅から徒歩8分・無料駐車場88台",
+    "officialUrl": null,
     "description": "レンタカー。浜松レンタカー 駅南店は乗り捨てやチャイルドシートの貸し出しにも対応しています。",
     "localNote": [
       {
         "type": "landmark",
-        "text": "郵便局の近く",
+        "text": "イオンの近く",
         "source": "manual"
       },
       {
         "type": "tip",
-        "text": "朝夕は浜松バイパスの渋滞に注意",
+        "text": "平日夜は混みやすいので土日午前が狙い目",
         "source": "manual"
       },
       {
         "type": "station",
-        "text": "浜松駅徒歩11分",
+        "text": "浜松駅徒歩8分",
         "source": "auto"
       },
       {
-        "type": "road",
-        "text": "国道257号沿い",
+        "type": "parking",
+        "text": "無料駐車場88台",
         "source": "auto"
       }
     ],
     "specs": {
-      "price24h": 8600,
-      "dropOff": true,
+      "price24h": 8000,
+      "dropOff": false,
       "nonSmoking": true,
-      "stationWalkMin": 11
+      "stationWalkMin": 8
     },
     "affiliate": {
       "url": "https://example.com/aff/rental-car/1",
@@ -47,33 +47,33 @@
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "rental-car-5d080431",
+    "id": "rental-car-4bb84f13",
     "name": "エンシューレンタカー 鍛冶町営業所",
     "category": "rental-car",
     "genre": "レンタカー",
-    "address": "静岡県浜松市中央区鍛冶町2丁目15-1",
-    "tel": "000-000-0026",
-    "hours": "8:00～19:00 / 年末年始休",
-    "access": "鍛冶町通り沿い／第一通り駅から徒歩10分",
+    "address": "静岡県浜松市中央区鍛冶町5丁目18-3",
+    "tel": "000-000-0028",
+    "hours": "8:00～20:00",
+    "access": "第一通り駅から徒歩7分・駐車場26台",
     "officialUrl": "https://example.com/hamamatsu/rental-car/2",
     "description": "レンタカー。エンシューレンタカー 鍛冶町営業所は乗り捨てやチャイルドシートの貸し出しにも対応しています。",
     "localNote": [
       {
         "type": "station",
-        "text": "第一通り駅徒歩10分",
+        "text": "第一通り駅徒歩7分",
         "source": "auto"
       },
       {
-        "type": "road",
-        "text": "鍛冶町通り沿い",
+        "type": "parking",
+        "text": "駐車場26台",
         "source": "auto"
       }
     ],
     "specs": {
-      "price24h": 11000,
+      "price24h": 7600,
       "dropOff": false,
       "nonSmoking": true,
-      "stationWalkMin": 10
+      "stationWalkMin": 7
     },
     "affiliate": {
       "url": "https://example.com/aff/rental-car/2",
@@ -84,48 +84,20 @@
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "rental-car-83ee11ae",
+    "id": "rental-car-edaaddc0",
     "name": "レイクレンタカー 舞阪店",
     "category": "rental-car",
     "genre": "レンタカー",
-    "address": "静岡県浜松市中央区舞阪町舞阪5丁目14-6",
-    "tel": "000-000-0027",
-    "hours": "8:00～20:00",
-    "access": "舞阪駅から徒歩15分・駐車場なし",
+    "address": "静岡県浜松市中央区舞阪町舞阪5丁目14-14",
+    "tel": "000-000-0029",
+    "hours": "8:00～19:00 / 年末年始休",
+    "access": "舞阪駅 徒歩6分・無料駐車場56台",
     "officialUrl": "https://example.com/hamamatsu/rental-car/3",
     "description": "レンタカー。レイクレンタカー 舞阪店は乗り捨てやチャイルドシートの貸し出しにも対応しています。",
     "localNote": [
       {
         "type": "station",
-        "text": "舞阪駅徒歩15分",
-        "source": "auto"
-      }
-    ],
-    "specs": {
-      "price24h": 7600,
-      "dropOff": false,
-      "nonSmoking": true,
-      "stationWalkMin": 15
-    },
-    "affiliate": null,
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "rental-car-964ea9ca",
-    "name": "格安レンタカー ワンズ高塚",
-    "category": "rental-car",
-    "genre": "格安レンタカー",
-    "address": "静岡県浜松市中央区高塚町5丁目14-14",
-    "tel": "000-000-0028",
-    "hours": "8:00～19:00 / 年末年始休",
-    "access": "高塚駅 徒歩6分・無料駐車場56台",
-    "officialUrl": "https://example.com/hamamatsu/rental-car/4",
-    "description": "格安レンタカー。格安レンタカー ワンズ高塚は乗り捨てやチャイルドシートの貸し出しにも対応しています。",
-    "localNote": [
-      {
-        "type": "station",
-        "text": "高塚駅徒歩6分",
+        "text": "舞阪駅徒歩6分",
         "source": "auto"
       },
       {
@@ -135,9 +107,9 @@
       }
     ],
     "specs": {
-      "price24h": 11400,
-      "dropOff": true,
-      "nonSmoking": false,
+      "price24h": 6400,
+      "dropOff": false,
+      "nonSmoking": true,
       "stationWalkMin": 6
     },
     "affiliate": null,
@@ -145,71 +117,113 @@
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "rental-car-c89f236f",
-    "name": "エコノレンタ 浜北店",
+    "id": "rental-car-a485be99",
+    "name": "格安レンタカー ワンズ高塚",
     "category": "rental-car",
-    "genre": "レンタカー",
-    "address": "静岡県浜松市浜名区小松5丁目10-7",
-    "tel": "000-000-0029",
+    "genre": "格安レンタカー",
+    "address": "静岡県浜松市中央区高塚町2丁目10-2",
+    "tel": "000-000-0030",
     "hours": "8:00～19:00 / 年末年始休",
-    "access": "国道152号沿い／小松駅 徒歩12分",
-    "officialUrl": "https://example.com/hamamatsu/rental-car/5",
-    "description": "レンタカー。エコノレンタ 浜北店は乗り捨てやチャイルドシートの貸し出しにも対応しています。",
+    "access": "浜松バイパス沿い／高塚駅 徒歩14分",
+    "officialUrl": null,
+    "description": "格安レンタカー。格安レンタカー ワンズ高塚は乗り捨てやチャイルドシートの貸し出しにも対応しています。",
     "localNote": [
       {
         "type": "station",
-        "text": "小松駅徒歩12分",
+        "text": "高塚駅徒歩14分",
         "source": "auto"
       },
       {
         "type": "road",
-        "text": "国道152号沿い",
+        "text": "浜松バイパス沿い",
         "source": "auto"
       }
     ],
     "specs": {
-      "price24h": 9300,
-      "dropOff": false,
+      "price24h": [
+        6200,
+        10600
+      ],
+      "dropOff": true,
       "nonSmoking": true,
-      "stationWalkMin": 12
+      "stationWalkMin": 14
     },
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "hotel-93650f3b",
+    "id": "rental-car-b9b676de",
+    "name": "エコノレンタ 浜北店",
+    "category": "rental-car",
+    "genre": "レンタカー",
+    "address": "静岡県浜松市浜名区小松1丁目9-11",
+    "tel": null,
+    "hours": "8:00～20:00",
+    "access": "小松駅 徒歩10分・駐車場103台",
+    "officialUrl": "https://example.com/hamamatsu/rental-car/5",
+    "description": "レンタカー。エコノレンタ 浜北店は乗り捨てやチャイルドシートの貸し出しにも対応しています。",
+    "localNote": [
+      {
+        "type": "station",
+        "text": "小松駅徒歩10分",
+        "source": "auto"
+      },
+      {
+        "type": "parking",
+        "text": "駐車場103台",
+        "source": "auto"
+      }
+    ],
+    "specs": {
+      "price24h": [
+        8200,
+        10100
+      ],
+      "dropOff": false,
+      "nonSmoking": true,
+      "stationWalkMin": 10
+    },
+    "affiliate": null,
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "hotel-3e7eb366",
     "name": "ホテル浜松シティ 駅南",
     "category": "hotel",
     "genre": "シティホテル",
-    "address": "静岡県浜松市中央区砂山町1丁目10-18",
-    "tel": "000-000-0030",
+    "address": "静岡県浜松市中央区砂山町3丁目28-8",
+    "tel": "000-000-0031",
     "hours": "チェックイン 15:00 / チェックアウト 11:00",
-    "access": "浜松駅 徒歩9分",
+    "access": "浜松駅 徒歩6分",
     "officialUrl": "https://example.com/hamamatsu/hotel/1",
     "description": "シティホテル。ホテル浜松シティ 駅南は観光・出張どちらの拠点にも便利です。",
     "localNote": [
       {
         "type": "landmark",
-        "text": "市役所の近く",
+        "text": "郵便局の近く",
         "source": "manual"
       },
       {
         "type": "tip",
-        "text": "平日夜は混みやすいので土日午前が狙い目",
+        "text": "遠鉄電車なら駅から歩いてすぐ",
         "source": "manual"
       },
       {
         "type": "station",
-        "text": "浜松駅徒歩9分",
+        "text": "浜松駅徒歩6分",
         "source": "auto"
       }
     ],
     "specs": {
-      "priceFrom": 9300,
+      "priceFrom": [
+        11800,
+        14900
+      ],
       "breakfast": true,
       "largeBath": false,
-      "stationWalkMin": 9,
+      "stationWalkMin": 6,
       "parking": null
     },
     "affiliate": {
@@ -221,28 +235,31 @@
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "hotel-2553e28c",
+    "id": "hotel-355f1754",
     "name": "ビジネスホテル ポートイン 鍛冶町",
     "category": "hotel",
     "genre": "ビジネスホテル",
-    "address": "静岡県浜松市中央区鍛冶町1丁目8-17",
-    "tel": "000-000-0031",
+    "address": "静岡県浜松市中央区鍛冶町2丁目26-10",
+    "tel": "000-000-0032",
     "hours": "チェックイン 15:00 / チェックアウト 11:00",
-    "access": "第一通り駅から徒歩14分",
+    "access": "第一通り駅から徒歩7分",
     "officialUrl": "https://example.com/hamamatsu/hotel/2",
     "description": "ビジネスホテル。ビジネスホテル ポートイン 鍛冶町は観光・出張どちらの拠点にも便利です。",
     "localNote": [
       {
         "type": "station",
-        "text": "第一通り駅徒歩14分",
+        "text": "第一通り駅徒歩7分",
         "source": "auto"
       }
     ],
     "specs": {
-      "priceFrom": 8400,
+      "priceFrom": [
+        8700,
+        11200
+      ],
       "breakfast": true,
       "largeBath": false,
-      "stationWalkMin": 14,
+      "stationWalkMin": 7,
       "parking": null
     },
     "affiliate": {
@@ -254,28 +271,31 @@
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "hotel-d6ac557a",
+    "id": "hotel-517cd2f6",
     "name": "天然温泉 ホテルはままつ湯 駅南",
     "category": "hotel",
     "genre": "ビジネスホテル（大浴場あり）",
-    "address": "静岡県浜松市中央区砂山町5丁目5-7",
-    "tel": "000-000-0032",
+    "address": "静岡県浜松市中央区砂山町1丁目3-16",
+    "tel": "000-000-0033",
     "hours": "チェックイン 15:00 / チェックアウト 11:00",
-    "access": "浜松駅 徒歩11分",
+    "access": "浜松駅 徒歩15分",
     "officialUrl": "https://example.com/hamamatsu/hotel/3",
     "description": "ビジネスホテル（大浴場あり）。天然温泉 ホテルはままつ湯 駅南は観光・出張どちらの拠点にも便利です。",
     "localNote": [
       {
         "type": "station",
-        "text": "浜松駅徒歩11分",
+        "text": "浜松駅徒歩15分",
         "source": "auto"
       }
     ],
     "specs": {
-      "priceFrom": 10100,
+      "priceFrom": [
+        6200,
+        8900
+      ],
       "breakfast": true,
       "largeBath": true,
-      "stationWalkMin": 11,
+      "stationWalkMin": 15,
       "parking": null
     },
     "affiliate": null,
@@ -283,28 +303,31 @@
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "hotel-f73d4848",
+    "id": "hotel-88d4d98d",
     "name": "湖畔の宿 しおさい 舞阪",
     "category": "hotel",
     "genre": "温泉旅館",
-    "address": "静岡県浜松市中央区舞阪町舞阪2丁目6-16",
-    "tel": null,
-    "hours": "チェックイン 15:00 / チェックアウト 11:00",
-    "access": "舞阪駅 徒歩10分",
+    "address": "静岡県浜松市中央区舞阪町舞阪5丁目25-20",
+    "tel": "000-000-0034",
+    "hours": "チェックイン 14:00 / チェックアウト 10:00",
+    "access": "舞阪駅から徒歩15分",
     "officialUrl": "https://example.com/hamamatsu/hotel/4",
     "description": "温泉旅館。湖畔の宿 しおさい 舞阪は観光・出張どちらの拠点にも便利です。",
     "localNote": [
       {
         "type": "station",
-        "text": "舞阪駅徒歩10分",
+        "text": "舞阪駅徒歩15分",
         "source": "auto"
       }
     ],
     "specs": {
-      "priceFrom": 14600,
-      "breakfast": true,
+      "priceFrom": [
+        9900,
+        14600
+      ],
+      "breakfast": false,
       "largeBath": true,
-      "stationWalkMin": 10,
+      "stationWalkMin": 15,
       "parking": null
     },
     "affiliate": null,
@@ -312,78 +335,76 @@
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "hotel-6f35ab5f",
+    "id": "hotel-512ea2bf",
     "name": "ゲストハウス LAKE BASE 鍛冶町",
     "category": "hotel",
     "genre": "ゲストハウス",
-    "address": "静岡県浜松市中央区鍛冶町4丁目13-20",
-    "tel": "000-000-0033",
-    "hours": "チェックイン 15:00 / チェックアウト 11:00",
-    "access": "第一通り駅から徒歩9分／無料駐車場50台",
+    "address": "静岡県浜松市中央区鍛冶町2丁目28-19",
+    "tel": "000-000-0035",
+    "hours": "チェックイン 14:00 / チェックアウト 10:00",
+    "access": "第一通り駅から徒歩6分",
     "officialUrl": "https://example.com/hamamatsu/hotel/5",
     "description": "ゲストハウス。ゲストハウス LAKE BASE 鍛冶町は観光・出張どちらの拠点にも便利です。",
     "localNote": [
       {
         "type": "station",
-        "text": "第一通り駅徒歩9分",
-        "source": "auto"
-      },
-      {
-        "type": "parking",
-        "text": "無料駐車場50台",
+        "text": "第一通り駅徒歩6分",
         "source": "auto"
       }
     ],
     "specs": {
-      "priceFrom": 15500,
+      "priceFrom": [
+        10900,
+        14800
+      ],
       "breakfast": true,
       "largeBath": false,
-      "stationWalkMin": 9,
-      "parking": true
+      "stationWalkMin": 6,
+      "parking": null
     },
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "rainy-day-f9d18524",
+    "id": "rainy-day-b91d2c94",
     "name": "はままつサイエンスラボ 駅南",
     "category": "rainy-day",
     "genre": "科学館",
-    "address": "静岡県浜松市中央区砂山町2丁目21-17",
-    "tel": "000-000-0034",
+    "address": "静岡県浜松市中央区砂山町2丁目14-13",
+    "tel": null,
     "hours": "10:00～21:00",
-    "access": "国道257号沿い／浜松駅 徒歩9分",
+    "access": "浜松駅 徒歩3分・無料駐車場63台",
     "officialUrl": "https://example.com/hamamatsu/rainy-day/1",
     "description": "屋内で過ごせる科学館。はままつサイエンスラボ 駅南は雨の日でも子どもと一緒に楽しめます。",
     "localNote": [
       {
         "type": "landmark",
-        "text": "中央図書館の近く",
+        "text": "市役所の近く",
         "source": "manual"
       },
       {
         "type": "tip",
-        "text": "平日夜は混みやすいので土日午前が狙い目",
+        "text": "朝夕は浜松バイパスの渋滞に注意",
         "source": "manual"
       },
       {
         "type": "station",
-        "text": "浜松駅徒歩9分",
+        "text": "浜松駅徒歩3分",
         "source": "auto"
       },
       {
-        "type": "road",
-        "text": "国道257号沿い",
+        "type": "parking",
+        "text": "無料駐車場63台",
         "source": "auto"
       }
     ],
     "specs": {
       "admission": 600,
       "kidsFriendly": false,
-      "stayMinutes": 230,
-      "stationWalkMin": 9,
-      "parking": null
+      "stayMinutes": 100,
+      "stationWalkMin": 3,
+      "parking": true
     },
     "affiliate": {
       "url": "https://example.com/aff/rainy-day/1",
@@ -394,29 +415,34 @@
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "rainy-day-e2c1e56d",
+    "id": "rainy-day-cd71cf15",
     "name": "浜名湖アクアミュージアム 舞阪",
     "category": "rainy-day",
     "genre": "水族館",
-    "address": "静岡県浜松市中央区舞阪町舞阪2丁目20-6",
-    "tel": "000-000-0035",
-    "hours": "10:00～21:00",
-    "access": "舞阪駅 徒歩5分・駐車場なし",
+    "address": "静岡県浜松市中央区舞阪町舞阪5丁目1-6",
+    "tel": null,
+    "hours": "9:30～17:00 / 月曜休館",
+    "access": "舞阪駅から徒歩14分・駐車場57台",
     "officialUrl": "https://example.com/hamamatsu/rainy-day/2",
     "description": "屋内で過ごせる水族館。浜名湖アクアミュージアム 舞阪は雨の日でも子どもと一緒に楽しめます。",
     "localNote": [
       {
         "type": "station",
-        "text": "舞阪駅徒歩5分",
+        "text": "舞阪駅徒歩14分",
+        "source": "auto"
+      },
+      {
+        "type": "parking",
+        "text": "駐車場57台",
         "source": "auto"
       }
     ],
     "specs": {
       "admission": 1500,
-      "kidsFriendly": true,
-      "stayMinutes": 110,
-      "stationWalkMin": 5,
-      "parking": false
+      "kidsFriendly": false,
+      "stayMinutes": 130,
+      "stationWalkMin": 14,
+      "parking": true
     },
     "affiliate": {
       "url": "https://example.com/aff/rainy-day/2",
@@ -427,20 +453,20 @@
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "rainy-day-bfcc849a",
+    "id": "rainy-day-a4119239",
     "name": "こども未来館 上島",
     "category": "rainy-day",
     "genre": "児童館（無料）",
-    "address": "静岡県浜松市中央区上島5丁目15-2",
+    "address": "静岡県浜松市中央区上島5丁目4-6",
     "tel": "000-000-0036",
     "hours": "10:00～21:00",
-    "access": "国道152号沿い／上島駅から徒歩3分",
-    "officialUrl": null,
+    "access": "国道152号沿い／上島駅 徒歩11分",
+    "officialUrl": "https://example.com/hamamatsu/rainy-day/3",
     "description": "屋内で過ごせる児童館（無料）。こども未来館 上島は雨の日でも子どもと一緒に楽しめます。",
     "localNote": [
       {
         "type": "station",
-        "text": "上島駅徒歩3分",
+        "text": "上島駅徒歩11分",
         "source": "auto"
       },
       {
@@ -452,8 +478,8 @@
     "specs": {
       "admission": 0,
       "kidsFriendly": true,
-      "stayMinutes": 110,
-      "stationWalkMin": 3,
+      "stayMinutes": 120,
+      "stationWalkMin": 11,
       "parking": null
     },
     "affiliate": null,
@@ -461,20 +487,20 @@
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "rainy-day-445ca536",
+    "id": "rainy-day-79128a7c",
     "name": "ショッピングモール はままつテラス 入野",
     "category": "rainy-day",
     "genre": "商業施設",
-    "address": "静岡県浜松市中央区入野町4丁目29-7",
-    "tel": "000-000-0037",
-    "hours": "9:00～18:00 / 第2火曜休",
-    "access": "浜松環状線沿い／高塚駅から徒歩8分",
-    "officialUrl": "https://example.com/hamamatsu/rainy-day/4",
+    "address": "静岡県浜松市中央区入野町5丁目13-7",
+    "tel": null,
+    "hours": "9:30～17:00 / 月曜休館",
+    "access": "浜松環状線沿い／高塚駅から徒歩7分",
+    "officialUrl": null,
     "description": "屋内で過ごせる商業施設。ショッピングモール はままつテラス 入野は雨の日でも子どもと一緒に楽しめます。",
     "localNote": [
       {
         "type": "station",
-        "text": "高塚駅徒歩8分",
+        "text": "高塚駅徒歩7分",
         "source": "auto"
       },
       {
@@ -485,9 +511,9 @@
     ],
     "specs": {
       "admission": 0,
-      "kidsFriendly": true,
-      "stayMinutes": 60,
-      "stationWalkMin": 8,
+      "kidsFriendly": false,
+      "stayMinutes": 180,
+      "stationWalkMin": 7,
       "parking": null
     },
     "affiliate": null,
@@ -495,147 +521,50 @@
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "rainy-day-d6495833",
+    "id": "rainy-day-73a1ef8b",
     "name": "浜松ものづくり歴史館 鍛冶町",
     "category": "rainy-day",
     "genre": "博物館",
-    "address": "静岡県浜松市中央区鍛冶町4丁目19-9",
-    "tel": "000-000-0038",
+    "address": "静岡県浜松市中央区鍛冶町3丁目18-7",
+    "tel": "000-000-0037",
     "hours": "10:00～21:00",
-    "access": "第一通り駅から徒歩4分・駐車場なし",
+    "access": "第一通り駅から徒歩10分・駐車場119台",
     "officialUrl": "https://example.com/hamamatsu/rainy-day/5",
     "description": "屋内で過ごせる博物館。浜松ものづくり歴史館 鍛冶町は雨の日でも子どもと一緒に楽しめます。",
     "localNote": [
       {
         "type": "station",
-        "text": "第一通り駅徒歩4分",
+        "text": "第一通り駅徒歩10分",
+        "source": "auto"
+      },
+      {
+        "type": "parking",
+        "text": "駐車場119台",
         "source": "auto"
       }
     ],
     "specs": {
       "admission": 400,
       "kidsFriendly": false,
-      "stayMinutes": 140,
-      "stationWalkMin": 4,
-      "parking": false
+      "stayMinutes": 170,
+      "stationWalkMin": 10,
+      "parking": true
     },
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "night-bus-c9b00a8a",
+    "id": "night-bus-ba421e05",
     "name": "浜松駅 高速バスのりば（駅南）",
     "category": "night-bus",
     "genre": "高速バス乗り場",
-    "address": "静岡県浜松市中央区砂山町2丁目22-19",
-    "tel": "000-000-0039",
-    "hours": "発車 22:30（東京行）",
-    "access": "浜松駅から徒歩4分／駐車場なし",
+    "address": "静岡県浜松市中央区砂山町3丁目8-15",
+    "tel": "000-000-0038",
+    "hours": "窓口 9:00～23:30",
+    "access": "浜松駅 徒歩14分",
     "officialUrl": "https://example.com/hamamatsu/night-bus/1",
     "description": "高速バス乗り場。浜松駅 高速バスのりば（駅南）から東京・大阪方面への夜行便が発着します。",
-    "localNote": [
-      {
-        "type": "landmark",
-        "text": "中央図書館の近く",
-        "source": "manual"
-      },
-      {
-        "type": "tip",
-        "text": "平日夜は混みやすいので土日午前が狙い目",
-        "source": "manual"
-      },
-      {
-        "type": "station",
-        "text": "浜松駅徒歩4分",
-        "source": "auto"
-      }
-    ],
-    "specs": {
-      "fareFrom": 5300,
-      "seatType": "4列シート",
-      "womenSeats": true,
-      "stationWalkMin": 4
-    },
-    "affiliate": {
-      "url": "https://example.com/aff/night-bus/1",
-      "label": null,
-      "program": "サンプルASP"
-    },
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "night-bus-a4a4c15d",
-    "name": "浜松バイパス高塚 高速バス停",
-    "category": "night-bus",
-    "genre": "高速バス乗り場",
-    "address": "静岡県浜松市中央区高塚町2丁目4-9",
-    "tel": "000-000-0040",
-    "hours": "窓口 9:00～23:30",
-    "access": "高塚駅 徒歩15分",
-    "officialUrl": "https://example.com/hamamatsu/night-bus/2",
-    "description": "高速バス乗り場。浜松バイパス高塚 高速バス停から東京・大阪方面への夜行便が発着します。",
-    "localNote": [
-      {
-        "type": "station",
-        "text": "高塚駅徒歩15分",
-        "source": "auto"
-      }
-    ],
-    "specs": {
-      "fareFrom": 5600,
-      "seatType": "4列シート",
-      "womenSeats": true,
-      "stationWalkMin": 15
-    },
-    "affiliate": {
-      "url": "https://example.com/aff/night-bus/2",
-      "label": null,
-      "program": "サンプルASP"
-    },
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "night-bus-756f3adb",
-    "name": "遠州交通 高速バス予約センター 鍛冶町",
-    "category": "night-bus",
-    "genre": "予約窓口",
-    "address": "静岡県浜松市中央区鍛冶町1丁目21-18",
-    "tel": "000-000-0041",
-    "hours": "発車 22:30（東京行）",
-    "access": "第一通り駅 徒歩10分／駐車場なし",
-    "officialUrl": "https://example.com/hamamatsu/night-bus/3",
-    "description": "予約窓口。遠州交通 高速バス予約センター 鍛冶町から東京・大阪方面への夜行便が発着します。",
-    "localNote": [
-      {
-        "type": "station",
-        "text": "第一通り駅徒歩10分",
-        "source": "auto"
-      }
-    ],
-    "specs": {
-      "fareFrom": 4200,
-      "seatType": "3列独立シート",
-      "womenSeats": true,
-      "stationWalkMin": 10
-    },
-    "affiliate": null,
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "gourmet-2330e700",
-    "name": "うなぎ処 湖東 駅南",
-    "category": "gourmet",
-    "genre": "うなぎ",
-    "address": "静岡県浜松市中央区砂山町5丁目24-5",
-    "tel": "000-000-0042",
-    "hours": "11:30～14:30 / 水曜休",
-    "access": "浜松駅 徒歩12分／駐車場なし",
-    "officialUrl": null,
-    "description": "地元で人気のうなぎ。うなぎ処 湖東 駅南は観光客にも入りやすい雰囲気です。",
     "localNote": [
       {
         "type": "landmark",
@@ -649,15 +578,120 @@
       },
       {
         "type": "station",
-        "text": "浜松駅徒歩12分",
+        "text": "浜松駅徒歩14分",
         "source": "auto"
       }
     ],
     "specs": {
-      "budget": 3500,
+      "fareFrom": 5000,
+      "seatType": "4列シート",
+      "womenSeats": false,
+      "stationWalkMin": 14
+    },
+    "affiliate": {
+      "url": "https://example.com/aff/night-bus/1",
+      "label": null,
+      "program": "サンプルASP"
+    },
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "night-bus-da7ce735",
+    "name": "浜松バイパス高塚 高速バス停",
+    "category": "night-bus",
+    "genre": "高速バス乗り場",
+    "address": "静岡県浜松市中央区高塚町2丁目7-6",
+    "tel": "000-000-0039",
+    "hours": "窓口 9:00～23:30",
+    "access": "高塚駅から徒歩13分",
+    "officialUrl": "https://example.com/hamamatsu/night-bus/2",
+    "description": "高速バス乗り場。浜松バイパス高塚 高速バス停から東京・大阪方面への夜行便が発着します。",
+    "localNote": [
+      {
+        "type": "station",
+        "text": "高塚駅徒歩13分",
+        "source": "auto"
+      }
+    ],
+    "specs": {
+      "fareFrom": 6200,
+      "seatType": "3列独立シート",
+      "womenSeats": false,
+      "stationWalkMin": 13
+    },
+    "affiliate": {
+      "url": "https://example.com/aff/night-bus/2",
+      "label": null,
+      "program": "サンプルASP"
+    },
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "night-bus-c5772175",
+    "name": "遠州交通 高速バス予約センター 鍛冶町",
+    "category": "night-bus",
+    "genre": "予約窓口",
+    "address": "静岡県浜松市中央区鍛冶町3丁目9-20",
+    "tel": "000-000-0040",
+    "hours": "発車 23:10（大阪行）",
+    "access": "第一通り駅から徒歩14分",
+    "officialUrl": "https://example.com/hamamatsu/night-bus/3",
+    "description": "予約窓口。遠州交通 高速バス予約センター 鍛冶町から東京・大阪方面への夜行便が発着します。",
+    "localNote": [
+      {
+        "type": "station",
+        "text": "第一通り駅徒歩14分",
+        "source": "auto"
+      }
+    ],
+    "specs": {
+      "fareFrom": 5300,
+      "seatType": "4列シート",
+      "womenSeats": true,
+      "stationWalkMin": 14
+    },
+    "affiliate": null,
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "gourmet-3020d16e",
+    "name": "うなぎ処 湖東 駅南",
+    "category": "gourmet",
+    "genre": "うなぎ",
+    "address": "静岡県浜松市中央区砂山町1丁目4-19",
+    "tel": "000-000-0041",
+    "hours": "11:30～14:30 / 水曜休",
+    "access": "浜松駅 徒歩10分",
+    "officialUrl": "https://example.com/hamamatsu/gourmet/1",
+    "description": "地元で人気のうなぎ。うなぎ処 湖東 駅南は観光客にも入りやすい雰囲気です。",
+    "localNote": [
+      {
+        "type": "landmark",
+        "text": "中央図書館の近く",
+        "source": "manual"
+      },
+      {
+        "type": "tip",
+        "text": "遠鉄電車なら駅から歩いてすぐ",
+        "source": "manual"
+      },
+      {
+        "type": "station",
+        "text": "浜松駅徒歩10分",
+        "source": "auto"
+      }
+    ],
+    "specs": {
+      "budget": [
+        3500,
+        7000
+      ],
       "reservation": true,
-      "stationWalkMin": 12,
-      "parking": false
+      "stationWalkMin": 10,
+      "parking": null
     },
     "affiliate": {
       "url": "https://example.com/aff/gourmet/1",
@@ -668,14 +702,14 @@
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "gourmet-365716ae",
+    "id": "gourmet-9aac1915",
     "name": "浜松餃子 まるはち 鍛冶町",
     "category": "gourmet",
     "genre": "浜松餃子",
-    "address": "静岡県浜松市中央区鍛冶町2丁目30-20",
-    "tel": "000-000-0043",
-    "hours": "17:00～24:00 / 日曜休",
-    "access": "第一通り駅 徒歩2分／無料駐車場61台",
+    "address": "静岡県浜松市中央区鍛冶町2丁目25-2",
+    "tel": "000-000-0042",
+    "hours": "11:30～14:30 / 水曜休",
+    "access": "第一通り駅から徒歩2分",
     "officialUrl": "https://example.com/hamamatsu/gourmet/2",
     "description": "地元で人気の浜松餃子。浜松餃子 まるはち 鍛冶町は観光客にも入りやすい雰囲気です。",
     "localNote": [
@@ -683,18 +717,16 @@
         "type": "station",
         "text": "第一通り駅徒歩2分",
         "source": "auto"
-      },
-      {
-        "type": "parking",
-        "text": "無料駐車場61台",
-        "source": "auto"
       }
     ],
     "specs": {
-      "budget": 800,
+      "budget": [
+        800,
+        1600
+      ],
       "reservation": true,
       "stationWalkMin": 2,
-      "parking": true
+      "parking": null
     },
     "affiliate": {
       "url": "https://example.com/aff/gourmet/2",
@@ -705,15 +737,15 @@
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "gourmet-3f130725",
+    "id": "gourmet-967ef563",
     "name": "炉端焼き いさり火 鍛冶町",
     "category": "gourmet",
     "genre": "居酒屋",
-    "address": "静岡県浜松市中央区鍛冶町1丁目29-14",
-    "tel": "000-000-0044",
-    "hours": "11:30～14:30 / 水曜休",
+    "address": "静岡県浜松市中央区鍛冶町5丁目14-8",
+    "tel": null,
+    "hours": "17:00～24:00 / 日曜休",
     "access": "第一通り駅から徒歩15分",
-    "officialUrl": "https://example.com/hamamatsu/gourmet/3",
+    "officialUrl": null,
     "description": "地元で人気の居酒屋。炉端焼き いさり火 鍛冶町は観光客にも入りやすい雰囲気です。",
     "localNote": [
       {
@@ -723,7 +755,10 @@
       }
     ],
     "specs": {
-      "budget": 3000,
+      "budget": [
+        3000,
+        6000
+      ],
       "reservation": true,
       "stationWalkMin": 15,
       "parking": null
@@ -733,60 +768,30 @@
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "gourmet-7fa00f26",
+    "id": "gourmet-4bf18347",
     "name": "ベーカリー LAKE SALT 高塚",
     "category": "gourmet",
     "genre": "パン・カフェ",
-    "address": "静岡県浜松市中央区高塚町4丁目9-17",
-    "tel": "000-000-0045",
+    "address": "静岡県浜松市中央区高塚町1丁目11-2",
+    "tel": "000-000-0043",
     "hours": "11:00～15:00 / 17:00～22:00",
-    "access": "高塚駅から徒歩8分／無料駐車場115台",
+    "access": "高塚駅から徒歩14分",
     "officialUrl": "https://example.com/hamamatsu/gourmet/4",
     "description": "地元で人気のパン・カフェ。ベーカリー LAKE SALT 高塚は観光客にも入りやすい雰囲気です。",
     "localNote": [
       {
         "type": "station",
-        "text": "高塚駅徒歩8分",
-        "source": "auto"
-      },
-      {
-        "type": "parking",
-        "text": "無料駐車場115台",
+        "text": "高塚駅徒歩14分",
         "source": "auto"
       }
     ],
     "specs": {
-      "budget": 600,
-      "reservation": false,
-      "stationWalkMin": 8,
-      "parking": true
-    },
-    "affiliate": null,
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "gourmet-ce522195",
-    "name": "舞阪漁港 食堂 しらす亭",
-    "category": "gourmet",
-    "genre": "しらす丼",
-    "address": "静岡県浜松市中央区舞阪町舞阪3丁目27-10",
-    "tel": "000-000-0046",
-    "hours": "17:00～24:00 / 日曜休",
-    "access": "舞阪駅から徒歩15分",
-    "officialUrl": null,
-    "description": "地元で人気のしらす丼。舞阪漁港 食堂 しらす亭は観光客にも入りやすい雰囲気です。",
-    "localNote": [
-      {
-        "type": "station",
-        "text": "舞阪駅徒歩15分",
-        "source": "auto"
-      }
-    ],
-    "specs": {
-      "budget": 1200,
+      "budget": [
+        600,
+        1200
+      ],
       "reservation": true,
-      "stationWalkMin": 15,
+      "stationWalkMin": 14,
       "parking": null
     },
     "affiliate": null,
@@ -794,41 +799,67 @@
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "parking-7c6cce3a",
+    "id": "gourmet-65687462",
+    "name": "舞阪漁港 食堂 しらす亭",
+    "category": "gourmet",
+    "genre": "しらす丼",
+    "address": "静岡県浜松市中央区舞阪町舞阪5丁目26-16",
+    "tel": "000-000-0044",
+    "hours": "11:00～15:00 / 17:00～22:00",
+    "access": "舞阪駅から徒歩12分",
+    "officialUrl": "https://example.com/hamamatsu/gourmet/5",
+    "description": "地元で人気のしらす丼。舞阪漁港 食堂 しらす亭は観光客にも入りやすい雰囲気です。",
+    "localNote": [
+      {
+        "type": "station",
+        "text": "舞阪駅徒歩12分",
+        "source": "auto"
+      }
+    ],
+    "specs": {
+      "budget": [
+        1200,
+        2400
+      ],
+      "reservation": true,
+      "stationWalkMin": 12,
+      "parking": null
+    },
+    "affiliate": null,
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "parking-54e388cc",
     "name": "浜松駅南パーキング",
     "category": "parking",
     "genre": "立体駐車場",
-    "address": "静岡県浜松市中央区砂山町1丁目11-2",
-    "tel": "000-000-0047",
-    "hours": "24時間",
-    "access": "国道257号沿い・駐車場78台",
+    "address": "静岡県浜松市中央区砂山町3丁目3-4",
+    "tel": "000-000-0045",
+    "hours": "7:00～23:00",
+    "access": "国道257号沿い・駐車場なし",
     "officialUrl": "https://example.com/hamamatsu/parking/1",
     "description": "立体駐車場。浜松駅南パーキングは中心市街地へのアクセスに便利です。",
     "localNote": [
       {
         "type": "landmark",
-        "text": "イオンの近く",
+        "text": "郵便局の近く",
         "source": "manual"
       },
       {
         "type": "tip",
-        "text": "遠鉄電車なら駅から歩いてすぐ",
+        "text": "平日夜は混みやすいので土日午前が狙い目",
         "source": "manual"
       },
       {
         "type": "road",
         "text": "国道257号沿い",
         "source": "auto"
-      },
-      {
-        "type": "parking",
-        "text": "駐車場78台",
-        "source": "auto"
       }
     ],
     "specs": {
       "maxDaily": 1100,
-      "capacity": 354,
+      "capacity": 191,
       "open24h": true,
       "stationWalkMin": null
     },
@@ -841,14 +872,14 @@
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "parking-9bfddc6f",
+    "id": "parking-9e65119b",
     "name": "コインパーク鍛冶町第2",
     "category": "parking",
     "genre": "コインパーキング",
-    "address": "静岡県浜松市中央区鍛冶町3丁目8-10",
-    "tel": "000-000-0048",
+    "address": "静岡県浜松市中央区鍛冶町1丁目16-11",
+    "tel": "000-000-0046",
     "hours": "7:00～23:00",
-    "access": "鍛冶町通り沿い（浜松ICから車で7分）",
+    "access": "鍛冶町通り沿い・無料駐車場118台",
     "officialUrl": "https://example.com/hamamatsu/parking/2",
     "description": "コインパーキング。コインパーク鍛冶町第2は中心市街地へのアクセスに便利です。",
     "localNote": [
@@ -858,14 +889,14 @@
         "source": "auto"
       },
       {
-        "type": "car",
-        "text": "浜松ICから車7分",
+        "type": "parking",
+        "text": "無料駐車場118台",
         "source": "auto"
       }
     ],
     "specs": {
-      "maxDaily": 700,
-      "capacity": 352,
+      "maxDaily": 1700,
+      "capacity": 21,
       "open24h": true,
       "stationWalkMin": null
     },
@@ -878,14 +909,14 @@
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "parking-7a0074f9",
+    "id": "parking-0ad8fd21",
     "name": "高塚パーク&ライド駐車場",
     "category": "parking",
     "genre": "パーク&ライド",
-    "address": "静岡県浜松市中央区高塚町3丁目8-19",
-    "tel": "000-000-0049",
+    "address": "静岡県浜松市中央区高塚町4丁目16-16",
+    "tel": "000-000-0047",
     "hours": "24時間",
-    "access": "浜松バイパス沿い・無料駐車場80台",
+    "access": "浜松バイパス沿い（浜松西ICから車で13分）",
     "officialUrl": "https://example.com/hamamatsu/parking/3",
     "description": "パーク&ライド。高塚パーク&ライド駐車場は中心市街地へのアクセスに便利です。",
     "localNote": [
@@ -895,14 +926,14 @@
         "source": "auto"
       },
       {
-        "type": "parking",
-        "text": "無料駐車場80台",
+        "type": "car",
+        "text": "浜松西ICから車13分",
         "source": "auto"
       }
     ],
     "specs": {
-      "maxDaily": 1200,
-      "capacity": 228,
+      "maxDaily": 500,
+      "capacity": 170,
       "open24h": false,
       "stationWalkMin": null
     },
@@ -911,14 +942,14 @@
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "parking-0759920a",
+    "id": "parking-4715a96a",
     "name": "浜北公園駐車場",
     "category": "parking",
     "genre": "公営駐車場",
-    "address": "静岡県浜松市浜名区小松5丁目21-18",
-    "tel": "000-000-0050",
+    "address": "静岡県浜松市浜名区小松2丁目26-13",
+    "tel": null,
     "hours": "24時間",
-    "access": "国道152号沿い（浜松浜北ICから車で3分）",
+    "access": "国道152号沿い・駐車場なし",
     "officialUrl": "https://example.com/hamamatsu/parking/4",
     "description": "公営駐車場。浜北公園駐車場は中心市街地へのアクセスに便利です。",
     "localNote": [
@@ -926,16 +957,11 @@
         "type": "road",
         "text": "国道152号沿い",
         "source": "auto"
-      },
-      {
-        "type": "car",
-        "text": "浜松浜北ICから車3分",
-        "source": "auto"
       }
     ],
     "specs": {
-      "maxDaily": 1500,
-      "capacity": 242,
+      "maxDaily": 1200,
+      "capacity": 246,
       "open24h": false,
       "stationWalkMin": null
     },

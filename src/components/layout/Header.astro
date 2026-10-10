@@ -2,7 +2,7 @@
 import Logo from './Logo.astro';
 import Icon from '@/components/ui/Icon.astro';
 import { mainNav } from '@/config/navigation';
-import { siteConfig } from '@/config/site';
+import { siteConfig } from '@/config/site.config';
 import { isActive, publicPath, url } from '@/lib/url';
 
 const currentPath = publicPath(Astro.url.pathname);

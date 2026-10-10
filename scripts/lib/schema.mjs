@@ -30,10 +30,24 @@ export const SOURCES = ['mock', 'scrape', 'manual'];
  * 比較軸の値を型に合わせて変換する（スクレイピング結果の「7,678円」「あり」などを数値・真偽値へ）。
  * 変換できない場合は undefined を返す。
  */
+const normalizeRange = (min, max) => (min === max ? min : [Math.min(min, max), Math.max(min, max)]);
+
 export function coerceSpec(axis, value) {
   if (value === null || value === undefined || value === '') return null;
   switch (axis.type) {
-    case 'price':
+    case 'price': {
+      // 価格帯: [下限, 上限] または「6,800〜12,000円」
+      if (Array.isArray(value)) {
+        const [min, max] = value.map(Number);
+        return Number.isFinite(min) && Number.isFinite(max) ? normalizeRange(min, max) : undefined;
+      }
+      if (typeof value === 'string') {
+        const v = value.replace(/[,，]/g, '');
+        const range = v.match(/(\d+(?:\.\d+)?)\s*[〜～~\-－]\s*(\d+(?:\.\d+)?)/);
+        if (range) return normalizeRange(Number(range[1]), Number(range[2]));
+      }
+      return coerceSpec({ ...axis, type: 'number' }, value);
+    }
     case 'number': {
       if (typeof value === 'number') return Number.isFinite(value) ? value : undefined;
       if (/^(無料|0円)$/.test(String(value).trim())) return 0;
@@ -80,7 +94,11 @@ export function validatePlace(place, categoryMap) {
     for (const [key, value] of Object.entries(place.specs)) {
       const axis = axes.get(key);
       if (!axis) errors.push(`specs.${key} はカテゴリ「${place.category}」の比較軸にありません`);
-      else if (value !== null && typeof value !== EXPECTED_TYPE[axis.type]) {
+      else if (axis.type === 'price' && Array.isArray(value)) {
+        if (value.length !== 2 || !value.every((n) => typeof n === 'number' && n >= 0) || value[0] > value[1]) {
+          errors.push(`specs.${key} の価格帯は [下限, 上限] の数値です（値: ${JSON.stringify(value)}）`);
+        }
+      } else if (value !== null && typeof value !== EXPECTED_TYPE[axis.type]) {
         errors.push(`specs.${key} は ${EXPECTED_TYPE[axis.type]} です（値: ${JSON.stringify(value)}）`);
       } else if (typeof value === 'number' && value < 0) errors.push(`specs.${key} が負の値です`);
     }

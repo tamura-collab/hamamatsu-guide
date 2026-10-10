@@ -19,7 +19,8 @@ export interface Category {
 
 /**
  * 比較軸の定義。値は各データの specs[key] に入る。
- *   price   … 金額（円）。小さいほど上位
+ *   price   … 目安料金（円）。値は「下限のみ」の数値か、価格帯 [下限, 上限]。
+ *             表示は「7,700円〜」「6,800〜12,000円」「無料」の形に統一（unit は使わない）
  *   number  … 数値。sort で並び順を指定
  *   boolean … あり / なし
  *   text    … 自由記述（ソート・フィルター対象外）
@@ -28,7 +29,7 @@ export interface CompareAxis {
   key: string;
   label: string;
   type: 'price' | 'number' | 'boolean' | 'text';
-  /** 表示単位（例: '円/月', '分', '台'） */
+  /** 表示単位（number 用。例: '分', '台'） */
   unit?: string;
   /** ソート方向。指定した軸だけ並び替えの選択肢に出る */
   sort?: 'asc' | 'desc';
@@ -105,7 +106,7 @@ export const categories: Category[] = [
     icon: 'dumbbell',
     badge: '人気',
     axes: [
-      { key: 'monthlyFee', label: '月額目安', type: 'price', unit: '円/月', sort: 'asc', sortLabel: '月額が安い順', primary: true },
+      { key: 'monthlyFee', label: '月額（目安）', type: 'price', sort: 'asc', sortLabel: '月額が安い順', primary: true },
       { key: 'trial', label: '体験', type: 'boolean', filter: 'yes', filterLabel: '体験あり', primary: true },
       { key: 'open24h', label: '24時間', type: 'boolean', filter: 'yes', filterLabel: '24時間営業' },
       { key: 'womenOnly', label: '女性専用エリア', type: 'boolean', filter: 'yes', filterLabel: '女性専用エリアあり' },
@@ -136,7 +137,7 @@ export const categories: Category[] = [
     icon: 'graduation',
     badge: '新着',
     axes: [
-      { key: 'monthlyFee', label: '月謝目安', type: 'price', unit: '円/月', sort: 'asc', sortLabel: '月謝が安い順', primary: true },
+      { key: 'monthlyFee', label: '月謝（目安）', type: 'price', sort: 'asc', sortLabel: '月謝が安い順', primary: true },
       { key: 'trial', label: '体験', type: 'boolean', filter: 'yes', filterLabel: '体験レッスンあり', primary: true },
       { key: 'ageFrom', label: '対象年齢', type: 'number', unit: '歳〜', sort: 'asc', sortLabel: '小さい子から通える順' },
       { key: 'pickup', label: '送迎', type: 'boolean', filter: 'yes', filterLabel: '送迎あり' },
@@ -152,7 +153,7 @@ export const categories: Category[] = [
     summary: 'エリア対応状況と実効速度、スマホセット割で比較',
     icon: 'wifi',
     axes: [
-      { key: 'monthlyFee', label: '月額目安', type: 'price', unit: '円/月', sort: 'asc', sortLabel: '月額が安い順', primary: true },
+      { key: 'monthlyFee', label: '月額（目安）', type: 'price', sort: 'asc', sortLabel: '月額が安い順', primary: true },
       { key: 'maxSpeedGbps', label: '最大速度', type: 'number', unit: 'Gbps', sort: 'desc', sortLabel: '速度が速い順', primary: true },
       { key: 'consultation', label: '対面相談', type: 'boolean', filter: 'yes', filterLabel: '対面相談可' },
       AXIS.stationWalk,
@@ -182,7 +183,7 @@ export const categories: Category[] = [
     icon: 'truck',
     axes: [
       { key: 'onlineEstimate', label: 'Web見積もり', type: 'boolean', filter: 'yes', filterLabel: 'Web見積もり可', primary: true },
-      { key: 'singlePlanFee', label: '単身目安', type: 'price', unit: '円〜', sort: 'asc', sortLabel: '単身プランが安い順', primary: true },
+      { key: 'singlePlanFee', label: '単身プラン（目安）', type: 'price', sort: 'asc', sortLabel: '単身プランが安い順', primary: true },
       { key: 'disposal', label: '不用品回収', type: 'boolean', filter: 'yes', filterLabel: '不用品回収あり' },
     ],
     cta: { label: '無料で見積もる', microcopy: '繁忙期は早めの見積もりがおすすめ' },
@@ -196,7 +197,7 @@ export const categories: Category[] = [
     icon: 'key',
     badge: '人気',
     axes: [
-      { key: 'price24h', label: '24時間料金目安', type: 'price', unit: '円〜', sort: 'asc', sortLabel: '料金が安い順', primary: true },
+      { key: 'price24h', label: '24時間料金（目安）', type: 'price', sort: 'asc', sortLabel: '料金が安い順', primary: true },
       { key: 'dropOff', label: '乗り捨て', type: 'boolean', filter: 'yes', filterLabel: '乗り捨て可', primary: true },
       { key: 'nonSmoking', label: '禁煙車', type: 'boolean', filter: 'yes', filterLabel: '禁煙車あり' },
       AXIS.stationWalk,
@@ -210,7 +211,7 @@ export const categories: Category[] = [
     summary: 'ビジネスホテルから温泉旅館まで、エリア別に探す',
     icon: 'bed',
     axes: [
-      { key: 'priceFrom', label: '1泊料金目安', type: 'price', unit: '円〜', sort: 'asc', sortLabel: '料金が安い順', primary: true },
+      { key: 'priceFrom', label: '1泊料金（目安）', type: 'price', sort: 'asc', sortLabel: '料金が安い順', primary: true },
       { key: 'breakfast', label: '朝食', type: 'boolean', filter: 'yes', filterLabel: '朝食あり', primary: true },
       { key: 'largeBath', label: '大浴場', type: 'boolean', filter: 'yes', filterLabel: '大浴場あり' },
       AXIS.stationWalk,
@@ -226,7 +227,7 @@ export const categories: Category[] = [
     icon: 'umbrella',
     badge: '特集',
     axes: [
-      { key: 'admission', label: '入場料（大人）', type: 'price', unit: '円', sort: 'asc', sortLabel: '入場料が安い順', primary: true },
+      { key: 'admission', label: '入場料・大人（目安）', type: 'price', sort: 'asc', sortLabel: '入場料が安い順', primary: true },
       { key: 'kidsFriendly', label: '子ども向け', type: 'boolean', filter: 'yes', filterLabel: '子ども向け', primary: true },
       { key: 'stayMinutes', label: '滞在目安', type: 'number', unit: '分', sort: 'desc', sortLabel: '長く過ごせる順' },
       AXIS.stationWalk,
@@ -241,7 +242,7 @@ export const categories: Category[] = [
     summary: '東京・大阪方面の便と座席タイプ、乗り場を比較',
     icon: 'bus',
     axes: [
-      { key: 'fareFrom', label: '運賃目安', type: 'price', unit: '円〜', sort: 'asc', sortLabel: '運賃が安い順', primary: true },
+      { key: 'fareFrom', label: '運賃（目安）', type: 'price', sort: 'asc', sortLabel: '運賃が安い順', primary: true },
       { key: 'seatType', label: '座席', type: 'text', primary: true },
       { key: 'womenSeats', label: '女性専用席', type: 'boolean', filter: 'yes', filterLabel: '女性専用席あり' },
       AXIS.stationWalk,
@@ -255,7 +256,7 @@ export const categories: Category[] = [
     summary: '地元で愛される名物と、駅近で入りやすいお店',
     icon: 'utensils',
     axes: [
-      { key: 'budget', label: '予算目安', type: 'price', unit: '円〜', sort: 'asc', sortLabel: '予算が安い順', primary: true },
+      { key: 'budget', label: '予算（目安）', type: 'price', sort: 'asc', sortLabel: '予算が安い順', primary: true },
       { key: 'reservation', label: '予約', type: 'boolean', filter: 'yes', filterLabel: '予約可', primary: true },
       AXIS.stationWalk,
       AXIS.parking,
@@ -269,7 +270,7 @@ export const categories: Category[] = [
     summary: '中心市街地の駐車場料金と、公共交通への乗り継ぎ',
     icon: 'parking',
     axes: [
-      { key: 'maxDaily', label: '最大料金', type: 'price', unit: '円/日', sort: 'asc', sortLabel: '最大料金が安い順', primary: true },
+      { key: 'maxDaily', label: '最大料金/日（目安）', type: 'price', sort: 'asc', sortLabel: '最大料金が安い順', primary: true },
       { key: 'capacity', label: '収容台数', type: 'number', unit: '台', sort: 'desc', sortLabel: '台数が多い順', primary: true },
       { key: 'open24h', label: '24時間', type: 'boolean', filter: 'yes', filterLabel: '24時間営業' },
       AXIS.stationWalk,

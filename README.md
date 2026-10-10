@@ -58,7 +58,7 @@ media-site/
 └── src/
     ├── config/
     │   ├── cities.ts       # 都市ごとの設定（citySlug・都市名・代表駅・キャッチコピー）
-    │   ├── site.ts         # サイト名・お問い合わせ先・PR表記（対象都市は CITY で選択）
+    │   ├── site.config.ts  # サイト名・お問い合わせ先・編集方針・料金注記・更新サイクル・PR表記
     │   └── navigation.ts   # ヘッダー／フッターのリンク
     ├── data/
     │   ├── categories.ts   # 「暮らす」「訪れる」のカテゴリ定義
@@ -188,10 +188,22 @@ npm run data:scrape -- --source=sample-fixture --dry-run   # 同梱のサンプ�
 
 `api/log.js` は Vercel Functions 用のモックで、受け取ったイベントを検証してログ出力します。本番運用時は保存先（Vercel KV / Supabase / BigQuery 等）への書き込みに置き換えてください。
 
+## 編集方針・料金表記・更新日（Phase 5）
+
+- **信頼性・編集方針**: トップページのカードと運営者情報の「編集方針」は `site.config.ts` の `trustPoints` を共通で表示します。実際の運用と一致する内容だけを書いてください
+- **料金表記**: 料金系の比較軸（`type: 'price'`）はすべて目安として表示します
+  - 下限のみ → 「7,700円〜」、価格帯 `[下限, 上限]` → 「6,800〜12,000円」、0 → 「無料」
+  - 収集データの「6,800〜12,000円」のような表記は `data:build` が自動で価格帯に変換します。並び替え・最安表示は下限で判定
+  - 比較テーブル・詳細ページ・検索結果の料金の近くには `PriceNote` が `site.config.ts` の `priceNotice` を自動表示します
+- **更新サイクル・最終更新**: `UpdateInfo` が「データ更新サイクル: 月1回（最終更新: 2026年10月）」を表示します（トップ・カテゴリ・詳細・運営者情報・フッター）
+  - 更新サイクルは `site.config.ts` の `updateFrequency`、最終更新はビルド実行時の年月（日本時間、`src/lib/build-info.ts`）
+  - `npm run build` するだけで最新の年月になります。検証時は `BUILD_DATE=2026-12-01` のように固定できます
+  - ビルドのたびに年月が進むため、データ更新を伴わない再ビルドでも表示上の「最終更新」は変わります。運用サイクル（データ更新 → 再ビルド）を `updateFrequency` に合わせてください
+
 ## 別の都市への展開・カスタマイズ
 
 - 都市の追加: `src/config/cities.ts` にエントリを追加し、環境変数 `CITY=<citySlug>` でビルド（サイト名・タイトル・パンくず・ヒーロー・meta に反映）
-- 親ポータルのURLが決まったら `src/config/site.ts` の `portal.url` を設定（パンくずの先頭に表示）
+- 親ポータルのURLが決まったら `src/config/site.config.ts` の `portal.url` を設定（パンくずの先頭に表示）
 - お問い合わせ: `siteConfig.contact.formEndpoint`（フォーム送信先）と `sns`（公式SNS）。メールアドレスはサイトに掲載しない方針
 - カテゴリの追加／変更: `src/data/categories.ts`（追加すると一覧・詳細・メニュー・フッターに自動反映）
 - 配色: `src/styles/global.css` の `@theme`（`brand` / `living` / `travel`）
