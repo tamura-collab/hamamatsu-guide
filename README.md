@@ -139,7 +139,7 @@ data/enrichment.json ───────────┘   正規化・ID付与
 - 追加フィールド: `features`（特徴タグ）、`priceNote`（店舗固有の料金注記。カード・比較表・詳細ページに共通注記とあわせて表示）、`chain`（複数店舗をまとめた掲載）、`localNote`（地元メモ）、`serviceType`（`store` 実店舗 / `online` Web完結。online は地図ボタンと店舗の構造化データを出さない）
 - カテゴリ固有の注記は `categories.ts` の `notice` で指定（例: 車買取「※実際の査定額は車の状態や時期により異なります…」）。指定すると共通の料金注記の代わりに表示されます
 - 作成済み: `curated-gym.json`（ジム）、`curated-car-sell.json`（車買取・売却）、`curated-kids-school.json`（キッズスクール・習い事）、`curated-internet.json`（光回線・インターネット。全件 `serviceType: "online"`）、`curated-energy.json`（電気・ガス。全件 online・料金は数値ではなく料金体系で表示）、`curated-moving.json`（引越し・不用品回収）。「暮らす」の全6カテゴリが実データ化済み
-- 「訪れる」: `data/raw/spots/curated-car-rental.json`（レンタカー）、`curated-hotel.json`（ホテル・宿）、`curated-rainy-day.json`（雨の日スポット）。「訪れる」のデータは `data/raw/spots/` に置く（`stores` に置くと検証エラー）。残り3カテゴリはモックのまま
+- 「訪れる」: `data/raw/spots/curated-car-rental.json`（レンタカー）、`curated-hotel.json`（ホテル・宿）、`curated-rainy-day.json`（雨の日スポット）、`curated-express-bus.json`（夜行バス・高速バス）。「訪れる」のデータは `data/raw/spots/` に置く（`stores` に置くと検証エラー）。残り2カテゴリはモックのまま
 - `_sources`（確認した出典URL）と `_unverified`（未確認の項目）は社内管理用で、サイトには出力されません。公開前に `_unverified` を解消してください
 - 電話番号は公式情報で確認できたものだけを入れ、推測で埋めないこと
 

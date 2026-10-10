@@ -178,7 +178,7 @@ const TEMPLATES = {
     specs: (o) => ({ kind: '屋内施設', admission: o.admission, noReservation: yes(0.8) }),
     desc: (n, g) => `屋内で過ごせる${g}。${n}は雨の日でも子どもと一緒に楽しめます。`,
   },
-  'night-bus': {
+  'express-bus': {
     access: 'station',
     hours: ['発車 22:30（東京行）', '発車 23:10（大阪行）', '窓口 9:00～23:30'],
     items: [
@@ -186,7 +186,7 @@ const TEMPLATES = {
       ['浜松バイパス高塚 高速バス停', '高速バス乗り場', {}],
       ['遠州交通 高速バス予約センター 鍛冶町', '予約窓口', {}],
     ],
-    specs: () => ({ fareFrom: price(3000, 6500), seatType: yes(0.5) ? '3列独立シート' : '4列シート', womenSeats: yes(0.6) }),
+    specs: () => ({ kind: '高速バス', fareTokyo: price(3000, 6500), seatType: yes(0.5) ? '3列独立シート' : '4列シート', night: yes(0.6) }),
     desc: (n, g) => `${g}。${n}から東京・大阪方面への夜行便が発着します。`,
   },
   gourmet: {

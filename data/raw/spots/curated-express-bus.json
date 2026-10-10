@@ -1,0 +1,287 @@
+[
+  {
+    "name": "遠鉄高速バス e-LineR（イーライナー）",
+    "category": "express-bus",
+    "genre": "高速バス（昼行・夜行）",
+    "serviceType": "store",
+    "chain": false,
+    "address": "静岡県浜松市中央区（浜松駅バスターミナル）",
+    "tel": null,
+    "hours": null,
+    "access": "浜松駅バスターミナルから発車",
+    "officialUrl": "https://www.e-liner.jp/",
+    "description": "遠州鉄道グループの高速バス。浜松駅バスターミナルを起点に、渋谷・新宿線（昼行）、横浜線（昼行）、新宿・東京ディズニーリゾート線（夜行）、京都・大阪方面の路線を運行しています。",
+    "specs": {
+      "kind": "高速バス（地元・昼行／夜行）",
+      "fareTokyo": [
+        3800,
+        4300
+      ],
+      "destinations": "渋谷・新宿／横浜／東京ディズニーリゾート（夜行）／京都・大阪",
+      "boarding": "浜松駅バスターミナル（大阪線はNo.11など）",
+      "seatType": null,
+      "toilet": null,
+      "night": true
+    },
+    "features": [
+      "浜松駅バスターミナル発着",
+      "渋谷・新宿線は早売り運賃あり",
+      "夜行の新宿・東京ディズニーリゾート線は変動運賃"
+    ],
+    "priceNote": "渋谷・新宿線（昼行）は大人4,300円・早売り3,800円。横浜線は4,200円、夜行の新宿・東京ディズニーリゾート線は3,600〜6,100円の変動制（公式サイトの掲載）。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "浜松駅のバスターミナルから乗れる地元の高速バス。首都圏・関西方面へ乗り換えなしで行ける"
+      }
+    ],
+    "source": "manual",
+    "fetchedAt": "2026-10-10",
+    "_sources": [
+      "https://www.e-liner.jp/",
+      "https://www.e-liner.jp/shinjuku/fare.php",
+      "https://www.e-liner.jp/yokohama/fare.php",
+      "https://www.e-liner.jp/tokyoyakou/fare.php"
+    ],
+    "_unverified": [
+      "シートタイプ・トイレの有無（路線・車両により異なる）",
+      "京都・大阪線の運賃",
+      "新宿・横浜線の乗り場番号",
+      "「地元信頼度高」（根拠がないため不掲載）"
+    ]
+  },
+  {
+    "name": "JR東海バス ドリーム静岡・浜松号（夜行）",
+    "category": "express-bus",
+    "genre": "夜行バス（JR系）",
+    "serviceType": "store",
+    "chain": false,
+    "address": "静岡県浜松市中央区（浜松駅北口）",
+    "tel": null,
+    "hours": null,
+    "access": "浜松駅北口から発車",
+    "officialUrl": null,
+    "description": "JR東海バスが運行する、東京・横浜と静岡・浜松を結ぶ夜行バス。浜松駅北口を夜に出発し、翌朝東京駅（日本橋口）などに到着する便があります。",
+    "specs": {
+      "kind": "夜行バス（JR系）",
+      "fareTokyo": null,
+      "destinations": "東京駅（日本橋口）・東京ディズニーリゾート方面など",
+      "boarding": "浜松駅北口",
+      "seatType": "4列シート（女性専用席のある便あり）",
+      "toilet": true,
+      "night": true
+    },
+    "features": [
+      "浜松駅北口から夜に出発",
+      "トイレ付き・4列シート（予約サイトの掲載）",
+      "女性専用席のある便あり"
+    ],
+    "priceNote": "運賃は便・割引の種類により異なります（予約サイトの掲載）。最新の時刻・運賃は予約サイト等でご確認ください。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "仕事帰りに浜松駅北口から乗って、翌朝東京に着ける夜行便。出発時刻は事前に確認したい"
+      }
+    ],
+    "source": "manual",
+    "fetchedAt": "2026-10-10",
+    "_sources": [
+      "https://www.kosokubus.com/?page=bus_list&pageType=brand&brandCode=JR200",
+      "https://www.bushikaku.net/search/shizuoka_tokyo/hamamatsu_/bus_code-10033/",
+      "https://mb.jorudan.co.jp/os/bexp/line/0545/",
+      "https://tabi-mag.jp/dream-shizuoka/"
+    ],
+    "_unverified": [
+      "3列シート車（予約サイトの掲載は4列シートのため不掲載）",
+      "現行の時刻・運賃（予約サイトの掲載は更新時期が古い可能性）",
+      "昼行便の有無",
+      "公式サイトURL"
+    ]
+  },
+  {
+    "name": "WILLER EXPRESS（ウィラーエクスプレス）",
+    "category": "express-bus",
+    "genre": "高速バス・夜行バス",
+    "serviceType": "store",
+    "chain": true,
+    "address": "静岡県浜松市（浜松駅周辺の乗車地）",
+    "tel": null,
+    "hours": null,
+    "access": null,
+    "officialUrl": "https://travel.willer.co.jp/wex/",
+    "description": "全国に路線を持つ高速バス。浜松を経由して東京・神奈川・千葉方面と大阪・京都方面を結ぶ路線があり、カノピー付きの4列シート「リラックス」など複数のシートタイプがあります。",
+    "specs": {
+      "kind": "高速バス・夜行バス",
+      "fareTokyo": null,
+      "destinations": "東京・神奈川・千葉方面／大阪・京都方面",
+      "boarding": "要確認（便により異なる）",
+      "seatType": "リラックス（4列・カノピー付き）など便により異なる",
+      "toilet": null,
+      "night": true
+    },
+    "features": [
+      "シートタイプが選べる（便により異なる）",
+      "4列シート「リラックス」はカノピー（フード）付き",
+      "Webで予約"
+    ],
+    "priceNote": "運賃は便・シート・乗車日により異なります。東京⇔大阪は大人片道3,200円〜（公式の案内）で、浜松発着の運賃は予約画面でご確認ください。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "シートの選択肢が多く、価格と快適さのバランスで選びたい人向け。浜松の乗車地は便ごとに確認を"
+      }
+    ],
+    "source": "manual",
+    "fetchedAt": "2026-10-10",
+    "_sources": [
+      "https://travel.willer.co.jp/wex/",
+      "https://travel.willer.co.jp/wex/timetable/",
+      "https://travel.willer.co.jp/willer-colle/4331/"
+    ],
+    "_unverified": [
+      "浜松の乗車地",
+      "浜松⇔東京・大阪の運賃",
+      "トイレの有無",
+      "「女性安心エリア」（未確認のため不掲載）"
+    ]
+  },
+  {
+    "name": "JAMJAMライナー",
+    "category": "express-bus",
+    "genre": "格安夜行バス",
+    "serviceType": "store",
+    "chain": false,
+    "address": "静岡県浜松市中央区（浜松駅南口・浜松ステーションホテル前）",
+    "tel": null,
+    "hours": null,
+    "access": "浜松駅南口（浜松ステーションホテル前バス停）",
+    "officialUrl": "https://jamjamliner.jp/",
+    "description": "日本ユース旅行が運行する格安の夜行バス。浜松からは「浜松・豊橋－京阪神」の系統で京都・大阪方面へ向かう便があります。",
+    "specs": {
+      "kind": "格安夜行バス",
+      "fareTokyo": null,
+      "destinations": "京都・大阪方面（浜松・豊橋－京阪神）",
+      "boarding": "浜松駅南口（浜松ステーションホテル前）",
+      "seatType": null,
+      "toilet": null,
+      "night": true
+    },
+    "features": [
+      "格安の夜行バス",
+      "浜松駅南口から乗車",
+      "京都・大阪方面の便"
+    ],
+    "priceNote": "運賃は便・乗車日により異なります。浜松から東京方面への直通便は確認できていません。",
+    "localNote": [
+      {
+        "type": "landmark",
+        "text": "浜松駅南口の浜松ステーションホテル前が乗車地"
+      },
+      {
+        "type": "tip",
+        "text": "費用を抑えて関西方面へ移動したい学生やイベント参加者向け"
+      }
+    ],
+    "source": "manual",
+    "fetchedAt": "2026-10-10",
+    "_sources": [
+      "https://jamjamliner.jp/",
+      "https://jamjamliner.jp/meetmap/"
+    ],
+    "_unverified": [
+      "浜松から東京方面への便の有無",
+      "シートタイプ（4列・3列）",
+      "トイレの有無",
+      "浜松発の運賃"
+    ]
+  },
+  {
+    "name": "楽天トラベル 高速バス予約",
+    "category": "express-bus",
+    "genre": "予約サイト",
+    "serviceType": "online",
+    "chain": false,
+    "address": "オンライン（全国対応）",
+    "tel": null,
+    "hours": "Webで24時間予約可",
+    "access": null,
+    "officialUrl": "https://travel.rakuten.co.jp/",
+    "description": "楽天トラベルの高速バス予約。浜松発着の各社の便を検索・予約でき、代金に応じて楽天ポイントが貯まります。",
+    "specs": {
+      "kind": "予約サイト",
+      "fareTokyo": null,
+      "destinations": "各社の路線",
+      "boarding": "便により異なる",
+      "seatType": "便により異なる",
+      "toilet": null,
+      "night": null
+    },
+    "features": [
+      "各社の高速バスを検索・予約",
+      "代金に応じて楽天ポイントが貯まる",
+      "クーポン・キャンペーンあり（時期により異なる）"
+    ],
+    "priceNote": "運賃は各社の便・乗車日により異なります。ポイント付与率・クーポンは公式でご確認ください。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "楽天ポイントを貯めている人が、浜松発着の便をまとめて探すときに"
+      }
+    ],
+    "source": "manual",
+    "fetchedAt": "2026-10-10",
+    "_sources": [
+      "https://appllio.com/rakuten-travel-express-bus-good-deal",
+      "https://www.rakuten-card.co.jp/card/rakuten-card-academy/privilege/"
+    ],
+    "_unverified": [
+      "高速バス予約ページの正式URL",
+      "現行のポイント付与率"
+    ]
+  },
+  {
+    "name": "バス比較なび",
+    "category": "express-bus",
+    "genre": "比較サイト",
+    "serviceType": "online",
+    "chain": false,
+    "address": "オンライン（全国対応）",
+    "tel": null,
+    "hours": "Webで24時間検索可",
+    "access": null,
+    "officialUrl": "https://www.bushikaku.net/",
+    "description": "株式会社LCLが運営する高速バスの比較サイト。区間を指定して、各社の便の料金・シート・出発時間を比較できます。",
+    "specs": {
+      "kind": "比較サイト",
+      "fareTokyo": null,
+      "destinations": "各社の路線",
+      "boarding": "便により異なる",
+      "seatType": "シートタイプで絞り込み可",
+      "toilet": null,
+      "night": null
+    },
+    "features": [
+      "シートタイプ・女性専用席・予算で絞り込み",
+      "最安値カレンダー（4か月分）",
+      "株式会社LCLが運営"
+    ],
+    "priceNote": "運賃は各社の便・乗車日により異なります。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "浜松〜東京・大阪などの区間で、夜便・昼便を並べて比べたいときに"
+      }
+    ],
+    "source": "manual",
+    "fetchedAt": "2026-10-10",
+    "_sources": [
+      "https://www.bushikaku.net/",
+      "https://www.bushikaku.net/content/app/",
+      "https://trafficnews.jp/post/55259"
+    ],
+    "_unverified": [
+      "高速バスドットコム（運営会社など未確認のため今回は1サービスに絞って掲載）",
+      "リアルタイム空席表示の仕様"
+    ]
+  }
+]

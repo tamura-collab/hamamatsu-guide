@@ -271,13 +271,13 @@
   },
   {
     "name": "浜松駅 高速バスのりば（駅南）",
-    "category": "night-bus",
+    "category": "express-bus",
     "genre": "高速バス乗り場",
     "address": "静岡県浜松市中央区砂山町3丁目8-15",
     "tel": "0000000038",
     "hours": "窓口 9:00～23:30",
     "access": "浜松駅 徒歩１４分",
-    "officialUrl": "https://example.com/hamamatsu/night-bus/1",
+    "officialUrl": "https://example.com/hamamatsu/express-bus/1",
     "description": "高速バス乗り場。浜松駅 高速バスのりば（駅南）から東京・大阪方面への夜行便が発着します。",
     "specs": {
       "fareFrom": 5000,
@@ -289,13 +289,13 @@
   },
   {
     "name": "浜松バイパス高塚 高速バス停",
-    "category": "night-bus",
+    "category": "express-bus",
     "genre": "高速バス乗り場",
     "address": "静岡県浜松市中央区高塚町2丁目7-6",
     "tel": "０００-０００-００３９",
     "hours": "窓口 9:00～23:30",
     "access": "高塚駅から徒歩13分",
-    "officialUrl": "https://example.com/hamamatsu/night-bus/2",
+    "officialUrl": "https://example.com/hamamatsu/express-bus/2",
     "description": "高速バス乗り場。浜松バイパス高塚 高速バス停から東京・大阪方面への夜行便が発着します。",
     "specs": {
       "fareFrom": 6200,
@@ -307,13 +307,13 @@
   },
   {
     "name": "遠州交通 高速バス予約センター 鍛冶町",
-    "category": "night-bus",
+    "category": "express-bus",
     "genre": "予約窓口",
     "address": "静岡県浜松市中央区鍛冶町3丁目9-20",
     "tel": "0000000040",
     "hours": "発車 23:10（大阪行）",
     "access": "第一通り駅から徒歩14分",
-    "officialUrl": "https://example.com/hamamatsu/night-bus/3",
+    "officialUrl": "https://example.com/hamamatsu/express-bus/3",
     "description": "予約窓口。遠州交通 高速バス予約センター 鍛冶町から東京・大阪方面への夜行便が発着します。",
     "specs": {
       "fareFrom": 5300,

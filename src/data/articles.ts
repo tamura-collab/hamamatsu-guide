@@ -48,11 +48,11 @@ export const articles: Article[] = [
     isPr: true,
   },
   {
-    slug: 'night-bus-tokyo',
+    slug: 'express-bus-tokyo',
     title: '浜松⇔東京の夜行バス完全ガイド｜3列シートの快適な便はどれ？',
     excerpt: '浜松駅の乗り場の行き方、女性専用席の有無、新幹線との費用比較まで。',
     section: 'travel',
-    category: 'night-bus',
+    category: 'express-bus',
     publishedAt: '2026-09-29',
     readingMinutes: 9,
   },
