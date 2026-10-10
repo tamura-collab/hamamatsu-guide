@@ -251,201 +251,262 @@
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "hotel-3e7eb366",
-    "name": "ホテル浜松シティ 駅南",
+    "id": "hotel-c7477025",
+    "name": "オークラアクトシティホテル浜松",
+    "category": "hotel",
+    "genre": "ハイクラスホテル",
+    "address": "静岡県浜松市中央区板屋町111-2",
+    "tel": null,
+    "hours": null,
+    "access": "浜松駅から徒歩3分（東口改札から連絡通路で直結）",
+    "officialUrl": "https://www.act-okura.co.jp/",
+    "description": "アクトタワー内の高層ホテル。客室は地上32階〜44階にあり、JR浜松駅の東口改札から動く歩道のある連絡通路で直結しています。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "駅と連絡通路でつながっているので、雨の日や大きな荷物でも移動しやすい。出張の格上げや記念日の滞在向け",
+        "source": "manual"
+      },
+      {
+        "type": "station",
+        "text": "浜松駅徒歩3分",
+        "source": "auto"
+      }
+    ],
+    "specs": {
+      "kind": "ハイクラスホテル",
+      "accessInfo": "JR浜松駅東口改札から連絡通路で直結（徒歩約3分）",
+      "stationWalkMin": 3,
+      "parkingInfo": "要確認",
+      "parking": null,
+      "onsen": null,
+      "points": null
+    },
+    "features": [
+      "JR浜松駅と連絡通路で直結",
+      "客室は地上32〜44階",
+      "総客室数322室"
+    ],
+    "priceNote": "宿泊料金は日付・プランにより変わるため掲載していません。公式サイトや予約サイトで日付を指定してご確認ください。",
+    "chain": false,
+    "serviceType": "store",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "hotel-e4ac2786",
+    "name": "ダイワロイネットホテル浜松",
+    "category": "hotel",
+    "genre": "ビジネス・観光ホテル",
+    "address": "静岡県浜松市中央区旭町9-1",
+    "tel": null,
+    "hours": null,
+    "access": "浜松駅から徒歩3分（北口）／新浜松駅から徒歩2分",
+    "officialUrl": "https://www.daiwaroynet.jp/hamamatsu/",
+    "description": "JR浜松駅北口から徒歩約3分のホテル。2025年10月に全室をリニューアルしています。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "駅北口の繁華街に近く、出張でも観光でも使いやすい。車の場合は駐車場が先着順なので早めの到着が安心",
+        "source": "manual"
+      },
+      {
+        "type": "station",
+        "text": "浜松駅徒歩3分",
+        "source": "auto"
+      },
+      {
+        "type": "station",
+        "text": "新浜松駅徒歩2分",
+        "source": "auto"
+      }
+    ],
+    "specs": {
+      "kind": "ビジネス・観光ホテル",
+      "accessInfo": "JR浜松駅北口から徒歩約3分／遠州鉄道 新浜松駅から徒歩約2分",
+      "stationWalkMin": 2,
+      "parkingInfo": "立体駐車場32台（宿泊者1泊1,000円・先着順）",
+      "parking": true,
+      "onsen": false,
+      "points": null
+    },
+    "features": [
+      "JR浜松駅北口から徒歩約3分",
+      "2025年10月に全室リニューアル",
+      "立体駐車場は先着順（車高制限あり）"
+    ],
+    "priceNote": "宿泊料金は日付・プランにより変わるため掲載していません。駐車場は宿泊者1泊1,000円（税込）の掲載です。",
+    "chain": false,
+    "serviceType": "store",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "hotel-29838e92",
+    "name": "ホテルコンコルド浜松",
     "category": "hotel",
     "genre": "シティホテル",
-    "address": "静岡県浜松市中央区砂山町3丁目28-8",
-    "tel": "000-000-0031",
-    "hours": "チェックイン 15:00 / チェックアウト 11:00",
-    "access": "浜松駅 徒歩6分",
-    "officialUrl": "https://example.com/hamamatsu/hotel/1",
-    "description": "シティホテル。ホテル浜松シティ 駅南は観光・出張どちらの拠点にも便利です。",
+    "address": "静岡県浜松市中央区元城町109-18",
+    "tel": null,
+    "hours": null,
+    "access": "浜松駅から路線バスで約6分・タクシーで約5分",
+    "officialUrl": "https://www.concorde.co.jp/",
+    "description": "浜松城公園に隣接するシティホテル。ホテル敷地内に乗用車200台分の無料駐車場があります。",
     "localNote": [
       {
         "type": "landmark",
-        "text": "郵便局の近く",
+        "text": "浜松城公園の隣",
         "source": "manual"
       },
       {
         "type": "tip",
-        "text": "遠鉄電車なら駅から歩いてすぐ",
+        "text": "無料駐車場が広く、車で浜松観光や出張をする人の拠点にしやすい",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "シティホテル",
+      "accessInfo": "JR浜松駅から路線バスで約6分・タクシーで約5分",
+      "stationWalkMin": null,
+      "parkingInfo": "無料駐車場あり（乗用車200台・大型車6台は要予約）",
+      "parking": true,
+      "onsen": null,
+      "points": null
+    },
+    "features": [
+      "浜松城公園に隣接",
+      "無料駐車場（乗用車200台）",
+      "バイク用の屋根付き駐車場あり"
+    ],
+    "priceNote": "宿泊料金は日付・プランにより変わるため掲載していません。",
+    "chain": false,
+    "serviceType": "store",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "hotel-63dfd167",
+    "name": "舘山寺温泉の宿（浜名湖かんざんじ温泉）",
+    "category": "hotel",
+    "genre": "温泉地の旅館・ホテル",
+    "address": "静岡県浜松市中央区舘山寺町（舘山寺温泉）",
+    "tel": null,
+    "hours": null,
+    "access": "浜松駅から路線バスで約40～50分／東名高速 舘山寺スマートICから車で約5分",
+    "officialUrl": null,
+    "description": "浜名湖の湖畔に旅館・ホテルが集まる温泉地。浜名湖パルパルや浜松市動物園の近くで、浜名湖観光の拠点になります。個別の宿の設備・料金・営業状況は予約サイト等でご確認ください。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "浜名湖観光や温泉街の散策を楽しみたいファミリー・カップル向け。宿によっては浜松駅からの送迎バス（要予約）がある",
         "source": "manual"
       },
       {
-        "type": "station",
-        "text": "浜松駅徒歩6分",
+        "type": "car",
+        "text": "舘山寺スマートICから車5分",
         "source": "auto"
       }
     ],
     "specs": {
-      "priceFrom": [
-        11800,
-        14900
-      ],
-      "breakfast": true,
-      "largeBath": false,
-      "stationWalkMin": 6,
-      "parking": null
+      "kind": "温泉地（旅館・ホテル）",
+      "accessInfo": "JR浜松駅から路線バスで約40〜50分／東名高速 舘山寺スマートICから車で約5分",
+      "stationWalkMin": null,
+      "parkingInfo": "宿により異なる",
+      "parking": null,
+      "onsen": true,
+      "points": null
     },
-    "features": [],
-    "priceNote": null,
-    "chain": false,
-    "serviceType": "store",
-    "affiliate": {
-      "url": "https://example.com/aff/hotel/1",
-      "label": null,
-      "program": "サンプルASP"
-    },
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "hotel-355f1754",
-    "name": "ビジネスホテル ポートイン 鍛冶町",
-    "category": "hotel",
-    "genre": "ビジネスホテル",
-    "address": "静岡県浜松市中央区鍛冶町2丁目26-10",
-    "tel": "000-000-0032",
-    "hours": "チェックイン 15:00 / チェックアウト 11:00",
-    "access": "第一通り駅から徒歩7分",
-    "officialUrl": "https://example.com/hamamatsu/hotel/2",
-    "description": "ビジネスホテル。ビジネスホテル ポートイン 鍛冶町は観光・出張どちらの拠点にも便利です。",
-    "localNote": [
-      {
-        "type": "station",
-        "text": "第一通り駅徒歩7分",
-        "source": "auto"
-      }
+    "features": [
+      "浜名湖畔の温泉地",
+      "宿により露天風呂・湖が見える客室などがある",
+      "浜名湖観光の拠点"
     ],
-    "specs": {
-      "priceFrom": [
-        8700,
-        11200
-      ],
-      "breakfast": true,
-      "largeBath": false,
-      "stationWalkMin": 7,
-      "parking": null
-    },
-    "features": [],
-    "priceNote": null,
-    "chain": false,
-    "serviceType": "store",
-    "affiliate": {
-      "url": "https://example.com/aff/hotel/2",
-      "label": null,
-      "program": "サンプルASP"
-    },
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "hotel-517cd2f6",
-    "name": "天然温泉 ホテルはままつ湯 駅南",
-    "category": "hotel",
-    "genre": "ビジネスホテル（大浴場あり）",
-    "address": "静岡県浜松市中央区砂山町1丁目3-16",
-    "tel": "000-000-0033",
-    "hours": "チェックイン 15:00 / チェックアウト 11:00",
-    "access": "浜松駅 徒歩15分",
-    "officialUrl": "https://example.com/hamamatsu/hotel/3",
-    "description": "ビジネスホテル（大浴場あり）。天然温泉 ホテルはままつ湯 駅南は観光・出張どちらの拠点にも便利です。",
-    "localNote": [
-      {
-        "type": "station",
-        "text": "浜松駅徒歩15分",
-        "source": "auto"
-      }
-    ],
-    "specs": {
-      "priceFrom": [
-        6200,
-        8900
-      ],
-      "breakfast": true,
-      "largeBath": true,
-      "stationWalkMin": 15,
-      "parking": null
-    },
-    "features": [],
-    "priceNote": null,
-    "chain": false,
+    "priceNote": "宿・時期・プランにより料金は大きく異なります。",
+    "chain": true,
     "serviceType": "store",
     "affiliate": null,
-    "source": "mock",
+    "source": "manual",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "hotel-88d4d98d",
-    "name": "湖畔の宿 しおさい 舞阪",
+    "id": "hotel-a0e092c3",
+    "name": "楽天トラベル",
     "category": "hotel",
-    "genre": "温泉旅館",
-    "address": "静岡県浜松市中央区舞阪町舞阪5丁目25-20",
-    "tel": "000-000-0034",
-    "hours": "チェックイン 14:00 / チェックアウト 10:00",
-    "access": "舞阪駅から徒歩15分",
-    "officialUrl": "https://example.com/hamamatsu/hotel/4",
-    "description": "温泉旅館。湖畔の宿 しおさい 舞阪は観光・出張どちらの拠点にも便利です。",
+    "genre": "宿泊予約サイト",
+    "address": "オンライン（全国対応）",
+    "tel": null,
+    "hours": "Webで24時間予約可",
+    "access": null,
+    "officialUrl": "https://travel.rakuten.co.jp/",
+    "description": "楽天グループの宿泊予約サイト。浜松駅周辺のホテルから浜名湖周辺の旅館まで、空室や料金をまとめて比較できます。",
     "localNote": [
       {
-        "type": "station",
-        "text": "舞阪駅徒歩15分",
-        "source": "auto"
+        "type": "tip",
+        "text": "浜松駅周辺から浜名湖周辺まで、日付と予算で空室をまとめて探したい人向け",
+        "source": "manual"
       }
     ],
     "specs": {
-      "priceFrom": [
-        9900,
-        14600
-      ],
-      "breakfast": false,
-      "largeBath": true,
-      "stationWalkMin": 15,
-      "parking": null
+      "kind": "宿泊予約サイト",
+      "accessInfo": "—（Web予約）",
+      "stationWalkMin": null,
+      "parkingInfo": "宿により異なる",
+      "parking": null,
+      "onsen": null,
+      "points": "楽天ポイント（国内宿泊は通常100円につき1ポイント）"
     },
-    "features": [],
-    "priceNote": null,
+    "features": [
+      "国内宿泊は通常100円につき1ポイント",
+      "宿泊回数に応じたボーナスプログラム",
+      "楽天カード決済のキャンペーンあり（時期により異なる）"
+    ],
+    "priceNote": "料金・ポイント付与率は宿・プラン・キャンペーンにより異なります。",
     "chain": false,
-    "serviceType": "store",
+    "serviceType": "online",
     "affiliate": null,
-    "source": "mock",
+    "source": "manual",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "hotel-512ea2bf",
-    "name": "ゲストハウス LAKE BASE 鍛冶町",
+    "id": "hotel-2001cf29",
+    "name": "じゃらんnet",
     "category": "hotel",
-    "genre": "ゲストハウス",
-    "address": "静岡県浜松市中央区鍛冶町2丁目28-19",
-    "tel": "000-000-0035",
-    "hours": "チェックイン 14:00 / チェックアウト 10:00",
-    "access": "第一通り駅から徒歩6分",
-    "officialUrl": "https://example.com/hamamatsu/hotel/5",
-    "description": "ゲストハウス。ゲストハウス LAKE BASE 鍛冶町は観光・出張どちらの拠点にも便利です。",
+    "genre": "宿泊予約サイト",
+    "address": "オンライン（全国対応）",
+    "tel": null,
+    "hours": "Webで24時間予約可",
+    "access": null,
+    "officialUrl": "https://www.jalan.net/",
+    "description": "リクルートの宿泊予約サイト。クチコミを見比べながら宿を探せ、貯まるポイントをPonta・dポイント・リクルートポイントから選べます。",
     "localNote": [
       {
-        "type": "station",
-        "text": "第一通り駅徒歩6分",
-        "source": "auto"
+        "type": "tip",
+        "text": "クチコミを見比べたい人や、Pontaやdポイントをためたい人向け",
+        "source": "manual"
       }
     ],
     "specs": {
-      "priceFrom": [
-        10900,
-        14800
-      ],
-      "breakfast": true,
-      "largeBath": false,
-      "stationWalkMin": 6,
-      "parking": null
+      "kind": "宿泊予約サイト",
+      "accessInfo": "—（Web予約）",
+      "stationWalkMin": null,
+      "parkingInfo": "宿により異なる",
+      "parking": null,
+      "onsen": null,
+      "points": "じゃらん限定ポイント1%＋Ponta・dポイント・リクルートポイントから選べる1%"
     },
-    "features": [],
-    "priceNote": null,
+    "features": [
+      "クチコミで宿を比較",
+      "ポイントはPonta・dポイント・リクルートポイントから選択",
+      "通常は合計2%還元（うち1%はじゃらん限定ポイント）"
+    ],
+    "priceNote": "料金・ポイント還元は宿・プラン・キャンペーンにより異なります。じゃらん限定ポイントはじゃらん内でのみ使えます。",
     "chain": false,
-    "serviceType": "store",
+    "serviceType": "online",
     "affiliate": null,
-    "source": "mock",
+    "source": "manual",
     "updatedAt": "2026-10-10"
   },
   {

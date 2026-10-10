@@ -1,28 +1,4 @@
 {
-  "hotel-3e7eb366": {
-    "_name": "ホテル浜松シティ 駅南",
-    "affiliate": {
-      "url": "https://example.com/aff/hotel/1",
-      "program": "サンプルASP"
-    },
-    "localNote": [
-      {
-        "type": "landmark",
-        "text": "郵便局の近く"
-      },
-      {
-        "type": "tip",
-        "text": "遠鉄電車なら駅から歩いてすぐ"
-      }
-    ]
-  },
-  "hotel-355f1754": {
-    "_name": "ビジネスホテル ポートイン 鍛冶町",
-    "affiliate": {
-      "url": "https://example.com/aff/hotel/2",
-      "program": "サンプルASP"
-    }
-  },
   "rainy-day-b91d2c94": {
     "_name": "はままつサイエンスラボ 駅南",
     "affiliate": {

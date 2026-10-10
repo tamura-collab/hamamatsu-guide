@@ -1,0 +1,208 @@
+[
+  {
+    "name": "オークラアクトシティホテル浜松",
+    "category": "hotel",
+    "genre": "ハイクラスホテル",
+    "serviceType": "store",
+    "chain": false,
+    "address": "静岡県浜松市中央区板屋町111-2",
+    "tel": null,
+    "hours": null,
+    "access": "浜松駅から徒歩3分（東口改札から連絡通路で直結）",
+    "officialUrl": "https://www.act-okura.co.jp/",
+    "description": "アクトタワー内の高層ホテル。客室は地上32階〜44階にあり、JR浜松駅の東口改札から動く歩道のある連絡通路で直結しています。",
+    "specs": {
+      "kind": "ハイクラスホテル",
+      "accessInfo": "JR浜松駅東口改札から連絡通路で直結（徒歩約3分）",
+      "parkingInfo": "要確認",
+      "parking": null,
+      "onsen": null,
+      "points": null
+    },
+    "features": ["JR浜松駅と連絡通路で直結", "客室は地上32〜44階", "総客室数322室"],
+    "priceNote": "宿泊料金は日付・プランにより変わるため掲載していません。公式サイトや予約サイトで日付を指定してご確認ください。",
+    "localNote": [
+      { "type": "tip", "text": "駅と連絡通路でつながっているので、雨の日や大きな荷物でも移動しやすい。出張の格上げや記念日の滞在向け" }
+    ],
+    "source": "manual",
+    "fetchedAt": "2026-10-10",
+    "_sources": [
+      "https://www.act-okura.co.jp/stay/",
+      "https://www.jtb.co.jp/kokunai-hotel/htl/5402017/access/",
+      "https://www.jalan.net/yad356928/"
+    ],
+    "_unverified": ["駐車場の台数・料金", "「濡れずにアクセス」（連絡通路の屋根の有無は未確認のため「移動しやすい」と表現）", "客室数の内訳（掲載データが古い可能性）"]
+  },
+  {
+    "name": "ダイワロイネットホテル浜松",
+    "category": "hotel",
+    "genre": "ビジネス・観光ホテル",
+    "serviceType": "store",
+    "chain": false,
+    "address": "静岡県浜松市中央区旭町9-1",
+    "tel": null,
+    "hours": null,
+    "access": "浜松駅から徒歩3分（北口）／新浜松駅から徒歩2分",
+    "officialUrl": "https://www.daiwaroynet.jp/hamamatsu/",
+    "description": "JR浜松駅北口から徒歩約3分のホテル。2025年10月に全室をリニューアルしています。",
+    "specs": {
+      "kind": "ビジネス・観光ホテル",
+      "accessInfo": "JR浜松駅北口から徒歩約3分／遠州鉄道 新浜松駅から徒歩約2分",
+      "parkingInfo": "立体駐車場32台（宿泊者1泊1,000円・先着順）",
+      "parking": true,
+      "onsen": false,
+      "points": null
+    },
+    "features": ["JR浜松駅北口から徒歩約3分", "2025年10月に全室リニューアル", "立体駐車場は先着順（車高制限あり）"],
+    "priceNote": "宿泊料金は日付・プランにより変わるため掲載していません。駐車場は宿泊者1泊1,000円（税込）の掲載です。",
+    "localNote": [{ "type": "tip", "text": "駅北口の繁華街に近く、出張でも観光でも使いやすい。車の場合は駐車場が先着順なので早めの到着が安心" }],
+    "source": "manual",
+    "fetchedAt": "2026-10-10",
+    "_sources": [
+      "https://www.daiwaroynet.jp/hamamatsu/",
+      "https://www.daiwaroynet.jp/hamamatsu/access/",
+      "https://www.ekitan.com/local-info/lodging/spot/spid-07b982140a8e76dd1f3afa2e26b1d229"
+    ],
+    "_unverified": ["「広めの客室・デスク」「全室Wi-Fi完備」（公式で未確認のため不掲載）", "駐車場の利用時間"]
+  },
+  {
+    "name": "ホテルコンコルド浜松",
+    "category": "hotel",
+    "genre": "シティホテル",
+    "serviceType": "store",
+    "chain": false,
+    "address": "静岡県浜松市中央区元城町109-18",
+    "tel": null,
+    "hours": null,
+    "access": "浜松駅から路線バスで約6分・タクシーで約5分",
+    "officialUrl": "https://www.concorde.co.jp/",
+    "description": "浜松城公園に隣接するシティホテル。ホテル敷地内に乗用車200台分の無料駐車場があります。",
+    "specs": {
+      "kind": "シティホテル",
+      "accessInfo": "JR浜松駅から路線バスで約6分・タクシーで約5分",
+      "parkingInfo": "無料駐車場あり（乗用車200台・大型車6台は要予約）",
+      "parking": true,
+      "onsen": null,
+      "points": null
+    },
+    "features": ["浜松城公園に隣接", "無料駐車場（乗用車200台）", "バイク用の屋根付き駐車場あり"],
+    "priceNote": "宿泊料金は日付・プランにより変わるため掲載していません。",
+    "localNote": [
+      { "type": "landmark", "text": "浜松城公園の隣" },
+      { "type": "tip", "text": "無料駐車場が広く、車で浜松観光や出張をする人の拠点にしやすい" }
+    ],
+    "source": "manual",
+    "fetchedAt": "2026-10-10",
+    "_sources": [
+      "https://www.concorde.co.jp/",
+      "https://www.concorde.co.jp/info/access.php",
+      "https://www.jalan.net/yad302210/access/"
+    ],
+    "_unverified": ["「浜松城を望む客室」「バイキング」（公式で未確認のため不掲載）", "駐車場の形式（立体・二階建て平面で表記が食い違い）"]
+  },
+  {
+    "name": "舘山寺温泉の宿（浜名湖かんざんじ温泉）",
+    "category": "hotel",
+    "genre": "温泉地の旅館・ホテル",
+    "serviceType": "store",
+    "chain": true,
+    "address": "静岡県浜松市中央区舘山寺町（舘山寺温泉）",
+    "tel": null,
+    "hours": null,
+    "access": "浜松駅から路線バスで約40〜50分／東名高速 舘山寺スマートICから車で約5分",
+    "officialUrl": null,
+    "description": "浜名湖の湖畔に旅館・ホテルが集まる温泉地。浜名湖パルパルや浜松市動物園の近くで、浜名湖観光の拠点になります。個別の宿の設備・料金・営業状況は予約サイト等でご確認ください。",
+    "specs": {
+      "kind": "温泉地（旅館・ホテル）",
+      "accessInfo": "JR浜松駅から路線バスで約40〜50分／東名高速 舘山寺スマートICから車で約5分",
+      "parkingInfo": "宿により異なる",
+      "parking": null,
+      "onsen": true,
+      "points": null
+    },
+    "features": ["浜名湖畔の温泉地", "宿により露天風呂・湖が見える客室などがある", "浜名湖観光の拠点"],
+    "priceNote": "宿・時期・プランにより料金は大きく異なります。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "浜名湖観光や温泉街の散策を楽しみたいファミリー・カップル向け。宿によっては浜松駅からの送迎バス（要予約）がある"
+      }
+    ],
+    "source": "manual",
+    "fetchedAt": "2026-10-10",
+    "_sources": [
+      "https://hellonavi.jp/detail/page/detail/203",
+      "https://www.at-s.com/spot/article/137149",
+      "https://4travel.jp/dm_hotel-10047688",
+      "https://onsen.nifty.com/hamanako-onsen/onsen002817/"
+    ],
+    "_unverified": [
+      "例示された「浜名湖グランドホテル さざなみ館」は2022年4月に「浜名湖わんわんパラダイスホテル」へ名称変更（犬連れ向け）との掲載があるため、個別の宿としては不掲載",
+      "舘山寺サゴーロイヤルホテルは「休業中」との掲載（2024年10月時点）があり、営業状況未確認のため不掲載",
+      "浜松駅から車での所要時間（「約30〜40分」は未確認）",
+      "温泉地の公式観光サイトURL"
+    ]
+  },
+  {
+    "name": "楽天トラベル",
+    "category": "hotel",
+    "genre": "宿泊予約サイト",
+    "serviceType": "online",
+    "chain": false,
+    "address": "オンライン（全国対応）",
+    "tel": null,
+    "hours": "Webで24時間予約可",
+    "access": null,
+    "officialUrl": "https://travel.rakuten.co.jp/",
+    "description": "楽天グループの宿泊予約サイト。浜松駅周辺のホテルから浜名湖周辺の旅館まで、空室や料金をまとめて比較できます。",
+    "specs": {
+      "kind": "宿泊予約サイト",
+      "accessInfo": "—（Web予約）",
+      "parkingInfo": "宿により異なる",
+      "parking": null,
+      "onsen": null,
+      "points": "楽天ポイント（国内宿泊は通常100円につき1ポイント）"
+    },
+    "features": ["国内宿泊は通常100円につき1ポイント", "宿泊回数に応じたボーナスプログラム", "楽天カード決済のキャンペーンあり（時期により異なる）"],
+    "priceNote": "料金・ポイント付与率は宿・プラン・キャンペーンにより異なります。",
+    "localNote": [{ "type": "tip", "text": "浜松駅周辺から浜名湖周辺まで、日付と予算で空室をまとめて探したい人向け" }],
+    "source": "manual",
+    "fetchedAt": "2026-10-10",
+    "_sources": [
+      "https://appllio.com/rakuten-travel-bonus-program",
+      "https://appllio.com/rakuten-travel-rakuten-card"
+    ],
+    "_unverified": ["クーポン・パックツアーの現行内容", "ポイント付与率（比較記事の掲載）"]
+  },
+  {
+    "name": "じゃらんnet",
+    "category": "hotel",
+    "genre": "宿泊予約サイト",
+    "serviceType": "online",
+    "chain": false,
+    "address": "オンライン（全国対応）",
+    "tel": null,
+    "hours": "Webで24時間予約可",
+    "access": null,
+    "officialUrl": "https://www.jalan.net/",
+    "description": "リクルートの宿泊予約サイト。クチコミを見比べながら宿を探せ、貯まるポイントをPonta・dポイント・リクルートポイントから選べます。",
+    "specs": {
+      "kind": "宿泊予約サイト",
+      "accessInfo": "—（Web予約）",
+      "parkingInfo": "宿により異なる",
+      "parking": null,
+      "onsen": null,
+      "points": "じゃらん限定ポイント1%＋Ponta・dポイント・リクルートポイントから選べる1%"
+    },
+    "features": ["クチコミで宿を比較", "ポイントはPonta・dポイント・リクルートポイントから選択", "通常は合計2%還元（うち1%はじゃらん限定ポイント）"],
+    "priceNote": "料金・ポイント還元は宿・プラン・キャンペーンにより異なります。じゃらん限定ポイントはじゃらん内でのみ使えます。",
+    "localNote": [{ "type": "tip", "text": "クチコミを見比べたい人や、Pontaやdポイントをためたい人向け" }],
+    "source": "manual",
+    "fetchedAt": "2026-10-10",
+    "_sources": [
+      "https://pay-route.co.jp/article/?p=3365",
+      "https://www.warau.jp/style/?p=9695"
+    ],
+    "_unverified": ["「掲載宿数最大級」（比較根拠がないため不掲載）", "ポイント還元率（比較記事の掲載）"]
+  }
+]

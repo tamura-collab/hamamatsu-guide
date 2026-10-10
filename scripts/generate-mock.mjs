@@ -162,7 +162,7 @@ const TEMPLATES = {
       ['湖畔の宿 しおさい 舞阪', '温泉旅館', { largeBath: true }],
       ['ゲストハウス LAKE BASE 鍛冶町', 'ゲストハウス', { largeBath: false }],
     ],
-    specs: (o) => ({ priceFrom: priceRange(4800, 12000), breakfast: yes(0.7) ? 'あり' : 'なし', largeBath: o.largeBath ?? yes(0.3) }),
+    specs: (o) => ({ kind: 'ホテル', onsen: o.largeBath ?? yes(0.3) }),
     desc: (n, g) => `${g}。${n}は観光・出張どちらの拠点にも便利です。`,
   },
   'rainy-day': {
