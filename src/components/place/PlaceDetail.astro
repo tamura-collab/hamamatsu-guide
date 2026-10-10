@@ -52,7 +52,7 @@ const jsonLd = {
   '@type': schemaType[category.slug] ?? 'LocalBusiness',
   name: place.name,
   // 複数店舗をまとめた掲載はエリア表記のため、構造化データには住所を入れない
-  ...(!place.chain && { address: place.address }),
+  ...(!place.chain && place.serviceType === 'store' && { address: place.address }),
   ...(place.tel && { telephone: place.tel }),
   ...(place.officialUrl && { url: place.officialUrl }),
   ...(place.description && { description: place.description }),
@@ -67,7 +67,8 @@ const rows = [
 ---
 
 <BaseLayout title={`${place.name}（${siteConfig.city.name}・${place.genre}）`} description={description}>
-  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} slot="head" />
+  {/* Web完結のサービスは店舗ではないため、店舗の構造化データを出さない */}
+  {place.serviceType === 'store' && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} slot="head" />}
 
   <div class="container-page max-w-4xl py-6 sm:py-10">
     <Breadcrumb
@@ -134,16 +135,20 @@ const rows = [
           </OutboundLink>
         )
       }
-      <OutboundLink
-        href={mapUrl}
-        type="map"
-        {...track}
-        placement="detail-actions"
-        class="inline-flex items-center justify-center gap-1.5 rounded-xl border border-line px-5 py-3 text-sm font-bold hover:border-brand-200 hover:text-brand-700"
-      >
-        <Icon name="mapPin" class="size-4" />
-        地図で見る
-      </OutboundLink>
+      {
+        place.serviceType === 'store' && (
+          <OutboundLink
+            href={mapUrl}
+            type="map"
+            {...track}
+            placement="detail-actions"
+            class="inline-flex items-center justify-center gap-1.5 rounded-xl border border-line px-5 py-3 text-sm font-bold hover:border-brand-200 hover:text-brand-700"
+          >
+            <Icon name="mapPin" class="size-4" />
+            地図で見る
+          </OutboundLink>
+        )
+      }
     </div>
 
     <div class="mt-8 grid gap-6 lg:grid-cols-[1fr_300px]">
@@ -200,7 +205,7 @@ const rows = [
           }
         </dl>
         {place.priceNote && <p class="mt-2 text-xs leading-relaxed">{place.priceNote}</p>}
-        {category.axes.some((a) => a.type === 'price') && <PriceNote class="mt-1" />}
+        {(category.axes.some((a) => a.type === 'price') || category.notice) && <PriceNote class="mt-1" text={category.notice} />}
         <p class="mt-1 text-[11px] text-muted">「—」は未確認の項目です。</p>
       </section>
 

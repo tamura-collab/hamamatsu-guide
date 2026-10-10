@@ -4,8 +4,10 @@ import { siteConfig } from '@/config/site.config';
 
 interface Props {
   class?: string;
+  /** カテゴリ固有の注記（categories.ts の notice）。未指定なら共通の料金注記 */
+  text?: string;
 }
-const { class: className } = Astro.props;
+const { class: className, text = siteConfig.priceNotice } = Astro.props;
 ---
 
-<p class:list={['text-[11px] leading-relaxed text-muted', className]} data-price-note>{siteConfig.priceNotice}</p>
+<p class:list={['text-[11px] leading-relaxed text-muted', className]} data-price-note>{text}</p>

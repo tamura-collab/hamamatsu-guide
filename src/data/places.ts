@@ -50,6 +50,8 @@ export interface Place {
   priceNote: string | null;
   /** 複数店舗をまとめた掲載か（住所は代表店舗またはエリア表記） */
   chain: boolean;
+  /** store: 実店舗 / online: Web完結のサービス（地図ボタン・店舗の構造化データを出さない） */
+  serviceType: 'store' | 'online';
   /** アフィリエイト（広告）リンク。提携がある場合のみ設定される */
   affiliate: Affiliate | null;
   source: 'mock' | 'scrape' | 'manual';

@@ -108,6 +108,7 @@ export function validatePlace(place, categoryMap) {
   }
   if (place.priceNote !== null && !isNonEmptyString(place.priceNote)) errors.push('priceNote は文字列か null です');
   if (typeof place.chain !== 'boolean') errors.push('chain は真偽値です');
+  if (!['store', 'online'].includes(place.serviceType)) errors.push(`serviceType は store / online です: ${place.serviceType}`);
   if (place.affiliate !== null) {
     if (typeof place.affiliate !== 'object' || !/^https?:\/\//.test(place.affiliate?.url ?? '')) {
       errors.push(`affiliate.url が不正です: ${place.affiliate?.url}`);

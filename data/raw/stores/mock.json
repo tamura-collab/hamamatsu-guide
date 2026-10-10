@@ -115,7 +115,7 @@
   },
   {
     "name": "カーバイ 浜松バイパス高塚店",
-    "category": "car-buyback",
+    "category": "car-sell",
     "genre": "買取専門店",
     "address": "静岡県浜松市中央区高塚町4丁目6-5",
     "tel": null,
@@ -133,13 +133,13 @@
   },
   {
     "name": "クルマ買取ナビ 浜北店",
-    "category": "car-buyback",
+    "category": "car-sell",
     "genre": "買取専門店",
     "address": "静岡県浜松市浜名区小松２丁目５-３",
     "tel": "0000000007",
     "hours": "10:00～20:00",
     "access": "国道152号沿い・駐車場78台",
-    "officialUrl": "https://example.com/hamamatsu/car-buyback/2",
+    "officialUrl": "https://example.com/hamamatsu/car-sell/2",
     "description": "クルマ買取ナビ 浜北店（買取専門店）。出張査定にも対応しており、来店予約で待ち時間なく査定できます。",
     "specs": {
       "homeVisit": true,
@@ -151,13 +151,13 @@
   },
   {
     "name": "遠州オートセンター 上島",
-    "category": "car-buyback",
+    "category": "car-sell",
     "genre": "中古車販売・買取",
     "address": "静岡県浜松市中央区上島3丁目20-7",
     "tel": "000-000-0008",
     "hours": "9:30～18:30 / 年中無休",
     "access": "国道152号沿い・無料駐車場62台",
-    "officialUrl": "https://example.com/hamamatsu/car-buyback/3",
+    "officialUrl": "https://example.com/hamamatsu/car-sell/3",
     "description": "遠州オートセンター 上島（中古車販売・買取）。出張査定にも対応しており、来店予約で待ち時間なく査定できます。",
     "specs": {
       "homeVisit": true,
@@ -169,13 +169,13 @@
   },
   {
     "name": "マイカーリンク 入野店",
-    "category": "car-buyback",
+    "category": "car-sell",
     "genre": "買取・販売",
     "address": "静岡県浜松市中央区入野町２丁目１４-１４",
     "tel": "000-000-0009",
     "hours": "9:30～18:30 / 年中無休",
     "access": "浜松環状線沿い・無料駐車場116台",
-    "officialUrl": "https://example.com/hamamatsu/car-buyback/4",
+    "officialUrl": "https://example.com/hamamatsu/car-sell/4",
     "description": "マイカーリンク 入野店（買取・販売）。出張査定にも対応しており、来店予約で待ち時間なく査定できます。",
     "specs": {
       "homeVisit": true,
@@ -187,13 +187,13 @@
   },
   {
     "name": "輸入車買取 MOTOR GATE 浜松",
-    "category": "car-buyback",
+    "category": "car-sell",
     "genre": "輸入車専門",
     "address": "静岡県浜松市中央区入野町1丁目7-5",
     "tel": "000-000-0010",
     "hours": "10:00～20:00",
     "access": "浜松環状線沿い・無料駐車場100台",
-    "officialUrl": "https://example.com/hamamatsu/car-buyback/5",
+    "officialUrl": "https://example.com/hamamatsu/car-sell/5",
     "description": "輸入車買取 MOTOR GATE 浜松（輸入車専門）。出張査定にも対応しており、来店予約で待ち時間なく査定できます。",
     "specs": {
       "homeVisit": false,

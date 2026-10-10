@@ -15,6 +15,11 @@ export interface Category {
   axes: CompareAxis[];
   /** アフィリエイト導線のCTA（ボタン文言とマイクロコピー） */
   cta: CategoryCta;
+  /**
+   * 料金注記の上書き（例: 車買取の「実際の査定額は…」）。未指定なら site.config.ts の priceNotice。
+   * 指定するとこのカテゴリの比較表・カード・詳細ページに常に表示する
+   */
+  notice?: string;
 }
 
 /**
@@ -119,18 +124,21 @@ export const categories: Category[] = [
     cta: { label: '無料体験を予約する', microcopy: '入会前に設備と混雑具合をチェック' },
   },
   {
-    slug: 'car-buyback',
+    slug: 'car-sell',
     section: 'living',
     title: '車買取・売却',
-    summary: '市内の買取店と一括査定サービスの査定額・手間を比較',
+    summary: '浜松市内の買取店とWeb一括査定サービスを、査定方法と手間で比較',
     icon: 'car',
     axes: [
-      { key: 'homeVisit', label: '出張査定', type: 'boolean', filter: 'yes', filterLabel: '出張査定あり', primary: true },
-      { key: 'onlineEstimate', label: 'Web査定', type: 'boolean', filter: 'yes', filterLabel: 'Web査定あり', primary: true },
-      { key: 'paymentDays', label: '入金目安', type: 'number', unit: '日', sort: 'asc', sortLabel: '入金が早い順' },
-      AXIS.parking,
+      { key: 'kind', label: '種類', type: 'text', primary: true },
+      { key: 'assessmentFee', label: '査定料', type: 'price', primary: true },
+      { key: 'maxCompanies', label: '一括査定の依頼先', type: 'number', unit: '社まで', sort: 'desc', sortLabel: '依頼先が多い順' },
+      { key: 'homeVisit', label: '出張査定', type: 'boolean', filter: 'yes', filterLabel: '出張査定あり' },
+      { key: 'onlineApply', label: 'Web申込', type: 'boolean', filter: 'yes', filterLabel: 'Webで申込める' },
+      { key: 'noReduction', label: '契約後の減額なし', type: 'boolean', filter: 'yes', filterLabel: '契約後の減額なしを明示' },
     ],
     cta: { label: '無料査定を試す', microcopy: '査定額を見てから売るか決められます' },
+    notice: '※実際の査定額は車の状態や時期により異なります。最新情報は公式サイトでご確認ください',
   },
   {
     slug: 'kids-school',

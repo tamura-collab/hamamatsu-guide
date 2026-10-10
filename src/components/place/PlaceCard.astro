@@ -32,7 +32,8 @@ const primaryAxes = (category?.axes.filter((a) => a.primary) ?? []).map((axis) =
     ? (priceAxes.find((a) => place.specs[a.key] != null) ?? axis)
     : axis,
 );
-const showsPrice = primaryAxes.some((a) => a.type === 'price');
+const showsPrice = primaryAxes.some((a) => a.type === 'price') || Boolean(category?.notice);
+const cardNotice = category?.notice ?? siteConfig.priceNoticeShort;
 ---
 
 <article
@@ -63,7 +64,7 @@ const showsPrice = primaryAxes.some((a) => a.type === 'price');
   </h3>
   <p class="mt-1 flex items-start gap-1 text-xs text-muted">
     <Icon name="mapPin" class="mt-0.5 size-3.5 shrink-0" />
-    {place.address.replace(/^.+?[都道府県]/, '')}
+    {place.serviceType === 'online' ? 'Web完結（オンライン申込）' : place.address.replace(/^.+?[都道府県]/, '')}
   </p>
 
   {
@@ -82,7 +83,7 @@ const showsPrice = primaryAxes.some((a) => a.type === 'price');
     showsPrice && (
       <p class="mt-1.5 text-[10px] leading-snug text-muted">
         {place.priceNote && <span class="block">{place.priceNote}</span>}
-        {siteConfig.priceNoticeShort}
+        {cardNotice}
       </p>
     )
   }

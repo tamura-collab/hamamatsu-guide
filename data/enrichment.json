@@ -1,28 +1,4 @@
 {
-  "car-buyback-8091c3d0": {
-    "_name": "カーバイ 浜松バイパス高塚店",
-    "affiliate": {
-      "url": "https://example.com/aff/car-buyback/1",
-      "program": "サンプルASP"
-    },
-    "localNote": [
-      {
-        "type": "landmark",
-        "text": "郵便局の近く"
-      },
-      {
-        "type": "tip",
-        "text": "遠鉄電車なら駅から歩いてすぐ"
-      }
-    ]
-  },
-  "car-buyback-3c6e2d8f": {
-    "_name": "クルマ買取ナビ 浜北店",
-    "affiliate": {
-      "url": "https://example.com/aff/car-buyback/2",
-      "program": "サンプルASP"
-    }
-  },
   "kids-school-b869c315": {
     "_name": "キッズ英会話 Little Lake 駅南",
     "affiliate": {

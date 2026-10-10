@@ -57,11 +57,11 @@ export const articles: Article[] = [
     readingMinutes: 9,
   },
   {
-    slug: 'car-buyback-tips',
+    slug: 'car-sell-tips',
     title: '車を高く売るには？浜松の買取店と一括査定の違いを比較',
     excerpt: '査定額が変わりやすいポイントと、手間と金額のバランスを解説します。',
     section: 'living',
-    category: 'car-buyback',
+    category: 'car-sell',
     publishedAt: '2026-09-25',
     readingMinutes: 10,
     isPr: true,

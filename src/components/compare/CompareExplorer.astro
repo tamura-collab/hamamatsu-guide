@@ -25,7 +25,8 @@ const axes = category.axes;
 const sortAxes = axes.filter((a) => a.sort);
 const boolFilters = axes.filter((a) => a.filter === 'yes');
 const maxFilters = axes.filter((a) => a.filter === 'max');
-const hasPrice = axes.some((a) => a.type === 'price');
+// 料金系の軸があるか、カテゴリ固有の注記があれば注記を表示する
+const hasPrice = axes.some((a) => a.type === 'price') || Boolean(category.notice);
 
 /** 料金系の軸で最も安い値（「最安」ラベル用） */
 const cheapest = new Map(
@@ -33,7 +34,8 @@ const cheapest = new Map(
     .filter((a) => a.type === 'price')
     .map((a) => {
       const values = places.map((p) => specNumber(p.specs[a.key])).filter((v): v is number => v !== null);
-      return [a.key, values.length > 1 ? Math.min(...values) : undefined];
+      // 全件同じ値（例: 査定無料）の場合は「最安」を付けない
+      return [a.key, values.length > 1 && new Set(values).size > 1 ? Math.min(...values) : undefined];
     }),
 );
 
@@ -112,7 +114,7 @@ const rowData = (p: Place, index: number) => JSON.stringify({ i: index, specs: p
     </div>
   </form>
 
-  {hasPrice && <PriceNote class="mt-3" />}
+  {hasPrice && <PriceNote class="mt-3" text={category.notice} />}
 
   <!-- カード表示 -->
   <ul data-compare-list="cards" class="mt-4 grid gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
@@ -223,7 +225,7 @@ const rowData = (p: Place, index: number) => JSON.stringify({ i: index, specs: p
   <p data-compare-empty hidden class="mt-4 rounded-xl border border-dashed border-line p-8 text-center text-sm text-muted">
     条件に合う掲載先がありません。条件を減らしてお試しください。
   </p>
-  {hasPrice && <PriceNote class="mt-3" />}
+  {hasPrice && <PriceNote class="mt-3" text={category.notice} />}
   <p class="mt-1 text-[11px] text-muted">「—」は未確認の項目です。○=あり、×=なし。</p>
 </div>
 

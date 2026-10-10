@@ -41,6 +41,7 @@
     ],
     "priceNote": "月額3,278円（税込）。入会金・事務手数料の有無やキャンペーンは時期により異なります。",
     "chain": true,
+    "serviceType": "store",
     "affiliate": null,
     "source": "manual",
     "updatedAt": "2026-10-10"
@@ -92,6 +93,7 @@
     ],
     "priceNote": "2か月単位などのコース制のため、月額の目安は掲載していません。コース料金・入会金は無料カウンセリングまたは公式サイトでご確認ください。",
     "chain": false,
+    "serviceType": "store",
     "affiliate": null,
     "source": "manual",
     "updatedAt": "2026-10-10"
@@ -143,6 +145,7 @@
     ],
     "priceNote": "月会費は店舗により異なります（7,480円前後が目安）。入会金・事務手数料は公式サイトでご確認ください。",
     "chain": true,
+    "serviceType": "store",
     "affiliate": null,
     "source": "manual",
     "updatedAt": "2026-10-10"
@@ -183,6 +186,7 @@
     ],
     "priceNote": "マスター会員の月会費（税込）。会員種別・時期によって異なります。",
     "chain": false,
+    "serviceType": "store",
     "affiliate": null,
     "source": "manual",
     "updatedAt": "2026-10-10"
@@ -226,6 +230,7 @@
     ],
     "priceNote": "月会費は店舗・コースにより異なります（税込の目安）。別途入会金がかかります。",
     "chain": true,
+    "serviceType": "store",
     "affiliate": null,
     "source": "manual",
     "updatedAt": "2026-10-10"
@@ -275,206 +280,239 @@
     ],
     "priceNote": "1回あたり：一般410円、中高生・70歳以上200円（浜松アリーナ条例の料金表より）。駐車場は別途1回200円。",
     "chain": false,
+    "serviceType": "store",
     "affiliate": null,
     "source": "manual",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "car-buyback-8091c3d0",
-    "name": "カーバイ 浜松バイパス高塚店",
-    "category": "car-buyback",
-    "genre": "買取専門店",
-    "address": "静岡県浜松市中央区高塚町4丁目6-5",
+    "id": "car-sell-dd55e7c7",
+    "name": "ガリバー（Gulliver）浜松エリア",
+    "category": "car-sell",
+    "genre": "車買取・中古車販売",
+    "address": "静岡県浜松市中央区小豆餅2-17-1（住吉バイパス店）",
     "tel": null,
-    "hours": "10:00～19:00 / 水曜定休",
-    "access": "浜松バイパス沿い・駐車場101台",
-    "officialUrl": null,
-    "description": "カーバイ 浜松バイパス高塚店（買取専門店）。出張査定にも対応しており、来店予約で待ち時間なく査定できます。",
+    "hours": "10:00～19:00（住吉バイパス店。店舗により異なる）",
+    "access": "国道257号沿い（住吉バイパス店）",
+    "officialUrl": "https://221616.com/shop/shizuoka/hamamatsushichuoku/",
+    "description": "全国に店舗を持つ車買取・中古車販売チェーン。浜松市内では住吉バイパス店（小豆餅）・浜松宮竹店・浜松北店（有玉北町）などで査定を受けられます。",
     "localNote": [
-      {
-        "type": "landmark",
-        "text": "郵便局の近く",
-        "source": "manual"
-      },
       {
         "type": "tip",
-        "text": "遠鉄電車なら駅から歩いてすぐ",
+        "text": "国道257号沿いの住吉バイパス店のほか、宮竹・有玉北などにも店舗があり、車で立ち寄りやすい",
         "source": "manual"
       },
       {
         "type": "road",
-        "text": "浜松バイパス沿い",
-        "source": "auto"
-      },
-      {
-        "type": "parking",
-        "text": "駐車場101台",
+        "text": "国道257号沿い",
         "source": "auto"
       }
     ],
     "specs": {
+      "kind": "実店舗買取",
+      "assessmentFee": 0,
+      "maxCompanies": null,
       "homeVisit": true,
-      "onlineEstimate": true,
-      "paymentDays": 1,
-      "parking": true
+      "onlineApply": true,
+      "noReduction": null
     },
-    "features": [],
-    "priceNote": null,
-    "chain": false,
-    "affiliate": {
-      "url": "https://example.com/aff/car-buyback/1",
-      "label": null,
-      "program": "サンプルASP"
-    },
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "car-buyback-3c6e2d8f",
-    "name": "クルマ買取ナビ 浜北店",
-    "category": "car-buyback",
-    "genre": "買取専門店",
-    "address": "静岡県浜松市浜名区小松2丁目5-3",
-    "tel": "000-000-0007",
-    "hours": "10:00～20:00",
-    "access": "国道152号沿い・駐車場78台",
-    "officialUrl": "https://example.com/hamamatsu/car-buyback/2",
-    "description": "クルマ買取ナビ 浜北店（買取専門店）。出張査定にも対応しており、来店予約で待ち時間なく査定できます。",
-    "localNote": [
-      {
-        "type": "road",
-        "text": "国道152号沿い",
-        "source": "auto"
-      },
-      {
-        "type": "parking",
-        "text": "駐車場78台",
-        "source": "auto"
-      }
+    "features": [
+      "全国に店舗網",
+      "出張査定対応",
+      "中古車販売も同じ店舗で相談可能"
     ],
-    "specs": {
-      "homeVisit": true,
-      "onlineEstimate": true,
-      "paymentDays": 1,
-      "parking": true
-    },
-    "features": [],
-    "priceNote": null,
-    "chain": false,
-    "affiliate": {
-      "url": "https://example.com/aff/car-buyback/2",
-      "label": null,
-      "program": "サンプルASP"
-    },
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "car-buyback-013a8dde",
-    "name": "遠州オートセンター 上島",
-    "category": "car-buyback",
-    "genre": "中古車販売・買取",
-    "address": "静岡県浜松市中央区上島3丁目20-7",
-    "tel": "000-000-0008",
-    "hours": "9:30～18:30 / 年中無休",
-    "access": "国道152号沿い・無料駐車場62台",
-    "officialUrl": "https://example.com/hamamatsu/car-buyback/3",
-    "description": "遠州オートセンター 上島（中古車販売・買取）。出張査定にも対応しており、来店予約で待ち時間なく査定できます。",
-    "localNote": [
-      {
-        "type": "road",
-        "text": "国道152号沿い",
-        "source": "auto"
-      },
-      {
-        "type": "parking",
-        "text": "無料駐車場62台",
-        "source": "auto"
-      }
-    ],
-    "specs": {
-      "homeVisit": true,
-      "onlineEstimate": true,
-      "paymentDays": 7,
-      "parking": true
-    },
-    "features": [],
-    "priceNote": null,
-    "chain": false,
+    "priceNote": "査定無料（目安売却額は車種・年式により変動）",
+    "chain": true,
+    "serviceType": "store",
     "affiliate": null,
-    "source": "mock",
+    "source": "manual",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "car-buyback-564906d2",
-    "name": "マイカーリンク 入野店",
-    "category": "car-buyback",
-    "genre": "買取・販売",
-    "address": "静岡県浜松市中央区入野町2丁目14-14",
-    "tel": "000-000-0009",
-    "hours": "9:30～18:30 / 年中無休",
-    "access": "浜松環状線沿い・無料駐車場116台",
-    "officialUrl": "https://example.com/hamamatsu/car-buyback/4",
-    "description": "マイカーリンク 入野店（買取・販売）。出張査定にも対応しており、来店予約で待ち時間なく査定できます。",
+    "id": "car-sell-5258e2a9",
+    "name": "ネクステージ（NEXTAGE）浜松北店",
+    "category": "car-sell",
+    "genre": "車買取・中古車販売",
+    "address": "静岡県浜松市中央区西ヶ崎町1894",
+    "tel": null,
+    "hours": "10:00～19:00（第2水曜定休・祝日を除く）",
+    "access": null,
+    "officialUrl": "https://www.nextage.jp/shop/1200/",
+    "description": "中古車販売と買取を行う店舗。売却と次の車探しを同じ店舗で相談できます。市内には浜松志都呂店などもあります。",
     "localNote": [
       {
-        "type": "road",
-        "text": "浜松環状線沿い",
-        "source": "auto"
-      },
-      {
-        "type": "parking",
-        "text": "無料駐車場116台",
-        "source": "auto"
+        "type": "tip",
+        "text": "浜松北エリア（西ヶ崎町）にあり、売却から次の車探しまで一度に相談できる",
+        "source": "manual"
       }
     ],
     "specs": {
-      "homeVisit": true,
-      "onlineEstimate": false,
-      "paymentDays": 2,
-      "parking": true
+      "kind": "実店舗買取・販売",
+      "assessmentFee": 0,
+      "maxCompanies": null,
+      "homeVisit": null,
+      "onlineApply": null,
+      "noReduction": null
     },
-    "features": [],
-    "priceNote": null,
+    "features": [
+      "買取と中古車販売を同じ店舗で相談可能",
+      "店頭査定"
+    ],
+    "priceNote": "査定無料（目安売却額は車種・年式により変動）",
     "chain": false,
+    "serviceType": "store",
     "affiliate": null,
-    "source": "mock",
+    "source": "manual",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "car-buyback-d704a011",
-    "name": "輸入車買取 MOTOR GATE 浜松",
-    "category": "car-buyback",
-    "genre": "輸入車専門",
-    "address": "静岡県浜松市中央区入野町1丁目7-5",
-    "tel": "000-000-0010",
-    "hours": "10:00～20:00",
-    "access": "浜松環状線沿い・無料駐車場100台",
-    "officialUrl": "https://example.com/hamamatsu/car-buyback/5",
-    "description": "輸入車買取 MOTOR GATE 浜松（輸入車専門）。出張査定にも対応しており、来店予約で待ち時間なく査定できます。",
+    "id": "car-sell-772f8866",
+    "name": "カーセブン（CarSeven）浜松志都呂店",
+    "category": "car-sell",
+    "genre": "車買取",
+    "address": "静岡県浜松市中央区志都呂町1-40-50",
+    "tel": null,
+    "hours": "10:00～19:00",
+    "access": null,
+    "officialUrl": "https://www.carseven.co.jp/sell",
+    "description": "「契約後の減額は一切しません」と公式に宣言している車買取チェーンの店舗。契約金の半額を当日に前払いする制度や、契約後7日以内の無料キャンセルがあります。",
     "localNote": [
       {
-        "type": "road",
-        "text": "浜松環状線沿い",
-        "source": "auto"
-      },
-      {
-        "type": "parking",
-        "text": "無料駐車場100台",
-        "source": "auto"
+        "type": "tip",
+        "text": "志都呂エリアの生活圏にあり、買い物のついでに立ち寄りやすい",
+        "source": "manual"
       }
     ],
     "specs": {
-      "homeVisit": false,
-      "onlineEstimate": true,
-      "paymentDays": 6,
-      "parking": true
+      "kind": "実店舗買取",
+      "assessmentFee": 0,
+      "maxCompanies": null,
+      "homeVisit": null,
+      "onlineApply": true,
+      "noReduction": true
     },
-    "features": [],
-    "priceNote": null,
+    "features": [
+      "契約後の減額なし（公式に明示）",
+      "当日半額前払い",
+      "契約後7日以内のキャンセル無料"
+    ],
+    "priceNote": "査定無料（目安売却額は車種・年式により変動）",
     "chain": false,
+    "serviceType": "store",
     "affiliate": null,
-    "source": "mock",
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "car-sell-c6538e56",
+    "name": "ナビクル（車一括査定）",
+    "category": "car-sell",
+    "genre": "Web一括査定",
+    "address": "オンライン（全国対応）",
+    "tel": null,
+    "hours": "Webで24時間申込可",
+    "access": null,
+    "officialUrl": "https://www.navikuru.jp/",
+    "description": "一度の入力で複数の買取店に査定を依頼できるWeb一括査定サービス。申込み後すぐに概算の相場を確認できます。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "自宅から複数の買取店（浜松市内の店舗を含む）へまとめて依頼できる。店舗へ出向く時間がない人向け",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "Web一括査定",
+      "assessmentFee": 0,
+      "maxCompanies": 10,
+      "homeVisit": null,
+      "onlineApply": true,
+      "noReduction": null
+    },
+    "features": [
+      "最大10社に一括依頼",
+      "申込み後に概算相場を表示",
+      "利用無料"
+    ],
+    "priceNote": "査定無料（目安売却額は車種・年式により変動）",
+    "chain": false,
+    "serviceType": "online",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "car-sell-8b073c1c",
+    "name": "カーセンサー 簡単ネット車査定",
+    "category": "car-sell",
+    "genre": "Web一括査定",
+    "address": "オンライン（全国対応）",
+    "tel": null,
+    "hours": "Webで24時間申込可",
+    "access": null,
+    "officialUrl": "https://www.carsensor.net/",
+    "description": "中古車情報サイト「カーセンサー」の一括査定サービス。入力した情報が提携する買取店に送られ、各社から査定の連絡が届きます。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "浜松市に対応する買取店へまとめて依頼できる（依頼できる店舗数は車種・地域により変わる）",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "Web一括査定",
+      "assessmentFee": 0,
+      "maxCompanies": null,
+      "homeVisit": null,
+      "onlineApply": true,
+      "noReduction": null
+    },
+    "features": [
+      "中古車情報サイト「カーセンサー」の一括査定",
+      "利用無料"
+    ],
+    "priceNote": "査定無料（目安売却額は車種・年式により変動）",
+    "chain": false,
+    "serviceType": "online",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "car-sell-1e0279e8",
+    "name": "ズバット車買取比較",
+    "category": "car-sell",
+    "genre": "Web一括査定",
+    "address": "オンライン（全国対応）",
+    "tel": null,
+    "hours": "Webで24時間申込可",
+    "access": null,
+    "officialUrl": "https://www.zba.jp/car-kaitori/",
+    "description": "車の買取相場を確認したうえで、複数の買取店に査定を依頼できる一括査定サービス。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "事前に相場感をつかんでから、浜松の買取店と交渉したい人向け",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "Web一括査定",
+      "assessmentFee": 0,
+      "maxCompanies": null,
+      "homeVisit": null,
+      "onlineApply": true,
+      "noReduction": null
+    },
+    "features": [
+      "買取相場をチェックできる",
+      "利用無料"
+    ],
+    "priceNote": "査定無料（目安売却額は車種・年式により変動）",
+    "chain": false,
+    "serviceType": "online",
+    "affiliate": null,
+    "source": "manual",
     "updatedAt": "2026-10-10"
   },
   {
@@ -516,6 +554,7 @@
     "features": [],
     "priceNote": null,
     "chain": false,
+    "serviceType": "store",
     "affiliate": {
       "url": "https://example.com/aff/kids-school/1",
       "label": null,
@@ -556,6 +595,7 @@
     "features": [],
     "priceNote": null,
     "chain": false,
+    "serviceType": "store",
     "affiliate": {
       "url": "https://example.com/aff/kids-school/2",
       "label": null,
@@ -596,6 +636,7 @@
     "features": [],
     "priceNote": null,
     "chain": false,
+    "serviceType": "store",
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
@@ -629,6 +670,7 @@
     "features": [],
     "priceNote": null,
     "chain": false,
+    "serviceType": "store",
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
@@ -662,6 +704,7 @@
     "features": [],
     "priceNote": null,
     "chain": false,
+    "serviceType": "store",
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
@@ -704,6 +747,7 @@
     "features": [],
     "priceNote": null,
     "chain": false,
+    "serviceType": "store",
     "affiliate": {
       "url": "https://example.com/aff/fiber/1",
       "label": null,
@@ -745,6 +789,7 @@
     "features": [],
     "priceNote": null,
     "chain": false,
+    "serviceType": "store",
     "affiliate": {
       "url": "https://example.com/aff/fiber/2",
       "label": null,
@@ -781,6 +826,7 @@
     "features": [],
     "priceNote": null,
     "chain": false,
+    "serviceType": "store",
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
@@ -813,6 +859,7 @@
     "features": [],
     "priceNote": null,
     "chain": false,
+    "serviceType": "store",
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
@@ -854,6 +901,7 @@
     "features": [],
     "priceNote": null,
     "chain": false,
+    "serviceType": "store",
     "affiliate": {
       "url": "https://example.com/aff/energy/1",
       "label": null,
@@ -889,6 +937,7 @@
     "features": [],
     "priceNote": null,
     "chain": false,
+    "serviceType": "store",
     "affiliate": {
       "url": "https://example.com/aff/energy/2",
       "label": null,
@@ -924,6 +973,7 @@
     "features": [],
     "priceNote": null,
     "chain": false,
+    "serviceType": "store",
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
@@ -964,6 +1014,7 @@
     "features": [],
     "priceNote": null,
     "chain": false,
+    "serviceType": "store",
     "affiliate": {
       "url": "https://example.com/aff/moving/1",
       "label": null,
@@ -1003,6 +1054,7 @@
     "features": [],
     "priceNote": null,
     "chain": false,
+    "serviceType": "store",
     "affiliate": {
       "url": "https://example.com/aff/moving/2",
       "label": null,
@@ -1037,6 +1089,7 @@
     "features": [],
     "priceNote": null,
     "chain": false,
+    "serviceType": "store",
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"
@@ -1072,6 +1125,7 @@
     "features": [],
     "priceNote": null,
     "chain": false,
+    "serviceType": "store",
     "affiliate": null,
     "source": "mock",
     "updatedAt": "2026-10-10"

@@ -73,7 +73,7 @@ const TEMPLATES = {
     }),
     desc: (n, g) => `${g}。${n}は仕事帰りにも通いやすい立地で、初めての方向けの体験プランもあります。`,
   },
-  'car-buyback': {
+  'car-sell': {
     access: 'road',
     hours: ['10:00～19:00 / 水曜定休', '9:30～18:30 / 年中無休', '10:00～20:00'],
     items: [
@@ -83,7 +83,7 @@ const TEMPLATES = {
       ['マイカーリンク 入野店', '買取・販売', {}],
       ['輸入車買取 MOTOR GATE 浜松', '輸入車専門', {}],
     ],
-    specs: () => ({ homeVisit: yes(0.8), onlineEstimate: yes(0.7), paymentDays: int(1, 7) }),
+    specs: () => ({ kind: '実店舗買取', assessmentFee: 0, homeVisit: yes(0.8), onlineApply: yes(0.7), noReduction: null }),
     desc: (n, g) => `${n}（${g}）。出張査定にも対応しており、来店予約で待ち時間なく査定できます。`,
   },
   'kids-school': {

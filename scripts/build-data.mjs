@@ -114,6 +114,8 @@ function normalizeRecord(raw) {
     priceNote: cleanText(extra?.priceNote ?? raw.priceNote),
     /** 複数店舗をまとめた掲載（住所は代表店舗またはエリア） */
     chain: Boolean(extra?.chain ?? raw.chain ?? false),
+    /** store: 実店舗 / online: Web完結のサービス（地図・住所の扱いが変わる） */
+    serviceType: extra?.serviceType ?? raw.serviceType ?? 'store',
     // アフィリエイトリンクは提携契約に基づく情報のため、収集データではなく enrichment.json でのみ設定する
     affiliate,
     source: extra?.override || extra?.specs ? 'manual' : raw.source ?? 'scrape',
