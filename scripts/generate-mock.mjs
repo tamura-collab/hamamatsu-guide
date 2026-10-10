@@ -199,7 +199,7 @@ const TEMPLATES = {
       ['ベーカリー LAKE SALT 高塚', 'パン・カフェ', { budget: 600 }],
       ['舞阪漁港 食堂 しらす亭', 'しらす丼', { budget: 1200 }],
     ],
-    specs: (o) => ({ budget: `${o.budget.toLocaleString()}〜${(o.budget * 2).toLocaleString()}円`, reservation: yes(0.6) }),
+    specs: (o) => ({ dishType: 'ご当地グルメ', budgetLunch: o.budget, budgetDinner: `${o.budget.toLocaleString()}〜${(o.budget * 2).toLocaleString()}円`, netReservation: yes(0.6) }),
     desc: (n, g) => `地元で人気の${g}。${n}は観光客にも入りやすい雰囲気です。`,
   },
   parking: {

@@ -1,28 +1,4 @@
 {
-  "gourmet-3020d16e": {
-    "_name": "うなぎ処 湖東 駅南",
-    "affiliate": {
-      "url": "https://example.com/aff/gourmet/1",
-      "program": "サンプルASP"
-    },
-    "localNote": [
-      {
-        "type": "landmark",
-        "text": "中央図書館の近く"
-      },
-      {
-        "type": "tip",
-        "text": "遠鉄電車なら駅から歩いてすぐ"
-      }
-    ]
-  },
-  "gourmet-9aac1915": {
-    "_name": "浜松餃子 まるはち 鍛冶町",
-    "affiliate": {
-      "url": "https://example.com/aff/gourmet/2",
-      "program": "サンプルASP"
-    }
-  },
   "parking-54e388cc": {
     "_name": "浜松駅南パーキング",
     "affiliate": {

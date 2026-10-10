@@ -1011,196 +1011,255 @@
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "gourmet-3020d16e",
-    "name": "うなぎ処 湖東 駅南",
-    "category": "gourmet",
-    "genre": "うなぎ",
-    "address": "静岡県浜松市中央区砂山町1丁目4-19",
-    "tel": "000-000-0041",
-    "hours": "11:30～14:30 / 水曜休",
-    "access": "浜松駅 徒歩10分",
-    "officialUrl": "https://example.com/hamamatsu/gourmet/1",
-    "description": "地元で人気のうなぎ。うなぎ処 湖東 駅南は観光客にも入りやすい雰囲気です。",
-    "localNote": [
-      {
-        "type": "landmark",
-        "text": "中央図書館の近く",
-        "source": "manual"
-      },
-      {
-        "type": "tip",
-        "text": "遠鉄電車なら駅から歩いてすぐ",
-        "source": "manual"
-      },
-      {
-        "type": "station",
-        "text": "浜松駅徒歩10分",
-        "source": "auto"
-      }
-    ],
-    "specs": {
-      "budget": [
-        3500,
-        7000
-      ],
-      "reservation": true,
-      "stationWalkMin": 10,
-      "parking": null
-    },
-    "features": [],
-    "priceNote": null,
-    "chain": false,
-    "serviceType": "store",
-    "affiliate": {
-      "url": "https://example.com/aff/gourmet/1",
-      "label": null,
-      "program": "サンプルASP"
-    },
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "gourmet-9aac1915",
-    "name": "浜松餃子 まるはち 鍛冶町",
+    "id": "gourmet-c044d189",
+    "name": "石松餃子 JR浜松駅店",
     "category": "gourmet",
     "genre": "浜松餃子",
-    "address": "静岡県浜松市中央区鍛冶町2丁目25-2",
-    "tel": "000-000-0042",
-    "hours": "11:30～14:30 / 水曜休",
-    "access": "第一通り駅から徒歩2分",
-    "officialUrl": "https://example.com/hamamatsu/gourmet/2",
-    "description": "地元で人気の浜松餃子。浜松餃子 まるはち 鍛冶町は観光客にも入りやすい雰囲気です。",
-    "localNote": [
-      {
-        "type": "station",
-        "text": "第一通り駅徒歩2分",
-        "source": "auto"
-      }
-    ],
-    "specs": {
-      "budget": [
-        800,
-        1600
-      ],
-      "reservation": true,
-      "stationWalkMin": 2,
-      "parking": null
-    },
-    "features": [],
-    "priceNote": null,
-    "chain": false,
-    "serviceType": "store",
-    "affiliate": {
-      "url": "https://example.com/aff/gourmet/2",
-      "label": null,
-      "program": "サンプルASP"
-    },
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "gourmet-967ef563",
-    "name": "炉端焼き いさり火 鍛冶町",
-    "category": "gourmet",
-    "genre": "居酒屋",
-    "address": "静岡県浜松市中央区鍛冶町5丁目14-8",
+    "address": "静岡県浜松市中央区砂山町6-1 メイワン エキマチウエスト1F",
     "tel": null,
-    "hours": "17:00～24:00 / 日曜休",
-    "access": "第一通り駅から徒歩15分",
+    "hours": "11:00～22:00（L.O.21:30）年中無休",
+    "access": "JR浜松駅北口から徒歩1分",
+    "officialUrl": "https://1402.jp/shop/hamamatsu.html",
+    "description": "昭和28年創業の浜松餃子の店「石松餃子」の駅ナカ店舗。浜松餃子に茹でもやしを添えるスタイルは、この店が始まりとされています。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "駅ビルの中にあるので、新幹線や電車の待ち時間に浜松餃子を食べたい観光客・出張者向け",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "dishType": "浜松餃子",
+      "budgetLunch": [
+        670,
+        1340
+      ],
+      "budgetDinner": [
+        670,
+        1340
+      ],
+      "accessInfo": "JR浜松駅北口から徒歩1分（メイワン エキマチウエスト1F）",
+      "stationWalkMin": 1,
+      "takeout": null,
+      "netReservation": null,
+      "parking": null
+    },
+    "features": [
+      "昭和28年創業（店舗は「元祖浜松餃子」を掲げる）",
+      "茹でもやし添えの発祥とされる店",
+      "駅ビル内で乗り換え前に寄りやすい"
+    ],
+    "priceNote": "石松餃子10個670円、定食1,220〜1,340円の掲載例（掲載時期により異なる可能性があります）。",
+    "chain": false,
+    "serviceType": "store",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "gourmet-1d9d2a9e",
+    "name": "うなぎ 八百徳 本店",
+    "category": "gourmet",
+    "genre": "うなぎ",
+    "address": "静岡県浜松市中央区板屋町655",
+    "tel": null,
+    "hours": "11:00～20:00（L.O.19:30）月曜定休",
+    "access": "JR浜松駅北口から徒歩6分／遠州鉄道 第一通り駅から徒歩3分",
+    "officialUrl": "https://www.unagiyaotoku.com/",
+    "description": "1909年創業のうなぎ店。名物の「お櫃うなぎ茶漬け」を目当てに全国から客が訪れます。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "浜松駅から歩いて行けるうなぎの老舗。月曜定休なので旅行日程に注意",
+        "source": "manual"
+      },
+      {
+        "type": "station",
+        "text": "第一通り駅徒歩3分",
+        "source": "auto"
+      }
+    ],
+    "specs": {
+      "dishType": "うなぎ（お櫃うなぎ茶漬け）",
+      "budgetLunch": 4070,
+      "budgetDinner": 4070,
+      "accessInfo": "JR浜松駅北口から徒歩6分（公式）／第一通り駅から徒歩3分",
+      "stationWalkMin": 6,
+      "takeout": null,
+      "netReservation": null,
+      "parking": true
+    },
+    "features": [
+      "1909年創業",
+      "名物「お櫃うなぎ茶漬け」",
+      "指定駐車場あり（7台）",
+      "113席"
+    ],
+    "priceNote": "お櫃うなぎ茶漬け4,070円（2022年10月時点の掲載）。うなぎは仕入れ状況により価格が変わることがあります。",
+    "chain": false,
+    "serviceType": "store",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "gourmet-5dda96eb",
+    "name": "炭焼きレストランさわやか 浜松遠鉄店",
+    "category": "gourmet",
+    "genre": "ハンバーグ",
+    "address": "静岡県浜松市中央区砂山町320-2 遠鉄百貨店 本館8階",
+    "tel": null,
+    "hours": null,
+    "access": "JR浜松駅から徒歩すぐ（遠鉄百貨店 本館8階）",
+    "officialUrl": "https://www.genkotsu-hb.com/shop/entetsu.php",
+    "description": "静岡県内だけで展開するハンバーグレストラン「さわやか」の、浜松駅隣接の遠鉄百貨店にある店舗。予約は受け付けておらず、整理券で順番を待ちます。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "土日は待ち時間が長くなりやすい。整理券を取ってから百貨店で買い物をして待つのが地元流",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "dishType": "ハンバーグ（げんこつハンバーグ）",
+      "budgetLunch": null,
+      "budgetDinner": null,
+      "accessInfo": "JR浜松駅に隣接する遠鉄百貨店 本館8階",
+      "stationWalkMin": null,
+      "takeout": null,
+      "netReservation": false,
+      "parking": null
+    },
+    "features": [
+      "予約不可・整理券制",
+      "順番が近づくとスマートフォンに通知（待ち時間に買い物できる）",
+      "静岡県内限定のハンバーグレストラン"
+    ],
+    "priceNote": "げんこつハンバーグ（250g）の価格は情報源により食い違いがあるため掲載していません。最新価格は公式サイトでご確認ください。",
+    "chain": false,
+    "serviceType": "store",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "gourmet-accd2f26",
+    "name": "浜松駅北側の居酒屋・ホルモン（肴町・鍛冶町周辺）",
+    "category": "gourmet",
+    "genre": "浜松ホルモン・遠州の夢ポーク",
+    "address": "静岡県浜松市中央区（肴町・鍛冶町周辺）",
+    "tel": null,
+    "hours": null,
+    "access": "遠州鉄道 第一通り駅から徒歩約1～3分の店舗あり（店舗により異なる）",
     "officialUrl": null,
-    "description": "地元で人気の居酒屋。炉端焼き いさり火 鍛冶町は観光客にも入りやすい雰囲気です。",
+    "description": "浜松駅北側の肴町・鍛冶町周辺には、鉄鍋で出す「浜松ホルモン」や、地元ブランド豚「遠州の夢ポーク」を使った料理を出す居酒屋・ホルモン店が集まっています。例として、浜松市内に複数店舗がある居酒屋「濱松たんと」では、遠州の夢ポークを使った餃子や濱松ホルモンを提供しています。",
     "localNote": [
       {
-        "type": "station",
-        "text": "第一通り駅徒歩15分",
-        "source": "auto"
+        "type": "tip",
+        "text": "夜に地元の味で一杯やりたい人向け。店ごとに営業日・予約可否が違うので事前に確認を",
+        "source": "manual"
       }
     ],
     "specs": {
-      "budget": [
-        3000,
-        6000
-      ],
-      "reservation": true,
-      "stationWalkMin": 15,
+      "dishType": "浜松ホルモン・遠州の夢ポーク",
+      "budgetLunch": null,
+      "budgetDinner": null,
+      "accessInfo": "浜松駅北側の繁華街（第一通り駅周辺など、店舗により異なる）",
+      "stationWalkMin": null,
+      "takeout": null,
+      "netReservation": null,
       "parking": null
     },
-    "features": [],
-    "priceNote": null,
-    "chain": false,
+    "features": [
+      "鉄鍋で出す「浜松ホルモン」",
+      "地元ブランド豚「遠州の夢ポーク」",
+      "居酒屋・ホルモン店の多い夜のエリア"
+    ],
+    "priceNote": "予算は店舗・注文内容により異なります。",
+    "chain": true,
     "serviceType": "store",
     "affiliate": null,
-    "source": "mock",
+    "source": "manual",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "gourmet-4bf18347",
-    "name": "ベーカリー LAKE SALT 高塚",
+    "id": "gourmet-51649e40",
+    "name": "食べログ",
     "category": "gourmet",
-    "genre": "パン・カフェ",
-    "address": "静岡県浜松市中央区高塚町1丁目11-2",
-    "tel": "000-000-0043",
-    "hours": "11:00～15:00 / 17:00～22:00",
-    "access": "高塚駅から徒歩14分",
-    "officialUrl": "https://example.com/hamamatsu/gourmet/4",
-    "description": "地元で人気のパン・カフェ。ベーカリー LAKE SALT 高塚は観光客にも入りやすい雰囲気です。",
+    "genre": "グルメ予約サイト",
+    "address": "オンライン（全国対応）",
+    "tel": null,
+    "hours": "Webで24時間予約可",
+    "access": null,
+    "officialUrl": "https://tabelog.com/",
+    "description": "カカクコムが運営するグルメサイト。口コミや点数を見ながら浜松の店を探し、対応店はネット予約ができます。",
     "localNote": [
       {
-        "type": "station",
-        "text": "高塚駅徒歩14分",
-        "source": "auto"
+        "type": "tip",
+        "text": "浜松餃子やうなぎの店を口コミで見比べたいときに。Vポイントを貯めている人向け",
+        "source": "manual"
       }
     ],
     "specs": {
-      "budget": [
-        600,
-        1200
-      ],
-      "reservation": true,
-      "stationWalkMin": 14,
+      "dishType": "グルメ予約サイト",
+      "budgetLunch": null,
+      "budgetDinner": null,
+      "accessInfo": "—（Web予約）",
+      "stationWalkMin": null,
+      "takeout": null,
+      "netReservation": true,
       "parking": null
     },
-    "features": [],
-    "priceNote": null,
+    "features": [
+      "口コミ・点数で店を比較",
+      "ネット予約でVポイント（人数×50pt、ランチは人数×10pt）",
+      "対応店のみネット予約可"
+    ],
+    "priceNote": "予算は店舗により異なります。ポイント付与は対象店舗・条件により異なります。",
     "chain": false,
-    "serviceType": "store",
+    "serviceType": "online",
     "affiliate": null,
-    "source": "mock",
+    "source": "manual",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "gourmet-65687462",
-    "name": "舞阪漁港 食堂 しらす亭",
+    "id": "gourmet-11c1c1be",
+    "name": "ホットペッパーグルメ",
     "category": "gourmet",
-    "genre": "しらす丼",
-    "address": "静岡県浜松市中央区舞阪町舞阪5丁目26-16",
-    "tel": "000-000-0044",
-    "hours": "11:00～15:00 / 17:00～22:00",
-    "access": "舞阪駅から徒歩12分",
-    "officialUrl": "https://example.com/hamamatsu/gourmet/5",
-    "description": "地元で人気のしらす丼。舞阪漁港 食堂 しらす亭は観光客にも入りやすい雰囲気です。",
+    "genre": "グルメ予約サイト",
+    "address": "オンライン（全国対応）",
+    "tel": null,
+    "hours": "Webで24時間予約可",
+    "access": null,
+    "officialUrl": "https://www.hotpepper.jp/",
+    "description": "リクルートのグルメ予約サイト。ネット予約で貯まるポイントをPonta・dポイントから選べ、クーポンを使える店もあります。",
     "localNote": [
       {
-        "type": "station",
-        "text": "舞阪駅徒歩12分",
-        "source": "auto"
+        "type": "tip",
+        "text": "宴会や飲み会の店を、クーポンやポイントで探したいときに。Ponta・dポイントを貯めている人向け",
+        "source": "manual"
       }
     ],
     "specs": {
-      "budget": [
-        1200,
-        2400
-      ],
-      "reservation": true,
-      "stationWalkMin": 12,
+      "dishType": "グルメ予約サイト",
+      "budgetLunch": null,
+      "budgetDinner": null,
+      "accessInfo": "—（Web予約）",
+      "stationWalkMin": null,
+      "takeout": null,
+      "netReservation": true,
       "parking": null
     },
-    "features": [],
-    "priceNote": null,
+    "features": [
+      "ネット予約で人数×50ポイント〜（ランチは人数×10ポイント〜）",
+      "Ponta・dポイントから選べる",
+      "時期によりポイント増量キャンペーンあり"
+    ],
+    "priceNote": "予算は店舗により異なります。ポイント・クーポンは対象店舗・時期により異なります。",
     "chain": false,
-    "serviceType": "store",
+    "serviceType": "online",
     "affiliate": null,
-    "source": "mock",
+    "source": "manual",
     "updatedAt": "2026-10-10"
   },
   {

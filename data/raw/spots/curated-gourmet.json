@@ -1,0 +1,292 @@
+[
+  {
+    "name": "石松餃子 JR浜松駅店",
+    "category": "gourmet",
+    "genre": "浜松餃子",
+    "serviceType": "store",
+    "chain": false,
+    "address": "静岡県浜松市中央区砂山町6-1 メイワン エキマチウエスト1F",
+    "tel": null,
+    "hours": "11:00～22:00（L.O.21:30）年中無休",
+    "access": "JR浜松駅北口から徒歩1分",
+    "officialUrl": "https://1402.jp/shop/hamamatsu.html",
+    "description": "昭和28年創業の浜松餃子の店「石松餃子」の駅ナカ店舗。浜松餃子に茹でもやしを添えるスタイルは、この店が始まりとされています。",
+    "specs": {
+      "dishType": "浜松餃子",
+      "budgetLunch": [
+        670,
+        1340
+      ],
+      "budgetDinner": [
+        670,
+        1340
+      ],
+      "accessInfo": "JR浜松駅北口から徒歩1分（メイワン エキマチウエスト1F）",
+      "stationWalkMin": 1,
+      "takeout": null,
+      "netReservation": null,
+      "parking": null
+    },
+    "features": [
+      "昭和28年創業（店舗は「元祖浜松餃子」を掲げる）",
+      "茹でもやし添えの発祥とされる店",
+      "駅ビル内で乗り換え前に寄りやすい"
+    ],
+    "priceNote": "石松餃子10個670円、定食1,220〜1,340円の掲載例（掲載時期により異なる可能性があります）。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "駅ビルの中にあるので、新幹線や電車の待ち時間に浜松餃子を食べたい観光客・出張者向け"
+      }
+    ],
+    "source": "manual",
+    "fetchedAt": "2026-10-10",
+    "_sources": [
+      "https://1402.jp/shop/hamamatsu.html",
+      "https://www.mapple.net/original/505336/",
+      "https://retty.me/restaurant/100001268733/"
+    ],
+    "_unverified": [
+      "電話番号（情報源により食い違い）",
+      "「新幹線改札近く」「円形焼き」（未確認のため不掲載）",
+      "「元祖浜松餃子」は店舗の自称として記載",
+      "テイクアウト・ネット予約の可否",
+      "現行のメニュー価格"
+    ]
+  },
+  {
+    "name": "うなぎ 八百徳 本店",
+    "category": "gourmet",
+    "genre": "うなぎ",
+    "serviceType": "store",
+    "chain": false,
+    "address": "静岡県浜松市中央区板屋町655",
+    "tel": null,
+    "hours": "11:00～20:00（L.O.19:30）月曜定休",
+    "access": "JR浜松駅北口から徒歩6分／遠州鉄道 第一通り駅から徒歩3分",
+    "officialUrl": "https://www.unagiyaotoku.com/",
+    "description": "1909年創業のうなぎ店。名物の「お櫃うなぎ茶漬け」を目当てに全国から客が訪れます。",
+    "specs": {
+      "dishType": "うなぎ（お櫃うなぎ茶漬け）",
+      "budgetLunch": 4070,
+      "budgetDinner": 4070,
+      "accessInfo": "JR浜松駅北口から徒歩6分（公式）／第一通り駅から徒歩3分",
+      "stationWalkMin": 6,
+      "takeout": null,
+      "netReservation": null,
+      "parking": true
+    },
+    "features": [
+      "1909年創業",
+      "名物「お櫃うなぎ茶漬け」",
+      "指定駐車場あり（7台）",
+      "113席"
+    ],
+    "priceNote": "お櫃うなぎ茶漬け4,070円（2022年10月時点の掲載）。うなぎは仕入れ状況により価格が変わることがあります。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "浜松駅から歩いて行けるうなぎの老舗。月曜定休なので旅行日程に注意"
+      }
+    ],
+    "source": "manual",
+    "fetchedAt": "2026-10-10",
+    "_sources": [
+      "https://www.unagiyaotoku.com/",
+      "https://retty.me/restaurant/100000027785/",
+      "https://www.at-s.com/gourmet/ranking/genre39-area_ad62/"
+    ],
+    "_unverified": [
+      "「浜名湖産うなぎ」（産地は未確認のため不掲載）",
+      "電話番号",
+      "テイクアウト・ネット予約の可否",
+      "現行の価格（2022年10月時点の掲載）"
+    ]
+  },
+  {
+    "name": "炭焼きレストランさわやか 浜松遠鉄店",
+    "category": "gourmet",
+    "genre": "ハンバーグ",
+    "serviceType": "store",
+    "chain": false,
+    "address": "静岡県浜松市中央区砂山町320-2 遠鉄百貨店 本館8階",
+    "tel": null,
+    "hours": null,
+    "access": "JR浜松駅から徒歩すぐ（遠鉄百貨店 本館8階）",
+    "officialUrl": "https://www.genkotsu-hb.com/shop/entetsu.php",
+    "description": "静岡県内だけで展開するハンバーグレストラン「さわやか」の、浜松駅隣接の遠鉄百貨店にある店舗。予約は受け付けておらず、整理券で順番を待ちます。",
+    "specs": {
+      "dishType": "ハンバーグ（げんこつハンバーグ）",
+      "budgetLunch": null,
+      "budgetDinner": null,
+      "accessInfo": "JR浜松駅に隣接する遠鉄百貨店 本館8階",
+      "stationWalkMin": null,
+      "takeout": null,
+      "netReservation": false,
+      "parking": null
+    },
+    "features": [
+      "予約不可・整理券制",
+      "順番が近づくとスマートフォンに通知（待ち時間に買い物できる）",
+      "静岡県内限定のハンバーグレストラン"
+    ],
+    "priceNote": "げんこつハンバーグ（250g）の価格は情報源により食い違いがあるため掲載していません。最新価格は公式サイトでご確認ください。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "土日は待ち時間が長くなりやすい。整理券を取ってから百貨店で買い物をして待つのが地元流"
+      }
+    ],
+    "source": "manual",
+    "fetchedAt": "2026-10-10",
+    "_sources": [
+      "https://www.genkotsu-hb.com/shop/entetsu.php",
+      "https://foodle.pro/karikari217/meals/hamamatsu/sawayaka-hamamatsu-entetsu/16294"
+    ],
+    "_unverified": [
+      "げんこつハンバーグの現行価格（1,680円・1,540円・1,265円〈2023年〉で情報源が食い違い）",
+      "電話番号",
+      "営業時間（2023年の個人ブログの掲載のみ）",
+      "テイクアウトの可否"
+    ]
+  },
+  {
+    "name": "浜松駅北側の居酒屋・ホルモン（肴町・鍛冶町周辺）",
+    "category": "gourmet",
+    "genre": "浜松ホルモン・遠州の夢ポーク",
+    "serviceType": "store",
+    "chain": true,
+    "address": "静岡県浜松市中央区（肴町・鍛冶町周辺）",
+    "tel": null,
+    "hours": null,
+    "access": "遠州鉄道 第一通り駅から徒歩約1〜3分の店舗あり（店舗により異なる）",
+    "officialUrl": null,
+    "description": "浜松駅北側の肴町・鍛冶町周辺には、鉄鍋で出す「浜松ホルモン」や、地元ブランド豚「遠州の夢ポーク」を使った料理を出す居酒屋・ホルモン店が集まっています。例として、浜松市内に複数店舗がある居酒屋「濱松たんと」では、遠州の夢ポークを使った餃子や濱松ホルモンを提供しています。",
+    "specs": {
+      "dishType": "浜松ホルモン・遠州の夢ポーク",
+      "budgetLunch": null,
+      "budgetDinner": null,
+      "accessInfo": "浜松駅北側の繁華街（第一通り駅周辺など、店舗により異なる）",
+      "stationWalkMin": null,
+      "takeout": null,
+      "netReservation": null,
+      "parking": null
+    },
+    "features": [
+      "鉄鍋で出す「浜松ホルモン」",
+      "地元ブランド豚「遠州の夢ポーク」",
+      "居酒屋・ホルモン店の多い夜のエリア"
+    ],
+    "priceNote": "予算は店舗・注文内容により異なります。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "夜に地元の味で一杯やりたい人向け。店ごとに営業日・予約可否が違うので事前に確認を"
+      }
+    ],
+    "source": "manual",
+    "fetchedAt": "2026-10-10",
+    "_sources": [
+      "https://tabelog.com/matome/31932/",
+      "https://foodle.pro/restaurants/hamamatsu/enshuouta-hamamatsutanto-hamamatsuekiminamiguchiten",
+      "https://www.hotpepper.jp/SA32/MT00154/U012/"
+    ],
+    "_unverified": [
+      "「遠州夢の夢ポーク」は正しくは「遠州の夢ポーク」",
+      "ホルモンとらじ 有楽街店（現行の店舗情報が確認できないため不掲載）",
+      "濱松たんとの各店舗の住所（田町の店舗は確認できず）",
+      "三ヶ日みかんハイボール（提供店舗未確認のため不掲載）",
+      "各店の予算・営業時間・予約可否"
+    ]
+  },
+  {
+    "name": "食べログ",
+    "category": "gourmet",
+    "genre": "グルメ予約サイト",
+    "serviceType": "online",
+    "chain": false,
+    "address": "オンライン（全国対応）",
+    "tel": null,
+    "hours": "Webで24時間予約可",
+    "access": null,
+    "officialUrl": "https://tabelog.com/",
+    "description": "カカクコムが運営するグルメサイト。口コミや点数を見ながら浜松の店を探し、対応店はネット予約ができます。",
+    "specs": {
+      "dishType": "グルメ予約サイト",
+      "budgetLunch": null,
+      "budgetDinner": null,
+      "accessInfo": "—（Web予約）",
+      "stationWalkMin": null,
+      "takeout": null,
+      "netReservation": true,
+      "parking": null
+    },
+    "features": [
+      "口コミ・点数で店を比較",
+      "ネット予約でVポイント（人数×50pt、ランチは人数×10pt）",
+      "対応店のみネット予約可"
+    ],
+    "priceNote": "予算は店舗により異なります。ポイント付与は対象店舗・条件により異なります。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "浜松餃子やうなぎの店を口コミで見比べたいときに。Vポイントを貯めている人向け"
+      }
+    ],
+    "source": "manual",
+    "fetchedAt": "2026-10-10",
+    "_sources": [
+      "https://tabelog.com/tpoint/guide"
+    ],
+    "_unverified": [
+      "点数・ランキングの算出方法",
+      "Vポイント以外のポイント提携キャンペーンの現状"
+    ]
+  },
+  {
+    "name": "ホットペッパーグルメ",
+    "category": "gourmet",
+    "genre": "グルメ予約サイト",
+    "serviceType": "online",
+    "chain": false,
+    "address": "オンライン（全国対応）",
+    "tel": null,
+    "hours": "Webで24時間予約可",
+    "access": null,
+    "officialUrl": "https://www.hotpepper.jp/",
+    "description": "リクルートのグルメ予約サイト。ネット予約で貯まるポイントをPonta・dポイントから選べ、クーポンを使える店もあります。",
+    "specs": {
+      "dishType": "グルメ予約サイト",
+      "budgetLunch": null,
+      "budgetDinner": null,
+      "accessInfo": "—（Web予約）",
+      "stationWalkMin": null,
+      "takeout": null,
+      "netReservation": true,
+      "parking": null
+    },
+    "features": [
+      "ネット予約で人数×50ポイント〜（ランチは人数×10ポイント〜）",
+      "Ponta・dポイントから選べる",
+      "時期によりポイント増量キャンペーンあり"
+    ],
+    "priceNote": "予算は店舗により異なります。ポイント・クーポンは対象店舗・時期により異なります。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "宴会や飲み会の店を、クーポンやポイントで探したいときに。Ponta・dポイントを貯めている人向け"
+      }
+    ],
+    "source": "manual",
+    "fetchedAt": "2026-10-10",
+    "_sources": [
+      "https://pricey.jp/web/articles/3744",
+      "https://paymentnavi.com/?p=64359"
+    ],
+    "_unverified": [
+      "ぐるなび（ポイント条件未確認のため今回は1サービスに絞って掲載）",
+      "現行のキャンペーン内容",
+      "ポイント数（比較記事の掲載）"
+    ]
+  }
+]
