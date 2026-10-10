@@ -124,7 +124,7 @@ const TEMPLATES = {
       ['浜松ガス サービスショップ 上島', 'ガス', {}],
       ['でんきの相談所 浜北', '新電力 相談窓口', {}],
     ],
-    specs: () => ({ simulation: yes(0.8), setDiscount: yes(0.5) }),
+    specs: () => ({ kind: '新電力', supplyArea: '中部電力エリア', pricing: '従量制', marketLinked: yes(0.3) }),
     desc: (n, g) => `${g}の窓口。${n}では料金プランのシミュレーションができます。`,
   },
   moving: {

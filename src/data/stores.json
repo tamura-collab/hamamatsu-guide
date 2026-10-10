@@ -1025,117 +1025,252 @@
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "energy-be4b1142",
-    "name": "遠州でんき お客さまセンター 鍛冶町",
+    "id": "energy-a17841ad",
+    "name": "中部電力ミライズ",
     "category": "energy",
-    "genre": "新電力",
-    "address": "静岡県浜松市中央区鍛冶町4丁目29-17",
-    "tel": "000-000-0020",
-    "hours": "9:00～17:00 / 土日祝休",
-    "access": "第一通り駅 徒歩12分／駐車場なし",
-    "officialUrl": "https://example.com/hamamatsu/energy/1",
-    "description": "新電力の窓口。遠州でんき お客さまセンター 鍛冶町では料金プランのシミュレーションができます。",
+    "genre": "大手電力会社",
+    "address": "Web申込（中部電力エリア）",
+    "tel": null,
+    "hours": null,
+    "access": null,
+    "officialUrl": "https://miraiz.chuden.co.jp/",
+    "description": "浜松市を含む中部電力エリアの大手電力会社（中部電力グループの小売会社）。従量電灯Bなどのプランがあり、Web会員サービス「カテエネ」で使用量の確認やポイントの獲得ができます。",
     "localNote": [
-      {
-        "type": "landmark",
-        "text": "市役所の近く",
-        "source": "manual"
-      },
       {
         "type": "tip",
-        "text": "朝夕は浜松バイパスの渋滞に注意",
+        "text": "電力会社を切り替えていない浜松市の家庭は、通常この会社と契約している。比較の基準にしやすい",
         "source": "manual"
-      },
-      {
-        "type": "station",
-        "text": "第一通り駅徒歩12分",
-        "source": "auto"
       }
     ],
     "specs": {
-      "simulation": true,
-      "setDiscount": false,
-      "stationWalkMin": 12,
-      "parking": false
+      "kind": "大手電力会社",
+      "supplyArea": "中部電力エリア（浜松市を含む）",
+      "pricing": "従量電灯Bなど（燃料費調整・再エネ賦課金あり）",
+      "basicFee": "あり",
+      "marketLinked": false,
+      "points": "カテエネポイント",
+      "setGas": null,
+      "setAu": false,
+      "setDocomo": false,
+      "setSoftbank": false
     },
-    "features": [],
-    "priceNote": null,
-    "chain": false,
-    "serviceType": "store",
-    "affiliate": {
-      "url": "https://example.com/aff/energy/1",
-      "label": null,
-      "program": "サンプルASP"
-    },
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "energy-be3d14b7",
-    "name": "浜松ガス サービスショップ 上島",
-    "category": "energy",
-    "genre": "ガス",
-    "address": "静岡県浜松市中央区上島5丁目14-8",
-    "tel": "000-000-0021",
-    "hours": "9:00～17:00 / 土日祝休",
-    "access": "上島駅から徒歩7分",
-    "officialUrl": "https://example.com/hamamatsu/energy/2",
-    "description": "ガスの窓口。浜松ガス サービスショップ 上島では料金プランのシミュレーションができます。",
-    "localNote": [
-      {
-        "type": "station",
-        "text": "上島駅徒歩7分",
-        "source": "auto"
-      }
+    "features": [
+      "Web会員サービス「カテエネ」で使用量を確認",
+      "カテエネポイントが貯まる（条件は公式で確認）",
+      "従量電灯Bなどの料金プラン"
     ],
-    "specs": {
-      "simulation": false,
-      "setDiscount": true,
-      "stationWalkMin": 7,
-      "parking": null
-    },
-    "features": [],
-    "priceNote": null,
+    "priceNote": "単価は燃料費調整額・再エネ賦課金により毎月変わります。カテエネポイントは「電気・ガス料金200円につき1P」との掲載例があります。",
     "chain": false,
-    "serviceType": "store",
-    "affiliate": {
-      "url": "https://example.com/aff/energy/2",
-      "label": null,
-      "program": "サンプルASP"
-    },
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "energy-475f73c9",
-    "name": "でんきの相談所 浜北",
-    "category": "energy",
-    "genre": "新電力 相談窓口",
-    "address": "静岡県浜松市浜名区小松4丁目27-13",
-    "tel": "000-000-0022",
-    "hours": "9:00～17:00 / 土日祝休",
-    "access": "小松駅 徒歩3分",
-    "officialUrl": "https://example.com/hamamatsu/energy/3",
-    "description": "新電力 相談窓口の窓口。でんきの相談所 浜北では料金プランのシミュレーションができます。",
-    "localNote": [
-      {
-        "type": "station",
-        "text": "小松駅徒歩3分",
-        "source": "auto"
-      }
-    ],
-    "specs": {
-      "simulation": true,
-      "setDiscount": true,
-      "stationWalkMin": 3,
-      "parking": null
-    },
-    "features": [],
-    "priceNote": null,
-    "chain": false,
-    "serviceType": "store",
+    "serviceType": "online",
     "affiliate": null,
-    "source": "mock",
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "energy-d92df2f9",
+    "name": "サーラエナジー（都市ガス・LPガス）／サーラeエナジー（電気）",
+    "category": "energy",
+    "genre": "都市ガス・LPガス＋電気",
+    "address": "Web申込（都市ガスは浜松市・磐田市・湖西市などの供給エリア）",
+    "tel": null,
+    "hours": null,
+    "access": null,
+    "officialUrl": "https://www.salaenergy.co.jp/",
+    "description": "浜松市で都市ガスを供給しているガス会社（2019年に中部ガスとガステックサービスが合併して発足）。LPガスも取り扱い、グループ会社のサーラeエナジーが電気を販売しています。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "浜松市内で都市ガスを使っている家庭のガス会社。電気もまとめると請求を一本化できる",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "都市ガス・LPガス（電気とのセットあり）",
+      "supplyArea": "都市ガス：浜松市など／電気：中部電力エリア",
+      "pricing": "ガス：各種料金プラン／電気：基本プランA・B",
+      "basicFee": "あり",
+      "marketLinked": false,
+      "points": null,
+      "setGas": true,
+      "setAu": false,
+      "setDocomo": false,
+      "setSoftbank": false
+    },
+    "features": [
+      "浜松市の都市ガス供給会社（旧中部ガス）",
+      "LPガスも取り扱い",
+      "グループ会社サーラeエナジーの電気とセット割"
+    ],
+    "priceNote": "ガス・電気の単価やセット割の内容はプラン・供給エリアにより異なります。",
+    "chain": false,
+    "serviceType": "online",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "energy-c4df4357",
+    "name": "Looopでんき",
+    "category": "energy",
+    "genre": "新電力（市場連動型）",
+    "address": "Web申込（中部電力エリアを含む）",
+    "tel": null,
+    "hours": null,
+    "access": null,
+    "officialUrl": "https://looop-denki.com/",
+    "description": "電気の市場価格（JEPXのエリアプライス）に連動して、30分ごとに単価が変わる料金体系の新電力。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "市場価格が安い時間帯（太陽光発電が多い昼間など）に家事や充電をずらせる家庭向け。価格が高騰する時期のリスクも理解して選びたい",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "新電力（市場連動型）",
+      "supplyArea": "中部電力エリアを含む各エリア",
+      "pricing": "市場連動型（30分ごとに単価が変動）",
+      "basicFee": "基本料金の名称はないが、毎月固定の「制度対応費」あり（2025年4月〜）",
+      "marketLinked": true,
+      "points": null,
+      "setGas": false,
+      "setAu": false,
+      "setDocomo": false,
+      "setSoftbank": false
+    },
+    "features": [
+      "30分ごとに単価が変わる市場連動型",
+      "単価が安い時間帯に電気を使うほど有利",
+      "市場価格が高騰すると電気代も上がる"
+    ],
+    "priceNote": "単価は30分ごとの市場価格に連動して変わります。2025年4月の改定で、使用量にかかわらず毎月固定でかかる「制度対応費」が新設されています。",
+    "chain": false,
+    "serviceType": "online",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "energy-7340cea4",
+    "name": "auでんき",
+    "category": "energy",
+    "genre": "新電力（携帯キャリア系）",
+    "address": "Web申込（中部電力エリアを含む）",
+    "tel": null,
+    "hours": null,
+    "access": null,
+    "officialUrl": "https://www.au.com/energy/denki/",
+    "description": "KDDIグループの電気サービス。毎月の電気料金に応じてPontaポイントが還元されます。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "auやUQ mobileを契約している家庭は、ポイント還元の条件を確認して比較したい",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "新電力（携帯キャリア系）",
+      "supplyArea": "中部電力エリアを含む各エリア",
+      "pricing": "エリアごとの料金プラン（燃料費調整・再エネ賦課金あり）",
+      "basicFee": "あり",
+      "marketLinked": false,
+      "points": "Pontaポイント",
+      "setGas": false,
+      "setAu": true,
+      "setDocomo": false,
+      "setSoftbank": false
+    },
+    "features": [
+      "電気料金に応じてPontaポイント還元",
+      "au・UQ mobileユーザー向け"
+    ],
+    "priceNote": "ポイント還元の対象は基本料金・電力量料金（税抜）で、燃料費調整額・再エネ賦課金は対象外です（公式案内）。還元率は「月額8,000円未満0.5%・8,000円以上1%」の掲載例があります。",
+    "chain": false,
+    "serviceType": "online",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "energy-228daa3a",
+    "name": "ソフトバンクでんき（おうちでんき）",
+    "category": "energy",
+    "genre": "新電力（携帯キャリア系）",
+    "address": "Web申込（中部電力エリアを含む）",
+    "tel": null,
+    "hours": null,
+    "access": null,
+    "officialUrl": "https://www.softbank.jp/energy/",
+    "description": "ソフトバンクの電気サービス。ソフトバンク・ワイモバイルのスマホとセットにすると「おうち割 でんきセット」で通信料が割引になります。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "家族でソフトバンク・ワイモバイルを使っている家庭は、スマホ代と合わせた固定費で比較したい",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "新電力（携帯キャリア系）",
+      "supplyArea": "中部電力エリアを含む各エリア",
+      "pricing": "エリアごとの料金プラン（燃料費調整・再エネ賦課金あり）",
+      "basicFee": "あり",
+      "marketLinked": false,
+      "points": null,
+      "setGas": false,
+      "setAu": false,
+      "setDocomo": false,
+      "setSoftbank": true
+    },
+    "features": [
+      "おうち割 でんきセット（スマホ回線の割引）",
+      "割引対象は最大10回線（料金プランにより割引額が異なる）"
+    ],
+    "priceNote": "スマホ回線の割引額は料金プランにより異なります。中部エリアのおうちでんきは中部電力より若干安い設定との掲載があります。",
+    "chain": false,
+    "serviceType": "online",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "energy-d48eff55",
+    "name": "ドコモでんき",
+    "category": "energy",
+    "genre": "新電力（携帯キャリア系）",
+    "address": "Web申込（中部電力エリアを含む）",
+    "tel": null,
+    "hours": null,
+    "access": null,
+    "officialUrl": "https://www.docomo.ne.jp/denki/",
+    "description": "ドコモの電気サービス。電気料金に応じてdポイントが還元され、実質再生可能エネルギー100%の「Green」と標準の「Basic」から選べます。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "ドコモ回線やdカードを使っている家庭は、還元率の条件を確認して比較したい",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "新電力（携帯キャリア系）",
+      "supplyArea": "中部電力エリアを含む各エリア",
+      "pricing": "Basic／Green（エリアごとの料金プラン）",
+      "basicFee": "あり",
+      "marketLinked": false,
+      "points": "dポイント",
+      "setGas": false,
+      "setAu": false,
+      "setDocomo": true,
+      "setSoftbank": false
+    },
+    "features": [
+      "dポイント還元（ドコモ回線・dカードの契約状況で還元率が変わる）",
+      "Green は実質再生可能エネルギー100%"
+    ],
+    "priceNote": "Green は Basic より基本料金等が月額500円高い設定との掲載があります。還元率はプラン・エリア・ドコモ回線やdカードの契約状況で異なります。2026年11月検針分から還元率の見直しが報じられています。",
+    "chain": false,
+    "serviceType": "online",
+    "affiliate": null,
+    "source": "manual",
     "updatedAt": "2026-10-10"
   },
   {

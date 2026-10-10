@@ -1,0 +1,260 @@
+[
+  {
+    "name": "中部電力ミライズ",
+    "category": "energy",
+    "genre": "大手電力会社",
+    "serviceType": "online",
+    "chain": false,
+    "address": "Web申込（中部電力エリア）",
+    "tel": null,
+    "hours": null,
+    "access": null,
+    "officialUrl": "https://miraiz.chuden.co.jp/",
+    "description": "浜松市を含む中部電力エリアの大手電力会社（中部電力グループの小売会社）。従量電灯Bなどのプランがあり、Web会員サービス「カテエネ」で使用量の確認やポイントの獲得ができます。",
+    "specs": {
+      "kind": "大手電力会社",
+      "supplyArea": "中部電力エリア（浜松市を含む）",
+      "pricing": "従量電灯Bなど（燃料費調整・再エネ賦課金あり）",
+      "basicFee": "あり",
+      "marketLinked": false,
+      "points": "カテエネポイント",
+      "setGas": null,
+      "setAu": false,
+      "setDocomo": false,
+      "setSoftbank": false
+    },
+    "features": ["Web会員サービス「カテエネ」で使用量を確認", "カテエネポイントが貯まる（条件は公式で確認）", "従量電灯Bなどの料金プラン"],
+    "priceNote": "単価は燃料費調整額・再エネ賦課金により毎月変わります。カテエネポイントは「電気・ガス料金200円につき1P」との掲載例があります。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "電力会社を切り替えていない浜松市の家庭は、通常この会社と契約している。比較の基準にしやすい"
+      }
+    ],
+    "source": "manual",
+    "fetchedAt": "2026-10-10",
+    "_sources": [
+      "https://miraiz.chuden.co.jp/",
+      "https://selectra.jp/energy/kaisha/chubu",
+      "https://enechange.jp/articles/chuden-review"
+    ],
+    "_unverified": [
+      "カテエネポイントの現行の還元条件",
+      "電気・都市ガスのセット割（カテエネガスは東邦ガスエリア向けのため、浜松市は対象外の可能性）",
+      "「浜松市の多くの家庭が利用」の割合（統計未確認のため不掲載）"
+    ]
+  },
+  {
+    "name": "サーラエナジー（都市ガス・LPガス）／サーラeエナジー（電気）",
+    "category": "energy",
+    "genre": "都市ガス・LPガス＋電気",
+    "serviceType": "online",
+    "chain": false,
+    "address": "Web申込（都市ガスは浜松市・磐田市・湖西市などの供給エリア）",
+    "tel": null,
+    "hours": null,
+    "access": null,
+    "officialUrl": "https://www.salaenergy.co.jp/",
+    "description": "浜松市で都市ガスを供給しているガス会社（2019年に中部ガスとガステックサービスが合併して発足）。LPガスも取り扱い、グループ会社のサーラeエナジーが電気を販売しています。",
+    "specs": {
+      "kind": "都市ガス・LPガス（電気とのセットあり）",
+      "supplyArea": "都市ガス：浜松市など／電気：中部電力エリア",
+      "pricing": "ガス：各種料金プラン／電気：基本プランA・B",
+      "basicFee": "あり",
+      "marketLinked": false,
+      "points": null,
+      "setGas": true,
+      "setAu": false,
+      "setDocomo": false,
+      "setSoftbank": false
+    },
+    "features": ["浜松市の都市ガス供給会社（旧中部ガス）", "LPガスも取り扱い", "グループ会社サーラeエナジーの電気とセット割"],
+    "priceNote": "ガス・電気の単価やセット割の内容はプラン・供給エリアにより異なります。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "浜松市内で都市ガスを使っている家庭のガス会社。電気もまとめると請求を一本化できる"
+      }
+    ],
+    "source": "manual",
+    "fetchedAt": "2026-10-10",
+    "_sources": [
+      "https://www.salaenergy.co.jp/corporation/city-area/",
+      "https://www.city.hamamatsu.shizuoka.jp/jose/katuyakusokushin/network/sala.html",
+      "https://enechange.jp/utilities/sala-e",
+      "https://enechange.jp/articles/salaenergy-gas-plan"
+    ],
+    "_unverified": [
+      "東邦ガスは浜松市の都市ガス供給エリア外のため、ご指定の東邦ガスに代えて掲載",
+      "電気（サーラeエナジー）の現行プランと浜松市での申込可否",
+      "ガスとのセット割の割引額・条件",
+      "ポイント付与の有無"
+    ]
+  },
+  {
+    "name": "Looopでんき",
+    "category": "energy",
+    "genre": "新電力（市場連動型）",
+    "serviceType": "online",
+    "chain": false,
+    "address": "Web申込（中部電力エリアを含む）",
+    "tel": null,
+    "hours": null,
+    "access": null,
+    "officialUrl": "https://looop-denki.com/",
+    "description": "電気の市場価格（JEPXのエリアプライス）に連動して、30分ごとに単価が変わる料金体系の新電力。",
+    "specs": {
+      "kind": "新電力（市場連動型）",
+      "supplyArea": "中部電力エリアを含む各エリア",
+      "pricing": "市場連動型（30分ごとに単価が変動）",
+      "basicFee": "基本料金の名称はないが、毎月固定の「制度対応費」あり（2025年4月〜）",
+      "marketLinked": true,
+      "points": null,
+      "setGas": false,
+      "setAu": false,
+      "setDocomo": false,
+      "setSoftbank": false
+    },
+    "features": ["30分ごとに単価が変わる市場連動型", "単価が安い時間帯に電気を使うほど有利", "市場価格が高騰すると電気代も上がる"],
+    "priceNote": "単価は30分ごとの市場価格に連動して変わります。2025年4月の改定で、使用量にかかわらず毎月固定でかかる「制度対応費」が新設されています。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "市場価格が安い時間帯（太陽光発電が多い昼間など）に家事や充電をずらせる家庭向け。価格が高騰する時期のリスクも理解して選びたい"
+      }
+    ],
+    "source": "manual",
+    "fetchedAt": "2026-10-10",
+    "_sources": [
+      "https://selectra.jp/energy/kaisha/looop/smart-time-one",
+      "https://selectra.jp/energy/news/looop-denki-kihon-ryokin",
+      "https://selectra.jp/energy/electricity/looop-vs-chuden",
+      "https://enechange.jp/specials/looop-pricechange"
+    ],
+    "_unverified": [
+      "「基本料金0円」（制度対応費の新設により誤解を招くため不掲載）",
+      "アプリの「でんき予報」機能の現状",
+      "制度対応費の金額"
+    ]
+  },
+  {
+    "name": "auでんき",
+    "category": "energy",
+    "genre": "新電力（携帯キャリア系）",
+    "serviceType": "online",
+    "chain": false,
+    "address": "Web申込（中部電力エリアを含む）",
+    "tel": null,
+    "hours": null,
+    "access": null,
+    "officialUrl": "https://www.au.com/energy/denki/",
+    "description": "KDDIグループの電気サービス。毎月の電気料金に応じてPontaポイントが還元されます。",
+    "specs": {
+      "kind": "新電力（携帯キャリア系）",
+      "supplyArea": "中部電力エリアを含む各エリア",
+      "pricing": "エリアごとの料金プラン（燃料費調整・再エネ賦課金あり）",
+      "basicFee": "あり",
+      "marketLinked": false,
+      "points": "Pontaポイント",
+      "setGas": false,
+      "setAu": true,
+      "setDocomo": false,
+      "setSoftbank": false
+    },
+    "features": ["電気料金に応じてPontaポイント還元", "au・UQ mobileユーザー向け"],
+    "priceNote": "ポイント還元の対象は基本料金・電力量料金（税抜）で、燃料費調整額・再エネ賦課金は対象外です（公式案内）。還元率は「月額8,000円未満0.5%・8,000円以上1%」の掲載例があります。",
+    "localNote": [{ "type": "tip", "text": "auやUQ mobileを契約している家庭は、ポイント還元の条件を確認して比較したい" }],
+    "source": "manual",
+    "fetchedAt": "2026-10-10",
+    "_sources": [
+      "https://www.au.com/energy/denki/",
+      "https://www.au.com/energy/denki/merit/point/",
+      "https://selectra.jp/energy/kaisha/audenki/kuchikomi"
+    ],
+    "_unverified": [
+      "現行の還元率（掲載例は時期不明）",
+      "スマホ料金との合算請求の条件",
+      "「電気代自体は変わらない」（大手電力と同額かは未確認のため不掲載）"
+    ]
+  },
+  {
+    "name": "ソフトバンクでんき（おうちでんき）",
+    "category": "energy",
+    "genre": "新電力（携帯キャリア系）",
+    "serviceType": "online",
+    "chain": false,
+    "address": "Web申込（中部電力エリアを含む）",
+    "tel": null,
+    "hours": null,
+    "access": null,
+    "officialUrl": "https://www.softbank.jp/energy/",
+    "description": "ソフトバンクの電気サービス。ソフトバンク・ワイモバイルのスマホとセットにすると「おうち割 でんきセット」で通信料が割引になります。",
+    "specs": {
+      "kind": "新電力（携帯キャリア系）",
+      "supplyArea": "中部電力エリアを含む各エリア",
+      "pricing": "エリアごとの料金プラン（燃料費調整・再エネ賦課金あり）",
+      "basicFee": "あり",
+      "marketLinked": false,
+      "points": null,
+      "setGas": false,
+      "setAu": false,
+      "setDocomo": false,
+      "setSoftbank": true
+    },
+    "features": ["おうち割 でんきセット（スマホ回線の割引）", "割引対象は最大10回線（料金プランにより割引額が異なる）"],
+    "priceNote": "スマホ回線の割引額は料金プランにより異なります。中部エリアのおうちでんきは中部電力より若干安い設定との掲載があります。",
+    "localNote": [
+      { "type": "tip", "text": "家族でソフトバンク・ワイモバイルを使っている家庭は、スマホ代と合わせた固定費で比較したい" }
+    ],
+    "source": "manual",
+    "fetchedAt": "2026-10-10",
+    "_sources": [
+      "https://www.softbank.jp/support/faq/view/19083",
+      "https://www.softbank.jp/energy/set/common/pdf/terms/ouchi-denki.pdf?20250904",
+      "https://selectra.jp/energy/news/softbank-denki-takai-2026"
+    ],
+    "_unverified": [
+      "ソフトバンク回線とワイモバイル回線の割引額の違い（FAQはワイモバイル回線の記載）",
+      "「ソフトバンクでんき代応援割」（2026年10月〜2027年3月）の割引内容",
+      "中部エリアの料金が中部電力より安いかどうか（第三者サイトの掲載）"
+    ]
+  },
+  {
+    "name": "ドコモでんき",
+    "category": "energy",
+    "genre": "新電力（携帯キャリア系）",
+    "serviceType": "online",
+    "chain": false,
+    "address": "Web申込（中部電力エリアを含む）",
+    "tel": null,
+    "hours": null,
+    "access": null,
+    "officialUrl": "https://www.docomo.ne.jp/denki/",
+    "description": "ドコモの電気サービス。電気料金に応じてdポイントが還元され、実質再生可能エネルギー100%の「Green」と標準の「Basic」から選べます。",
+    "specs": {
+      "kind": "新電力（携帯キャリア系）",
+      "supplyArea": "中部電力エリアを含む各エリア",
+      "pricing": "Basic／Green（エリアごとの料金プラン）",
+      "basicFee": "あり",
+      "marketLinked": false,
+      "points": "dポイント",
+      "setGas": false,
+      "setAu": false,
+      "setDocomo": true,
+      "setSoftbank": false
+    },
+    "features": ["dポイント還元（ドコモ回線・dカードの契約状況で還元率が変わる）", "Green は実質再生可能エネルギー100%"],
+    "priceNote": "Green は Basic より基本料金等が月額500円高い設定との掲載があります。還元率はプラン・エリア・ドコモ回線やdカードの契約状況で異なります。2026年11月検針分から還元率の見直しが報じられています。",
+    "localNote": [
+      { "type": "tip", "text": "ドコモ回線やdカードを使っている家庭は、還元率の条件を確認して比較したい" }
+    ],
+    "source": "manual",
+    "fetchedAt": "2026-10-10",
+    "_sources": [
+      "https://selectra.jp/energy/kaisha/docomo-denki",
+      "https://selectra.jp/energy/news/docomo-denki-dcard-platinum-point-revision",
+      "https://enechange.jp/articles/docomodenki-chuden-hikaku"
+    ],
+    "_unverified": ["中部エリアの現行の還元率", "2026年11月の還元率見直しの正式内容", "公式ページのURL"]
+  }
+]
