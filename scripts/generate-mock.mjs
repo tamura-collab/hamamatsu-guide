@@ -139,7 +139,7 @@ const TEMPLATES = {
     specs: (o) => ({ kind: '引越し業者', estimateFee: 0, single: yes(0.7), family: yes(0.7), disposal: o.disposal ?? yes(0.5) }),
     desc: (n, g) => `${n}（${g}）。市内の近距離引越しや単身パックの見積もりに対応しています。`,
   },
-  'rental-car': {
+  'car-rental': {
     access: 'mixed',
     hours: ['8:00～20:00', '7:00～22:00', '8:00～19:00 / 年末年始休'],
     items: [
@@ -149,7 +149,7 @@ const TEMPLATES = {
       ['格安レンタカー ワンズ高塚', '格安レンタカー', {}],
       ['エコノレンタ 浜北店', 'レンタカー', {}],
     ],
-    specs: () => ({ price24h: yes(0.5) ? priceRange(4800, 9000) : price(4800, 12000), dropOff: yes(0.5), nonSmoking: yes(0.9) }),
+    specs: () => ({ kind: 'レンタカー', dayFee: yes(0.5) ? priceRange(4800, 9000) : price(4800, 12000), oneWay: yes(0.5) }),
     desc: (n, g) => `${g}。${n}は乗り捨てやチャイルドシートの貸し出しにも対応しています。`,
   },
   hotel: {

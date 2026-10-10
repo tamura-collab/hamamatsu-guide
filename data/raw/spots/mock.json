@@ -1,7 +1,7 @@
 [
   {
     "name": "浜松レンタカー 駅南店",
-    "category": "rental-car",
+    "category": "car-rental",
     "genre": "レンタカー",
     "address": "静岡県浜松市中央区砂山町4丁目23-12",
     "tel": "000-000-0027",
@@ -19,13 +19,13 @@
   },
   {
     "name": "エンシューレンタカー 鍛冶町営業所",
-    "category": "rental-car",
+    "category": "car-rental",
     "genre": "レンタカー",
     "address": "静岡県浜松市中央区鍛冶町5丁目18-3",
     "tel": "０００-０００-００２８",
     "hours": "8:00～20:00",
     "access": "第一通り駅から徒歩7分・駐車場26台",
-    "officialUrl": "https://example.com/hamamatsu/rental-car/2",
+    "officialUrl": "https://example.com/hamamatsu/car-rental/2",
     "description": "レンタカー。エンシューレンタカー 鍛冶町営業所は乗り捨てやチャイルドシートの貸し出しにも対応しています。",
     "specs": {
       "price24h": 7600,
@@ -37,13 +37,13 @@
   },
   {
     "name": "レイクレンタカー 舞阪店",
-    "category": "rental-car",
+    "category": "car-rental",
     "genre": "レンタカー",
     "address": "静岡県浜松市中央区舞阪町舞阪５丁目１４-１４",
     "tel": "000-000-0029",
     "hours": "8:00～19:00 / 年末年始休",
     "access": "舞阪駅 徒歩６分・無料駐車場56台",
-    "officialUrl": "https://example.com/hamamatsu/rental-car/3",
+    "officialUrl": "https://example.com/hamamatsu/car-rental/3",
     "description": "レンタカー。レイクレンタカー 舞阪店は乗り捨てやチャイルドシートの貸し出しにも対応しています。",
     "specs": {
       "price24h": 6400,
@@ -55,7 +55,7 @@
   },
   {
     "name": "格安レンタカー ワンズ高塚",
-    "category": "rental-car",
+    "category": "car-rental",
     "genre": "格安レンタカー",
     "address": "静岡県浜松市中央区高塚町2丁目10-2",
     "tel": "000-000-0030",
@@ -73,13 +73,13 @@
   },
   {
     "name": "エコノレンタ 浜北店",
-    "category": "rental-car",
+    "category": "car-rental",
     "genre": "レンタカー",
     "address": "静岡県浜松市浜名区小松1丁目9-11",
     "tel": null,
     "hours": "8:00～20:00",
     "access": "小松駅 徒歩１０分・駐車場103台",
-    "officialUrl": "https://example.com/hamamatsu/rental-car/5",
+    "officialUrl": "https://example.com/hamamatsu/car-rental/5",
     "description": "レンタカー。エコノレンタ 浜北店は乗り捨てやチャイルドシートの貸し出しにも対応しています。",
     "specs": {
       "price24h": "8,200〜10,100円",

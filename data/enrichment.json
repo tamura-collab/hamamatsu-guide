@@ -1,28 +1,4 @@
 {
-  "rental-car-5bad6672": {
-    "_name": "浜松レンタカー 駅南店",
-    "affiliate": {
-      "url": "https://example.com/aff/rental-car/1",
-      "program": "サンプルASP"
-    },
-    "localNote": [
-      {
-        "type": "landmark",
-        "text": "イオンの近く"
-      },
-      {
-        "type": "tip",
-        "text": "平日夜は混みやすいので土日午前が狙い目"
-      }
-    ]
-  },
-  "rental-car-4bb84f13": {
-    "_name": "エンシューレンタカー 鍛冶町営業所",
-    "affiliate": {
-      "url": "https://example.com/aff/rental-car/2",
-      "program": "サンプルASP"
-    }
-  },
   "hotel-3e7eb366": {
     "_name": "ホテル浜松シティ 駅南",
     "affiliate": {

@@ -1,211 +1,253 @@
 [
   {
-    "id": "rental-car-5bad6672",
-    "name": "浜松レンタカー 駅南店",
-    "category": "rental-car",
+    "id": "car-rental-3f117a6b",
+    "name": "トヨタレンタカー 浜松駅前店",
+    "category": "car-rental",
     "genre": "レンタカー",
-    "address": "静岡県浜松市中央区砂山町4丁目23-12",
-    "tel": "000-000-0027",
-    "hours": "7:00～22:00",
-    "access": "浜松駅から徒歩8分・無料駐車場88台",
-    "officialUrl": null,
-    "description": "レンタカー。浜松レンタカー 駅南店は乗り捨てやチャイルドシートの貸し出しにも対応しています。",
+    "address": "静岡県浜松市中央区板屋町712",
+    "tel": null,
+    "hours": "8:00～20:00（12/30～1/3は8:00～17:00）",
+    "access": "JR浜松駅北口から東へ約350m",
+    "officialUrl": "https://rent.toyota.co.jp/sp/shop/detail.aspx?rCode=64602&eCode=003",
+    "description": "JR浜松駅北口から歩ける距離にあるトヨタレンタカーの店舗。県内外への乗り捨て（ワンウェイ）に対応しています。",
     "localNote": [
-      {
-        "type": "landmark",
-        "text": "イオンの近く",
-        "source": "manual"
-      },
       {
         "type": "tip",
-        "text": "平日夜は混みやすいので土日午前が狙い目",
+        "text": "JR浜松駅北口から歩ける距離。出張や浜名湖・舘山寺方面への観光の起点にしやすい",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "レンタカー（大手）",
+      "halfDayFee": null,
+      "dayFee": null,
+      "stationWalkMin": 5,
+      "insurance": "免責補償制度あり／安心Wプラン（+550円/24時間でNOCも免除）",
+      "oneWay": true,
+      "openHours": "8:00～20:00",
+      "open24h": false
+    },
+    "features": [
+      "乗り捨て（ワンウェイ）可・県内外（1ナンバー車を除く）",
+      "年末年始は17:00閉店",
+      "休業日なし（公式案内）"
+    ],
+    "priceNote": "料金は出発日時・車種クラスにより変わるため掲載していません。公式サイトの見積もりでご確認ください。駅からの徒歩分数は約350mを換算した目安です。",
+    "chain": false,
+    "serviceType": "store",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "car-rental-31e61a01",
+    "name": "ニッポンレンタカー 浜松駅南口営業所",
+    "category": "car-rental",
+    "genre": "レンタカー",
+    "address": "静岡県浜松市中央区砂山町357-6",
+    "tel": null,
+    "hours": "8:00～20:00（毎日）",
+    "access": "浜松駅から徒歩約2分（南口）",
+    "officialUrl": "https://www.nipponrentacar.co.jp/",
+    "description": "浜松駅南口の近くにあるニッポンレンタカーの営業所。基本補償が料金に含まれ、任意のフルサポートで事故時の自己負担を免除できます。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "新幹線での出張なら南口からすぐ借りられる。営業は8時〜20時なので、早朝・深夜の受け取り・返却はできない",
         "source": "manual"
       },
       {
         "type": "station",
-        "text": "浜松駅徒歩8分",
-        "source": "auto"
-      },
-      {
-        "type": "parking",
-        "text": "無料駐車場88台",
+        "text": "浜松駅徒歩2分",
         "source": "auto"
       }
     ],
     "specs": {
-      "price24h": 8000,
-      "dropOff": false,
-      "nonSmoking": true,
-      "stationWalkMin": 8
+      "kind": "レンタカー（大手）",
+      "halfDayFee": null,
+      "dayFee": null,
+      "stationWalkMin": 2,
+      "insurance": "基本補償込み／フルサポート（1日2,200円〜）で自己負担を免除",
+      "oneWay": null,
+      "openHours": "8:00～20:00",
+      "open24h": false
     },
-    "features": [],
-    "priceNote": null,
-    "chain": false,
-    "serviceType": "store",
-    "affiliate": {
-      "url": "https://example.com/aff/rental-car/1",
-      "label": null,
-      "program": "サンプルASP"
-    },
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "rental-car-4bb84f13",
-    "name": "エンシューレンタカー 鍛冶町営業所",
-    "category": "rental-car",
-    "genre": "レンタカー",
-    "address": "静岡県浜松市中央区鍛冶町5丁目18-3",
-    "tel": "000-000-0028",
-    "hours": "8:00～20:00",
-    "access": "第一通り駅から徒歩7分・駐車場26台",
-    "officialUrl": "https://example.com/hamamatsu/rental-car/2",
-    "description": "レンタカー。エンシューレンタカー 鍛冶町営業所は乗り捨てやチャイルドシートの貸し出しにも対応しています。",
-    "localNote": [
-      {
-        "type": "station",
-        "text": "第一通り駅徒歩7分",
-        "source": "auto"
-      },
-      {
-        "type": "parking",
-        "text": "駐車場26台",
-        "source": "auto"
-      }
+    "features": [
+      "基本補償が料金に含まれる",
+      "フルサポート（任意）で事故時の自己負担を免除",
+      "全国に営業所"
     ],
-    "specs": {
-      "price24h": 7600,
-      "dropOff": false,
-      "nonSmoking": true,
-      "stationWalkMin": 7
-    },
-    "features": [],
-    "priceNote": null,
-    "chain": false,
-    "serviceType": "store",
-    "affiliate": {
-      "url": "https://example.com/aff/rental-car/2",
-      "label": null,
-      "program": "サンプルASP"
-    },
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "rental-car-edaaddc0",
-    "name": "レイクレンタカー 舞阪店",
-    "category": "rental-car",
-    "genre": "レンタカー",
-    "address": "静岡県浜松市中央区舞阪町舞阪5丁目14-14",
-    "tel": "000-000-0029",
-    "hours": "8:00～19:00 / 年末年始休",
-    "access": "舞阪駅 徒歩6分・無料駐車場56台",
-    "officialUrl": "https://example.com/hamamatsu/rental-car/3",
-    "description": "レンタカー。レイクレンタカー 舞阪店は乗り捨てやチャイルドシートの貸し出しにも対応しています。",
-    "localNote": [
-      {
-        "type": "station",
-        "text": "舞阪駅徒歩6分",
-        "source": "auto"
-      },
-      {
-        "type": "parking",
-        "text": "無料駐車場56台",
-        "source": "auto"
-      }
-    ],
-    "specs": {
-      "price24h": 6400,
-      "dropOff": false,
-      "nonSmoking": true,
-      "stationWalkMin": 6
-    },
-    "features": [],
-    "priceNote": null,
+    "priceNote": "料金は出発日時・車種クラスにより変わるため掲載していません。公式サイトの見積もりでご確認ください。",
     "chain": false,
     "serviceType": "store",
     "affiliate": null,
-    "source": "mock",
+    "source": "manual",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "rental-car-a485be99",
-    "name": "格安レンタカー ワンズ高塚",
-    "category": "rental-car",
-    "genre": "格安レンタカー",
-    "address": "静岡県浜松市中央区高塚町2丁目10-2",
-    "tel": "000-000-0030",
-    "hours": "8:00～19:00 / 年末年始休",
-    "access": "浜松バイパス沿い／高塚駅 徒歩14分",
-    "officialUrl": null,
-    "description": "格安レンタカー。格安レンタカー ワンズ高塚は乗り捨てやチャイルドシートの貸し出しにも対応しています。",
-    "localNote": [
-      {
-        "type": "station",
-        "text": "高塚駅徒歩14分",
-        "source": "auto"
-      },
-      {
-        "type": "road",
-        "text": "浜松バイパス沿い",
-        "source": "auto"
-      }
-    ],
-    "specs": {
-      "price24h": [
-        6200,
-        10600
-      ],
-      "dropOff": true,
-      "nonSmoking": true,
-      "stationWalkMin": 14
-    },
-    "features": [],
-    "priceNote": null,
-    "chain": false,
-    "serviceType": "store",
-    "affiliate": null,
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "rental-car-b9b676de",
-    "name": "エコノレンタ 浜北店",
-    "category": "rental-car",
-    "genre": "レンタカー",
-    "address": "静岡県浜松市浜名区小松1丁目9-11",
+    "id": "car-rental-849b4e5e",
+    "name": "タイムズカー（カーシェア）浜松駅周辺",
+    "category": "car-rental",
+    "genre": "カーシェア",
+    "address": "静岡県浜松市中央区砂山町351（浜松駅東第5ステーション）ほか",
     "tel": null,
-    "hours": "8:00～20:00",
-    "access": "小松駅 徒歩10分・駐車場103台",
-    "officialUrl": "https://example.com/hamamatsu/rental-car/5",
-    "description": "レンタカー。エコノレンタ 浜北店は乗り捨てやチャイルドシートの貸し出しにも対応しています。",
+    "hours": "24時間（予約制）",
+    "access": "浜松駅の周辺に複数のステーション",
+    "officialUrl": "https://share.timescar.jp/",
+    "description": "会員制のカーシェア。浜松駅の東側・南側・北側などにステーションがあり、15分単位で24時間いつでも予約・利用できます。",
     "localNote": [
       {
-        "type": "station",
-        "text": "小松駅徒歩10分",
-        "source": "auto"
+        "type": "tip",
+        "text": "浜松駅東・駅南・駅北などに点在。数時間だけ車を使いたい観光や用事に向いている",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "カーシェア（会員制）",
+      "halfDayFee": null,
+      "dayFee": null,
+      "stationWalkMin": null,
+      "insurance": null,
+      "oneWay": false,
+      "openHours": "24時間（予約制）",
+      "open24h": true
+    },
+    "features": [
+      "15分単位で使える",
+      "24時間予約・利用可",
+      "会員登録が必要（月額基本料あり）"
+    ],
+    "priceNote": "ベーシッククラス15分220円、6時間までの最大料金4,290円（公式ページの掲載）。別途、個人プランは月額基本料がかかります。借りたステーションへの返却が基本です。",
+    "chain": true,
+    "serviceType": "store",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "car-rental-f4ccb265",
+    "name": "オリックスレンタカー 浜松駅前店",
+    "category": "car-rental",
+    "genre": "レンタカー",
+    "address": "静岡県浜松市中央区砂山町7-1",
+    "tel": null,
+    "hours": "8:00～20:00（年末年始は変更あり）",
+    "access": "浜松駅から徒歩2分",
+    "officialUrl": "https://car.orix.co.jp/modal/shop/?shops_pk=476",
+    "description": "浜松駅から徒歩2分のオリックスレンタカーの店舗（鈴与レンタカーがフランチャイズで運営）。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "駅から近く、大人数での観光やゴルフでミニバン・ワゴンを借りたい場合は在庫を事前に確認したい",
+        "source": "manual"
       },
       {
-        "type": "parking",
-        "text": "駐車場103台",
+        "type": "station",
+        "text": "浜松駅徒歩2分",
         "source": "auto"
       }
     ],
     "specs": {
-      "price24h": [
-        8200,
-        10100
-      ],
-      "dropOff": false,
-      "nonSmoking": true,
-      "stationWalkMin": 10
+      "kind": "レンタカー（大手）",
+      "halfDayFee": null,
+      "dayFee": null,
+      "stationWalkMin": 2,
+      "insurance": null,
+      "oneWay": null,
+      "openHours": "8:00～20:00",
+      "open24h": false
     },
-    "features": [],
-    "priceNote": null,
+    "features": [
+      "浜松駅から徒歩2分",
+      "鈴与レンタカーがフランチャイズで運営"
+    ],
+    "priceNote": "料金は出発日時・車種クラスにより変わるため掲載していません。公式サイトの見積もりでご確認ください。",
     "chain": false,
     "serviceType": "store",
     "affiliate": null,
-    "source": "mock",
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "car-rental-ccb80990",
+    "name": "ニコニコレンタカー 浜松市内の店舗",
+    "category": "car-rental",
+    "genre": "格安レンタカー",
+    "address": "静岡県浜松市中央区（浜松駅西店・浜松三島店・浜松和田店ほか）",
+    "tel": null,
+    "hours": "店舗により異なる",
+    "access": null,
+    "officialUrl": "https://www.2525r.com/shizuoka/",
+    "description": "12時間単位の料金設定が特徴の格安レンタカー。浜松市内には浜松駅西店・浜松三島店・浜松和田店・浜松入野店・浜松有玉店などがあります。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "費用を抑えて長めに車を使いたいときの選択肢。店舗は駅から離れた場所が多い",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "格安レンタカー",
+      "halfDayFee": [
+        2525,
+        3740
+      ],
+      "dayFee": null,
+      "stationWalkMin": null,
+      "insurance": "免責補償は別途手数料（任意）",
+      "oneWay": null,
+      "openHours": "店舗により異なる",
+      "open24h": false
+    },
+    "features": [
+      "12時間単位の料金",
+      "アプリ「ニコパス」・会員で料金が安くなる",
+      "浜松市内に複数店舗"
+    ],
+    "priceNote": "コンパクトカー（Sクラス）12時間の料金：アプリ2,525円・会員3,410円・一般3,740円（公式料金表）。免責補償などは別途かかる場合があります。",
+    "chain": true,
+    "serviceType": "store",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "car-rental-b71b2064",
+    "name": "楽天トラベル レンタカー（予約・比較）",
+    "category": "car-rental",
+    "genre": "Web予約・比較",
+    "address": "オンライン（全国対応）",
+    "tel": null,
+    "hours": "Webで24時間予約可",
+    "access": null,
+    "officialUrl": "https://cars.travel.rakuten.co.jp/",
+    "description": "複数のレンタカー会社のプランをまとめて検索・予約できる予約サイト。浜松駅周辺の店舗も検索できます。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "浜松駅周辺の各社の空車・料金を一度に比べてから予約したい人向け",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "Web予約・比較",
+      "halfDayFee": null,
+      "dayFee": null,
+      "stationWalkMin": null,
+      "insurance": null,
+      "oneWay": null,
+      "openHours": "Webで24時間予約可",
+      "open24h": null
+    },
+    "features": [
+      "複数のレンタカー会社のプランをまとめて検索・予約",
+      "楽天ポイントが貯まる（付与条件は公式で確認）"
+    ],
+    "priceNote": "料金は各レンタカー会社のプラン・時期により異なります。",
+    "chain": false,
+    "serviceType": "online",
+    "affiliate": null,
+    "source": "manual",
     "updatedAt": "2026-10-10"
   },
   {
