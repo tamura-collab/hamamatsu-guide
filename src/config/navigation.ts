@@ -8,7 +8,6 @@ export const mainNav: NavItem[] = [
   { label: '暮らす', href: '/living' },
   { label: '訪れる', href: '/travel' },
   { label: '記事一覧', href: '/articles' },
-  { label: '運営者情報', href: '/about' },
 ];
 
 /** フッターのポリシー系リンク */
