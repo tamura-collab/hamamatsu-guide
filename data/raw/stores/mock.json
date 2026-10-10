@@ -300,7 +300,7 @@
   },
   {
     "name": "光回線相談カウンター 浜松駅南店",
-    "category": "fiber",
+    "category": "internet",
     "genre": "回線相談窓口",
     "address": "静岡県浜松市中央区砂山町２丁目６-７",
     "tel": "000-000-0016",
@@ -318,7 +318,7 @@
   },
   {
     "name": "遠州ケーブルネット 本社窓口",
-    "category": "fiber",
+    "category": "internet",
     "genre": "ケーブルテレビ・光回線",
     "address": "静岡県浜松市中央区舞阪町舞阪3丁目20-16",
     "tel": "０００-０００-００１７",
@@ -336,7 +336,7 @@
   },
   {
     "name": "家電のハママツ 高塚店 通信コーナー",
-    "category": "fiber",
+    "category": "internet",
     "genre": "家電量販店",
     "address": "静岡県浜松市中央区高塚町４丁目１２-１１",
     "tel": "000-000-0018",
@@ -354,7 +354,7 @@
   },
   {
     "name": "スマホ&光 相談ショップ 浜北店",
-    "category": "fiber",
+    "category": "internet",
     "genre": "キャリアショップ",
     "address": "静岡県浜松市浜名区小松5丁目19-18",
     "tel": "000-000-0019",

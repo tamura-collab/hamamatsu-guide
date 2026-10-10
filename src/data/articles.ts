@@ -21,7 +21,7 @@ export const articles: Article[] = [
     title: '【2026年版】浜松市で使える光回線5社を徹底比較｜エリア・速度・料金',
     excerpt: '中央区・浜名区・天竜区の提供エリアの確認方法と、マンション・戸建て別の選び方をまとめました。',
     section: 'living',
-    category: 'fiber',
+    category: 'internet',
     publishedAt: '2026-10-08',
     readingMinutes: 8,
     isPr: true,

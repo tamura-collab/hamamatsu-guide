@@ -774,158 +774,254 @@
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "fiber-b287a0ad",
-    "name": "光回線相談カウンター 浜松駅南店",
-    "category": "fiber",
-    "genre": "回線相談窓口",
-    "address": "静岡県浜松市中央区砂山町2丁目6-7",
-    "tel": "000-000-0016",
-    "hours": "10:00～19:00 / 不定休",
-    "access": "浜松駅から徒歩14分",
-    "officialUrl": "https://example.com/hamamatsu/fiber/1",
-    "description": "光回線相談カウンター 浜松駅南店（回線相談窓口）。提供エリアの確認や乗り換え相談を対面で受けられます。",
+    "id": "internet-92ee3832",
+    "name": "コミュファ光",
+    "category": "internet",
+    "genre": "光回線（独自回線）",
+    "address": "Web申込（東海4県で提供。浜松市内は住所ごとに要確認）",
+    "tel": null,
+    "hours": null,
+    "access": null,
+    "officialUrl": "https://www.commufa.jp/",
+    "description": "愛知・岐阜・三重・静岡の東海4県を中心に提供されている独自回線の光サービス。au・UQ mobileとのセット割に対応しています。",
     "localNote": [
-      {
-        "type": "landmark",
-        "text": "中央図書館の近く",
-        "source": "manual"
-      },
       {
         "type": "tip",
-        "text": "朝夕は浜松バイパスの渋滞に注意",
+        "text": "静岡県を含む東海エリア向けのサービスで、浜松市はエリアの中心圏。au・UQ mobileを使っている家庭では最初に比較したい候補",
         "source": "manual"
-      },
-      {
-        "type": "station",
-        "text": "浜松駅徒歩14分",
-        "source": "auto"
       }
     ],
     "specs": {
-      "monthlyFee": 5980,
-      "maxSpeedGbps": 1,
-      "consultation": true,
-      "stationWalkMin": 14,
-      "parking": null
+      "lineType": "独自回線",
+      "feeHouse": 5720,
+      "feeMansion": 4620,
+      "maxSpeedGbps": 10,
+      "setDiscount": "au・UQ mobile",
+      "setAu": true,
+      "setDocomo": false,
+      "setSoftbank": false,
+      "noConstruction": false,
+      "contract": "2年（自動更新）"
     },
-    "features": [],
-    "priceNote": null,
-    "chain": false,
-    "serviceType": "store",
-    "affiliate": {
-      "url": "https://example.com/aff/fiber/1",
-      "label": null,
-      "program": "サンプルASP"
-    },
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "fiber-3fd51dc3",
-    "name": "遠州ケーブルネット 本社窓口",
-    "category": "fiber",
-    "genre": "ケーブルテレビ・光回線",
-    "address": "静岡県浜松市中央区舞阪町舞阪3丁目20-16",
-    "tel": "000-000-0017",
-    "hours": "10:00～19:00 / 不定休",
-    "access": "舞阪駅 徒歩7分／無料駐車場80台",
-    "officialUrl": "https://example.com/hamamatsu/fiber/2",
-    "description": "遠州ケーブルネット 本社窓口（ケーブルテレビ・光回線）。提供エリアの確認や乗り換え相談を対面で受けられます。",
-    "localNote": [
-      {
-        "type": "station",
-        "text": "舞阪駅徒歩7分",
-        "source": "auto"
-      },
-      {
-        "type": "parking",
-        "text": "無料駐車場80台",
-        "source": "auto"
-      }
+    "features": [
+      "東海4県中心の独自回線",
+      "1ギガ・10ギガのプラン",
+      "au・UQ mobileのセット割"
     ],
-    "specs": {
-      "monthlyFee": 4240,
-      "maxSpeedGbps": 1,
-      "consultation": true,
-      "stationWalkMin": 7,
-      "parking": true
-    },
-    "features": [],
-    "priceNote": null,
+    "priceNote": "1ギガの標準月額（戸建て5,720円・マンション4,620円）。スタート割適用時は各550円引きの掲載例があります。10ギガは別料金・提供エリア限定です。",
     "chain": false,
-    "serviceType": "store",
-    "affiliate": {
-      "url": "https://example.com/aff/fiber/2",
-      "label": null,
-      "program": "サンプルASP"
-    },
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "fiber-c902a84c",
-    "name": "家電のハママツ 高塚店 通信コーナー",
-    "category": "fiber",
-    "genre": "家電量販店",
-    "address": "静岡県浜松市中央区高塚町4丁目12-11",
-    "tel": "000-000-0018",
-    "hours": "10:00～20:00",
-    "access": "高塚駅から徒歩2分",
-    "officialUrl": "https://example.com/hamamatsu/fiber/3",
-    "description": "家電のハママツ 高塚店 通信コーナー（家電量販店）。提供エリアの確認や乗り換え相談を対面で受けられます。",
-    "localNote": [
-      {
-        "type": "station",
-        "text": "高塚駅徒歩2分",
-        "source": "auto"
-      }
-    ],
-    "specs": {
-      "monthlyFee": 5730,
-      "maxSpeedGbps": 1,
-      "consultation": true,
-      "stationWalkMin": 2,
-      "parking": null
-    },
-    "features": [],
-    "priceNote": null,
-    "chain": false,
-    "serviceType": "store",
+    "serviceType": "online",
     "affiliate": null,
-    "source": "mock",
+    "source": "manual",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "fiber-e4556098",
-    "name": "スマホ&光 相談ショップ 浜北店",
-    "category": "fiber",
-    "genre": "キャリアショップ",
-    "address": "静岡県浜松市浜名区小松5丁目19-18",
-    "tel": "000-000-0019",
-    "hours": "10:00～19:00 / 不定休",
-    "access": "小松駅から徒歩11分",
-    "officialUrl": "https://example.com/hamamatsu/fiber/4",
-    "description": "スマホ&光 相談ショップ 浜北店（キャリアショップ）。提供エリアの確認や乗り換え相談を対面で受けられます。",
+    "id": "internet-b1693afb",
+    "name": "NURO光",
+    "category": "internet",
+    "genre": "光回線（独自回線）",
+    "address": "Web申込（静岡県で提供。浜松市内は住所ごとに要確認）",
+    "tel": null,
+    "hours": null,
+    "access": null,
+    "officialUrl": "https://www.nuro.jp/hikari/",
+    "description": "下り最大2ギガ・10ギガのプランがある光回線。戸建てプランは契約期間・契約解除料なしと公式に発表されています。",
     "localNote": [
       {
-        "type": "station",
-        "text": "小松駅徒歩11分",
-        "source": "auto"
+        "type": "tip",
+        "text": "浜松市では中央区・浜名区が対応地域の目安。10ギガは浜松市が対象か住所で確認が必要",
+        "source": "manual"
       }
     ],
     "specs": {
-      "monthlyFee": 4670,
-      "maxSpeedGbps": 1,
-      "consultation": true,
-      "stationWalkMin": 11,
-      "parking": null
+      "lineType": "独自回線",
+      "feeHouse": 5500,
+      "feeMansion": 3850,
+      "maxSpeedGbps": 10,
+      "setDiscount": "ソフトバンク・ワイモバイル",
+      "setAu": false,
+      "setDocomo": false,
+      "setSoftbank": true,
+      "noConstruction": false,
+      "contract": "なし（戸建て・公式発表）"
     },
-    "features": [],
-    "priceNote": null,
+    "features": [
+      "2ギガ・10ギガのプラン",
+      "戸建ては契約期間・解約金なし（公式発表）",
+      "ソフトバンク・ワイモバイルのセット割"
+    ],
+    "priceNote": "2ギガの基本料金（戸建て5,500円）。10ギガは6,050円。「定額割」適用で戸建ては3年間3,980円の案内あり。マンション料金は掲載サイトの例です。",
     "chain": false,
-    "serviceType": "store",
+    "serviceType": "online",
     "affiliate": null,
-    "source": "mock",
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "internet-14407d54",
+    "name": "ドコモ光",
+    "category": "internet",
+    "genre": "光回線（コラボ光）",
+    "address": "Web申込（全国のフレッツ光提供エリア）",
+    "tel": null,
+    "hours": null,
+    "access": null,
+    "officialUrl": "https://www.docomo.ne.jp/internet/hikari/",
+    "description": "NTT東日本・西日本の光回線を使うコラボ光。プロバイダを選んで申し込み、ドコモのスマホとのセット割に対応しています。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "ドコモのスマホを使っている家庭では、セット割でスマホ代とまとめて安くできる定番の選択肢",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "lineType": "コラボ光",
+      "feeHouse": 5720,
+      "feeMansion": 4400,
+      "maxSpeedGbps": 10,
+      "setDiscount": "ドコモ",
+      "setAu": false,
+      "setDocomo": true,
+      "setSoftbank": false,
+      "noConstruction": false,
+      "contract": "2年定期（定期契約なしプランもあり）"
+    },
+    "features": [
+      "プロバイダを選べる",
+      "ドコモのスマホとのセット割",
+      "1ギガ・10ギガのプラン"
+    ],
+    "priceNote": "1ギガ・タイプA・2年定期の月額（戸建て5,720円・マンション4,400円）。タイプBは各220円高く、定期契約なしは割高です。10ギガは提供エリア限定。",
+    "chain": false,
+    "serviceType": "online",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "internet-a3dd4b14",
+    "name": "ソフトバンク光",
+    "category": "internet",
+    "genre": "光回線（コラボ光）",
+    "address": "Web申込（全国のフレッツ光提供エリア）",
+    "tel": null,
+    "hours": null,
+    "access": null,
+    "officialUrl": "https://www.softbank.jp/internet/sbhikari/",
+    "description": "NTTの光回線を使うコラボ光。ソフトバンク・ワイモバイルのスマホとセットで「おうち割 光セット」が適用できます。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "ソフトバンク・ワイモバイルのスマホを使っている家庭は、セット割の対象になるか確認したい",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "lineType": "コラボ光",
+      "feeHouse": 5720,
+      "feeMansion": 4180,
+      "maxSpeedGbps": 10,
+      "setDiscount": "ソフトバンク・ワイモバイル",
+      "setAu": false,
+      "setDocomo": false,
+      "setSoftbank": true,
+      "noConstruction": false,
+      "contract": "2年（自動更新）／自動更新なしプランもあり"
+    },
+    "features": [
+      "ソフトバンク・ワイモバイルのセット割（おうち割 光セット）",
+      "1ギガ・10ギガのプラン"
+    ],
+    "priceNote": "1ギガ・2年自動更新プランの月額（戸建て5,720円・マンション4,180円）。別途ホームゲートウェイ等の機器料がかかる場合あり。2026年12月1日から月額330円の値上げ予定と報じられています。",
+    "chain": false,
+    "serviceType": "online",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "internet-7658a892",
+    "name": "auひかり（マンションタイプ）",
+    "category": "internet",
+    "genre": "光回線（KDDI）",
+    "address": "Web申込（静岡県は戸建てタイプの提供なし。マンションは建物の設備次第）",
+    "tel": null,
+    "hours": null,
+    "access": null,
+    "officialUrl": "https://www.au.com/internet/",
+    "description": "KDDIの光回線サービス。静岡県では戸建て向けの「ホーム」タイプが提供されておらず、マンションタイプは建物にauひかりの設備がある場合に利用できます。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "浜松市の戸建てでは申し込めない。マンションは郵便番号と建物名で公式サイトの対応状況を確認",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "lineType": "独自回線（マンションのみ）",
+      "feeHouse": null,
+      "feeMansion": null,
+      "maxSpeedGbps": null,
+      "setDiscount": "au・UQ mobile",
+      "setAu": true,
+      "setDocomo": false,
+      "setSoftbank": false,
+      "noConstruction": false,
+      "contract": "建物・プランにより異なる"
+    },
+    "features": [
+      "静岡県は戸建てタイプの提供なし",
+      "マンションは建物の設備がある場合のみ",
+      "au・UQ mobileのセット割"
+    ],
+    "priceNote": "マンションの月額は建物の設備・プランにより異なるため掲載していません。浜松市の戸建てで au・UQ mobile のセット割を使いたい場合は、コミュファ光も比較してください。",
+    "chain": false,
+    "serviceType": "online",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "internet-de3628d5",
+    "name": "ドコモ home 5G",
+    "category": "internet",
+    "genre": "ホームルーター",
+    "address": "Web申込（ドコモの5G・4Gエリア）",
+    "tel": null,
+    "hours": null,
+    "access": null,
+    "officialUrl": "https://www.docomo.ne.jp/home_5g/",
+    "description": "コンセントに挿すだけで使えるドコモのホームルーター。開通工事が不要で、端末が届けばすぐに使い始められます。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "賃貸で工事の許可が出ない、引っ越し直後ですぐネットが必要、といった場合の選択肢。設置場所の電波状況で速度が変わる",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "lineType": "ホームルーター（置くだけWi-Fi）",
+      "feeHouse": 5280,
+      "feeMansion": 5280,
+      "maxSpeedGbps": 4.2,
+      "setDiscount": "ドコモ",
+      "setAu": false,
+      "setDocomo": true,
+      "setSoftbank": false,
+      "noConstruction": true,
+      "contract": "なし（端末代は分割の割引条件あり）"
+    },
+    "features": [
+      "開通工事・撤去工事が不要",
+      "コンセントに挿すだけ",
+      "端末が届けばすぐ使える"
+    ],
+    "priceNote": "月額5,280円（戸建て・マンション共通）。端末代は36回分割で実質負担が軽くなる条件があり、途中解約では残債の支払いが必要です。最大4.2Gbpsは5Gの理論値で、実際の速度は環境により大きく変わります。",
+    "chain": false,
+    "serviceType": "online",
+    "affiliate": null,
+    "source": "manual",
     "updatedAt": "2026-10-10"
   },
   {

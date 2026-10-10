@@ -1,28 +1,4 @@
 {
-  "fiber-b287a0ad": {
-    "_name": "光回線相談カウンター 浜松駅南店",
-    "affiliate": {
-      "url": "https://example.com/aff/fiber/1",
-      "program": "サンプルASP"
-    },
-    "localNote": [
-      {
-        "type": "landmark",
-        "text": "中央図書館の近く"
-      },
-      {
-        "type": "tip",
-        "text": "朝夕は浜松バイパスの渋滞に注意"
-      }
-    ]
-  },
-  "fiber-3fd51dc3": {
-    "_name": "遠州ケーブルネット 本社窓口",
-    "affiliate": {
-      "url": "https://example.com/aff/fiber/2",
-      "program": "サンプルASP"
-    }
-  },
   "energy-be4b1142": {
     "_name": "遠州でんき お客さまセンター 鍛冶町",
     "affiliate": {

@@ -4,7 +4,7 @@ import { categories, getCategoryHref, sections } from '@/data/categories';
 import { siteConfig } from '@/config/site.config';
 import { url } from '@/lib/url';
 
-const quickTags = ['gym', 'fiber', 'kids-school', 'rental-car', 'hotel', 'rainy-day']
+const quickTags = ['gym', 'internet', 'kids-school', 'rental-car', 'hotel', 'rainy-day']
   .map((slug) => categories.find((c) => c.slug === slug))
   .filter((c) => c !== undefined);
 ---

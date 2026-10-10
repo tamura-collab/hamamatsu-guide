@@ -104,7 +104,7 @@ const TEMPLATES = {
     }),
     desc: (n, g) => `${g}の教室。${n}では無料体験レッスンを随時受け付けています。`,
   },
-  fiber: {
+  internet: {
     access: 'station',
     hours: ['10:00～20:00', '10:00～19:00 / 不定休'],
     items: [
@@ -113,7 +113,7 @@ const TEMPLATES = {
       ['家電のハママツ 高塚店 通信コーナー', '家電量販店', {}],
       ['スマホ&光 相談ショップ 浜北店', 'キャリアショップ', {}],
     ],
-    specs: () => ({ monthlyFee: price(4200, 6400, 10), maxSpeedGbps: yes(0.3) ? 10 : 1, consultation: true }),
+    specs: () => ({ lineType: 'コラボ光', feeHouse: price(5200, 6400, 10), feeMansion: price(3800, 4800, 10), maxSpeedGbps: yes(0.3) ? 10 : 1, noConstruction: false }),
     desc: (n, g) => `${n}（${g}）。提供エリアの確認や乗り換え相談を対面で受けられます。`,
   },
   energy: {
