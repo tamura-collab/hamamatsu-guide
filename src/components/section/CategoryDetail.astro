@@ -2,11 +2,13 @@
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Breadcrumb from '@/components/ui/Breadcrumb.astro';
 import Icon from '@/components/ui/Icon.astro';
-import PrBadge from '@/components/ui/PrBadge.astro';
 import ArticleCard from '@/components/cards/ArticleCard.astro';
+import PlaceCard from '@/components/place/PlaceCard.astro';
 import { sections, type Category } from '@/data/categories';
 import { sortedArticles } from '@/data/articles';
+import { getPlaceHref, getPlaces, sortLocalNotes } from '@/data/places';
 import { siteConfig } from '@/config/site';
+import { url } from '@/lib/url';
 
 interface Props {
   category: Category;
@@ -15,15 +17,12 @@ interface Props {
 const { category } = Astro.props;
 const s = sections[category.section];
 const isLiving = category.section === 'living';
+const places = getPlaces(category.section, category.slug);
 const related = sortedArticles.filter((a) => a.category === category.slug);
+const lastUpdated = places.map((p) => p.updatedAt).sort().at(-1);
 
-// モックの比較表データ（実データは今後 DB / CMS から取得する想定）
-const rows = ['A', 'B', 'C'].map((k, i) => ({
-  name: `サンプル${category.title.split('・')[0]} ${k}`,
-  rank: i + 1,
-  isPr: i === 0,
-  values: category.points.map(() => '—'),
-}));
+/** 比較表の「アクセス」列には、最も判断材料になる地域文脈メモを1つ出す */
+const primaryNote = (notes: (typeof places)[number]['localNote']) => sortLocalNotes(notes)[0]?.text ?? '—';
 ---
 
 <BaseLayout title={`${category.title}を比較｜${siteConfig.city.name}`} description={category.summary}>
@@ -40,66 +39,95 @@ const rows = ['A', 'B', 'C'].map((k, i) => ({
         <Icon name={category.icon} class="size-8" />
       </span>
       <div>
-        <h1 class="text-2xl font-bold leading-snug sm:text-3xl">
-          {siteConfig.city.name}の{category.title}を比較
+        <h1 class="text-2xl leading-snug font-bold sm:text-3xl">
+          {siteConfig.city.name}の{category.title}
         </h1>
         <p class="mt-1 text-sm text-muted">{category.summary}</p>
+        <p class="mt-2 text-xs text-muted">
+          掲載 <strong class="text-ink">{places.length}</strong> 件{lastUpdated && <>・情報確認日 {lastUpdated.replaceAll('-', '.')}</>}
+        </p>
       </div>
     </header>
 
-    <div class="mt-6 flex gap-2 rounded-xl border border-amber-200 bg-amber-50 p-3 text-xs leading-relaxed text-amber-900">
-      <Icon name="info" class="mt-0.5 size-4 shrink-0" />
-      <p>このページはモック画面です。比較データは今後掲載予定です。本ページには広告（PR）を含む場合があります。</p>
-    </div>
+    {
+      places.length === 0 ? (
+        <p class="mt-10 rounded-xl border border-dashed border-line p-10 text-center text-sm text-muted">
+          このカテゴリの掲載情報は準備中です。
+        </p>
+      ) : (
+        <>
+          <section class="mt-8" aria-labelledby="place-list">
+            <h2 id="place-list" class="sr-only">
+              一覧
+            </h2>
+            <ul class="grid gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
+              {places.map((place) => (
+                <li>
+                  <PlaceCard place={place} section={category.section} />
+                </li>
+              ))}
+            </ul>
+          </section>
 
-    <section class="mt-8" aria-labelledby="compare-title">
-      <h2 id="compare-title" class="text-lg font-bold">比較表（{category.count}件から抜粋）</h2>
-      <p class="mt-1 text-xs text-muted">比較ポイント：{category.points.join(' / ')}</p>
+          <section class="mt-12" aria-labelledby="compare-title">
+            <h2 id="compare-title" class="text-lg font-bold">
+              比較表
+            </h2>
+            <p class="mt-1 text-xs text-muted">比較ポイント：{category.points.join(' / ')}</p>
 
-      <!-- モバイルは横スクロール。先頭列を固定して見失わないようにする -->
-      <div class="mt-4 overflow-x-auto rounded-xl border border-line">
-        <table class="w-full min-w-[640px] border-collapse text-sm whitespace-nowrap">
-          <thead class="bg-surface text-xs text-muted">
-            <tr>
-              <th scope="col" class="sticky left-0 bg-surface px-4 py-3 text-left font-semibold">名称</th>
-              {category.points.map((p) => <th scope="col" class="px-4 py-3 text-left font-semibold">{p}</th>)}
-              <th scope="col" class="px-4 py-3"><span class="sr-only">リンク</span></th>
-            </tr>
-          </thead>
-          <tbody>
-            {
-              rows.map((r) => (
-                <tr class="border-t border-line">
-                  <th scope="row" class="sticky left-0 bg-white px-4 py-3 text-left font-bold">
-                    <span class="flex items-center gap-2">
-                      <span class="grid size-6 place-items-center rounded-full bg-brand-700 text-[11px] text-white">{r.rank}</span>
-                      {r.name}
-                      {r.isPr && <PrBadge />}
-                    </span>
-                  </th>
-                  {r.values.map((v) => (
-                    <td class="px-4 py-3 text-muted">{v}</td>
+            <div class="mt-4 overflow-x-auto rounded-xl border border-line">
+              <table class="w-full min-w-[640px] border-collapse text-sm">
+                <thead class="bg-surface text-xs whitespace-nowrap text-muted">
+                  <tr>
+                    <th scope="col" class="sticky left-0 bg-surface px-4 py-3 text-left font-semibold">
+                      名称
+                    </th>
+                    <th scope="col" class="px-4 py-3 text-left font-semibold">
+                      ジャンル
+                    </th>
+                    <th scope="col" class="px-4 py-3 text-left font-semibold">
+                      アクセス
+                    </th>
+                    <th scope="col" class="px-4 py-3 text-left font-semibold">
+                      営業時間
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {places.map((place) => (
+                    <tr class="border-t border-line">
+                      <th scope="row" class="sticky left-0 max-w-56 bg-white px-4 py-3 text-left font-bold">
+                        <a href={url(getPlaceHref(category.section, place))} class="text-brand-700 hover:underline">
+                          {place.name}
+                        </a>
+                      </th>
+                      <td class="px-4 py-3 whitespace-nowrap text-muted">{place.genre}</td>
+                      <td class="px-4 py-3 whitespace-nowrap">{primaryNote(place.localNote)}</td>
+                      <td class="px-4 py-3 text-muted">{place.hours ?? '—'}</td>
+                    </tr>
                   ))}
-                  <td class="px-4 py-3 text-right">
-                    <span class="inline-flex cursor-not-allowed items-center gap-1 rounded-lg bg-surface px-3 py-1.5 text-xs font-semibold text-muted">
-                      公式サイト（準備中）
-                    </span>
-                  </td>
-                </tr>
-              ))
-            }
-          </tbody>
-        </table>
-      </div>
-      <p class="mt-2 text-[11px] text-muted">
-        ※外部リンクには rel="sponsored" を付与し、広告であることを明示する運用とします。
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </>
+      )
+    }
+
+    <aside class="mt-8 flex gap-3 rounded-xl border border-line bg-surface p-4 text-xs leading-relaxed text-muted">
+      <Icon name="info" class="mt-0.5 size-4 shrink-0 text-brand-600" />
+      <p>
+        掲載情報は編集部の調査時点のものです。営業時間・料金等は変更される場合があるため、最新情報は各公式サイトでご確認ください。
+        本ページには広告（PR）を含む場合があります（<a href={url('/affiliate')} class="text-brand-700 underline">詳細</a>）。
       </p>
-    </section>
+    </aside>
 
     {
       related.length > 0 && (
         <section class="mt-12" aria-labelledby="detail-related">
-          <h2 id="detail-related" class="mb-4 text-lg font-bold">関連記事</h2>
+          <h2 id="detail-related" class="mb-4 text-lg font-bold">
+            関連記事
+          </h2>
           <ul class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {related.map((a) => (
               <li>

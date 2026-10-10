@@ -1,0 +1,673 @@
+[
+  {
+    "id": "gym-b75bc8eb",
+    "name": "24h FIT みなと中央店",
+    "category": "gym",
+    "genre": "24時間ジム",
+    "address": "〇〇県みなと市中央2丁目21-7",
+    "tel": "000-000-0001",
+    "hours": "24時間営業（スタッフ在籍 10:00～19:00）",
+    "access": "みなと中央通り沿い／みなと駅から徒歩5分",
+    "officialUrl": "https://example.com/minato/gym/1",
+    "description": "24時間ジム。24h FIT みなと中央店は仕事帰りにも通いやすい立地で、初めての方向けの体験プランもあります。",
+    "localNote": [
+      {
+        "type": "landmark",
+        "text": "郵便局の向かい",
+        "source": "manual"
+      },
+      {
+        "type": "tip",
+        "text": "平日夜は混みやすいので土日午前が狙い目",
+        "source": "manual"
+      },
+      {
+        "type": "station",
+        "text": "みなと駅徒歩5分",
+        "source": "auto"
+      },
+      {
+        "type": "road",
+        "text": "みなと中央通り沿い",
+        "source": "auto"
+      }
+    ],
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "gym-568f310d",
+    "name": "フィットネスクラブ アクティオ港南",
+    "category": "gym",
+    "genre": "総合フィットネス",
+    "address": "〇〇県みなと市港南4丁目4-6",
+    "tel": "000-000-0002",
+    "hours": "7:00～23:00 / 第3月曜休",
+    "access": "臨港バイパス沿い／港南駅から徒歩12分",
+    "officialUrl": "https://example.com/minato/gym/2",
+    "description": "総合フィットネス。フィットネスクラブ アクティオ港南は仕事帰りにも通いやすい立地で、初めての方向けの体験プランもあります。",
+    "localNote": [
+      {
+        "type": "station",
+        "text": "港南駅徒歩12分",
+        "source": "auto"
+      },
+      {
+        "type": "road",
+        "text": "臨港バイパス沿い",
+        "source": "auto"
+      }
+    ],
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "gym-ebd08c84",
+    "name": "みなと市総合体育館 トレーニングルーム",
+    "category": "gym",
+    "genre": "公営ジム",
+    "address": "〇〇県みなと市北町3丁目27-5",
+    "tel": "000-000-0003",
+    "hours": "24時間営業（スタッフ在籍 10:00～19:00）",
+    "access": "国道99号沿い／北みなと駅から徒歩11分",
+    "officialUrl": "https://example.com/minato/gym/3",
+    "description": "公営ジム。みなと市総合体育館 トレーニングルームは仕事帰りにも通いやすい立地で、初めての方向けの体験プランもあります。",
+    "localNote": [
+      {
+        "type": "station",
+        "text": "北みなと駅徒歩11分",
+        "source": "auto"
+      },
+      {
+        "type": "road",
+        "text": "国道99号沿い",
+        "source": "auto"
+      }
+    ],
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "gym-6a34c599",
+    "name": "パーソナルジム BODY LAB 北町",
+    "category": "gym",
+    "genre": "パーソナルジム",
+    "address": "〇〇県みなと市北町2丁目21-2",
+    "tel": "000-000-0004",
+    "hours": "24時間営業（スタッフ在籍 10:00～19:00）",
+    "access": "北みなと駅 徒歩9分・無料駐車場18台",
+    "officialUrl": "https://example.com/minato/gym/4",
+    "description": "パーソナルジム。パーソナルジム BODY LAB 北町は仕事帰りにも通いやすい立地で、初めての方向けの体験プランもあります。",
+    "localNote": [
+      {
+        "type": "station",
+        "text": "北みなと駅徒歩9分",
+        "source": "auto"
+      },
+      {
+        "type": "parking",
+        "text": "無料駐車場18台",
+        "source": "auto"
+      }
+    ],
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "gym-6e3ee903",
+    "name": "女性専用ジム ラフィネ緑ヶ丘",
+    "category": "gym",
+    "genre": "女性専用ジム",
+    "address": "〇〇県みなと市緑ヶ丘5丁目5-19",
+    "tel": "000-000-0005",
+    "hours": "7:00～23:00 / 第3月曜休",
+    "access": "みなと環状線沿い／緑ヶ丘駅から徒歩6分",
+    "officialUrl": "https://example.com/minato/gym/5",
+    "description": "女性専用ジム。女性専用ジム ラフィネ緑ヶ丘は仕事帰りにも通いやすい立地で、初めての方向けの体験プランもあります。",
+    "localNote": [
+      {
+        "type": "station",
+        "text": "緑ヶ丘駅徒歩6分",
+        "source": "auto"
+      },
+      {
+        "type": "road",
+        "text": "みなと環状線沿い",
+        "source": "auto"
+      }
+    ],
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "car-buyback-85f19da0",
+    "name": "カーバイ みなとバイパス店",
+    "category": "car-buyback",
+    "genre": "買取専門店",
+    "address": "〇〇県みなと市北町2丁目27-19",
+    "tel": "000-000-0006",
+    "hours": "9:30～18:30 / 年中無休",
+    "access": "国道99号沿い（みなと北ICから車で3分）",
+    "officialUrl": "https://example.com/minato/car-buyback/1",
+    "description": "カーバイ みなとバイパス店（買取専門店）。出張査定にも対応しており、来店予約で待ち時間なく査定できます。",
+    "localNote": [
+      {
+        "type": "landmark",
+        "text": "郵便局の向かい",
+        "source": "manual"
+      },
+      {
+        "type": "tip",
+        "text": "冬場は路面凍結に注意",
+        "source": "manual"
+      },
+      {
+        "type": "road",
+        "text": "国道99号沿い",
+        "source": "auto"
+      },
+      {
+        "type": "car",
+        "text": "みなと北ICから車3分",
+        "source": "auto"
+      }
+    ],
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "car-buyback-4a2afa2d",
+    "name": "クルマ買取ナビ 港南店",
+    "category": "car-buyback",
+    "genre": "買取専門店",
+    "address": "〇〇県みなと市港南5丁目19-12",
+    "tel": "000-000-0007",
+    "hours": "9:30～18:30 / 年中無休",
+    "access": "臨港バイパス沿い（みなと南ICから車で4分）",
+    "officialUrl": "https://example.com/minato/car-buyback/2",
+    "description": "クルマ買取ナビ 港南店（買取専門店）。出張査定にも対応しており、来店予約で待ち時間なく査定できます。",
+    "localNote": [
+      {
+        "type": "road",
+        "text": "臨港バイパス沿い",
+        "source": "auto"
+      },
+      {
+        "type": "car",
+        "text": "みなと南ICから車4分",
+        "source": "auto"
+      }
+    ],
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "car-buyback-0660b740",
+    "name": "みなとオートセンター",
+    "category": "car-buyback",
+    "genre": "中古車販売・買取",
+    "address": "〇〇県みなと市東浜1丁目8-14",
+    "tel": "000-000-0008",
+    "hours": "10:00～20:00",
+    "access": "東浜街道沿い・駐車場なし",
+    "officialUrl": null,
+    "description": "みなとオートセンター（中古車販売・買取）。出張査定にも対応しており、来店予約で待ち時間なく査定できます。",
+    "localNote": [
+      {
+        "type": "road",
+        "text": "東浜街道沿い",
+        "source": "auto"
+      }
+    ],
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "car-buyback-290dbd10",
+    "name": "マイカーリンク 北町店",
+    "category": "car-buyback",
+    "genre": "買取・販売",
+    "address": "〇〇県みなと市北町2丁目1-1",
+    "tel": "000-000-0009",
+    "hours": "10:00～19:00 / 水曜定休",
+    "access": "国道99号沿い（みなと北ICから車で6分）",
+    "officialUrl": "https://example.com/minato/car-buyback/4",
+    "description": "マイカーリンク 北町店（買取・販売）。出張査定にも対応しており、来店予約で待ち時間なく査定できます。",
+    "localNote": [
+      {
+        "type": "road",
+        "text": "国道99号沿い",
+        "source": "auto"
+      },
+      {
+        "type": "car",
+        "text": "みなと北ICから車6分",
+        "source": "auto"
+      }
+    ],
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "car-buyback-ec68d125",
+    "name": "輸入車買取 MOTOR GATE",
+    "category": "car-buyback",
+    "genre": "輸入車専門",
+    "address": "〇〇県みなと市東浜4丁目10-2",
+    "tel": "000-000-0010",
+    "hours": "10:00～19:00 / 水曜定休",
+    "access": "東浜街道沿い（みなと南ICから車で9分）",
+    "officialUrl": "https://example.com/minato/car-buyback/5",
+    "description": "輸入車買取 MOTOR GATE（輸入車専門）。出張査定にも対応しており、来店予約で待ち時間なく査定できます。",
+    "localNote": [
+      {
+        "type": "road",
+        "text": "東浜街道沿い",
+        "source": "auto"
+      },
+      {
+        "type": "car",
+        "text": "みなと南ICから車9分",
+        "source": "auto"
+      }
+    ],
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "kids-school-cf445abf",
+    "name": "キッズ英会話 Little Harbor",
+    "category": "kids-school",
+    "genre": "英会話",
+    "address": "〇〇県みなと市北町3丁目15-10",
+    "tel": "000-000-0011",
+    "hours": "15:00～21:00 / 日曜休",
+    "access": "北みなと駅 徒歩6分",
+    "officialUrl": "https://example.com/minato/kids-school/1",
+    "description": "英会話の教室。キッズ英会話 Little Harborでは無料体験レッスンを随時受け付けています。",
+    "localNote": [
+      {
+        "type": "landmark",
+        "text": "市立図書館の向かい",
+        "source": "manual"
+      },
+      {
+        "type": "tip",
+        "text": "平日夜は混みやすいので土日午前が狙い目",
+        "source": "manual"
+      },
+      {
+        "type": "station",
+        "text": "北みなと駅徒歩6分",
+        "source": "auto"
+      }
+    ],
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "kids-school-064fe91b",
+    "name": "プログラミング教室 テックキッズ港南",
+    "category": "kids-school",
+    "genre": "プログラミング",
+    "address": "〇〇県みなと市港南5丁目4-3",
+    "tel": "000-000-0012",
+    "hours": "15:00～21:00 / 日曜休",
+    "access": "港南駅 徒歩11分",
+    "officialUrl": "https://example.com/minato/kids-school/2",
+    "description": "プログラミングの教室。プログラミング教室 テックキッズ港南では無料体験レッスンを随時受け付けています。",
+    "localNote": [
+      {
+        "type": "station",
+        "text": "港南駅徒歩11分",
+        "source": "auto"
+      }
+    ],
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "kids-school-efca62e0",
+    "name": "みなとスイミングスクール",
+    "category": "kids-school",
+    "genre": "スイミング",
+    "address": "〇〇県みなと市東浜2丁目30-6",
+    "tel": "000-000-0013",
+    "hours": "10:00～19:00 / 月曜休",
+    "access": "東浜駅から徒歩6分",
+    "officialUrl": "https://example.com/minato/kids-school/3",
+    "description": "スイミングの教室。みなとスイミングスクールでは無料体験レッスンを随時受け付けています。",
+    "localNote": [
+      {
+        "type": "station",
+        "text": "東浜駅徒歩6分",
+        "source": "auto"
+      }
+    ],
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "kids-school-27bb1913",
+    "name": "そろばん・算数教室 みらい塾",
+    "category": "kids-school",
+    "genre": "そろばん",
+    "address": "〇〇県みなと市緑ヶ丘2丁目9-12",
+    "tel": "000-000-0014",
+    "hours": "10:00～19:00 / 月曜休",
+    "access": "緑ヶ丘駅から徒歩8分",
+    "officialUrl": null,
+    "description": "そろばんの教室。そろばん・算数教室 みらい塾では無料体験レッスンを随時受け付けています。",
+    "localNote": [
+      {
+        "type": "station",
+        "text": "緑ヶ丘駅徒歩8分",
+        "source": "auto"
+      }
+    ],
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "kids-school-b7595015",
+    "name": "キッズダンススタジオ STEP",
+    "category": "kids-school",
+    "genre": "ダンス",
+    "address": "〇〇県みなと市中央3丁目28-10",
+    "tel": "000-000-0015",
+    "hours": "平日 14:00～20:00 / 土 9:00～17:00",
+    "access": "みなと駅から徒歩11分",
+    "officialUrl": "https://example.com/minato/kids-school/5",
+    "description": "ダンスの教室。キッズダンススタジオ STEPでは無料体験レッスンを随時受け付けています。",
+    "localNote": [
+      {
+        "type": "station",
+        "text": "みなと駅徒歩11分",
+        "source": "auto"
+      }
+    ],
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "fiber-4bd03a87",
+    "name": "光回線相談カウンター みなと駅前店",
+    "category": "fiber",
+    "genre": "回線相談窓口",
+    "address": "〇〇県みなと市東浜3丁目12-10",
+    "tel": "000-000-0016",
+    "hours": "10:00～19:00 / 不定休",
+    "access": "東浜駅 徒歩14分／駐車場なし",
+    "officialUrl": "https://example.com/minato/fiber/1",
+    "description": "光回線相談カウンター みなと駅前店（回線相談窓口）。提供エリアの確認や乗り換え相談を対面で受けられます。",
+    "localNote": [
+      {
+        "type": "landmark",
+        "text": "郵便局の向かい",
+        "source": "manual"
+      },
+      {
+        "type": "tip",
+        "text": "冬場は路面凍結に注意",
+        "source": "manual"
+      },
+      {
+        "type": "station",
+        "text": "東浜駅徒歩14分",
+        "source": "auto"
+      }
+    ],
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "fiber-48b1dba2",
+    "name": "ケーブルテレビみなと 本社窓口",
+    "category": "fiber",
+    "genre": "ケーブルテレビ・光回線",
+    "address": "〇〇県みなと市緑ヶ丘4丁目13-14",
+    "tel": "000-000-0017",
+    "hours": "10:00～19:00 / 不定休",
+    "access": "緑ヶ丘駅 徒歩7分",
+    "officialUrl": "https://example.com/minato/fiber/2",
+    "description": "ケーブルテレビみなと 本社窓口（ケーブルテレビ・光回線）。提供エリアの確認や乗り換え相談を対面で受けられます。",
+    "localNote": [
+      {
+        "type": "station",
+        "text": "緑ヶ丘駅徒歩7分",
+        "source": "auto"
+      }
+    ],
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "fiber-036b1719",
+    "name": "家電のミナト 港南店 通信コーナー",
+    "category": "fiber",
+    "genre": "家電量販店",
+    "address": "〇〇県みなと市港南5丁目18-9",
+    "tel": null,
+    "hours": "10:00～20:00",
+    "access": "港南駅から徒歩12分",
+    "officialUrl": "https://example.com/minato/fiber/3",
+    "description": "家電のミナト 港南店 通信コーナー（家電量販店）。提供エリアの確認や乗り換え相談を対面で受けられます。",
+    "localNote": [
+      {
+        "type": "station",
+        "text": "港南駅徒歩12分",
+        "source": "auto"
+      }
+    ],
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "fiber-80fde2d8",
+    "name": "スマホ&光 相談ショップ 北町店",
+    "category": "fiber",
+    "genre": "キャリアショップ",
+    "address": "〇〇県みなと市北町2丁目11-14",
+    "tel": "000-000-0018",
+    "hours": "10:00～19:00 / 不定休",
+    "access": "北みなと駅 徒歩14分",
+    "officialUrl": null,
+    "description": "スマホ&光 相談ショップ 北町店（キャリアショップ）。提供エリアの確認や乗り換え相談を対面で受けられます。",
+    "localNote": [
+      {
+        "type": "station",
+        "text": "北みなと駅徒歩14分",
+        "source": "auto"
+      }
+    ],
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "energy-cef7879d",
+    "name": "みなと電力 お客さまセンター",
+    "category": "energy",
+    "genre": "地域電力",
+    "address": "〇〇県みなと市中央4丁目25-5",
+    "tel": "000-000-0019",
+    "hours": "9:00～17:00 / 土日祝休",
+    "access": "みなと駅から徒歩6分／駐車場なし",
+    "officialUrl": null,
+    "description": "地域電力の窓口。みなと電力 お客さまセンターでは料金プランのシミュレーションができます。",
+    "localNote": [
+      {
+        "type": "landmark",
+        "text": "市立図書館の向かい",
+        "source": "manual"
+      },
+      {
+        "type": "tip",
+        "text": "冬場は路面凍結に注意",
+        "source": "manual"
+      },
+      {
+        "type": "station",
+        "text": "みなと駅徒歩6分",
+        "source": "auto"
+      }
+    ],
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "energy-7b137542",
+    "name": "みなとガス ショールーム",
+    "category": "energy",
+    "genre": "都市ガス",
+    "address": "〇〇県みなと市緑ヶ丘4丁目12-17",
+    "tel": "000-000-0020",
+    "hours": "10:00～18:00",
+    "access": "緑ヶ丘駅 徒歩7分",
+    "officialUrl": "https://example.com/minato/energy/2",
+    "description": "都市ガスの窓口。みなとガス ショールームでは料金プランのシミュレーションができます。",
+    "localNote": [
+      {
+        "type": "station",
+        "text": "緑ヶ丘駅徒歩7分",
+        "source": "auto"
+      }
+    ],
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "energy-b2c22537",
+    "name": "でんきの相談所 緑ヶ丘",
+    "category": "energy",
+    "genre": "新電力 相談窓口",
+    "address": "〇〇県みなと市緑ヶ丘5丁目12-20",
+    "tel": "000-000-0021",
+    "hours": "9:00～17:00 / 土日祝休",
+    "access": "緑ヶ丘駅から徒歩12分",
+    "officialUrl": "https://example.com/minato/energy/3",
+    "description": "新電力 相談窓口の窓口。でんきの相談所 緑ヶ丘では料金プランのシミュレーションができます。",
+    "localNote": [
+      {
+        "type": "station",
+        "text": "緑ヶ丘駅徒歩12分",
+        "source": "auto"
+      }
+    ],
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "moving-929b1298",
+    "name": "みなと引越センター",
+    "category": "moving",
+    "genre": "引越し",
+    "address": "〇〇県みなと市中央3丁目6-2",
+    "tel": "000-000-0022",
+    "hours": "8:00～20:00 / 年中無休",
+    "access": "みなと中央通り沿い（みなと中央ICから車で14分）",
+    "officialUrl": null,
+    "description": "みなと引越センター（引越し）。市内の近距離引越しや単身パックの見積もりに対応しています。",
+    "localNote": [
+      {
+        "type": "landmark",
+        "text": "市立図書館の向かい",
+        "source": "manual"
+      },
+      {
+        "type": "tip",
+        "text": "平日夜は混みやすいので土日午前が狙い目",
+        "source": "manual"
+      },
+      {
+        "type": "road",
+        "text": "みなと中央通り沿い",
+        "source": "auto"
+      },
+      {
+        "type": "car",
+        "text": "みなと中央ICから車14分",
+        "source": "auto"
+      }
+    ],
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "moving-b62e343d",
+    "name": "ハーバー引越サービス",
+    "category": "moving",
+    "genre": "引越し",
+    "address": "〇〇県みなと市東浜4丁目21-3",
+    "tel": "000-000-0023",
+    "hours": "8:00～20:00 / 年中無休",
+    "access": "東浜街道沿い（みなと南ICから車で15分）",
+    "officialUrl": "https://example.com/minato/moving/2",
+    "description": "ハーバー引越サービス（引越し）。市内の近距離引越しや単身パックの見積もりに対応しています。",
+    "localNote": [
+      {
+        "type": "road",
+        "text": "東浜街道沿い",
+        "source": "auto"
+      },
+      {
+        "type": "car",
+        "text": "みなと南ICから車15分",
+        "source": "auto"
+      }
+    ],
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "moving-b5743063",
+    "name": "エコ回収みなと",
+    "category": "moving",
+    "genre": "不用品回収",
+    "address": "〇〇県みなと市東浜2丁目13-15",
+    "tel": null,
+    "hours": "9:00～18:00 / 日曜休",
+    "access": "東浜街道沿い（みなと南ICから車で8分）",
+    "officialUrl": "https://example.com/minato/moving/3",
+    "description": "エコ回収みなと（不用品回収）。市内の近距離引越しや単身パックの見積もりに対応しています。",
+    "localNote": [
+      {
+        "type": "road",
+        "text": "東浜街道沿い",
+        "source": "auto"
+      },
+      {
+        "type": "car",
+        "text": "みなと南ICから車8分",
+        "source": "auto"
+      }
+    ],
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "moving-0228b87d",
+    "name": "みなと市 粗大ごみ受付センター",
+    "category": "moving",
+    "genre": "公的窓口",
+    "address": "〇〇県みなと市港南2丁目16-18",
+    "tel": "000-000-0024",
+    "hours": "9:00～18:00 / 日曜休",
+    "access": "臨港バイパス沿い（みなと南ICから車で11分）",
+    "officialUrl": "https://example.com/minato/moving/4",
+    "description": "みなと市 粗大ごみ受付センター（公的窓口）。市内の近距離引越しや単身パックの見積もりに対応しています。",
+    "localNote": [
+      {
+        "type": "road",
+        "text": "臨港バイパス沿い",
+        "source": "auto"
+      },
+      {
+        "type": "car",
+        "text": "みなと南ICから車11分",
+        "source": "auto"
+      }
+    ],
+    "source": "mock",
+    "updatedAt": "2026-10-10"
+  }
+]

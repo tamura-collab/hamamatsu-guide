@@ -6,10 +6,14 @@ import Breadcrumb from '@/components/ui/Breadcrumb.astro';
 import Icon from '@/components/ui/Icon.astro';
 import CategoryCard from '@/components/cards/CategoryCard.astro';
 import ArticleCard from '@/components/cards/ArticleCard.astro';
+import PlaceCard from '@/components/place/PlaceCard.astro';
 import { categories, sections } from '@/data/categories';
 import { sortedArticles } from '@/data/articles';
+import { getPlaces } from '@/data/places';
 import { url } from '@/lib/url';
 
+const places = (['living', 'travel'] as const).flatMap((section) => getPlaces(section).map((place) => ({ section, place })));
+const categoryTitle = (slug: string) => categories.find((c) => c.slug === slug)?.title;
 const keywords = (...parts: (string | undefined)[]) => parts.filter(Boolean).join(' ').toLowerCase();
 ---
 
@@ -36,6 +40,22 @@ const keywords = (...parts: (string | undefined)[]) => parts.filter(Boolean).joi
           categories.map((c) => (
             <li data-search={keywords(c.title, c.summary, sections[c.section].label, ...c.points)} hidden>
               <CategoryCard category={c} />
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="mt-10" data-result-group hidden>
+      <h2 class="mb-3 font-bold">店舗・スポット</h2>
+      <ul class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        {
+          places.map(({ section, place }) => (
+            <li
+              data-search={keywords(place.name, place.genre, place.address, place.access ?? undefined, categoryTitle(place.category), ...place.localNote.map((n) => n.text))}
+              hidden
+            >
+              <PlaceCard place={place} section={section} />
             </li>
           ))
         }

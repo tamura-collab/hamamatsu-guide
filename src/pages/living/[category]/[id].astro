@@ -1,0 +1,20 @@
+---
+// 詳細ページ: /living/[category]/[id]
+// src/data/stores.json の各データからビルド時に静的生成する（SSG）。
+import type { GetStaticPaths } from 'astro';
+import PlaceDetail from '@/components/place/PlaceDetail.astro';
+import { getCategoriesBySection, type Category } from '@/data/categories';
+import { getPlaces, type Place } from '@/data/places';
+
+export const getStaticPaths = (() =>
+  getCategoriesBySection('living').flatMap((category) =>
+    getPlaces('living', category.slug).map((place) => ({
+      params: { category: category.slug, id: place.id },
+      props: { place, category },
+    })),
+  )) satisfies GetStaticPaths;
+
+const { place, category } = Astro.props as { place: Place; category: Category };
+---
+
+<PlaceDetail place={place} category={category} />

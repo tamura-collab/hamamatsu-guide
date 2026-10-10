@@ -1,6 +1,7 @@
 ---
 import Icon from '@/components/ui/Icon.astro';
 import { getCategoryHref, type Category } from '@/data/categories';
+import { getPlaceCount } from '@/data/places';
 import { url } from '@/lib/url';
 
 interface Props {
@@ -11,6 +12,7 @@ interface Props {
 
 const { category, variant = 'compact' } = Astro.props;
 const isLiving = category.section === 'living';
+const count = getPlaceCount(category.section, category.slug);
 ---
 
 <a
@@ -61,7 +63,7 @@ const isLiving = category.section === 'living';
 
   <span class="mt-auto flex items-center justify-between pt-4 text-xs">
     <span class="text-muted">
-      掲載 <strong class="text-sm text-ink">{category.count}</strong> 件
+      掲載 <strong class="text-sm text-ink">{count}</strong> 件
     </span>
     <span
       class:list={[

@@ -1,0 +1,158 @@
+{
+  "gym-b75bc8eb": {
+    "_name": "24h FIT みなと中央店",
+    "localNote": [
+      {
+        "type": "landmark",
+        "text": "郵便局の向かい"
+      },
+      {
+        "type": "tip",
+        "text": "平日夜は混みやすいので土日午前が狙い目"
+      }
+    ]
+  },
+  "car-buyback-85f19da0": {
+    "_name": "カーバイ みなとバイパス店",
+    "localNote": [
+      {
+        "type": "landmark",
+        "text": "郵便局の向かい"
+      },
+      {
+        "type": "tip",
+        "text": "冬場は路面凍結に注意"
+      }
+    ]
+  },
+  "kids-school-cf445abf": {
+    "_name": "キッズ英会話 Little Harbor",
+    "localNote": [
+      {
+        "type": "landmark",
+        "text": "市立図書館の向かい"
+      },
+      {
+        "type": "tip",
+        "text": "平日夜は混みやすいので土日午前が狙い目"
+      }
+    ]
+  },
+  "fiber-4bd03a87": {
+    "_name": "光回線相談カウンター みなと駅前店",
+    "localNote": [
+      {
+        "type": "landmark",
+        "text": "郵便局の向かい"
+      },
+      {
+        "type": "tip",
+        "text": "冬場は路面凍結に注意"
+      }
+    ]
+  },
+  "energy-cef7879d": {
+    "_name": "みなと電力 お客さまセンター",
+    "localNote": [
+      {
+        "type": "landmark",
+        "text": "市立図書館の向かい"
+      },
+      {
+        "type": "tip",
+        "text": "冬場は路面凍結に注意"
+      }
+    ]
+  },
+  "moving-929b1298": {
+    "_name": "みなと引越センター",
+    "localNote": [
+      {
+        "type": "landmark",
+        "text": "市立図書館の向かい"
+      },
+      {
+        "type": "tip",
+        "text": "平日夜は混みやすいので土日午前が狙い目"
+      }
+    ]
+  },
+  "rental-car-f9d7ad7f": {
+    "_name": "みなとレンタカー 駅前店",
+    "localNote": [
+      {
+        "type": "landmark",
+        "text": "郵便局の向かい"
+      },
+      {
+        "type": "tip",
+        "text": "冬場は路面凍結に注意"
+      }
+    ]
+  },
+  "hotel-d9b6a113": {
+    "_name": "ホテルみなとシティ",
+    "localNote": [
+      {
+        "type": "landmark",
+        "text": "中央公園の向かい"
+      },
+      {
+        "type": "tip",
+        "text": "冬場は路面凍結に注意"
+      }
+    ]
+  },
+  "rainy-day-81a07daf": {
+    "_name": "みなと市立科学館",
+    "localNote": [
+      {
+        "type": "landmark",
+        "text": "市民病院の向かい"
+      },
+      {
+        "type": "tip",
+        "text": "平日夜は混みやすいので土日午前が狙い目"
+      }
+    ]
+  },
+  "night-bus-9f032f74": {
+    "_name": "みなと駅前バスターミナル",
+    "localNote": [
+      {
+        "type": "landmark",
+        "text": "郵便局の向かい"
+      },
+      {
+        "type": "tip",
+        "text": "冬場は路面凍結に注意"
+      }
+    ]
+  },
+  "gourmet-65facd5b": {
+    "_name": "港町食堂 うみかぜ",
+    "localNote": [
+      {
+        "type": "landmark",
+        "text": "市民病院の向かい"
+      },
+      {
+        "type": "tip",
+        "text": "平日夜は混みやすいので土日午前が狙い目"
+      }
+    ]
+  },
+  "parking-22b3f7a4": {
+    "_name": "みなと中央パーキング",
+    "localNote": [
+      {
+        "type": "landmark",
+        "text": "中央公園の向かい"
+      },
+      {
+        "type": "tip",
+        "text": "駅の東口から出ると近い"
+      }
+    ]
+  }
+}

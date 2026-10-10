@@ -1,0 +1,52 @@
+---
+import Icon from '@/components/ui/Icon.astro';
+import LocalNoteChips from './LocalNoteChips.astro';
+import { getPlaceHref, type Place } from '@/data/places';
+import type { SectionKey } from '@/data/categories';
+import { url } from '@/lib/url';
+
+interface Props {
+  place: Place;
+  section: SectionKey;
+}
+
+const { place, section } = Astro.props;
+const isLiving = section === 'living';
+---
+
+<a
+  href={url(getPlaceHref(section, place))}
+  class:list={[
+    'group flex h-full flex-col rounded-2xl border border-line bg-white p-4 transition hover:-translate-y-0.5 hover:shadow-lg sm:p-5',
+    isLiving ? 'hover:border-living-500/40' : 'hover:border-travel-500/40',
+  ]}
+>
+  <span
+    class:list={[
+      'self-start rounded-full px-2 py-0.5 text-[11px] font-bold',
+      isLiving ? 'bg-living-50 text-living-700' : 'bg-travel-50 text-travel-700',
+    ]}
+  >
+    {place.genre}
+  </span>
+  <h3 class="mt-2 text-[15px] leading-snug font-bold group-hover:text-brand-700 sm:text-base">{place.name}</h3>
+  <p class="mt-1 flex items-start gap-1 text-xs text-muted">
+    <Icon name="mapPin" class="mt-0.5 size-3.5 shrink-0" />
+    {place.address.replace(/^.+?[都道府県]/, '')}
+  </p>
+  {
+    place.hours && (
+      <p class="mt-0.5 flex items-start gap-1 text-xs text-muted">
+        <Icon name="clock" class="mt-0.5 size-3.5 shrink-0" />
+        {place.hours}
+      </p>
+    )
+  }
+  <div class="mt-3">
+    <LocalNoteChips notes={place.localNote} limit={3} />
+  </div>
+  <span class:list={['mt-auto inline-flex items-center gap-0.5 self-end pt-3 text-xs font-semibold', isLiving ? 'text-living-700' : 'text-travel-700']}>
+    詳細を見る
+    <Icon name="chevronRight" class="size-4 transition-transform group-hover:translate-x-0.5" />
+  </span>
+</a>
