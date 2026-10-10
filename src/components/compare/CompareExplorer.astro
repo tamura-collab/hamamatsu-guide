@@ -34,8 +34,9 @@ const cheapest = new Map(
     .filter((a) => a.type === 'price')
     .map((a) => {
       const values = places.map((p) => specNumber(p.specs[a.key])).filter((v): v is number => v !== null);
-      // 全件同じ値（例: 査定無料）の場合は「最安」を付けない
-      return [a.key, values.length > 1 && new Set(values).size > 1 ? Math.min(...values) : undefined];
+      // 全件同じ値（例: 査定無料）や、最安が無料（「無料」と表示済み）の場合は「最安」を付けない
+      const min = Math.min(...values);
+      return [a.key, values.length > 1 && new Set(values).size > 1 && min > 0 ? min : undefined];
     }),
 );
 

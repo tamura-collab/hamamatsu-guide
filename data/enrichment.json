@@ -1,28 +1,4 @@
 {
-  "rainy-day-b91d2c94": {
-    "_name": "はままつサイエンスラボ 駅南",
-    "affiliate": {
-      "url": "https://example.com/aff/rainy-day/1",
-      "program": "サンプルASP"
-    },
-    "localNote": [
-      {
-        "type": "landmark",
-        "text": "市役所の近く"
-      },
-      {
-        "type": "tip",
-        "text": "朝夕は浜松バイパスの渋滞に注意"
-      }
-    ]
-  },
-  "rainy-day-cd71cf15": {
-    "_name": "浜名湖アクアミュージアム 舞阪",
-    "affiliate": {
-      "url": "https://example.com/aff/rainy-day/2",
-      "program": "サンプルASP"
-    }
-  },
   "night-bus-ba421e05": {
     "_name": "浜松駅 高速バスのりば（駅南）",
     "affiliate": {

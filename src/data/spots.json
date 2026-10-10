@@ -510,211 +510,262 @@
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "rainy-day-b91d2c94",
-    "name": "はままつサイエンスラボ 駅南",
-    "category": "rainy-day",
-    "genre": "科学館",
-    "address": "静岡県浜松市中央区砂山町2丁目14-13",
-    "tel": null,
-    "hours": "10:00～21:00",
-    "access": "浜松駅 徒歩3分・無料駐車場63台",
-    "officialUrl": "https://example.com/hamamatsu/rainy-day/1",
-    "description": "屋内で過ごせる科学館。はままつサイエンスラボ 駅南は雨の日でも子どもと一緒に楽しめます。",
-    "localNote": [
-      {
-        "type": "landmark",
-        "text": "市役所の近く",
-        "source": "manual"
-      },
-      {
-        "type": "tip",
-        "text": "朝夕は浜松バイパスの渋滞に注意",
-        "source": "manual"
-      },
-      {
-        "type": "station",
-        "text": "浜松駅徒歩3分",
-        "source": "auto"
-      },
-      {
-        "type": "parking",
-        "text": "無料駐車場63台",
-        "source": "auto"
-      }
-    ],
-    "specs": {
-      "admission": 600,
-      "kidsFriendly": false,
-      "stayMinutes": 100,
-      "stationWalkMin": 3,
-      "parking": true
-    },
-    "features": [],
-    "priceNote": null,
-    "chain": false,
-    "serviceType": "store",
-    "affiliate": {
-      "url": "https://example.com/aff/rainy-day/1",
-      "label": null,
-      "program": "サンプルASP"
-    },
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "rainy-day-cd71cf15",
-    "name": "浜名湖アクアミュージアム 舞阪",
-    "category": "rainy-day",
-    "genre": "水族館",
-    "address": "静岡県浜松市中央区舞阪町舞阪5丁目1-6",
-    "tel": null,
-    "hours": "9:30～17:00 / 月曜休館",
-    "access": "舞阪駅から徒歩14分・駐車場57台",
-    "officialUrl": "https://example.com/hamamatsu/rainy-day/2",
-    "description": "屋内で過ごせる水族館。浜名湖アクアミュージアム 舞阪は雨の日でも子どもと一緒に楽しめます。",
-    "localNote": [
-      {
-        "type": "station",
-        "text": "舞阪駅徒歩14分",
-        "source": "auto"
-      },
-      {
-        "type": "parking",
-        "text": "駐車場57台",
-        "source": "auto"
-      }
-    ],
-    "specs": {
-      "admission": 1500,
-      "kidsFriendly": false,
-      "stayMinutes": 130,
-      "stationWalkMin": 14,
-      "parking": true
-    },
-    "features": [],
-    "priceNote": null,
-    "chain": false,
-    "serviceType": "store",
-    "affiliate": {
-      "url": "https://example.com/aff/rainy-day/2",
-      "label": null,
-      "program": "サンプルASP"
-    },
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "rainy-day-a4119239",
-    "name": "こども未来館 上島",
-    "category": "rainy-day",
-    "genre": "児童館（無料）",
-    "address": "静岡県浜松市中央区上島5丁目4-6",
-    "tel": "000-000-0036",
-    "hours": "10:00～21:00",
-    "access": "国道152号沿い／上島駅 徒歩11分",
-    "officialUrl": "https://example.com/hamamatsu/rainy-day/3",
-    "description": "屋内で過ごせる児童館（無料）。こども未来館 上島は雨の日でも子どもと一緒に楽しめます。",
-    "localNote": [
-      {
-        "type": "station",
-        "text": "上島駅徒歩11分",
-        "source": "auto"
-      },
-      {
-        "type": "road",
-        "text": "国道152号沿い",
-        "source": "auto"
-      }
-    ],
-    "specs": {
-      "admission": 0,
-      "kidsFriendly": true,
-      "stayMinutes": 120,
-      "stationWalkMin": 11,
-      "parking": null
-    },
-    "features": [],
-    "priceNote": null,
-    "chain": false,
-    "serviceType": "store",
-    "affiliate": null,
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "rainy-day-79128a7c",
-    "name": "ショッピングモール はままつテラス 入野",
-    "category": "rainy-day",
-    "genre": "商業施設",
-    "address": "静岡県浜松市中央区入野町5丁目13-7",
-    "tel": null,
-    "hours": "9:30～17:00 / 月曜休館",
-    "access": "浜松環状線沿い／高塚駅から徒歩7分",
-    "officialUrl": null,
-    "description": "屋内で過ごせる商業施設。ショッピングモール はままつテラス 入野は雨の日でも子どもと一緒に楽しめます。",
-    "localNote": [
-      {
-        "type": "station",
-        "text": "高塚駅徒歩7分",
-        "source": "auto"
-      },
-      {
-        "type": "road",
-        "text": "浜松環状線沿い",
-        "source": "auto"
-      }
-    ],
-    "specs": {
-      "admission": 0,
-      "kidsFriendly": false,
-      "stayMinutes": 180,
-      "stationWalkMin": 7,
-      "parking": null
-    },
-    "features": [],
-    "priceNote": null,
-    "chain": false,
-    "serviceType": "store",
-    "affiliate": null,
-    "source": "mock",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "rainy-day-73a1ef8b",
-    "name": "浜松ものづくり歴史館 鍛冶町",
+    "id": "rainy-day-7c360cd5",
+    "name": "浜松市楽器博物館",
     "category": "rainy-day",
     "genre": "博物館",
-    "address": "静岡県浜松市中央区鍛冶町3丁目18-7",
-    "tel": "000-000-0037",
-    "hours": "10:00～21:00",
-    "access": "第一通り駅から徒歩10分・駐車場119台",
-    "officialUrl": "https://example.com/hamamatsu/rainy-day/5",
-    "description": "屋内で過ごせる博物館。浜松ものづくり歴史館 鍛冶町は雨の日でも子どもと一緒に楽しめます。",
+    "address": "静岡県浜松市中央区中央3-9-1",
+    "tel": null,
+    "hours": "9:30～17:00（第2・4水曜休館。8月は無休）",
+    "access": "JR浜松駅から徒歩約10分",
+    "officialUrl": "https://www.gakkihaku.jp/",
+    "description": "世界の楽器を地域別に常設展示する公立の楽器博物館（常設展示は約1,500点）。「音楽のまち・浜松」を代表する屋内施設です。",
     "localNote": [
       {
-        "type": "station",
-        "text": "第一通り駅徒歩10分",
-        "source": "auto"
+        "type": "tip",
+        "text": "浜松駅から歩いて行ける屋内施設で、天候に左右されずに過ごせる。アクトシティ浜松のすぐ近く",
+        "source": "manual"
       },
       {
-        "type": "parking",
-        "text": "駐車場119台",
+        "type": "station",
+        "text": "JR浜松駅徒歩10分",
         "source": "auto"
       }
     ],
     "specs": {
-      "admission": 400,
-      "kidsFriendly": false,
-      "stayMinutes": 170,
+      "kind": "博物館（公立）",
+      "admission": 800,
+      "accessInfo": "JR浜松駅から徒歩約10分",
       "stationWalkMin": 10,
-      "parking": true
+      "rainAccess": "館内は屋内（駅からは徒歩約10分）",
+      "parking": null,
+      "reservation": "不要",
+      "noReservation": true
     },
-    "features": [],
-    "priceNote": null,
+    "features": [
+      "世界の楽器を地域別に常設展示（約1,500点）",
+      "中学生以下・70歳以上は無料",
+      "高校生400円"
+    ],
+    "priceNote": "一般800円・高校生400円、中学生以下は無料（掲載例）。2025年12月〜2026年7月に休館していたとの情報があるため、来館前に開館状況をご確認ください。",
     "chain": false,
     "serviceType": "store",
     "affiliate": null,
-    "source": "mock",
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "rainy-day-eb6a0865",
+    "name": "浜松科学館 みらいーら",
+    "category": "rainy-day",
+    "genre": "科学館",
+    "address": "静岡県浜松市中央区北寺島町256-3",
+    "tel": null,
+    "hours": null,
+    "access": "JR浜松駅から徒歩約7分",
+    "officialUrl": "https://www.mirai-ra.jp/",
+    "description": "自然・光・音・力・宇宙の5つのテーマに分かれた体験型展示と、職員が生解説するプラネタリウムがある科学館です。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "子連れの雨の日のお出かけ先の定番。車の場合は専用駐車場がないので、近くの有料駐車場を使う",
+        "source": "manual"
+      },
+      {
+        "type": "station",
+        "text": "JR浜松駅徒歩7分",
+        "source": "auto"
+      }
+    ],
+    "specs": {
+      "kind": "科学館（体験型）",
+      "admission": 600,
+      "accessInfo": "JR浜松駅から東へ徒歩約7分",
+      "stationWalkMin": 7,
+      "rainAccess": "館内は屋内（駅からは徒歩約7分）",
+      "parking": false,
+      "reservation": "不要",
+      "noReservation": true
+    },
+    "features": [
+      "体験型の常設展示",
+      "プラネタリウム（生解説の回は約45分）",
+      "中学生以下・70歳以上は無料"
+    ],
+    "priceNote": "常設展のみ一般600円、プラネタリウム等1回付き1,100円。高校生は常設展300円。専用駐車場はなく、近隣の有料駐車場（提携あり）を利用します。",
+    "chain": false,
+    "serviceType": "store",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "rainy-day-61b79a05",
+    "name": "航空自衛隊浜松広報館（エアーパーク）",
+    "category": "rainy-day",
+    "genre": "広報館",
+    "address": "静岡県浜松市中央区西山町（航空自衛隊浜松基地内）",
+    "tel": null,
+    "hours": "9:00～16:00（月曜・毎月最終火曜・年末年始など休館）",
+    "access": "浜松駅北口からバスで約25分（泉四丁目から徒歩約10分）",
+    "officialUrl": "https://www.mod.go.jp/asdf/airpark/",
+    "description": "航空自衛隊の実機展示や全天周シアター、フライトシミュレーターがある広報館。入館・駐車場ともに無料です。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "無料駐車場が広く、車で回る雨の日観光に組み込みやすい。バスの場合は停留所から10分ほど歩く",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "広報館（航空自衛隊）",
+      "admission": 0,
+      "accessInfo": "浜松駅北口からバスで約25分＋徒歩約10分／浜松西ICから車で約10分",
+      "stationWalkMin": null,
+      "rainAccess": "展示資料館・格納庫・シアターは屋内（駐車場からは屋外を歩く）",
+      "parking": true,
+      "reservation": "入館は不要（シミュレーターは予約制との口コミあり）",
+      "noReservation": true
+    },
+    "features": [
+      "入館無料・駐車場無料（乗用車146台）",
+      "実機展示・全天周シアター",
+      "フライトシミュレーター（予約制との口コミあり）"
+    ],
+    "priceNote": "入館無料。休館日・臨時休館は公式サイトでご確認ください。",
+    "chain": false,
+    "serviceType": "store",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "rainy-day-37c4cbc8",
+    "name": "スズキ歴史館",
+    "category": "rainy-day",
+    "genre": "企業博物館",
+    "address": "静岡県浜松市中央区増楽町1301",
+    "tel": null,
+    "hours": "9:00～16:30（予約制・月曜休館）",
+    "access": "高塚駅から徒歩約12分／浜松駅からタクシーで約10分",
+    "officialUrl": "https://www.suzuki-rekishikan.jp/",
+    "description": "スズキのクルマ・バイクの歴史やものづくりを紹介する企業博物館。入館無料で、見学は予約制です。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "浜松のものづくりを知れる施設。予約制なので、雨の日に思い立って行く場合は空きを確認してから",
+        "source": "manual"
+      },
+      {
+        "type": "station",
+        "text": "高塚駅徒歩12分",
+        "source": "auto"
+      }
+    ],
+    "specs": {
+      "kind": "企業博物館",
+      "admission": 0,
+      "accessInfo": "JR高塚駅から徒歩約12分／浜松駅からタクシーで約10分・バスで約25分",
+      "stationWalkMin": 12,
+      "rainAccess": "館内は屋内",
+      "parking": true,
+      "reservation": "必要（1階ショップは予約不要）",
+      "noReservation": false
+    },
+    "features": [
+      "入館無料・予約制",
+      "スズキのクルマ・バイクの歴史展示",
+      "無料駐車場あり"
+    ],
+    "priceNote": "入館無料。予約は電話・公式サイトの申込みフォームで受け付け（当日予約可との掲載あり）。",
+    "chain": false,
+    "serviceType": "store",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "rainy-day-a7223e34",
+    "name": "うなぎパイファクトリー",
+    "category": "rainy-day",
+    "genre": "工場見学",
+    "address": "静岡県浜松市中央区大久保町748-51",
+    "tel": null,
+    "hours": "見学定休日：火・水曜（日曜は生産休止日）",
+    "access": "東名高速 浜松西ICから車で約10分",
+    "officialUrl": "https://www.unagipai-factory.jp/",
+    "description": "浜松名物「うなぎパイ」の製造工程を見学できる工場。個人の自由見学は予約不要・無料です。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "車での雨の日観光やお土産の買い出しに寄りやすい。休日の午後は駐車場が混み合うことがある",
+        "source": "manual"
+      },
+      {
+        "type": "car",
+        "text": "浜松西ICから車10分",
+        "source": "auto"
+      }
+    ],
+    "specs": {
+      "kind": "工場見学",
+      "admission": 0,
+      "accessInfo": "東名高速 浜松西ICから車で約10分",
+      "stationWalkMin": null,
+      "rainAccess": "見学エリアは屋内",
+      "parking": true,
+      "reservation": "自由見学は不要（ガイド付きツアーは要予約）",
+      "noReservation": true
+    },
+    "features": [
+      "自由見学は予約不要・無料",
+      "コンシェルジュ付きツアー（無料・要予約）",
+      "無料駐車場あり（30台）"
+    ],
+    "priceNote": "自由見学・コンシェルジュ付きツアーは無料。窯出しうなぎパイツアーは500円（税込）。日曜は生産休止日のため製造ラインが動いていない場合があります。",
+    "chain": false,
+    "serviceType": "store",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "rainy-day-3e75ccd3",
+    "name": "アソビュー！（遊び・体験予約）",
+    "category": "rainy-day",
+    "genre": "体験予約サイト",
+    "address": "オンライン（全国対応）",
+    "tel": null,
+    "hours": "Webで24時間予約可",
+    "access": null,
+    "officialUrl": "https://www.asoview.com/",
+    "description": "陶芸などのものづくり体験から屋内レジャーまで、遊び・体験をWebで検索・予約できるサイトです。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "雨の日に浜松周辺で参加できる屋内の体験プランを探したいときに",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "体験予約サイト",
+      "admission": null,
+      "accessInfo": "—（Web予約）",
+      "stationWalkMin": null,
+      "rainAccess": "プランにより異なる",
+      "parking": null,
+      "reservation": "Webで予約",
+      "noReservation": false
+    },
+    "features": [
+      "遊び・体験をWebで検索・予約",
+      "陶芸などの屋内体験も探せる"
+    ],
+    "priceNote": "料金はプランにより異なります。",
+    "chain": false,
+    "serviceType": "online",
+    "affiliate": null,
+    "source": "manual",
     "updatedAt": "2026-10-10"
   },
   {

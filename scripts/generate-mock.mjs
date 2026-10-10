@@ -175,7 +175,7 @@ const TEMPLATES = {
       ['ショッピングモール はままつテラス 入野', '商業施設', { admission: 0 }],
       ['浜松ものづくり歴史館 鍛冶町', '博物館', { admission: 400 }],
     ],
-    specs: (o) => ({ admission: o.admission, kidsFriendly: yes(0.8), stayMinutes: int(6, 24) * 10 }),
+    specs: (o) => ({ kind: '屋内施設', admission: o.admission, noReservation: yes(0.8) }),
     desc: (n, g) => `屋内で過ごせる${g}。${n}は雨の日でも子どもと一緒に楽しめます。`,
   },
   'night-bus': {

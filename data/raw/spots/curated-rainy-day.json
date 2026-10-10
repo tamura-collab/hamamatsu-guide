@@ -1,0 +1,282 @@
+[
+  {
+    "name": "浜松市楽器博物館",
+    "category": "rainy-day",
+    "genre": "博物館",
+    "serviceType": "store",
+    "chain": false,
+    "address": "静岡県浜松市中央区中央3-9-1",
+    "tel": null,
+    "hours": "9:30～17:00（第2・4水曜休館。8月は無休）",
+    "access": "JR浜松駅から徒歩約10分",
+    "officialUrl": "https://www.gakkihaku.jp/",
+    "description": "世界の楽器を地域別に常設展示する公立の楽器博物館（常設展示は約1,500点）。「音楽のまち・浜松」を代表する屋内施設です。",
+    "specs": {
+      "kind": "博物館（公立）",
+      "admission": 800,
+      "accessInfo": "JR浜松駅から徒歩約10分",
+      "rainAccess": "館内は屋内（駅からは徒歩約10分）",
+      "parking": null,
+      "reservation": "不要",
+      "noReservation": true
+    },
+    "features": [
+      "世界の楽器を地域別に常設展示（約1,500点）",
+      "中学生以下・70歳以上は無料",
+      "高校生400円"
+    ],
+    "priceNote": "一般800円・高校生400円、中学生以下は無料（掲載例）。2025年12月〜2026年7月に休館していたとの情報があるため、来館前に開館状況をご確認ください。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "浜松駅から歩いて行ける屋内施設で、天候に左右されずに過ごせる。アクトシティ浜松のすぐ近く"
+      }
+    ],
+    "source": "manual",
+    "fetchedAt": "2026-10-10",
+    "_sources": [
+      "https://www.at-s.com/spot/article/137583",
+      "https://www.hamamatsu-pippi.net/shisetsu/shisetsutokubetsuver/5291.html",
+      "https://guide.jr-odekake.net/spot/2380"
+    ],
+    "_unverified": [
+      "2026年7月以降の再開状況（2025年12月1日〜2026年7月10日休館の情報あり）",
+      "「連絡通路経由で雨にほとんど濡れずにアクセス」（未確認のため不掲載）",
+      "体験ルームの内容",
+      "駐車場（「隣接・有料」「なし」で情報源が食い違い）",
+      "公式サイトURL"
+    ]
+  },
+  {
+    "name": "浜松科学館 みらいーら",
+    "category": "rainy-day",
+    "genre": "科学館",
+    "serviceType": "store",
+    "chain": false,
+    "address": "静岡県浜松市中央区北寺島町256-3",
+    "tel": null,
+    "hours": null,
+    "access": "JR浜松駅から徒歩約7分",
+    "officialUrl": "https://www.mirai-ra.jp/",
+    "description": "自然・光・音・力・宇宙の5つのテーマに分かれた体験型展示と、職員が生解説するプラネタリウムがある科学館です。",
+    "specs": {
+      "kind": "科学館（体験型）",
+      "admission": 600,
+      "accessInfo": "JR浜松駅から東へ徒歩約7分",
+      "rainAccess": "館内は屋内（駅からは徒歩約7分）",
+      "parking": false,
+      "reservation": "不要",
+      "noReservation": true
+    },
+    "features": [
+      "体験型の常設展示",
+      "プラネタリウム（生解説の回は約45分）",
+      "中学生以下・70歳以上は無料"
+    ],
+    "priceNote": "常設展のみ一般600円、プラネタリウム等1回付き1,100円。高校生は常設展300円。専用駐車場はなく、近隣の有料駐車場（提携あり）を利用します。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "子連れの雨の日のお出かけ先の定番。車の場合は専用駐車場がないので、近くの有料駐車場を使う"
+      }
+    ],
+    "source": "manual",
+    "fetchedAt": "2026-10-10",
+    "_sources": [
+      "https://www.mirai-ra.jp/guide/",
+      "https://www.at-s.com/spot/article/138589",
+      "https://www.jalan.net/kankou/spt_22202cc3290031897/",
+      "https://www.city.hamamatsu.shizuoka.jp/documents/167554/2201_1.pdf"
+    ],
+    "_unverified": [
+      "開館時間・休館日",
+      "「JR浜松駅南口から徒歩約7分」の経路（駅から東へ徒歩約7分の掲載はあり）",
+      "「駐車場完備」（専用駐車場なしのため不掲載）"
+    ]
+  },
+  {
+    "name": "航空自衛隊浜松広報館（エアーパーク）",
+    "category": "rainy-day",
+    "genre": "広報館",
+    "serviceType": "store",
+    "chain": false,
+    "address": "静岡県浜松市中央区西山町（航空自衛隊浜松基地内）",
+    "tel": null,
+    "hours": "9:00～16:00（月曜・毎月最終火曜・年末年始など休館）",
+    "access": "浜松駅北口からバスで約25分（泉四丁目から徒歩約10分）",
+    "officialUrl": "https://www.mod.go.jp/asdf/airpark/",
+    "description": "航空自衛隊の実機展示や全天周シアター、フライトシミュレーターがある広報館。入館・駐車場ともに無料です。",
+    "specs": {
+      "kind": "広報館（航空自衛隊）",
+      "admission": 0,
+      "accessInfo": "浜松駅北口からバスで約25分＋徒歩約10分／浜松西ICから車で約10分",
+      "rainAccess": "展示資料館・格納庫・シアターは屋内（駐車場からは屋外を歩く）",
+      "reservation": "入館は不要（シミュレーターは予約制との口コミあり）",
+      "noReservation": true,
+      "parking": true
+    },
+    "features": [
+      "入館無料・駐車場無料（乗用車146台）",
+      "実機展示・全天周シアター",
+      "フライトシミュレーター（予約制との口コミあり）"
+    ],
+    "priceNote": "入館無料。休館日・臨時休館は公式サイトでご確認ください。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "無料駐車場が広く、車で回る雨の日観光に組み込みやすい。バスの場合は停留所から10分ほど歩く"
+      }
+    ],
+    "source": "manual",
+    "fetchedAt": "2026-10-10",
+    "_sources": [
+      "https://www.at-s.com/spot/article/138337",
+      "https://www.hamamatsu-pippi.net/shisetsu/shisetsutokubetsuver/5287.html",
+      "https://www.transport-pf.or.jp/norimono/museum/khke/",
+      "https://atsushi912.hatenablog.com/entry/hamamatsu-airpark",
+      "https://gigazine.net/news/20140726-airpark"
+    ],
+    "_unverified": [
+      "バスの系統・所要時間",
+      "フライトシミュレーターの予約方法",
+      "公式サイトURL（2014年の記事に掲載のURL。現行のアドレスか未確認）"
+    ]
+  },
+  {
+    "name": "スズキ歴史館",
+    "category": "rainy-day",
+    "genre": "企業博物館",
+    "serviceType": "store",
+    "chain": false,
+    "address": "静岡県浜松市中央区増楽町1301",
+    "tel": null,
+    "hours": "9:00～16:30（予約制・月曜休館）",
+    "access": "高塚駅から徒歩約12分／浜松駅からタクシーで約10分",
+    "officialUrl": "https://www.suzuki-rekishikan.jp/",
+    "description": "スズキのクルマ・バイクの歴史やものづくりを紹介する企業博物館。入館無料で、見学は予約制です。",
+    "specs": {
+      "kind": "企業博物館",
+      "admission": 0,
+      "accessInfo": "JR高塚駅から徒歩約12分／浜松駅からタクシーで約10分・バスで約25分",
+      "rainAccess": "館内は屋内",
+      "parking": true,
+      "reservation": "必要（1階ショップは予約不要）",
+      "noReservation": false
+    },
+    "features": [
+      "入館無料・予約制",
+      "スズキのクルマ・バイクの歴史展示",
+      "無料駐車場あり"
+    ],
+    "priceNote": "入館無料。予約は電話・公式サイトの申込みフォームで受け付け（当日予約可との掲載あり）。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "浜松のものづくりを知れる施設。予約制なので、雨の日に思い立って行く場合は空きを確認してから"
+      }
+    ],
+    "source": "manual",
+    "fetchedAt": "2026-10-10",
+    "_sources": [
+      "https://www.at-s.com/spot/article/225002",
+      "https://www.transport-pf.or.jp/norimono/museum/sr/",
+      "https://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%BA%E3%82%AD%E6%AD%B4%E5%8F%B2%E9%A4%A8",
+      "https://www.suzuki-rekishikan.jp/"
+    ],
+    "_unverified": [
+      "「スズキ本社前に立地」（位置関係未確認のため不掲載）",
+      "駐車場の台数（50台・25台で情報源が食い違い）",
+      "土日祝の開館状況"
+    ]
+  },
+  {
+    "name": "うなぎパイファクトリー",
+    "category": "rainy-day",
+    "genre": "工場見学",
+    "serviceType": "store",
+    "chain": false,
+    "address": "静岡県浜松市中央区大久保町748-51",
+    "tel": null,
+    "hours": "見学定休日：火・水曜（日曜は生産休止日）",
+    "access": "東名高速 浜松西ICから車で約10分",
+    "officialUrl": "https://www.unagipai-factory.jp/",
+    "description": "浜松名物「うなぎパイ」の製造工程を見学できる工場。個人の自由見学は予約不要・無料です。",
+    "specs": {
+      "kind": "工場見学",
+      "admission": 0,
+      "accessInfo": "東名高速 浜松西ICから車で約10分",
+      "rainAccess": "見学エリアは屋内",
+      "reservation": "自由見学は不要（ガイド付きツアーは要予約）",
+      "noReservation": true,
+      "parking": true
+    },
+    "features": [
+      "自由見学は予約不要・無料",
+      "コンシェルジュ付きツアー（無料・要予約）",
+      "無料駐車場あり（30台）"
+    ],
+    "priceNote": "自由見学・コンシェルジュ付きツアーは無料。窯出しうなぎパイツアーは500円（税込）。日曜は生産休止日のため製造ラインが動いていない場合があります。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "車での雨の日観光やお土産の買い出しに寄りやすい。休日の午後は駐車場が混み合うことがある"
+      }
+    ],
+    "source": "manual",
+    "fetchedAt": "2026-10-10",
+    "_sources": [
+      "https://www.unagipai-factory.jp/",
+      "https://www.at-s.com/spot/article/138582",
+      "https://hamamatsuat.hamamatsu-daisuki.net/experience/778/"
+    ],
+    "_unverified": [
+      "浜松駅からの公共交通でのアクセス",
+      "併設カフェ・限定スイーツの内容（未確認のため不掲載）",
+      "開館時間"
+    ]
+  },
+  {
+    "name": "アソビュー！（遊び・体験予約）",
+    "category": "rainy-day",
+    "genre": "体験予約サイト",
+    "serviceType": "online",
+    "chain": false,
+    "address": "オンライン（全国対応）",
+    "tel": null,
+    "hours": "Webで24時間予約可",
+    "access": null,
+    "officialUrl": "https://www.asoview.com/",
+    "description": "陶芸などのものづくり体験から屋内レジャーまで、遊び・体験をWebで検索・予約できるサイトです。",
+    "specs": {
+      "kind": "体験予約サイト",
+      "admission": null,
+      "accessInfo": "—（Web予約）",
+      "rainAccess": "プランにより異なる",
+      "parking": null,
+      "reservation": "Webで予約",
+      "noReservation": false
+    },
+    "features": [
+      "遊び・体験をWebで検索・予約",
+      "陶芸などの屋内体験も探せる"
+    ],
+    "priceNote": "料金はプランにより異なります。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "雨の日に浜松周辺で参加できる屋内の体験プランを探したいときに"
+      }
+    ],
+    "source": "manual",
+    "fetchedAt": "2026-10-10",
+    "_sources": [
+      "https://www.businessinsider.jp/article/248548/",
+      "https://www.travelvoice.jp/20200318-145695"
+    ],
+    "_unverified": [
+      "浜松市内で予約できる屋内体験プラン（手ひねり陶芸・ガラス工芸・キッズパーク等）の現状",
+      "ポイント還元の有無",
+      "じゃらんの遊び・体験予約（今回は1サービスに絞って掲載）"
+    ]
+  }
+]
