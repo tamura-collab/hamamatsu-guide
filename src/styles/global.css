@@ -62,6 +62,49 @@
   .container-page {
     @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
   }
+
+  /* 記事本文（Markdown を HTML にしたもの）の体裁 */
+  .article-body {
+    @apply text-[15px] leading-loose sm:text-base;
+  }
+  .article-body > * + * {
+    @apply mt-4;
+  }
+  .article-body h2 {
+    @apply mt-10 border-l-4 border-brand-700 pl-3 text-xl leading-snug font-bold sm:text-2xl;
+  }
+  .article-body h3 {
+    @apply mt-8 text-lg leading-snug font-bold;
+  }
+  .article-body ul,
+  .article-body ol {
+    @apply space-y-1 pl-6;
+  }
+  .article-body ul {
+    @apply list-disc;
+  }
+  .article-body ol {
+    @apply list-decimal;
+  }
+  .article-body strong {
+    @apply font-bold text-ink;
+  }
+  .article-body a {
+    @apply text-brand-700 underline underline-offset-2 hover:text-brand-600;
+  }
+  .article-body blockquote {
+    @apply rounded-lg bg-surface px-4 py-3 text-sm text-muted;
+  }
+  .article-body table {
+    @apply block w-full overflow-x-auto border-collapse text-sm leading-relaxed;
+  }
+  .article-body th,
+  .article-body td {
+    @apply border border-line px-3 py-2 text-left align-top;
+  }
+  .article-body th {
+    @apply bg-surface font-bold whitespace-nowrap;
+  }
 }
 
 /* メニュー展開中は背面のスクロールを止める */

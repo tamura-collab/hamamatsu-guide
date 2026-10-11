@@ -37,7 +37,7 @@ npm run dev        # http://localhost:4321
 | `/living/[category]` `/travel/[category]` | カテゴリ一覧・比較表（JSONデータから生成） |
 | `/living/[category]/[id]` | 店舗詳細（`src/data/stores.json` から自動生成） |
 | `/travel/[category]/[id]` | 観光スポット詳細（`src/data/spots.json` から自動生成） |
-| `/articles` `/articles/[slug]` | 記事一覧・記事詳細（モック） |
+| `/articles` `/articles/[slug]` | 記事一覧・記事詳細（本文は `src/data/articles/<slug>.md`） |
 | `/contact` | お問い合わせフォーム（送信先は `siteConfig.contact.formEndpoint`） |
 | `/search?q=` | サイト内検索（クライアントサイド） |
 | `/about` `/privacy` `/disclaimer` `/affiliate` | 運営者情報・プライバシーポリシー・免責事項・アフィリエイト開示 |
@@ -62,7 +62,8 @@ media-site/
     │   └── navigation.ts   # ヘッダー／フッターのリンク
     ├── data/
     │   ├── categories.ts   # 「暮らす」「訪れる」のカテゴリ定義
-    │   ├── articles.ts     # 記事のモックデータ
+    │   ├── articles.ts     # 記事のメタデータ（タイトル・日付・確認元など）
+    │   ├── articles/       # 記事本文（Markdown、ファイル名 = slug）
     │   ├── places.ts       # 店舗・スポットの型定義と取得ヘルパー
     │   ├── stores.json     # 店舗データ（生成物・手で編集しない）
     │   └── spots.json      # 観光スポットデータ（生成物・手で編集しない）
@@ -272,7 +273,8 @@ npm run data:scrape -- --source=sample-fixture --dry-run   # 同梱のサンプ�
 
 ## 今後の拡張候補
 
-- 記事を Content Collections（Markdown）または CMS へ移行
+- 記事を Content Collections または CMS へ移行（現在は `src/data/articles/*.md` を記事ページで読み込む方式）
+- 記事の料金・アクセス等は curated-*.json の実データと合わせる。データを更新したら関連記事の本文と `updatedAt` も見直す
 - 検索を Pagefind 等の静的検索インデックスに置き換え
 - 比較表に料金などカテゴリ固有の項目を追加
 - OGP画像の生成、アクセス解析の導入

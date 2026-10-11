@@ -7,6 +7,10 @@ import PrBadge from '@/components/ui/PrBadge.astro';
 import { articles, formatDate, type Article } from '@/data/articles';
 import { categories, getCategoryHref, sections } from '@/data/categories';
 import { url } from '@/lib/url';
+import { siteConfig } from '@/config/site.config';
+
+// 本文（Markdown）。ファイル名 = slug
+const bodies = import.meta.glob<{ compiledContent: () => string | Promise<string> }>('../../data/articles/*.md', { eager: true });
 
 export const getStaticPaths = (() =>
   articles.map((article) => ({ params: { slug: article.slug }, props: { article } }))) satisfies GetStaticPaths;
@@ -14,9 +18,25 @@ export const getStaticPaths = (() =>
 const { article } = Astro.props as { article: Article };
 const section = sections[article.section];
 const category = categories.find((c) => c.slug === article.category);
+
+const body = bodies[`../../data/articles/${article.slug}.md`];
+if (!body) throw new Error(`記事本文がありません: src/data/articles/${article.slug}.md`);
+// 本文中のサイト内リンク（/living など）を BASE_PATH に合わせる
+const html = (await body.compiledContent()).replace(/href="\/(?!\/)/g, `href="${url('/')}`.replace(/\/$/, '') + '/');
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: article.title,
+  description: article.excerpt,
+  datePublished: article.publishedAt,
+  dateModified: article.updatedAt ?? article.publishedAt,
+  author: { '@type': 'Organization', name: siteConfig.operator.name },
+};
 ---
 
 <BaseLayout title={article.title} description={article.excerpt}>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} slot="head" />
   <article class="container-page max-w-3xl py-6 sm:py-10">
     <Breadcrumb
       items={[
@@ -29,10 +49,14 @@ const category = categories.find((c) => c.slug === article.category);
       <div class="flex items-center gap-2 text-xs text-muted">
         {article.isPr && <PrBadge />}
         <time datetime={article.publishedAt}>{formatDate(article.publishedAt)}</time>
+        {article.updatedAt && article.updatedAt !== article.publishedAt && (
+          <span>更新 <time datetime={article.updatedAt}>{formatDate(article.updatedAt)}</time></span>
+        )}
         <span class="inline-flex items-center gap-1"><Icon name="clock" class="size-3.5" />{article.readingMinutes}分で読めます</span>
       </div>
       <h1 class="mt-2 text-2xl leading-snug font-bold sm:text-3xl">{article.title}</h1>
       <p class="mt-3 text-muted">{article.excerpt}</p>
+      <p class="mt-3 text-xs text-muted">文・調査：{siteConfig.operator.name}</p>
     </header>
 
     {
@@ -45,10 +69,41 @@ const category = categories.find((c) => c.slug === article.category);
       )
     }
 
-    <div class="mt-8 grid aspect-[16/9] place-items-center rounded-2xl bg-surface text-sm text-muted">アイキャッチ画像（モック）</div>
+    <div class="article-body mt-8" set:html={html} />
 
-    <div class="mt-8 space-y-4 leading-loose">
-      <p class="rounded-xl border border-dashed border-line p-6 text-center text-sm text-muted">本文は準備中です（モック画面）</p>
-    </div>
+    <aside class="mt-10 rounded-xl bg-surface p-4 text-xs leading-relaxed text-muted sm:p-5">
+      <p>
+        ※この記事の料金・営業時間・サービス内容は、{formatDate(article.updatedAt ?? article.publishedAt)}時点で各公式情報をもとに確認した内容です。
+        変更されることがあるため、実際の料金や最新の条件は各公式サイトでご確認ください。
+      </p>
+      {
+        article.sources && article.sources.length > 0 && (
+          <>
+            <h2 class="mt-4 text-sm font-bold text-ink">主な確認元</h2>
+            <ul class="mt-2 list-disc space-y-1 pl-5">
+              {article.sources.map((s) => (
+                <li>
+                  <a href={s.url} rel="noopener noreferrer" target="_blank" class="underline hover:text-brand-700">
+                    {s.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </>
+        )
+      }
+    </aside>
+
+    {
+      category && (
+        <a
+          href={url(getCategoryHref(category))}
+          class="mt-6 flex items-center justify-between gap-3 rounded-xl border border-line p-4 font-bold hover:border-brand-200 hover:text-brand-700"
+        >
+          <span>{siteConfig.city.shortName}の{category.title}を比較する</span>
+          <Icon name="chevronRight" class="size-5 shrink-0" />
+        </a>
+      )
+    }
   </article>
 </BaseLayout>

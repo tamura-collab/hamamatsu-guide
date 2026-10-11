@@ -1,5 +1,10 @@
 import type { SectionKey } from './categories';
 
+export interface ArticleSource {
+  label: string;
+  url: string;
+}
+
 export interface Article {
   slug: string;
   title: string;
@@ -8,72 +13,105 @@ export interface Article {
   /** 関連カテゴリの slug */
   category: string;
   publishedAt: string; // YYYY-MM-DD
+  /** 内容を最後に確認・更新した日 */
+  updatedAt?: string; // YYYY-MM-DD
   readingMinutes: number;
   /** PR（広告）を含む記事か。景表法対応として一覧上にも表示する */
   isPr?: boolean;
   featured?: boolean;
+  /** 記事の根拠にした主な公式情報 */
+  sources?: ArticleSource[];
 }
 
-// モック記事データ。将来的には Content Collections（src/content）や CMS へ置き換える想定。
+// 記事のメタデータ。本文は src/data/articles/<slug>.md に置き、記事ページで読み込む。
+// 料金・アクセス等は data/raw/**/curated-*.json の実データと内容を合わせる。
 export const articles: Article[] = [
   {
-    slug: 'fiber-comparison-2026',
-    title: '【2026年版】浜松市で使える光回線5社を徹底比較｜エリア・速度・料金',
-    excerpt: '中央区・浜名区・天竜区の提供エリアの確認方法と、マンション・戸建て別の選び方をまとめました。',
-    section: 'living',
-    category: 'internet',
-    publishedAt: '2026-10-08',
-    readingMinutes: 8,
-    isPr: true,
-    featured: true,
-  },
-  {
-    slug: 'rainy-day-kids-spots',
-    title: '雨の日でも子どもが飽きない！浜松の屋内スポット10選',
-    excerpt: '無料で遊べる児童館から、浜松駅近くの科学館まで。車で行きやすい駐車場情報つき。',
-    section: 'travel',
-    category: 'rainy-day',
-    publishedAt: '2026-10-06',
-    readingMinutes: 6,
-    featured: true,
-  },
-  {
-    slug: '24h-gym-guide',
-    title: '24時間ジムはどこがいい？浜松駅周辺と郊外の12店舗を月額で比較',
-    excerpt: '仕事帰りに通いやすい浜松駅周辺の店舗と、浜松バイパス沿いの駐車場が広い店舗を分けて紹介。',
-    section: 'living',
-    category: 'gym',
-    publishedAt: '2026-10-03',
-    readingMinutes: 7,
-    isPr: true,
-  },
-  {
-    slug: 'express-bus-tokyo',
-    title: '浜松⇔東京の夜行バス完全ガイド｜3列シートの快適な便はどれ？',
-    excerpt: '浜松駅の乗り場の行き方、女性専用席の有無、新幹線との費用比較まで。',
+    slug: 'hamamatsu-tokyo-access',
+    title: '浜松から東京へ安く・快適に行く方法｜高速バス・e-LineR・新幹線を比較',
+    excerpt: '新幹線と、浜松駅から乗れる昼行・夜行の高速バスを、運賃・乗り場・快適さで整理しました。',
     section: 'travel',
     category: 'express-bus',
-    publishedAt: '2026-09-29',
-    readingMinutes: 9,
+    publishedAt: '2026-10-11',
+    updatedAt: '2026-10-11',
+    readingMinutes: 6,
+    featured: true,
+    sources: [
+      { label: '遠鉄高速バス e-LineR', url: 'https://www.e-liner.jp/' },
+      { label: 'e-LineR よくある質問', url: 'https://www.e-liner.jp/faq/' },
+      { label: 'JR東海バス 高速バス', url: 'https://www.jrtbinm.co.jp/mainbusroute/' },
+      { label: 'WILLER EXPRESS', url: 'https://travel.willer.co.jp/wex/' },
+      { label: 'JAMJAMライナー', url: 'https://jamjamliner.jp/' },
+    ],
   },
   {
-    slug: 'car-sell-tips',
-    title: '車を高く売るには？浜松の買取店と一括査定の違いを比較',
-    excerpt: '査定額が変わりやすいポイントと、手間と金額のバランスを解説します。',
+    slug: 'hamamatsu-internet-guide',
+    title: '浜松市の光回線の選び方ガイド｜コミュファ光と大手キャリアのセット割を比較',
+    excerpt: '静岡県ではauひかりの戸建てが使えないなど、浜松ならではの事情とスマホ別の選び方をまとめました。',
     section: 'living',
-    category: 'car-sell',
-    publishedAt: '2026-09-25',
-    readingMinutes: 10,
-    isPr: true,
+    category: 'internet',
+    publishedAt: '2026-10-11',
+    updatedAt: '2026-10-11',
+    readingMinutes: 6,
+    featured: true,
+    sources: [
+      { label: 'コミュファ光', url: 'https://www.commufa.jp/' },
+      { label: 'NURO光', url: 'https://www.nuro.jp/hikari/' },
+      { label: 'ドコモ光', url: 'https://www.docomo.ne.jp/internet/hikari/' },
+      { label: 'ソフトバンク光', url: 'https://www.softbank.jp/internet/sbhikari/' },
+      { label: 'ドコモ home 5G', url: 'https://www.docomo.ne.jp/home_5g/' },
+    ],
   },
   {
-    slug: 'station-hotels',
-    title: '浜松駅から徒歩5分以内のビジネスホテル8選｜出張・観光の拠点に',
-    excerpt: '大浴場あり・朝食が評判・連泊割など、目的別に選べるよう整理しました。',
+    slug: 'hamamatsu-parking-pcoupon',
+    title: '浜松駅周辺の駐車場料金比較と「Pクーポン」お得活用術',
+    excerpt: '長時間・送迎・買い物・観光の目的別に、市営駐車場やコインパーキングの使い分けを解説します。',
     section: 'travel',
-    category: 'hotel',
-    publishedAt: '2026-09-20',
-    readingMinutes: 5,
+    category: 'parking',
+    publishedAt: '2026-10-10',
+    updatedAt: '2026-10-11',
+    readingMinutes: 6,
+    sources: [
+      { label: '浜松市 市営駐車場', url: 'https://www.city.hamamatsu.shizuoka.jp/kotsu/traffic/shiei-p/index.html' },
+      { label: '浜松市営 駅北駐車場', url: 'https://www.entetsuassist-dms.com/hamamatsu-parking/ekikita/' },
+      { label: '浜松市営駐車場 料金案内', url: 'https://www.entetsuassist-dms.com/hamamatsu-parking/price/' },
+      { label: '浜まちWEB（Pクーポン）', url: 'https://pcoupon.jp/' },
+      { label: '遠鉄百貨店 アクセス・駐車場', url: 'https://www.endepa.com/access/' },
+      { label: '浜松城公園 アクセス', url: 'https://www.entetsuassist-dms.com/hamamatsu-jyo/access/' },
+    ],
+  },
+  {
+    slug: 'hamamatsu-gym-guide',
+    title: '浜松市の24時間ジム・公営ジム徹底比較｜初心者・コスパ重視の選び方',
+    excerpt: 'chocoZAP・エニタイム・総合クラブ・パーソナル・公営トレーニング室を、料金と使い方で比較します。',
+    section: 'living',
+    category: 'gym',
+    publishedAt: '2026-10-09',
+    updatedAt: '2026-10-11',
+    readingMinutes: 6,
+    sources: [
+      { label: 'chocoZAP', url: 'https://chocozap.jp/' },
+      { label: 'エニタイムフィットネス', url: 'https://www.anytimefitness.co.jp/chubu/shizuoka/?city=hamamatsu' },
+      { label: 'ホリデイスポーツクラブ 浜松店', url: 'https://www.holiday-sc.jp/shops/012-hamamatsu/' },
+      { label: 'RIZAP 浜松店', url: 'https://www.rizap.jp/studios/studio020' },
+      { label: '浜松アリーナ', url: 'https://hamamatsu-arena.jp/' },
+    ],
+  },
+  {
+    slug: 'hamamatsu-gourmet-map',
+    title: '浜松餃子・うなぎの名店と名物グルメ完全マップ｜浜松駅から行きやすい店',
+    excerpt: '石松餃子・八百徳・さわやか・浜松ホルモンを、予算・アクセス・混雑対策つきで紹介します。',
+    section: 'travel',
+    category: 'gourmet',
+    publishedAt: '2026-10-08',
+    updatedAt: '2026-10-11',
+    readingMinutes: 6,
+    sources: [
+      { label: '石松餃子 JR浜松駅店', url: 'https://1402.jp/shop/hamamatsu.html' },
+      { label: 'うなぎ 八百徳', url: 'https://www.unagiyaotoku.com/info.php' },
+      { label: 'さわやか 浜松遠鉄店', url: 'https://www.genkotsu-hb.com/shop/detail/237' },
+      { label: '食べログ Vポイント', url: 'https://tabelog.com/tpoint/guide' },
+    ],
   },
 ];
 
