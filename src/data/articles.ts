@@ -27,6 +27,25 @@ export interface Article {
 // 料金・アクセス等は data/raw/**/curated-*.json の実データと内容を合わせる。
 export const articles: Article[] = [
   {
+    slug: 'hamamatsu-sightseeing-top5',
+    title: '浜松の観光スポットおすすめランキングTOP5｜浜松城・楽器博物館・エアーパークほか',
+    excerpt: '浜松城公園から工場見学まで、行きやすさ・料金・天候への強さ・浜松らしさで選んだ5か所を、アクセスと料金つきで紹介します。',
+    section: 'travel',
+    category: 'rainy-day',
+    publishedAt: '2026-10-12',
+    updatedAt: '2026-10-12',
+    readingMinutes: 6,
+    featured: true,
+    sources: [
+      { label: '浜松城公園 アクセス', url: 'https://www.entetsuassist-dms.com/hamamatsu-jyo/access/' },
+      { label: '浜松市 浜松城（市資料）', url: 'https://www.city.hamamatsu.shizuoka.jp/documents/157405/mc.pdf' },
+      { label: '浜松市楽器博物館', url: 'https://www.gakkihaku.jp/access/' },
+      { label: '浜松科学館 みらいーら 利用案内', url: 'https://www.mirai-ra.jp/guide/' },
+      { label: '航空自衛隊浜松広報館', url: 'https://www.mod.go.jp/asdf/airpark/guide/index.html' },
+      { label: 'うなぎパイファクトリー', url: 'https://www.unagipai-factory.jp/' },
+    ],
+  },
+  {
     slug: 'hamamatsu-tokyo-access',
     title: '浜松から東京へ安く・快適に行く方法｜高速バス・e-LineR・新幹線を比較',
     excerpt: '新幹線と、浜松駅から乗れる昼行・夜行の高速バスを、運賃・乗り場・快適さで整理しました。',
@@ -53,7 +72,6 @@ export const articles: Article[] = [
     publishedAt: '2026-10-11',
     updatedAt: '2026-10-11',
     readingMinutes: 6,
-    featured: true,
     sources: [
       { label: 'コミュファ光', url: 'https://www.commufa.jp/' },
       { label: 'NURO光', url: 'https://www.nuro.jp/hikari/' },
