@@ -37,8 +37,10 @@ const category = categories.find((c) => c.slug === article.category);
 
     {
       article.isPr && (
-        <p class="mt-6 rounded-lg border border-amber-200 bg-amber-50 p-3 text-xs text-amber-900">
-          この記事にはアフィリエイト広告（PR）が含まれます。<a href={url('/affiliate')} class="underline">広告について</a>
+        <p class="mt-6 flex items-center gap-1.5 rounded bg-surface px-2 py-1 text-[11px] leading-snug text-muted">
+          <span class="shrink-0 rounded bg-white px-1 text-[10px] font-bold leading-4 ring-1 ring-line">PR</span>
+          <span class="min-w-0 truncate">この記事にはアフィリエイト広告が含まれます</span>
+          <a href={url('/affiliate')} class="shrink-0 underline hover:text-brand-700">広告について</a>
         </p>
       )
     }

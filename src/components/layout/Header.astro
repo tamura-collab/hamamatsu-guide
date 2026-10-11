@@ -17,7 +17,7 @@ const currentPath = publicPath(Astro.url.pathname);
     <Logo />
 
     <nav aria-label="カテゴリ" class="hidden md:block">
-      <ul class="flex items-center gap-1">
+      <ul class="flex items-center gap-2">
         {
           mainNav.map((item) => {
             const active = isActive(currentPath, item.href);
@@ -27,12 +27,13 @@ const currentPath = publicPath(Astro.url.pathname);
                   href={url(item.href)}
                   aria-current={active ? 'page' : undefined}
                   class:list={[
-                    'relative rounded-md px-3 py-2 text-sm font-semibold transition-colors',
-                    active ? 'text-brand-700' : 'text-ink hover:bg-surface hover:text-brand-700',
+                    'inline-flex items-center rounded-full border px-4 py-1.5 text-sm font-bold transition-colors',
+                    active
+                      ? 'border-brand-700 bg-brand-700 text-white shadow-sm'
+                      : 'border-line bg-surface text-ink hover:border-brand-200 hover:bg-brand-100 hover:text-brand-700',
                   ]}
                 >
                   {item.label}
-                  {active && <span class="absolute inset-x-3 -bottom-[13px] h-0.5 rounded-full bg-brand-700" />}
                 </a>
               </li>
             );

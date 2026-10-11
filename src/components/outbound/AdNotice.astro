@@ -15,14 +15,10 @@ const text = hasAffiliate ? 'アフィリエイト広告が含まれています
 
 {
   variant === 'banner' ? (
-    <p class="flex items-start gap-2 rounded-lg border border-amber-200 bg-amber-50 px-3 py-2 text-xs leading-relaxed text-amber-900">
-      <PrBadge class="mt-0.5 shrink-0" />
-      <span>
-        このページには{text}。掲載順位や評価は広告の有無に関係なく、編集部の基準で決めています。
-        <a href={url('/affiliate')} class="underline">
-          広告について
-        </a>
-      </span>
+    <p class="flex items-center gap-1.5 rounded bg-surface px-2 py-1 text-[11px] leading-snug text-muted">
+      <span class="shrink-0 rounded bg-white px-1 text-[10px] font-bold leading-4 ring-1 ring-line">PR</span>
+      <span class="min-w-0 truncate">{text.replace('（PR）', '')}</span>
+      <a href={url('/affiliate')} class="shrink-0 underline hover:text-brand-700">広告について</a>
     </p>
   ) : (
     <p class="flex items-center gap-1.5 text-[11px] text-amber-900">
