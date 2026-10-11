@@ -19,7 +19,11 @@
       "onlineApply": true,
       "noReduction": null
     },
-    "features": ["全国に店舗網", "出張査定対応", "中古車販売も同じ店舗で相談可能"],
+    "features": [
+      "全国に店舗網",
+      "出張査定対応",
+      "中古車販売も同じ店舗で相談可能"
+    ],
     "priceNote": "査定無料（目安売却額は車種・年式により変動）",
     "localNote": [
       {
@@ -48,7 +52,7 @@
     "serviceType": "store",
     "chain": false,
     "address": "静岡県浜松市中央区西ヶ崎町1894",
-    "tel": null,
+    "tel": "053-432-4907",
     "hours": "10:00～19:00（第2水曜定休・祝日を除く）",
     "access": null,
     "officialUrl": "https://www.nextage.jp/shop/1200/",
@@ -61,9 +65,17 @@
       "onlineApply": null,
       "noReduction": null
     },
-    "features": ["買取と中古車販売を同じ店舗で相談可能", "店頭査定"],
+    "features": [
+      "買取と中古車販売を同じ店舗で相談可能",
+      "店頭査定"
+    ],
     "priceNote": "査定無料（目安売却額は車種・年式により変動）",
-    "localNote": [{ "type": "tip", "text": "浜松北エリア（西ヶ崎町）にあり、売却から次の車探しまで一度に相談できる" }],
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "浜松北エリア（西ヶ崎町）にあり、売却から次の車探しまで一度に相談できる"
+      }
+    ],
     "source": "manual",
     "fetchedAt": "2026-10-10",
     "_sources": [
@@ -97,21 +109,32 @@
       "onlineApply": true,
       "noReduction": true
     },
-    "features": ["契約後の減額なし（公式に明示）", "当日半額前払い", "契約後7日以内のキャンセル無料"],
+    "features": [
+      "契約後の減額なし（公式に明示）",
+      "当日半額前払い",
+      "契約後7日以内のキャンセル無料"
+    ],
     "priceNote": "査定無料（目安売却額は車種・年式により変動）",
-    "localNote": [{ "type": "tip", "text": "志都呂エリアの生活圏にあり、買い物のついでに立ち寄りやすい" }],
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "志都呂エリアの生活圏にあり、買い物のついでに立ち寄りやすい"
+      }
+    ],
     "source": "manual",
     "fetchedAt": "2026-10-10",
     "_sources": [
       "https://www.carseven.co.jp/sell",
       "https://www.carseven.co.jp/satei",
       "https://www.ekiten.jp/shop_98849149/",
-      "https://www.navikuru.jp/traders/shizuoka/carseven/707/"
+      "https://www.navikuru.jp/traders/shizuoka/carseven/707/",
+      "https://www.carseven.co.jp/shop/"
     ],
     "_unverified": [
       "浜松西ヶ崎店の営業状況（掲載住所がネクステージ浜松北店と同じため除外）",
       "定休日（掲載元により水曜・年中無休で食い違い）",
-      "出張査定の対応"
+      "出張査定の対応",
+      "浜松志都呂店がカーセブン公式の店舗一覧で確認できない（閉店・移転の可能性。電話番号は未掲載）"
     ]
   },
   {
@@ -134,7 +157,11 @@
       "onlineApply": true,
       "noReduction": null
     },
-    "features": ["最大10社に一括依頼", "申込み後に概算相場を表示", "利用無料"],
+    "features": [
+      "最大10社に一括依頼",
+      "申込み後に概算相場を表示",
+      "利用無料"
+    ],
     "priceNote": "査定無料（目安売却額は車種・年式により変動）",
     "localNote": [
       {
@@ -149,7 +176,9 @@
       "https://crexgroup.com/ja/car-kaitori/service-comparison/navikuru/",
       "https://minhyo.jp/a-satei"
     ],
-    "_unverified": ["申込みの所要時間（45秒・47秒で情報源が食い違うため掲載せず）"]
+    "_unverified": [
+      "申込みの所要時間（45秒・47秒で情報源が食い違うため掲載せず）"
+    ]
   },
   {
     "name": "カーセンサー 簡単ネット車査定",
@@ -171,10 +200,16 @@
       "onlineApply": true,
       "noReduction": null
     },
-    "features": ["中古車情報サイト「カーセンサー」の一括査定", "利用無料"],
+    "features": [
+      "中古車情報サイト「カーセンサー」の一括査定",
+      "利用無料"
+    ],
     "priceNote": "査定無料（目安売却額は車種・年式により変動）",
     "localNote": [
-      { "type": "tip", "text": "浜松市に対応する買取店へまとめて依頼できる（依頼できる店舗数は車種・地域により変わる）" }
+      {
+        "type": "tip",
+        "text": "浜松市に対応する買取店へまとめて依頼できる（依頼できる店舗数は車種・地域により変わる）"
+      }
     ],
     "source": "manual",
     "fetchedAt": "2026-10-10",
@@ -208,9 +243,17 @@
       "onlineApply": true,
       "noReduction": null
     },
-    "features": ["買取相場をチェックできる", "利用無料"],
+    "features": [
+      "買取相場をチェックできる",
+      "利用無料"
+    ],
     "priceNote": "査定無料（目安売却額は車種・年式により変動）",
-    "localNote": [{ "type": "tip", "text": "事前に相場感をつかんでから、浜松の買取店と交渉したい人向け" }],
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "事前に相場感をつかんでから、浜松の買取店と交渉したい人向け"
+      }
+    ],
     "source": "manual",
     "fetchedAt": "2026-10-10",
     "_sources": [

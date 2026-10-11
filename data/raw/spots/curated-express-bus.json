@@ -41,13 +41,15 @@
       "https://www.e-liner.jp/",
       "https://www.e-liner.jp/shinjuku/fare.php",
       "https://www.e-liner.jp/yokohama/fare.php",
-      "https://www.e-liner.jp/tokyoyakou/fare.php"
+      "https://www.e-liner.jp/tokyoyakou/fare.php",
+      "https://www.e-liner.jp/faq/"
     ],
     "_unverified": [
       "シートタイプ・トイレの有無（路線・車両により異なる）",
       "京都・大阪線の運賃",
       "新宿・横浜線の乗り場番号",
-      "「地元信頼度高」（根拠がないため不掲載）"
+      "「地元信頼度高」（根拠がないため不掲載）",
+      "電話予約は受け付けていない（公式FAQ）ため電話番号は未掲載"
     ]
   },
   {
@@ -57,10 +59,10 @@
     "serviceType": "store",
     "chain": false,
     "address": "静岡県浜松市中央区（浜松駅北口）",
-    "tel": null,
+    "tel": "0570-048-939",
     "hours": null,
     "access": "浜松駅北口から発車",
-    "officialUrl": null,
+    "officialUrl": "https://www.jrtbinm.co.jp/mainbusroute/",
     "description": "JR東海バスが運行する、東京・横浜と静岡・浜松を結ぶ夜行バス。浜松駅北口を夜に出発し、翌朝東京駅（日本橋口）などに到着する便があります。",
     "specs": {
       "kind": "夜行バス（JR系）",
@@ -89,13 +91,17 @@
       "https://www.kosokubus.com/?page=bus_list&pageType=brand&brandCode=JR200",
       "https://www.bushikaku.net/search/shizuoka_tokyo/hamamatsu_/bus_code-10033/",
       "https://mb.jorudan.co.jp/os/bexp/line/0545/",
-      "https://tabi-mag.jp/dream-shizuoka/"
+      "https://tabi-mag.jp/dream-shizuoka/",
+      "https://www.jrtbinm.co.jp/mainbusroute/",
+      "https://www.jrtbinm.co.jp/contact/",
+      "https://www.jrtbinm.co.jp/topics/"
     ],
     "_unverified": [
       "3列シート車（予約サイトの掲載は4列シートのため不掲載）",
       "現行の時刻・運賃（予約サイトの掲載は更新時期が古い可能性）",
       "昼行便の有無",
-      "公式サイトURL"
+      "電話番号は全路線共通のナビダイヤル（予約・問い合わせ）",
+      "2026年5月29日発表のダイヤ改正の内容"
     ]
   },
   {

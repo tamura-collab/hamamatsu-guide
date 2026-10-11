@@ -52,10 +52,10 @@
     "category": "gym",
     "genre": "パーソナルジム",
     "address": "静岡県浜松市中央区鍛冶町140-2 4F・5F",
-    "tel": null,
+    "tel": "0120-700-900",
     "hours": "7:00～23:00（予約制）",
     "access": "新浜松駅から徒歩2分／JR浜松駅から徒歩3分（北口）",
-    "officialUrl": "https://www.rizap.jp/",
+    "officialUrl": "https://www.rizap.jp/studios/studio020",
     "description": "完全個室のマンツーマン指導と食事指導を組み合わせたパーソナルジム。入会前に無料カウンセリングを受けられます。",
     "localNote": [
       {
@@ -156,7 +156,7 @@
     "category": "gym",
     "genre": "総合フィットネスクラブ",
     "address": "静岡県浜松市中央区曳馬6-16-20",
-    "tel": null,
+    "tel": "053-471-1800",
     "hours": "月～木・土 10:00～23:00 / 日・祝 10:00～19:00",
     "access": "曳馬駅から車で約5分・駐車場あり",
     "officialUrl": "https://www.holiday-sc.jp/shops/012-hamamatsu/",
@@ -241,10 +241,10 @@
     "category": "gym",
     "genre": "公営トレーニング室",
     "address": "静岡県浜松市中央区和田町808-1",
-    "tel": null,
+    "tel": "053-461-1111",
     "hours": "9:00～21:30",
     "access": "駐車場650台（1回200円）",
-    "officialUrl": null,
+    "officialUrl": "https://hamamatsu-arena.jp/",
     "description": "浜松市の公営トレーニング室。月額契約がなく、1回ごとの料金で利用できます。初回利用時は講習の受講が必要です。",
     "localNote": [
       {
@@ -334,7 +334,7 @@
     "category": "car-sell",
     "genre": "車買取・中古車販売",
     "address": "静岡県浜松市中央区西ヶ崎町1894",
-    "tel": null,
+    "tel": "053-432-4907",
     "hours": "10:00～19:00（第2水曜定休・祝日を除く）",
     "access": null,
     "officialUrl": "https://www.nextage.jp/shop/1200/",
@@ -564,10 +564,10 @@
     "category": "kids-school",
     "genre": "プログラミング",
     "address": "静岡県浜松市中央区初生町（自立学習RED 浜松初生教室内）",
-    "tel": null,
+    "tel": "053-401-2010",
     "hours": "教室により異なる",
     "access": null,
-    "officialUrl": "https://qureo.jp/class/",
+    "officialUrl": "https://qureo.jp/class/red_hamamatsuhatsuoi",
     "description": "ゲーム感覚で進められる教材でプログラミングを学ぶ教室。浜松初生教室は学習塾「自立学習RED」に併設されています。",
     "localNote": [
       {
@@ -604,10 +604,10 @@
     "category": "kids-school",
     "genre": "英会話",
     "address": "静岡県浜松市中央区（ザザシティ浜松 西館1F）",
-    "tel": null,
+    "tel": "0800-111-1111",
     "hours": "火～金 12:00～21:00 / 土 11:00～20:00",
     "access": "JR浜松駅から徒歩6分（D3出口）",
-    "officialUrl": "https://www.aeonet.co.jp/school/chubu/shizuoka/2213/kids/",
+    "officialUrl": "https://aeonet.co.jp/school/chubu/shizuoka/2213/kids",
     "description": "1歳から中学生までを対象にした子ども英会話教室。1〜3歳のクラスは保護者と一緒にレッスンに参加します。",
     "localNote": [
       {
@@ -654,7 +654,7 @@
     "category": "kids-school",
     "genre": "英会話",
     "address": "静岡県浜松市中央区板屋町633 萬龍ビル2F",
-    "tel": null,
+    "tel": "053-454-4343",
     "hours": null,
     "access": "JR浜松駅北口から広小路を北へ約200m",
     "officialUrl": "https://www.nova.co.jp/junior/schools/toukai/hamamatsushi/hamamatsu.html",
@@ -1274,20 +1274,20 @@
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "moving-832d6e1b",
-    "name": "サカイ引越センター 浜松支社",
+    "id": "moving-69c53070",
+    "name": "サカイ引越センター 浜松東支社",
     "category": "moving",
     "genre": "引越し業者",
-    "address": "静岡県浜松市中央区高丘北2-12-26",
-    "tel": null,
+    "address": "静岡県浜松市中央区宮竹町196-1",
+    "tel": "0120-947-641",
     "hours": "8:00～19:00",
     "access": null,
-    "officialUrl": "https://www.hikkoshi-sakai.co.jp/",
-    "description": "全国展開する引越し業者の浜松拠点。単身からファミリーまで対応し、市内には浜松東支社もあります。",
+    "officialUrl": "https://www.hikkoshi-sakai.co.jp/area/shizuoka/detail/hamamatsuhigashi.html",
+    "description": "全国展開する引越し業者の浜松拠点。浜松東支社は浜松市中央区と磐田市を担当しています（浜松支社は天竜区・浜名区・湖西市を担当）。単身からファミリーまで対応します。",
     "localNote": [
       {
         "type": "tip",
-        "text": "浜松市内に浜松支社・浜松東支社があり、市内の引越しから県外への長距離まで相談できる",
+        "text": "中央区からの引越しは浜松東支社の担当。天竜区・浜名区は浜松支社が担当なので、見積もり時に住所を伝えるとスムーズ",
         "source": "manual"
       }
     ],
@@ -1319,7 +1319,7 @@
     "category": "moving",
     "genre": "引越し業者",
     "address": "静岡県浜松市中央区下石田町1850-1",
-    "tel": null,
+    "tel": "053-422-0123",
     "hours": null,
     "access": null,
     "officialUrl": "https://www.the0123.com/siten/hamamatsu.html",

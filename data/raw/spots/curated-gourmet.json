@@ -6,7 +6,7 @@
     "serviceType": "store",
     "chain": false,
     "address": "静岡県浜松市中央区砂山町6-1 メイワン エキマチウエスト1F",
-    "tel": null,
+    "tel": "053-415-8655",
     "hours": "11:00～22:00（L.O.21:30）年中無休",
     "access": "JR浜松駅北口から徒歩1分",
     "officialUrl": "https://1402.jp/shop/hamamatsu.html",
@@ -47,7 +47,6 @@
       "https://retty.me/restaurant/100001268733/"
     ],
     "_unverified": [
-      "電話番号（情報源により食い違い）",
       "「新幹線改札近く」「円形焼き」（未確認のため不掲載）",
       "「元祖浜松餃子」は店舗の自称として記載",
       "テイクアウト・ネット予約の可否",
@@ -61,10 +60,10 @@
     "serviceType": "store",
     "chain": false,
     "address": "静岡県浜松市中央区板屋町655",
-    "tel": null,
+    "tel": "053-452-5687",
     "hours": "11:00～20:00（L.O.19:30）月曜定休",
     "access": "JR浜松駅北口から徒歩6分／遠州鉄道 第一通り駅から徒歩3分",
-    "officialUrl": "https://www.unagiyaotoku.com/",
+    "officialUrl": "https://www.unagiyaotoku.com/info.php",
     "description": "1909年創業のうなぎ店。名物の「お櫃うなぎ茶漬け」を目当てに全国から客が訪れます。",
     "specs": {
       "dishType": "うなぎ（お櫃うなぎ茶漬け）",
@@ -94,11 +93,11 @@
     "_sources": [
       "https://www.unagiyaotoku.com/",
       "https://retty.me/restaurant/100000027785/",
-      "https://www.at-s.com/gourmet/ranking/genre39-area_ad62/"
+      "https://www.at-s.com/gourmet/ranking/genre39-area_ad62/",
+      "https://www.unagiyaotoku.com/info.php"
     ],
     "_unverified": [
       "「浜名湖産うなぎ」（産地は未確認のため不掲載）",
-      "電話番号",
       "テイクアウト・ネット予約の可否",
       "現行の価格（2022年10月時点の掲載）"
     ]
@@ -110,10 +109,10 @@
     "serviceType": "store",
     "chain": false,
     "address": "静岡県浜松市中央区砂山町320-2 遠鉄百貨店 本館8階",
-    "tel": null,
+    "tel": "053-456-3113",
     "hours": null,
     "access": "JR浜松駅から徒歩すぐ（遠鉄百貨店 本館8階）",
-    "officialUrl": "https://www.genkotsu-hb.com/shop/entetsu.php",
+    "officialUrl": "https://www.genkotsu-hb.com/shop/detail/237",
     "description": "静岡県内だけで展開するハンバーグレストラン「さわやか」の、浜松駅隣接の遠鉄百貨店にある店舗。予約は受け付けておらず、整理券で順番を待ちます。",
     "specs": {
       "dishType": "ハンバーグ（げんこつハンバーグ）",
@@ -141,13 +140,14 @@
     "fetchedAt": "2026-10-10",
     "_sources": [
       "https://www.genkotsu-hb.com/shop/entetsu.php",
-      "https://foodle.pro/karikari217/meals/hamamatsu/sawayaka-hamamatsu-entetsu/16294"
+      "https://foodle.pro/karikari217/meals/hamamatsu/sawayaka-hamamatsu-entetsu/16294",
+      "https://www.genkotsu-hb.com/shop/detail/237"
     ],
     "_unverified": [
       "げんこつハンバーグの現行価格（1,680円・1,540円・1,265円〈2023年〉で情報源が食い違い）",
-      "電話番号",
       "営業時間（2023年の個人ブログの掲載のみ）",
-      "テイクアウトの可否"
+      "テイクアウトの可否",
+      "電話はコールセンターでの対応（公式の店舗ページの注記）"
     ]
   },
   {

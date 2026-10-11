@@ -6,7 +6,7 @@
     "serviceType": "store",
     "chain": false,
     "address": "静岡県浜松市中央区中央3-9-1",
-    "tel": null,
+    "tel": "053-451-1128",
     "hours": "9:30～17:00（第2・4水曜休館。8月は無休）",
     "access": "JR浜松駅から徒歩約10分",
     "officialUrl": "https://www.gakkihaku.jp/",
@@ -37,7 +37,9 @@
     "_sources": [
       "https://www.at-s.com/spot/article/137583",
       "https://www.hamamatsu-pippi.net/shisetsu/shisetsutokubetsuver/5291.html",
-      "https://guide.jr-odekake.net/spot/2380"
+      "https://guide.jr-odekake.net/spot/2380",
+      "https://www.gakkihaku.jp/access/",
+      "https://www.city.hamamatsu.shizuoka.jp/maps/c-gakkihaku.html"
     ],
     "_unverified": [
       "2026年7月以降の再開状況（2025年12月1日〜2026年7月10日休館の情報あり）",
@@ -54,7 +56,7 @@
     "serviceType": "store",
     "chain": false,
     "address": "静岡県浜松市中央区北寺島町256-3",
-    "tel": null,
+    "tel": "053-454-0178",
     "hours": null,
     "access": "JR浜松駅から徒歩約7分",
     "officialUrl": "https://www.mirai-ra.jp/",
@@ -86,7 +88,8 @@
       "https://www.mirai-ra.jp/guide/",
       "https://www.at-s.com/spot/article/138589",
       "https://www.jalan.net/kankou/spt_22202cc3290031897/",
-      "https://www.city.hamamatsu.shizuoka.jp/documents/167554/2201_1.pdf"
+      "https://www.city.hamamatsu.shizuoka.jp/documents/167554/2201_1.pdf",
+      "https://www.mirai-ra.jp/guide/access/"
     ],
     "_unverified": [
       "開館時間・休館日",
@@ -101,7 +104,7 @@
     "serviceType": "store",
     "chain": false,
     "address": "静岡県浜松市中央区西山町（航空自衛隊浜松基地内）",
-    "tel": null,
+    "tel": "053-472-1121",
     "hours": "9:00～16:00（月曜・毎月最終火曜・年末年始など休館）",
     "access": "浜松駅北口からバスで約25分（泉四丁目から徒歩約10分）",
     "officialUrl": "https://www.mod.go.jp/asdf/airpark/",
@@ -134,7 +137,8 @@
       "https://www.hamamatsu-pippi.net/shisetsu/shisetsutokubetsuver/5287.html",
       "https://www.transport-pf.or.jp/norimono/museum/khke/",
       "https://atsushi912.hatenablog.com/entry/hamamatsu-airpark",
-      "https://gigazine.net/news/20140726-airpark"
+      "https://gigazine.net/news/20140726-airpark",
+      "https://www.mod.go.jp/asdf/airpark/guide/index.html"
     ],
     "_unverified": [
       "バスの系統・所要時間",
@@ -149,7 +153,7 @@
     "serviceType": "store",
     "chain": false,
     "address": "静岡県浜松市中央区増楽町1301",
-    "tel": null,
+    "tel": "053-440-2020",
     "hours": "9:00～16:30（予約制・月曜休館）",
     "access": "高塚駅から徒歩約12分／浜松駅からタクシーで約10分",
     "officialUrl": "https://www.suzuki-rekishikan.jp/",
@@ -181,7 +185,8 @@
       "https://www.at-s.com/spot/article/225002",
       "https://www.transport-pf.or.jp/norimono/museum/sr/",
       "https://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%BA%E3%82%AD%E6%AD%B4%E5%8F%B2%E9%A4%A8",
-      "https://www.suzuki-rekishikan.jp/"
+      "https://www.suzuki-rekishikan.jp/",
+      "https://suzuki-rekishikan.jp/products/reserve"
     ],
     "_unverified": [
       "「スズキ本社前に立地」（位置関係未確認のため不掲載）",
@@ -196,7 +201,7 @@
     "serviceType": "store",
     "chain": false,
     "address": "静岡県浜松市中央区大久保町748-51",
-    "tel": null,
+    "tel": "053-482-1765",
     "hours": "見学定休日：火・水曜（日曜は生産休止日）",
     "access": "東名高速 浜松西ICから車で約10分",
     "officialUrl": "https://www.unagipai-factory.jp/",
@@ -227,12 +232,14 @@
     "_sources": [
       "https://www.unagipai-factory.jp/",
       "https://www.at-s.com/spot/article/138582",
-      "https://hamamatsuat.hamamatsu-daisuki.net/experience/778/"
+      "https://hamamatsuat.hamamatsu-daisuki.net/experience/778/",
+      "https://www.unagipai-factory.jp/tour.php"
     ],
     "_unverified": [
       "浜松駅からの公共交通でのアクセス",
       "併設カフェ・限定スイーツの内容（未確認のため不掲載）",
-      "開館時間"
+      "開館時間",
+      "電話番号は工場見学の予約窓口"
     ]
   },
   {

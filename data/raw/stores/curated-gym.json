@@ -20,7 +20,12 @@
       "poolSauna": false,
       "parking": null
     },
-    "features": ["24時間営業", "初心者向け", "セルフエステ・脱毛（設備は店舗により異なる）", "着替え不要"],
+    "features": [
+      "24時間営業",
+      "初心者向け",
+      "セルフエステ・脱毛（設備は店舗により異なる）",
+      "着替え不要"
+    ],
     "priceNote": "月額3,278円（税込）。入会金・事務手数料の有無やキャンペーンは時期により異なります。",
     "localNote": [
       {
@@ -35,7 +40,11 @@
       "https://kenpo.jp.fujitsu.com/content/files/health_promotion/rizap_2025seminar_chocozap_coupon.pdf",
       "https://fitmap.jp/?p=66995"
     ],
-    "_unverified": ["浜松市内の正確な店舗数", "各店舗の駐車場の有無", "セルフエステ・脱毛設備の設置店舗"]
+    "_unverified": [
+      "浜松市内の正確な店舗数",
+      "各店舗の駐車場の有無",
+      "セルフエステ・脱毛設備の設置店舗"
+    ]
   },
   {
     "name": "RIZAP（ライザップ）浜松店",
@@ -43,10 +52,10 @@
     "genre": "パーソナルジム",
     "chain": false,
     "address": "静岡県浜松市中央区鍛冶町140-2 4F・5F",
-    "tel": null,
+    "tel": "0120-700-900",
     "hours": "7:00～23:00（予約制）",
     "access": "新浜松駅から徒歩2分／JR浜松駅から徒歩3分（北口）",
-    "officialUrl": "https://www.rizap.jp/",
+    "officialUrl": "https://www.rizap.jp/studios/studio020",
     "description": "完全個室のマンツーマン指導と食事指導を組み合わせたパーソナルジム。入会前に無料カウンセリングを受けられます。",
     "specs": {
       "monthlyFee": null,
@@ -58,15 +67,33 @@
       "poolSauna": false,
       "parking": null
     },
-    "features": ["完全個室パーソナル", "食事指導", "無料カウンセリング", "返金保証制度（条件は公式サイトで確認）"],
+    "features": [
+      "完全個室パーソナル",
+      "食事指導",
+      "無料カウンセリング",
+      "返金保証制度（条件は公式サイトで確認）"
+    ],
     "priceNote": "2か月単位などのコース制のため、月額の目安は掲載していません。コース料金・入会金は無料カウンセリングまたは公式サイトでご確認ください。",
     "localNote": [
-      { "type": "tip", "text": "JR浜松駅北口・新浜松駅から徒歩圏。車の場合は周辺のコインパーキング利用が便利" }
+      {
+        "type": "tip",
+        "text": "JR浜松駅北口・新浜松駅から徒歩圏。車の場合は周辺のコインパーキング利用が便利"
+      }
     ],
     "source": "manual",
     "fetchedAt": "2026-10-10",
-    "_sources": ["https://fitmap.jp/?p=2623", "https://ekitan.com/media/fitness/rizap/"],
-    "_unverified": ["営業時間（第三者サイトの掲載）", "現在のコース料金", "返金保証の現行条件", "専用駐車場の有無"]
+    "_sources": [
+      "https://fitmap.jp/?p=2623",
+      "https://ekitan.com/media/fitness/rizap/",
+      "https://www.rizap.jp/studios/studio020"
+    ],
+    "_unverified": [
+      "営業時間（第三者サイトの掲載）",
+      "現在のコース料金",
+      "返金保証の現行条件",
+      "専用駐車場の有無",
+      "店舗直通の電話番号（公式の店舗ページは全国共通のフリーダイヤルのみ掲載）"
+    ]
   },
   {
     "name": "エニタイムフィットネス 浜松高林店・浜北中瀬店",
@@ -89,11 +116,22 @@
       "poolSauna": false,
       "parking": null
     },
-    "features": ["24時間営業", "マシン特化型", "国内外の店舗を相互利用可能（条件あり）", "シャワー完備"],
+    "features": [
+      "24時間営業",
+      "マシン特化型",
+      "国内外の店舗を相互利用可能（条件あり）",
+      "シャワー完備"
+    ],
     "priceNote": "月会費は店舗により異なります（7,480円前後が目安）。入会金・事務手数料は公式サイトでご確認ください。",
     "localNote": [
-      { "type": "landmark", "text": "浜北中瀬店はマックスバリュ浜北中瀬店と同じ敷地内" },
-      { "type": "tip", "text": "マイカー通勤の人は、店舗ごとの駐車場の有無を公式サイトで確認してから選ぶのがおすすめ" }
+      {
+        "type": "landmark",
+        "text": "浜北中瀬店はマックスバリュ浜北中瀬店と同じ敷地内"
+      },
+      {
+        "type": "tip",
+        "text": "マイカー通勤の人は、店舗ごとの駐車場の有無を公式サイトで確認してから選ぶのがおすすめ"
+      }
     ],
     "source": "manual",
     "fetchedAt": "2026-10-10",
@@ -101,7 +139,10 @@
       "https://www.anytimefitness.co.jp/chubu/shizuoka/?city=hamamatsu",
       "https://www.anytimefitness.co.jp/hamataka/"
     ],
-    "_unverified": ["浜松市内2店舗の月会費（7,480円は全国の一般的な水準）", "各店舗の駐車場台数"]
+    "_unverified": [
+      "浜松市内2店舗の月会費（7,480円は全国の一般的な水準）",
+      "各店舗の駐車場台数"
+    ]
   },
   {
     "name": "ホリデイスポーツクラブ 浜松店",
@@ -109,7 +150,7 @@
     "genre": "総合フィットネスクラブ",
     "chain": false,
     "address": "静岡県浜松市中央区曳馬6-16-20",
-    "tel": null,
+    "tel": "053-471-1800",
     "hours": "月～木・土 10:00～23:00 / 日・祝 10:00～19:00",
     "access": "曳馬駅から車で約5分・駐車場あり",
     "officialUrl": "https://www.holiday-sc.jp/shops/012-hamamatsu/",
@@ -123,10 +164,17 @@
       "personal": false,
       "poolSauna": true
     },
-    "features": ["プール・サウナ", "スタジオプログラム", "初心者向けプログラム"],
+    "features": [
+      "プール・サウナ",
+      "スタジオプログラム",
+      "初心者向けプログラム"
+    ],
     "priceNote": "マスター会員の月会費（税込）。会員種別・時期によって異なります。",
     "localNote": [
-      { "type": "tip", "text": "駐車場あり。休日や仕事終わりにお風呂・サウナ目的でも通える大型総合施設" }
+      {
+        "type": "tip",
+        "text": "駐車場あり。休日や仕事終わりにお風呂・サウナ目的でも通える大型総合施設"
+      }
     ],
     "source": "manual",
     "fetchedAt": "2026-10-10",
@@ -135,7 +183,10 @@
       "https://www.holiday-sc.jp/facility/?shop=012-hamamatsu",
       "https://fitmap.jp/gym/30831/"
     ],
-    "_unverified": ["料金掲載日（公式サイト上で日付未確認）", "定休日"]
+    "_unverified": [
+      "料金掲載日（公式サイト上で日付未確認）",
+      "定休日"
+    ]
   },
   {
     "name": "カーブス（Curves）浜松エリア",
@@ -149,7 +200,10 @@
     "officialUrl": "https://www.curves.co.jp/",
     "description": "女性専用の30分サーキットトレーニング。予約不要で、空いた時間に通えます。",
     "specs": {
-      "monthlyFee": [6270, 8360],
+      "monthlyFee": [
+        6270,
+        8360
+      ],
       "perVisitFee": null,
       "trial": null,
       "open24h": false,
@@ -158,10 +212,17 @@
       "poolSauna": false,
       "parking": null
     },
-    "features": ["女性専用", "1回30分のサーキットトレーニング", "予約不要"],
+    "features": [
+      "女性専用",
+      "1回30分のサーキットトレーニング",
+      "予約不要"
+    ],
     "priceNote": "月会費は店舗・コースにより異なります（税込の目安）。別途入会金がかかります。",
     "localNote": [
-      { "type": "tip", "text": "ショッピングモール内や郊外のロードサイドにも出店しており、買い物のついでに通いやすい" }
+      {
+        "type": "tip",
+        "text": "ショッピングモール内や郊外のロードサイドにも出店しており、買い物のついでに通いやすい"
+      }
     ],
     "source": "manual",
     "fetchedAt": "2026-10-10",
@@ -170,7 +231,10 @@
       "https://fitmap.jp/magazine/column/178812/",
       "https://fitmap.jp/?p=37429"
     ],
-    "_unverified": ["浜松市内の店舗一覧と各店舗の月会費", "営業時間"]
+    "_unverified": [
+      "浜松市内の店舗一覧と各店舗の月会費",
+      "営業時間"
+    ]
   },
   {
     "name": "浜松アリーナ トレーニング室（市営）",
@@ -178,21 +242,29 @@
     "genre": "公営トレーニング室",
     "chain": false,
     "address": "静岡県浜松市中央区和田町808-1",
-    "tel": null,
+    "tel": "053-461-1111",
     "hours": "9:00～21:30",
     "access": "駐車場650台（1回200円）",
-    "officialUrl": null,
+    "officialUrl": "https://hamamatsu-arena.jp/",
     "description": "浜松市の公営トレーニング室。月額契約がなく、1回ごとの料金で利用できます。初回利用時は講習の受講が必要です。",
     "specs": {
       "monthlyFee": null,
-      "perVisitFee": [200, 410],
+      "perVisitFee": [
+        200,
+        410
+      ],
       "trial": null,
       "open24h": false,
       "womenOnly": false,
       "personal": false,
       "poolSauna": false
     },
-    "features": ["都度払い（月額固定なし）", "公営トレーニング室", "駐車場あり（有料）", "初回は講習の受講が必要"],
+    "features": [
+      "都度払い（月額固定なし）",
+      "公営トレーニング室",
+      "駐車場あり（有料）",
+      "初回は講習の受講が必要"
+    ],
     "priceNote": "1回あたり：一般410円、中高生・70歳以上200円（浜松アリーナ条例の料金表より）。駐車場は別途1回200円。",
     "localNote": [
       {
@@ -205,8 +277,14 @@
     "_sources": [
       "https://www1.g-reiki.net/hamamatsu/reiki_honbun/o700RG00000787.html",
       "https://hamataikyou.hamazo.tv/e7365454.html",
-      "https://graspo.jp/training_facility/116"
+      "https://graspo.jp/training_facility/116",
+      "https://hamamatsu-sports.or.jp/news/arena-website-opened.html",
+      "https://hamamatsu-sports.or.jp/facilities/hamamatsu-arena"
     ],
-    "_unverified": ["指定管理者が定める現行料金", "公式ページのURL"]
+    "_unverified": [
+      "指定管理者が定める現行料金",
+      "公式ページのURL",
+      "トレーニング室直通の電話番号（施設の代表番号を掲載）"
+    ]
   }
 ]

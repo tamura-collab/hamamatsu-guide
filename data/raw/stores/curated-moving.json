@@ -1,16 +1,16 @@
 [
   {
-    "name": "サカイ引越センター 浜松支社",
+    "name": "サカイ引越センター 浜松東支社",
     "category": "moving",
     "genre": "引越し業者",
     "serviceType": "store",
     "chain": false,
-    "address": "静岡県浜松市中央区高丘北2-12-26",
-    "tel": null,
+    "address": "静岡県浜松市中央区宮竹町196-1",
+    "tel": "0120-947-641",
     "hours": "8:00～19:00",
     "access": null,
-    "officialUrl": "https://www.hikkoshi-sakai.co.jp/",
-    "description": "全国展開する引越し業者の浜松拠点。単身からファミリーまで対応し、市内には浜松東支社もあります。",
+    "officialUrl": "https://www.hikkoshi-sakai.co.jp/area/shizuoka/detail/hamamatsuhigashi.html",
+    "description": "全国展開する引越し業者の浜松拠点。浜松東支社は浜松市中央区と磐田市を担当しています（浜松支社は天竜区・浜名区・湖西市を担当）。単身からファミリーまで対応します。",
     "specs": {
       "kind": "大手引越し業者",
       "estimateFee": 0,
@@ -21,23 +21,31 @@
       "disposal": null,
       "freeBoxes": true
     },
-    "features": ["単身・ファミリーに対応", "ダンボール無料（枚数はプランにより異なる）", "単身向けのWeb予約サービスあり"],
+    "features": [
+      "単身・ファミリーに対応",
+      "ダンボール無料（枚数はプランにより異なる）",
+      "単身向けのWeb予約サービスあり"
+    ],
     "priceNote": "見積もり無料（時期・距離・荷物量により変動）。ダンボールは一般的な契約で最大50枚無料との掲載があり、一部の単身向けプランは対象外です。",
     "localNote": [
-      { "type": "tip", "text": "浜松市内に浜松支社・浜松東支社があり、市内の引越しから県外への長距離まで相談できる" }
+      {
+        "type": "tip",
+        "text": "中央区からの引越しは浜松東支社の担当。天竜区・浜名区は浜松支社が担当なので、見積もり時に住所を伝えるとスムーズ"
+      }
     ],
     "source": "manual",
     "fetchedAt": "2026-10-10",
     "_sources": [
-      "https://tokubai.co.jp/%E3%82%B5%E3%82%AB%E3%82%A4%E5%BC%95%E8%B6%8A%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC/185403",
+      "https://www.hikkoshi-sakai.co.jp/area/shizuoka/detail/hamamatsuhigashi.html",
+      "https://www.hikkoshi-sakai.co.jp/area/all.html",
       "https://hikkoshizamurai.jp/company/d-sakaico/voice/p1-com101-pref22",
       "https://www.hikkoshi-sakai.co.jp/campaign/sasat.html",
       "https://crexgroup.com/ja/hikkoshi/mover-comparison/sakai-moving-cardboard-box-guide/"
     ],
     "_unverified": [
-      "支社の住所・営業時間（第三者サイトの掲載。公式の支社ページで未確認）",
       "ダンボールの無料枚数の現行条件",
-      "不用品引き取りの対応"
+      "不用品引き取りの対応",
+      "以前掲載していた浜松支社（中央区高丘北2-12-26、0120-058-799）は天竜区・浜名区・湖西市の担当のため、中央区を担当する浜松東支社に差し替え"
     ]
   },
   {
@@ -47,7 +55,7 @@
     "serviceType": "store",
     "chain": false,
     "address": "静岡県浜松市中央区下石田町1850-1",
-    "tel": null,
+    "tel": "053-422-0123",
     "hours": null,
     "access": null,
     "officialUrl": "https://www.the0123.com/siten/hamamatsu.html",
@@ -62,9 +70,17 @@
       "disposal": null,
       "freeBoxes": null
     },
-    "features": ["見積もり無料", "荷物量・作業範囲に合わせたプラン相談"],
+    "features": [
+      "見積もり無料",
+      "荷物量・作業範囲に合わせたプラン相談"
+    ],
     "priceNote": "見積もり無料（時期・距離・荷物量により変動）。",
-    "localNote": [{ "type": "landmark", "text": "遠鉄バス「下石田」バス停から徒歩約3分" }],
+    "localNote": [
+      {
+        "type": "landmark",
+        "text": "遠鉄バス「下石田」バス停から徒歩約3分"
+      }
+    ],
     "source": "manual",
     "fetchedAt": "2026-10-10",
     "_sources": [
@@ -100,22 +116,32 @@
       "disposal": null,
       "freeBoxes": null
     },
-    "features": ["目的別のプラン（スタンダード・ミニ引越など）", "単身向けのミニ引越プラン"],
+    "features": [
+      "目的別のプラン（スタンダード・ミニ引越など）",
+      "単身向けのミニ引越プラン"
+    ],
     "priceNote": "見積もり無料（時期・距離・荷物量により変動）。",
-    "localNote": [{ "type": "tip", "text": "浜松市内の拠点から対応。予算や荷物量に応じてプランを選べる" }],
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "浜松市内の拠点から対応。予算や荷物量に応じてプランを選べる"
+      }
+    ],
     "source": "manual",
     "fetchedAt": "2026-10-10",
     "_sources": [
       "https://www.0003.co.jp/",
       "https://www.0003.co.jp/company/network/",
       "https://cpstyle.jp/hamamatsu/shops/152280",
-      "https://crexgroup.com/ja/hikkoshi/cost-estimate/ark-moving-price-tips-3/"
+      "https://crexgroup.com/ja/hikkoshi/cost-estimate/ark-moving-price-tips-3/",
+      "https://www.0003.co.jp/company/network/shizuoka.html"
     ],
     "_unverified": [
       "浜松の拠点の住所（第三者サイトの掲載。公式の事業所一覧で浜松の拠点は未確認）",
       "「ギネス登録」（確認できず不掲載）",
       "「ギオンパック」（アークのプランではないとみられ不掲載）",
-      "プラン名（比較記事の掲載）"
+      "プラン名（比較記事の掲載）",
+      "浜松の拠点の電話番号・住所（公式サイトに浜松の支店ページがなく、第三者サイトの掲載のみ）"
     ]
   },
   {
@@ -140,10 +166,17 @@
       "disposal": null,
       "freeBoxes": null
     },
-    "features": ["複数の引越し業者に一括で見積もり依頼", "料金シミュレーターで相場を確認", "提携業者403社（公式ページの記載）"],
+    "features": [
+      "複数の引越し業者に一括で見積もり依頼",
+      "料金シミュレーターで相場を確認",
+      "提携業者403社（公式ページの記載）"
+    ],
     "priceNote": "見積もり無料（時期・距離・荷物量により変動）。",
     "localNote": [
-      { "type": "tip", "text": "浜松市に対応する大手から地元の引越し業者まで、まとめて見積もりを依頼できる。申込み後は業者から連絡が届く" }
+      {
+        "type": "tip",
+        "text": "浜松市に対応する大手から地元の引越し業者まで、まとめて見積もりを依頼できる。申込み後は業者から連絡が届く"
+      }
     ],
     "source": "manual",
     "fetchedAt": "2026-10-10",
@@ -153,7 +186,10 @@
       "https://hikkoshizamurai.jp/estimate/single-simulator/",
       "https://ekitan.com/media/moving/hikkoshizamurai/"
     ],
-    "_unverified": ["一度に依頼できる最大社数（比較記事で最大10社）", "「提携業者数最大級」（比較根拠がないため不掲載）"]
+    "_unverified": [
+      "一度に依頼できる最大社数（比較記事で最大10社）",
+      "「提携業者数最大級」（比較根拠がないため不掲載）"
+    ]
   },
   {
     "name": "SUUMO引越し見積もり",
@@ -177,10 +213,17 @@
       "disposal": null,
       "freeBoxes": null
     },
-    "features": ["電話番号の入力は任意", "メール中心で見積もりを比較できる", "費用の目安を確認できる"],
+    "features": [
+      "電話番号の入力は任意",
+      "メール中心で見積もりを比較できる",
+      "費用の目安を確認できる"
+    ],
     "priceNote": "見積もり無料（時期・距離・荷物量により変動）。電話番号を入力しなくても電話をかけてくる業者がいたという口コミもあります。",
     "localNote": [
-      { "type": "tip", "text": "営業電話を減らして、メールで浜松発着の引越し費用を比べたい人向け" }
+      {
+        "type": "tip",
+        "text": "営業電話を減らして、メールで浜松発着の引越し費用を比べたい人向け"
+      }
     ],
     "source": "manual",
     "fetchedAt": "2026-10-10",
@@ -189,7 +232,10 @@
       "https://minhyo.jp/suumo-hikkoshi",
       "https://hikkoshi.suumo.jp/143245001/"
     ],
-    "_unverified": ["電話番号任意の仕様（公式の申込画面で未確認）", "「メール連絡のみで完結」（業者により電話が来る場合あり）"]
+    "_unverified": [
+      "電話番号任意の仕様（公式の申込画面で未確認）",
+      "「メール連絡のみで完結」（業者により電話が来る場合あり）"
+    ]
   },
   {
     "name": "浜松市 連絡ごみ（粗大ごみ）",
@@ -206,14 +252,21 @@
     "specs": {
       "kind": "自治体（粗大ごみ）",
       "estimateFee": null,
-      "disposalFee": [310, 1240],
+      "disposalFee": [
+        310,
+        1240
+      ],
       "estimateMethod": "受付センターへ申込（電話・LINE・FAX・インターネット）",
       "single": null,
       "family": null,
       "disposal": true,
       "freeBoxes": null
     },
-    "features": ["戸別収集（有料・1回10点まで）", "清掃工場等への自己搬入（前日・当日に申込）", "手数料納付済証（シール）をコンビニ等で購入"],
+    "features": [
+      "戸別収集（有料・1回10点まで）",
+      "清掃工場等への自己搬入（前日・当日に申込）",
+      "手数料納付済証（シール）をコンビニ等で購入"
+    ],
     "priceNote": "戸別収集の手数料は品目により1点310〜1,240円（第三者サイトの掲載例）。自己搬入の料金・受付条件は市の案内でご確認ください。",
     "localNote": [
       {
