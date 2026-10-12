@@ -20,10 +20,14 @@
       "setAu": true,
       "setDocomo": false,
       "setSoftbank": false,
-      "noConstruction": false,
-      "contract": "2年（自動更新）"
+      "contract": "2年（自動更新）",
+      "noContractTerm": false
     },
-    "features": ["東海4県中心の独自回線", "1ギガ・10ギガのプラン", "au・UQ mobileのセット割"],
+    "features": [
+      "東海4県中心の独自回線",
+      "1ギガ・10ギガのプラン",
+      "au・UQ mobileのセット割"
+    ],
     "priceNote": "1ギガの標準月額（戸建て5,720円・マンション4,620円）。スタート割適用時は各550円引きの掲載例があります。10ギガは別料金・提供エリア限定です。",
     "localNote": [
       {
@@ -67,13 +71,20 @@
       "setAu": false,
       "setDocomo": false,
       "setSoftbank": true,
-      "noConstruction": false,
-      "contract": "なし（戸建て・公式発表）"
+      "contract": "なし（戸建て・公式発表）",
+      "noContractTerm": true
     },
-    "features": ["2ギガ・10ギガのプラン", "戸建ては契約期間・解約金なし（公式発表）", "ソフトバンク・ワイモバイルのセット割"],
+    "features": [
+      "2ギガ・10ギガのプラン",
+      "戸建ては契約期間・解約金なし（公式発表）",
+      "ソフトバンク・ワイモバイルのセット割"
+    ],
     "priceNote": "2ギガの基本料金（戸建て5,500円）。10ギガは6,050円。「定額割」適用で戸建ては3年間3,980円の案内あり。マンション料金は掲載サイトの例です。",
     "localNote": [
-      { "type": "tip", "text": "浜松市では中央区・浜名区が対応地域の目安。10ギガは浜松市が対象か住所で確認が必要" }
+      {
+        "type": "tip",
+        "text": "浜松市では中央区・浜名区が対応地域の目安。10ギガは浜松市が対象か住所で確認が必要"
+      }
     ],
     "source": "manual",
     "fetchedAt": "2026-10-10",
@@ -86,7 +97,8 @@
       "浜松市内の提供エリア（第三者サイトの目安）",
       "10ギガの浜松市での提供可否",
       "マンションの月額（第三者サイトの掲載）",
-      "セット割の条件（NURO光でんわ加入が必要との掲載）"
+      "セット割の条件（NURO光でんわ加入が必要との掲載）",
+      "「契約期間の縛りなし」は戸建てプランの公式発表に基づく（マンションは未確認）"
     ]
   },
   {
@@ -110,13 +122,20 @@
       "setAu": false,
       "setDocomo": true,
       "setSoftbank": false,
-      "noConstruction": false,
-      "contract": "2年定期（定期契約なしプランもあり）"
+      "contract": "2年定期（定期契約なしプランもあり）",
+      "noContractTerm": false
     },
-    "features": ["プロバイダを選べる", "ドコモのスマホとのセット割", "1ギガ・10ギガのプラン"],
+    "features": [
+      "プロバイダを選べる",
+      "ドコモのスマホとのセット割",
+      "1ギガ・10ギガのプラン"
+    ],
     "priceNote": "1ギガ・タイプA・2年定期の月額（戸建て5,720円・マンション4,400円）。タイプBは各220円高く、定期契約なしは割高です。10ギガは提供エリア限定。",
     "localNote": [
-      { "type": "tip", "text": "ドコモのスマホを使っている家庭では、セット割でスマホ代とまとめて安くできる定番の選択肢" }
+      {
+        "type": "tip",
+        "text": "ドコモのスマホを使っている家庭では、セット割でスマホ代とまとめて安くできる定番の選択肢"
+      }
     ],
     "source": "manual",
     "fetchedAt": "2026-10-10",
@@ -153,13 +172,19 @@
       "setAu": false,
       "setDocomo": false,
       "setSoftbank": true,
-      "noConstruction": false,
-      "contract": "2年（自動更新）／自動更新なしプランもあり"
+      "contract": "2年（自動更新）／自動更新なしプランもあり",
+      "noContractTerm": false
     },
-    "features": ["ソフトバンク・ワイモバイルのセット割（おうち割 光セット）", "1ギガ・10ギガのプラン"],
+    "features": [
+      "ソフトバンク・ワイモバイルのセット割（おうち割 光セット）",
+      "1ギガ・10ギガのプラン"
+    ],
     "priceNote": "1ギガ・2年自動更新プランの月額（戸建て5,720円・マンション4,180円）。別途ホームゲートウェイ等の機器料がかかる場合あり。2026年12月1日から月額330円の値上げ予定と報じられています。",
     "localNote": [
-      { "type": "tip", "text": "ソフトバンク・ワイモバイルのスマホを使っている家庭は、セット割の対象になるか確認したい" }
+      {
+        "type": "tip",
+        "text": "ソフトバンク・ワイモバイルのスマホを使っている家庭は、セット割の対象になるか確認したい"
+      }
     ],
     "source": "manual",
     "fetchedAt": "2026-10-10",
@@ -176,7 +201,7 @@
     ]
   },
   {
-    "name": "auひかり（マンションタイプ）",
+    "name": "auひかり",
     "category": "internet",
     "genre": "光回線（KDDI）",
     "serviceType": "online",
@@ -196,10 +221,14 @@
       "setAu": true,
       "setDocomo": false,
       "setSoftbank": false,
-      "noConstruction": false,
-      "contract": "建物・プランにより異なる"
+      "contract": "建物・プランにより異なる",
+      "noContractTerm": false
     },
-    "features": ["静岡県は戸建てタイプの提供なし", "マンションは建物の設備がある場合のみ", "au・UQ mobileのセット割"],
+    "features": [
+      "静岡県は戸建てタイプの提供なし",
+      "マンションは建物の設備がある場合のみ",
+      "au・UQ mobileのセット割"
+    ],
     "priceNote": "マンションの月額は建物の設備・プランにより異なるため掲載していません。浜松市の戸建てで au・UQ mobile のセット割を使いたい場合は、コミュファ光も比較してください。",
     "localNote": [
       {
@@ -214,51 +243,59 @@
       "https://www.ine-grp.co.jp/media/broadband/216/",
       "https://www.luft.co.jp/media/au-hikari-area/"
     ],
-    "_unverified": ["マンションタイプの月額・最大速度", "高額キャッシュバックの有無（申込窓口・時期で変わるため不掲載）"]
+    "_unverified": [
+      "マンションタイプの月額・最大速度",
+      "高額キャッシュバックの有無（申込窓口・時期で変わるため不掲載）",
+      "名称を「auひかり（マンションタイプ）」から変更。静岡県は戸建てタイプの提供なしのため、内容はマンションタイプの案内"
+    ]
   },
   {
-    "name": "ドコモ home 5G",
+    "name": "おてがる光",
     "category": "internet",
-    "genre": "ホームルーター",
+    "genre": "光回線（光コラボ）",
     "serviceType": "online",
     "chain": false,
-    "address": "Web申込（ドコモの5G・4Gエリア）",
+    "address": "Web申込（全国のフレッツ光提供エリア）",
     "tel": null,
     "hours": null,
     "access": null,
-    "officialUrl": "https://www.docomo.ne.jp/home_5g/",
-    "description": "コンセントに挿すだけで使えるドコモのホームルーター。開通工事が不要で、端末が届けばすぐに使い始められます。",
+    "officialUrl": "https://otegal.com/",
+    "description": "株式会社エクスゲートが提供する光回線。契約期間の縛りや解約違約金がなく、プロバイダ料金込みの月額で使えます。スマホとのセット割はありません。",
     "specs": {
-      "lineType": "ホームルーター（置くだけWi-Fi）",
-      "feeHouse": 5280,
-      "feeMansion": 5280,
-      "maxSpeedGbps": 4.2,
-      "setDiscount": "ドコモ",
+      "lineType": "コラボ光",
+      "feeHouse": 4708,
+      "feeMansion": 3608,
+      "maxSpeedGbps": 1,
+      "setDiscount": "なし",
       "setAu": false,
-      "setDocomo": true,
+      "setDocomo": false,
       "setSoftbank": false,
-      "noConstruction": true,
-      "contract": "なし（端末代は分割の割引条件あり）"
+      "noContractTerm": true,
+      "contract": "なし（解約違約金なし）"
     },
-    "features": ["開通工事・撤去工事が不要", "コンセントに挿すだけ", "端末が届けばすぐ使える"],
-    "priceNote": "月額5,280円（戸建て・マンション共通）。端末代は36回分割で実質負担が軽くなる条件があり、途中解約では残債の支払いが必要です。最大4.2Gbpsは5Gの理論値で、実際の速度は環境により大きく変わります。",
+    "features": [
+      "契約期間の縛り・解約違約金なし",
+      "プロバイダ料金込みの月額",
+      "スマホのセット割なし"
+    ],
+    "priceNote": "1ギガプランの月額（戸建て4,708円・マンション3,608円、税込）。公式サイトの税抜表記は戸建て4,280円・マンション3,280円。IPv6プラスオプションは別料金です。新規に回線を引く場合は工事が必要です。",
     "localNote": [
       {
         "type": "tip",
-        "text": "賃貸で工事の許可が出ない、引っ越し直後ですぐネットが必要、といった場合の選択肢。設置場所の電波状況で速度が変わる"
+        "text": "格安SIMを使っていてセット割が関係ない人や、転勤などで短期間だけ使いたい人向け"
       }
     ],
     "source": "manual",
-    "fetchedAt": "2026-10-10",
+    "fetchedAt": "2026-10-12",
     "_sources": [
-      "https://gmobb.jp/media/wifi/homerouter/docomo-home5g/",
-      "https://mobile-wifi.news.mynavi.jp/homerouter/docomo-home-5g/",
-      "https://home5g-navi.com/speed/"
+      "https://otegal.com/",
+      "https://otegal.com/simulator/public/",
+      "https://selectra.jp/telecom/fiber/otegaru"
     ],
     "_unverified": [
-      "「即日開通」（端末の配送が必要なため不掲載）",
-      "ドコモのスマホとのセット割の名称・割引額",
-      "浜松市内の5Gエリアの範囲"
+      "開通工事費と工事費の実質無料特典の現行条件",
+      "1年以内に解約した場合の工事費残債の扱い",
+      "アフィリエイトURL（公式URLを仮で設定）"
     ]
   }
 ]

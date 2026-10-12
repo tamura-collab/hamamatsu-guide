@@ -165,7 +165,7 @@ export const categories: Category[] = [
     slug: 'internet',
     section: 'living',
     title: '光回線・インターネット',
-    summary: '浜松市で使える光回線とホームルーターを、月額・速度・スマホセット割で比較',
+    summary: '浜松市で使える光回線6社を、月額・速度・スマホセット割で比較',
     icon: 'wifi',
     axes: [
       { key: 'lineType', label: 'サービス種別', type: 'text', primary: true },
@@ -176,7 +176,7 @@ export const categories: Category[] = [
       { key: 'setAu', label: 'au・UQ mobile割', type: 'boolean', filter: 'yes', filterLabel: 'au・UQ mobileのセット割' },
       { key: 'setDocomo', label: 'ドコモ割', type: 'boolean', filter: 'yes', filterLabel: 'ドコモのセット割' },
       { key: 'setSoftbank', label: 'SoftBank・Y!mobile割', type: 'boolean', filter: 'yes', filterLabel: 'SoftBank・Y!mobileのセット割' },
-      { key: 'noConstruction', label: '開通工事不要', type: 'boolean', filter: 'yes', filterLabel: '開通工事不要' },
+      { key: 'noContractTerm', label: '契約期間の縛りなし', type: 'boolean', filter: 'yes', filterLabel: '契約期間の縛りなし' },
       { key: 'contract', label: '契約期間', type: 'text' },
     ],
     cta: { label: '提供エリアを確認する', microcopy: '住所を入れるだけで対応状況がわかります' },

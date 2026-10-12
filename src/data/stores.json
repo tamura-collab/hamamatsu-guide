@@ -563,96 +563,6 @@
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "kids-school-da053e81",
-    "name": "QUREOプログラミング教室 浜松初生教室",
-    "category": "kids-school",
-    "genre": "プログラミング",
-    "address": "静岡県浜松市中央区初生町（自立学習RED 浜松初生教室内）",
-    "tel": "053-401-2010",
-    "hours": "教室により異なる",
-    "access": null,
-    "officialUrl": "https://qureo.jp/class/red_hamamatsuhatsuoi",
-    "description": "ゲーム感覚で進められる教材でプログラミングを学ぶ教室。浜松初生教室は学習塾「自立学習RED」に併設されています。",
-    "localNote": [
-      {
-        "type": "tip",
-        "text": "学習塾（自立学習RED）に併設されており、塾と同じ場所で通える",
-        "source": "manual"
-      }
-    ],
-    "specs": {
-      "field": "プログラミング",
-      "monthlyFee": 9900,
-      "ageRange": "小学生〜（浜松初生教室の掲載は中学生・高校生推奨）",
-      "ageFrom": null,
-      "trial": null,
-      "pickup": null,
-      "parking": null,
-      "stationWalkMin": null
-    },
-    "features": [
-      "ゲーム感覚で進めるカリキュラム",
-      "月4回が基本",
-      "教材費無料（公式案内）"
-    ],
-    "priceNote": "月謝は教室により異なります（浜松初生教室の掲載例：月9,900円・初期費用なし）。",
-    "chain": false,
-    "serviceType": "store",
-    "affiliate": null,
-    "source": "manual",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "kids-school-437722eb",
-    "name": "イーオンキッズ（AEON KIDS）浜松校",
-    "category": "kids-school",
-    "genre": "英会話",
-    "address": "静岡県浜松市中央区（ザザシティ浜松 西館1F）",
-    "tel": "0800-111-1111",
-    "hours": "火～金 12:00～21:00 / 土 11:00～20:00",
-    "access": "JR浜松駅から徒歩6分（D3出口）",
-    "officialUrl": "https://aeonet.co.jp/school/chubu/shizuoka/2213/kids",
-    "description": "1歳から中学生までを対象にした子ども英会話教室。1〜3歳のクラスは保護者と一緒にレッスンに参加します。",
-    "localNote": [
-      {
-        "type": "landmark",
-        "text": "ザザシティ浜松 西館1F",
-        "source": "manual"
-      },
-      {
-        "type": "tip",
-        "text": "JR浜松駅から歩いて通え、街なかでの買い物と合わせた送迎もしやすい",
-        "source": "manual"
-      },
-      {
-        "type": "station",
-        "text": "JR浜松駅徒歩6分",
-        "source": "auto"
-      }
-    ],
-    "specs": {
-      "field": "英会話",
-      "monthlyFee": 10560,
-      "ageRange": "1歳〜中学生",
-      "ageFrom": 1,
-      "trial": true,
-      "pickup": null,
-      "parking": null,
-      "stationWalkMin": 6
-    },
-    "features": [
-      "年齢別のクラス",
-      "1〜3歳は保護者と一緒に参加",
-      "体験レッスンあり（公式案内）"
-    ],
-    "priceNote": "グループレッスンの月謝の掲載例（月10,560円）。クラス・学年により異なり、別途入会金・教材費がかかる場合があります。",
-    "chain": false,
-    "serviceType": "store",
-    "affiliate": null,
-    "source": "manual",
-    "updatedAt": "2026-10-10"
-  },
-  {
     "id": "kids-school-bd4179ec",
     "name": "NOVAバイリンガルKIDS 浜松校",
     "category": "kids-school",
@@ -690,6 +600,50 @@
     "affiliate": null,
     "source": "manual",
     "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "kids-school-173aefdc",
+    "name": "アミティー 浜松校（こども英会話）",
+    "category": "kids-school",
+    "genre": "英会話",
+    "address": "静岡県浜松市中央区田町226-2",
+    "tel": "053-454-4057",
+    "hours": "火 11:00～20:00／水～金 12:00～21:00／土 9:00～18:00（日・月休校）",
+    "access": "JR浜松駅・遠州鉄道 遠州病院駅から徒歩圏",
+    "officialUrl": "https://www.amity.co.jp/school/tokai/shizuoka/hamamatsu/",
+    "description": "株式会社イーオンが運営する、こども英会話専門校アミティーの浜松校。満6か月の赤ちゃんクラスから高校3年生まで、年齢に合わせたクラスがあり、英検対策や文法のクラスもあります。",
+    "localNote": [
+      {
+        "type": "landmark",
+        "text": "浜松駅北側の田町にあり、敷地内に駐車場があるので車での送り迎えもしやすい",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "field": "英会話",
+      "monthlyFee": [
+        9900,
+        11220
+      ],
+      "ageRange": "満6か月〜高校3年生",
+      "ageFrom": 0,
+      "trial": null,
+      "pickup": null,
+      "parking": true,
+      "stationWalkMin": null
+    },
+    "features": [
+      "満6か月〜高校生まで年齢別のクラス",
+      "英検対策・文法のクラスあり",
+      "敷地内に駐車場6台",
+      "解約金・違約金なし（公式の料金ページ）"
+    ],
+    "priceNote": "グループレッスン（日本人教師のレギュラーコース）の基本授業料の例：2歳〜年少 9,900円、年中〜年長 11,220円（税込・月額）。別途、設備費770円がかかります。コースや追加レッスンにより異なります。",
+    "chain": false,
+    "serviceType": "store",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-12"
   },
   {
     "id": "kids-school-b27def0f",
@@ -804,7 +758,7 @@
       "setAu": true,
       "setDocomo": false,
       "setSoftbank": false,
-      "noConstruction": false,
+      "noContractTerm": false,
       "contract": "2年（自動更新）"
     },
     "features": [
@@ -846,7 +800,7 @@
       "setAu": false,
       "setDocomo": false,
       "setSoftbank": true,
-      "noConstruction": false,
+      "noContractTerm": true,
       "contract": "なし（戸建て・公式発表）"
     },
     "features": [
@@ -888,7 +842,7 @@
       "setAu": false,
       "setDocomo": true,
       "setSoftbank": false,
-      "noConstruction": false,
+      "noContractTerm": false,
       "contract": "2年定期（定期契約なしプランもあり）"
     },
     "features": [
@@ -930,7 +884,7 @@
       "setAu": false,
       "setDocomo": false,
       "setSoftbank": true,
-      "noConstruction": false,
+      "noContractTerm": false,
       "contract": "2年（自動更新）／自動更新なしプランもあり"
     },
     "features": [
@@ -945,8 +899,8 @@
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "internet-7658a892",
-    "name": "auひかり（マンションタイプ）",
+    "id": "internet-c7fc6b4a",
+    "name": "auひかり",
     "category": "internet",
     "genre": "光回線（KDDI）",
     "address": "Web申込（静岡県は戸建てタイプの提供なし。マンションは建物の設備次第）",
@@ -971,7 +925,7 @@
       "setAu": true,
       "setDocomo": false,
       "setSoftbank": false,
-      "noConstruction": false,
+      "noContractTerm": false,
       "contract": "建物・プランにより異なる"
     },
     "features": [
@@ -987,46 +941,46 @@
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "internet-de3628d5",
-    "name": "ドコモ home 5G",
+    "id": "internet-94c40aab",
+    "name": "おてがる光",
     "category": "internet",
-    "genre": "ホームルーター",
-    "address": "Web申込（ドコモの5G・4Gエリア）",
+    "genre": "光回線（光コラボ）",
+    "address": "Web申込（全国のフレッツ光提供エリア）",
     "tel": null,
     "hours": null,
     "access": null,
-    "officialUrl": "https://www.docomo.ne.jp/home_5g/",
-    "description": "コンセントに挿すだけで使えるドコモのホームルーター。開通工事が不要で、端末が届けばすぐに使い始められます。",
+    "officialUrl": "https://otegal.com/",
+    "description": "株式会社エクスゲートが提供する光回線。契約期間の縛りや解約違約金がなく、プロバイダ料金込みの月額で使えます。スマホとのセット割はありません。",
     "localNote": [
       {
         "type": "tip",
-        "text": "賃貸で工事の許可が出ない、引っ越し直後ですぐネットが必要、といった場合の選択肢。設置場所の電波状況で速度が変わる",
+        "text": "格安SIMを使っていてセット割が関係ない人や、転勤などで短期間だけ使いたい人向け",
         "source": "manual"
       }
     ],
     "specs": {
-      "lineType": "ホームルーター（置くだけWi-Fi）",
-      "feeHouse": 5280,
-      "feeMansion": 5280,
-      "maxSpeedGbps": 4.2,
-      "setDiscount": "ドコモ",
+      "lineType": "コラボ光",
+      "feeHouse": 4708,
+      "feeMansion": 3608,
+      "maxSpeedGbps": 1,
+      "setDiscount": "なし",
       "setAu": false,
-      "setDocomo": true,
+      "setDocomo": false,
       "setSoftbank": false,
-      "noConstruction": true,
-      "contract": "なし（端末代は分割の割引条件あり）"
+      "noContractTerm": true,
+      "contract": "なし（解約違約金なし）"
     },
     "features": [
-      "開通工事・撤去工事が不要",
-      "コンセントに挿すだけ",
-      "端末が届けばすぐ使える"
+      "契約期間の縛り・解約違約金なし",
+      "プロバイダ料金込みの月額",
+      "スマホのセット割なし"
     ],
-    "priceNote": "月額5,280円（戸建て・マンション共通）。端末代は36回分割で実質負担が軽くなる条件があり、途中解約では残債の支払いが必要です。最大4.2Gbpsは5Gの理論値で、実際の速度は環境により大きく変わります。",
+    "priceNote": "1ギガプランの月額（戸建て4,708円・マンション3,608円、税込）。公式サイトの税抜表記は戸建て4,280円・マンション3,280円。IPv6プラスオプションは別料金です。新規に回線を引く場合は工事が必要です。",
     "chain": false,
     "serviceType": "online",
     "affiliate": null,
     "source": "manual",
-    "updatedAt": "2026-10-10"
+    "updatedAt": "2026-10-12"
   },
   {
     "id": "energy-a17841ad",
