@@ -127,7 +127,7 @@ export const categories: Category[] = [
     slug: 'car-sell',
     section: 'living',
     title: '車買取・売却',
-    summary: '浜松市内の買取店とWeb一括査定サービスを、査定方法と手間で比較',
+    summary: '一括査定・廃車買取・実店舗の車買取サービスを、査定方法と手間で比較',
     icon: 'car',
     axes: [
       { key: 'kind', label: '種類', type: 'text', primary: true },
@@ -136,6 +136,7 @@ export const categories: Category[] = [
       { key: 'homeVisit', label: '出張査定', type: 'boolean', filter: 'yes', filterLabel: '出張査定あり' },
       { key: 'onlineApply', label: 'Web申込', type: 'boolean', filter: 'yes', filterLabel: 'Webで申込める' },
       { key: 'noReduction', label: '契約後の減額なし', type: 'boolean', filter: 'yes', filterLabel: '契約後の減額なしを明示' },
+      { key: 'scrapOk', label: '廃車・事故車の買取', type: 'boolean', filter: 'yes', filterLabel: '廃車・事故車も買取' },
     ],
     cta: { label: '無料査定を試す', microcopy: '査定額を見てから売るか決められます' },
     notice: '※実際の査定額は車の状態や時期により異なります。最新情報は公式サイトでご確認ください',

@@ -27,6 +27,25 @@ export interface Article {
 // 料金・アクセス等は data/raw/**/curated-*.json の実データと内容を合わせる。
 export const articles: Article[] = [
   {
+    slug: 'car-buying-guide',
+    title: '浜松で車を高く売るなら？おすすめ車買取・一括査定サイト6選を徹底比較',
+    excerpt: '一括査定と廃車・事故車に強い買取の違いから、MOTA・carview!・チョージン・ガリバー・カーネクスト・ソコカラの特徴まで分かりやすく比較します。',
+    section: 'living',
+    category: 'car-sell',
+    publishedAt: '2026-10-12',
+    updatedAt: '2026-10-12',
+    readingMinutes: 7,
+    isPr: true,
+    sources: [
+      { label: 'MOTA車買取', url: 'https://autoc-one.jp/ullo/' },
+      { label: 'carview! 車買取相場', url: 'https://carview.yahoo.co.jp/kaitori/souba/' },
+      { label: 'チョージン 提供開始のお知らせ', url: 'https://prtimes.jp/main/html/rd/p/000000183.000072123.html' },
+      { label: 'ガリバー よくある質問（査定・売却）', url: 'https://221616.com/faq/satei/' },
+      { label: 'カーネクスト 浜松市', url: 'https://carnext.jp/shizuoka/hamamatsushi/' },
+      { label: 'ソコカラ 浜松市', url: 'https://www.hanamaru870.net/area/shizuoka/hamamatsushi/' },
+    ],
+  },
+  {
     slug: 'hamamatsu-sightseeing-top5',
     title: '浜松の観光スポットおすすめランキングTOP5｜浜松城・楽器博物館・エアーパークほか',
     excerpt: '浜松城公園から工場見学まで、行きやすさ・料金・天候への強さ・浜松らしさで選んだ5か所を、アクセスと料金つきで紹介します。',

@@ -286,138 +286,98 @@
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "car-sell-dd55e7c7",
-    "name": "ガリバー（Gulliver）浜松エリア",
+    "id": "car-sell-0d339951",
+    "name": "カーネクスト（廃車・事故車買取）",
     "category": "car-sell",
-    "genre": "車買取・中古車販売",
-    "address": "静岡県浜松市中央区小豆餅2-17-1（住吉バイパス店）",
+    "genre": "廃車・事故車買取",
+    "address": "オンライン（全国対応）",
     "tel": null,
-    "hours": "10:00～19:00（住吉バイパス店。店舗により異なる）",
-    "access": "国道257号沿い（住吉バイパス店）",
-    "officialUrl": "https://221616.com/shop/shizuoka/hamamatsushichuoku/",
-    "description": "全国に店舗を持つ車買取・中古車販売チェーン。浜松市内では住吉バイパス店（小豆餅）・浜松宮竹店・浜松北店（有玉北町）などで査定を受けられます。",
+    "hours": "電話受付 8:00～22:00（年中無休）",
+    "access": null,
+    "officialUrl": "https://carnext.jp/",
+    "description": "株式会社カーネクストが運営する、廃車・事故車に強い車買取サービス。古い車や動かない車でも原則0円以上で買い取り、レッカーが必要な場合も含めて引き取りは無料です。浜松市内も対象エリアです。",
     "localNote": [
       {
         "type": "tip",
-        "text": "国道257号沿いの住吉バイパス店のほか、宮竹・有玉北などにも店舗があり、車で立ち寄りやすい",
+        "text": "年式が古い・走行距離が多い・車検切れなど、ほかで値段がつきにくい車の売り先として検討したい",
         "source": "manual"
-      },
-      {
-        "type": "road",
-        "text": "国道257号沿い",
-        "source": "auto"
       }
     ],
     "specs": {
-      "kind": "実店舗買取",
+      "kind": "廃車・事故車買取",
+      "assessmentFee": 0,
+      "maxCompanies": null,
+      "homeVisit": null,
+      "onlineApply": true,
+      "noReduction": null,
+      "scrapOk": true
+    },
+    "features": [
+      "どんな車も原則0円以上で買取（公式の浜松市ページ）",
+      "レッカー代を含む引取費用・手続き代行費用が無料",
+      "電話またはWebで査定を申し込める"
+    ],
+    "priceNote": "査定・引取・手続き代行は無料。買取額は車種・状態によって大きく変わります。",
+    "chain": false,
+    "serviceType": "online",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-12"
+  },
+  {
+    "id": "car-sell-6028ccad",
+    "name": "ソコカラ（事故車・廃車・中古車買取）",
+    "category": "car-sell",
+    "genre": "事故車・廃車買取",
+    "address": "オンライン（全国対応）",
+    "tel": null,
+    "hours": null,
+    "access": null,
+    "officialUrl": "https://www.hanamaru870.net/",
+    "description": "株式会社はなまるが運営する車買取サービス。事故車・故障車・不動車・水害車なども買取対象で、浜松市内は全域に無料で出張し、最短当日の引き取りにも対応しています。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "事故や故障で動かなくなった車を、自宅まで引き取りに来てほしい人向け",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "事故車・廃車買取",
       "assessmentFee": 0,
       "maxCompanies": null,
       "homeVisit": true,
       "onlineApply": true,
-      "noReduction": null
+      "noReduction": null,
+      "scrapOk": true
     },
     "features": [
-      "全国に店舗網",
-      "出張査定対応",
-      "中古車販売も同じ店舗で相談可能"
+      "浜松市内全域に無料で出張（公式の浜松市ページ）",
+      "事故車・不動車・水害車も買取対象",
+      "出張費・引取費用は無料（一部離島を除く）"
     ],
-    "priceNote": "査定無料（目安売却額は車種・年式により変動）",
-    "chain": true,
-    "serviceType": "store",
-    "affiliate": null,
-    "source": "manual",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "car-sell-5258e2a9",
-    "name": "ネクステージ（NEXTAGE）浜松北店",
-    "category": "car-sell",
-    "genre": "車買取・中古車販売",
-    "address": "静岡県浜松市中央区西ヶ崎町1894",
-    "tel": "053-432-4907",
-    "hours": "10:00～19:00（第2水曜定休・祝日を除く）",
-    "access": null,
-    "officialUrl": "https://www.nextage.jp/shop/1200/",
-    "description": "中古車販売と買取を行う店舗。売却と次の車探しを同じ店舗で相談できます。市内には浜松志都呂店などもあります。",
-    "localNote": [
-      {
-        "type": "tip",
-        "text": "浜松北エリア（西ヶ崎町）にあり、売却から次の車探しまで一度に相談できる",
-        "source": "manual"
-      }
-    ],
-    "specs": {
-      "kind": "実店舗買取・販売",
-      "assessmentFee": 0,
-      "maxCompanies": null,
-      "homeVisit": null,
-      "onlineApply": null,
-      "noReduction": null
-    },
-    "features": [
-      "買取と中古車販売を同じ店舗で相談可能",
-      "店頭査定"
-    ],
-    "priceNote": "査定無料（目安売却額は車種・年式により変動）",
+    "priceNote": "出張・引取は無料。買取額は車種・状態によって異なります。",
     "chain": false,
-    "serviceType": "store",
+    "serviceType": "online",
     "affiliate": null,
     "source": "manual",
-    "updatedAt": "2026-10-10"
+    "updatedAt": "2026-10-12"
   },
   {
-    "id": "car-sell-772f8866",
-    "name": "カーセブン（CarSeven）浜松志都呂店",
-    "category": "car-sell",
-    "genre": "車買取",
-    "address": "静岡県浜松市中央区志都呂町1-40-50",
-    "tel": null,
-    "hours": "10:00～19:00",
-    "access": null,
-    "officialUrl": "https://www.carseven.co.jp/sell",
-    "description": "「契約後の減額は一切しません」と公式に宣言している車買取チェーンの店舗。契約金の半額を当日に前払いする制度や、契約後7日以内の無料キャンセルがあります。",
-    "localNote": [
-      {
-        "type": "tip",
-        "text": "志都呂エリアの生活圏にあり、買い物のついでに立ち寄りやすい",
-        "source": "manual"
-      }
-    ],
-    "specs": {
-      "kind": "実店舗買取",
-      "assessmentFee": 0,
-      "maxCompanies": null,
-      "homeVisit": null,
-      "onlineApply": true,
-      "noReduction": true
-    },
-    "features": [
-      "契約後の減額なし（公式に明示）",
-      "当日半額前払い",
-      "契約後7日以内のキャンセル無料"
-    ],
-    "priceNote": "査定無料（目安売却額は車種・年式により変動）",
-    "chain": false,
-    "serviceType": "store",
-    "affiliate": null,
-    "source": "manual",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "car-sell-c6538e56",
-    "name": "ナビクル（車一括査定）",
+    "id": "car-sell-e9b60dc0",
+    "name": "carview!（カービュー）車買取・一括査定",
     "category": "car-sell",
     "genre": "Web一括査定",
     "address": "オンライン（全国対応）",
     "tel": null,
-    "hours": "Webで24時間申込可",
+    "hours": null,
     "access": null,
-    "officialUrl": "https://www.navikuru.jp/",
-    "description": "一度の入力で複数の買取店に査定を依頼できるWeb一括査定サービス。申込み後すぐに概算の相場を確認できます。",
+    "officialUrl": "https://carview.yahoo.co.jp/kaitori/souba/",
+    "description": "LINEヤフー株式会社が運営する自動車情報サイト「carview!」の一括査定。1回の申し込みで最大10社に査定を依頼でき、個人情報を入れずに買取相場を調べるシミュレーションもあります。",
     "localNote": [
       {
         "type": "tip",
-        "text": "自宅から複数の買取店（浜松市内の店舗を含む）へまとめて依頼できる。店舗へ出向く時間がない人向け",
+        "text": "まず相場を知りたい人や、浜松周辺の複数の買取店を競わせて高く売りたい人向け",
         "source": "manual"
       }
     ],
@@ -427,93 +387,137 @@
       "maxCompanies": 10,
       "homeVisit": null,
       "onlineApply": true,
-      "noReduction": null
+      "noReduction": null,
+      "scrapOk": null
     },
     "features": [
-      "最大10社に一括依頼",
-      "申込み後に概算相場を表示",
-      "利用無料"
+      "1回の申し込みで最大10社に査定依頼（公式の案内）",
+      "匿名で買取相場をシミュレーションできる",
+      "申し込み後は複数の買取店から連絡が来る"
     ],
-    "priceNote": "査定無料（目安売却額は車種・年式により変動）",
+    "priceNote": "利用は無料。実際の買取額は各買取店の査定で決まります。",
     "chain": false,
     "serviceType": "online",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-12"
+  },
+  {
+    "id": "car-sell-dd55e7c7",
+    "name": "ガリバー（Gulliver）浜松エリア",
+    "category": "car-sell",
+    "genre": "車買取・中古車販売",
+    "address": "静岡県浜松市中央区小豆餅2-17-1（住吉バイパス店）",
+    "tel": null,
+    "hours": "10:00～19:00（住吉バイパス店。店舗により異なる）",
+    "access": "国道257号沿い（住吉バイパス店）",
+    "officialUrl": "https://221616.com/shop/shizuoka/hamamatsushichuoku/",
+    "description": "全国に店舗を持つ中古車販売・買取の大手。浜松市内には住吉バイパス店（中央区小豆餅）や浜松宮竹店（中央区宮竹町）があり、店頭での査定のほか、自宅や職場での無料出張査定にも対応しています。",
+    "localNote": [
+      {
+        "type": "road",
+        "text": "住吉バイパス店は国道257号沿い。持ち込みで相談したい人は店頭査定、忙しい人は出張査定を選べる",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "実店舗買取",
+      "assessmentFee": 0,
+      "maxCompanies": null,
+      "homeVisit": true,
+      "onlineApply": true,
+      "noReduction": null,
+      "scrapOk": null
+    },
+    "features": [
+      "浜松市内に店舗あり（店頭査定）",
+      "出張査定も無料（地域・車両により対応できない場合あり）",
+      "査定額は本部で決めるため、店舗でも出張でも同じ（公式FAQ）"
+    ],
+    "priceNote": "査定は店頭・出張・オンラインとも無料。車検切れの車を出張で売る場合は、陸送費が買取額から差し引かれます。",
+    "chain": true,
+    "serviceType": "store",
     "affiliate": null,
     "source": "manual",
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "car-sell-8b073c1c",
-    "name": "カーセンサー 簡単ネット車査定",
+    "id": "car-sell-8f233f45",
+    "name": "チョージン（車買取）",
     "category": "car-sell",
-    "genre": "Web一括査定",
+    "genre": "買取業者の紹介（1社）",
     "address": "オンライン（全国対応）",
     "tel": null,
-    "hours": "Webで24時間申込可",
+    "hours": null,
     "access": null,
-    "officialUrl": "https://www.carsensor.net/",
-    "description": "中古車情報サイト「カーセンサー」の一括査定サービス。入力した情報が提携する買取店に送られ、各社から査定の連絡が届きます。",
+    "officialUrl": "https://annai-center.com/kaitori/",
+    "description": "ラグザスグループの株式会社ラグザス・クリエイトが2024年5月に始めた車買取サービス。提携業者の中から条件に合う1社を選んで紹介する仕組みで、やり取りする相手が1社だけなのが特徴です。",
     "localNote": [
       {
         "type": "tip",
-        "text": "浜松市に対応する買取店へまとめて依頼できる（依頼できる店舗数は車種・地域により変わる）",
+        "text": "一括査定の電話の多さが心配で、1社とだけやり取りしたい人向け",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "買取業者の紹介（1社）",
+      "assessmentFee": 0,
+      "maxCompanies": null,
+      "homeVisit": null,
+      "onlineApply": true,
+      "noReduction": null,
+      "scrapOk": null
+    },
+    "features": [
+      "やり取りは紹介された1社のみ",
+      "査定額は電話で案内（実車査定なしとの掲載）",
+      "査定・引取は無料"
+    ],
+    "priceNote": "査定・引取は無料。買取額は紹介された業者の査定で決まり、後日振り込みです。",
+    "chain": false,
+    "serviceType": "online",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-12"
+  },
+  {
+    "id": "car-sell-6abf2be5",
+    "name": "MOTA車買取",
+    "category": "car-sell",
+    "genre": "Web一括査定（上位3社のみ連絡）",
+    "address": "オンライン（全国対応）",
+    "tel": null,
+    "hours": null,
+    "access": null,
+    "officialUrl": "https://autoc-one.jp/ullo/",
+    "description": "株式会社MOTAが運営する一括査定。最大20社がWeb上で概算査定額を提示し、高額査定の上位最大3社とだけやり取りする仕組みなので、電話の数を抑えられます。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "複数社の査定額を比べたいけれど、たくさんの電話には対応したくない人向け",
         "source": "manual"
       }
     ],
     "specs": {
       "kind": "Web一括査定",
       "assessmentFee": 0,
-      "maxCompanies": null,
+      "maxCompanies": 20,
       "homeVisit": null,
       "onlineApply": true,
-      "noReduction": null
+      "noReduction": null,
+      "scrapOk": null
     },
     "features": [
-      "中古車情報サイト「カーセンサー」の一括査定",
-      "利用無料"
+      "最大20社が概算査定額を提示",
+      "連絡は高額査定の上位最大3社のみ",
+      "概算額はマイページで確認（申込時間帯により当日18時・翌日12時）"
     ],
-    "priceNote": "査定無料（目安売却額は車種・年式により変動）",
+    "priceNote": "利用・査定・売却手数料は無料（公式の案内）。概算額は現車確認で変わることがあります。",
     "chain": false,
     "serviceType": "online",
     "affiliate": null,
     "source": "manual",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "car-sell-1e0279e8",
-    "name": "ズバット車買取比較",
-    "category": "car-sell",
-    "genre": "Web一括査定",
-    "address": "オンライン（全国対応）",
-    "tel": null,
-    "hours": "Webで24時間申込可",
-    "access": null,
-    "officialUrl": "https://www.zba.jp/car-kaitori/",
-    "description": "車の買取相場を確認したうえで、複数の買取店に査定を依頼できる一括査定サービス。",
-    "localNote": [
-      {
-        "type": "tip",
-        "text": "事前に相場感をつかんでから、浜松の買取店と交渉したい人向け",
-        "source": "manual"
-      }
-    ],
-    "specs": {
-      "kind": "Web一括査定",
-      "assessmentFee": 0,
-      "maxCompanies": null,
-      "homeVisit": null,
-      "onlineApply": true,
-      "noReduction": null
-    },
-    "features": [
-      "買取相場をチェックできる",
-      "利用無料"
-    ],
-    "priceNote": "査定無料（目安売却額は車種・年式により変動）",
-    "chain": false,
-    "serviceType": "online",
-    "affiliate": null,
-    "source": "manual",
-    "updatedAt": "2026-10-10"
+    "updatedAt": "2026-10-12"
   },
   {
     "id": "kids-school-2591b99b",
