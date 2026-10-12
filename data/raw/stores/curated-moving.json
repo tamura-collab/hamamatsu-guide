@@ -192,7 +192,7 @@
     ]
   },
   {
-    "name": "SUUMO引越し見積もり",
+    "name": "ズバット引越し比較（一括見積もり）",
     "category": "moving",
     "genre": "Web一括見積もり",
     "serviceType": "online",
@@ -201,40 +201,87 @@
     "tel": null,
     "hours": "Webで24時間申込可",
     "access": null,
-    "officialUrl": "https://hikkoshi.suumo.jp/",
-    "description": "リクルートの住まい情報サイト「SUUMO」の引越し一括見積もり。電話番号の入力が任意で、メールでのやり取りを中心に進められます。",
+    "officialUrl": "https://www.zba.jp/hikkoshi/",
+    "description": "株式会社ウェブクルーが運営する引越しの一括見積もりサービス。1回の入力で複数の引越し業者に見積もりを依頼でき、各社の口コミや料金相場も確認できます。",
     "specs": {
       "kind": "Web一括見積もり",
       "estimateFee": 0,
       "disposalFee": null,
-      "estimateMethod": "Web申込（電話番号は任意・メール連絡可）",
+      "estimateMethod": "Web申込（業者から電話・メールで連絡）",
       "single": true,
       "family": true,
       "disposal": null,
       "freeBoxes": null
     },
     "features": [
-      "電話番号の入力は任意",
-      "メール中心で見積もりを比較できる",
-      "費用の目安を確認できる"
+      "1回の入力で複数社に見積もり依頼",
+      "引越し業者の口コミ・料金相場を確認できる",
+      "利用無料"
     ],
-    "priceNote": "見積もり無料（時期・距離・荷物量により変動）。電話番号を入力しなくても電話をかけてくる業者がいたという口コミもあります。",
+    "priceNote": "見積もりの利用は無料。実際の料金は各引越し業者の見積もりで決まります。",
     "localNote": [
       {
         "type": "tip",
-        "text": "営業電話を減らして、メールで浜松発着の引越し費用を比べたい人向け"
+        "text": "浜松からの引越しで、口コミを見ながら複数社の料金を比べたい人向け"
       }
     ],
     "source": "manual",
-    "fetchedAt": "2026-10-10",
+    "fetchedAt": "2026-10-12",
     "_sources": [
-      "https://crexgroup.com/ja/hikkoshi/procedure-preparation/suumo-moving-estimate-email-guide/",
-      "https://minhyo.jp/suumo-hikkoshi",
-      "https://hikkoshi.suumo.jp/143245001/"
+      "https://www.zba.jp/hikkoshi/guide/",
+      "https://www.zba.jp/hikkoshi/ranking/major/",
+      "https://diamond-fudosan.jp/articles/-/1111847"
     ],
     "_unverified": [
-      "電話番号任意の仕様（公式の申込画面で未確認）",
-      "「メール連絡のみで完結」（業者により電話が来る場合あり）"
+      "一括見積もりの上限社数（最大12社・最大10社でページにより異なる）",
+      "提携業者数（220社以上の掲載）",
+      "アフィリエイトURL（公式URLを仮で設定）"
+    ]
+  },
+  {
+    "name": "トレファク引越（引越し＋不用品買取）",
+    "category": "moving",
+    "genre": "引越し＋不用品買取",
+    "serviceType": "online",
+    "chain": false,
+    "address": "オンライン（見積対応エリアは公式サイトで確認）",
+    "tel": null,
+    "hours": null,
+    "access": null,
+    "officialUrl": "https://www.tfhikkoshi.com/",
+    "description": "リユースショップを展開する株式会社トレジャー・ファクトリーの引越しサービス。引越しと不用品の出張買取を同時に頼め、買取額を引越し料金から差し引けます。2026年10月時点の公式の見積対応エリアに静岡県は含まれていないため、浜松市からの引越しでは利用できない可能性があります。",
+    "specs": {
+      "kind": "引越し＋不用品買取",
+      "estimateFee": 0,
+      "disposalFee": null,
+      "estimateMethod": "Web・電話で見積もり（対応エリアのみ）",
+      "single": true,
+      "family": true,
+      "disposal": true,
+      "freeBoxes": null
+    },
+    "features": [
+      "引越しと不用品の出張買取を同時に依頼できる",
+      "買取額を引越し料金から差し引ける",
+      "静岡県は現在、見積対応エリア外（公式の一覧）"
+    ],
+    "priceNote": "料金は見積もりで決まります。見積もり・買取の訪問は対応エリアに限られ、引越し先は全国対応とされています。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "浜松市（静岡県）は現在、見積対応エリアに含まれていない。申し込む前に公式サイトの対応エリアを確認したい"
+      }
+    ],
+    "source": "manual",
+    "fetchedAt": "2026-10-12",
+    "_sources": [
+      "https://www.tfhikkoshi.com/area",
+      "https://www.tfhikkoshi.com/about",
+      "https://www.tfhikkoshi.com/faq"
+    ],
+    "_unverified": [
+      "浜松市での利用可否（公式の見積対応エリア一覧に静岡県の記載なし）",
+      "アフィリエイトURL（公式URLを仮で設定）"
     ]
   },
   {

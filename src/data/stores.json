@@ -1007,7 +1007,6 @@
       "basicFee": "あり",
       "marketLinked": false,
       "points": "カテエネポイント",
-      "setGas": null,
       "setAu": false,
       "setDocomo": false,
       "setSoftbank": false
@@ -1025,41 +1024,120 @@
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "energy-d92df2f9",
-    "name": "サーラエナジー（都市ガス・LPガス）／サーラeエナジー（電気）",
+    "id": "energy-15f3e574",
+    "name": "東邦ガスの電気",
     "category": "energy",
-    "genre": "都市ガス・LPガス＋電気",
-    "address": "Web申込（都市ガスは浜松市・磐田市・湖西市などの供給エリア）",
+    "genre": "ガス会社の電気（中部電力エリア）",
+    "address": "Web申込（中部電力エリア。静岡県は一部地域を除く）",
     "tel": null,
     "hours": null,
     "access": null,
-    "officialUrl": "https://www.salaenergy.co.jp/",
-    "description": "浜松市で都市ガスを供給しているガス会社（2019年に中部ガスとガステックサービスが合併して発足）。LPガスも取り扱い、グループ会社のサーラeエナジーが電気を販売しています。",
+    "officialUrl": "https://www.tohogas.co.jp/denki/",
+    "description": "愛知・岐阜・三重で都市ガスを供給する東邦ガスの電気サービス。電気は中部電力パワーグリッドの供給エリアが対象で、静岡県も（一部地域を除き）申し込めます。dポイントが貯まる「ポイントでんきプラン」や、Amazonギフトカードがもらえる「ギフトでんきプラン」があります。",
     "localNote": [
       {
         "type": "tip",
-        "text": "浜松市内で都市ガスを使っている家庭のガス会社。電気もまとめると請求を一本化できる",
+        "text": "浜松市で契約できるのは電気のみ。都市ガスの供給エリアは愛知・岐阜・三重で、浜松市の都市ガスはサーラエナジーが供給している",
         "source": "manual"
       }
     ],
     "specs": {
-      "kind": "都市ガス・LPガス（電気とのセットあり）",
-      "supplyArea": "都市ガス：浜松市など／電気：中部電力エリア",
-      "pricing": "ガス：各種料金プラン／電気：基本プランA・B",
+      "kind": "ガス会社系の電気",
+      "supplyArea": "中部電力エリア（静岡県は一部地域を除く）",
+      "pricing": "ポイントでんき・ギフトでんきなど（中部電力ミライズの従量電灯B・Cと同水準の単価を基準）",
       "basicFee": "あり",
       "marketLinked": false,
-      "points": null,
-      "setGas": true,
+      "points": "dポイント（ポイントでんき）／Amazonギフトカード（ギフトでんき）",
       "setAu": false,
       "setDocomo": false,
       "setSoftbank": false
     },
     "features": [
-      "浜松市の都市ガス供給会社（旧中部ガス）",
-      "LPガスも取り扱い",
-      "グループ会社サーラeエナジーの電気とセット割"
+      "dポイント還元の「ポイントでんきプラン」",
+      "Amazonギフトカードの「ギフトでんきプラン」",
+      "東邦ガスの都市ガスは浜松市では利用できない（電気のみ）"
     ],
-    "priceNote": "ガス・電気の単価やセット割の内容はプラン・供給エリアにより異なります。",
+    "priceNote": "還元率は最大値で、実際の還元額は請求額や条件により変わります。燃料費調整額は平均燃料価格に上限を設けない方式です。",
+    "chain": false,
+    "serviceType": "online",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-12"
+  },
+  {
+    "id": "energy-228daa3a",
+    "name": "ソフトバンクでんき（おうちでんき）",
+    "category": "energy",
+    "genre": "新電力（携帯キャリア系）",
+    "address": "Web申込（中部電力エリアを含む）",
+    "tel": null,
+    "hours": null,
+    "access": null,
+    "officialUrl": "https://www.softbank.jp/energy/",
+    "description": "ソフトバンクの電気サービス。ソフトバンク・ワイモバイルのスマホとセットにすると「おうち割 でんきセット」で通信料が割引になります。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "家族でソフトバンク・ワイモバイルを使っている家庭は、スマホ代と合わせた固定費で比較したい",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "新電力（携帯キャリア系）",
+      "supplyArea": "中部電力エリアを含む各エリア",
+      "pricing": "エリアごとの料金プラン（燃料費調整・再エネ賦課金あり）",
+      "basicFee": "あり",
+      "marketLinked": false,
+      "points": null,
+      "setAu": false,
+      "setDocomo": false,
+      "setSoftbank": true
+    },
+    "features": [
+      "おうち割 でんきセット（スマホ回線の割引）",
+      "割引対象は最大10回線（料金プランにより割引額が異なる）"
+    ],
+    "priceNote": "スマホ回線の割引額は料金プランにより異なります。中部エリアのおうちでんきは中部電力より若干安い設定との掲載があります。",
+    "chain": false,
+    "serviceType": "online",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "energy-d48eff55",
+    "name": "ドコモでんき",
+    "category": "energy",
+    "genre": "新電力（携帯キャリア系）",
+    "address": "Web申込（中部電力エリアを含む）",
+    "tel": null,
+    "hours": null,
+    "access": null,
+    "officialUrl": "https://www.docomo.ne.jp/denki/",
+    "description": "ドコモの電気サービス。電気料金に応じてdポイントが還元され、実質再生可能エネルギー100%の「Green」と標準の「Basic」から選べます。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "ドコモ回線やdカードを使っている家庭は、還元率の条件を確認して比較したい",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "新電力（携帯キャリア系）",
+      "supplyArea": "中部電力エリアを含む各エリア",
+      "pricing": "Basic／Green（エリアごとの料金プラン）",
+      "basicFee": "あり",
+      "marketLinked": false,
+      "points": "dポイント",
+      "setAu": false,
+      "setDocomo": true,
+      "setSoftbank": false
+    },
+    "features": [
+      "dポイント還元（ドコモ回線・dカードの契約状況で還元率が変わる）",
+      "Green は実質再生可能エネルギー100%"
+    ],
+    "priceNote": "Green は Basic より基本料金等が月額500円高い設定との掲載があります。還元率はプラン・エリア・ドコモ回線やdカードの契約状況で異なります。2026年11月検針分から還元率の見直しが報じられています。",
     "chain": false,
     "serviceType": "online",
     "affiliate": null,
@@ -1091,7 +1169,6 @@
       "basicFee": "基本料金の名称はないが、毎月固定の「制度対応費」あり（2025年4月〜）",
       "marketLinked": true,
       "points": null,
-      "setGas": false,
       "setAu": false,
       "setDocomo": false,
       "setSoftbank": false
@@ -1133,7 +1210,6 @@
       "basicFee": "あり",
       "marketLinked": false,
       "points": "Pontaポイント",
-      "setGas": false,
       "setAu": true,
       "setDocomo": false,
       "setSoftbank": false
@@ -1143,88 +1219,6 @@
       "au・UQ mobileユーザー向け"
     ],
     "priceNote": "ポイント還元の対象は基本料金・電力量料金（税抜）で、燃料費調整額・再エネ賦課金は対象外です（公式案内）。還元率は「月額8,000円未満0.5%・8,000円以上1%」の掲載例があります。",
-    "chain": false,
-    "serviceType": "online",
-    "affiliate": null,
-    "source": "manual",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "energy-228daa3a",
-    "name": "ソフトバンクでんき（おうちでんき）",
-    "category": "energy",
-    "genre": "新電力（携帯キャリア系）",
-    "address": "Web申込（中部電力エリアを含む）",
-    "tel": null,
-    "hours": null,
-    "access": null,
-    "officialUrl": "https://www.softbank.jp/energy/",
-    "description": "ソフトバンクの電気サービス。ソフトバンク・ワイモバイルのスマホとセットにすると「おうち割 でんきセット」で通信料が割引になります。",
-    "localNote": [
-      {
-        "type": "tip",
-        "text": "家族でソフトバンク・ワイモバイルを使っている家庭は、スマホ代と合わせた固定費で比較したい",
-        "source": "manual"
-      }
-    ],
-    "specs": {
-      "kind": "新電力（携帯キャリア系）",
-      "supplyArea": "中部電力エリアを含む各エリア",
-      "pricing": "エリアごとの料金プラン（燃料費調整・再エネ賦課金あり）",
-      "basicFee": "あり",
-      "marketLinked": false,
-      "points": null,
-      "setGas": false,
-      "setAu": false,
-      "setDocomo": false,
-      "setSoftbank": true
-    },
-    "features": [
-      "おうち割 でんきセット（スマホ回線の割引）",
-      "割引対象は最大10回線（料金プランにより割引額が異なる）"
-    ],
-    "priceNote": "スマホ回線の割引額は料金プランにより異なります。中部エリアのおうちでんきは中部電力より若干安い設定との掲載があります。",
-    "chain": false,
-    "serviceType": "online",
-    "affiliate": null,
-    "source": "manual",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "energy-d48eff55",
-    "name": "ドコモでんき",
-    "category": "energy",
-    "genre": "新電力（携帯キャリア系）",
-    "address": "Web申込（中部電力エリアを含む）",
-    "tel": null,
-    "hours": null,
-    "access": null,
-    "officialUrl": "https://www.docomo.ne.jp/denki/",
-    "description": "ドコモの電気サービス。電気料金に応じてdポイントが還元され、実質再生可能エネルギー100%の「Green」と標準の「Basic」から選べます。",
-    "localNote": [
-      {
-        "type": "tip",
-        "text": "ドコモ回線やdカードを使っている家庭は、還元率の条件を確認して比較したい",
-        "source": "manual"
-      }
-    ],
-    "specs": {
-      "kind": "新電力（携帯キャリア系）",
-      "supplyArea": "中部電力エリアを含む各エリア",
-      "pricing": "Basic／Green（エリアごとの料金プラン）",
-      "basicFee": "あり",
-      "marketLinked": false,
-      "points": "dポイント",
-      "setGas": false,
-      "setAu": false,
-      "setDocomo": true,
-      "setSoftbank": false
-    },
-    "features": [
-      "dポイント還元（ドコモ回線・dカードの契約状況で還元率が変わる）",
-      "Green は実質再生可能エネルギー100%"
-    ],
-    "priceNote": "Green は Basic より基本料金等が月額500円高い設定との掲載があります。還元率はプラン・エリア・ドコモ回線やdカードの契約状況で異なります。2026年11月検針分から還元率の見直しが報じられています。",
     "chain": false,
     "serviceType": "online",
     "affiliate": null,
@@ -1390,20 +1384,20 @@
     "updatedAt": "2026-10-10"
   },
   {
-    "id": "moving-9a64cf38",
-    "name": "SUUMO引越し見積もり",
+    "id": "moving-0fee26ec",
+    "name": "ズバット引越し比較（一括見積もり）",
     "category": "moving",
     "genre": "Web一括見積もり",
     "address": "オンライン（全国対応）",
     "tel": null,
     "hours": "Webで24時間申込可",
     "access": null,
-    "officialUrl": "https://hikkoshi.suumo.jp/",
-    "description": "リクルートの住まい情報サイト「SUUMO」の引越し一括見積もり。電話番号の入力が任意で、メールでのやり取りを中心に進められます。",
+    "officialUrl": "https://www.zba.jp/hikkoshi/",
+    "description": "株式会社ウェブクルーが運営する引越しの一括見積もりサービス。1回の入力で複数の引越し業者に見積もりを依頼でき、各社の口コミや料金相場も確認できます。",
     "localNote": [
       {
         "type": "tip",
-        "text": "営業電話を減らして、メールで浜松発着の引越し費用を比べたい人向け",
+        "text": "浜松からの引越しで、口コミを見ながら複数社の料金を比べたい人向け",
         "source": "manual"
       }
     ],
@@ -1411,23 +1405,63 @@
       "kind": "Web一括見積もり",
       "estimateFee": 0,
       "disposalFee": null,
-      "estimateMethod": "Web申込（電話番号は任意・メール連絡可）",
+      "estimateMethod": "Web申込（業者から電話・メールで連絡）",
       "single": true,
       "family": true,
       "disposal": null,
       "freeBoxes": null
     },
     "features": [
-      "電話番号の入力は任意",
-      "メール中心で見積もりを比較できる",
-      "費用の目安を確認できる"
+      "1回の入力で複数社に見積もり依頼",
+      "引越し業者の口コミ・料金相場を確認できる",
+      "利用無料"
     ],
-    "priceNote": "見積もり無料（時期・距離・荷物量により変動）。電話番号を入力しなくても電話をかけてくる業者がいたという口コミもあります。",
+    "priceNote": "見積もりの利用は無料。実際の料金は各引越し業者の見積もりで決まります。",
     "chain": false,
     "serviceType": "online",
     "affiliate": null,
     "source": "manual",
-    "updatedAt": "2026-10-10"
+    "updatedAt": "2026-10-12"
+  },
+  {
+    "id": "moving-129290f7",
+    "name": "トレファク引越（引越し＋不用品買取）",
+    "category": "moving",
+    "genre": "引越し＋不用品買取",
+    "address": "オンライン（見積対応エリアは公式サイトで確認）",
+    "tel": null,
+    "hours": null,
+    "access": null,
+    "officialUrl": "https://www.tfhikkoshi.com/",
+    "description": "リユースショップを展開する株式会社トレジャー・ファクトリーの引越しサービス。引越しと不用品の出張買取を同時に頼め、買取額を引越し料金から差し引けます。2026年10月時点の公式の見積対応エリアに静岡県は含まれていないため、浜松市からの引越しでは利用できない可能性があります。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "浜松市（静岡県）は現在、見積対応エリアに含まれていない。申し込む前に公式サイトの対応エリアを確認したい",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "引越し＋不用品買取",
+      "estimateFee": 0,
+      "disposalFee": null,
+      "estimateMethod": "Web・電話で見積もり（対応エリアのみ）",
+      "single": true,
+      "family": true,
+      "disposal": true,
+      "freeBoxes": null
+    },
+    "features": [
+      "引越しと不用品の出張買取を同時に依頼できる",
+      "買取額を引越し料金から差し引ける",
+      "静岡県は現在、見積対応エリア外（公式の一覧）"
+    ],
+    "priceNote": "料金は見積もりで決まります。見積もり・買取の訪問は対応エリアに限られ、引越し先は全国対応とされています。",
+    "chain": false,
+    "serviceType": "online",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-12"
   },
   {
     "id": "moving-b33941be",

@@ -186,7 +186,7 @@ export const categories: Category[] = [
     slug: 'energy',
     section: 'living',
     title: '電気・ガス',
-    summary: '中部電力エリアで選べる電力会社と、浜松市の都市ガス会社を料金体系・セット割で比較',
+    summary: '浜松市（中部電力エリア）で選べる電気の会社を、料金体系・ポイント・スマホセット割で比較',
     icon: 'bolt',
     axes: [
       { key: 'kind', label: '種類', type: 'text', primary: true },
@@ -195,7 +195,6 @@ export const categories: Category[] = [
       { key: 'basicFee', label: '基本料金', type: 'text' },
       { key: 'marketLinked', label: '市場連動型', type: 'boolean', filter: 'yes', filterLabel: '市場連動型' },
       { key: 'points', label: 'ポイント還元', type: 'text' },
-      { key: 'setGas', label: 'ガスとのセット', type: 'boolean', filter: 'yes', filterLabel: 'ガスとセットにできる' },
       { key: 'setAu', label: 'au・UQ mobile', type: 'boolean', filter: 'yes', filterLabel: 'au・UQ mobile向け' },
       { key: 'setDocomo', label: 'ドコモ', type: 'boolean', filter: 'yes', filterLabel: 'ドコモ向け' },
       { key: 'setSoftbank', label: 'SoftBank・Y!mobile', type: 'boolean', filter: 'yes', filterLabel: 'SoftBank・Y!mobile向け' },
