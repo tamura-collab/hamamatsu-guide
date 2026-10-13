@@ -111,7 +111,7 @@
     "tel": null,
     "hours": null,
     "access": null,
-    "officialUrl": "https://www.docomo.ne.jp/internet/hikari/",
+    "officialUrl": "https://px.a8.net/svt/ejp?a8mat=4BEFL2+CWZL0A+50+54KL8Y",
     "description": "NTT東日本・西日本の光回線を使うコラボ光。プロバイダを選んで申し込み、ドコモのスマホとのセット割に対応しています。",
     "specs": {
       "lineType": "コラボ光",
@@ -259,7 +259,7 @@
     "tel": null,
     "hours": null,
     "access": null,
-    "officialUrl": "https://otegal.com/",
+    "officialUrl": "https://px.a8.net/svt/ejp?a8mat=4BEFL2+CDXPNE+4SHG+5YRHE",
     "description": "株式会社エクスゲートが提供する光回線。契約期間の縛りや解約違約金がなく、プロバイダ料金込みの月額で使えます。スマホとのセット割はありません。",
     "specs": {
       "lineType": "コラボ光",
@@ -294,8 +294,7 @@
     ],
     "_unverified": [
       "開通工事費と工事費の実質無料特典の現行条件",
-      "1年以内に解約した場合の工事費残債の扱い",
-      "アフィリエイトURL（公式URLを仮で設定）"
+      "1年以内に解約した場合の工事費残債の扱い"
     ]
   }
 ]

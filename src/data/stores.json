@@ -824,7 +824,7 @@
     "tel": null,
     "hours": null,
     "access": null,
-    "officialUrl": "https://www.docomo.ne.jp/internet/hikari/",
+    "officialUrl": "https://px.a8.net/svt/ejp?a8mat=4BEFL2+CWZL0A+50+54KL8Y",
     "description": "NTT東日本・西日本の光回線を使うコラボ光。プロバイダを選んで申し込み、ドコモのスマホとのセット割に対応しています。",
     "localNote": [
       {
@@ -853,7 +853,11 @@
     "priceNote": "1ギガ・タイプA・2年定期の月額（戸建て5,720円・マンション4,400円）。タイプBは各220円高く、定期契約なしは割高です。10ギガは提供エリア限定。",
     "chain": false,
     "serviceType": "online",
-    "affiliate": null,
+    "affiliate": {
+      "url": "https://px.a8.net/svt/ejp?a8mat=4BEFL2+CWZL0A+50+54KL8Y",
+      "label": "ドコモ光の公式サイトで申し込む",
+      "program": "A8.net"
+    },
     "source": "manual",
     "updatedAt": "2026-10-10"
   },
@@ -949,7 +953,7 @@
     "tel": null,
     "hours": null,
     "access": null,
-    "officialUrl": "https://otegal.com/",
+    "officialUrl": "https://px.a8.net/svt/ejp?a8mat=4BEFL2+CDXPNE+4SHG+5YRHE",
     "description": "株式会社エクスゲートが提供する光回線。契約期間の縛りや解約違約金がなく、プロバイダ料金込みの月額で使えます。スマホとのセット割はありません。",
     "localNote": [
       {
@@ -978,7 +982,11 @@
     "priceNote": "1ギガプランの月額（戸建て4,708円・マンション3,608円、税込）。公式サイトの税抜表記は戸建て4,280円・マンション3,280円。IPv6プラスオプションは別料金です。新規に回線を引く場合は工事が必要です。",
     "chain": false,
     "serviceType": "online",
-    "affiliate": null,
+    "affiliate": {
+      "url": "https://px.a8.net/svt/ejp?a8mat=4BEFL2+CDXPNE+4SHG+5YRHE",
+      "label": "おてがる光の公式サイトで申し込む",
+      "program": "A8.net"
+    },
     "source": "manual",
     "updatedAt": "2026-10-12"
   },

@@ -91,6 +91,7 @@ export const articles: Article[] = [
     publishedAt: '2026-10-11',
     updatedAt: '2026-10-12',
     readingMinutes: 6,
+    isPr: true,
     sources: [
       { label: 'コミュファ光', url: 'https://www.commufa.jp/' },
       { label: 'NURO光', url: 'https://www.nuro.jp/hikari/' },
