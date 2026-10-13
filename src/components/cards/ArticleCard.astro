@@ -4,6 +4,7 @@ import PrBadge from '@/components/ui/PrBadge.astro';
 import { categories, sections } from '@/data/categories';
 import { formatDate, type Article } from '@/data/articles';
 import { url } from '@/lib/url';
+import { articleImage } from '@/lib/article-image';
 
 interface Props {
   article: Article;
@@ -16,6 +17,7 @@ const category = categories.find((c) => c.slug === article.category);
 const section = sections[article.section];
 const isLiving = article.section === 'living';
 const horizontal = layout === 'horizontal';
+const image = articleImage(article);
 ---
 
 <article class="group h-full">
@@ -26,7 +28,7 @@ const horizontal = layout === 'horizontal';
       horizontal ? 'flex-row gap-3 p-3 sm:flex-col sm:gap-0 sm:p-0' : 'flex-col',
     ]}
   >
-    <!-- サムネイル（モック：カテゴリアイコン + グラデーション。実画像に差し替え予定） -->
+    <!-- サムネイル：記事画像があれば写真、なければカテゴリアイコン + グラデーション -->
     <div
       class:list={[
         'relative grid shrink-0 place-items-center overflow-hidden',
@@ -35,7 +37,17 @@ const horizontal = layout === 'horizontal';
       ]}
     >
       {
-        category && (
+        image ? (
+          <img
+            src={url(image.src)}
+            alt={image.alt}
+            loading="lazy"
+            decoding="async"
+            width="800"
+            height="450"
+            class="absolute inset-0 size-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+        ) : category && (
           <Icon
             name={category.icon}
             class:list={[

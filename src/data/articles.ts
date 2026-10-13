@@ -21,6 +21,11 @@ export interface Article {
   featured?: boolean;
   /** 記事の根拠にした主な公式情報 */
   sources?: ArticleSource[];
+  /** サムネイル・本文冒頭の画像（public/ からのパス）。ファイルがない間はアイコン表示 */
+  imageUrl?: string;
+  imageAlt?: string;
+  /** 画像の出典（クレジット表記が必要な素材のみ） */
+  imageCredit?: ArticleSource;
 }
 
 // 記事のメタデータ。本文は src/data/articles/<slug>.md に置き、記事ページで読み込む。
@@ -34,6 +39,8 @@ export const articles: Article[] = [
     category: 'car-sell',
     publishedAt: '2026-10-13',
     updatedAt: '2026-10-13',
+    imageUrl: '/images/articles/car-lifestyle.jpg',
+    imageAlt: '電車が走る街並みのイメージ',
     readingMinutes: 7,
     isPr: false,
     sources: [
@@ -50,6 +57,8 @@ export const articles: Article[] = [
     category: 'rainy-day',
     publishedAt: '2026-10-13',
     updatedAt: '2026-10-13',
+    imageUrl: '/images/articles/hamamatsu-castle.jpg',
+    imageAlt: '浜松城',
     readingMinutes: 7,
     isPr: false,
     sources: [
@@ -68,6 +77,8 @@ export const articles: Article[] = [
     category: 'car-sell',
     publishedAt: '2026-10-12',
     updatedAt: '2026-10-12',
+    imageUrl: '/images/articles/car-buying.jpg',
+    imageAlt: '車のイメージ',
     readingMinutes: 7,
     isPr: true,
     sources: [
@@ -87,6 +98,8 @@ export const articles: Article[] = [
     category: 'rainy-day',
     publishedAt: '2026-10-12',
     updatedAt: '2026-10-12',
+    imageUrl: '/images/articles/act-tower.jpg',
+    imageAlt: 'アクトタワーと浜松駅',
     readingMinutes: 6,
     featured: true,
     sources: [
@@ -106,6 +119,8 @@ export const articles: Article[] = [
     category: 'express-bus',
     publishedAt: '2026-10-11',
     updatedAt: '2026-10-11',
+    imageUrl: '/images/articles/highway-bus.jpg',
+    imageAlt: '高速バスのイメージ',
     readingMinutes: 6,
     featured: true,
     sources: [
@@ -124,6 +139,8 @@ export const articles: Article[] = [
     category: 'internet',
     publishedAt: '2026-10-11',
     updatedAt: '2026-10-12',
+    imageUrl: '/images/articles/internet.jpg',
+    imageAlt: 'インターネット回線のイメージ',
     readingMinutes: 6,
     isPr: true,
     sources: [

@@ -8,6 +8,7 @@ import { articles, formatDate, type Article } from '@/data/articles';
 import { categories, getCategoryHref, sections } from '@/data/categories';
 import { url } from '@/lib/url';
 import { siteConfig } from '@/config/site.config';
+import { articleImage } from '@/lib/article-image';
 
 // 本文（Markdown）。ファイル名 = slug
 const bodies = import.meta.glob<{ compiledContent: () => string | Promise<string> }>('../../data/articles/*.md', { eager: true });
@@ -23,6 +24,18 @@ const body = bodies[`../../data/articles/${article.slug}.md`];
 if (!body) throw new Error(`記事本文がありません: src/data/articles/${article.slug}.md`);
 // 本文中のサイト内リンク（/living など）を BASE_PATH に合わせる
 const html = (await body.compiledContent()).replace(/href="\/(?!\/)/g, `href="${url('/')}`.replace(/\/$/, '') + '/');
+
+// 記事画像（ファイルがある場合のみ）をリード文の下＝最初の見出し（h2）の直前に入れる
+const image = articleImage(article);
+let bodyHtml = html;
+if (image) {
+  const credit = image.credit
+    ? `<figcaption>出典：<a href="${image.credit.url}" rel="noopener noreferrer" target="_blank">${image.credit.label}</a></figcaption>`
+    : '';
+  const figure = `<figure class="article-figure"><img src="${url(image.src)}" alt="${image.alt}" width="800" height="450" decoding="async">${credit}</figure>`;
+  const at = bodyHtml.indexOf('<h2');
+  bodyHtml = at >= 0 ? bodyHtml.slice(0, at) + figure + bodyHtml.slice(at) : figure + bodyHtml;
+}
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -69,7 +82,7 @@ const jsonLd = {
       )
     }
 
-    <div class="article-body mt-8" set:html={html} />
+    <div class="article-body mt-8" set:html={bodyHtml} />
 
     <aside class="mt-10 rounded-xl bg-surface p-4 text-xs leading-relaxed text-muted sm:p-5">
       <p>

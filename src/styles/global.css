@@ -105,6 +105,12 @@
   .article-body th {
     @apply bg-surface font-bold whitespace-nowrap;
   }
+  .article-body .article-figure img {
+    @apply aspect-[16/9] w-full rounded-2xl object-cover;
+  }
+  .article-body .article-figure figcaption {
+    @apply mt-1.5 text-right text-[11px] text-muted;
+  }
   /* 記事内の申し込みボタン（広告リンク） */
   .article-body .article-cta {
     @apply my-6 flex flex-col items-center gap-1.5 text-center;
