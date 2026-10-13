@@ -99,7 +99,7 @@ export const articles: Article[] = [
     publishedAt: '2026-10-12',
     updatedAt: '2026-10-12',
     imageUrl: '/images/articles/act-tower.jpg',
-    imageAlt: 'アクトタワーと浜松駅',
+    imageAlt: '高層ビルが並ぶ街並みのイメージ',
     readingMinutes: 6,
     featured: true,
     sources: [
@@ -160,6 +160,8 @@ export const articles: Article[] = [
     category: 'parking',
     publishedAt: '2026-10-10',
     updatedAt: '2026-10-11',
+    imageUrl: '/images/articles/parking.jpg',
+    imageAlt: '駐車場のイメージ',
     readingMinutes: 6,
     sources: [
       { label: '浜松市 市営駐車場', url: 'https://www.city.hamamatsu.shizuoka.jp/kotsu/traffic/shiei-p/index.html' },
@@ -178,6 +180,8 @@ export const articles: Article[] = [
     category: 'gym',
     publishedAt: '2026-10-09',
     updatedAt: '2026-10-11',
+    imageUrl: '/images/articles/gym.jpg',
+    imageAlt: 'トレーニングマシンが並ぶジムのイメージ',
     readingMinutes: 6,
     sources: [
       { label: 'chocoZAP', url: 'https://chocozap.jp/' },
