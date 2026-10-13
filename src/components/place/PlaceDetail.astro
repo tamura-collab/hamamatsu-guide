@@ -236,11 +236,11 @@ const rows = [
       </aside>
     </div>
 
-    <p class="mt-6 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-muted">
+    <div class="mt-6 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-muted">
       <UpdateInfo />
-      <span>掲載情報の確認日：<time datetime={place.updatedAt}>{place.updatedAt.replaceAll('-', '.')}</time></span>
-      <a href={reportHref} class="underline hover:text-brand-700">情報の誤りを報告する</a>
-    </p>
+      <span class="text-xs">掲載情報の確認日：<time datetime={place.updatedAt}>{place.updatedAt.replaceAll('-', '.')}</time></span>
+      <a href={reportHref} class="text-xs underline hover:text-brand-700">情報の誤りを報告する</a>
+    </div>
     <p class="mt-2 text-[11px] leading-relaxed text-muted">
       ※営業時間・料金等は変更される場合があります。お出かけ前に公式サイト等で最新情報をご確認ください。
     </p>
