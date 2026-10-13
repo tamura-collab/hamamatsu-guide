@@ -6,6 +6,7 @@ import MobileMenu from '@/components/layout/MobileMenu.astro';
 import SearchDialog from '@/components/layout/SearchDialog.astro';
 import DialogController from '@/components/layout/DialogController.astro';
 import OutboundTracker from '@/components/outbound/OutboundTracker.astro';
+import GoogleTag from '@/components/outbound/GoogleTag.astro';
 import { siteConfig } from '@/config/site.config';
 import { publicPath, url } from '@/lib/url';
 import { NOINDEX } from 'astro:env/server';
@@ -64,6 +65,7 @@ const websiteJsonLd = isHome
 <!doctype html>
 <html lang={siteConfig.lang} data-city={siteConfig.citySlug}>
   <head>
+    <GoogleTag />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="theme-color" content="#0f4c75" />

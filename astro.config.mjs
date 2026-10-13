@@ -51,8 +51,8 @@ export default defineConfig({
       CITY: envField.string({ context: 'server', access: 'public', default: 'hamamatsu' }),
       // true のビルドは全ページ noindex（プレビュー環境では上で自動設定される）
       NOINDEX: envField.boolean({ context: 'server', access: 'public', default: false }),
-      // GA4 の測定ID（例: G-XXXXXXX）。未設定なら GA4 タグを読み込まない
-      PUBLIC_GA4_ID: envField.string({ context: 'client', access: 'public', optional: true }),
+      // GA4 の測定ID。環境変数で上書きでき、空文字にすると GA4 タグを読み込まない
+      PUBLIC_GA4_ID: envField.string({ context: 'client', access: 'public', default: 'G-DDP1G874JS' }),
       // 送客ログの送信先（例: /api/log）。未設定なら送信しない
       PUBLIC_LOG_ENDPOINT: envField.string({ context: 'client', access: 'public', optional: true }),
     },

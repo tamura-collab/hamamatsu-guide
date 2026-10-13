@@ -196,7 +196,7 @@ npm run data:scrape -- --source=sample-fixture --dry-run   # 同梱のサンプ�
 | --- | --- |
 | `window.__outboundLog`（直近50件） | 常に（デバッグ・E2Eテスト用） |
 | ブラウザのコンソール | `npm run dev` 実行時 |
-| GA4（イベント名 `outbound_click`） | `PUBLIC_GA4_ID` を設定 |
+| GA4（イベント名 `outbound_click`） | 既定で有効（測定ID `G-DDP1G874JS`。タグは `GoogleTag.astro` で全ページの `<head>` 直後に出力、プレビュー環境では出力しない） |
 | 自社ログAPI（`navigator.sendBeacon`） | `PUBLIC_LOG_ENDPOINT` を設定（例: `/api/log`） |
 
 `api/log.js` は Vercel Functions 用のモックで、受け取ったイベントを検証してログ出力します。本番運用時は保存先（Vercel KV / Supabase / BigQuery 等）への書き込みに置き換えてください。
@@ -231,7 +231,7 @@ npm run data:scrape -- --source=sample-fixture --dry-run   # 同梱のサンプ�
 | `SITE_URL` | 正規URL（例: `https://example.jp`） | Vercel では `VERCEL_PROJECT_PRODUCTION_URL`、それ以外は `http://localhost:4321` |
 | `CITY` | 対象都市（`src/config/cities.ts` の citySlug） | `hamamatsu` |
 | `NOINDEX` | `true` で全ページ noindex・robots.txt 全体 Disallow | プレビュー環境では自動で `true` |
-| `PUBLIC_GA4_ID` | GA4 測定ID | 未設定（GA4を読み込まない） |
+| `PUBLIC_GA4_ID` | GA4 測定ID | `G-DDP1G874JS`（空文字で無効化） |
 | `PUBLIC_LOG_ENDPOINT` | 送客ログの送信先 | 未設定（送信しない） |
 | `BASE_PATH` | サブディレクトリ配信時のみ（例: `/media`） | `/` |
 

@@ -1,0 +1,27 @@
+---
+// Google タグ（gtag.js）。BaseLayout の <head> 直後で全ページに出力する。
+// プレビュー環境（NOINDEX）のビルドでは本番の計測データを汚さないよう出力しない。
+import { PUBLIC_GA4_ID } from 'astro:env/client';
+import { NOINDEX } from 'astro:env/server';
+
+const id = NOINDEX ? '' : PUBLIC_GA4_ID;
+---
+
+{
+  id && (
+    <>
+      <!-- Google tag (gtag.js) -->
+      <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${id}`} />
+      <script is:inline define:vars={{ id }}>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        window.gtag = gtag;
+        gtag('js', new Date());
+
+        gtag('config', id);
+      </script>
+    </>
+  )
+}

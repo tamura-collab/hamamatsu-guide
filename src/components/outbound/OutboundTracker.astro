@@ -1,23 +1,6 @@
 ---
-// 送客計測の初期化と GA4 タグの読み込み。BaseLayout から全ページで読み込む。
-import { PUBLIC_GA4_ID } from 'astro:env/client';
+// 送客計測の初期化。BaseLayout から全ページで読み込む（GA4 タグ本体は GoogleTag.astro で <head> に出力）。
 ---
-
-{
-  PUBLIC_GA4_ID && (
-    <>
-      <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${PUBLIC_GA4_ID}`} />
-      <script is:inline define:vars={{ id: PUBLIC_GA4_ID }}>
-        window.dataLayer = window.dataLayer || [];
-        window.gtag = function () {
-          window.dataLayer.push(arguments);
-        };
-        window.gtag('js', new Date());
-        window.gtag('config', id);
-      </script>
-    </>
-  )
-}
 
 <script>
   import { PUBLIC_GA4_ID, PUBLIC_LOG_ENDPOINT } from 'astro:env/client';
