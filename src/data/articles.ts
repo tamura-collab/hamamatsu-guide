@@ -27,6 +27,40 @@ export interface Article {
 // 料金・アクセス等は data/raw/**/curated-*.json の実データと内容を合わせる。
 export const articles: Article[] = [
   {
+    slug: 'hamamatsu-car-lifestyle',
+    title: '浜松で『車なし』生活は可能？移住・転勤前に知っておくべき交通事情と維持費のリアル',
+    excerpt: '浜松駅周辺や遠鉄電車の沿線なら車なしでも暮らせる一方、郊外は1人1台が基本。駐車場代を含む維持費と、車を手放す・買い替えるときの注意点をまとめました。',
+    section: 'living',
+    category: 'car-sell',
+    publishedAt: '2026-10-13',
+    updatedAt: '2026-10-13',
+    readingMinutes: 7,
+    isPr: false,
+    sources: [
+      { label: '浜松市 公共交通の案内', url: 'https://www.city.hamamatsu.shizuoka.jp/documents/39238/koukyoukoutsuukikan.pdf' },
+      { label: '遠州鉄道を旅する（乗りものニュース）', url: 'https://trafficnews.jp/post/82556' },
+      { label: '特P 月極駐車場（浜松市）', url: 'https://toku-p.earth-car.com/monthly-parking/parking-search/34.73657485-137.73307789-14/%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B5%9C%E6%9D%BE%E5%B8%82%E4%B8%AD%E5%8C%BA%E5%B9%B8%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%95%EF%BC%92%E2%88%92%EF%BC%91%EF%BC%98/ranking-price' },
+    ],
+  },
+  {
+    slug: 'hamamatsu-no-car-trip',
+    title: '新幹線から直行！車なし・公共交通機関で楽しむ浜松日帰り観光モデルコース',
+    excerpt: '浜松駅を拠点に、バス・JR・遠鉄電車で浜松城公園、浜松餃子、浜名湖の弁天島やフルーツパークを巡る日帰りコースと、コインロッカー情報を紹介します。',
+    section: 'travel',
+    category: 'rainy-day',
+    publishedAt: '2026-10-13',
+    updatedAt: '2026-10-13',
+    readingMinutes: 7,
+    isPr: false,
+    sources: [
+      { label: '浜松城公園 アクセス', url: 'https://www.entetsuassist-dms.com/hamamatsu-jyo/access/' },
+      { label: '浜松市 茶室 松韻亭', url: 'https://www.city.hamamatsu.shizuoka.jp/bunka/culture_art/shointei/shointeichashitu.html' },
+      { label: 'JR浜松駅から市内の観光地へ（浜松だいすきネット）', url: 'https://hamamatsu-daisuki.net/pickup/3108/' },
+      { label: 'はままつフルーツパーク時之栖 アクセス（るるぶ&more.）', url: 'https://rurubu.jp/andmore/spot/80021930/' },
+      { label: '石松餃子 JR浜松駅店', url: 'https://1402.jp/shop/hamamatsu.html' },
+    ],
+  },
+  {
     slug: 'car-buying-guide',
     title: '浜松で車を高く売るなら？おすすめ車買取・一括査定サイト6選を徹底比較',
     excerpt: '一括査定と廃車・事故車に強い買取の違いから、MOTA・carview!・チョージン・ガリバー・カーネクスト・ソコカラの特徴まで分かりやすく比較します。',
