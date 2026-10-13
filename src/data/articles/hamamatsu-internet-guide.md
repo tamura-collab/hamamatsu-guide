@@ -49,6 +49,11 @@
 
 NTTの光回線を使う光コラボで、プロバイダを選んで申し込みます。1ギガ・タイプA・2年定期の月額は戸建て5,720円・マンション4,400円です。タイプBは各220円高く、定期契約なしのプランは割高になります。
 
+<p class="article-cta">
+  <a href="https://px.a8.net/svt/ejp?a8mat=4BEFL2+CWZL0A+50+54KL8Y" rel="sponsored nofollow noopener noreferrer" target="_blank" data-track="affiliate" data-place-id="internet-14407d54" data-category="internet" data-section="living" data-placement="article">ドコモ光のお申し込みはこちら<span class="whitespace-nowrap">（公式サイト）</span></a>
+  <span class="article-cta-note">PR・提供エリアと最新の料金は公式サイトでご確認ください</span>
+</p>
+
 ### ソフトバンク光：ソフトバンク・ワイモバイルユーザーに
 
 NTTの光回線を使う光コラボで、スマホとのセットで「おうち割 光セット」が適用できます。1ギガ・2年自動更新プランで戸建て5,720円・マンション4,180円です。2026年12月1日から月額330円の値上げ予定と報じられているため、申し込み前に最新の料金を確認してください。
@@ -60,6 +65,11 @@ KDDIの光回線ですが、静岡県では戸建てタイプが提供されて�
 ### おてがる光：縛りなしで、シンプルに使いたい人に
 
 契約期間の縛りや解約違約金がなく、プロバイダ料金込みの月額で使える光回線です。月額は戸建て4,708円・マンション3,608円（税込）と、今回の6社では最も安い水準です。一方でスマホのセット割はないため、大手キャリアのスマホを使っている人は、セット割込みの金額と比べてから選ぶのがおすすめです。
+
+<p class="article-cta">
+  <a href="https://px.a8.net/svt/ejp?a8mat=4BEFL2+CDXPNE+4SHG+5YRHE" rel="sponsored nofollow noopener noreferrer" target="_blank" data-track="affiliate" data-place-id="internet-94c40aab" data-category="internet" data-section="living" data-placement="article">おてがる光のお申し込みはこちら<span class="whitespace-nowrap">（公式サイト）</span></a>
+  <span class="article-cta-note">PR・提供エリアと最新の料金は公式サイトでご確認ください</span>
+</p>
 
 ## 申し込み前のチェックリスト
 
