@@ -34,6 +34,42 @@ export interface Article {
 // 料金・アクセス等は data/raw/**/curated-*.json の実データと内容を合わせる。
 export const articles: Article[] = [
   {
+    slug: 'hamamatsu-rentacar-guide',
+    title: '【2026年最新】浜松駅周辺のレンタカー比較6選！格安予約サイトからスマホ完結まで',
+    excerpt: '浜松観光や出張、日々のチョイ乗りに便利なレンタカー・予約サイト（エアトリ、レンナビ、Uqey、たびらい、イオンコンパス、オリックス）の特徴と最安料金の探し方を徹底比較します。',
+    section: 'travel',
+    category: 'car-rental',
+    publishedAt: '2026-10-14',
+    updatedAt: '2026-10-14',
+    readingMinutes: 6,
+    isPr: false,
+    tags: ['レンタカー', '観光・出張', '比較', '浜松駅'],
+    sources: [
+      { label: 'たびらいレンタカー', url: 'https://www.tabirai.net/car/' },
+      { label: 'Uqey（App Store）', url: 'https://apps.apple.com/jp/app/id6444780033' },
+      { label: 'イオンコンパス トラベルモールのリニューアル（トラベル Watch）', url: 'https://travel.watch.impress.co.jp/docs/news/1575343.html' },
+      { label: 'オリックスレンタカー 浜松駅前店', url: 'https://car.orix.co.jp/shops/?shops_pk=476' },
+    ],
+  },
+  {
+    slug: 'hamamatsu-car-lease',
+    title: '浜松でカーリース（車のサブスク）はお得？おすすめ全国展開＆地元密着店舗を比較',
+    excerpt: '車社会の浜松で2台目需要にも最適なマイカーリース。「オリコで乗ーる」「オリックスカーリース」などの全国展開サービスと、浜松エリアのフラット7加盟店など地元のカーリースを比較解説します。',
+    section: 'living',
+    category: 'car-sell',
+    publishedAt: '2026-10-14',
+    updatedAt: '2026-10-14',
+    readingMinutes: 7,
+    isPr: false,
+    tags: ['カーリース', '維持費', '車社会', '浜松暮らし'],
+    sources: [
+      { label: 'フラット7 浜松', url: 'https://flat7-hamamatsu.com/' },
+      { label: 'フラット7 浜松三方原（トップカーセールス）', url: 'https://top-car-sales.co.jp/' },
+      { label: 'フラット7静岡会 加盟店一覧', url: 'https://flat7shizuokakai.com/shop/' },
+      { label: 'フラット7 浜松南部（店舗情報）', url: 'https://autoc-one.jp/dealer/detail/15952/' },
+    ],
+  },
+  {
     slug: 'hamamatsu-relocation-guide',
     title: '【2026年最新】浜松移住パーフェクトガイド｜おすすめの理由・注意点・助成金・子育て教育のリアル',
     excerpt: '浜松への移住を検討中の方へ。温暖な気候と製造業の求人、最大100万円超の移住支援金、子育て・学区事情から、「からっ風」「車2台持ち」などの注意点・後悔しない土地選びまで徹底解説します。',
