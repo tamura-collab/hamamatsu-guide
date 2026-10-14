@@ -113,6 +113,9 @@ export function validatePlace(place, categoryMap) {
     if (typeof place.affiliate !== 'object' || !/^https?:\/\//.test(place.affiliate?.url ?? '')) {
       errors.push(`affiliate.url が不正です: ${place.affiliate?.url}`);
     }
+    if (place.affiliate?.impressionUrl != null && !/^https:\/\//.test(place.affiliate.impressionUrl)) {
+      errors.push(`affiliate.impressionUrl が不正です: ${place.affiliate.impressionUrl}`);
+    }
   }
   if (place.tel && !/^0\d{1,4}-\d{1,4}-\d{3,4}$/.test(place.tel)) {
     errors.push(`電話番号の形式が不正です: ${place.tel}`);

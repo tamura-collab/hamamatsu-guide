@@ -17,7 +17,16 @@
     "affiliate": {
       "url": "https://px.a8.net/svt/ejp?a8mat=4BEFL2+CMV7Q2+2VMU+63OYA",
       "label": "NURO光の公式サイトで申し込む",
-      "program": "A8.net"
+      "program": "A8.net",
+      "impressionUrl": "https://www10.a8.net/0.gif?a8mat=4BEFL2+CMV7Q2+2VMU+63OYA"
+    }
+  },
+  "moving-129290f7": {
+    "affiliate": {
+      "url": "https://px.a8.net/svt/ejp?a8mat=4BEGD7+2A5V16+1PO0+ZRALE",
+      "label": "トレファク引越の無料見積もりはこちら",
+      "program": "A8.net",
+      "impressionUrl": "https://www19.a8.net/0.gif?a8mat=4BEGD7+2A5V16+1PO0+ZRALE"
     }
   }
 }

@@ -27,6 +27,8 @@ export interface Affiliate {
   label: string | null;
   /** 提携先（ASP名など。社内管理用） */
   program: string | null;
+  /** インプレッション計測用の画像URL（ASP提供のビーコン。未設定なら出力しない） */
+  impressionUrl?: string | null;
 }
 
 export interface Place {

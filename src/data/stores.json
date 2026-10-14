@@ -814,7 +814,8 @@
     "affiliate": {
       "url": "https://px.a8.net/svt/ejp?a8mat=4BEFL2+CMV7Q2+2VMU+63OYA",
       "label": "NURO光の公式サイトで申し込む",
-      "program": "A8.net"
+      "program": "A8.net",
+      "impressionUrl": "https://www10.a8.net/0.gif?a8mat=4BEFL2+CMV7Q2+2VMU+63OYA"
     },
     "source": "manual",
     "updatedAt": "2026-10-10"
@@ -860,7 +861,8 @@
     "affiliate": {
       "url": "https://px.a8.net/svt/ejp?a8mat=4BEFL2+CWZL0A+50+54KL8Y",
       "label": "ドコモ光の公式サイトで申し込む",
-      "program": "A8.net"
+      "program": "A8.net",
+      "impressionUrl": null
     },
     "source": "manual",
     "updatedAt": "2026-10-10"
@@ -989,7 +991,8 @@
     "affiliate": {
       "url": "https://px.a8.net/svt/ejp?a8mat=4BEFL2+CDXPNE+4SHG+5YRHE",
       "label": "おてがる光の公式サイトで申し込む",
-      "program": "A8.net"
+      "program": "A8.net",
+      "impressionUrl": null
     },
     "source": "manual",
     "updatedAt": "2026-10-12"
@@ -1444,7 +1447,7 @@
     "tel": null,
     "hours": null,
     "access": null,
-    "officialUrl": "https://www.tfhikkoshi.com/",
+    "officialUrl": "https://px.a8.net/svt/ejp?a8mat=4BEGD7+2A5V16+1PO0+ZRALE",
     "description": "リユースショップを展開する株式会社トレジャー・ファクトリーの引越しサービス。引越しと不用品の出張買取を同時に頼め、買取額を引越し料金から差し引けます。2026年10月時点の公式の見積対応エリアに静岡県は含まれていないため、浜松市からの引越しでは利用できない可能性があります。",
     "localNote": [
       {
@@ -1468,10 +1471,15 @@
       "買取額を引越し料金から差し引ける",
       "静岡県は現在、見積対応エリア外（公式の一覧）"
     ],
-    "priceNote": "料金は見積もりで決まります。見積もり・買取の訪問は対応エリアに限られ、引越し先は全国対応とされています。",
+    "priceNote": "※静岡県発の引越し（見積もり・買取）は現在対象外です。東京・愛知など対象エリアから浜松への移住時にご利用いただけます。料金は見積もりで決まり、引越し先は全国に対応しています。",
     "chain": false,
     "serviceType": "online",
-    "affiliate": null,
+    "affiliate": {
+      "url": "https://px.a8.net/svt/ejp?a8mat=4BEGD7+2A5V16+1PO0+ZRALE",
+      "label": "トレファク引越の無料見積もりはこちら",
+      "program": "A8.net",
+      "impressionUrl": "https://www19.a8.net/0.gif?a8mat=4BEGD7+2A5V16+1PO0+ZRALE"
+    },
     "source": "manual",
     "updatedAt": "2026-10-12"
   },

@@ -100,6 +100,7 @@ function normalizeRecord(raw) {
         url: normalizeUrl(extra.affiliate.url),
         label: cleanText(extra.affiliate.label),
         program: cleanText(extra.affiliate.program),
+        impressionUrl: normalizeUrl(extra.affiliate.impressionUrl),
       }
     : null;
 

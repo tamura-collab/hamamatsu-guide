@@ -122,14 +122,14 @@ data/enrichment.json ───────────┘   正規化・ID付与
     ],
     "override": { "hours": "6:00～24:00" },
     "specs": { "monthlyFee": 7480, "trial": true },
-    "affiliate": { "url": "https://px.a8.net/...", "label": "無料体験を予約する", "program": "A8.net" },
+    "affiliate": { "url": "https://px.a8.net/...", "label": "無料体験を予約する", "program": "A8.net", "impressionUrl": "https://www??.a8.net/0.gif?a8mat=..." },
     "hidden": false
   }
 }
 ```
 
 `type` は `station`（最寄り駅）/ `road`（幹線道路）/ `car`（車）/ `parking`（駐車場）/ `landmark`（目印）/ `tip`（地元メモ）。
-`override` で収集データの誤りを補正、`specs` で比較値を補正、`affiliate` で広告リンクを設定、`hidden: true` で非掲載にできます。
+`override` で収集データの誤りを補正、`specs` で比較値を補正、`affiliate` で広告リンクを設定（`impressionUrl` を指定すると、申し込みボタンの横に ASP のインプレッション計測用ビーコンを出力）、`hidden: true` で非掲載にできます。
 アフィリエイトリンクは提携契約に基づく情報のため、収集データではなく enrichment.json でのみ設定します。再収集しても enrichment.json は上書きされません。
 
 ### 実データの手入力（curated）

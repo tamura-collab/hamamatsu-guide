@@ -25,7 +25,7 @@ const track = { placeId: place.id, category: category.slug, section: category.se
 
 {
   place.affiliate ? (
-    <div class:list={['flex flex-col', size === 'lg' ? 'gap-2' : 'gap-1.5', className]}>
+    <div class:list={['relative flex flex-col', size === 'lg' ? 'gap-2' : 'gap-1.5', className]}>
       <p class:list={['relative self-center rounded-full bg-cta-50 px-3 py-0.5 font-bold text-cta-700', size === 'lg' ? 'text-xs' : 'text-[11px]']}>
         {cta.microcopy}
         <span class="absolute -bottom-1 left-1/2 size-2 -translate-x-1/2 rotate-45 bg-cta-50" aria-hidden="true" />
@@ -43,6 +43,10 @@ const track = { placeId: place.id, category: category.slug, section: category.se
         <Icon name="arrowRight" class="size-4 transition-transform group-hover/cta:translate-x-0.5" />
       </OutboundLink>
       <AdNotice hasAffiliate variant="inline" />
+      {/* ASP のインプレッション計測用ビーコン（1x1・非表示） */}
+      {place.affiliate.impressionUrl && (
+        <img src={place.affiliate.impressionUrl} width="1" height="1" alt="" class="pointer-events-none absolute size-px opacity-0" />
+      )}
     </div>
   ) : (
     place.officialUrl && (
