@@ -226,7 +226,7 @@ export const categories: Category[] = [
     slug: 'car-rental',
     section: 'travel',
     title: 'レンタカー',
-    summary: '浜松駅周辺のレンタカー・カーシェアを、料金の目安・駅からの距離・乗り捨てで比較',
+    summary: '浜松駅前のレンタカー店舗と、レンタカー予約・比較サイト、スマホで借りるレンタカーを比較',
     icon: 'key',
     badge: '人気',
     axes: [

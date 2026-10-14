@@ -62,7 +62,11 @@ export const articles: Article[] = [
     isPr: false,
     tags: ['レンタカー', '観光・出張', '比較', '浜松駅'],
     sources: [
+      { label: 'エアトリレンタカー ご利用ガイド', url: 'https://rentacar.airtrip.jp/guide/flow' },
+      { label: 'レンナビ', url: 'https://www.rental-car.jp/' },
       { label: 'たびらいレンタカー', url: 'https://www.tabirai.net/car/' },
+      { label: 'Uqey 静岡県のステーション', url: 'https://en.uqey.com/station-category/shizuoka/' },
+      { label: 'イオンコンパス レンタカー予約', url: 'https://www.aeoncompass.com/car' },
       { label: 'Uqey（App Store）', url: 'https://apps.apple.com/jp/app/id6444780033' },
       { label: 'イオンコンパス トラベルモールのリニューアル（トラベル Watch）', url: 'https://travel.watch.impress.co.jp/docs/news/1575343.html' },
       { label: 'オリックスレンタカー 浜松駅前店', url: 'https://car.orix.co.jp/shops/?shops_pk=476' },
@@ -80,6 +84,9 @@ export const articles: Article[] = [
     isPr: false,
     tags: ['カーリース', '維持費', '車社会', '浜松暮らし'],
     sources: [
+      { label: 'オリコで乗ーる', url: 'https://orico-de-noru.jp/' },
+      { label: 'オリックスカーリース', url: 'https://www.carlease-online.jp/' },
+      { label: 'スズキ定額マイカー7（スズキファイナンス）', url: 'https://www.suzuki-finance.co.jp/lease/personal/teigaku_mycar7/' },
       { label: 'フラット7 浜松', url: 'https://flat7-hamamatsu.com/' },
       { label: 'フラット7 浜松三方原（トップカーセールス）', url: 'https://top-car-sales.co.jp/' },
       { label: 'フラット7静岡会 加盟店一覧', url: 'https://flat7shizuokakai.com/shop/' },
