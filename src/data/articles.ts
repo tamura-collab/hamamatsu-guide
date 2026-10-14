@@ -34,6 +34,25 @@ export interface Article {
 // 料金・アクセス等は data/raw/**/curated-*.json の実データと内容を合わせる。
 export const articles: Article[] = [
   {
+    slug: 'hamamatsu-relocation-guide',
+    title: '【2026年最新】浜松移住パーフェクトガイド｜おすすめの理由・注意点・助成金・子育て教育のリアル',
+    excerpt: '浜松への移住を検討中の方へ。温暖な気候と製造業の求人、最大100万円超の移住支援金、子育て・学区事情から、「からっ風」「車2台持ち」などの注意点・後悔しない土地選びまで徹底解説します。',
+    section: 'living',
+    category: 'moving',
+    publishedAt: '2026-10-14',
+    updatedAt: '2026-10-14',
+    readingMinutes: 9,
+    isPr: false,
+    tags: ['移住・転勤', '助成金', '子育て・教育', '住みやすさ', '浜松暮らし'],
+    sources: [
+      { label: '浜松市 はじめようハマライフ助成事業費補助金（移住・就業支援金）', url: 'https://www.city.hamamatsu.shizuoka.jp/hamalife/oshirase/ijushienkin2.html' },
+      { label: '浜松市 まちなか定住促進・子育て応援環境づくり補助金', url: 'https://www.city.hamamatsu.shizuoka.jp/jutaku/matinaka_kosodate.html' },
+      { label: '浜松市 住宅取得費等の補助（チラシ）', url: 'https://www.city.hamamatsu.shizuoka.jp/documents/113024/jyutakuhojyokin_tirasi.pdf' },
+      { label: '浜松市 中山間地域空き家バンク', url: 'https://www.city.hamamatsu.shizuoka.jp/hamalife/eriasumai/akiyabanku.html' },
+      { label: '浜松市 移住相談（浜松移住センター）', url: 'https://www.city.hamamatsu.shizuoka.jp/hamalife/madoguchi.html' },
+    ],
+  },
+  {
     slug: 'hamamatsu-living-areas',
     title: '【2026年最新】浜松市で暮らすならどこ？新3区（中央区・浜名区・天竜区）の特徴と住みやすさガイド',
     excerpt: '2024年の行政区再編で誕生した浜松市「中央区」「浜名区」「天竜区」の特徴・住みやすさ・家賃相場を徹底比較。ライフスタイルや家族構成に応じたおすすめエリアを解説します。',
