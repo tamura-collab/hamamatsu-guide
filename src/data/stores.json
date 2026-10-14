@@ -782,7 +782,7 @@
     "tel": null,
     "hours": null,
     "access": null,
-    "officialUrl": "https://www.nuro.jp/hikari/",
+    "officialUrl": "https://px.a8.net/svt/ejp?a8mat=4BEFL2+CMV7Q2+2VMU+63OYA",
     "description": "下り最大2ギガ・10ギガのプランがある光回線。戸建てプランは契約期間・契約解除料なしと公式に発表されています。",
     "localNote": [
       {
@@ -811,7 +811,11 @@
     "priceNote": "2ギガの基本料金（戸建て5,500円）。10ギガは6,050円。「定額割」適用で戸建ては3年間3,980円の案内あり。マンション料金は掲載サイトの例です。",
     "chain": false,
     "serviceType": "online",
-    "affiliate": null,
+    "affiliate": {
+      "url": "https://px.a8.net/svt/ejp?a8mat=4BEFL2+CMV7Q2+2VMU+63OYA",
+      "label": "NURO光の公式サイトで申し込む",
+      "program": "A8.net"
+    },
     "source": "manual",
     "updatedAt": "2026-10-10"
   },

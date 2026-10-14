@@ -34,6 +34,23 @@ export interface Article {
 // 料金・アクセス等は data/raw/**/curated-*.json の実データと内容を合わせる。
 export const articles: Article[] = [
   {
+    slug: 'hamamatsu-moving-guide',
+    title: '浜松への引越し・不用品処分はどうする？手間を省く「買取一体型」引越しのすすめ',
+    excerpt: '浜松への移住や市内での引越しを検討中の方へ。自治体の粗大ゴミルールの面倒さを解消し、引越しと不用品買取が同時にできる「トレファク引越」のメリットを解説します。',
+    section: 'living',
+    category: 'moving',
+    publishedAt: '2026-10-14',
+    updatedAt: '2026-10-14',
+    readingMinutes: 6,
+    isPr: true,
+    tags: ['引越し', '移住・転勤', '不用品処分', '浜松暮らし'],
+    sources: [
+      { label: 'トレファク引越 見積対応エリア', url: 'https://www.tfhikkoshi.com/area' },
+      { label: 'トレファク引越 引越・買取について', url: 'https://www.tfhikkoshi.com/about' },
+      { label: '浜松市 公式サイト（連絡ごみ）', url: 'https://www.city.hamamatsu.shizuoka.jp/' },
+    ],
+  },
+  {
     slug: 'hamamatsu-rentacar-guide',
     title: '【2026年最新】浜松駅周辺のレンタカー比較6選！格安予約サイトからスマホ完結まで',
     excerpt: '浜松観光や出張、日々のチョイ乗りに便利なレンタカー・予約サイト（エアトリ、レンナビ、Uqey、たびらい、イオンコンパス、オリックス）の特徴と最安料金の探し方を徹底比較します。',

@@ -45,6 +45,12 @@
 
 2ギガ・10ギガのプランがある独自回線です。戸建てプランは契約期間・解約金なしと公式に発表されています。ソフトバンク・ワイモバイルのセット割にも対応しています。浜松市内でも提供エリアは住所によって異なるので、まずはエリア確認から始めましょう。
 
+<p class="article-cta">
+  <a href="https://px.a8.net/svt/ejp?a8mat=4BEFL2+CMV7Q2+2VMU+63OYA" rel="sponsored nofollow noopener noreferrer" target="_blank" data-track="affiliate" data-place-id="internet-b1693afb" data-category="internet" data-section="living" data-placement="article">NURO光のお申し込みはこちら<span class="whitespace-nowrap">（公式サイト）</span></a>
+  <span class="article-cta-note">PR・提供エリアと最新の料金は公式サイトでご確認ください</span>
+  <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4BEFL2+CMV7Q2+2VMU+63OYA" alt="" class="a8-beacon">
+</p>
+
 ### ドコモ光：ドコモユーザーならまず検討
 
 NTTの光回線を使う光コラボで、プロバイダを選んで申し込みます。1ギガ・タイプA・2年定期の月額は戸建て5,720円・マンション4,400円です。タイプBは各220円高く、定期契約なしのプランは割高になります。
