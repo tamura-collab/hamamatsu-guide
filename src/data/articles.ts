@@ -26,11 +26,31 @@ export interface Article {
   imageAlt?: string;
   /** 画像の出典（クレジット表記が必要な素材のみ） */
   imageCredit?: ArticleSource;
+  /** 記事のタグ（関連記事・タグ一覧用） */
+  tags?: string[];
 }
 
 // 記事のメタデータ。本文は src/data/articles/<slug>.md に置き、記事ページで読み込む。
 // 料金・アクセス等は data/raw/**/curated-*.json の実データと内容を合わせる。
 export const articles: Article[] = [
+  {
+    slug: 'hamamatsu-living-areas',
+    title: '【2026年最新】浜松市で暮らすならどこ？新3区（中央区・浜名区・天竜区）の特徴と住みやすさガイド',
+    excerpt: '2024年の行政区再編で誕生した浜松市「中央区」「浜名区」「天竜区」の特徴・住みやすさ・家賃相場を徹底比較。ライフスタイルや家族構成に応じたおすすめエリアを解説します。',
+    section: 'living',
+    category: 'moving',
+    publishedAt: '2026-10-14',
+    updatedAt: '2026-10-14',
+    readingMinutes: 8,
+    isPr: false,
+    tags: ['移住・転勤', '住みやすさ', '中央区', '浜名区', '天竜区'],
+    sources: [
+      { label: '浜松市 行政区別人口（令和7年10月1日）', url: 'https://www.city.hamamatsu.shizuoka.jp/documents/172713/r07_gaiyou.pdf' },
+      { label: 'アットホーム 浜松市中央区の家賃相場', url: 'https://www.athome.co.jp/chintai/souba/shizuoka/hamamatsu_chuo-city/' },
+      { label: 'アットホーム 浜松市浜名区の賃貸物件', url: 'https://www.athome.co.jp/chintai/shizuoka/hamamatsu_hamana-city/list/' },
+      { label: 'アットホーム 浜松市天竜区の家賃相場', url: 'https://www.athome.co.jp/chintai/souba/shizuoka/hamamatsu_tenryu-city/' },
+    ],
+  },
   {
     slug: 'hamamatsu-car-lifestyle',
     title: '浜松で『車なし』生活は可能？移住・転勤前に知っておくべき交通事情と維持費のリアル',
