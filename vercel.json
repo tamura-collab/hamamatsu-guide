@@ -6,6 +6,7 @@
   "outputDirectory": "dist",
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [{ "source": "/kurasu/car-lease", "destination": "/living/car-lease", "permanent": true }],
   "headers": [
     {
       "source": "/_astro/(.*)",

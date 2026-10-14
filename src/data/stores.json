@@ -520,6 +520,166 @@
     "updatedAt": "2026-10-12"
   },
   {
+    "id": "car-lease-361a5be2",
+    "name": "オリコで乗ーる（旧SOMPOで乗ーる）",
+    "category": "car-lease",
+    "genre": "全国展開（大手）",
+    "address": "オンライン（全国対応）",
+    "tel": null,
+    "hours": "Webで24時間申込可",
+    "access": null,
+    "officialUrl": "https://orico-de-noru.jp/",
+    "description": "オリエントコーポレーションの子会社・オリコカーライフが運営するカーリース（2026年4月に「SOMPOで乗ーる」から名称変更）。国産車・輸入車あわせて約300車種から選べます。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "輸入車も含めて車種の選択肢を広く比べたい人向け",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "全国展開（大手）",
+      "monthlyFrom": 27150,
+      "contractYears": "3・5・7・9年",
+      "ownAtEnd": true,
+      "insuranceIncluded": null,
+      "onlineApply": true,
+      "localStore": null
+    },
+    "features": [
+      "国産車・輸入車 約300車種から選べる",
+      "頭金0円・ボーナス払いなしの月額定額",
+      "税金込み。メンテナンスはフル〜なしからプランで選べる",
+      "仮審査はWebで申し込める"
+    ],
+    "priceNote": "月額は公式サイトのトップページの掲載例（税込・目安）です。車種・グレード・契約年数により異なります。",
+    "chain": false,
+    "serviceType": "online",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-14"
+  },
+  {
+    "id": "car-lease-64e207c4",
+    "name": "オリックスカーリース",
+    "category": "car-lease",
+    "genre": "全国展開（大手）",
+    "address": "オンライン（全国対応）",
+    "tel": null,
+    "hours": "Webで24時間申込可",
+    "access": null,
+    "officialUrl": "https://www.carlease-online.jp/",
+    "description": "レンタカーやカーリースを手がけるオリックス自動車の個人向けカーリース。新車は契約期間5・7・9・11年から選べ、長くするほど月額を抑えられます。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "長く乗り続けて、最後は車を自分のものにしたい人向け",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "全国展開（大手）",
+      "monthlyFrom": null,
+      "contractYears": "5・7・9・11年",
+      "ownAtEnd": true,
+      "insuranceIncluded": false,
+      "onlineApply": true,
+      "localStore": null
+    },
+    "features": [
+      "契約期間を5・7・9・11年から選べる",
+      "頭金0円・税金込みの月額定額",
+      "満了時に車をもらえるプランあり（プランにより異なる）",
+      "中古車のリースもあり"
+    ],
+    "priceNote": "月額は車種・契約年数により異なります。任意保険は月額に含まれないため、別途加入が必要です。",
+    "chain": false,
+    "serviceType": "online",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-14"
+  },
+  {
+    "id": "car-lease-f5eaf69c",
+    "name": "スズキ定額マイカー7（スズキファイナンス）",
+    "category": "car-lease",
+    "genre": "浜松本社・メーカー系",
+    "address": "浜松市内ほか全国のスズキ販売店（店頭で申込）",
+    "tel": null,
+    "hours": "販売店の営業時間による",
+    "access": null,
+    "officialUrl": "https://www.suzuki-finance.co.jp/lease/personal/teigaku_mycar7/",
+    "description": "浜松に本社を置くスズキのグループ会社・スズキファイナンスが提供する7年契約の新車サブスク。車両代金・税金・車検時の点検費用・自動車保険などを月々定額にまとめられます。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "浜松市内にはスズキの販売店が多く、車検・点検も近くの店舗で受けやすい",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "浜松本社・メーカー系",
+      "monthlyFrom": null,
+      "contractYears": "7年",
+      "ownAtEnd": null,
+      "insuranceIncluded": true,
+      "onlineApply": null,
+      "localStore": true
+    },
+    "features": [
+      "7年間の月々定額（2023年2月から全国で提供）",
+      "自動車保険・税金・車検時の点検費用・オイル交換を月額に含む",
+      "5年経過後は中途解約金なしでスズキの新車に乗り換えできる特約",
+      "対象は個人（申込時75歳まで）"
+    ],
+    "priceNote": "対象車種はスペーシア・ハスラー・ワゴンRスマイル・ラパン・ソリオ（提供開始時の発表）。月額は販売店でご確認ください。",
+    "chain": true,
+    "serviceType": "store",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-14"
+  },
+  {
+    "id": "car-lease-461218e1",
+    "name": "フラット7 浜松エリアの加盟店",
+    "category": "car-lease",
+    "genre": "地元密着",
+    "address": "静岡県浜松市中央区（三方原・都盛町・神ヶ谷町の3店舗）",
+    "tel": null,
+    "hours": "店舗により異なる",
+    "access": null,
+    "officialUrl": "https://flat7shizuokakai.com/shop/",
+    "description": "「7年間、月々定額で新車に乗れる」カーリースのチェーン。浜松エリアには浜松三方原・浜松南部（都盛町）・浜松（神ヶ谷町）の加盟店があり、店頭で相談・申し込みができます。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "地元の店舗なので、車検やメンテナンスも近くで受けられる。通勤・買い物用の2台目にも",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "地元密着",
+      "monthlyFrom": 11000,
+      "contractYears": "7年",
+      "ownAtEnd": null,
+      "insuranceIncluded": null,
+      "onlineApply": false,
+      "localStore": true
+    },
+    "features": [
+      "軽自動車の新車に月額1.1万円（税込）から",
+      "車検代・税金なども月額に含む",
+      "浜松市内の3店舗で店頭相談",
+      "申し込みは加盟店の店頭で受付"
+    ],
+    "priceNote": "月額1.1万円（税込）は軽自動車の最安プランの掲載例です。車種・グレード・ボーナス払いの有無により異なります。",
+    "chain": true,
+    "serviceType": "store",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-14"
+  },
+  {
     "id": "kids-school-2591b99b",
     "name": "ヒューマンアカデミージュニア ロボット教室 浜松エリア",
     "category": "kids-school",

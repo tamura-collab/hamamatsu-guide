@@ -77,7 +77,7 @@ export const articles: Article[] = [
     title: '浜松でカーリース（車のサブスク）はお得？おすすめ全国展開＆地元密着店舗を比較',
     excerpt: '車社会の浜松で2台目需要にも最適なマイカーリース。「オリコで乗ーる」「オリックスカーリース」などの全国展開サービスと、浜松エリアのフラット7加盟店など地元のカーリースを比較解説します。',
     section: 'living',
-    category: 'car-sell',
+    category: 'car-lease',
     publishedAt: '2026-10-14',
     updatedAt: '2026-10-14',
     readingMinutes: 7,
