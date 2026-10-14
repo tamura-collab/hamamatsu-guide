@@ -1,7 +1,7 @@
 /**
  * 送客ログ収集 API（モック）: POST /api/log
  *
- * Vercel にデプロイすると Vercel Functions として動作する（Root Directory = media-site の場合）。
+ * Vercel にデプロイすると Vercel Functions として動作する。
  * 有効化するには環境変数 PUBLIC_LOG_ENDPOINT=/api/log を設定して再ビルドする。
  * 現在は受け取ったイベントを検証してログ出力するだけ。本番運用時は保存先
  * （Vercel KV / Supabase / BigQuery など）への書き込みに置き換える。

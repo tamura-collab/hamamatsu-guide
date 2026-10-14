@@ -10,7 +10,6 @@
 ## ローカルで確認する
 
 ```bash
-cd media-site
 npm install
 npm run dev        # http://localhost:4321
 ```
@@ -45,7 +44,7 @@ npm run dev        # http://localhost:4321
 ## ディレクトリ構成
 
 ```
-media-site/
+hamamatsu-guide/
 ├── astro.config.mjs        # SITE_URL / BASE_PATH を環境変数から読み込む
 ├── data/
 │   ├── raw/{stores,spots}/ # 収集した生データ（mock.json / スクレイピング結果）
@@ -251,7 +250,7 @@ npm run data:scrape -- --source=sample-fixture --dry-run   # 同梱のサンプ�
 ## デプロイ
 
 `npm run verify`（データ検証 → 型チェック → ビルド）がローカルで通ることを確認してからデプロイしてください。
-いずれのサービスも **Root（Base）Directory を `media-site`** に設定します。Node.js は `.nvmrc`（22）で指定しています。
+このリポジトリはサイト単体の構成のため、いずれのサービスも Root（Base）Directory はリポジトリのルートのままで構いません。Node.js は `.nvmrc`（22）で指定しています。
 
 | サービス | 設定ファイル | ビルドコマンド / 出力 | 本番URL |
 | --- | --- | --- | --- |
