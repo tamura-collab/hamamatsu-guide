@@ -326,7 +326,12 @@
     "priceNote": "料金・オープン日は公式サイトでご確認ください。",
     "chain": false,
     "serviceType": "store",
-    "affiliate": null,
+    "affiliate": {
+      "url": "https://px.a8.net/svt/ejp?a8mat=4BEH58+A2L0YI+5FZU+5YRHE",
+      "label": "Repilatesの公式サイトを見る",
+      "program": "A8.net",
+      "impressionUrl": "https://www17.a8.net/0.gif?a8mat=4BEH58+A2L0YI+5FZU+5YRHE"
+    },
     "source": "manual",
     "updatedAt": "2026-10-15"
   },
@@ -377,7 +382,12 @@
     "priceNote": "月額は公式サイトに掲載の月4回までのプラン（8,800円・税込）です。通い放題などのプランやキャンペーンは時期・店舗により異なります。",
     "chain": true,
     "serviceType": "store",
-    "affiliate": null,
+    "affiliate": {
+      "url": "https://px.a8.net/svt/ejp?a8mat=4BEH58+AOM2CA+1O96+5YJRM",
+      "label": "LAVAの体験レッスンを予約する",
+      "program": "A8.net",
+      "impressionUrl": "https://www16.a8.net/0.gif?a8mat=4BEH58+AOM2CA+1O96+5YJRM"
+    },
     "source": "manual",
     "updatedAt": "2026-10-15"
   },
@@ -417,7 +427,12 @@
     "priceNote": "料金プランは公式サイトでご確認ください。",
     "chain": false,
     "serviceType": "online",
-    "affiliate": null,
+    "affiliate": {
+      "url": "https://px.a8.net/svt/ejp?a8mat=4BEH58+BK61EI+4EPM+631SY",
+      "label": "SOELUの公式サイトを見る",
+      "program": "A8.net",
+      "impressionUrl": "https://www18.a8.net/0.gif?a8mat=4BEH58+BK61EI+4EPM+631SY"
+    },
     "source": "manual",
     "updatedAt": "2026-10-15"
   },
@@ -557,22 +572,27 @@
     "id": "car-sell-dd55e7c7",
     "name": "ガリバー（Gulliver）浜松エリア",
     "category": "car-sell",
-    "genre": "車買取・中古車販売",
+    "genre": "オンライン査定・出張査定",
     "address": "静岡県浜松市中央区小豆餅2-17-1（住吉バイパス店）",
     "tel": null,
     "hours": "10:00～19:00（住吉バイパス店。店舗により異なる）",
     "access": "国道257号沿い（住吉バイパス店）",
     "officialUrl": "https://221616.com/shop/shizuoka/hamamatsushichuoku/",
-    "description": "全国に店舗を持つ中古車販売・買取の大手。浜松市内には住吉バイパス店（中央区小豆餅）や浜松宮竹店（中央区宮竹町）があり、店頭での査定のほか、自宅や職場での無料出張査定にも対応しています。",
+    "description": "全国に店舗を持つ中古車販売・買取の大手。Webで車種・年式・走行距離を入力すると24時間以内に概算の買取額が分かり、自宅や職場に来てもらう無料の出張査定も選べます。店舗へ行く手間をかけずに、自宅にいながら査定を受けられます。",
     "localNote": [
       {
-        "type": "road",
-        "text": "住吉バイパス店は国道257号沿い。持ち込みで相談したい人は店頭査定、忙しい人は出張査定を選べる",
+        "type": "tip",
+        "text": "店舗へ行く時間がとれない人は、Web査定で概算を確認してから出張査定を頼める。浜松市内には住吉バイパス店など店舗もある",
         "source": "manual"
+      },
+      {
+        "type": "road",
+        "text": "国道257号沿い",
+        "source": "auto"
       }
     ],
     "specs": {
-      "kind": "実店舗買取",
+      "kind": "オンライン査定・出張査定",
       "assessmentFee": 0,
       "maxCompanies": null,
       "homeVisit": true,
@@ -581,11 +601,12 @@
       "scrapOk": null
     },
     "features": [
-      "浜松市内に店舗あり（店頭査定）",
-      "出張査定も無料（地域・車両により対応できない場合あり）",
-      "査定額は本部で決めるため、店舗でも出張でも同じ（公式FAQ）"
+      "Webで無料査定（24時間以内に概算額を案内）",
+      "自宅・職場への出張査定も無料（地域・車両により対応できない場合あり）",
+      "ビデオ通話での自宅査定にも対応",
+      "査定額は本部で決めるため、出張でも店頭でも同じ（公式FAQ）"
     ],
-    "priceNote": "査定は店頭・出張・オンラインとも無料。車検切れの車を出張で売る場合は、陸送費が買取額から差し引かれます。",
+    "priceNote": "査定はオンライン・出張・店頭とも無料。車検切れの車を出張で売る場合は、陸送費が買取額から差し引かれます。ビデオ通話査定の通信料は利用者負担です。",
     "chain": true,
     "serviceType": "store",
     "affiliate": {
@@ -595,7 +616,7 @@
       "impressionUrl": "https://www12.a8.net/0.gif?a8mat=4BEFL2+C5LN6I+9QU+HXD0Y"
     },
     "source": "manual",
-    "updatedAt": "2026-10-10"
+    "updatedAt": "2026-10-15"
   },
   {
     "id": "car-sell-0d339951",

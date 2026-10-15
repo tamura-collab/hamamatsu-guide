@@ -8,9 +8,9 @@
 
 | サービス | 種類 | 場所 | 女性専用 | 公式サイト |
 | :--- | :--- | :--- | :--- | :--- |
-| Repilates イオン浜松西店 | マシンピラティス | 中央区入野町（イオン浜松西 3F） | ○ | <a href="https://repilates.jp/studio/hamamatusc/" rel="nofollow noopener noreferrer" target="_blank" data-track="official" data-place-id="yoga-pilates-4dd0c6e8" data-category="yoga-pilates" data-section="living" data-placement="article-table">公式サイト</a> |
-| ホットヨガスタジオLAVA | ホットヨガ | 浜松駅近く（アクトプラザ）・浜北（プレ葉ウォーク） | ○ | <a href="https://yoga-lava.com/shop/shizuoka/city/221309/" rel="nofollow noopener noreferrer" target="_blank" data-track="official" data-place-id="yoga-pilates-1ec4aff8" data-category="yoga-pilates" data-section="living" data-placement="article-table">公式サイト</a> |
-| SOELU | オンラインヨガ | 自宅（オンライン） | ― | <a href="https://www.soelu.com/" rel="nofollow noopener noreferrer" target="_blank" data-track="official" data-place-id="yoga-pilates-16c90815" data-category="yoga-pilates" data-section="living" data-placement="article-table">公式サイト</a> |
+| Repilates イオン浜松西店 | マシンピラティス | 中央区入野町（イオン浜松西 3F） | ○ | <a href="https://px.a8.net/svt/ejp?a8mat=4BEH58+A2L0YI+5FZU+5YRHE" rel="sponsored nofollow noopener noreferrer" target="_blank" data-track="affiliate" data-place-id="yoga-pilates-4dd0c6e8" data-category="yoga-pilates" data-section="living" data-placement="article-table">公式サイト</a> |
+| ホットヨガスタジオLAVA | ホットヨガ | 浜松駅近く（アクトプラザ）・浜北（プレ葉ウォーク） | ○ | <a href="https://px.a8.net/svt/ejp?a8mat=4BEH58+AOM2CA+1O96+5YJRM" rel="sponsored nofollow noopener noreferrer" target="_blank" data-track="affiliate" data-place-id="yoga-pilates-1ec4aff8" data-category="yoga-pilates" data-section="living" data-placement="article-table">公式サイト</a> |
+| SOELU | オンラインヨガ | 自宅（オンライン） | ― | <a href="https://px.a8.net/svt/ejp?a8mat=4BEH58+BK61EI+4EPM+631SY" rel="sponsored nofollow noopener noreferrer" target="_blank" data-track="affiliate" data-place-id="yoga-pilates-16c90815" data-category="yoga-pilates" data-section="living" data-placement="article-table">公式サイト</a> |
 | ピラティスK 浜松メイワン店 | マシンピラティス | JR浜松駅直結（メイワン 6F） | ○ | <a href="https://pilates-k.jp/studio/shizuoka-ken/hamamatsu" rel="nofollow noopener noreferrer" target="_blank" data-track="official" data-place-id="yoga-pilates-81ba9817" data-category="yoga-pilates" data-section="living" data-placement="article-table">公式サイト</a> |
 | Pilates Studio RUHE | マシンピラティス・パーソナル | 中央区佐鳴台 | ― | <a href="https://www.pilates-ruhe.jp/" rel="nofollow noopener noreferrer" target="_blank" data-track="official" data-place-id="yoga-pilates-a89cd9a5" data-category="yoga-pilates" data-section="living" data-placement="article-table">公式サイト</a> |
 | HELSTA 浜松スタジオ | ピラティス＆ヨガ | 中央区木戸町 | ○ | <a href="https://www.helsta.jp/" rel="nofollow noopener noreferrer" target="_blank" data-track="official" data-place-id="yoga-pilates-ff78a56d" data-category="yoga-pilates" data-section="living" data-placement="article-table">公式サイト</a> |
@@ -45,8 +45,9 @@
 マシンを使ったレッスンで、姿勢改善やボディメイクを目指せます。オープン日や料金は公式サイトで確認してください。
 
 <p class="article-cta">
-  <a href="https://repilates.jp/studio/hamamatusc/" rel="nofollow noopener noreferrer" target="_blank" data-track="official" data-place-id="yoga-pilates-4dd0c6e8" data-category="yoga-pilates" data-section="living" data-placement="article">Repilatesの店舗情報を見る<span class="whitespace-nowrap">（公式サイト）</span></a>
-  <span class="article-cta-note">オープン日・料金は公式サイトの店舗ページでご確認ください</span>
+  <a href="https://px.a8.net/svt/ejp?a8mat=4BEH58+A2L0YI+5FZU+5YRHE" rel="sponsored nofollow noopener noreferrer" target="_blank" data-track="affiliate" data-place-id="yoga-pilates-4dd0c6e8" data-category="yoga-pilates" data-section="living" data-placement="article">Repilatesの店舗情報を見る<span class="whitespace-nowrap">（公式サイト）</span></a>
+  <span class="article-cta-note">PR・オープン日・料金は公式サイトの店舗ページでご確認ください</span>
+  <img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=4BEH58+A2L0YI+5FZU+5YRHE" alt="" class="a8-beacon">
 </p>
 
 ### 2. ホットヨガスタジオLAVA（浜松店・プレ葉ウォーク浜北店）
@@ -56,8 +57,9 @@
 温かいスタジオで汗をかきながら体をほぐせるので、冷えやこりが気になる人にも向いています。60分の体験レッスンがあり、手ぶらで参加できるセットも用意されています。浜松店はアクトタワー地下駐車場を利用でき、店頭で駐車券を提示すると体験の人は3時間まで無料です。
 
 <p class="article-cta">
-  <a href="https://yoga-lava.com/shop/shizuoka/city/221309/" rel="nofollow noopener noreferrer" target="_blank" data-track="official" data-place-id="yoga-pilates-1ec4aff8" data-category="yoga-pilates" data-section="living" data-placement="article">LAVAの体験レッスンを予約する<span class="whitespace-nowrap">（公式サイト）</span></a>
-  <span class="article-cta-note">料金・キャンペーンは店舗・時期により異なります</span>
+  <a href="https://px.a8.net/svt/ejp?a8mat=4BEH58+AOM2CA+1O96+5YJRM" rel="sponsored nofollow noopener noreferrer" target="_blank" data-track="affiliate" data-place-id="yoga-pilates-1ec4aff8" data-category="yoga-pilates" data-section="living" data-placement="article">LAVAの体験レッスンを予約する<span class="whitespace-nowrap">（公式サイト）</span></a>
+  <span class="article-cta-note">PR・料金・キャンペーンは店舗・時期により異なります</span>
+  <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4BEH58+AOM2CA+1O96+5YJRM" alt="" class="a8-beacon">
 </p>
 
 ### 3. SOELU（ソエル）
@@ -67,8 +69,9 @@
 スタジオまでの移動がないので、子どもが寝たあとの時間や出勤前のすき間時間にも続けやすいのがメリットです。まずは自宅で試してみたい人に向いています。
 
 <p class="article-cta">
-  <a href="https://www.soelu.com/" rel="nofollow noopener noreferrer" target="_blank" data-track="official" data-place-id="yoga-pilates-16c90815" data-category="yoga-pilates" data-section="living" data-placement="article">SOELUの公式サイトを見る<span class="whitespace-nowrap">（公式サイト）</span></a>
-  <span class="article-cta-note">料金プランは公式サイトでご確認ください</span>
+  <a href="https://px.a8.net/svt/ejp?a8mat=4BEH58+BK61EI+4EPM+631SY" rel="sponsored nofollow noopener noreferrer" target="_blank" data-track="affiliate" data-place-id="yoga-pilates-16c90815" data-category="yoga-pilates" data-section="living" data-placement="article">SOELUの公式サイトを見る<span class="whitespace-nowrap">（公式サイト）</span></a>
+  <span class="article-cta-note">PR・料金プランは公式サイトでご確認ください</span>
+  <img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=4BEH58+BK61EI+4EPM+631SY" alt="" class="a8-beacon">
 </p>
 
 ### 4. ピラティスK 浜松メイワン店

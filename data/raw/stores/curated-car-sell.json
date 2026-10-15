@@ -2,7 +2,7 @@
   {
     "name": "ガリバー（Gulliver）浜松エリア",
     "category": "car-sell",
-    "genre": "車買取・中古車販売",
+    "genre": "オンライン査定・出張査定",
     "serviceType": "store",
     "chain": true,
     "address": "静岡県浜松市中央区小豆餅2-17-1（住吉バイパス店）",
@@ -10,9 +10,9 @@
     "hours": "10:00～19:00（住吉バイパス店。店舗により異なる）",
     "access": "国道257号沿い（住吉バイパス店）",
     "officialUrl": "https://221616.com/shop/shizuoka/hamamatsushichuoku/",
-    "description": "全国に店舗を持つ中古車販売・買取の大手。浜松市内には住吉バイパス店（中央区小豆餅）や浜松宮竹店（中央区宮竹町）があり、店頭での査定のほか、自宅や職場での無料出張査定にも対応しています。",
+    "description": "全国に店舗を持つ中古車販売・買取の大手。Webで車種・年式・走行距離を入力すると24時間以内に概算の買取額が分かり、自宅や職場に来てもらう無料の出張査定も選べます。店舗へ行く手間をかけずに、自宅にいながら査定を受けられます。",
     "specs": {
-      "kind": "実店舗買取",
+      "kind": "オンライン査定・出張査定",
       "assessmentFee": 0,
       "maxCompanies": null,
       "homeVisit": true,
@@ -21,25 +21,29 @@
       "scrapOk": null
     },
     "features": [
-      "浜松市内に店舗あり（店頭査定）",
-      "出張査定も無料（地域・車両により対応できない場合あり）",
-      "査定額は本部で決めるため、店舗でも出張でも同じ（公式FAQ）"
+      "Webで無料査定（24時間以内に概算額を案内）",
+      "自宅・職場への出張査定も無料（地域・車両により対応できない場合あり）",
+      "ビデオ通話での自宅査定にも対応",
+      "査定額は本部で決めるため、出張でも店頭でも同じ（公式FAQ）"
     ],
-    "priceNote": "査定は店頭・出張・オンラインとも無料。車検切れの車を出張で売る場合は、陸送費が買取額から差し引かれます。",
+    "priceNote": "査定はオンライン・出張・店頭とも無料。車検切れの車を出張で売る場合は、陸送費が買取額から差し引かれます。ビデオ通話査定の通信料は利用者負担です。",
     "localNote": [
       {
-        "type": "road",
-        "text": "住吉バイパス店は国道257号沿い。持ち込みで相談したい人は店頭査定、忙しい人は出張査定を選べる"
+        "type": "tip",
+        "text": "店舗へ行く時間がとれない人は、Web査定で概算を確認してから出張査定を頼める。浜松市内には住吉バイパス店など店舗もある"
       }
     ],
     "source": "manual",
-    "fetchedAt": "2026-10-10",
+    "fetchedAt": "2026-10-15",
     "_sources": [
       "https://221616.com/shop/shizuoka/hamamatsushichuoku/",
       "https://221616.com/shop/shizuoka/G00071/",
       "https://www.goo-net.com/usedcar_shop/0504608/detail.html",
       "https://www.navikuru.jp/traders/shizuoka/gulliver/1430/",
-      "https://221616.com/faq/satei/"
+      "https://221616.com/faq/satei/",
+      "https://221616.com/satei/services/online/",
+      "https://221616.com/satei/services/syucchou/",
+      "https://221616.com/satei/"
     ],
     "_unverified": [
       "「浜松バイパス店」「浜松志都呂店」は確認できず（掲載から除外）",

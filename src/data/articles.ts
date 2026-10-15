@@ -42,7 +42,7 @@ export const articles: Article[] = [
     publishedAt: '2026-10-15',
     updatedAt: '2026-10-15',
     readingMinutes: 7,
-    isPr: false,
+    isPr: true,
     tags: ['ピラティス', 'ヨガ', '美容・健康', '浜松'],
     sources: [
       { label: 'Repilates イオン浜松西店', url: 'https://repilates.jp/studio/hamamatusc/' },
