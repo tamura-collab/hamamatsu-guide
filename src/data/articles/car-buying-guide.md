@@ -42,6 +42,12 @@
 
 ガリバーは浜松市内に店舗があり（住吉バイパス店・浜松宮竹店など）、車を持ち込んで相談できます。自宅や職場に来てもらう出張査定も無料です。公式の案内では、査定額は本部で決めるため、店頭でも出張でも金額は変わらないとされています。
 
+<p class="article-cta">
+  <a href="https://px.a8.net/svt/ejp?a8mat=4BEFL2+C5LN6I+9QU+HXD0Y" rel="sponsored nofollow noopener noreferrer" target="_blank" data-track="affiliate" data-place-id="car-sell-dd55e7c7" data-category="car-sell" data-section="living" data-placement="article">ガリバーの無料査定を申し込む<span class="whitespace-nowrap">（公式サイト）</span></a>
+  <span class="article-cta-note">PR・査定や出張の対応エリアは公式サイトでご確認ください</span>
+  <img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4BEFL2+C5LN6I+9QU+HXD0Y" alt="" class="a8-beacon">
+</p>
+
 ## 古い車・動かない車ならこの2社
 
 ### カーネクスト
