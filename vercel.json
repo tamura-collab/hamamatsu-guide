@@ -6,7 +6,10 @@
   "outputDirectory": "dist",
   "cleanUrls": true,
   "trailingSlash": false,
-  "redirects": [{ "source": "/kurasu/car-lease", "destination": "/living/car-lease", "permanent": true }],
+  "redirects": [
+    { "source": "/kurasu/car-lease", "destination": "/living/car-lease", "permanent": true },
+    { "source": "/kurasu/yoga-pilates", "destination": "/living/yoga-pilates", "permanent": true }
+  ],
   "headers": [
     {
       "source": "/_astro/(.*)",

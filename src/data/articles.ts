@@ -34,6 +34,28 @@ export interface Article {
 // 料金・アクセス等は data/raw/**/curated-*.json の実データと内容を合わせる。
 export const articles: Article[] = [
   {
+    slug: 'hamamatsu-yoga-pilates',
+    title: '【2026年最新】浜松のピラティス＆ヨガスタジオおすすめ6選！マシン専門からオンラインまで',
+    excerpt: '浜松市内で通えるおすすめのピラティス・ヨガスタジオをご紹介。話題のマシンピラティス（Repilatesなど）やホットヨガ（LAVA）、自宅でできるオンラインヨガ（SOELU）、浜松駅周辺のスタジオを徹底比較します。',
+    section: 'living',
+    category: 'yoga-pilates',
+    publishedAt: '2026-10-15',
+    updatedAt: '2026-10-15',
+    readingMinutes: 7,
+    isPr: false,
+    tags: ['ピラティス', 'ヨガ', '美容・健康', '浜松'],
+    sources: [
+      { label: 'Repilates イオン浜松西店', url: 'https://repilates.jp/studio/hamamatusc/' },
+      { label: 'ホットヨガスタジオLAVA 浜松店', url: 'https://yoga-lava.com/shop/shizuoka/hamamatsu/' },
+      { label: 'ホットヨガスタジオLAVA プレ葉ウォーク浜北店', url: 'https://yoga-lava.com/shop/shizuoka/plehawalk_hamakita/' },
+      { label: 'SOELU（App Store）', url: 'https://apps.apple.com/us/app/id1281211446' },
+      { label: 'ピラティスK 浜松メイワン店', url: 'https://pilates-k.jp/studio/shizuoka-ken/hamamatsu' },
+      { label: 'ピラティススタジオ ルーエ', url: 'https://www.pilates-ruhe.jp/' },
+      { label: 'Pilates studio RUHE 予約ページ', url: 'https://coubic.com/ruhe2023' },
+      { label: 'HELSTA アクセス', url: 'https://www.helsta.jp/helsta_access/index.html' },
+    ],
+  },
+  {
     slug: 'hamamatsu-moving-guide',
     title: '浜松への引越し・不用品処分はどうする？手間を省く「買取一体型」引越しのすすめ',
     excerpt: '浜松への移住や市内での引越しを検討中の方へ。自治体の粗大ゴミルールの面倒さを解消し、引越しと不用品買取が同時にできる「トレファク引越」のメリットを解説します。',

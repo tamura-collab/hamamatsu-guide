@@ -286,6 +286,274 @@
     "updatedAt": "2026-10-10"
   },
   {
+    "id": "yoga-pilates-4dd0c6e8",
+    "name": "Repilates（リピラティス）イオン浜松西店",
+    "category": "yoga-pilates",
+    "genre": "マシンピラティス",
+    "address": "静岡県浜松市中央区入野町6244-1 イオン浜松西 3F",
+    "tel": null,
+    "hours": "10:00～21:00（公式サイトの掲載）",
+    "access": null,
+    "officialUrl": "https://repilates.jp/studio/hamamatusc/",
+    "description": "池袋に本店がある女性専用のマシン専門ピラティススタジオ。イオン浜松西の3階に出店予定で、公式サイトでは「近日オープン」として掲載されています。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "佐鳴台・入野エリアのショッピングセンター内。車で買い物ついでに通える立地",
+        "source": "manual"
+      },
+      {
+        "type": "parking",
+        "text": "イオン浜松西の駐車場を利用できる（スタジオ利用時の無料時間は要確認）",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "マシンピラティス",
+      "monthlyFee": null,
+      "womenOnly": true,
+      "machine": true,
+      "personal": null,
+      "online": false,
+      "stationWalkMin": null,
+      "parking": true
+    },
+    "features": [
+      "女性専用のマシン専門ピラティス",
+      "イオン浜松西の3階（買い物ついでに通いやすい）",
+      "2026年オープン予定（公式サイトの掲載）"
+    ],
+    "priceNote": "料金・オープン日は公式サイトでご確認ください。",
+    "chain": false,
+    "serviceType": "store",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-15"
+  },
+  {
+    "id": "yoga-pilates-1ec4aff8",
+    "name": "ホットヨガスタジオLAVA 浜松店・プレ葉ウォーク浜北店",
+    "category": "yoga-pilates",
+    "genre": "ホットヨガ",
+    "address": "静岡県浜松市中央区板屋町111-2 アクトプラザ2F（浜松店）ほか",
+    "tel": null,
+    "hours": "浜松店は金曜定休、プレ葉ウォーク浜北店は水曜定休",
+    "access": "JR浜松駅北口から徒歩4分（浜松店）／遠州鉄道 浜北駅から徒歩5分（プレ葉ウォーク浜北店）",
+    "officialUrl": "https://yoga-lava.com/shop/shizuoka/city/221309/",
+    "description": "全国に店舗を展開するホットヨガスタジオ。浜松駅近くのアクトプラザ2階の浜松店と、浜名区のプレ葉ウォーク浜北1階の店舗があり、どちらも女性専用です。",
+    "localNote": [
+      {
+        "type": "parking",
+        "text": "浜松店はアクトタワー地下駐車場を利用（店頭で駐車券を提示すると体験3時間・会員2時間まで無料）",
+        "source": "manual"
+      },
+      {
+        "type": "tip",
+        "text": "浜北・浜名区方面ならプレ葉ウォーク浜北店。買い物ついでに通いやすい",
+        "source": "manual"
+      },
+      {
+        "type": "station",
+        "text": "浜北駅徒歩5分",
+        "source": "auto"
+      }
+    ],
+    "specs": {
+      "kind": "ホットヨガ",
+      "monthlyFee": 8800,
+      "womenOnly": true,
+      "machine": null,
+      "personal": null,
+      "online": false,
+      "stationWalkMin": 4,
+      "parking": true
+    },
+    "features": [
+      "全国展開のホットヨガスタジオ",
+      "浜松駅近く（アクトプラザ）と浜北（プレ葉ウォーク）の2店舗",
+      "女性専用・60分の体験レッスンあり",
+      "浜松店はアクトタワー地下駐車場が体験時3時間まで無料"
+    ],
+    "priceNote": "月額は公式サイトに掲載の月4回までのプラン（8,800円・税込）です。通い放題などのプランやキャンペーンは時期・店舗により異なります。",
+    "chain": true,
+    "serviceType": "store",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-15"
+  },
+  {
+    "id": "yoga-pilates-16c90815",
+    "name": "SOELU（ソエル）",
+    "category": "yoga-pilates",
+    "genre": "オンラインヨガ",
+    "address": "オンライン（全国対応）",
+    "tel": null,
+    "hours": "ライブレッスンは毎日5:00～26:00（公式アプリの案内）",
+    "access": null,
+    "officialUrl": "https://www.soelu.com/",
+    "description": "自宅でスマホやパソコンからライブレッスンを受けられるオンラインのヨガ・フィットネス。毎日朝5時から深夜26時まで、1日約200クラス以上を開講しています（公式アプリの案内）。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "冬のからっ風の日や雨の日、子どもが寝たあとの時間にも続けやすい",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "オンラインヨガ",
+      "monthlyFee": null,
+      "womenOnly": null,
+      "machine": false,
+      "personal": null,
+      "online": true,
+      "stationWalkMin": null,
+      "parking": null
+    },
+    "features": [
+      "自宅でライブレッスンを受けられる",
+      "毎日5:00～26:00に開講（公式アプリの案内）",
+      "1日約200クラス以上・100種類以上のレッスン"
+    ],
+    "priceNote": "料金プランは公式サイトでご確認ください。",
+    "chain": false,
+    "serviceType": "online",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-15"
+  },
+  {
+    "id": "yoga-pilates-81ba9817",
+    "name": "ピラティスK 浜松メイワン店",
+    "category": "yoga-pilates",
+    "genre": "マシンピラティス",
+    "address": "静岡県浜松市中央区砂山町6-1 メイワン6F",
+    "tel": null,
+    "hours": null,
+    "access": "JR浜松駅直結（メイワン6F）。専用駐車場なし",
+    "officialUrl": "https://pilates-k.jp/studio/shizuoka-ken/hamamatsu",
+    "description": "JR浜松駅直結のメイワン6階にある、女性専用のマシンピラティススタジオ。音楽に合わせたグループレッスンで、ボディメイクや姿勢改善を目指します。",
+    "localNote": [
+      {
+        "type": "station",
+        "text": "JR浜松駅直結。仕事帰りや新幹線の乗り継ぎ前にも寄りやすい",
+        "source": "manual"
+      },
+      {
+        "type": "parking",
+        "text": "専用駐車場はなく、周辺の有料駐車場を利用",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "マシンピラティス",
+      "monthlyFee": null,
+      "womenOnly": true,
+      "machine": true,
+      "personal": null,
+      "online": false,
+      "stationWalkMin": 0,
+      "parking": false
+    },
+    "features": [
+      "JR浜松駅直結（メイワン6F）",
+      "女性専用のマシンピラティス",
+      "音楽に合わせたグループレッスン"
+    ],
+    "priceNote": "料金・体験レッスンの条件は掲載サイトにより異なるため、公式サイトでご確認ください。",
+    "chain": false,
+    "serviceType": "store",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-15"
+  },
+  {
+    "id": "yoga-pilates-a89cd9a5",
+    "name": "Pilates Studio RUHE（ルーエ）",
+    "category": "yoga-pilates",
+    "genre": "マシンピラティス・パーソナル",
+    "address": "静岡県浜松市中央区佐鳴台6丁目9-12",
+    "tel": "053-482-7835",
+    "hours": "9:00～21:00（月～金）",
+    "access": "浜松駅から車で約10分（ホワイトストリート沿い）。無料駐車場あり",
+    "officialUrl": "https://www.pilates-ruhe.jp/",
+    "description": "浜松市中央区佐鳴台にあるピラティス専門スタジオ。アメリカから輸入したマシンをそろえ、パーソナル（プライベート）と少人数のグループレッスンを完全予約制で行っています。",
+    "localNote": [
+      {
+        "type": "road",
+        "text": "ホワイトストリート沿い。佐鳴台・入野・富塚エリアから車で通いやすい",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "マシンピラティス・パーソナル",
+      "monthlyFee": 13200,
+      "womenOnly": null,
+      "machine": true,
+      "personal": true,
+      "online": false,
+      "stationWalkMin": null,
+      "parking": true
+    },
+    "features": [
+      "アメリカ製のマシンを多数そろえたピラティス専門スタジオ",
+      "パーソナル・少人数グループ・ハンモックピラティス",
+      "初心者・妊娠中の方・上級者まで対応（公式の案内）",
+      "完全予約制・無料駐車場あり"
+    ],
+    "priceNote": "月額は予約ページに掲載の月謝プラン（13,200円〜・税込）。体験グループレッスンは4,400円〜（税込）。入会金等が別途かかる場合があります。",
+    "chain": false,
+    "serviceType": "store",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-15"
+  },
+  {
+    "id": "yoga-pilates-ff78a56d",
+    "name": "HELSTA（ヘルスタ）浜松スタジオ",
+    "category": "yoga-pilates",
+    "genre": "ピラティス＆ヨガ",
+    "address": "静岡県浜松市中央区木戸町3-1 大和染工ビル3F",
+    "tel": "053-489-6680",
+    "hours": "電話受付 平日9:30～21:00・土日9:00～12:00（月曜・祝日定休）",
+    "access": "静岡文化芸術大学の東側。駐車場あり（ビル下6台ほか）",
+    "officialUrl": "https://www.helsta.jp/",
+    "description": "浜松市中央区木戸町にある女性専用のスタジオ。ピラティス（マシン・マット）・ヨガ・バレエ・骨盤ストレッチなど幅広いレッスンがあり、マシンピラティスは定員5名の少人数制です。",
+    "localNote": [
+      {
+        "type": "landmark",
+        "text": "静岡文化芸術大学の東側",
+        "source": "manual"
+      },
+      {
+        "type": "parking",
+        "text": "ビル下に6台、近隣の提携駐車場に10台",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "ピラティス＆ヨガ",
+      "monthlyFee": null,
+      "womenOnly": true,
+      "machine": true,
+      "personal": null,
+      "online": false,
+      "stationWalkMin": null,
+      "parking": true
+    },
+    "features": [
+      "女性専用（40・50・60代向けをうたう）",
+      "ピラティス・ヨガ・バレエなど幅広いレッスン",
+      "マシンピラティスは定員5名の少人数制",
+      "産後ケア・マタニティクラスもあり"
+    ],
+    "priceNote": "料金は公式サイトでご確認ください（第三者サイトにフリーパス月9,900円〜の掲載例あり）。",
+    "chain": false,
+    "serviceType": "store",
+    "affiliate": null,
+    "source": "manual",
+    "updatedAt": "2026-10-15"
+  },
+  {
     "id": "car-sell-dd55e7c7",
     "name": "ガリバー（Gulliver）浜松エリア",
     "category": "car-sell",
