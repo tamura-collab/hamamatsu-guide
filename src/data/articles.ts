@@ -34,6 +34,25 @@ export interface Article {
 // 料金・アクセス等は data/raw/**/curated-*.json の実データと内容を合わせる。
 export const articles: Article[] = [
   {
+    slug: 'hamamatsu-shinkansen-commute',
+    title: '【浜松から新幹線通勤】東京・名古屋・静岡は通勤圏？所要時間・定期代・住環境のリアル',
+    excerpt: '浜松に住みながら東京・名古屋・静岡へ新幹線通勤は可能？東海道新幹線の所要時間や定期代（FREX）、会社の交通費支給ルール、週1〜2日出社のテレワーク移住の現実まで徹底解説します。',
+    section: 'living',
+    category: 'moving',
+    publishedAt: '2026-10-16',
+    updatedAt: '2026-10-16',
+    readingMinutes: 8,
+    isPr: false,
+    tags: ['新幹線通勤', 'テレワーク', '移住・転勤', '住みやすさ', '浜松暮らし'],
+    sources: [
+      { label: 'JR東海 新幹線定期券「FREX」', url: 'https://railway.jr-central.co.jp/tickets/shinkansen/frex/index.html' },
+      { label: '駅探 浜松〜東京の定期代', url: 'https://ekitan.com/transit/pass/sf-4520/st-2590' },
+      { label: '駅探 浜松〜名古屋の定期代', url: 'https://ekitan.com/rail-company/3/pass/sf-4520/st-4455' },
+      { label: '駅探 浜松〜静岡の定期代', url: 'https://ekitan.com/transit/pass/sf-4520/st-4203' },
+      { label: '国税庁 通勤手当の非課税限度額', url: 'https://www.nta.go.jp/users/gensen/2025tsukin/index.htm' },
+    ],
+  },
+  {
     slug: 'hamamatsu-yoga-pilates',
     title: '【2026年最新】浜松のピラティス＆ヨガスタジオおすすめ6選！マシン専門からオンラインまで',
     excerpt: '浜松市内で通えるおすすめのピラティス・ヨガスタジオをご紹介。話題のマシンピラティス（Repilatesなど）やホットヨガ（LAVA）、自宅でできるオンラインヨガ（SOELU）、浜松駅周辺のスタジオを徹底比較します。',
@@ -239,7 +258,7 @@ export const articles: Article[] = [
     section: 'travel',
     category: 'express-bus',
     publishedAt: '2026-10-11',
-    updatedAt: '2026-10-11',
+    updatedAt: '2026-10-16',
     imageUrl: '/images/articles/highway-bus.jpg',
     imageAlt: '高速バスのイメージ',
     readingMinutes: 6,
