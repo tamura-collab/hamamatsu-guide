@@ -34,6 +34,27 @@ export interface Article {
 // 料金・アクセス等は data/raw/**/curated-*.json の実データと内容を合わせる。
 export const articles: Article[] = [
   {
+    slug: 'hamamatsu-local-supermarket-culture',
+    title: '【コラム】杏林堂はドラッグストアを超えたインフラ？浜松市民の買い出し事情とスーパー使い分けのリアル',
+    excerpt: '他県から浜松に越してきた人が驚く「杏林堂」の食品売り場。遠鉄ストアの安心感、こだわり派が集まるビオ・あつみ、JAのファーマーズマーケットまで、浜松の日常の買い出し文化を紹介します。',
+    section: 'living',
+    category: 'moving',
+    publishedAt: '2026-10-18',
+    updatedAt: '2026-10-18',
+    readingMinutes: 7,
+    isPr: false,
+    tags: ['コラム', '暮らし', '杏林堂', 'ローカル文化', '浜松暮らし'],
+    sources: [
+      { label: '杏林堂ドラッグストア 新初生店（ツルハグループ店舗情報）', url: 'https://shop.tsuruha-g.com/2151' },
+      { label: '杏林堂ネットスーパー', url: 'https://www.kyorindo-netsuper.jp/' },
+      { label: '肉のくわばら 店舗一覧', url: 'https://www.hamashiro.com/shop/' },
+      { label: 'えんてつカード（ペイメントナビ）', url: 'https://paymentnavi.com/paymentnews/51992.html' },
+      { label: 'ビオ・あつみ エピスリー浜松（インタビュー）', url: 'https://shizuoka.itot.jp/Sunayama/interview01' },
+      { label: '浜松市 食の体験（JAファーマーズマーケット）', url: 'https://www.city.hamamatsu.shizuoka.jp/foodpark/shokunotaiken/index.html' },
+      { label: '浜松市 農業をはじめたい方へ（農業産出額）', url: 'https://www.city.hamamatsu.shizuoka.jp/nogyoi/shinko/agri/farmland/hajimetai.html' },
+    ],
+  },
+  {
     slug: 'hamamatsu-shinkansen-commute',
     title: '【浜松から新幹線通勤】東京・名古屋・静岡は通勤圏？所要時間・定期代・住環境のリアル',
     excerpt: '浜松に住みながら東京・名古屋・静岡へ新幹線通勤は可能？東海道新幹線の所要時間や定期代（FREX）、会社の交通費支給ルール、週1〜2日出社のテレワーク移住の現実まで徹底解説します。',
