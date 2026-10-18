@@ -34,6 +34,26 @@ export interface Article {
 // 料金・アクセス等は data/raw/**/curated-*.json の実データと内容を合わせる。
 export const articles: Article[] = [
   {
+    slug: 'hamamatsu-kids-school',
+    title: '【浜松】子どもの習い事・英会話スクールおすすめ比較！人気の理由と選び方のコツ',
+    excerpt: '浜松市内で人気の子どもの習い事（英会話・プログラミング・スイミング等）を徹底比較。外国人講師から学べる「NOVAバイリンガルKIDS」や「アミティー」など、子育て世帯に選ばれるスクールの特徴と体験レッスンの活用法を解説します。',
+    section: 'living',
+    category: 'kids-school',
+    publishedAt: '2026-10-18',
+    updatedAt: '2026-10-18',
+    readingMinutes: 7,
+    isPr: true,
+    tags: ['子育て', '習い事', '英会話', '教育', '浜松暮らし'],
+    sources: [
+      { label: 'NOVAバイリンガルKIDS 浜松校', url: 'https://www.nova.co.jp/junior/schools/toukai/hamamatsushi/hamamatsu.html' },
+      { label: 'アミティー 浜松校', url: 'https://www.amity.co.jp/school/tokai/shizuoka/hamamatsu/' },
+      { label: 'アミティー 学習費用のご案内', url: 'https://www.amity.co.jp/our_policy/cschool_fees.html' },
+      { label: 'アミティー 外国人教師（プラクティカルコース）', url: 'https://www.amity.co.jp/our_policy/course/practical.html' },
+      { label: 'ヒューマンアカデミージュニア ロボット教室', url: 'https://kids.athuman.com/robo/' },
+      { label: '浜松スポーツセンター スイミングスクール', url: 'https://hama-spo.jp/program-school/swimming/' },
+    ],
+  },
+  {
     slug: 'hamamatsu-local-supermarket-culture',
     title: '【コラム】杏林堂はドラッグストアを超えたインフラ？浜松市民の買い出し事情とスーパー使い分けのリアル',
     excerpt: '他県から浜松に越してきた人が驚く「杏林堂」の食品売り場。遠鉄ストアの安心感、こだわり派が集まるビオ・あつみ、JAのファーマーズマーケットまで、浜松の日常の買い出し文化を紹介します。',
