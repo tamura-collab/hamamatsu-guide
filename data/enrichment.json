@@ -3,14 +3,16 @@
     "affiliate": {
       "url": "https://px.a8.net/svt/ejp?a8mat=4BEFL2+CWZL0A+50+54KL8Y",
       "label": "ドコモ光の公式サイトで申し込む",
-      "program": "A8.net"
+      "program": "A8.net",
+      "impressionUrl": "https://www13.a8.net/0.gif?a8mat=4BEFL2+CWZL0A+50+54KL8Y"
     }
   },
   "internet-94c40aab": {
     "affiliate": {
       "url": "https://px.a8.net/svt/ejp?a8mat=4BEFL2+CDXPNE+4SHG+5YRHE",
       "label": "おてがる光の公式サイトで申し込む",
-      "program": "A8.net"
+      "program": "A8.net",
+      "impressionUrl": "https://www12.a8.net/0.gif?a8mat=4BEFL2+CDXPNE+4SHG+5YRHE"
     }
   },
   "internet-b1693afb": {

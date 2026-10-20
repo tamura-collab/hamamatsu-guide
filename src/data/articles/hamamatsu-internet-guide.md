@@ -58,6 +58,7 @@ NTTの光回線を使う光コラボで、プロバイダを選んで申し込�
 <p class="article-cta">
   <a href="https://px.a8.net/svt/ejp?a8mat=4BEFL2+CWZL0A+50+54KL8Y" rel="sponsored nofollow noopener noreferrer" target="_blank" data-track="affiliate" data-place-id="internet-14407d54" data-category="internet" data-section="living" data-placement="article">ドコモ光のお申し込みはこちら<span class="whitespace-nowrap">（公式サイト）</span></a>
   <span class="article-cta-note">PR・提供エリアと最新の料金は公式サイトでご確認ください</span>
+  <img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4BEFL2+CWZL0A+50+54KL8Y" alt="" class="a8-beacon">
 </p>
 
 ### ソフトバンク光：ソフトバンク・ワイモバイルユーザーに
@@ -87,6 +88,7 @@ KDDIの光回線ですが、静岡県では戸建てタイプが提供されて�
 <p class="article-cta">
   <a href="https://px.a8.net/svt/ejp?a8mat=4BEFL2+CDXPNE+4SHG+5YRHE" rel="sponsored nofollow noopener noreferrer" target="_blank" data-track="affiliate" data-place-id="internet-94c40aab" data-category="internet" data-section="living" data-placement="article">おてがる光のお申し込みはこちら<span class="whitespace-nowrap">（公式サイト）</span></a>
   <span class="article-cta-note">PR・提供エリアと最新の料金は公式サイトでご確認ください</span>
+  <img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4BEFL2+CDXPNE+4SHG+5YRHE" alt="" class="a8-beacon">
 </p>
 
 ## 申し込み前のチェックリスト
