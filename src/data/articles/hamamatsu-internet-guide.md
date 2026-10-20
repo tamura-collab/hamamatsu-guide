@@ -64,9 +64,21 @@ NTTの光回線を使う光コラボで、プロバイダを選んで申し込�
 
 NTTの光回線を使う光コラボで、スマホとのセットで「おうち割 光セット」が適用できます。1ギガ・2年自動更新プランで戸建て5,720円・マンション4,180円です。2026年12月1日から月額330円の値上げ予定と報じられているため、申し込み前に最新の料金を確認してください。
 
+<p class="article-cta">
+  <a href="https://px.a8.net/svt/ejp?a8mat=4BEFL2+D4Q7VE+3HKU+25EKCY" rel="sponsored nofollow noopener noreferrer" target="_blank" data-track="affiliate" data-place-id="internet-a3dd4b14" data-category="internet" data-section="living" data-placement="article">ソフトバンク光のお申し込みはこちら<span class="whitespace-nowrap">（公式サイト）</span></a>
+  <span class="article-cta-note">PR・提供エリアと最新の料金は公式サイトでご確認ください</span>
+  <img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=4BEFL2+D4Q7VE+3HKU+25EKCY" alt="" class="a8-beacon">
+</p>
+
 ### auひかり：浜松市ではマンションのみ
 
 KDDIの光回線ですが、静岡県では戸建てタイプが提供されていません。マンションに住んでいて、建物にauひかりの設備がある場合に利用できます。郵便番号と建物名で、公式サイトの対応状況を確認しましょう。
+
+<p class="article-cta">
+  <a href="https://px.a8.net/svt/ejp?a8mat=4BEFL2+CI3QVU+3HKU+1THW9E" rel="sponsored nofollow noopener noreferrer" target="_blank" data-track="affiliate" data-place-id="internet-c7fc6b4a" data-category="internet" data-section="living" data-placement="article">auひかりの対応マンションを確認する<span class="whitespace-nowrap">（公式サイト）</span></a>
+  <span class="article-cta-note">PR・静岡県では戸建てタイプの提供はありません。建物の対応状況は公式サイトでご確認ください</span>
+  <img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=4BEFL2+CI3QVU+3HKU+1THW9E" alt="" class="a8-beacon">
+</p>
 
 ### おてがる光：縛りなしで、シンプルに使いたい人に
 

@@ -68,5 +68,21 @@
       "program": "A8.net",
       "impressionUrl": "https://www11.a8.net/0.gif?a8mat=4BEGD7+2JOSPM+320A+63WO2"
     }
+  },
+  "internet-a3dd4b14": {
+    "affiliate": {
+      "url": "https://px.a8.net/svt/ejp?a8mat=4BEFL2+D4Q7VE+3HKU+25EKCY",
+      "label": "ソフトバンク光の公式サイトで申し込む",
+      "program": "A8.net",
+      "impressionUrl": "https://www17.a8.net/0.gif?a8mat=4BEFL2+D4Q7VE+3HKU+25EKCY"
+    }
+  },
+  "internet-c7fc6b4a": {
+    "affiliate": {
+      "url": "https://px.a8.net/svt/ejp?a8mat=4BEFL2+CI3QVU+3HKU+1THW9E",
+      "label": "auひかりの対応状況を確認する",
+      "program": "A8.net",
+      "impressionUrl": "https://www11.a8.net/0.gif?a8mat=4BEFL2+CI3QVU+3HKU+1THW9E"
+    }
   }
 }

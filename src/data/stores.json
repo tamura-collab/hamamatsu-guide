@@ -1364,7 +1364,12 @@
     "priceNote": "1ギガ・2年自動更新プランの月額（戸建て5,720円・マンション4,180円）。別途ホームゲートウェイ等の機器料がかかる場合あり。2026年12月1日から月額330円の値上げ予定と報じられています。",
     "chain": false,
     "serviceType": "online",
-    "affiliate": null,
+    "affiliate": {
+      "url": "https://px.a8.net/svt/ejp?a8mat=4BEFL2+D4Q7VE+3HKU+25EKCY",
+      "label": "ソフトバンク光の公式サイトで申し込む",
+      "program": "A8.net",
+      "impressionUrl": "https://www17.a8.net/0.gif?a8mat=4BEFL2+D4Q7VE+3HKU+25EKCY"
+    },
     "source": "manual",
     "updatedAt": "2026-10-10"
   },
@@ -1406,7 +1411,12 @@
     "priceNote": "マンションの月額は建物の設備・プランにより異なるため掲載していません。浜松市の戸建てで au・UQ mobile のセット割を使いたい場合は、コミュファ光も比較してください。",
     "chain": false,
     "serviceType": "online",
-    "affiliate": null,
+    "affiliate": {
+      "url": "https://px.a8.net/svt/ejp?a8mat=4BEFL2+CI3QVU+3HKU+1THW9E",
+      "label": "auひかりの対応状況を確認する",
+      "program": "A8.net",
+      "impressionUrl": "https://www11.a8.net/0.gif?a8mat=4BEFL2+CI3QVU+3HKU+1THW9E"
+    },
     "source": "manual",
     "updatedAt": "2026-10-10"
   },
