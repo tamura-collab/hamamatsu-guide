@@ -34,6 +34,22 @@ export interface Article {
 // 料金・アクセス等は data/raw/**/curated-*.json の実データと内容を合わせる。
 export const articles: Article[] = [
   {
+    slug: 'kurasu-moving-hamamatsu',
+    title: '浜松市での引越し費用を安く抑えるコツ！おすすめ一括見積もりと地域特有の注意点',
+    excerpt: '浜松市内・市外への引越しを安くスムーズに進めるためのノウハウを解説。車社会ならではの準備や市内の移動距離の違い、遠鉄沿線・駅周辺への転居の注意点、ズバット引越し比較の活用法まで紹介します。',
+    section: 'living',
+    category: 'moving',
+    publishedAt: '2026-10-22',
+    updatedAt: '2026-10-22',
+    readingMinutes: 6,
+    isPr: true,
+    tags: ['浜松暮らし', '引越し', 'ズバット引越し比較', '節約'],
+    sources: [
+      { label: 'ズバット引越し比較 ご利用ガイド', url: 'https://www.zba.jp/hikkoshi/guide/' },
+      { label: '引越し侍', url: 'https://hikkoshizamurai.jp/' },
+    ],
+  },
+  {
     slug: 'hamamatsu-kids-school',
     title: '【浜松】子どもの習い事・英会話スクールおすすめ比較！人気の理由と選び方のコツ',
     excerpt: '浜松市内で人気の子どもの習い事（英会話・プログラミング・スイミング等）を徹底比較。外国人講師から学べる「NOVAバイリンガルKIDS」や「アミティー」など、子育て世帯に選ばれるスクールの特徴と体験レッスンの活用法を解説します。',
