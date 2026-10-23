@@ -34,6 +34,24 @@ export interface Article {
 // 料金・アクセス等は data/raw/**/curated-*.json の実データと内容を合わせる。
 export const articles: Article[] = [
   {
+    slug: 'kurasu-car-kaitori-carnext',
+    title: '浜松で年式の古い車や多走行車を高く売るには？カーネクストの評判と廃車・買取代行の活用術',
+    excerpt: '浜松市内で10年落ち・10万キロ超えの車や動かない車を手放すときのおすすめ買取サービス「カーネクスト」を解説。レッカー無料・手続き代行無料のポイントや、ガリバーなどとの使い分けを地元目線で紹介します。',
+    section: 'living',
+    category: 'car-sell',
+    publishedAt: '2026-10-23',
+    updatedAt: '2026-10-23',
+    readingMinutes: 6,
+    isPr: true,
+    tags: ['浜松暮らし', '車買取', '廃車', 'カーネクスト', '節約'],
+    sources: [
+      { label: 'カーネクスト 浜松市の車買取', url: 'https://carnext.jp/shizuoka/hamamatsushi/' },
+      { label: 'カーネクスト 浜松市天竜区の廃車買取', url: 'https://carnext.jp/shizuoka/hamamatsushitenryuuku/' },
+      { label: 'カーネクストの廃車買取（サービス案内）', url: 'https://carnext.jp/service/' },
+      { label: '中部運輸局 浜松自動車検査登録事務所の案内', url: 'https://wwwtb.mlit.go.jp/chubu/important/suspension20240628-1700.pdf' },
+    ],
+  },
+  {
     slug: 'kurasu-moving-hamamatsu',
     title: '浜松市での引越し費用を安く抑えるコツ！おすすめ一括見積もりと地域特有の注意点',
     excerpt: '浜松市内・市外への引越しを安くスムーズに進めるためのノウハウを解説。車社会ならではの準備や市内の移動距離の違い、遠鉄沿線・駅周辺への転居の注意点、ズバット引越し比較の活用法まで紹介します。',

@@ -646,16 +646,21 @@
       "scrapOk": true
     },
     "features": [
-      "どんな車も原則0円以上で買取（公式の浜松市ページ）",
-      "レッカー代を含む引取費用・手続き代行費用が無料",
-      "電話またはWebで査定を申し込める"
+      "過走行・低年式・故障車・事故車・車検切れも原則0円以上で買取（公式の浜松市ページ）",
+      "レッカー代を含む引取費用・廃車などの手続き代行費用が無料",
+      "査定は電話かスマホで完結し、来店不要"
     ],
-    "priceNote": "査定・引取・手続き代行は無料。買取額は車種・状態によって大きく変わります。",
+    "priceNote": "査定・引取・手続き代行は無料。リサイクル料金が未払いの場合はその分の負担があります。買取額は車種・状態によって大きく変わります。",
     "chain": false,
     "serviceType": "online",
-    "affiliate": null,
+    "affiliate": {
+      "url": "https://px.a8.net/svt/ejp?a8mat=4BEFL2+BZ1VIY+32YG+HV7V6",
+      "label": "カーネクストで無料査定してみる",
+      "program": "A8.net",
+      "impressionUrl": "https://www17.a8.net/0.gif?a8mat=4BEFL2+BZ1VIY+32YG+HV7V6"
+    },
     "source": "manual",
-    "updatedAt": "2026-10-12"
+    "updatedAt": "2026-10-23"
   },
   {
     "id": "car-sell-6028ccad",

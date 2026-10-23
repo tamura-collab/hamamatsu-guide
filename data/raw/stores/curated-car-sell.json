@@ -57,7 +57,7 @@
     "hours": "電話受付 8:00～22:00（年中無休）",
     "access": null,
     "source": "manual",
-    "fetchedAt": "2026-10-12",
+    "fetchedAt": "2026-10-23",
     "serviceType": "online",
     "chain": false,
     "address": "オンライン（全国対応）",
@@ -75,11 +75,11 @@
       "scrapOk": true
     },
     "features": [
-      "どんな車も原則0円以上で買取（公式の浜松市ページ）",
-      "レッカー代を含む引取費用・手続き代行費用が無料",
-      "電話またはWebで査定を申し込める"
+      "過走行・低年式・故障車・事故車・車検切れも原則0円以上で買取（公式の浜松市ページ）",
+      "レッカー代を含む引取費用・廃車などの手続き代行費用が無料",
+      "査定は電話かスマホで完結し、来店不要"
     ],
-    "priceNote": "査定・引取・手続き代行は無料。買取額は車種・状態によって大きく変わります。",
+    "priceNote": "査定・引取・手続き代行は無料。リサイクル料金が未払いの場合はその分の負担があります。買取額は車種・状態によって大きく変わります。",
     "localNote": [
       {
         "type": "tip",
@@ -88,12 +88,13 @@
     ],
     "_sources": [
       "https://carnext.jp/shizuoka/hamamatsushi/",
-      "https://carnext.jp/shizuoka/hamamatsushichuuouku/"
+      "https://carnext.jp/shizuoka/hamamatsushichuuouku/",
+      "https://carnext.jp/shizuoka/hamamatsushitenryuuku/",
+      "https://carnext.jp/service/"
     ],
     "_unverified": [
       "契約後のキャンセル条件",
-      "出張での現車査定の有無（査定は電話・Webで行う形式との掲載）",
-      "アフィリエイトURL（公式URLを仮で設定）"
+      "出張での現車査定の有無（査定は電話・Webで行う形式との掲載）"
     ]
   },
   {
