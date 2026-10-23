@@ -43,21 +43,37 @@ const absolute = (path: string) => (Astro.site ? new URL(path, Astro.site).href 
 const canonical = absolute(pathname);
 const ogImage = absolute(url(image));
 
-// トップページの構造化データ（サイト名・サイト内検索）
+// トップページの構造化データ（サイト名・サイト内検索）。
+// Google 検索結果のサイト名は WebSite の name / alternateName と og:site_name・title から判定されるため、
+// ホスティングのドメイン名（vercel.app など）ではなくサイト名を明示する。
+const homeUrl = absolute(url('/'));
 const websiteJsonLd = isHome
   ? {
       '@context': 'https://schema.org',
-      '@type': 'WebSite',
-      name: siteConfig.siteName,
-      url: absolute(url('/')),
-      inLanguage: 'ja',
-      description: siteConfig.description,
-      publisher: { '@type': 'Organization', name: siteConfig.operator.name },
-      potentialAction: {
-        '@type': 'SearchAction',
-        target: `${absolute(url('/search'))}?q={search_term_string}`,
-        'query-input': 'required name=search_term_string',
-      },
+      '@graph': [
+        {
+          '@type': 'WebSite',
+          '@id': `${homeUrl}#website`,
+          name: siteConfig.siteName,
+          alternateName: [`${city.shortName}ガイド`, siteConfig.siteNameEn],
+          url: homeUrl,
+          inLanguage: 'ja',
+          description: siteConfig.description,
+          publisher: { '@id': `${homeUrl}#organization` },
+          potentialAction: {
+            '@type': 'SearchAction',
+            target: `${absolute(url('/search'))}?q={search_term_string}`,
+            'query-input': 'required name=search_term_string',
+          },
+        },
+        {
+          '@type': 'Organization',
+          '@id': `${homeUrl}#organization`,
+          name: siteConfig.siteName,
+          url: homeUrl,
+          logo: absolute(url('/favicon.svg')),
+        },
+      ],
     }
   : null;
 ---
@@ -70,6 +86,8 @@ const websiteJsonLd = isHome
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="theme-color" content="#0f4c75" />
     <title>{fullTitle}</title>
+    <meta name="application-name" content={siteConfig.siteName} />
+    <meta name="apple-mobile-web-app-title" content={siteConfig.siteName} />
     <meta name="description" content={description} />
     {noindex && <meta name="robots" content="noindex" />}
     <link rel="canonical" href={canonical} />
