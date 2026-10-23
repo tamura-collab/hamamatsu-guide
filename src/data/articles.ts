@@ -34,6 +34,27 @@ export interface Article {
 // 料金・アクセス等は data/raw/**/curated-*.json の実データと内容を合わせる。
 export const articles: Article[] = [
   {
+    slug: 'hamamatsu-bbq-food-culture',
+    title: '【庭付き一戸建てと地場食材】浜松市民の「週末BBQ・家飲み文化」と食のリアル',
+    excerpt: '温暖な気候と広い敷地、豊かな食材がそろう浜松市。地元の精肉店やJAファーマーズマーケットでの買い出し事情から、庭で楽しむ週末BBQ、旬のみかん・柿・新たまねぎのおすそ分け文化まで、浜松暮らしの食のリアルを紹介します。',
+    section: 'living',
+    category: 'moving',
+    publishedAt: '2026-10-24',
+    updatedAt: '2026-10-24',
+    readingMinutes: 7,
+    isPr: false,
+    tags: ['浜松暮らし', '食文化', 'BBQ', '移住', '子育て'],
+    sources: [
+      { label: '浜松市 浜松の自然（日照時間）', url: 'https://www.city.hamamatsu.shizuoka.jp/koho2/intro/shizen01.html' },
+      { label: 'はままつフードパーク 浜松の豚肉（とんきい）', url: 'https://www.city.hamamatsu.shizuoka.jp/foodpark/hamamatsu-foods/pork.html' },
+      { label: '浜松市 秋の食材（次郎柿）', url: 'https://www.city.hamamatsu.shizuoka.jp/nousei/akinosyokuzai.html' },
+      { label: '浜松市 冬の食材（新たまねぎ）', url: 'https://www.city.hamamatsu.shizuoka.jp/nousei/huyunosyokuzai.html' },
+      { label: '浜松市で水揚げされる水産物（しらす）', url: 'https://www.city.hamamatsu.shizuoka.jp/nousei/pnf/page11.html' },
+      { label: '静岡新聞 浜名湖のアサリ漁獲量ゼロ', url: 'https://www.at-s.com/snews/article/ats/2010704.html' },
+      { label: '国土交通省 浜松河川国道事務所 河川愛護モニター報告', url: 'https://www.cbr.mlit.go.jp/hamamatsu/river/kasenaigo/pdf/201906b.pdf' },
+    ],
+  },
+  {
     slug: 'kurasu-car-kaitori-carnext',
     title: '浜松で年式の古い車や多走行車を高く売るには？カーネクストの評判と廃車・買取代行の活用術',
     excerpt: '浜松市内で10年落ち・10万キロ超えの車や動かない車を手放すときのおすすめ買取サービス「カーネクスト」を解説。レッカー無料・手続き代行無料のポイントや、ガリバーなどとの使い分けを地元目線で紹介します。',

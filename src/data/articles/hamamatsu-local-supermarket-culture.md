@@ -56,6 +56,7 @@
 
 ## 浜松の住みやすさをもっと知る関連記事
 
+- [【庭付き一戸建てと地場食材】浜松市民の「週末BBQ・家飲み文化」と食のリアル](/articles/hamamatsu-bbq-food-culture)
 - [浜松移住パーフェクトガイド｜おすすめの理由・注意点・助成金・子育て教育のリアル](/articles/hamamatsu-relocation-guide)
 - [浜松市で暮らすならどこ？新3区（中央区・浜名区・天竜区）の特徴と住みやすさガイド](/articles/hamamatsu-living-areas)
 - [浜松で『車なし』生活は可能？移住・転勤前に知っておくべき交通事情と維持費のリアル](/articles/hamamatsu-car-lifestyle)

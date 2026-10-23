@@ -103,3 +103,5 @@
 - [浜松市で暮らすならどこ？新3区（中央区・浜名区・天竜区）の特徴と住みやすさガイド](/articles/hamamatsu-living-areas)
 - [新生活の回線選びに！浜松市で使える光回線6社を徹底比較](/articles/hamamatsu-internet-guide)
 - [浜松で車を高く売るなら？おすすめ車買取・一括査定サイト比較](/articles/car-buying-guide)
+- [浜松市民の「週末BBQ・家飲み文化」と食のリアル](/articles/hamamatsu-bbq-food-culture)
+- [杏林堂はドラッグストアを超えたインフラ？浜松市民の買い出し事情](/articles/hamamatsu-local-supermarket-culture)
