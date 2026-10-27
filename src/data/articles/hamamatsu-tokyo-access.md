@@ -57,8 +57,19 @@
 
 複数のバス会社の便を一度に比べたい場合は、予約・比較サイトが便利です。
 
-- **楽天トラベル 高速バス予約**：各社の便を検索・予約でき、代金に応じて楽天ポイントが貯まります
-- **バス比較なび**：区間を指定して、料金・シート・出発時間を並べて比較できます
+### エアトリ（高速バス・夜行バス予約）
+
+旅行予約サイト「エアトリ」の高速バス・夜行バス予約サービスです。全国の高速バス・夜行バスの料金を比較して、会員登録なしで予約できます。格安の便から3列独立シートの便まで、便ごとのシートを確認して選べるので、「安さ優先」「快適さ優先」どちらの人にも使いやすいサービスです。
+
+<p class="article-cta">
+  <a href="https://px.a8.net/svt/ejp?a8mat=4BEPQ5+8D9DNE+AD2+3H2YHE" rel="sponsored nofollow noopener noreferrer" target="_blank" data-track="affiliate" data-place-id="express-bus-faed8de8" data-category="express-bus" data-section="travel" data-placement="article">エアトリで高速バスを予約する<span class="whitespace-nowrap">（公式サイト）</span></a>
+  <span class="article-cta-note">PR・運賃や空席は便・乗車日により異なります</span>
+  <img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4BEPQ5+8D9DNE+AD2+3H2YHE" alt="" class="a8-beacon">
+</p>
+
+### 楽天トラベル 高速バス予約
+
+各社の便を検索・予約でき、代金に応じて楽天ポイントが貯まります。
 
 ## 費用と時間の比較まとめ
 

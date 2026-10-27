@@ -763,6 +763,50 @@
     "updatedAt": "2026-10-10"
   },
   {
+    "id": "express-bus-faed8de8",
+    "name": "エアトリ（高速バス・夜行バス予約）",
+    "category": "express-bus",
+    "genre": "Web予約・比較",
+    "address": "オンライン（全国対応）",
+    "tel": null,
+    "hours": "Webで24時間予約可",
+    "access": null,
+    "officialUrl": "https://bus.airtrip.jp/",
+    "description": "旅行予約サイト「エアトリ」の高速バス・夜行バス予約サービス（エアトリバス）。全国の高速バス・夜行バスの料金を比較して、会員登録なしで予約できます。",
+    "localNote": [
+      {
+        "type": "tip",
+        "text": "浜松〜東京・大阪などの区間で、各社の便の料金を並べて比べてから予約したいときに",
+        "source": "manual"
+      }
+    ],
+    "specs": {
+      "kind": "Web予約・比較",
+      "fareTokyo": null,
+      "destinations": "全国の高速バス・夜行バス路線",
+      "boarding": "便により異なる",
+      "seatType": "便により異なる（格安の4列〜3列独立シートなど）",
+      "toilet": null,
+      "night": true
+    },
+    "features": [
+      "全国の高速バス・夜行バスの料金を比較して予約",
+      "会員登録なしで予約できる",
+      "格安便から3列独立シートの便まで、便ごとにシートを確認して選べる"
+    ],
+    "priceNote": "運賃は各社の便・乗車日により異なります。",
+    "chain": false,
+    "serviceType": "online",
+    "affiliate": {
+      "url": "https://px.a8.net/svt/ejp?a8mat=4BEPQ5+8D9DNE+AD2+3H2YHE",
+      "label": "エアトリで高速バスを予約する",
+      "program": "A8.net",
+      "impressionUrl": "https://www19.a8.net/0.gif?a8mat=4BEPQ5+8D9DNE+AD2+3H2YHE"
+    },
+    "source": "manual",
+    "updatedAt": "2026-10-27"
+  },
+  {
     "id": "express-bus-31b4da3c",
     "name": "遠鉄高速バス e-LineR（イーライナー）",
     "category": "express-bus",
@@ -959,45 +1003,6 @@
       "クーポン・キャンペーンあり（時期により異なる）"
     ],
     "priceNote": "運賃は各社の便・乗車日により異なります。ポイント付与率・クーポンは公式でご確認ください。",
-    "chain": false,
-    "serviceType": "online",
-    "affiliate": null,
-    "source": "manual",
-    "updatedAt": "2026-10-10"
-  },
-  {
-    "id": "express-bus-89fcf15f",
-    "name": "バス比較なび",
-    "category": "express-bus",
-    "genre": "比較サイト",
-    "address": "オンライン（全国対応）",
-    "tel": null,
-    "hours": "Webで24時間検索可",
-    "access": null,
-    "officialUrl": "https://www.bushikaku.net/",
-    "description": "株式会社LCLが運営する高速バスの比較サイト。区間を指定して、各社の便の料金・シート・出発時間を比較できます。",
-    "localNote": [
-      {
-        "type": "tip",
-        "text": "浜松〜東京・大阪などの区間で、夜便・昼便を並べて比べたいときに",
-        "source": "manual"
-      }
-    ],
-    "specs": {
-      "kind": "比較サイト",
-      "fareTokyo": null,
-      "destinations": "各社の路線",
-      "boarding": "便により異なる",
-      "seatType": "シートタイプで絞り込み可",
-      "toilet": null,
-      "night": null
-    },
-    "features": [
-      "シートタイプ・女性専用席・予算で絞り込み",
-      "最安値カレンダー（4か月分）",
-      "株式会社LCLが運営"
-    ],
-    "priceNote": "運賃は各社の便・乗車日により異なります。",
     "chain": false,
     "serviceType": "online",
     "affiliate": null,
