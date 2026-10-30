@@ -105,3 +105,4 @@
 - [浜松で車を高く売るなら？おすすめ車買取・一括査定サイト比較](/articles/car-buying-guide)
 - [浜松市民の「週末BBQ・家飲み文化」と食のリアル](/articles/hamamatsu-bbq-food-culture)
 - [杏林堂はドラッグストアを超えたインフラ？浜松市民の買い出し事情](/articles/hamamatsu-local-supermarket-culture)
+- [遠州のからっ風と日照時間｜浜松の冬の気候特徴と快適に暮らす知恵](/articles/hamamatsu-karakaze-lifestyle)

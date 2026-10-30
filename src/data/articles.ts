@@ -34,6 +34,24 @@ export interface Article {
 // 料金・アクセス等は data/raw/**/curated-*.json の実データと内容を合わせる。
 export const articles: Article[] = [
   {
+    slug: 'hamamatsu-karakaze-lifestyle',
+    title: '【遠州のからっ風と日照時間】浜松の冬の気候特徴と快適に暮らす知恵・洗濯事情',
+    excerpt: '全国トップクラスの日照時間を誇る一方で、冬に吹く「遠州のからっ風」。洗濯物の干し方のコツから住まい選び・自転車通学のリアルまで、浜松で暮らす前に知っておきたい気候対策と生活の知恵を紹介します。',
+    section: 'living',
+    category: 'moving',
+    publishedAt: '2026-10-25',
+    updatedAt: '2026-10-25',
+    readingMinutes: 6,
+    isPr: false,
+    tags: ['浜松暮らし', '気候', 'からっ風', '移住', '生活の知恵'],
+    sources: [
+      { label: '浜松市 浜松の自然（気候・日照時間）', url: 'https://www.city.hamamatsu.shizuoka.jp/koho2/intro/shizen01.html' },
+      { label: '浜松市 太陽光発電導入量 日本一', url: 'https://www.city.hamamatsu.shizuoka.jp/shin-ene/new_ene/solar/nipponiti.html' },
+      { label: '浜松市 太陽光発電の導入量', url: 'https://www.city.hamamatsu.shizuoka.jp/shin-ene/new_ene/solar/dounyuryou.html' },
+      { label: 'コトバンク 遠州灘（海岸砂丘）', url: 'https://kotobank.jp/word/遠州灘' },
+    ],
+  },
+  {
     slug: 'hamamatsu-bbq-food-culture',
     title: '【庭付き一戸建てと地場食材】浜松市民の「週末BBQ・家飲み文化」と食のリアル',
     excerpt: '温暖な気候と広い敷地、豊かな食材がそろう浜松市。地元の精肉店やJAファーマーズマーケットでの買い出し事情から、庭で楽しむ週末BBQ、旬のみかん・柿・新たまねぎのおすそ分け文化まで、浜松暮らしの食のリアルを紹介します。',
