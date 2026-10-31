@@ -106,3 +106,4 @@
 - [浜松市民の「週末BBQ・家飲み文化」と食のリアル](/articles/hamamatsu-bbq-food-culture)
 - [杏林堂はドラッグストアを超えたインフラ？浜松市民の買い出し事情](/articles/hamamatsu-local-supermarket-culture)
 - [遠州のからっ風と日照時間｜浜松の冬の気候特徴と快適に暮らす知恵](/articles/hamamatsu-karakaze-lifestyle)
+- [遠州綿紬と浜松注染｜日常を彩る浜松の伝統工芸と職人カルチャー](/articles/hamamatsu-textile-craft-culture)

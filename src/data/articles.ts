@@ -34,6 +34,27 @@ export interface Article {
 // 料金・アクセス等は data/raw/**/curated-*.json の実データと内容を合わせる。
 export const articles: Article[] = [
   {
+    slug: 'hamamatsu-textile-craft-culture',
+    title: '【遠州綿紬と浜松注染】実はものづくりの街！日常を彩る浜松の伝統工芸と職人カルチャー',
+    excerpt: '自動車や楽器だけでなく、日本三大綿織物産地のひとつ「遠州」の中心でもある浜松。素朴で温かい「遠州綿紬」や、浴衣・手ぬぐいの「浜松注染そめ」など、暮らしを彩る伝統工芸と、今の暮らしとの関わりを紹介します。',
+    section: 'living',
+    category: 'moving',
+    publishedAt: '2026-10-31',
+    updatedAt: '2026-10-31',
+    readingMinutes: 7,
+    isPr: false,
+    tags: ['浜松暮らし', '伝統工芸', '遠州綿紬', '浜松注染', 'カルチャー', '移住'],
+    sources: [
+      { label: '浜松市 浜松のものづくりのルーツ', url: 'https://www.city.hamamatsu.shizuoka.jp/documents/70476/10root.pdf' },
+      { label: 'スズキ 創業の歴史', url: 'https://www.suzuki.co.jp/release/d/2020/0315/' },
+      { label: 'サライ 遠州綿紬・ぬくもり工房', url: 'https://serai.jp/shop/1102659' },
+      { label: '静岡郷土工芸品振興会 浜松注染染め', url: 'https://www.shizuoka-kougei.jp/craft/hamamatsu-chusen/' },
+      { label: '静岡県観光公式ブログ 浜松注染そめの手ぬぐい作り体験', url: 'https://shizuoka.hellonavi.jp/hamamatsu-chusensome' },
+      { label: '浜松市公式ポータル 浜松注染そめ体験', url: 'https://unaginobori-hamamatsu.jp/topics/detail/6/' },
+      { label: '堺市 注染の歴史', url: 'https://www.city.sakai.lg.jp/kanko/sakai/keisho/dentosangyo/yukata_tenugui.html' },
+    ],
+  },
+  {
     slug: 'hamamatsu-hamaichi-guide',
     title: '【浜名湖一周「ハマイチ」入門】自転車なしでも楽しめる？ドライブ＆サイクリングで巡る浜名湖の絶景スポット',
     excerpt: 'サイクリストに人気の浜名湖一周「ハマイチ」。マイ自転車がなくても楽しめるレンタサイクルの活用法から、車でのドライブ、弁天島・舘山寺・ガーデンパークなどの立ち寄りスポットまで地元目線で紹介します。',

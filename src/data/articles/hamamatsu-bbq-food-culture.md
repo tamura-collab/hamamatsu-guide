@@ -63,3 +63,5 @@
 > 店舗や制度の情報は2026年10月時点のものです。営業時間や取り扱い商品は各店舗にご確認ください。
 
 浜松への移住を考えている人は、[浜松移住パーフェクトガイド](/articles/hamamatsu-relocation-guide)や、[浜松市で暮らすならどこ？新3区の特徴と住みやすさガイド](/articles/hamamatsu-living-areas)もあわせてご覧ください。
+
+浜松のものづくりの文化については、[遠州綿紬と浜松注染｜日常を彩る浜松の伝統工芸と職人カルチャー](/articles/hamamatsu-textile-craft-culture)で紹介しています。
