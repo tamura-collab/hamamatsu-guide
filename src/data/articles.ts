@@ -34,6 +34,26 @@ export interface Article {
 // 料金・アクセス等は data/raw/**/curated-*.json の実データと内容を合わせる。
 export const articles: Article[] = [
   {
+    slug: 'hamamatsu-hamaichi-guide',
+    title: '【浜名湖一周「ハマイチ」入門】自転車なしでも楽しめる？ドライブ＆サイクリングで巡る浜名湖の絶景スポット',
+    excerpt: 'サイクリストに人気の浜名湖一周「ハマイチ」。マイ自転車がなくても楽しめるレンタサイクルの活用法から、車でのドライブ、弁天島・舘山寺・ガーデンパークなどの立ち寄りスポットまで地元目線で紹介します。',
+    section: 'travel',
+    category: 'car-rental',
+    publishedAt: '2026-10-26',
+    updatedAt: '2026-10-26',
+    readingMinutes: 7,
+    isPr: false,
+    tags: ['浜松観光', '浜名湖', 'ハマイチ', 'ドライブ', 'サイクリング'],
+    sources: [
+      { label: 'JR東海 弁天島サイクルゲート開業（ニュースリリース）', url: 'https://jr-central.co.jp/news/release/_pdf/000044302.pdf' },
+      { label: 'トラベル Watch 弁天島サイクルゲート', url: 'https://travel.watch.impress.co.jp/docs/news/2015299.html' },
+      { label: '静岡県 かんざんじロープウェイ', url: 'https://www.pref.shizuoka.jp/kensei/information/myshizuoka/1002263/1040951/1077211.html' },
+      { label: '浜名湖ガーデンパーク（静岡新聞 SPOT）', url: 'https://www.at-s.com/spot/article/138517' },
+      { label: '浜松市 三ヶ日のみかん畑の景観', url: 'https://www.city.hamamatsu.shizuoka.jp/documents/133742/04dai2shou08.pdf' },
+      { label: '浜松市 ハマイチ関連資料', url: 'https://www.city.hamamatsu.shizuoka.jp/documents/91086/04_keikakusuishin.pdf' },
+    ],
+  },
+  {
     slug: 'hamamatsu-karakaze-lifestyle',
     title: '【遠州のからっ風と日照時間】浜松の冬の気候特徴と快適に暮らす知恵・洗濯事情',
     excerpt: '全国トップクラスの日照時間を誇る一方で、冬に吹く「遠州のからっ風」。洗濯物の干し方のコツから住まい選び・自転車通学のリアルまで、浜松で暮らす前に知っておきたい気候対策と生活の知恵を紹介します。',
