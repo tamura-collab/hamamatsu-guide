@@ -393,8 +393,8 @@ export const articles: Article[] = [
     category: 'rainy-day',
     publishedAt: '2026-10-12',
     updatedAt: '2026-10-12',
-    imageUrl: '/images/articles/act-tower.jpg',
-    imageAlt: '高層ビルが並ぶ街並みのイメージ',
+    imageUrl: '/images/articles/hamamatsu-station.jpg',
+    imageAlt: 'JR浜松駅前のアクトタワーと駅ビル「メイワン」',
     readingMinutes: 6,
     featured: true,
     sources: [
