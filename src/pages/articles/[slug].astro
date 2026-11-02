@@ -9,6 +9,7 @@ import { categories, getCategoryHref, sections } from '@/data/categories';
 import { url } from '@/lib/url';
 import { siteConfig } from '@/config/site.config';
 import { articleImage } from '@/lib/article-image';
+import { injectFurusato } from '@/lib/furusato';
 
 // 本文（Markdown）。ファイル名 = slug
 const bodies = import.meta.glob<{ compiledContent: () => string | Promise<string> }>('../../data/articles/*.md', { eager: true });
@@ -27,7 +28,8 @@ const html = (await body.compiledContent()).replace(/href="\/(?!\/)/g, `href="${
 
 // 記事画像（ファイルがある場合のみ）をリード文の下＝最初の見出し（h2）の直前に入れる
 const image = articleImage(article);
-let bodyHtml = html;
+// 「ふるさと納税でお取り寄せ」ブロック（本文の <div data-furusato></div> を置き換え）
+let bodyHtml = injectFurusato(html);
 if (image) {
   const credit = image.credit
     ? `<figcaption>出典：<a href="${image.credit.url}" rel="noopener noreferrer" target="_blank">${image.credit.label}</a></figcaption>`

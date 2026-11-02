@@ -495,8 +495,9 @@ export const articles: Article[] = [
     section: 'travel',
     category: 'gourmet',
     publishedAt: '2026-10-08',
-    updatedAt: '2026-10-11',
+    updatedAt: '2026-11-02',
     readingMinutes: 6,
+    isPr: true,
     sources: [
       { label: '石松餃子 JR浜松駅店', url: 'https://1402.jp/shop/hamamatsu.html' },
       { label: 'うなぎ 八百徳', url: 'https://www.unagiyaotoku.com/info.php' },
