@@ -56,6 +56,8 @@ export interface Place {
   serviceType: 'store' | 'online';
   /** アフィリエイト（広告）リンク。提携がある場合のみ設定される */
   affiliate: Affiliate | null;
+  /** この施設を紹介している記事の slug（src/data/articles.ts） */
+  relatedArticles: string[];
   source: 'mock' | 'scrape' | 'manual';
   /** 情報の確認日（YYYY-MM-DD） */
   updatedAt: string;

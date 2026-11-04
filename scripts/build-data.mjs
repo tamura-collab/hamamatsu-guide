@@ -17,6 +17,7 @@
  */
 import path from 'node:path';
 import { categories } from '../src/data/categories.ts';
+import { articles } from '../src/data/articles.ts';
 import { paths, DATASETS } from './lib/paths.mjs';
 import { readJson, readJsonDir, today, writeJson } from './lib/io.mjs';
 import { cleanText, makeId, normalizeTel, normalizeUrl, toHalfWidth } from './lib/normalize.mjs';
@@ -29,6 +30,7 @@ const usedEnrichment = new Set();
 const categoryOrder = new Map(categories.map((c, i) => [c.slug, i]));
 const SOURCE_PRIORITY = { mock: 0, scrape: 1, manual: 2 };
 const categoryBySlug = new Map(categories.map((c) => [c.slug, c]));
+const articleSlugs = new Set(articles.map((a) => a.slug));
 
 /** localNote の駅メモ（「浜松駅徒歩5分」）から最短の徒歩分数を得る */
 function deriveStationWalk(notes) {
@@ -119,6 +121,8 @@ function normalizeRecord(raw) {
     serviceType: extra?.serviceType ?? raw.serviceType ?? 'store',
     // アフィリエイトリンクは提携契約に基づく情報のため、収集データではなく enrichment.json でのみ設定する
     affiliate,
+    /** この施設を紹介している記事の slug（src/data/articles.ts）。詳細ページに関連記事として表示する */
+    relatedArticles: (extra?.relatedArticles ?? raw.relatedArticles ?? []).map(cleanText).filter(Boolean),
     source: extra?.override || extra?.specs ? 'manual' : raw.source ?? 'scrape',
     updatedAt: (raw.fetchedAt ?? today()).slice(0, 10),
   };
@@ -159,6 +163,9 @@ for (const [dataset, section] of Object.entries(DATASETS)) {
   let invalid = 0;
   for (const place of places) {
     const errors = validatePlace(place, allowed);
+    for (const slug of place.relatedArticles) {
+      if (!articleSlugs.has(slug)) errors.push(`relatedArticles に存在しない記事があります: ${slug}`);
+    }
     if (errors.length > 0) {
       invalid++;
       console.error(`✖ ${dataset}/${place.id}（${place.name ?? '名称なし'}）\n    - ${errors.join('\n    - ')}`);

@@ -131,6 +131,9 @@ export function validatePlace(place, categoryMap) {
       if (!isNonEmptyString(note.text)) errors.push('localNote.text は必須です');
     }
   }
+  if (!Array.isArray(place.relatedArticles) || !place.relatedArticles.every(isNonEmptyString)) {
+    errors.push('relatedArticles は記事 slug の配列です');
+  }
   if (!SOURCES.includes(place.source)) errors.push(`source が不正です: ${place.source}`);
   if (!/^\d{4}-\d{2}-\d{2}$/.test(place.updatedAt ?? '')) errors.push(`updatedAt が不正です: ${place.updatedAt}`);
   return errors;

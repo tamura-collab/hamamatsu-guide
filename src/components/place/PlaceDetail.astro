@@ -3,6 +3,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import Breadcrumb from '@/components/ui/Breadcrumb.astro';
 import Icon from '@/components/ui/Icon.astro';
 import PlaceCard from './PlaceCard.astro';
+import ArticleCard from '@/components/cards/ArticleCard.astro';
 import OutboundLink from '@/components/outbound/OutboundLink.astro';
 import CtaBlock from '@/components/outbound/CtaBlock.astro';
 import AdNotice from '@/components/outbound/AdNotice.astro';
@@ -11,6 +12,7 @@ import PriceNote from '@/components/info/PriceNote.astro';
 import UpdateInfo from '@/components/info/UpdateInfo.astro';
 import { getCategoryHref, sections, type Category } from '@/data/categories';
 import { formatSpec, getPlaces, localNoteMeta, sortLocalNotes, type Place } from '@/data/places';
+import { articles } from '@/data/articles';
 import { siteConfig } from '@/config/site.config';
 import { url } from '@/lib/url';
 
@@ -26,6 +28,9 @@ const notes = sortLocalNotes(place.localNote);
 const others = getPlaces(category.section, category.slug)
   .filter((p) => p.id !== place.id)
   .slice(0, 3);
+const relatedArticles = place.relatedArticles
+  .map((slug) => articles.find((a) => a.slug === slug))
+  .filter((a) => a !== undefined);
 
 // 複数店舗をまとめた掲載は、住所ではなく名称＋都市名で地図検索する
 const mapQuery = place.chain ? `${place.name.replace(/（.*?）|エリア/g, '')} ${siteConfig.city.name}` : `${place.name} ${place.address}`;
@@ -251,6 +256,23 @@ const rows = [
           <p class="text-sm font-bold">{place.name}が気になったら</p>
           <CtaBlock place={place} category={category} placement="detail-bottom" size="lg" class="mx-auto mt-3 max-w-md" />
         </div>
+      )
+    }
+
+    {
+      relatedArticles.length > 0 && (
+        <section class="mt-12" aria-labelledby="place-articles-title">
+          <h2 id="place-articles-title" class="mb-4 text-lg font-bold">
+            {place.name}を紹介している記事
+          </h2>
+          <ul class="grid gap-3">
+            {relatedArticles.map((a) => (
+              <li>
+                <ArticleCard article={a} layout="horizontal" />
+              </li>
+            ))}
+          </ul>
+        </section>
       )
     }
 

@@ -95,6 +95,67 @@
       "開館時間・休館日",
       "「JR浜松駅南口から徒歩約7分」の経路（駅から東へ徒歩約7分の掲載はあり）",
       "「駐車場完備」（専用駐車場なしのため不掲載）"
+    ],
+    "relatedArticles": [
+      "hamamatsu-indoor-playgrounds"
+    ]
+  },
+  {
+    "name": "浜松こども館",
+    "category": "rainy-day",
+    "genre": "子ども向け屋内遊び場",
+    "serviceType": "store",
+    "chain": false,
+    "address": "静岡県浜松市中央区鍛冶町100-1 ザザシティ浜松中央館6・7階",
+    "tel": "053-450-9111",
+    "hours": "平日10:00～17:00、土日祝10:00～18:00（年末年始12月29日～1月1日休館。臨時休館あり）",
+    "access": "JR浜松駅から徒歩約10分／遠州鉄道 新浜松駅から徒歩約10分",
+    "officialUrl": "https://kodomokan.entetsuassist-dms.com/",
+    "description": "ザザシティ浜松中央館6・7階にある、浜松市の子ども向け屋内遊び場。天竜材のアスレチックや、6階と7階をつなぐ大型ネット遊具「コスモタワー」など、雨の日でも子どもが思い切り体を動かせます。",
+    "specs": {
+      "kind": "子ども向け屋内遊び場（市の施設）",
+      "admission": 200,
+      "accessInfo": "JR浜松駅・遠州鉄道 新浜松駅から徒歩約10分",
+      "rainAccess": "館内は屋内（ザザシティ浜松中央館内。駅からは徒歩約10分）",
+      "parking": false,
+      "reservation": "不要",
+      "noReservation": true
+    },
+    "features": [
+      "天竜材のアスレチック",
+      "大型ネット遊具「コスモタワー」",
+      "大きなボールプール",
+      "就学前の子どもは無料（保護者同伴）"
+    ],
+    "priceNote": "大人200円、小・中・高校生100円、就学前の子どもは無料（保護者同伴）。イベントによっては別料金がかかる場合があります。",
+    "localNote": [
+      {
+        "type": "parking",
+        "text": "専用駐車場はなし。ザザシティ駐車場などPクーポン契約駐車場を使うと、200円分のPクーポンが発行される"
+      },
+      {
+        "type": "tip",
+        "text": "雨の日の子連れのお出かけ先の定番。浜松駅から徒歩圏なので、電車・バスでも行きやすい"
+      }
+    ],
+    "relatedArticles": [
+      "hamamatsu-indoor-playgrounds"
+    ],
+    "source": "manual",
+    "fetchedAt": "2026-11-04",
+    "_sources": [
+      "https://www.at-s.com/spot/article/138498",
+      "https://www.walkerplus.com/spot/ar0622s455696/data.html",
+      "https://www.city.hamamatsu.shizuoka.jp/documents/174157/202606-p10.pdf",
+      "https://www.city.hamamatsu.shizuoka.jp/documents/168052/202507-p12.pdf",
+      "https://www.city.hamamatsu.shizuoka.jp/koho2/pr/kouhou_all/2606/5regular-06.html",
+      "https://hamamatsu.keizai.biz/headline/2733/"
+    ],
+    "_unverified": [
+      "「浜松駅から徒歩約5分」（掲載情報はJR浜松駅・新浜松駅とも徒歩約10分のため10分で掲載）",
+      "公式サイトURL（市の広報ページの案内による。サイト本体はこの環境から閲覧できず未確認）",
+      "再入館の可否",
+      "「周辺の提携パーキング」の範囲（Pクーポン契約駐車場で200円分発行の掲載のみ確認）"
     ]
   },
   {

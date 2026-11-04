@@ -36,6 +36,7 @@
     "chain": false,
     "serviceType": "online",
     "affiliate": null,
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-14"
   },
@@ -76,6 +77,7 @@
     "chain": false,
     "serviceType": "online",
     "affiliate": null,
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-14"
   },
@@ -116,6 +118,7 @@
     "chain": false,
     "serviceType": "online",
     "affiliate": null,
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-14"
   },
@@ -156,6 +159,7 @@
     "chain": false,
     "serviceType": "online",
     "affiliate": null,
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-14"
   },
@@ -196,6 +200,7 @@
     "chain": false,
     "serviceType": "online",
     "affiliate": null,
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-14"
   },
@@ -241,6 +246,7 @@
     "chain": false,
     "serviceType": "store",
     "affiliate": null,
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-14"
   },
@@ -285,6 +291,7 @@
     "chain": false,
     "serviceType": "store",
     "affiliate": null,
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-10"
   },
@@ -334,6 +341,7 @@
     "chain": false,
     "serviceType": "store",
     "affiliate": null,
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-10"
   },
@@ -378,6 +386,7 @@
     "chain": false,
     "serviceType": "store",
     "affiliate": null,
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-10"
   },
@@ -422,6 +431,7 @@
     "chain": true,
     "serviceType": "store",
     "affiliate": null,
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-10"
   },
@@ -461,6 +471,7 @@
     "chain": false,
     "serviceType": "online",
     "affiliate": null,
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-10"
   },
@@ -500,6 +511,7 @@
     "chain": false,
     "serviceType": "online",
     "affiliate": null,
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-10"
   },
@@ -545,6 +557,7 @@
     "chain": false,
     "serviceType": "store",
     "affiliate": null,
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-10"
   },
@@ -590,8 +603,70 @@
     "chain": false,
     "serviceType": "store",
     "affiliate": null,
+    "relatedArticles": [
+      "hamamatsu-indoor-playgrounds"
+    ],
     "source": "manual",
     "updatedAt": "2026-10-10"
+  },
+  {
+    "id": "rainy-day-c8d4e97b",
+    "name": "浜松こども館",
+    "category": "rainy-day",
+    "genre": "子ども向け屋内遊び場",
+    "address": "静岡県浜松市中央区鍛冶町100-1 ザザシティ浜松中央館6・7階",
+    "tel": "053-450-9111",
+    "hours": "平日10:00～17:00、土日祝10:00～18:00（年末年始12月29日～1月1日休館。臨時休館あり）",
+    "access": "JR浜松駅から徒歩約10分／遠州鉄道 新浜松駅から徒歩約10分",
+    "officialUrl": "https://kodomokan.entetsuassist-dms.com/",
+    "description": "ザザシティ浜松中央館6・7階にある、浜松市の子ども向け屋内遊び場。天竜材のアスレチックや、6階と7階をつなぐ大型ネット遊具「コスモタワー」など、雨の日でも子どもが思い切り体を動かせます。",
+    "localNote": [
+      {
+        "type": "parking",
+        "text": "専用駐車場はなし。ザザシティ駐車場などPクーポン契約駐車場を使うと、200円分のPクーポンが発行される",
+        "source": "manual"
+      },
+      {
+        "type": "tip",
+        "text": "雨の日の子連れのお出かけ先の定番。浜松駅から徒歩圏なので、電車・バスでも行きやすい",
+        "source": "manual"
+      },
+      {
+        "type": "station",
+        "text": "JR浜松駅徒歩10分",
+        "source": "auto"
+      },
+      {
+        "type": "station",
+        "text": "新浜松駅徒歩10分",
+        "source": "auto"
+      }
+    ],
+    "specs": {
+      "kind": "子ども向け屋内遊び場（市の施設）",
+      "admission": 200,
+      "accessInfo": "JR浜松駅・遠州鉄道 新浜松駅から徒歩約10分",
+      "stationWalkMin": 10,
+      "rainAccess": "館内は屋内（ザザシティ浜松中央館内。駅からは徒歩約10分）",
+      "parking": false,
+      "reservation": "不要",
+      "noReservation": true
+    },
+    "features": [
+      "天竜材のアスレチック",
+      "大型ネット遊具「コスモタワー」",
+      "大きなボールプール",
+      "就学前の子どもは無料（保護者同伴）"
+    ],
+    "priceNote": "大人200円、小・中・高校生100円、就学前の子どもは無料（保護者同伴）。イベントによっては別料金がかかる場合があります。",
+    "chain": false,
+    "serviceType": "store",
+    "affiliate": null,
+    "relatedArticles": [
+      "hamamatsu-indoor-playgrounds"
+    ],
+    "source": "manual",
+    "updatedAt": "2026-11-04"
   },
   {
     "id": "rainy-day-61b79a05",
@@ -630,6 +705,7 @@
     "chain": false,
     "serviceType": "store",
     "affiliate": null,
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-10"
   },
@@ -675,6 +751,7 @@
     "chain": false,
     "serviceType": "store",
     "affiliate": null,
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-10"
   },
@@ -720,6 +797,7 @@
     "chain": false,
     "serviceType": "store",
     "affiliate": null,
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-10"
   },
@@ -759,6 +837,7 @@
     "chain": false,
     "serviceType": "online",
     "affiliate": null,
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-10"
   },
@@ -803,6 +882,7 @@
       "program": "A8.net",
       "impressionUrl": "https://www19.a8.net/0.gif?a8mat=4BEPQ5+8D9DNE+AD2+3H2YHE"
     },
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-27"
   },
@@ -845,6 +925,7 @@
     "chain": false,
     "serviceType": "store",
     "affiliate": null,
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-10"
   },
@@ -884,6 +965,7 @@
     "chain": false,
     "serviceType": "store",
     "affiliate": null,
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-10"
   },
@@ -923,6 +1005,7 @@
     "chain": true,
     "serviceType": "store",
     "affiliate": null,
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-10"
   },
@@ -967,6 +1050,7 @@
     "chain": false,
     "serviceType": "store",
     "affiliate": null,
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-10"
   },
@@ -1006,6 +1090,7 @@
     "chain": false,
     "serviceType": "online",
     "affiliate": null,
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-10"
   },
@@ -1052,6 +1137,7 @@
     "chain": false,
     "serviceType": "store",
     "affiliate": null,
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-10"
   },
@@ -1098,6 +1184,7 @@
     "chain": false,
     "serviceType": "store",
     "affiliate": null,
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-10"
   },
@@ -1138,6 +1225,7 @@
     "chain": false,
     "serviceType": "store",
     "affiliate": null,
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-10"
   },
@@ -1178,6 +1266,7 @@
     "chain": true,
     "serviceType": "store",
     "affiliate": null,
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-10"
   },
@@ -1218,6 +1307,7 @@
     "chain": false,
     "serviceType": "online",
     "affiliate": null,
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-10"
   },
@@ -1258,6 +1348,7 @@
     "chain": false,
     "serviceType": "online",
     "affiliate": null,
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-10"
   },
@@ -1299,6 +1390,7 @@
     "chain": false,
     "serviceType": "store",
     "affiliate": null,
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-10"
   },
@@ -1339,6 +1431,7 @@
     "chain": true,
     "serviceType": "store",
     "affiliate": null,
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-10"
   },
@@ -1378,6 +1471,7 @@
     "chain": true,
     "serviceType": "store",
     "affiliate": null,
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-10"
   },
@@ -1418,6 +1512,7 @@
     "chain": false,
     "serviceType": "store",
     "affiliate": null,
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-10"
   },
@@ -1458,6 +1553,7 @@
     "chain": false,
     "serviceType": "online",
     "affiliate": null,
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-10"
   },
@@ -1498,6 +1594,7 @@
     "chain": true,
     "serviceType": "store",
     "affiliate": null,
+    "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-10"
   }
