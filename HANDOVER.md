@@ -17,7 +17,7 @@
 | 本番 | Vercel（`main` に push すると自動でデプロイ）。本番 URL は `https://myapp-media-site.vercel.app`（2026-10-23 時点で独自ドメインなし） |
 | 計測 | GA4 `G-DDP1G874JS`（送客クリックは `outbound_click` イベント）、Search Console（HTML ファイル方式）、IndexNow（本番ビルド時に自動送信） |
 | 完了の条件 | `npm run verify` の実行結果がエラー・警告・ヒントすべて0件であること → コミット → `main` に push |
-| コミット作成者 | **`tamura <tamura@pinganjapan.com>` に固定**。別のアドレスだと Vercel がデプロイを拒否します（後述） |
+| コミット作成者 | **`tamura <tamura@omega-cp.com>` に固定**。GitHub アカウントに登録されていないアドレスだと Vercel がデプロイを拒否します（後述） |
 | 最終作業 | 2026-11-03：非PR記事4本を追加（コミット `55fc4ca`） |
 
 ---
@@ -113,12 +113,14 @@
 ### デプロイ（Vercel）
 - `main` に push すると自動でデプロイされます。Root Directory は空欄で、設定は `vercel.json` にあります（`cleanUrls: true`、`trailingSlash: false`、`/kurasu/*` から `/living/*` への 301 転送）。
 - Claude からは Vercel のダッシュボードを見られないため、反映の確認はユーザーにお願いします。
-- **コミット作成者を必ず `tamura <tamura@pinganjapan.com>` にする**
+- **コミット作成者を必ず `tamura <tamura@omega-cp.com>` にする**
   ```bash
   git config user.name "tamura"
-  git config user.email "tamura@pinganjapan.com"
+  git config user.email "tamura@omega-cp.com"
   ```
-  - このリポジトリの過去のコミットは、すべてこの作成者です（10/11 以前の Claude 名義のコミットは myapp 時代のもの）。
+  - 2026-11-04 に、ユーザーが GitHub のメールアドレスを `tamura@omega-cp.com` に変更しました。旧アドレス `tamura@pinganjapan.com` は現時点では GitHub に残っていますが、**2026年12月以降は使えなくなる見込み**で、新アドレスに一本化する予定です。新しいコミットには新アドレスを使ってください。
+  - 2026-11-04 までの過去のコミットは、旧アドレス `tamura@pinganjapan.com` で作成されています（10/11 以前の Claude 名義のコミットは myapp 時代のもの）。過去のコミットを書き換える必要はありません。
+  - 旧アドレスを GitHub から削除した後にデプロイが拒否された場合は、まずコミット作成者のアドレスを確認してください。
   - コミットメッセージの末尾には、セッションの指示に従って Co-Authored-By と Claude-Session の行を付けます。
   - 10/21 に GitHub のメール非公開設定で push が拒否されたことがあり、ユーザーがメールを公開して解決しました。
 - ブランチは `main` だけで、直接 push します。PR は依頼がない限り作りません。ユーザーが自分の PC から `main` に直接 push することもあるため、**作業の前に必ず `git pull`** してください。

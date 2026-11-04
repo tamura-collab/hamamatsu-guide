@@ -8,7 +8,7 @@
 浜松市の「暮らす（生活インフラの比較）」と「訪れる（観光・移動）」を扱う地域メディア。Astro 7 による静的サイトを Vercel に置き、A8.net のアフィリエイトで収益化している。
 
 ## 必ず守ること
-- **コミット作成者は `tamura <tamura@pinganjapan.com>` にする**（別のアドレスだと Vercel がデプロイを拒否する）。作業前に `git config user.name tamura && git config user.email tamura@pinganjapan.com` を実行する。
+- **コミット作成者は `tamura <tamura@omega-cp.com>` にする**（GitHub アカウントに登録されていないアドレスだと Vercel がデプロイを拒否する）。作業前に `git config user.name tamura && git config user.email tamura@omega-cp.com` を実行する。旧アドレス `tamura@pinganjapan.com` は 2026年12月以降使えなくなる見込みのため、新しいコミットには使わない。
 - 作業の前に `git pull` を実行する（ユーザーも `main` に直接 push することがある）。ブランチは `main` だけで、直接 push する。
 - 完了の条件は、`npm run verify` のエラー・警告・ヒントがすべて0件であること。そのうえでコミットし、`main` に push する（Vercel に自動デプロイ）。
 - **事実確認を厳格に行う。** ユーザーの原稿には誤りや実在しない店舗が混ざることがある。公式情報で確認して直し、「原稿 → 修正後」を表で報告する。電話番号・URL・料金は推測で埋めない（`_sources` / `_unverified` で管理する）。
