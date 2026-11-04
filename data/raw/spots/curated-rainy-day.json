@@ -57,7 +57,7 @@
     "chain": false,
     "address": "静岡県浜松市中央区北寺島町256-3",
     "tel": "053-454-0178",
-    "hours": null,
+    "hours": "9:30～17:00（入館は16:30まで。7月20日～8月31日は18:00まで）。月曜休館（祝日の場合は開館。春・夏・冬休み期間は月曜も開館の場合あり）、年末年始休館",
     "access": "JR浜松駅から徒歩約7分",
     "officialUrl": "https://www.mirai-ra.jp/",
     "description": "自然・光・音・力・宇宙の5つのテーマに分かれた体験型展示と、職員が生解説するプラネタリウムがある科学館です。",
@@ -83,18 +83,21 @@
       }
     ],
     "source": "manual",
-    "fetchedAt": "2026-10-10",
+    "fetchedAt": "2026-11-04",
     "_sources": [
       "https://www.mirai-ra.jp/guide/",
       "https://www.at-s.com/spot/article/138589",
       "https://www.jalan.net/kankou/spt_22202cc3290031897/",
       "https://www.city.hamamatsu.shizuoka.jp/documents/167554/2201_1.pdf",
-      "https://www.mirai-ra.jp/guide/access/"
+      "https://www.mirai-ra.jp/guide/access/",
+      "https://www.mb.eprs.jp/contents/facilities/1110/",
+      "https://www.mirai-ra.jp/wp-content/uploads/2024/06/guidebook2024.pdf"
     ],
     "_unverified": [
-      "開館時間・休館日",
       "「JR浜松駅南口から徒歩約7分」の経路（駅から東へ徒歩約7分の掲載はあり）",
-      "「駐車場完備」（専用駐車場なしのため不掲載）"
+      "「駐車場完備」（専用駐車場なしのため不掲載）",
+      "「祝日の場合は翌平日休館」（市の予約システム・館のガイドブックは「祝日の場合は開館」で、翌日休館の記載なし。翌日休館とする掲載は古い情報の可能性があるため不採用）",
+      "年末年始の休館期間（12月29日～1月3日、12月30日～1月2日で情報源が食い違うため日付は記載せず）"
     ],
     "relatedArticles": [
       "hamamatsu-indoor-playgrounds"

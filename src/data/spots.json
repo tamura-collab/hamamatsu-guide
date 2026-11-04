@@ -568,7 +568,7 @@
     "genre": "科学館",
     "address": "静岡県浜松市中央区北寺島町256-3",
     "tel": "053-454-0178",
-    "hours": null,
+    "hours": "9:30～17:00（入館は16:30まで。7月20日～8月31日は18:00まで）。月曜休館（祝日の場合は開館。春・夏・冬休み期間は月曜も開館の場合あり）、年末年始休館",
     "access": "JR浜松駅から徒歩約7分",
     "officialUrl": "https://www.mirai-ra.jp/",
     "description": "自然・光・音・力・宇宙の5つのテーマに分かれた体験型展示と、職員が生解説するプラネタリウムがある科学館です。",
@@ -607,7 +607,7 @@
       "hamamatsu-indoor-playgrounds"
     ],
     "source": "manual",
-    "updatedAt": "2026-10-10"
+    "updatedAt": "2026-11-04"
   },
   {
     "id": "rainy-day-c8d4e97b",
