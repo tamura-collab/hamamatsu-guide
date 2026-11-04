@@ -74,4 +74,4 @@
 
 > 料金・コース内容は2026年10月時点で確認した情報です。最新の情報は各スクールの公式サイトや教室でご確認ください。
 
-浜松での子育てや暮らしについては、[浜松移住パーフェクトガイド](/articles/hamamatsu-relocation-guide)や[浜松市で暮らすならどこ？新3区の特徴と住みやすさガイド](/articles/hamamatsu-living-areas)もあわせてご覧ください。
+浜松での子育てや暮らしについては、[浜松移住パーフェクトガイド](/articles/hamamatsu-relocation-guide)や[浜松市で暮らすならどこ？新3区の特徴と住みやすさガイド](/articles/hamamatsu-living-areas)もあわせてご覧ください。雨の日の子どもの遊び場は[浜松市の室内遊び場ガイド（浜松こども館・浜松科学館）](/articles/hamamatsu-indoor-playgrounds)で紹介しています。

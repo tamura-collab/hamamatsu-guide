@@ -12,6 +12,8 @@ export interface Article {
   section: SectionKey;
   /** 関連カテゴリの slug */
   category: string;
+  /** category 以外にも記事一覧へ載せるカテゴリの slug（例: 暮らすの記事を「雨の日スポット」にも出す） */
+  relatedCategories?: string[];
   publishedAt: string; // YYYY-MM-DD
   /** 内容を最後に確認・更新した日 */
   updatedAt?: string; // YYYY-MM-DD
@@ -33,6 +35,29 @@ export interface Article {
 // 記事のメタデータ。本文は src/data/articles/<slug>.md に置き、記事ページで読み込む。
 // 料金・アクセス等は data/raw/**/curated-*.json の実データと内容を合わせる。
 export const articles: Article[] = [
+  {
+    slug: 'hamamatsu-indoor-playgrounds',
+    title: '【雨の日も安心】浜松市は「室内遊び場」の聖地？浜松こども館・浜松科学館からファミリー目線のリアル',
+    excerpt: '雨の日や真夏・真冬のおでかけに困らない浜松市内の室内遊び場を解説。天竜材のアスレチックがある「浜松こども館」や、体験型展示とプラネタリウムの「浜松科学館 みらいーら」、ショッピングモールの室内遊び場まで、料金や使い分けを親目線で紹介します。',
+    section: 'living',
+    category: 'kids-school',
+    relatedCategories: ['rainy-day'],
+    publishedAt: '2026-11-04',
+    updatedAt: '2026-11-04',
+    readingMinutes: 7,
+    isPr: false,
+    tags: ['浜松暮らし', '子育て', '室内遊び場', '浜松こども館', '浜松科学館', '雨の日'],
+    sources: [
+      { label: '静岡新聞アットエス 浜松こども館', url: 'https://www.at-s.com/spot/article/138498' },
+      { label: '浜松経済新聞 浜松こども館がリニューアル', url: 'https://hamamatsu.keizai.biz/headline/2733/' },
+      { label: 'ウォーカープラス 浜松こども館（料金・アクセス）', url: 'https://www.walkerplus.com/spot/ar0622s455696/data.html' },
+      { label: '浜松科学館 みらいーら ご利用案内', url: 'https://www.mirai-ra.jp/guide/' },
+      { label: '浜松市 浜松科学館の施設資料', url: 'https://www.city.hamamatsu.shizuoka.jp/documents/167554/2201_1.pdf' },
+      { label: 'ウォーカープラス ピュアハートキッズランド イオンモール浜松志都呂（料金）', url: 'https://www.walkerplus.com/spot/ar0622s496722/price.html' },
+      { label: 'いこーよ ピュアハートキッズランド イオンモール浜松志都呂', url: 'https://iko-yo.net/facilities/180337' },
+      { label: 'tenki.jp スキッズガーデン 浜松市野店', url: 'https://tenki.jp/leisure/5/25/165/19234/' },
+    ],
+  },
   {
     slug: 'hamamatsu-basic-info',
     title: '【2026年最新】5分でわかる浜松市の基礎知識！面積・人口・気候から産業・新3区まで徹底解説',

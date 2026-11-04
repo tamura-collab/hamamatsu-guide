@@ -5,7 +5,7 @@ import Icon from '@/components/ui/Icon.astro';
 import SectionHeading from '@/components/ui/SectionHeading.astro';
 import CategoryCard from '@/components/cards/CategoryCard.astro';
 import ArticleCard from '@/components/cards/ArticleCard.astro';
-import { getCategoriesBySection, sections, type SectionKey } from '@/data/categories';
+import { categories, getCategoriesBySection, sections, type SectionKey } from '@/data/categories';
 import { sortedArticles } from '@/data/articles';
 import { getPlaces } from '@/data/places';
 import { siteConfig } from '@/config/site.config';
@@ -18,7 +18,11 @@ interface Props {
 const s = sections[Astro.props.section];
 const other = sections[s.key === 'living' ? 'travel' : 'living'];
 const items = getCategoriesBySection(s.key);
-const related = sortedArticles.filter((a) => a.section === s.key).slice(0, 3);
+// 別セクションの記事でも、relatedCategories にこのセクションのカテゴリを含むものは新着に出す
+const inSection = (slug: string) => categories.some((c) => c.slug === slug && c.section === s.key);
+const related = sortedArticles
+  .filter((a) => a.section === s.key || a.relatedCategories?.some(inSection))
+  .slice(0, 3);
 const isLiving = s.key === 'living';
 const total = getPlaces(s.key).length;
 

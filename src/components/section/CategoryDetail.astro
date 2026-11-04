@@ -21,7 +21,9 @@ const { category } = Astro.props;
 const s = sections[category.section];
 const isLiving = category.section === 'living';
 const places = getPlaces(category.section, category.slug);
-const related = sortedArticles.filter((a) => a.category === category.slug);
+const related = sortedArticles.filter(
+  (a) => a.category === category.slug || a.relatedCategories?.includes(category.slug),
+);
 const hasAffiliate = places.some((p) => p.affiliate);
 ---
 

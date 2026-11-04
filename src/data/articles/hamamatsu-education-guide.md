@@ -71,4 +71,4 @@
 
 > 学校・入試制度の情報は2026年11月時点で確認したものです。入試の制度や日程は年度ごとに変わることがあるため、最新の情報は静岡県教育委員会や各学校の公式サイトでご確認ください。
 
-子どもの習い事については、[浜松の子どもの習い事・英会話スクール比較](/articles/hamamatsu-kids-school)もあわせてご覧ください。浜松への移住を考えている人は、[浜松移住パーフェクトガイド](/articles/hamamatsu-relocation-guide)も参考にしてください。
+子どもの習い事については、[浜松の子どもの習い事・英会話スクール比較](/articles/hamamatsu-kids-school)もあわせてご覧ください。浜松への移住を考えている人は、[浜松移住パーフェクトガイド](/articles/hamamatsu-relocation-guide)も参考にしてください。雨の日の子どもの遊び場は[浜松市の室内遊び場ガイド](/articles/hamamatsu-indoor-playgrounds)にまとめています。
