@@ -60,4 +60,4 @@
 
 > 人口・面積などの数値は、2026年10月時点で確認した浜松市の公表資料にもとづきます。最新の数値は浜松市の公式サイトでご確認ください。
 
-浜松への移住を考えている人は、[浜松移住パーフェクトガイド](/articles/hamamatsu-relocation-guide)もあわせてご覧ください。
+浜松への移住を考えている人は、[浜松移住パーフェクトガイド](/articles/hamamatsu-relocation-guide)もあわせてご覧ください。浜松を代表するお祭りについては[浜松まつり入門](/articles/hamamatsu-matsuri-guide)をどうぞ。

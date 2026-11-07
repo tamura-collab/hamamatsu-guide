@@ -72,4 +72,4 @@
 
 > 気候や制度の情報は2026年10月時点で確認したものです。最新の気象情報は気象庁の発表をご確認ください。
 
-浜松での暮らし全般については、[浜松移住パーフェクトガイド](/articles/hamamatsu-relocation-guide)や、[浜松市民の「週末BBQ・家飲み文化」と食のリアル](/articles/hamamatsu-bbq-food-culture)もあわせてご覧ください。
+浜松での暮らし全般については、[浜松移住パーフェクトガイド](/articles/hamamatsu-relocation-guide)や、[浜松市民の「週末BBQ・家飲み文化」と食のリアル](/articles/hamamatsu-bbq-food-culture)もあわせてご覧ください。風の街・浜松らしいお祭りとしては、5月の凧揚げ合戦が有名です。詳しくは[浜松まつり入門](/articles/hamamatsu-matsuri-guide)で紹介しています。

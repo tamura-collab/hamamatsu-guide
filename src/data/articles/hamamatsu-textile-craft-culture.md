@@ -66,4 +66,4 @@
 
 > 店舗や体験の情報は2026年10月時点で確認したものです。営業時間や体験の内容は各店舗・工場にご確認ください。
 
-浜松の暮らしについては、[浜松移住パーフェクトガイド](/articles/hamamatsu-relocation-guide)や、[浜松市民の「週末BBQ・家飲み文化」と食のリアル](/articles/hamamatsu-bbq-food-culture)、[遠州のからっ風と日照時間｜浜松の冬の気候特徴と快適に暮らす知恵](/articles/hamamatsu-karakaze-lifestyle)もあわせてご覧ください。
+浜松の暮らしについては、[浜松移住パーフェクトガイド](/articles/hamamatsu-relocation-guide)や、[浜松市民の「週末BBQ・家飲み文化」と食のリアル](/articles/hamamatsu-bbq-food-culture)、[遠州のからっ風と日照時間｜浜松の冬の気候特徴と快適に暮らす知恵](/articles/hamamatsu-karakaze-lifestyle)もあわせてご覧ください。毎年5月の地域の一大行事については[浜松まつり入門](/articles/hamamatsu-matsuri-guide)で紹介しています。

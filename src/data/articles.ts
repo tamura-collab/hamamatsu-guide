@@ -36,6 +36,29 @@ export interface Article {
 // 料金・アクセス等は data/raw/**/curated-*.json の実データと内容を合わせる。
 export const articles: Article[] = [
   {
+    slug: 'hamamatsu-matsuri-guide',
+    title: '【浜松まつり入門】凧揚げ合戦・御殿屋台・初凧とは？由来から見どころ、移住者の関わり方まで',
+    excerpt: '毎年5月3日〜5日に開かれる「浜松まつり」をわかりやすく解説。子どもの誕生を祝う「初凧」の由来、中田島の凧揚げ合戦（糸切り合戦）、夜の御殿屋台と練りの見どころ、会場へのアクセス、移住した人の関わり方までまとめました。',
+    section: 'living',
+    category: 'moving',
+    relatedCategories: ['hotel', 'parking'],
+    publishedAt: '2026-11-07',
+    updatedAt: '2026-11-07',
+    readingMinutes: 8,
+    isPr: false,
+    tags: ['浜松まつり', '凧揚げ', '御殿屋台', '地域文化', '移住', '浜松暮らし', '浜松観光'],
+    sources: [
+      { label: '浜松市 市長メッセージ（浜松まつりの起源）', url: 'https://www.city.hamamatsu.shizuoka.jp/koho2/room/break/202405.html' },
+      { label: '静岡新聞アットエス 2026年 浜松まつり完全ガイド', url: 'https://www.at-s.com/life/article/ats/1961968.html' },
+      { label: '静岡新聞 浜松まつり開幕（173町の凧揚げ）', url: 'https://news.at-s.com/article/1964049' },
+      { label: '静岡新聞 浜松まつり2日目 中心市街地で合同練り', url: 'https://news.at-s.com/article/1964686' },
+      { label: '静岡新聞アットエス 浜松まつり（会場・アクセス）', url: 'https://www.at-s.com/event/article/1960495' },
+      { label: '静岡新聞アットエス 浜松まつり会館', url: 'https://www.at-s.com/spot/article/136985' },
+      { label: 'たびのレシピ 浜松まつり（初凧・家紋と名前）', url: 'https://tabi-mag.jp/hamamatsumatsuri' },
+      { label: 'ぴっぴ 親子で浜松まつりデビュー', url: 'https://www.hamamatsu-pippi.net/blog/report/mimiyori/83722.html' },
+    ],
+  },
+  {
     slug: 'hamamatsu-indoor-playgrounds',
     title: '【雨の日も安心】浜松市は「室内遊び場」の聖地？浜松こども館・浜松科学館からファミリー目線のリアル',
     excerpt: '雨の日や真夏・真冬のおでかけに困らない浜松市内の室内遊び場を解説。天竜材のアスレチックがある「浜松こども館」や、体験型展示とプラネタリウムの「浜松科学館 みらいーら」、ショッピングモールの室内遊び場まで、料金や使い分けを親目線で紹介します。',

@@ -108,4 +108,5 @@
 - [杏林堂はドラッグストアを超えたインフラ？浜松市民の買い出し事情](/articles/hamamatsu-local-supermarket-culture)
 - [遠州のからっ風と日照時間｜浜松の冬の気候特徴と快適に暮らす知恵](/articles/hamamatsu-karakaze-lifestyle)
 - [遠州綿紬と浜松注染｜日常を彩る浜松の伝統工芸と職人カルチャー](/articles/hamamatsu-textile-craft-culture)
+- [浜松まつり入門｜凧揚げ合戦・御殿屋台・初凧の由来と移住者の関わり方](/articles/hamamatsu-matsuri-guide)
 - [5分でわかる浜松市の基礎知識｜面積・人口・気候から産業・新3区まで](/articles/hamamatsu-basic-info)
