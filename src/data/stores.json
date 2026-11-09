@@ -873,7 +873,12 @@
     "priceNote": "月額は公式サイトの人気車種の掲載例（スズキ ジムニー 15,490円〜、税込・目安）です。契約年数・走行距離・メンテナンスの有無・車種により異なります。",
     "chain": false,
     "serviceType": "online",
-    "affiliate": null,
+    "affiliate": {
+      "url": "https://px.a8.net/svt/ejp?a8mat=4BGER9+F2ZD96+4JVQ+674EQ",
+      "label": "オリコで乗ーるの無料仮審査・見積もりはこちら",
+      "program": "A8.net",
+      "impressionUrl": "https://www13.a8.net/0.gif?a8mat=4BGER9+F2ZD96+4JVQ+674EQ"
+    },
     "relatedArticles": [],
     "source": "manual",
     "updatedAt": "2026-10-14"

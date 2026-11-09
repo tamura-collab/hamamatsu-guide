@@ -405,9 +405,9 @@ export const articles: Article[] = [
     section: 'living',
     category: 'car-lease',
     publishedAt: '2026-10-14',
-    updatedAt: '2026-10-14',
+    updatedAt: '2026-11-09',
     readingMinutes: 7,
-    isPr: false,
+    isPr: true,
     tags: ['カーリース', '維持費', '車社会', '浜松暮らし'],
     sources: [
       { label: 'オリコで乗ーる', url: 'https://orico-de-noru.jp/' },

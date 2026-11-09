@@ -26,8 +26,9 @@
 メルセデス・ベンツやBMWなど、輸入車も選べるのが特徴です。
 
 <p class="article-cta">
-  <a href="https://orico-de-noru.jp/" rel="nofollow noopener noreferrer" target="_blank" data-track="official" data-category="car-sell" data-section="living" data-placement="article">オリコで乗ーるの無料仮審査・見積もりはこちら<span class="whitespace-nowrap">（公式サイト）</span></a>
-  <span class="article-cta-note">仮審査はWebで申し込めます。条件は公式サイトでご確認ください</span>
+  <a href="https://px.a8.net/svt/ejp?a8mat=4BGER9+F2ZD96+4JVQ+674EQ" rel="sponsored nofollow noopener noreferrer" target="_blank" data-track="affiliate" data-place-id="car-lease-361a5be2" data-category="car-lease" data-section="living" data-placement="article">オリコで乗ーるの無料仮審査・見積もりはこちら<span class="whitespace-nowrap">（公式サイト）</span></a>
+  <span class="article-cta-note">PR・仮審査はWebで申し込めます。条件は公式サイトでご確認ください</span>
+  <img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4BGER9+F2ZD96+4JVQ+674EQ" alt="" class="a8-beacon">
 </p>
 
 ### 2. オリックスカーリース
@@ -41,7 +42,7 @@
 満了時に車をもらう場合は、走行距離の上限がかからないとされています。長く乗り続けたい人に向いています。
 
 <p class="article-cta">
-  <a href="https://www.carlease-online.jp/" rel="nofollow noopener noreferrer" target="_blank" data-track="official" data-category="car-sell" data-section="living" data-placement="article">オリックスカーリースの車種と月額を見る<span class="whitespace-nowrap">（公式サイト）</span></a>
+  <a href="https://www.carlease-online.jp/" rel="nofollow noopener noreferrer" target="_blank" data-track="official" data-category="car-lease" data-section="living" data-placement="article">オリックスカーリースの車種と月額を見る<span class="whitespace-nowrap">（公式サイト）</span></a>
   <span class="article-cta-note">契約期間（5・7・9・11年）ごとの月額を確認できます</span>
 </p>
 
@@ -60,7 +61,7 @@
 地元の店舗なので、車検やメンテナンスも近くで受けられます。通勤や買い物に使う2台目の車として検討しやすいサービスです。
 
 <p class="article-cta">
-  <a href="https://flat7shizuokakai.com/shop/" rel="nofollow noopener noreferrer" target="_blank" data-track="official" data-category="car-sell" data-section="living" data-placement="article">フラット7の浜松エリアの店舗を探す<span class="whitespace-nowrap">（公式サイト）</span></a>
+  <a href="https://flat7shizuokakai.com/shop/" rel="nofollow noopener noreferrer" target="_blank" data-track="official" data-category="car-lease" data-section="living" data-placement="article">フラット7の浜松エリアの店舗を探す<span class="whitespace-nowrap">（公式サイト）</span></a>
   <span class="article-cta-note">申し込み・相談は加盟店の店頭で受け付けています</span>
 </p>
 
@@ -69,7 +70,7 @@
 浜松に本社を置くスズキのグループ会社・スズキファイナンスのカーリースです。7年契約で、車検や任意保険まで月額に含めるプランを選べます。スズキの販売店で相談できるので、軽自動車やコンパクトカーを検討している人に向いています。
 
 <p class="article-cta">
-  <a href="https://www.suzuki-finance.co.jp/lease/personal/teigaku_mycar7/" rel="nofollow noopener noreferrer" target="_blank" data-track="official" data-category="car-sell" data-section="living" data-placement="article">スズキ定額マイカー7の詳細を見る<span class="whitespace-nowrap">（公式サイト）</span></a>
+  <a href="https://www.suzuki-finance.co.jp/lease/personal/teigaku_mycar7/" rel="nofollow noopener noreferrer" target="_blank" data-track="official" data-category="car-lease" data-section="living" data-placement="article">スズキ定額マイカー7の詳細を見る<span class="whitespace-nowrap">（公式サイト）</span></a>
   <span class="article-cta-note">対象車種・料金はスズキの販売店でも相談できます</span>
 </p>
 
