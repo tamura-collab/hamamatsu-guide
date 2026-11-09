@@ -254,7 +254,7 @@ const rows = [
       place.affiliate && (
         <div class="mt-8 rounded-2xl border border-cta-600/20 bg-cta-50/60 p-5 text-center">
           <p class="text-sm font-bold">{place.name}が気になったら</p>
-          <CtaBlock place={place} category={category} placement="detail-bottom" size="lg" class="mx-auto mt-3 max-w-md" />
+          <CtaBlock place={place} category={category} placement="detail-bottom" size="lg" beacon={false} class="mx-auto mt-3 max-w-md" />
         </div>
       )
     }

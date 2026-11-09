@@ -16,9 +16,14 @@ interface Props {
   placement: string;
   size?: 'sm' | 'lg';
   class?: string;
+  /**
+   * ASP のインプレッション計測用ビーコンを出力するか。
+   * 同じページに同じ広告の CTA が複数あるときは、1つ目以外で false にする（ビーコンは1ページ1広告につき1回）
+   */
+  beacon?: boolean;
 }
 
-const { place, category, placement, size = 'sm', class: className } = Astro.props;
+const { place, category, placement, size = 'sm', class: className, beacon = true } = Astro.props;
 const cta = resolveCta(category, place);
 const track = { placeId: place.id, category: category.slug, section: category.section, placement };
 ---
@@ -44,7 +49,7 @@ const track = { placeId: place.id, category: category.slug, section: category.se
       </OutboundLink>
       <AdNotice hasAffiliate variant="inline" />
       {/* ASP のインプレッション計測用ビーコン（1x1・非表示） */}
-      {place.affiliate.impressionUrl && (
+      {beacon && place.affiliate.impressionUrl && (
         <img src={place.affiliate.impressionUrl} width="1" height="1" alt="" class="pointer-events-none absolute size-px opacity-0" />
       )}
     </div>
