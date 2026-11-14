@@ -114,4 +114,4 @@
 
 晴れた日は、浜名湖をサイクリングやドライブで巡る[浜名湖一周「ハマイチ」入門](/articles/hamamatsu-hamaichi-guide)もおすすめです。
 
-ゴールデンウィークに訪れるなら、5月3日〜5日に開かれる[浜松まつり入門](/articles/hamamatsu-matsuri-guide)もチェックしてみてください。
+ゴールデンウィークに訪れるなら、5月3日〜5日に開かれる[浜松まつり入門](/articles/hamamatsu-matsuri-guide)もチェックしてみてください。浜松城とあわせて家康ゆかりの史跡を巡るなら、[なぜ浜松は「出世の街」？徳川家康ゆかりのパワースポット](/articles/hamamatsu-ieyasu-shusse)もおすすめです。

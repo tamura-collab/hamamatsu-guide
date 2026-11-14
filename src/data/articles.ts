@@ -36,6 +36,30 @@ export interface Article {
 // 料金・アクセス等は data/raw/**/curated-*.json の実データと内容を合わせる。
 export const articles: Article[] = [
   {
+    slug: 'hamamatsu-ieyasu-shusse',
+    title: '【観光】なぜ浜松は「出世の街」？徳川家康が過ごした17年間と最強の開運パワースポット',
+    excerpt: '浜松市が「出世の街」と呼ばれる理由を解説！若き日の徳川家康が17年間在城し、数々の大ピンチを乗り越えて天下人へと成長した歴史的背景や、浜松城、元城町東照宮などの強力な開運・出世パワースポットをご紹介します。',
+    section: 'travel',
+    category: 'rainy-day',
+    relatedCategories: ['parking'],
+    publishedAt: '2026-11-14',
+    updatedAt: '2026-11-14',
+    readingMinutes: 7,
+    isPr: false,
+    tags: ['観光', '歴史', '徳川家康', 'パワースポット', '浜松観光'],
+    sources: [
+      { label: '浜松市 家康公と浜松（浜松城に17年間在城）', url: 'https://www.city.hamamatsu.shizuoka.jp/ieyasu/promotion/index.html' },
+      { label: '観光庁 多言語解説文 浜松城公園：出世城について', url: 'https://www.mlit.go.jp/tagengo-db/R2-01335.html' },
+      { label: '浜松市 浜松城の変遷', url: 'https://www.city.hamamatsu.shizuoka.jp/kouen/hennsen1.html' },
+      { label: '浜松市 家康伝承と浜松（しかみ像に関する研究の紹介）', url: 'https://www.city.hamamatsu.shizuoka.jp/documents/147848/ieyasudenshoutohamamatsu.pdf' },
+      { label: 'PRESIDENT Online しかみ像と三方ヶ原の戦い', url: 'https://president.jp/articles/-/66304' },
+      { label: 'たびねす 浜松元城町東照宮（二公像）', url: 'https://tabi-mag.jp/sz682/' },
+      { label: '浜松市 市長コラム（元城町東照宮）', url: 'https://www.city.hamamatsu.shizuoka.jp/koho2/room/break/202003.html' },
+      { label: 'たびねす 浜松八幡宮（雲立の楠）', url: 'https://tabi-mag.jp/sz329/' },
+      { label: '浜松市 出世大名家康くん', url: 'https://www.city.hamamatsu.shizuoka.jp/documents/8904/01_04.pdf' },
+    ],
+  },
+  {
     slug: 'hamamatsu-matsuri-guide',
     title: '【浜松まつり入門】凧揚げ合戦・御殿屋台・初凧とは？由来から見どころ、移住者の関わり方まで',
     excerpt: '毎年5月3日〜5日に開かれる「浜松まつり」をわかりやすく解説。子どもの誕生を祝う「初凧」の由来、中田島の凧揚げ合戦（糸切り合戦）、夜の御殿屋台と練りの見どころ、会場へのアクセス、移住した人の関わり方までまとめました。',
