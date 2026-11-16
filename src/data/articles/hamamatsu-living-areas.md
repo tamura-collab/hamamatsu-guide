@@ -91,3 +91,4 @@
 - 新居のネット回線選びに：[浜松市で使える光回線6社を徹底比較](/articles/hamamatsu-internet-guide)
 - お出かけ・休日の過ごし方に：[新幹線から直行！車なし・公共交通機関で楽しむ浜松日帰り観光モデルコース](/articles/hamamatsu-no-car-trip)
 - 冬の気候と暮らしの知恵：[遠州のからっ風と日照時間｜浜松の冬の気候特徴と快適に暮らす知恵](/articles/hamamatsu-karakaze-lifestyle)
+- 住まい選びの前に災害リスクを確認：[浜松の防災ガイド｜南海トラフ地震・津波・台風に備える](/articles/hamamatsu-bousai-guide)

@@ -36,6 +36,30 @@ export interface Article {
 // 料金・アクセス等は data/raw/**/curated-*.json の実データと内容を合わせる。
 export const articles: Article[] = [
   {
+    slug: 'hamamatsu-bousai-guide',
+    title: '【浜松の防災ガイド】南海トラフ地震・津波・台風に備える｜ハザードマップの見方と家庭の備え',
+    excerpt: '浜松市で暮らす人・これから住む人のための防災ガイド。南海トラフ地震の津波想定と沿岸の防潮堤、ハザードマップで確認すべきポイント、防災ホッとメールなど情報の受け取り方、耐震診断・備蓄など家庭でできる備えをまとめました。',
+    section: 'living',
+    category: 'moving',
+    publishedAt: '2026-11-16',
+    updatedAt: '2026-11-16',
+    readingMinutes: 8,
+    isPr: false,
+    tags: ['防災', '南海トラフ', '津波', 'ハザードマップ', '移住', '浜松暮らし'],
+    sources: [
+      { label: '静岡新聞 南海トラフ巨大地震の新被害想定（浜松市の最大津波高17m）', url: 'https://www.at-s.com/snews/article/ats/1687537.html' },
+      { label: '浜松市 津波避難計画（令和8年2月改訂版）', url: 'https://www.city.hamamatsu.shizuoka.jp/documents/41932/tsunami_hinannkeikaku_r8-2.pdf' },
+      { label: '静岡県 浜松市沿岸域の防潮堤整備', url: 'https://www.pref.shizuoka.jp/machizukuri/dobokujimusho/hamamatsudoboku/1004267/1047558/1034629.html' },
+      { label: '浜松市 防潮堤整備の経緯（一条工務店グループの寄付）', url: 'https://www.city.hamamatsu.shizuoka.jp/kiki/tsunamikeikaku/05.html' },
+      { label: '浜松市 防災ホッとメール', url: 'https://www.city.hamamatsu.shizuoka.jp/kiki/disaster/hotmail.html' },
+      { label: '浜松市 広報はままつ（ハザードマップ・防災情報の入手方法）', url: 'https://www.city.hamamatsu.shizuoka.jp/documents/154310/202308-p02-04.pdf' },
+      { label: '浜松市 自主防災隊', url: 'https://www.city.hamamatsu.shizuoka.jp/kiki/disaster/bousai/jishubo.html' },
+      { label: '浜松市 木造住宅の耐震化', url: 'https://www.city.hamamatsu.shizuoka.jp/kensido/home_tochi/home/kensido/taisin/' },
+      { label: '静岡県 台風第15号による被害状況について', url: 'https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/043/807/houdouteikyou21.pdf' },
+      { label: '気象庁 南海トラフ地震で想定される震度や津波の高さ', url: 'https://www.jma.go.jp/jma/kishou/know/jishin/nteq/assumption.html' },
+    ],
+  },
+  {
     slug: 'hamamatsu-ieyasu-shusse',
     title: '【観光】なぜ浜松は「出世の街」？徳川家康が過ごした17年間と最強の開運パワースポット',
     excerpt: '浜松市が「出世の街」と呼ばれる理由を解説！若き日の徳川家康が17年間在城し、数々の大ピンチを乗り越えて天下人へと成長した歴史的背景や、浜松城、元城町東照宮などの強力な開運・出世パワースポットをご紹介します。',
