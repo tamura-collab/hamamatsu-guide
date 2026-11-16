@@ -105,3 +105,4 @@
 - [浜松の子どもの習い事・英会話スクール比較](/articles/hamamatsu-kids-school)
 - [浜松市で暮らすならどこ？新3区の特徴と住みやすさガイド](/articles/hamamatsu-living-areas)
 - [浜松の雨の日スポットを比較する](/travel/rainy-day)
+- [晴れの日はこちら｜浜松の公園・外遊びスポット7選](/articles/hamamatsu-parks-outdoor)

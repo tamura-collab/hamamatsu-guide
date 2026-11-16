@@ -36,6 +36,28 @@ export interface Article {
 // 料金・アクセス等は data/raw/**/curated-*.json の実データと内容を合わせる。
 export const articles: Article[] = [
   {
+    slug: 'hamamatsu-parks-outdoor',
+    title: '【浜松の公園・外遊びスポット】子どもと一日遊べる！無料の大型公園から動物園・砂丘まで7選',
+    excerpt: '天気のいい日に子どもと出かけたい浜松市内の公園・外遊びスポットを紹介。入園・駐車場無料の浜名湖ガーデンパーク、帆船型遊具の堀出前中央公園、佐鳴湖公園、浜松市動物園、中田島砂丘など、遊び方と駐車場の情報をまとめました。',
+    section: 'living',
+    category: 'kids-school',
+    publishedAt: '2026-11-16',
+    updatedAt: '2026-11-16',
+    readingMinutes: 7,
+    isPr: false,
+    tags: ['浜松暮らし', '子育て', '公園', '外遊び', '浜名湖', '週末のおでかけ'],
+    sources: [
+      { label: '静岡新聞アットエス 浜名湖ガーデンパーク', url: 'https://www.at-s.com/spot/article/138517' },
+      { label: '浜松市動物園（公式）', url: 'https://www.city.hamamatsu.shizuoka.jp/hamazoo/' },
+      { label: '静岡新聞アットエス はままつフラワーパーク', url: 'https://www.at-s.com/event/article/115583' },
+      { label: '静岡新聞アットエス 佐鳴湖公園', url: 'https://www.at-s.com/spot/article/137558' },
+      { label: '静岡県 佐鳴湖の概要（ジョギングコース）', url: 'https://www.pref.shizuoka.jp/_res/projects/default_project/_page_/001/042/566/h30sanaruko.pdf' },
+      { label: '浜松市 堀出前中央公園（とびっこ号）', url: 'https://www.city.hamamatsu.shizuoka.jp/w-shinko/yeel/2020/vol2/yuto.html' },
+      { label: '静岡新聞アットエス 静岡県立森林公園', url: 'https://www.at-s.com/spot/article/138340' },
+      { label: 'たびねす 中田島砂丘（駐車場・アカウミガメ）', url: 'https://tabi-mag.jp/sz238/' },
+    ],
+  },
+  {
     slug: 'hamamatsu-bousai-guide',
     title: '【浜松の防災ガイド】南海トラフ地震・津波・台風に備える｜ハザードマップの見方と家庭の備え',
     excerpt: '浜松市で暮らす人・これから住む人のための防災ガイド。南海トラフ地震の津波想定と沿岸の防潮堤、ハザードマップで確認すべきポイント、防災ホッとメールなど情報の受け取り方、耐震診断・備蓄など家庭でできる備えをまとめました。',
