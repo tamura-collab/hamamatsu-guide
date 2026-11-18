@@ -36,6 +36,23 @@ export interface Article {
 // 料金・アクセス等は data/raw/**/curated-*.json の実データと内容を合わせる。
 export const articles: Article[] = [
   {
+    slug: 'pilates-beginners-guide',
+    title: '【初心者向け】今人気のピラティスとは？ヨガとの違い・期待できること・自宅でできる基本の動き',
+    excerpt: 'SNSやスタジオの増加で人気のピラティス。100年前に生まれた成り立ち、期待できること・できないこと、マットとマシンの違い、ヨガとの違い、自宅でできる基本の3つの動き、頻度や注意点まで、初めての人向けにわかりやすく解説します。',
+    section: 'living',
+    category: 'yoga-pilates',
+    publishedAt: '2026-11-18',
+    updatedAt: '2026-11-18',
+    readingMinutes: 8,
+    isPr: false,
+    tags: ['ピラティス', 'マシンピラティス', '美容・健康', '運動習慣', '初心者'],
+    sources: [
+      { label: 'PBS American Experience: The Great War and Mr. Pilates', url: 'https://www.pbs.org/wgbh/americanexperience/features/the-great-war-mr-pilates' },
+      { label: 'Cochrane: Pilates for low back pain（2015）', url: 'https://www.cochrane.org/evidence/CD010265' },
+      { label: 'PubMed: Pilates for low back pain（Yamato et al., 2015）', url: 'https://pubmed.ncbi.nlm.nih.gov/26133923/' },
+    ],
+  },
+  {
     slug: 'hamamatsu-parks-outdoor',
     title: '【浜松の公園・外遊びスポット】子どもと一日遊べる！無料の大型公園から動物園・砂丘まで7選',
     excerpt: '天気のいい日に子どもと出かけたい浜松市内の公園・外遊びスポットを紹介。入園・駐車場無料の浜名湖ガーデンパーク、帆船型遊具の堀出前中央公園、佐鳴湖公園、浜松市動物園、中田島砂丘など、遊び方と駐車場の情報をまとめました。',
