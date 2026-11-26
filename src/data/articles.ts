@@ -36,6 +36,29 @@ export interface Article {
 // 料金・アクセス等は data/raw/**/curated-*.json の実データと内容を合わせる。
 export const articles: Article[] = [
   {
+    slug: 'hamamatsu-music-city',
+    title: '【音楽のまち浜松】なぜ浜松は「楽器の街」？ヤマハ・カワイ誕生の物語と音楽を楽しむスポット・イベント',
+    excerpt: 'ヤマハ・カワイ・ローランドが本社を構える浜松は、アジアで初めてユネスコの音楽都市に選ばれた「音楽のまち」。1台のオルガン修理から始まった楽器づくりの物語、楽器博物館、浜松国際ピアノコンクールやハママツ・ジャズ・ウィークなど、音楽を楽しめるスポットとイベントを紹介します。',
+    section: 'travel',
+    category: 'rainy-day',
+    publishedAt: '2026-11-26',
+    updatedAt: '2026-11-26',
+    readingMinutes: 7,
+    isPr: false,
+    tags: ['音楽', '楽器', 'ヤマハ', 'ピアノ', '浜松観光', 'カルチャー'],
+    sources: [
+      { label: 'ヤマハ 沿革（日本楽器製造の設立）', url: 'https://www.yamaha.com/ja/about/history/' },
+      { label: '愛知教育大学 浜松における楽器工業の変容（論文）', url: 'https://aue.repo.nii.ac.jp/record/6894/files/chiri675564.pdf' },
+      { label: '浜松市 ユネスコ創造都市ネットワーク（音楽分野）', url: 'https://www.city.hamamatsu.shizuoka.jp/bunka/souzoutoshi.html' },
+      { label: '文部科学省 浜松市の創造都市ネットワーク加盟（報道発表）', url: 'https://www.mext.go.jp/unesco/001/2014/__icsFiles/afieldfile/2014/12/02/1353749_02_1.pdf' },
+      { label: '浜松市 第13回浜松国際ピアノコンクール実施要項の発表', url: 'https://www.city.hamamatsu.shizuoka.jp/shise/koho/koho/hodohappyo/2026/7/0307.html' },
+      { label: '浜松国際ピアノコンクール（公式）', url: 'https://www.hipic.jp/' },
+      { label: 'ヤマハ 第34回ハママツ・ジャズ・ウィーク開催', url: 'https://www.yamaha.com/ja/news_release/2026/26071401/' },
+      { label: '浜松市 市長コラム（浜松国際ピアノコンクールと『蜜蜂と遠雷』）', url: 'https://www.city.hamamatsu.shizuoka.jp/koho2/room/break/e2904.html' },
+      { label: '浜松市 楽器博物館の指定管理者評価（改修休館期間）', url: 'https://www.city.hamamatsu.shizuoka.jp/bunka/shiteikanri/r7hyoka/gakki.html' },
+    ],
+  },
+  {
     slug: 'pilates-beginners-guide',
     title: '【初心者向け】今人気のピラティスとは？ヨガとの違い・期待できること・自宅でできる基本の動き',
     excerpt: 'SNSやスタジオの増加で人気のピラティス。100年前に生まれた成り立ち、期待できること・できないこと、マットとマシンの違い、ヨガとの違い、自宅でできる基本の3つの動き、頻度や注意点まで、初めての人向けにわかりやすく解説します。',
